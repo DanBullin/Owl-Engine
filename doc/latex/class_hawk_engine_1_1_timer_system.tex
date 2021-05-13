@@ -1,0 +1,181 @@
+\hypertarget{class_hawk_engine_1_1_timer_system}{}\doxysection{Hawk\+Engine\+::Timer\+System Class Reference}
+\label{class_hawk_engine_1_1_timer_system}\index{HawkEngine::TimerSystem@{HawkEngine::TimerSystem}}
+
+
+A timer system which handles timers and stores recorded times.  
+
+
+
+
+{\ttfamily \#include $<$timer\+System.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Timer\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_timer_system}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a8334b43f84717a5d57be6918a6d15b41}{start}} (\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}} init=System\+Signal\+::\+None,...) override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a4cef2a36121926bfab6ba43807f4e4bc}{stop}} (\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}} close=System\+Signal\+::\+None,...) override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_timer_system_acc602b945a833c3ba0df107d16002f32}{start\+Time}} (const char $\ast$timer\+Name)
+\begin{DoxyCompactList}\small\item\em Start a new timer with name. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_timer_system_aff91a73452bf5d6e0a35cb3f260fa54c}{end\+Time}} (const char $\ast$timer\+Name)
+\begin{DoxyCompactList}\small\item\em Stop the timer and record the results. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a59779c4335f14f71a4ab9b203ef6af34}{remove\+Timer}} (const char $\ast$timer\+Name)
+\begin{DoxyCompactList}\small\item\em Remove a timer from the list and any stored results. \end{DoxyCompactList}\item 
+static const float \mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a3cecd4b62237877c259a7222933605bc}{get\+Time}} (const char $\ast$timer\+Name)
+\begin{DoxyCompactList}\small\item\em Get the result of a timer. \end{DoxyCompactList}\item 
+static const std\+::map$<$ const char $\ast$, float $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a0a198dd864c85db0d14e372702e9edbf}{get\+All\+Times}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all the recorded times. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A timer system which handles timers and stores recorded times. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_timer_system_aff91a73452bf5d6e0a35cb3f260fa54c}\label{class_hawk_engine_1_1_timer_system_aff91a73452bf5d6e0a35cb3f260fa54c}} 
+\index{HawkEngine::TimerSystem@{HawkEngine::TimerSystem}!endTime@{endTime}}
+\index{endTime@{endTime}!HawkEngine::TimerSystem@{HawkEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{endTime()}{endTime()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Timer\+System\+::end\+Time (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stop the timer and record the results. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_timer_system_aff91a73452bf5d6e0a35cb3f260fa54c}{end\+Time()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The timer name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_timer_system_a0a198dd864c85db0d14e372702e9edbf}\label{class_hawk_engine_1_1_timer_system_a0a198dd864c85db0d14e372702e9edbf}} 
+\index{HawkEngine::TimerSystem@{HawkEngine::TimerSystem}!getAllTimes@{getAllTimes}}
+\index{getAllTimes@{getAllTimes}!HawkEngine::TimerSystem@{HawkEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{getAllTimes()}{getAllTimes()}}
+{\footnotesize\ttfamily const std\+::map$<$ const char $\ast$, float $>$ \& Hawk\+Engine\+::\+Timer\+System\+::get\+All\+Times (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a list of all the recorded times. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a0a198dd864c85db0d14e372702e9edbf}{get\+All\+Times()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::map$<$const char$\ast$, float$>$\& -\/ The list of times 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_timer_system_a3cecd4b62237877c259a7222933605bc}\label{class_hawk_engine_1_1_timer_system_a3cecd4b62237877c259a7222933605bc}} 
+\index{HawkEngine::TimerSystem@{HawkEngine::TimerSystem}!getTime@{getTime}}
+\index{getTime@{getTime}!HawkEngine::TimerSystem@{HawkEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily const float Hawk\+Engine\+::\+Timer\+System\+::get\+Time (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the result of a timer. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a59779c4335f14f71a4ab9b203ef6af34}{remove\+Timer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The timer name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const float -\/ The recorded time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_timer_system_a59779c4335f14f71a4ab9b203ef6af34}\label{class_hawk_engine_1_1_timer_system_a59779c4335f14f71a4ab9b203ef6af34}} 
+\index{HawkEngine::TimerSystem@{HawkEngine::TimerSystem}!removeTimer@{removeTimer}}
+\index{removeTimer@{removeTimer}!HawkEngine::TimerSystem@{HawkEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{removeTimer()}{removeTimer()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Timer\+System\+::remove\+Timer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Remove a timer from the list and any stored results. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a59779c4335f14f71a4ab9b203ef6af34}{remove\+Timer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The timer name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_timer_system_a8334b43f84717a5d57be6918a6d15b41}\label{class_hawk_engine_1_1_timer_system_a8334b43f84717a5d57be6918a6d15b41}} 
+\index{HawkEngine::TimerSystem@{HawkEngine::TimerSystem}!start@{start}}
+\index{start@{start}!HawkEngine::TimerSystem@{HawkEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Timer\+System\+::start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}}}]{init = {\ttfamily SystemSignal\+:\+:None},  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a8334b43f84717a5d57be6918a6d15b41}{start()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em init} & a System\+Signal -\/ A system signal \\
+\hline
+{\em ...} & -\/ Various parameters \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_system_a7b3de2e970b27a900583fa66c1063a6c}{Hawk\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_timer_system_acc602b945a833c3ba0df107d16002f32}\label{class_hawk_engine_1_1_timer_system_acc602b945a833c3ba0df107d16002f32}} 
+\index{HawkEngine::TimerSystem@{HawkEngine::TimerSystem}!startTime@{startTime}}
+\index{startTime@{startTime}!HawkEngine::TimerSystem@{HawkEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{startTime()}{startTime()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Timer\+System\+::start\+Time (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Start a new timer with name. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_timer_system_acc602b945a833c3ba0df107d16002f32}{start\+Time()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The timer name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_timer_system_a4cef2a36121926bfab6ba43807f4e4bc}\label{class_hawk_engine_1_1_timer_system_a4cef2a36121926bfab6ba43807f4e4bc}} 
+\index{HawkEngine::TimerSystem@{HawkEngine::TimerSystem}!stop@{stop}}
+\index{stop@{stop}!HawkEngine::TimerSystem@{HawkEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Timer\+System\+::stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}}}]{close = {\ttfamily SystemSignal\+:\+:None},  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a4cef2a36121926bfab6ba43807f4e4bc}{stop()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em close} & a System\+Signal -\/ A system signal \\
+\hline
+{\em ...} & -\/ Various parameters \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_system_a29d9ba02d3c28510f4ef02bc0fdfbb3b}{Hawk\+Engine\+::\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/systems/\mbox{\hyperlink{timer_system_8h}{timer\+System.\+h}}\item 
+C\+:/doc/src/src/independent/systems/\mbox{\hyperlink{timer_system_8cpp}{timer\+System.\+cpp}}\end{DoxyCompactItemize}

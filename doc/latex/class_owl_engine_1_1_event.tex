@@ -1,0 +1,127 @@
+\hypertarget{class_owl_engine_1_1_event}{}\doxysection{Owl\+Engine\+::Event Class Reference}
+\label{class_owl_engine_1_1_event}\index{OwlEngine::Event@{OwlEngine::Event}}
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_event}{Event}} base class, all possible events that can arise will share this base class.  
+
+
+
+
+{\ttfamily \#include $<$event.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.691074cm]{class_owl_engine_1_1_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const \mbox{\hyperlink{event_8h_a01e9a1529f1864b214fd522ac44aada2}{Event\+Type}} \mbox{\hyperlink{class_owl_engine_1_1_event_a8a5fb21588c5081ab8cb1c8ebfcd35b6}{get\+Event\+Type}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the event type. \end{DoxyCompactList}\item 
+virtual const int32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_event_ae0cdbeda9793c157d9079b87be5b6039}{get\+Category\+Flags}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the event category flags. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_event_acdb43546666783d9a1d7d125207bef78}{is\+Handled}} () const
+\begin{DoxyCompactList}\small\item\em Has the event been handled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_event_a0e838c4da2ae013626de69c99d403eed}{handle}} (const bool \mbox{\hyperlink{class_owl_engine_1_1_event_acdb43546666783d9a1d7d125207bef78}{is\+Handled}})
+\begin{DoxyCompactList}\small\item\em Handle the event. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_event_a4fec6450daa79c9f964a1bf9087a8c65}{is\+In\+Category}} (const \mbox{\hyperlink{event_8h_ae45e51754f2866074be5fcdb37232ec6}{Event\+Category}} category) const
+\begin{DoxyCompactList}\small\item\em Is the event in category. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_event_af744968ecc68df9ad61fe40941461ded}\label{class_owl_engine_1_1_event_af744968ecc68df9ad61fe40941461ded}} 
+bool \mbox{\hyperlink{class_owl_engine_1_1_event_af744968ecc68df9ad61fe40941461ded}{m\+\_\+handled}} = false
+\begin{DoxyCompactList}\small\item\em Has the event been handled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_owl_engine_1_1_event}{Event}} base class, all possible events that can arise will share this base class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_ae0cdbeda9793c157d9079b87be5b6039}\label{class_owl_engine_1_1_event_ae0cdbeda9793c157d9079b87be5b6039}} 
+\index{OwlEngine::Event@{OwlEngine::Event}!getCategoryFlags@{getCategoryFlags}}
+\index{getCategoryFlags@{getCategoryFlags}!OwlEngine::Event@{OwlEngine::Event}}
+\doxysubsubsection{\texorpdfstring{getCategoryFlags()}{getCategoryFlags()}}
+{\footnotesize\ttfamily virtual const int32\+\_\+t Owl\+Engine\+::\+Event\+::get\+Category\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the event category flags. 
+
+\begin{DoxyReturn}{Returns}
+a const int32\+\_\+t -\/ The event\textquotesingle{}s category flags 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_window_moved_event_a770811ed41c453f86e2bfd41c2a2657d}{Owl\+Engine\+::\+Window\+Moved\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_window_lost_focus_event_a6d25ba8bffde97548d4acf776391b59e}{Owl\+Engine\+::\+Window\+Lost\+Focus\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_window_focus_event_a28a36f24aff26e08548a10bc52cfe02c}{Owl\+Engine\+::\+Window\+Focus\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_window_resize_event_a36c0c89731bd101cced5c60e2c66f064}{Owl\+Engine\+::\+Window\+Resize\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_key_event_a9651e49d4df06bb652133673173ed254}{Owl\+Engine\+::\+Key\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_window_close_event_a46b5f1f512bb5946b61c84744f3f03e1}{Owl\+Engine\+::\+Window\+Close\+Event}}, and \mbox{\hyperlink{class_owl_engine_1_1_mouse_event_a1a6dfec12be60ecdce7b37691f724a98}{Owl\+Engine\+::\+Mouse\+Event}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_event_a8a5fb21588c5081ab8cb1c8ebfcd35b6}\label{class_owl_engine_1_1_event_a8a5fb21588c5081ab8cb1c8ebfcd35b6}} 
+\index{OwlEngine::Event@{OwlEngine::Event}!getEventType@{getEventType}}
+\index{getEventType@{getEventType}!OwlEngine::Event@{OwlEngine::Event}}
+\doxysubsubsection{\texorpdfstring{getEventType()}{getEventType()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{event_8h_a01e9a1529f1864b214fd522ac44aada2}{Event\+Type}} Owl\+Engine\+::\+Event\+::get\+Event\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the event type. 
+
+\begin{DoxyReturn}{Returns}
+a const Event\+Type -\/ The event type 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_mouse_released_event_ab1fd5f426cfb5ac706d8979ae66c7a9b}{Owl\+Engine\+::\+Mouse\+Released\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_window_moved_event_ad246dc558ccb3ed2e9e0c2bac612cc6d}{Owl\+Engine\+::\+Window\+Moved\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_mouse_pressed_event_a2be253e5ac331d408940d7919a577a7a}{Owl\+Engine\+::\+Mouse\+Pressed\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_window_lost_focus_event_a6298a005cabc6494eb5171085627decd}{Owl\+Engine\+::\+Window\+Lost\+Focus\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_key_typed_event_ab834cee349bce468e2e80a003cc3aa37}{Owl\+Engine\+::\+Key\+Typed\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_window_focus_event_ad386111cd230021fa06067aff030e6b0}{Owl\+Engine\+::\+Window\+Focus\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_mouse_scrolled_event_a7317075ad2501e6c79fbdb0cb4d5f61c}{Owl\+Engine\+::\+Mouse\+Scrolled\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_key_released_event_a65845986dc235c34c1b9c4b432768e60}{Owl\+Engine\+::\+Key\+Released\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_key_pressed_event_a3004658d484d59308d1281ef0ad7a691}{Owl\+Engine\+::\+Key\+Pressed\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_window_resize_event_a0d39c06f8e6e85b67f4b2dd603ddcc53}{Owl\+Engine\+::\+Window\+Resize\+Event}}, \mbox{\hyperlink{class_owl_engine_1_1_mouse_moved_event_a4e3ab40aea49f284bb450f6b87bce1cb}{Owl\+Engine\+::\+Mouse\+Moved\+Event}}, and \mbox{\hyperlink{class_owl_engine_1_1_window_close_event_a8dac559665b1f95737221024c34ca53e}{Owl\+Engine\+::\+Window\+Close\+Event}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_event_a0e838c4da2ae013626de69c99d403eed}\label{class_owl_engine_1_1_event_a0e838c4da2ae013626de69c99d403eed}} 
+\index{OwlEngine::Event@{OwlEngine::Event}!handle@{handle}}
+\index{handle@{handle}!OwlEngine::Event@{OwlEngine::Event}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+::handle (\begin{DoxyParamCaption}\item[{const bool}]{is\+Handled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Handle the event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Handled} & a const bool -\/ Has the event been handled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_acdb43546666783d9a1d7d125207bef78}\label{class_owl_engine_1_1_event_acdb43546666783d9a1d7d125207bef78}} 
+\index{OwlEngine::Event@{OwlEngine::Event}!isHandled@{isHandled}}
+\index{isHandled@{isHandled}!OwlEngine::Event@{OwlEngine::Event}}
+\doxysubsubsection{\texorpdfstring{isHandled()}{isHandled()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Event\+::is\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Has the event been handled. 
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_a4fec6450daa79c9f964a1bf9087a8c65}\label{class_owl_engine_1_1_event_a4fec6450daa79c9f964a1bf9087a8c65}} 
+\index{OwlEngine::Event@{OwlEngine::Event}!isInCategory@{isInCategory}}
+\index{isInCategory@{isInCategory}!OwlEngine::Event@{OwlEngine::Event}}
+\doxysubsubsection{\texorpdfstring{isInCategory()}{isInCategory()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Event\+::is\+In\+Category (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{event_8h_ae45e51754f2866074be5fcdb37232ec6}{Event\+Category}}}]{category }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is the event in category. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & a const Event\+Category -\/ The event category \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is the event a part of the event category 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/events/\mbox{\hyperlink{event_8h}{event.\+h}}\end{DoxyCompactItemize}

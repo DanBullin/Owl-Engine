@@ -1,0 +1,142 @@
+\hypertarget{class_owl_engine_1_1_skybox}{}\doxysection{Owl\+Engine\+::Skybox Class Reference}
+\label{class_owl_engine_1_1_skybox}\index{OwlEngine::Skybox@{OwlEngine::Skybox}}
+
+
+A skybox class.  
+
+
+
+
+{\ttfamily \#include $<$skybox.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_skybox_a5d66dbaa7894a5bce67d10392e74c710}{Skybox}} (\mbox{\hyperlink{class_owl_engine_1_1_model3_d}{Model3D}} $\ast$model, \mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$material)
+\begin{DoxyCompactList}\small\item\em Constructor, sets pointers to model and material. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_skybox_af2421f0778898f1412e83e5ba61872e6}{$\sim$\+Skybox}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor, removes pointers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_skybox_aa7c08f599664ffdada265249405d47ac}{on\+Render}} ()
+\begin{DoxyCompactList}\small\item\em Submit skybox to renderer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_skybox_ae4eeacd29e0d7dde6b323045f1487846}{set\+Model}} (\mbox{\hyperlink{class_owl_engine_1_1_model3_d}{Model3D}} $\ast$model)
+\begin{DoxyCompactList}\small\item\em Setter for 3D model. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_skybox_ae2c5a03deb1e099d9f81b23afe92b2b5}{set\+Material}} (\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$material)
+\begin{DoxyCompactList}\small\item\em Setter for material. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_model3_d}{Model3D}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_skybox_abc842c3f0dee4a613af84439c7e45494}{get\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Getter for 3D model. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_skybox_af19932182c93e3b95f77bc2720b2f173}{get\+Material}} ()
+\begin{DoxyCompactList}\small\item\em Getter for material. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A skybox class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_skybox_a5d66dbaa7894a5bce67d10392e74c710}\label{class_owl_engine_1_1_skybox_a5d66dbaa7894a5bce67d10392e74c710}} 
+\index{OwlEngine::Skybox@{OwlEngine::Skybox}!Skybox@{Skybox}}
+\index{Skybox@{Skybox}!OwlEngine::Skybox@{OwlEngine::Skybox}}
+\doxysubsubsection{\texorpdfstring{Skybox()}{Skybox()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Skybox\+::\+Skybox (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_model3_d}{Model3D}} $\ast$}]{model,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$}]{material }\end{DoxyParamCaption})}
+
+
+
+Constructor, sets pointers to model and material. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_skybox_a5d66dbaa7894a5bce67d10392e74c710}{Skybox()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & a Model3\+D$\ast$ -\/ Pointer to the box model used \\
+\hline
+{\em material} & a Material$\ast$ -\/ Pointer to the sky material used \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_skybox_af2421f0778898f1412e83e5ba61872e6}\label{class_owl_engine_1_1_skybox_af2421f0778898f1412e83e5ba61872e6}} 
+\index{OwlEngine::Skybox@{OwlEngine::Skybox}!````~Skybox@{$\sim$Skybox}}
+\index{````~Skybox@{$\sim$Skybox}!OwlEngine::Skybox@{OwlEngine::Skybox}}
+\doxysubsubsection{\texorpdfstring{$\sim$Skybox()}{~Skybox()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Skybox\+::$\sim$\+Skybox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor, removes pointers. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_skybox_af2421f0778898f1412e83e5ba61872e6}{$\sim$\+Skybox()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_skybox_af19932182c93e3b95f77bc2720b2f173}\label{class_owl_engine_1_1_skybox_af19932182c93e3b95f77bc2720b2f173}} 
+\index{OwlEngine::Skybox@{OwlEngine::Skybox}!getMaterial@{getMaterial}}
+\index{getMaterial@{getMaterial}!OwlEngine::Skybox@{OwlEngine::Skybox}}
+\doxysubsubsection{\texorpdfstring{getMaterial()}{getMaterial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_material}{Material}}$\ast$ Owl\+Engine\+::\+Skybox\+::get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for material. 
+
+\begin{DoxyReturn}{Returns}
+a Material$\ast$ -\/ Pointer to the skybox material 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_skybox_abc842c3f0dee4a613af84439c7e45494}\label{class_owl_engine_1_1_skybox_abc842c3f0dee4a613af84439c7e45494}} 
+\index{OwlEngine::Skybox@{OwlEngine::Skybox}!getModel@{getModel}}
+\index{getModel@{getModel}!OwlEngine::Skybox@{OwlEngine::Skybox}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_model3_d}{Model3D}}$\ast$ Owl\+Engine\+::\+Skybox\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for 3D model. 
+
+\begin{DoxyReturn}{Returns}
+a Model3\+D$\ast$ -\/ Pointer to the skybox material 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_skybox_aa7c08f599664ffdada265249405d47ac}\label{class_owl_engine_1_1_skybox_aa7c08f599664ffdada265249405d47ac}} 
+\index{OwlEngine::Skybox@{OwlEngine::Skybox}!onRender@{onRender}}
+\index{onRender@{onRender}!OwlEngine::Skybox@{OwlEngine::Skybox}}
+\doxysubsubsection{\texorpdfstring{onRender()}{onRender()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Skybox\+::on\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Submit skybox to renderer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_skybox_aa7c08f599664ffdada265249405d47ac}{on\+Render()}} \mbox{\Hypertarget{class_owl_engine_1_1_skybox_ae2c5a03deb1e099d9f81b23afe92b2b5}\label{class_owl_engine_1_1_skybox_ae2c5a03deb1e099d9f81b23afe92b2b5}} 
+\index{OwlEngine::Skybox@{OwlEngine::Skybox}!setMaterial@{setMaterial}}
+\index{setMaterial@{setMaterial}!OwlEngine::Skybox@{OwlEngine::Skybox}}
+\doxysubsubsection{\texorpdfstring{setMaterial()}{setMaterial()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Skybox\+::set\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$}]{material }\end{DoxyParamCaption})}
+
+
+
+Setter for material. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_skybox_ae2c5a03deb1e099d9f81b23afe92b2b5}{set\+Material()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & a Material$\ast$ -\/ A pointer to the skybox material \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_skybox_ae4eeacd29e0d7dde6b323045f1487846}\label{class_owl_engine_1_1_skybox_ae4eeacd29e0d7dde6b323045f1487846}} 
+\index{OwlEngine::Skybox@{OwlEngine::Skybox}!setModel@{setModel}}
+\index{setModel@{setModel}!OwlEngine::Skybox@{OwlEngine::Skybox}}
+\doxysubsubsection{\texorpdfstring{setModel()}{setModel()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Skybox\+::set\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_model3_d}{Model3D}} $\ast$}]{model }\end{DoxyParamCaption})}
+
+
+
+Setter for 3D model. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_skybox_ae4eeacd29e0d7dde6b323045f1487846}{set\+Model()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & a Model3\+D$\ast$ -\/ A pointer to the skybox model \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{skybox_8h}{skybox.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{skybox_8cpp}{skybox.\+cpp}}\end{DoxyCompactItemize}

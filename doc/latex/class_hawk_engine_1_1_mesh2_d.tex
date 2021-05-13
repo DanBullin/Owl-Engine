@@ -1,0 +1,179 @@
+\hypertarget{class_hawk_engine_1_1_mesh2_d}{}\doxysection{Hawk\+Engine\+::Mesh2D Class Reference}
+\label{class_hawk_engine_1_1_mesh2_d}\index{HawkEngine::Mesh2D@{HawkEngine::Mesh2D}}
+
+
+A 2D mesh class that contains all the vertices and indices.  
+
+
+
+
+{\ttfamily \#include $<$mesh2\+D.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_a27cc354795cf020623085eae75e8f8af}{Mesh2D}} (const std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex2_d}{Vertex2D}} $>$ \&vertices, const std\+::vector$<$ unsigned int $>$ \&indices)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_abbb02b93b0332e21365a86d2ff2b4f21}{$\sim$\+Mesh2D}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array}{Vertex\+Array}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_a611f072e08c98e5facd8a13a09fc5d1d}{get\+V\+AO}} () const
+\begin{DoxyCompactList}\small\item\em Get the V\+AO of this mesh. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_ad1f6b09992a593b1091d40083dc4bbc7}{get\+Indices\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the indices count. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex2_d}{Vertex2D}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_ae942c77f8549e5baf5aa4cd1ea6e2ed3}{get\+Vertices}} ()
+\begin{DoxyCompactList}\small\item\em Get the vertices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_a99fd3996a33e0c4e6e4e081fd75934e6}{submit\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Submit the geometry data to the buffers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_a81eae036882e6e15691effb7315c9039}{edit\+Data}} (const void $\ast$new\+Data, const uint32\+\_\+t size, const uint32\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Edit the geometry and update the G\+PU. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_a48d6de4130caf0332c9ae06992aaafd2}{draw}} ()
+\begin{DoxyCompactList}\small\item\em Draw the mesh. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_a2a8f9a8ab4b28501c5c277851c3a70cb}{draw}} (const uint32\+\_\+t draw\+Count)
+\begin{DoxyCompactList}\small\item\em Draw the mesh. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A 2D mesh class that contains all the vertices and indices. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh2_d_a27cc354795cf020623085eae75e8f8af}\label{class_hawk_engine_1_1_mesh2_d_a27cc354795cf020623085eae75e8f8af}} 
+\index{HawkEngine::Mesh2D@{HawkEngine::Mesh2D}!Mesh2D@{Mesh2D}}
+\index{Mesh2D@{Mesh2D}!HawkEngine::Mesh2D@{HawkEngine::Mesh2D}}
+\doxysubsubsection{\texorpdfstring{Mesh2D()}{Mesh2D()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Mesh2\+D\+::\+Mesh2D (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex2_d}{Vertex2D}} $>$ \&}]{vertices,  }\item[{const std\+::vector$<$ unsigned int $>$ \&}]{indices }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_a27cc354795cf020623085eae75e8f8af}{Mesh2\+D()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a const std\+::vector$<$\+Vertex2\+D$>$\& -\/ List of all the vertices \\
+\hline
+{\em indices} & a const std\+::vector$<$unsigned int$>$\& -\/ List of all the indices \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh2_d_abbb02b93b0332e21365a86d2ff2b4f21}\label{class_hawk_engine_1_1_mesh2_d_abbb02b93b0332e21365a86d2ff2b4f21}} 
+\index{HawkEngine::Mesh2D@{HawkEngine::Mesh2D}!````~Mesh2D@{$\sim$Mesh2D}}
+\index{````~Mesh2D@{$\sim$Mesh2D}!HawkEngine::Mesh2D@{HawkEngine::Mesh2D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mesh2D()}{~Mesh2D()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Mesh2\+D\+::$\sim$\+Mesh2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_abbb02b93b0332e21365a86d2ff2b4f21}{$\sim$\+Mesh2\+D()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh2_d_a48d6de4130caf0332c9ae06992aaafd2}\label{class_hawk_engine_1_1_mesh2_d_a48d6de4130caf0332c9ae06992aaafd2}} 
+\index{HawkEngine::Mesh2D@{HawkEngine::Mesh2D}!draw@{draw}}
+\index{draw@{draw}!HawkEngine::Mesh2D@{HawkEngine::Mesh2D}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Mesh2\+D\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw the mesh. 
+
+draw \mbox{\Hypertarget{class_hawk_engine_1_1_mesh2_d_a2a8f9a8ab4b28501c5c277851c3a70cb}\label{class_hawk_engine_1_1_mesh2_d_a2a8f9a8ab4b28501c5c277851c3a70cb}} 
+\index{HawkEngine::Mesh2D@{HawkEngine::Mesh2D}!draw@{draw}}
+\index{draw@{draw}!HawkEngine::Mesh2D@{HawkEngine::Mesh2D}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Mesh2\+D\+::draw (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{draw\+Count }\end{DoxyParamCaption})}
+
+
+
+Draw the mesh. 
+
+draw
+
+
+\begin{DoxyParams}{Parameters}
+{\em draw\+Count} & a const uint32\+\_\+t -\/ The number of indices \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh2_d_a81eae036882e6e15691effb7315c9039}\label{class_hawk_engine_1_1_mesh2_d_a81eae036882e6e15691effb7315c9039}} 
+\index{HawkEngine::Mesh2D@{HawkEngine::Mesh2D}!editData@{editData}}
+\index{editData@{editData}!HawkEngine::Mesh2D@{HawkEngine::Mesh2D}}
+\doxysubsubsection{\texorpdfstring{editData()}{editData()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Mesh2\+D\+::edit\+Data (\begin{DoxyParamCaption}\item[{const void $\ast$}]{new\+Data,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const uint32\+\_\+t}]{offset }\end{DoxyParamCaption})}
+
+
+
+Edit the geometry and update the G\+PU. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_a81eae036882e6e15691effb7315c9039}{edit\+Data()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Data} & a const void$\ast$ -\/The vertices info \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the new data \\
+\hline
+{\em offset} & a const int32\+\_\+t -\/ The offset of where to place the new data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh2_d_ad1f6b09992a593b1091d40083dc4bbc7}\label{class_hawk_engine_1_1_mesh2_d_ad1f6b09992a593b1091d40083dc4bbc7}} 
+\index{HawkEngine::Mesh2D@{HawkEngine::Mesh2D}!getIndicesCount@{getIndicesCount}}
+\index{getIndicesCount@{getIndicesCount}!HawkEngine::Mesh2D@{HawkEngine::Mesh2D}}
+\doxysubsubsection{\texorpdfstring{getIndicesCount()}{getIndicesCount()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Hawk\+Engine\+::\+Mesh2\+D\+::get\+Indices\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the indices count. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_ad1f6b09992a593b1091d40083dc4bbc7}{get\+Indices\+Count()}}
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The number of indices the mesh has 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh2_d_a611f072e08c98e5facd8a13a09fc5d1d}\label{class_hawk_engine_1_1_mesh2_d_a611f072e08c98e5facd8a13a09fc5d1d}} 
+\index{HawkEngine::Mesh2D@{HawkEngine::Mesh2D}!getVAO@{getVAO}}
+\index{getVAO@{getVAO}!HawkEngine::Mesh2D@{HawkEngine::Mesh2D}}
+\doxysubsubsection{\texorpdfstring{getVAO()}{getVAO()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array}{Vertex\+Array}} $>$ \& Hawk\+Engine\+::\+Mesh2\+D\+::get\+V\+AO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the V\+AO of this mesh. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_a611f072e08c98e5facd8a13a09fc5d1d}{get\+V\+A\+O()}}
+
+\begin{DoxyReturn}{Returns}
+a const Shared$<$\+Vertex\+Array$>$\& -\/ The V\+AO 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh2_d_ae942c77f8549e5baf5aa4cd1ea6e2ed3}\label{class_hawk_engine_1_1_mesh2_d_ae942c77f8549e5baf5aa4cd1ea6e2ed3}} 
+\index{HawkEngine::Mesh2D@{HawkEngine::Mesh2D}!getVertices@{getVertices}}
+\index{getVertices@{getVertices}!HawkEngine::Mesh2D@{HawkEngine::Mesh2D}}
+\doxysubsubsection{\texorpdfstring{getVertices()}{getVertices()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex2_d}{Vertex2D}} $>$ \& Hawk\+Engine\+::\+Mesh2\+D\+::get\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the vertices. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_ae942c77f8549e5baf5aa4cd1ea6e2ed3}{get\+Vertices()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Vertex2\+D$>$\& -\/ A reference to all the 2D vertices in the mesh 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh2_d_a99fd3996a33e0c4e6e4e081fd75934e6}\label{class_hawk_engine_1_1_mesh2_d_a99fd3996a33e0c4e6e4e081fd75934e6}} 
+\index{HawkEngine::Mesh2D@{HawkEngine::Mesh2D}!submitData@{submitData}}
+\index{submitData@{submitData}!HawkEngine::Mesh2D@{HawkEngine::Mesh2D}}
+\doxysubsubsection{\texorpdfstring{submitData()}{submitData()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Mesh2\+D\+::submit\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Submit the geometry data to the buffers. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d_a99fd3996a33e0c4e6e4e081fd75934e6}{submit\+Data()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/geometry/\mbox{\hyperlink{mesh2_d_8h}{mesh2\+D.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/geometry/mesh2\+D.\+cpp\end{DoxyCompactItemize}

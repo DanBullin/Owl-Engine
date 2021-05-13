@@ -1,0 +1,114 @@
+\hypertarget{class_hawk_engine_1_1_memory_utils}{}\doxysection{Hawk\+Engine\+::Memory\+Utils Class Reference}
+\label{class_hawk_engine_1_1_memory_utils}\index{HawkEngine::MemoryUtils@{HawkEngine::MemoryUtils}}
+
+
+An utility class to help with memory optimizations.  
+
+
+
+
+{\ttfamily \#include $<$memory\+Utils.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::array$<$ int16\+\_\+t, 3 $>$ \mbox{\hyperlink{class_hawk_engine_1_1_memory_utils_a9360f2738d2f3fc6f83e7981fc71d1dd}{normalise}} (const glm\+::vec3 \&data)
+\begin{DoxyCompactList}\small\item\em Normalise a glm\+::vec3 to short. \end{DoxyCompactList}\item 
+static std\+::array$<$ int16\+\_\+t, 2 $>$ \mbox{\hyperlink{class_hawk_engine_1_1_memory_utils_a0ba387d16412cb30d7bb02df3705fb30}{normalise}} (const glm\+::vec2 \&data)
+\begin{DoxyCompactList}\small\item\em Normalise a glm\+::vec2 to short. \end{DoxyCompactList}\item 
+static uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_memory_utils_a50e564b5b4aa602d8d61a482f4b35eff}{pack}} (const glm\+::vec4 \&data)
+\begin{DoxyCompactList}\small\item\em Pack a glm\+::vec4 into a uint32. \end{DoxyCompactList}\item 
+static uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_memory_utils_a1be2d53f3daf9a31561480e978efc4fc}{pack}} (const glm\+::vec3 \&data)
+\begin{DoxyCompactList}\small\item\em Pack a glm\+::vec3 into a uint32. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An utility class to help with memory optimizations. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_memory_utils_a0ba387d16412cb30d7bb02df3705fb30}\label{class_hawk_engine_1_1_memory_utils_a0ba387d16412cb30d7bb02df3705fb30}} 
+\index{HawkEngine::MemoryUtils@{HawkEngine::MemoryUtils}!normalise@{normalise}}
+\index{normalise@{normalise}!HawkEngine::MemoryUtils@{HawkEngine::MemoryUtils}}
+\doxysubsubsection{\texorpdfstring{normalise()}{normalise()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::array$<$ int16\+\_\+t, 2 $>$ Hawk\+Engine\+::\+Memory\+Utils\+::normalise (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Normalise a glm\+::vec2 to short. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_memory_utils_a9360f2738d2f3fc6f83e7981fc71d1dd}{normalise()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a const glm\+::vec2\& -\/ The data to normalise \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::array$<$int16\+\_\+t, 2$>$ -\/ The normalised data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_memory_utils_a9360f2738d2f3fc6f83e7981fc71d1dd}\label{class_hawk_engine_1_1_memory_utils_a9360f2738d2f3fc6f83e7981fc71d1dd}} 
+\index{HawkEngine::MemoryUtils@{HawkEngine::MemoryUtils}!normalise@{normalise}}
+\index{normalise@{normalise}!HawkEngine::MemoryUtils@{HawkEngine::MemoryUtils}}
+\doxysubsubsection{\texorpdfstring{normalise()}{normalise()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::array$<$ int16\+\_\+t, 3 $>$ Hawk\+Engine\+::\+Memory\+Utils\+::normalise (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Normalise a glm\+::vec3 to short. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_memory_utils_a9360f2738d2f3fc6f83e7981fc71d1dd}{normalise()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a const glm\+::vec3\& -\/ The data to normalise \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::array$<$int16\+\_\+t, 3$>$ -\/ The normalised data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_memory_utils_a1be2d53f3daf9a31561480e978efc4fc}\label{class_hawk_engine_1_1_memory_utils_a1be2d53f3daf9a31561480e978efc4fc}} 
+\index{HawkEngine::MemoryUtils@{HawkEngine::MemoryUtils}!pack@{pack}}
+\index{pack@{pack}!HawkEngine::MemoryUtils@{HawkEngine::MemoryUtils}}
+\doxysubsubsection{\texorpdfstring{pack()}{pack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t Hawk\+Engine\+::\+Memory\+Utils\+::pack (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pack a glm\+::vec3 into a uint32. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_memory_utils_a50e564b5b4aa602d8d61a482f4b35eff}{pack()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a const glm\+::vec3\& -\/ The data to pack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a uint32\+\_\+t -\/ The packed data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_memory_utils_a50e564b5b4aa602d8d61a482f4b35eff}\label{class_hawk_engine_1_1_memory_utils_a50e564b5b4aa602d8d61a482f4b35eff}} 
+\index{HawkEngine::MemoryUtils@{HawkEngine::MemoryUtils}!pack@{pack}}
+\index{pack@{pack}!HawkEngine::MemoryUtils@{HawkEngine::MemoryUtils}}
+\doxysubsubsection{\texorpdfstring{pack()}{pack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint32\+\_\+t Hawk\+Engine\+::\+Memory\+Utils\+::pack (\begin{DoxyParamCaption}\item[{const glm\+::vec4 \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pack a glm\+::vec4 into a uint32. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_memory_utils_a50e564b5b4aa602d8d61a482f4b35eff}{pack()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a const glm\+::vec4\& -\/ The data to pack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a uint32\+\_\+t -\/ The packed data 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/utils/\mbox{\hyperlink{memory_utils_8h}{memory\+Utils.\+h}}\item 
+C\+:/doc/src/src/independent/utils/\mbox{\hyperlink{memory_utils_8cpp}{memory\+Utils.\+cpp}}\end{DoxyCompactItemize}

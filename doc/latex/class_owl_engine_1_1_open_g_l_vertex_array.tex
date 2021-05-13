@@ -1,0 +1,182 @@
+\hypertarget{class_owl_engine_1_1_open_g_l_vertex_array}{}\doxysection{Owl\+Engine\+::Open\+G\+L\+Vertex\+Array Class Reference}
+\label{class_owl_engine_1_1_open_g_l_vertex_array}\index{OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}}
+
+
+An Open\+GL vertex array object.  
+
+
+
+
+{\ttfamily \#include $<$open\+G\+L\+Vertex\+Array.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Open\+G\+L\+Vertex\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_owl_engine_1_1_open_g_l_vertex_array}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_a5532b29813cb04da8a7f791ce6784242}{Open\+G\+L\+Vertex\+Array}} (const std\+::string \&vertex\+Array\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_a440b4f970b6f477e350d1f5201669ee8}{$\sim$\+Open\+G\+L\+Vertex\+Array}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_afac86a4a1acb1a1a7ddf03c90c013ab3}{add\+Vertex\+Buffer}} (\mbox{\hyperlink{class_owl_engine_1_1_vertex_buffer}{Vertex\+Buffer}} $\ast$vertex\+Buffer) override
+\begin{DoxyCompactList}\small\item\em Add vertex buffer to array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_af05bd6280974ff7f91602a75945335ea}{set\+Index\+Buffer}} (\mbox{\hyperlink{class_owl_engine_1_1_index_buffer}{Index\+Buffer}} $\ast$index\+Buffer) override
+\begin{DoxyCompactList}\small\item\em Set the index buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_ab53359afe719eafc432ce79e80fbd55d}{bind}} () override
+\begin{DoxyCompactList}\small\item\em Bind the V\+AO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_aceb8488058b61e2420215d26947341bf}{unbind}} () override
+\begin{DoxyCompactList}\small\item\em Unbind the V\+AO. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_af30cad221fbd4f06c922d9eddb7c9832}{index\+Buffer\+Bound\+To\+Array}} () override
+\begin{DoxyCompactList}\small\item\em Check if the index buffer set is correctly bound to the array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_a5df790c4121f31d6fa6587760318ef4f}{print\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An Open\+GL vertex array object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_array_a5532b29813cb04da8a7f791ce6784242}\label{class_owl_engine_1_1_open_g_l_vertex_array_a5532b29813cb04da8a7f791ce6784242}} 
+\index{OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}!OpenGLVertexArray@{OpenGLVertexArray}}
+\index{OpenGLVertexArray@{OpenGLVertexArray}!OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}}
+\doxysubsubsection{\texorpdfstring{OpenGLVertexArray()}{OpenGLVertexArray()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Array\+::\+Open\+G\+L\+Vertex\+Array (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{vertex\+Array\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_a5532b29813cb04da8a7f791ce6784242}{Open\+G\+L\+Vertex\+Array()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Array\+Name} & a const std\+::string\& -\/ The name of the vertex array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_array_a440b4f970b6f477e350d1f5201669ee8}\label{class_owl_engine_1_1_open_g_l_vertex_array_a440b4f970b6f477e350d1f5201669ee8}} 
+\index{OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}!````~OpenGLVertexArray@{$\sim$OpenGLVertexArray}}
+\index{````~OpenGLVertexArray@{$\sim$OpenGLVertexArray}!OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}}
+\doxysubsubsection{\texorpdfstring{$\sim$OpenGLVertexArray()}{~OpenGLVertexArray()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Array\+::$\sim$\+Open\+G\+L\+Vertex\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_a440b4f970b6f477e350d1f5201669ee8}{$\sim$\+Open\+G\+L\+Vertex\+Array()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_array_afac86a4a1acb1a1a7ddf03c90c013ab3}\label{class_owl_engine_1_1_open_g_l_vertex_array_afac86a4a1acb1a1a7ddf03c90c013ab3}} 
+\index{OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}!addVertexBuffer@{addVertexBuffer}}
+\index{addVertexBuffer@{addVertexBuffer}!OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}}
+\doxysubsubsection{\texorpdfstring{addVertexBuffer()}{addVertexBuffer()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Array\+::add\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_vertex_buffer}{Vertex\+Buffer}} $\ast$}]{vertex\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add vertex buffer to array. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_afac86a4a1acb1a1a7ddf03c90c013ab3}{add\+Vertex\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Buffer} & a Vertex\+Buffer$\ast$ -\/ The vertex buffer to add to the array \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_vertex_array_a89fee4e6182bc7225789bf7241cecc3f}{Owl\+Engine\+::\+Vertex\+Array}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_array_ab53359afe719eafc432ce79e80fbd55d}\label{class_owl_engine_1_1_open_g_l_vertex_array_ab53359afe719eafc432ce79e80fbd55d}} 
+\index{OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}!bind@{bind}}
+\index{bind@{bind}!OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Array\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Bind the V\+AO. 
+
+bind 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_vertex_array_af8d7bbaefef190ac0cc0ad252caaea30}{Owl\+Engine\+::\+Vertex\+Array}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_array_af30cad221fbd4f06c922d9eddb7c9832}\label{class_owl_engine_1_1_open_g_l_vertex_array_af30cad221fbd4f06c922d9eddb7c9832}} 
+\index{OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}!indexBufferBoundToArray@{indexBufferBoundToArray}}
+\index{indexBufferBoundToArray@{indexBufferBoundToArray}!OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}}
+\doxysubsubsection{\texorpdfstring{indexBufferBoundToArray()}{indexBufferBoundToArray()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Array\+::index\+Buffer\+Bound\+To\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the index buffer set is correctly bound to the array. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_af30cad221fbd4f06c922d9eddb7c9832}{index\+Buffer\+Bound\+To\+Array()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is the index buffer correctly bound to this V\+AO 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_vertex_array_aa3e6b175b56f7aa316c04036b99bc1da}{Owl\+Engine\+::\+Vertex\+Array}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_array_a5df790c4121f31d6fa6587760318ef4f}\label{class_owl_engine_1_1_open_g_l_vertex_array_a5df790c4121f31d6fa6587760318ef4f}} 
+\index{OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}!printDetails@{printDetails}}
+\index{printDetails@{printDetails}!OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}}
+\doxysubsubsection{\texorpdfstring{printDetails()}{printDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Array\+::print\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print the resource details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_a5df790c4121f31d6fa6587760318ef4f}{print\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_vertex_array_ab6fbbc09a110568c3fddd6f774a0e8e7}{Owl\+Engine\+::\+Vertex\+Array}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_array_af05bd6280974ff7f91602a75945335ea}\label{class_owl_engine_1_1_open_g_l_vertex_array_af05bd6280974ff7f91602a75945335ea}} 
+\index{OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}!setIndexBuffer@{setIndexBuffer}}
+\index{setIndexBuffer@{setIndexBuffer}!OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}}
+\doxysubsubsection{\texorpdfstring{setIndexBuffer()}{setIndexBuffer()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Array\+::set\+Index\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_index_buffer}{Index\+Buffer}} $\ast$}]{index\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the index buffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_array_af05bd6280974ff7f91602a75945335ea}{set\+Index\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Buffer} & an Index\+Buffer$\ast$ -\/ The index buffer to set \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_vertex_array_a39104e77279b4e39dd66beff80a43603}{Owl\+Engine\+::\+Vertex\+Array}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_array_aceb8488058b61e2420215d26947341bf}\label{class_owl_engine_1_1_open_g_l_vertex_array_aceb8488058b61e2420215d26947341bf}} 
+\index{OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}!unbind@{unbind}}
+\index{unbind@{unbind}!OwlEngine::OpenGLVertexArray@{OwlEngine::OpenGLVertexArray}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Array\+::unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Unbind the V\+AO. 
+
+unbind 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_vertex_array_aa85ece3ce0cb2b7b55b81751685865d9}{Owl\+Engine\+::\+Vertex\+Array}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/platform/\+Open\+G\+L/geometry/\mbox{\hyperlink{open_g_l_vertex_array_8h}{open\+G\+L\+Vertex\+Array.\+h}}\item 
+C\+:/doc/src/engine/src/platform/\+Open\+G\+L/geometry/\mbox{\hyperlink{open_g_l_vertex_array_8cpp}{open\+G\+L\+Vertex\+Array.\+cpp}}\end{DoxyCompactItemize}

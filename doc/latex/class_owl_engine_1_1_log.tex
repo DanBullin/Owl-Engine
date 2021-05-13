@@ -1,0 +1,260 @@
+\hypertarget{class_owl_engine_1_1_log}{}\doxysection{Owl\+Engine\+::Log Class Reference}
+\label{class_owl_engine_1_1_log}\index{OwlEngine::Log@{OwlEngine::Log}}
+
+
+A log class using spdlog which prints information to various outputs (Console, file, etc)  
+
+
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Log\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_log}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_log_a04c2e28547ea04947f17674e2e5e80b0}{Log}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_log_a1f803e90b87adf0eb44e43521b0a4a79}{$\sim$\+Log}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_log_abbcb319f8a6ca97caa944eb94e2a8c0d}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the logger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_log_ab2b74bea762f8212d9039fb51a712749}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the logger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_log_a6d65ea769ecee03f4b2935e70c03f4c3}{enable\+File\+Logging}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable the file logging. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a877bf393c85b58375e757a3071c19bd6}\label{class_owl_engine_1_1_log_a877bf393c85b58375e757a3071c19bd6}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a877bf393c85b58375e757a3071c19bd6}{info}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print info to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a14c504c09055b924ff26bacca4d94f46}\label{class_owl_engine_1_1_log_a14c504c09055b924ff26bacca4d94f46}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a14c504c09055b924ff26bacca4d94f46}{trace}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print a trace message to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a1653245e8f6d139378676bccbc6bb102}\label{class_owl_engine_1_1_log_a1653245e8f6d139378676bccbc6bb102}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a1653245e8f6d139378676bccbc6bb102}{warn}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print a warn message to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a5a0806517b82ae6470669e21b9f58417}\label{class_owl_engine_1_1_log_a5a0806517b82ae6470669e21b9f58417}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a5a0806517b82ae6470669e21b9f58417}{debug}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print a debug message to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a72acd9674ae2d2e987ec12dc1d6e15ab}\label{class_owl_engine_1_1_log_a72acd9674ae2d2e987ec12dc1d6e15ab}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a72acd9674ae2d2e987ec12dc1d6e15ab}{error}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print an error message to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_log_abe16cc6a4c32c34bb24d97f1198e3d51}\label{class_owl_engine_1_1_log_abe16cc6a4c32c34bb24d97f1198e3d51}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_abe16cc6a4c32c34bb24d97f1198e3d51}{release}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print a trace message in release mode to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a4ba076cea4c0ee60ee873f98a5fa7da2}\label{class_owl_engine_1_1_log_a4ba076cea4c0ee60ee873f98a5fa7da2}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a4ba076cea4c0ee60ee873f98a5fa7da2}{file}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print information to the log files. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a5a0806517b82ae6470669e21b9f58417}{debug}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_log_a5a0806517b82ae6470669e21b9f58417}{debug()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a72acd9674ae2d2e987ec12dc1d6e15ab}{error}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_log_a72acd9674ae2d2e987ec12dc1d6e15ab}{error()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a877bf393c85b58375e757a3071c19bd6}{info}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_log_a877bf393c85b58375e757a3071c19bd6}{info()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a14c504c09055b924ff26bacca4d94f46}{trace}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_log_a14c504c09055b924ff26bacca4d94f46}{trace()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a1653245e8f6d139378676bccbc6bb102}{warn}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_log_a1653245e8f6d139378676bccbc6bb102}{warn()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_abe16cc6a4c32c34bb24d97f1198e3d51}{release}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_log_abe16cc6a4c32c34bb24d97f1198e3d51}{release()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_log_a4ba076cea4c0ee60ee873f98a5fa7da2}{file}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_log_a4ba076cea4c0ee60ee873f98a5fa7da2}{file()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A log class using spdlog which prints information to various outputs (Console, file, etc) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a04c2e28547ea04947f17674e2e5e80b0}\label{class_owl_engine_1_1_log_a04c2e28547ea04947f17674e2e5e80b0}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!Log@{Log}}
+\index{Log@{Log}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{Log()}{Log()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Log\+::\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_a04c2e28547ea04947f17674e2e5e80b0}{Log()}} \mbox{\Hypertarget{class_owl_engine_1_1_log_a1f803e90b87adf0eb44e43521b0a4a79}\label{class_owl_engine_1_1_log_a1f803e90b87adf0eb44e43521b0a4a79}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!````~Log@{$\sim$Log}}
+\index{````~Log@{$\sim$Log}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{$\sim$Log()}{~Log()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Log\+::$\sim$\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_a1f803e90b87adf0eb44e43521b0a4a79}{$\sim$\+Log()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a5a0806517b82ae6470669e21b9f58417}\label{class_owl_engine_1_1_log_a5a0806517b82ae6470669e21b9f58417}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!debug@{debug}}
+\index{debug@{debug}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Owl\+Engine\+::\+Log\+::debug (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_a5a0806517b82ae6470669e21b9f58417}{debug()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a6d65ea769ecee03f4b2935e70c03f4c3}\label{class_owl_engine_1_1_log_a6d65ea769ecee03f4b2935e70c03f4c3}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!enableFileLogging@{enableFileLogging}}
+\index{enableFileLogging@{enableFileLogging}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{enableFileLogging()}{enableFileLogging()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Log\+::enable\+File\+Logging (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})}
+
+
+
+Enable/\+Disable the file logging. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_a6d65ea769ecee03f4b2935e70c03f4c3}{enable\+File\+Logging()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a const bool -\/ Enable/\+Disable the file logging \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a72acd9674ae2d2e987ec12dc1d6e15ab}\label{class_owl_engine_1_1_log_a72acd9674ae2d2e987ec12dc1d6e15ab}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!error@{error}}
+\index{error@{error}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Owl\+Engine\+::\+Log\+::error (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_a72acd9674ae2d2e987ec12dc1d6e15ab}{error()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a4ba076cea4c0ee60ee873f98a5fa7da2}\label{class_owl_engine_1_1_log_a4ba076cea4c0ee60ee873f98a5fa7da2}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!file@{file}}
+\index{file@{file}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{file()}{file()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Owl\+Engine\+::\+Log\+::file (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_a4ba076cea4c0ee60ee873f98a5fa7da2}{file()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a877bf393c85b58375e757a3071c19bd6}\label{class_owl_engine_1_1_log_a877bf393c85b58375e757a3071c19bd6}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!info@{info}}
+\index{info@{info}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Owl\+Engine\+::\+Log\+::info (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_a877bf393c85b58375e757a3071c19bd6}{info()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_log_abe16cc6a4c32c34bb24d97f1198e3d51}\label{class_owl_engine_1_1_log_abe16cc6a4c32c34bb24d97f1198e3d51}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!release@{release}}
+\index{release@{release}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Owl\+Engine\+::\+Log\+::release (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_abe16cc6a4c32c34bb24d97f1198e3d51}{release()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_log_abbcb319f8a6ca97caa944eb94e2a8c0d}\label{class_owl_engine_1_1_log_abbcb319f8a6ca97caa944eb94e2a8c0d}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!start@{start}}
+\index{start@{start}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Log\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the logger. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_abbcb319f8a6ca97caa944eb94e2a8c0d}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_log_ab2b74bea762f8212d9039fb51a712749}\label{class_owl_engine_1_1_log_ab2b74bea762f8212d9039fb51a712749}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Log\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the logger. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_ab2b74bea762f8212d9039fb51a712749}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a14c504c09055b924ff26bacca4d94f46}\label{class_owl_engine_1_1_log_a14c504c09055b924ff26bacca4d94f46}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!trace@{trace}}
+\index{trace@{trace}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Owl\+Engine\+::\+Log\+::trace (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_a14c504c09055b924ff26bacca4d94f46}{trace()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_log_a1653245e8f6d139378676bccbc6bb102}\label{class_owl_engine_1_1_log_a1653245e8f6d139378676bccbc6bb102}} 
+\index{OwlEngine::Log@{OwlEngine::Log}!warn@{warn}}
+\index{warn@{warn}!OwlEngine::Log@{OwlEngine::Log}}
+\doxysubsubsection{\texorpdfstring{warn()}{warn()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Owl\+Engine\+::\+Log\+::warn (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_log_a1653245e8f6d139378676bccbc6bb102}{warn()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{log_8h}{log.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/log.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,203 @@
+\hypertarget{class_owl_engine_1_1_studio_sound}{}\doxysection{Owl\+Engine\+::Studio\+Sound Class Reference}
+\label{class_owl_engine_1_1_studio_sound}\index{OwlEngine::StudioSound@{OwlEngine::StudioSound}}
+
+
+A studio sound object.  
+
+
+
+
+{\ttfamily \#include $<$sound.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Studio\+Sound\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_studio_sound}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_a25c16b69def7fa1a91dfb9b9692ec400}{Studio\+Sound}} (const std\+::string \&str\+Event\+Name, glm\+::vec3 \&velocity)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_aabbe8c7187a5c4537d87d6fda47a888b}{$\sim$\+Studio\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_studio_sound_adb56ff7b73a45780403e5bda2fdd9442}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_studio_sound_a5b9cc426650a4c92b0a42c02bd76a244}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_studio_sound_a816de74d5f6a569e92adfc75e52d843f}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the studio sound component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_studio_sound_af2ab87733b7c808014d5007c360a2b04}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_studio_sound_aaae28420b3955cd34e363aa2d1a1daf8}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data as J\+S\+ON for saving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_studio_sound_ad9a207cbce57cea26fbd0d1b30945409}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data displayed in Im\+Gui form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_studio_sound_a6a94af6d4dabccb77fd7b82fa510c4d8}{play\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Gets event name and plays sound file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_studio_sound_aa449c3adf1d3cbc821cdaa927936038a}{stop\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Gets event name and stops sound file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A studio sound object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_studio_sound_a25c16b69def7fa1a91dfb9b9692ec400}\label{class_owl_engine_1_1_studio_sound_a25c16b69def7fa1a91dfb9b9692ec400}} 
+\index{OwlEngine::StudioSound@{OwlEngine::StudioSound}!StudioSound@{StudioSound}}
+\index{StudioSound@{StudioSound}!OwlEngine::StudioSound@{OwlEngine::StudioSound}}
+\doxysubsubsection{\texorpdfstring{StudioSound()}{StudioSound()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Studio\+Sound\+::\+Studio\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Event\+Name,  }\item[{glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_a25c16b69def7fa1a91dfb9b9692ec400}{Studio\+Sound()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Event\+Name} & a const std\+::string\& -\/ A reference the \mbox{\hyperlink{class_owl_engine_1_1_event}{Event}} name \\
+\hline
+{\em velocity} & a glm\+::vec3\& -\/ A reference to the event\textquotesingle{}s velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_studio_sound_aabbe8c7187a5c4537d87d6fda47a888b}\label{class_owl_engine_1_1_studio_sound_aabbe8c7187a5c4537d87d6fda47a888b}} 
+\index{OwlEngine::StudioSound@{OwlEngine::StudioSound}!````~StudioSound@{$\sim$StudioSound}}
+\index{````~StudioSound@{$\sim$StudioSound}!OwlEngine::StudioSound@{OwlEngine::StudioSound}}
+\doxysubsubsection{\texorpdfstring{$\sim$StudioSound()}{~StudioSound()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Studio\+Sound\+::$\sim$\+Studio\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_aabbe8c7187a5c4537d87d6fda47a888b}{$\sim$\+Studio\+Sound()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_studio_sound_ad9a207cbce57cea26fbd0d1b30945409}\label{class_owl_engine_1_1_studio_sound_ad9a207cbce57cea26fbd0d1b30945409}} 
+\index{OwlEngine::StudioSound@{OwlEngine::StudioSound}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::StudioSound@{OwlEngine::StudioSound}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Studio\+Sound\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data displayed in Im\+Gui form. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_ad9a207cbce57cea26fbd0d1b30945409}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_studio_sound_aaae28420b3955cd34e363aa2d1a1daf8}\label{class_owl_engine_1_1_studio_sound_aaae28420b3955cd34e363aa2d1a1daf8}} 
+\index{OwlEngine::StudioSound@{OwlEngine::StudioSound}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::StudioSound@{OwlEngine::StudioSound}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Studio\+Sound\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data as J\+S\+ON for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_aaae28420b3955cd34e363aa2d1a1daf8}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_studio_sound_adb56ff7b73a45780403e5bda2fdd9442}\label{class_owl_engine_1_1_studio_sound_adb56ff7b73a45780403e5bda2fdd9442}} 
+\index{OwlEngine::StudioSound@{OwlEngine::StudioSound}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::StudioSound@{OwlEngine::StudioSound}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Studio\+Sound\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_adb56ff7b73a45780403e5bda2fdd9442}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_studio_sound_a5b9cc426650a4c92b0a42c02bd76a244}\label{class_owl_engine_1_1_studio_sound_a5b9cc426650a4c92b0a42c02bd76a244}} 
+\index{OwlEngine::StudioSound@{OwlEngine::StudioSound}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::StudioSound@{OwlEngine::StudioSound}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Studio\+Sound\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_a5b9cc426650a4c92b0a42c02bd76a244}{on\+Detach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_studio_sound_a816de74d5f6a569e92adfc75e52d843f}\label{class_owl_engine_1_1_studio_sound_a816de74d5f6a569e92adfc75e52d843f}} 
+\index{OwlEngine::StudioSound@{OwlEngine::StudioSound}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::StudioSound@{OwlEngine::StudioSound}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Studio\+Sound\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the studio sound component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_a816de74d5f6a569e92adfc75e52d843f}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_studio_sound_a6a94af6d4dabccb77fd7b82fa510c4d8}\label{class_owl_engine_1_1_studio_sound_a6a94af6d4dabccb77fd7b82fa510c4d8}} 
+\index{OwlEngine::StudioSound@{OwlEngine::StudioSound}!playSound@{playSound}}
+\index{playSound@{playSound}!OwlEngine::StudioSound@{OwlEngine::StudioSound}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Studio\+Sound\+::play\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets event name and plays sound file. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_a6a94af6d4dabccb77fd7b82fa510c4d8}{play\+Sound()}} \mbox{\Hypertarget{class_owl_engine_1_1_studio_sound_af2ab87733b7c808014d5007c360a2b04}\label{class_owl_engine_1_1_studio_sound_af2ab87733b7c808014d5007c360a2b04}} 
+\index{OwlEngine::StudioSound@{OwlEngine::StudioSound}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::StudioSound@{OwlEngine::StudioSound}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Studio\+Sound\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_af2ab87733b7c808014d5007c360a2b04}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_studio_sound_aa449c3adf1d3cbc821cdaa927936038a}\label{class_owl_engine_1_1_studio_sound_aa449c3adf1d3cbc821cdaa927936038a}} 
+\index{OwlEngine::StudioSound@{OwlEngine::StudioSound}!stopSound@{stopSound}}
+\index{stopSound@{stopSound}!OwlEngine::StudioSound@{OwlEngine::StudioSound}}
+\doxysubsubsection{\texorpdfstring{stopSound()}{stopSound()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Studio\+Sound\+::stop\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets event name and stops sound file. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_studio_sound_aa449c3adf1d3cbc821cdaa927936038a}{stop\+Sound()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{sound_8h}{sound.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{sound_8cpp}{sound.\+cpp}}\end{DoxyCompactItemize}

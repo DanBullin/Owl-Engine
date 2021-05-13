@@ -1,0 +1,104 @@
+\hypertarget{class_owl_engine_1_1_first_pass}{}\doxysection{Owl\+Engine\+::First\+Pass Class Reference}
+\label{class_owl_engine_1_1_first_pass}\index{OwlEngine::FirstPass@{OwlEngine::FirstPass}}
+
+
+A first render pass.  
+
+
+
+
+{\ttfamily \#include $<$first\+Pass.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::First\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_first_pass}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_first_pass_ac730f3c0193d20b03a46f382a468f399}{First\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_first_pass_a1c06a9a101801594e5a50bb30f59c8a5}{$\sim$\+First\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_first_pass_a97b2e302d3888eee62a67ccae083593a}{on\+Render}} (std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \&entities) override
+\begin{DoxyCompactList}\small\item\em The rendering to perform for this pass. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_first_pass_aa9bd3d9ea6035d697f96256301d362c9}{get\+Frame\+Buffer}} () override
+\begin{DoxyCompactList}\small\item\em Get the framebuffer of this render pass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A first render pass. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_first_pass_ac730f3c0193d20b03a46f382a468f399}\label{class_owl_engine_1_1_first_pass_ac730f3c0193d20b03a46f382a468f399}} 
+\index{OwlEngine::FirstPass@{OwlEngine::FirstPass}!FirstPass@{FirstPass}}
+\index{FirstPass@{FirstPass}!OwlEngine::FirstPass@{OwlEngine::FirstPass}}
+\doxysubsubsection{\texorpdfstring{FirstPass()}{FirstPass()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+First\+Pass\+::\+First\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_first_pass_ac730f3c0193d20b03a46f382a468f399}{First\+Pass()}} \mbox{\Hypertarget{class_owl_engine_1_1_first_pass_a1c06a9a101801594e5a50bb30f59c8a5}\label{class_owl_engine_1_1_first_pass_a1c06a9a101801594e5a50bb30f59c8a5}} 
+\index{OwlEngine::FirstPass@{OwlEngine::FirstPass}!````~FirstPass@{$\sim$FirstPass}}
+\index{````~FirstPass@{$\sim$FirstPass}!OwlEngine::FirstPass@{OwlEngine::FirstPass}}
+\doxysubsubsection{\texorpdfstring{$\sim$FirstPass()}{~FirstPass()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+First\+Pass\+::$\sim$\+First\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_first_pass_a1c06a9a101801594e5a50bb30f59c8a5}{$\sim$\+First\+Pass()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_first_pass_aa9bd3d9ea6035d697f96256301d362c9}\label{class_owl_engine_1_1_first_pass_aa9bd3d9ea6035d697f96256301d362c9}} 
+\index{OwlEngine::FirstPass@{OwlEngine::FirstPass}!getFrameBuffer@{getFrameBuffer}}
+\index{getFrameBuffer@{getFrameBuffer}!OwlEngine::FirstPass@{OwlEngine::FirstPass}}
+\doxysubsubsection{\texorpdfstring{getFrameBuffer()}{getFrameBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ Owl\+Engine\+::\+First\+Pass\+::get\+Frame\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the framebuffer of this render pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_first_pass_aa9bd3d9ea6035d697f96256301d362c9}{get\+Frame\+Buffer()}}
+
+\begin{DoxyReturn}{Returns}
+a Frame\+Buffer$\ast$ -\/ The framebuffer 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a3589ca78070a8173282ea6890d592103}{Owl\+Engine\+::\+Render\+Pass}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_first_pass_a97b2e302d3888eee62a67ccae083593a}\label{class_owl_engine_1_1_first_pass_a97b2e302d3888eee62a67ccae083593a}} 
+\index{OwlEngine::FirstPass@{OwlEngine::FirstPass}!onRender@{onRender}}
+\index{onRender@{onRender}!OwlEngine::FirstPass@{OwlEngine::FirstPass}}
+\doxysubsubsection{\texorpdfstring{onRender()}{onRender()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+First\+Pass\+::on\+Render (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \&}]{entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+The rendering to perform for this pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_first_pass_a97b2e302d3888eee62a67ccae083593a}{on\+Render()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & a std\+::vector$<$\+Entity$\ast$$>$\& -\/ The list of entities to render \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_render_pass_ace743fe2847d4a4521eb5308d9d2bcd3}{Owl\+Engine\+::\+Render\+Pass}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/render\+Passes/passes/\mbox{\hyperlink{first_pass_8h}{first\+Pass.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/render\+Passes/passes/\mbox{\hyperlink{first_pass_8cpp}{first\+Pass.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,747 @@
+\hypertarget{class_owl_engine_1_1_scene}{}\doxysection{Owl\+Engine\+::Scene Class Reference}
+\label{class_owl_engine_1_1_scene}\index{OwlEngine::Scene@{OwlEngine::Scene}}
+
+
+A scene class which contains all entities and world data.  
+
+
+
+
+{\ttfamily \#include $<$scene.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Scene\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_scene}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_scene_ade911bf1c661234237122a9e164457a1}{Scene}} (const std\+::string \&name, const std\+::string \&scene\+Folder\+Path)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a708e7d6bb75d8c34706a7233675f4415}{$\sim$\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_scene_a90171334e958924040e9b32e2005b268}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the scene. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_scene_aa77aac16ed90448931af6c80dba65919}{get\+Folder\+Path}} ()
+\begin{DoxyCompactList}\small\item\em Get the file path to the scene folder. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_aceb5b5f8ca747cd10e4273b61e99187f}{on\+Update}} (const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Update the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_ac9dc929830cc3891910212cd7f1a7a22}{add\+Entity}} (const std\+::string \&name, \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$entity)
+\begin{DoxyCompactList}\small\item\em Add an entity to the scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_scene_a365150f420d34b2262a1676124a73a16}{get\+Entity}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Get an entity in the scene (Doesn\textquotesingle{}t include children, you must follow the tree structure) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_scene_aa9afa731a5178018a11760c05ccb8414}{get\+Entity}} (const uint32\+\_\+t unique\+ID)
+\begin{DoxyCompactList}\small\item\em Get an entity in the scene (Includes children) \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_scene_a0cf12493a4882cc75b501a673f7025cf}{get\+Root\+Entities}} () const
+\begin{DoxyCompactList}\small\item\em Get only the root entities of the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_a8fd37b134565bd41b417323e2d0ec864}{clean\+Root}} (std\+::string name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_scene_a8fd37b134565bd41b417323e2d0ec864}{clean\+Root()}} \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_scene_a577b96d510a72723263796e3bf09bd27}{get\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em Checks if root entities have parents and removes those that do (user can specify singular entities to act upon) \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_point_light}{Point\+Light}} $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_scene_aa29c064be5be049a5b843bbc25f2f71b}{get\+Closest\+Point\+Lights}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of the closest point lights. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_spot_light}{Spot\+Light}} $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_scene_ad77fe21559726735f8c2cd6f648a3ab1}{get\+Closest\+Spot\+Lights}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of the closest spot lights. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_directional_light}{Directional\+Light}} $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_scene_a8f907f6c43acb4d3e9216a5bb0ecad58}{get\+Closest\+Directional\+Lights}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of the closest directional lights. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_scene_a5489fa497f7aa05cebd5c6897fe16cdf}{check\+Root\+Entity\+Name\+Taken}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Returns whether the entity name has been taken. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_a99efd24e88623ae246bb416a1b72dd4f}{set\+Main\+Camera}} (\mbox{\hyperlink{class_owl_engine_1_1_camera}{Camera}} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Set the main camera. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_camera}{Camera}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_scene_a0c1cde382d08251219cf32ee02296a00}{get\+Main\+Camera}} () const
+\begin{DoxyCompactList}\small\item\em Get the main camera. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager}{Layer\+Manager}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_scene_acfe5a596d49d21a6bb7fce4aaafa66a5}{get\+Layer\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Get the layer manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_a03779fa6f35a7c8fb12fdacf66872c3f}{add\+Render\+Pass}} (\mbox{\hyperlink{class_owl_engine_1_1_render_pass}{Render\+Pass}} $\ast$pass)
+\begin{DoxyCompactList}\small\item\em Add a render pass to the list of passes. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_render_pass}{Render\+Pass}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_scene_adec91677fa6b409ac132658f54b9020d}{get\+Render\+Passes}} ()
+\begin{DoxyCompactList}\small\item\em Get the list of render passes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_render_pass}{Render\+Pass}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_scene_ad93ca52530e3403885ca53c16743f4b2}{get\+Render\+Pass}} (const uint32\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get the render pass at index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_scene_ab3dbd6892bfc19eef13382f542e7263a}{get\+Final\+Frame\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Get the final framebuffer in the list of passes for this scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_a192ee3dd39dff4ff71eafd7869fd06e7}{enable\+Inspector}} (const bool value)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable the inspector. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_scene_a08f6e5634f12848a989e194a9261d263}{get\+Inspector\+Enabled}} ()
+\begin{DoxyCompactList}\small\item\em Get whether the inspector is enabled. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_scene_a4291e2a44af1cfb080a013653bc8ab6c}{get\+Refresh\+Inspector}} (bool reset)
+\begin{DoxyCompactList}\small\item\em Check whether the inspector needs to refresh. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_ab001ec92c35b9f5b5cd6cc32fbd55ce7}{set\+View\+Port}} (glm\+::ivec2 value)
+\begin{DoxyCompactList}\small\item\em Set the viewport to be a certain size. \end{DoxyCompactList}\item 
+const glm\+::ivec2 \mbox{\hyperlink{class_owl_engine_1_1_scene_aeec9489ed79dbaa80433c66fecf2870a}{get\+View\+Port}} ()
+\begin{DoxyCompactList}\small\item\em Get the size of the viewport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_a2efaff6911dd3326ff54a59e598d63b2}{set\+View\+Pos}} (glm\+::vec2 value)
+\begin{DoxyCompactList}\small\item\em Set the position of the scene view. \end{DoxyCompactList}\item 
+const glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_scene_a1e5639dd33576e0dd18180d03727ad13}{get\+View\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Get the position of the scene view. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_aea4f2cb0629b5b2c4de253e7f371fcc5}{set\+Entity\+List\+Updated}} (const bool value)
+\begin{DoxyCompactList}\small\item\em Confirm whether the entities in the scene have been updated. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_scene_aba7ef584e391584c2b1fe613a8e1efa6}{get\+Entity\+List\+Updated}} ()
+\begin{DoxyCompactList}\small\item\em Get whether the entities have been updated. \end{DoxyCompactList}\item 
+rp3d\+::\+Physics\+World $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_scene_af2981681894dad7de35a902f31d8e893}{get\+Physics\+World}} ()
+\begin{DoxyCompactList}\small\item\em Get the scene\textquotesingle{}s physics world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_a8f71fc2b3717e8b548154efd782342a5}{add\+Physics\+World}} ()
+\begin{DoxyCompactList}\small\item\em Add the scene\textquotesingle{}s physics world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_aa915b80a951d97b1b07b46f83e3db40f}{increase\+Next\+Entity\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Increase the unique ID by 1 for the next entity. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_scene_a48587c529820f2f70fa7621d440de42a}{get\+Unique\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get the next unique ID for an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_adb1fb4780bd581eb607efef4aee07800}{set\+Time\+Scale}} (float time\+Scale)
+\begin{DoxyCompactList}\small\item\em Sets how fast the time runs in the scene. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_scene_ad8b1952f869dc24d18ff6b74070dfbc1}{get\+Time\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Gets the time\+Scale (how fast time runs in the scene) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_a6ecff248b9721778f1f8e9cd43692d55}{set\+Physics\+Paused}} (bool paused)
+\begin{DoxyCompactList}\small\item\em Sets whether physics is paused or not. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_scene_a142addcbbe5bae7b15b9fec60ead7c9d}{get\+Physics\+Paused}} ()
+\begin{DoxyCompactList}\small\item\em Gets whether physics is paused or not. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_aca1fcc9a5e680e1cf4fa0a5cdfc86250}{print\+Scene\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print scene details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A scene class which contains all entities and world data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_ade911bf1c661234237122a9e164457a1}\label{class_owl_engine_1_1_scene_ade911bf1c661234237122a9e164457a1}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Scene\+::\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const std\+::string \&}]{scene\+Folder\+Path }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_ade911bf1c661234237122a9e164457a1}{Scene()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const std\+::string\& -\/ The name of the scene \\
+\hline
+{\em scene\+Folder\+Path} & a const std\+::string\& -\/ The file path to the folder of the scene \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a708e7d6bb75d8c34706a7233675f4415}\label{class_owl_engine_1_1_scene_a708e7d6bb75d8c34706a7233675f4415}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!````~Scene@{$\sim$Scene}}
+\index{````~Scene@{$\sim$Scene}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{$\sim$Scene()}{~Scene()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Scene\+::$\sim$\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a708e7d6bb75d8c34706a7233675f4415}{$\sim$\+Scene()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_ac9dc929830cc3891910212cd7f1a7a22}\label{class_owl_engine_1_1_scene_ac9dc929830cc3891910212cd7f1a7a22}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::add\+Entity (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})}
+
+
+
+Add an entity to the scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_ac9dc929830cc3891910212cd7f1a7a22}{add\+Entity()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const std\+::string\& -\/ The name of the entity \\
+\hline
+{\em entity} & an Entity$\ast$ -\/ A pointer to the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a8f71fc2b3717e8b548154efd782342a5}\label{class_owl_engine_1_1_scene_a8f71fc2b3717e8b548154efd782342a5}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!addPhysicsWorld@{addPhysicsWorld}}
+\index{addPhysicsWorld@{addPhysicsWorld}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{addPhysicsWorld()}{addPhysicsWorld()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::add\+Physics\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Add the scene\textquotesingle{}s physics world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a8f71fc2b3717e8b548154efd782342a5}{add\+Physics\+World()}} \mbox{\Hypertarget{class_owl_engine_1_1_scene_a03779fa6f35a7c8fb12fdacf66872c3f}\label{class_owl_engine_1_1_scene_a03779fa6f35a7c8fb12fdacf66872c3f}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!addRenderPass@{addRenderPass}}
+\index{addRenderPass@{addRenderPass}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{addRenderPass()}{addRenderPass()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::add\+Render\+Pass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_render_pass}{Render\+Pass}} $\ast$}]{pass }\end{DoxyParamCaption})}
+
+
+
+Add a render pass to the list of passes. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a03779fa6f35a7c8fb12fdacf66872c3f}{add\+Render\+Pass()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pass} & a Render\+Pass$\ast$ -\/ The render pass to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a5489fa497f7aa05cebd5c6897fe16cdf}\label{class_owl_engine_1_1_scene_a5489fa497f7aa05cebd5c6897fe16cdf}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!checkRootEntityNameTaken@{checkRootEntityNameTaken}}
+\index{checkRootEntityNameTaken@{checkRootEntityNameTaken}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{checkRootEntityNameTaken()}{checkRootEntityNameTaken()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Scene\+::check\+Root\+Entity\+Name\+Taken (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Returns whether the entity name has been taken. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a5489fa497f7aa05cebd5c6897fe16cdf}{check\+Root\+Entity\+Name\+Taken()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const std\+::string\& -\/ The name of the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the entity name exist in our entity list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a8fd37b134565bd41b417323e2d0ec864}\label{class_owl_engine_1_1_scene_a8fd37b134565bd41b417323e2d0ec864}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!cleanRoot@{cleanRoot}}
+\index{cleanRoot@{cleanRoot}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{cleanRoot()}{cleanRoot()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::clean\+Root (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a8fd37b134565bd41b417323e2d0ec864}{clean\+Root()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ Specific value to clean out (if none checks all variables for cleaning) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a192ee3dd39dff4ff71eafd7869fd06e7}\label{class_owl_engine_1_1_scene_a192ee3dd39dff4ff71eafd7869fd06e7}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!enableInspector@{enableInspector}}
+\index{enableInspector@{enableInspector}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{enableInspector()}{enableInspector()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::enable\+Inspector (\begin{DoxyParamCaption}\item[{const bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Enable/\+Disable the inspector. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a192ee3dd39dff4ff71eafd7869fd06e7}{enable\+Inspector()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & a const bool -\/ Enable/\+Disable the inspector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a8f907f6c43acb4d3e9216a5bb0ecad58}\label{class_owl_engine_1_1_scene_a8f907f6c43acb4d3e9216a5bb0ecad58}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getClosestDirectionalLights@{getClosestDirectionalLights}}
+\index{getClosestDirectionalLights@{getClosestDirectionalLights}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getClosestDirectionalLights()}{getClosestDirectionalLights()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_directional_light}{Directional\+Light}} $\ast$ $>$ Owl\+Engine\+::\+Scene\+::get\+Closest\+Directional\+Lights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a list of the closest directional lights. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a8f907f6c43acb4d3e9216a5bb0ecad58}{get\+Closest\+Directional\+Lights()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Point\+Light$\ast$$>$ -\/ A list of directional lights sorted by distance from main camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_aa29c064be5be049a5b843bbc25f2f71b}\label{class_owl_engine_1_1_scene_aa29c064be5be049a5b843bbc25f2f71b}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getClosestPointLights@{getClosestPointLights}}
+\index{getClosestPointLights@{getClosestPointLights}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getClosestPointLights()}{getClosestPointLights()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_point_light}{Point\+Light}} $\ast$ $>$ Owl\+Engine\+::\+Scene\+::get\+Closest\+Point\+Lights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a list of the closest point lights. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_aa29c064be5be049a5b843bbc25f2f71b}{get\+Closest\+Point\+Lights()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Point\+Light$\ast$$>$ -\/ A list of point lights sorted by distance from main camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_ad77fe21559726735f8c2cd6f648a3ab1}\label{class_owl_engine_1_1_scene_ad77fe21559726735f8c2cd6f648a3ab1}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getClosestSpotLights@{getClosestSpotLights}}
+\index{getClosestSpotLights@{getClosestSpotLights}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getClosestSpotLights()}{getClosestSpotLights()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_spot_light}{Spot\+Light}} $\ast$ $>$ Owl\+Engine\+::\+Scene\+::get\+Closest\+Spot\+Lights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a list of the closest spot lights. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_ad77fe21559726735f8c2cd6f648a3ab1}{get\+Closest\+Spot\+Lights()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Point\+Light$\ast$$>$ -\/ A list of spot lights sorted by distance from main camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a577b96d510a72723263796e3bf09bd27}\label{class_owl_engine_1_1_scene_a577b96d510a72723263796e3bf09bd27}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ Owl\+Engine\+::\+Scene\+::get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if root entities have parents and removes those that do (user can specify singular entities to act upon) 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a577b96d510a72723263796e3bf09bd27}{get\+Entities()}}
+
+Get a list of all entities in the scene
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Entity$\ast$$>$ -\/ A list of all entities in the scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a365150f420d34b2262a1676124a73a16}\label{class_owl_engine_1_1_scene_a365150f420d34b2262a1676124a73a16}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getEntity@{getEntity}}
+\index{getEntity@{getEntity}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getEntity()}{getEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ Owl\+Engine\+::\+Scene\+::get\+Entity (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Get an entity in the scene (Doesn\textquotesingle{}t include children, you must follow the tree structure) 
+
+get\+Entity()
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const std\+::string\& -\/ The name of the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Entity$\ast$ -\/ A pointer to the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_aa9afa731a5178018a11760c05ccb8414}\label{class_owl_engine_1_1_scene_aa9afa731a5178018a11760c05ccb8414}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getEntity@{getEntity}}
+\index{getEntity@{getEntity}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getEntity()}{getEntity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ Owl\+Engine\+::\+Scene\+::get\+Entity (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{unique\+ID }\end{DoxyParamCaption})}
+
+
+
+Get an entity in the scene (Includes children) 
+
+get\+Entity
+
+
+\begin{DoxyParams}{Parameters}
+{\em unique\+ID} & a const uint32\+\_\+t -\/ The ID of the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Entity$\ast$ -\/ A pointer to the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_aba7ef584e391584c2b1fe613a8e1efa6}\label{class_owl_engine_1_1_scene_aba7ef584e391584c2b1fe613a8e1efa6}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getEntityListUpdated@{getEntityListUpdated}}
+\index{getEntityListUpdated@{getEntityListUpdated}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getEntityListUpdated()}{getEntityListUpdated()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Scene\+::get\+Entity\+List\+Updated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get whether the entities have been updated. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_aba7ef584e391584c2b1fe613a8e1efa6}{get\+Entity\+List\+Updated()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the entity list been updated 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_ab3dbd6892bfc19eef13382f542e7263a}\label{class_owl_engine_1_1_scene_ab3dbd6892bfc19eef13382f542e7263a}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getFinalFrameBuffer@{getFinalFrameBuffer}}
+\index{getFinalFrameBuffer@{getFinalFrameBuffer}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getFinalFrameBuffer()}{getFinalFrameBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ Owl\+Engine\+::\+Scene\+::get\+Final\+Frame\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the final framebuffer in the list of passes for this scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_ab3dbd6892bfc19eef13382f542e7263a}{get\+Final\+Frame\+Buffer()}}
+
+\begin{DoxyReturn}{Returns}
+a Frame\+Buffer$\ast$ -\/ The framebuffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_aa77aac16ed90448931af6c80dba65919}\label{class_owl_engine_1_1_scene_aa77aac16ed90448931af6c80dba65919}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getFolderPath@{getFolderPath}}
+\index{getFolderPath@{getFolderPath}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getFolderPath()}{getFolderPath()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Scene\+::get\+Folder\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the file path to the scene folder. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_aa77aac16ed90448931af6c80dba65919}{get\+Folder\+Path()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The file path to the folder of the scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a08f6e5634f12848a989e194a9261d263}\label{class_owl_engine_1_1_scene_a08f6e5634f12848a989e194a9261d263}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getInspectorEnabled@{getInspectorEnabled}}
+\index{getInspectorEnabled@{getInspectorEnabled}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getInspectorEnabled()}{getInspectorEnabled()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Scene\+::get\+Inspector\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get whether the inspector is enabled. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a08f6e5634f12848a989e194a9261d263}{get\+Inspector\+Enabled()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is the inspector enabled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_acfe5a596d49d21a6bb7fce4aaafa66a5}\label{class_owl_engine_1_1_scene_acfe5a596d49d21a6bb7fce4aaafa66a5}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getLayerManager@{getLayerManager}}
+\index{getLayerManager@{getLayerManager}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getLayerManager()}{getLayerManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_layer_manager}{Layer\+Manager}} $\ast$ Owl\+Engine\+::\+Scene\+::get\+Layer\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the layer manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_acfe5a596d49d21a6bb7fce4aaafa66a5}{get\+Layer\+Manager()}}
+
+\begin{DoxyReturn}{Returns}
+a Layer\+Manager$\ast$ -\/ A pointer to the layer manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a0c1cde382d08251219cf32ee02296a00}\label{class_owl_engine_1_1_scene_a0c1cde382d08251219cf32ee02296a00}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getMainCamera@{getMainCamera}}
+\index{getMainCamera@{getMainCamera}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getMainCamera()}{getMainCamera()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_camera}{Camera}} $\ast$ Owl\+Engine\+::\+Scene\+::get\+Main\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the main camera. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a0c1cde382d08251219cf32ee02296a00}{get\+Main\+Camera()}}
+
+\begin{DoxyReturn}{Returns}
+a Camera$\ast$ -\/ A pointer to the main camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a90171334e958924040e9b32e2005b268}\label{class_owl_engine_1_1_scene_a90171334e958924040e9b32e2005b268}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getName@{getName}}
+\index{getName@{getName}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Scene\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a90171334e958924040e9b32e2005b268}{get\+Name()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The name of the scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a142addcbbe5bae7b15b9fec60ead7c9d}\label{class_owl_engine_1_1_scene_a142addcbbe5bae7b15b9fec60ead7c9d}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getPhysicsPaused@{getPhysicsPaused}}
+\index{getPhysicsPaused@{getPhysicsPaused}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getPhysicsPaused()}{getPhysicsPaused()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Scene\+::get\+Physics\+Paused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets whether physics is paused or not. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a142addcbbe5bae7b15b9fec60ead7c9d}{get\+Physics\+Paused()}}
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the physics paused 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_af2981681894dad7de35a902f31d8e893}\label{class_owl_engine_1_1_scene_af2981681894dad7de35a902f31d8e893}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getPhysicsWorld@{getPhysicsWorld}}
+\index{getPhysicsWorld@{getPhysicsWorld}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getPhysicsWorld()}{getPhysicsWorld()}}
+{\footnotesize\ttfamily rp3d\+::\+Physics\+World $\ast$ Owl\+Engine\+::\+Scene\+::get\+Physics\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the scene\textquotesingle{}s physics world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_af2981681894dad7de35a902f31d8e893}{get\+Physics\+World()}}
+
+\begin{DoxyReturn}{Returns}
+a rp3d\+::\+Physics\+World$\ast$ -\/ A pointer to the physics world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a4291e2a44af1cfb080a013653bc8ab6c}\label{class_owl_engine_1_1_scene_a4291e2a44af1cfb080a013653bc8ab6c}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getRefreshInspector@{getRefreshInspector}}
+\index{getRefreshInspector@{getRefreshInspector}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getRefreshInspector()}{getRefreshInspector()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Scene\+::get\+Refresh\+Inspector (\begin{DoxyParamCaption}\item[{bool}]{reset }\end{DoxyParamCaption})}
+
+
+
+Check whether the inspector needs to refresh. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a4291e2a44af1cfb080a013653bc8ab6c}{get\+Refresh\+Inspector()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em reset} & a bool -\/ Reset the inspector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_ad93ca52530e3403885ca53c16743f4b2}\label{class_owl_engine_1_1_scene_ad93ca52530e3403885ca53c16743f4b2}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getRenderPass@{getRenderPass}}
+\index{getRenderPass@{getRenderPass}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getRenderPass()}{getRenderPass()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_render_pass}{Render\+Pass}} $\ast$ Owl\+Engine\+::\+Scene\+::get\+Render\+Pass (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Get the render pass at index. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_ad93ca52530e3403885ca53c16743f4b2}{get\+Render\+Pass()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & a const uint32\+\_\+t -\/ The render pass at index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Render\+Pass$\ast$ -\/ The render pass at index 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_adec91677fa6b409ac132658f54b9020d}\label{class_owl_engine_1_1_scene_adec91677fa6b409ac132658f54b9020d}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getRenderPasses@{getRenderPasses}}
+\index{getRenderPasses@{getRenderPasses}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getRenderPasses()}{getRenderPasses()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_render_pass}{Render\+Pass}} $\ast$ $>$ \& Owl\+Engine\+::\+Scene\+::get\+Render\+Passes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the list of render passes. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_adec91677fa6b409ac132658f54b9020d}{get\+Render\+Passes()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Render\+Pass$\ast$$>$\& -\/ A list of all renderpasses for this scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a0cf12493a4882cc75b501a673f7025cf}\label{class_owl_engine_1_1_scene_a0cf12493a4882cc75b501a673f7025cf}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getRootEntities@{getRootEntities}}
+\index{getRootEntities@{getRootEntities}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getRootEntities()}{getRootEntities()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ Owl\+Engine\+::\+Scene\+::get\+Root\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get only the root entities of the scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a0cf12493a4882cc75b501a673f7025cf}{get\+Root\+Entities()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::map$<$std\+::string, Entity$\ast$$>$ -\/ Returns the list of root entities 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_ad8b1952f869dc24d18ff6b74070dfbc1}\label{class_owl_engine_1_1_scene_ad8b1952f869dc24d18ff6b74070dfbc1}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getTimeScale@{getTimeScale}}
+\index{getTimeScale@{getTimeScale}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getTimeScale()}{getTimeScale()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Scene\+::get\+Time\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the time\+Scale (how fast time runs in the scene) 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_ad8b1952f869dc24d18ff6b74070dfbc1}{get\+Time\+Scale()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The physics timescale 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a48587c529820f2f70fa7621d440de42a}\label{class_owl_engine_1_1_scene_a48587c529820f2f70fa7621d440de42a}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getUniqueID@{getUniqueID}}
+\index{getUniqueID@{getUniqueID}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getUniqueID()}{getUniqueID()}}
+{\footnotesize\ttfamily uint32\+\_\+t Owl\+Engine\+::\+Scene\+::get\+Unique\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the next unique ID for an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a48587c529820f2f70fa7621d440de42a}{get\+Unique\+I\+D()}}
+
+\begin{DoxyReturn}{Returns}
+a uint32\+\_\+t -\/ The unique ID of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_aeec9489ed79dbaa80433c66fecf2870a}\label{class_owl_engine_1_1_scene_aeec9489ed79dbaa80433c66fecf2870a}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getViewPort@{getViewPort}}
+\index{getViewPort@{getViewPort}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getViewPort()}{getViewPort()}}
+{\footnotesize\ttfamily const glm\+::ivec2 Owl\+Engine\+::\+Scene\+::get\+View\+Port (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the size of the viewport. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_aeec9489ed79dbaa80433c66fecf2870a}{get\+View\+Port()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::ivec2 -\/ The size of the viewport 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a1e5639dd33576e0dd18180d03727ad13}\label{class_owl_engine_1_1_scene_a1e5639dd33576e0dd18180d03727ad13}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!getViewPos@{getViewPos}}
+\index{getViewPos@{getViewPos}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{getViewPos()}{getViewPos()}}
+{\footnotesize\ttfamily const glm\+::vec2 Owl\+Engine\+::\+Scene\+::get\+View\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the position of the scene view. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a1e5639dd33576e0dd18180d03727ad13}{get\+View\+Pos()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec2 -\/ The viewport position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_aa915b80a951d97b1b07b46f83e3db40f}\label{class_owl_engine_1_1_scene_aa915b80a951d97b1b07b46f83e3db40f}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!increaseNextEntityID@{increaseNextEntityID}}
+\index{increaseNextEntityID@{increaseNextEntityID}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{increaseNextEntityID()}{increaseNextEntityID()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::increase\+Next\+Entity\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Increase the unique ID by 1 for the next entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_aa915b80a951d97b1b07b46f83e3db40f}{increase\+Next\+Entity\+I\+D()}} \mbox{\Hypertarget{class_owl_engine_1_1_scene_aceb5b5f8ca747cd10e4273b61e99187f}\label{class_owl_engine_1_1_scene_aceb5b5f8ca747cd10e4273b61e99187f}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})}
+
+
+
+Update the scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_aceb5b5f8ca747cd10e4273b61e99187f}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The update time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total application time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_aca1fcc9a5e680e1cf4fa0a5cdfc86250}\label{class_owl_engine_1_1_scene_aca1fcc9a5e680e1cf4fa0a5cdfc86250}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!printSceneDetails@{printSceneDetails}}
+\index{printSceneDetails@{printSceneDetails}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{printSceneDetails()}{printSceneDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::print\+Scene\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print scene details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_aca1fcc9a5e680e1cf4fa0a5cdfc86250}{print\+Scene\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_scene_aea4f2cb0629b5b2c4de253e7f371fcc5}\label{class_owl_engine_1_1_scene_aea4f2cb0629b5b2c4de253e7f371fcc5}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!setEntityListUpdated@{setEntityListUpdated}}
+\index{setEntityListUpdated@{setEntityListUpdated}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{setEntityListUpdated()}{setEntityListUpdated()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::set\+Entity\+List\+Updated (\begin{DoxyParamCaption}\item[{const bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Confirm whether the entities in the scene have been updated. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_aea4f2cb0629b5b2c4de253e7f371fcc5}{set\+Entity\+List\+Updated()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & a const bool \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a99efd24e88623ae246bb416a1b72dd4f}\label{class_owl_engine_1_1_scene_a99efd24e88623ae246bb416a1b72dd4f}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!setMainCamera@{setMainCamera}}
+\index{setMainCamera@{setMainCamera}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{setMainCamera()}{setMainCamera()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::set\+Main\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_camera}{Camera}} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Set the main camera. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a99efd24e88623ae246bb416a1b72dd4f}{set\+Main\+Camera()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & a Camera$\ast$ -\/ A pointer to the camera \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a6ecff248b9721778f1f8e9cd43692d55}\label{class_owl_engine_1_1_scene_a6ecff248b9721778f1f8e9cd43692d55}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!setPhysicsPaused@{setPhysicsPaused}}
+\index{setPhysicsPaused@{setPhysicsPaused}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{setPhysicsPaused()}{setPhysicsPaused()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::set\+Physics\+Paused (\begin{DoxyParamCaption}\item[{bool}]{paused }\end{DoxyParamCaption})}
+
+
+
+Sets whether physics is paused or not. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a6ecff248b9721778f1f8e9cd43692d55}{set\+Physics\+Paused()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em paused} & a bool -\/ Set the physics to be paused \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_adb1fb4780bd581eb607efef4aee07800}\label{class_owl_engine_1_1_scene_adb1fb4780bd581eb607efef4aee07800}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!setTimeScale@{setTimeScale}}
+\index{setTimeScale@{setTimeScale}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{setTimeScale()}{setTimeScale()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::set\+Time\+Scale (\begin{DoxyParamCaption}\item[{float}]{time\+Scale }\end{DoxyParamCaption})}
+
+
+
+Sets how fast the time runs in the scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_adb1fb4780bd581eb607efef4aee07800}{set\+Time\+Scale()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Scale} & a float -\/ The new timescale for the physics \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_ab001ec92c35b9f5b5cd6cc32fbd55ce7}\label{class_owl_engine_1_1_scene_ab001ec92c35b9f5b5cd6cc32fbd55ce7}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!setViewPort@{setViewPort}}
+\index{setViewPort@{setViewPort}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{setViewPort()}{setViewPort()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::set\+View\+Port (\begin{DoxyParamCaption}\item[{glm\+::ivec2}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the viewport to be a certain size. 
+
+set\+Viewport()
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & a glm\+::ivec2 -\/ The new size of the viewport \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_a2efaff6911dd3326ff54a59e598d63b2}\label{class_owl_engine_1_1_scene_a2efaff6911dd3326ff54a59e598d63b2}} 
+\index{OwlEngine::Scene@{OwlEngine::Scene}!setViewPos@{setViewPos}}
+\index{setViewPos@{setViewPos}!OwlEngine::Scene@{OwlEngine::Scene}}
+\doxysubsubsection{\texorpdfstring{setViewPos()}{setViewPos()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+::set\+View\+Pos (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the position of the scene view. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_a2efaff6911dd3326ff54a59e598d63b2}{set\+View\+Pos()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & a glm\+::vec2 -\/ The new position of the viewport \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/components/\mbox{\hyperlink{scene_8h}{scene.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/components/\mbox{\hyperlink{scene_8cpp}{scene.\+cpp}}\end{DoxyCompactItemize}

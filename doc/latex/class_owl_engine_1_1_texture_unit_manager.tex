@@ -1,0 +1,193 @@
+\hypertarget{class_owl_engine_1_1_texture_unit_manager}{}\doxysection{Owl\+Engine\+::Texture\+Unit\+Manager Class Reference}
+\label{class_owl_engine_1_1_texture_unit_manager}\index{OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}}
+
+
+A manager for the texture units.  
+
+
+
+
+{\ttfamily \#include $<$texture\+Unit\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_abf0665537886064055bec5e8de84118a}{Texture\+Unit\+Manager}} (const uint32\+\_\+t capacity, const uint32\+\_\+t reservation\+Count)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a642b0bfa440296999aeb7649ff236707}{$\sim$\+Texture\+Unit\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_ae361eade72a57822a9d0ea40d1384e16}{full}} () const
+\begin{DoxyCompactList}\small\item\em Is the texture unit list full. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a77a6040ad2961403fd0289fa81cf298c}{clear}} (const bool delete\+Reservations)
+\begin{DoxyCompactList}\small\item\em Clear the buffer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a169a9c2fe17a5ab5e4ed36bd4eb6c633}{get\+Unit}} (const uint32\+\_\+t texture\+ID, int32\+\_\+t \&texture\+Unit)
+\begin{DoxyCompactList}\small\item\em Returns whether or not the texture needs binding to the unit passed, the unit is returned. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a9548dd465a91631878ab4290cb47798f}{set\+Reserved\+Unit}} (const uint32\+\_\+t reserved\+Slot, const uint32\+\_\+t texture\+ID)
+\begin{DoxyCompactList}\small\item\em Set the unit of a reserved slot. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a71438060f287a0357086b88d6e9de00f}{get\+Remaining\+Unit\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the count of free units. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a50151444e94bf083b43c2f33e9713ed6}{bind\+To\+Unit}} (\mbox{\hyperlink{class_owl_engine_1_1_texture}{Texture}} $\ast$texture)
+\begin{DoxyCompactList}\small\item\em Bind texture to unit. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_af76ded2bd886d157511fe2e6c2734ca2}{get\+Buffer\+By\+Texture\+Names}} ()
+\begin{DoxyCompactList}\small\item\em Get the buffer by texture names. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A manager for the texture units. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_unit_manager_abf0665537886064055bec5e8de84118a}\label{class_owl_engine_1_1_texture_unit_manager_abf0665537886064055bec5e8de84118a}} 
+\index{OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}!TextureUnitManager@{TextureUnitManager}}
+\index{TextureUnitManager@{TextureUnitManager}!OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{TextureUnitManager()}{TextureUnitManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Texture\+Unit\+Manager\+::\+Texture\+Unit\+Manager (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{capacity,  }\item[{const uint32\+\_\+t}]{reservation\+Count }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_abf0665537886064055bec5e8de84118a}{Texture\+Unit\+Manager()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & a const uint32\+\_\+t -\/ The total number of texture units \\
+\hline
+{\em reservation\+Count} & a const uint32\+\_\+t -\/ The number of reserved slots to reserve \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_unit_manager_a642b0bfa440296999aeb7649ff236707}\label{class_owl_engine_1_1_texture_unit_manager_a642b0bfa440296999aeb7649ff236707}} 
+\index{OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}!````~TextureUnitManager@{$\sim$TextureUnitManager}}
+\index{````~TextureUnitManager@{$\sim$TextureUnitManager}!OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$TextureUnitManager()}{~TextureUnitManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Texture\+Unit\+Manager\+::$\sim$\+Texture\+Unit\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a642b0bfa440296999aeb7649ff236707}{$\sim$\+Texture\+Unit\+Manager()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_unit_manager_a50151444e94bf083b43c2f33e9713ed6}\label{class_owl_engine_1_1_texture_unit_manager_a50151444e94bf083b43c2f33e9713ed6}} 
+\index{OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}!bindToUnit@{bindToUnit}}
+\index{bindToUnit@{bindToUnit}!OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{bindToUnit()}{bindToUnit()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Texture\+Unit\+Manager\+::bind\+To\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_texture}{Texture}} $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+Bind texture to unit. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a50151444e94bf083b43c2f33e9713ed6}{bind\+To\+Unit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & a Texture$\ast$ -\/ The texture to bind \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_unit_manager_a77a6040ad2961403fd0289fa81cf298c}\label{class_owl_engine_1_1_texture_unit_manager_a77a6040ad2961403fd0289fa81cf298c}} 
+\index{OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}!clear@{clear}}
+\index{clear@{clear}!OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Texture\+Unit\+Manager\+::clear (\begin{DoxyParamCaption}\item[{const bool}]{delete\+Reservations }\end{DoxyParamCaption})}
+
+
+
+Clear the buffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a77a6040ad2961403fd0289fa81cf298c}{clear()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em delete\+Reservations} & a const bool -\/ Delete the reserved slots too \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_unit_manager_ae361eade72a57822a9d0ea40d1384e16}\label{class_owl_engine_1_1_texture_unit_manager_ae361eade72a57822a9d0ea40d1384e16}} 
+\index{OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}!full@{full}}
+\index{full@{full}!OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{full()}{full()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Texture\+Unit\+Manager\+::full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Is the texture unit list full. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_ae361eade72a57822a9d0ea40d1384e16}{full()}}
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the texture unit buffer full 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_unit_manager_af76ded2bd886d157511fe2e6c2734ca2}\label{class_owl_engine_1_1_texture_unit_manager_af76ded2bd886d157511fe2e6c2734ca2}} 
+\index{OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}!getBufferByTextureNames@{getBufferByTextureNames}}
+\index{getBufferByTextureNames@{getBufferByTextureNames}!OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{getBufferByTextureNames()}{getBufferByTextureNames()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Owl\+Engine\+::\+Texture\+Unit\+Manager\+::get\+Buffer\+By\+Texture\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the buffer by texture names. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_af76ded2bd886d157511fe2e6c2734ca2}{get\+Buffer\+By\+Texture\+Names()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$std\+::string$>$ -\/ The buffer by texture names than ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_unit_manager_a71438060f287a0357086b88d6e9de00f}\label{class_owl_engine_1_1_texture_unit_manager_a71438060f287a0357086b88d6e9de00f}} 
+\index{OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}!getRemainingUnitCount@{getRemainingUnitCount}}
+\index{getRemainingUnitCount@{getRemainingUnitCount}!OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{getRemainingUnitCount()}{getRemainingUnitCount()}}
+{\footnotesize\ttfamily uint32\+\_\+t Owl\+Engine\+::\+Texture\+Unit\+Manager\+::get\+Remaining\+Unit\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the count of free units. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a71438060f287a0357086b88d6e9de00f}{get\+Remaining\+Unit\+Count()}}
+
+\begin{DoxyReturn}{Returns}
+an uint32\+\_\+t -\/ The number of remaining units 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_unit_manager_a169a9c2fe17a5ab5e4ed36bd4eb6c633}\label{class_owl_engine_1_1_texture_unit_manager_a169a9c2fe17a5ab5e4ed36bd4eb6c633}} 
+\index{OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}!getUnit@{getUnit}}
+\index{getUnit@{getUnit}!OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{getUnit()}{getUnit()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Texture\+Unit\+Manager\+::get\+Unit (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{texture\+ID,  }\item[{int32\+\_\+t \&}]{texture\+Unit }\end{DoxyParamCaption})}
+
+
+
+Returns whether or not the texture needs binding to the unit passed, the unit is returned. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a169a9c2fe17a5ab5e4ed36bd4eb6c633}{get\+Unit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+ID} & a const uint32\+\_\+t -\/ The texture ID \\
+\hline
+{\em texture\+Unit} & an int32\+\_\+t\& -\/ A reference to the texture unit held in the renderer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_unit_manager_a9548dd465a91631878ab4290cb47798f}\label{class_owl_engine_1_1_texture_unit_manager_a9548dd465a91631878ab4290cb47798f}} 
+\index{OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}!setReservedUnit@{setReservedUnit}}
+\index{setReservedUnit@{setReservedUnit}!OwlEngine::TextureUnitManager@{OwlEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{setReservedUnit()}{setReservedUnit()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Texture\+Unit\+Manager\+::set\+Reserved\+Unit (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{reserved\+Slot,  }\item[{const uint32\+\_\+t}]{texture\+ID }\end{DoxyParamCaption})}
+
+
+
+Set the unit of a reserved slot. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager_a9548dd465a91631878ab4290cb47798f}{set\+Reserved\+Unit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em reserved\+Slot} & a const uint32\+\_\+t -\/ The reserved slot index \\
+\hline
+{\em texture\+ID} & a const uint32\+\_\+t -\/ The texture ID to put in the reserved slot \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/textures/\mbox{\hyperlink{texture_unit_manager_8h}{texture\+Unit\+Manager.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/textures/\mbox{\hyperlink{texture_unit_manager_8cpp}{texture\+Unit\+Manager.\+cpp}}\end{DoxyCompactItemize}

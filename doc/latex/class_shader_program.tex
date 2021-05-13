@@ -1,0 +1,359 @@
+\hypertarget{class_shader_program}{}\doxysection{Shader\+Program Class Reference}
+\label{class_shader_program}\index{ShaderProgram@{ShaderProgram}}
+
+
+A base class for shader programs.  
+
+
+
+
+{\ttfamily \#include $<$shader\+Program.\+h$>$}
+
+Inheritance diagram for Shader\+Program\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{class_shader_program}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shader_program_aa31ee72d0029cf0f05232a1e925fa99d}\label{class_shader_program_aa31ee72d0029cf0f05232a1e925fa99d}} 
+\mbox{\hyperlink{class_shader_program_aa31ee72d0029cf0f05232a1e925fa99d}{Shader\+Program}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_shader_program_a2d2eadcfc48cc2e2ddb82aba70553a9f}{$\sim$\+Shader\+Program}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_a8812bf4a4fe6b6d9f16ee2fa77cf4cca}{load}} (const char $\ast$vertex\+Path, const char $\ast$fragment\+Path, const char $\ast$geometry\+Path=nullptr)
+\begin{DoxyCompactList}\small\item\em Load the shader program. \end{DoxyCompactList}\item 
+const unsigned int \mbox{\hyperlink{class_shader_program_a92239eb6700066d1e9870b3db04c7961}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the shader program ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_afb7615fdba14cf78ded62216b11affa0}{start}} ()
+\begin{DoxyCompactList}\small\item\em Start the shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_a076debd4df727dcf5d2dd2e4557d0d12}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Stop using the shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_a7ccfd4eb43ffdafcc4ad911249c9d770}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the shader. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_afeb9fc83ed1b048a5256d0d6a26b7dbe}{send\+Bool}} (const std\+::string uniform\+Name, const bool value) const
+\begin{DoxyCompactList}\small\item\em Send a bool value to the shader program currently bound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_ad0b93847dba78c5e8a7cf4dee0065e4f}{send\+Float}} (const std\+::string uniform\+Name, const float value) const
+\begin{DoxyCompactList}\small\item\em Send a float value to the shader program currently bound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_aa681e0258ed5d237779dd0d7011f3e2e}{send\+Int}} (const std\+::string uniform\+Name, const int value) const
+\begin{DoxyCompactList}\small\item\em Send an int value to the shader program currently bound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_a50311d9a4a2c8832a6d1b39768be66fc}{send\+Vec2}} (const std\+::string uniform\+Name, const glm\+::vec2 \&value) const
+\begin{DoxyCompactList}\small\item\em Send a vec2 value to the shader program currently bound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_aef3acdc84c4b4cdbcb268381dc44f34e}{send\+Vec3}} (const std\+::string uniform\+Name, const glm\+::vec3 \&value) const
+\begin{DoxyCompactList}\small\item\em Send a vec3 value to the shader program currently bound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_a633d72749fb15bcff3f44017bd775b1e}{send\+Vec4}} (const std\+::string uniform\+Name, const glm\+::vec4 \&value) const
+\begin{DoxyCompactList}\small\item\em Send a vec4 value to the shader program currently bound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_a53832e028d9ec9d882e25134458a65af}{send\+Mat2}} (const std\+::string uniform\+Name, const glm\+::mat2 \&mat) const
+\begin{DoxyCompactList}\small\item\em Send a mat2 value to the shader program currently bound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_adff126784884621a9f60fe2074412ecf}{send\+Mat3}} (const std\+::string uniform\+Name, const glm\+::mat3 \&mat) const
+\begin{DoxyCompactList}\small\item\em Send a mat3 value to the shader program currently bound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_a63b35e4b4e5c2a8014b421789e263d24}{send\+Mat4}} (const std\+::string uniform\+Name, const glm\+::mat4 \&mat) const
+\begin{DoxyCompactList}\small\item\em Send a mat4 value to the shader program currently bound. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_shader_program_a82da206e2d92e4613c63e31a18d005cf}{add\+Uniform}} (const std\+::string uniform\+Name)
+\begin{DoxyCompactList}\small\item\em Add a uniform to the program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_shader_program_a914987eea71d7e44ab0a1c7f6ba5256e}{store\+Uniform\+Locations}} ()
+\begin{DoxyCompactList}\small\item\em Store all uniform locations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shader_program_a61a41305a6c25f9ebad17d6f073b8176}\label{class_shader_program_a61a41305a6c25f9ebad17d6f073b8176}} 
+virtual void \mbox{\hyperlink{class_shader_program_a61a41305a6c25f9ebad17d6f073b8176}{connect\+Texture\+Units}} ()=0
+\begin{DoxyCompactList}\small\item\em Connect any and all texture units to samplers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_shader_program_a2d3e2c81da9300eb4700f56e71c5a529}\label{class_shader_program_a2d3e2c81da9300eb4700f56e71c5a529}} 
+unsigned int \mbox{\hyperlink{class_shader_program_a2d3e2c81da9300eb4700f56e71c5a529}{m\+\_\+program\+ID}}
+\begin{DoxyCompactList}\small\item\em ID of the shader program. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_shader_program_a6ac665d6609456b974426cc23835ffeb}\label{class_shader_program_a6ac665d6609456b974426cc23835ffeb}} 
+std\+::map$<$ std\+::string, int $>$ \mbox{\hyperlink{class_shader_program_a6ac665d6609456b974426cc23835ffeb}{m\+\_\+uniforms}}
+\begin{DoxyCompactList}\small\item\em All the uniforms for the shader program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A base class for shader programs. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_shader_program_a2d2eadcfc48cc2e2ddb82aba70553a9f}\label{class_shader_program_a2d2eadcfc48cc2e2ddb82aba70553a9f}} 
+\index{ShaderProgram@{ShaderProgram}!````~ShaderProgram@{$\sim$ShaderProgram}}
+\index{````~ShaderProgram@{$\sim$ShaderProgram}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{$\sim$ShaderProgram()}{~ShaderProgram()}}
+{\footnotesize\ttfamily Shader\+Program\+::$\sim$\+Shader\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_shader_program_a2d2eadcfc48cc2e2ddb82aba70553a9f}{$\sim$\+Shader\+Program()}}; 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shader_program_a82da206e2d92e4613c63e31a18d005cf}\label{class_shader_program_a82da206e2d92e4613c63e31a18d005cf}} 
+\index{ShaderProgram@{ShaderProgram}!addUniform@{addUniform}}
+\index{addUniform@{addUniform}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{addUniform()}{addUniform()}}
+{\footnotesize\ttfamily void Shader\+Program\+::add\+Uniform (\begin{DoxyParamCaption}\item[{const std\+::string}]{uniform\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Add a uniform to the program. 
+
+\mbox{\hyperlink{class_shader_program_a82da206e2d92e4613c63e31a18d005cf}{add\+Uniform()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string -\/ The name of the uniform to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_program_a7ccfd4eb43ffdafcc4ad911249c9d770}\label{class_shader_program_a7ccfd4eb43ffdafcc4ad911249c9d770}} 
+\index{ShaderProgram@{ShaderProgram}!destroy@{destroy}}
+\index{destroy@{destroy}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Shader\+Program\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the shader. 
+
+\mbox{\hyperlink{class_shader_program_a7ccfd4eb43ffdafcc4ad911249c9d770}{destroy()}} \mbox{\Hypertarget{class_shader_program_a92239eb6700066d1e9870b3db04c7961}\label{class_shader_program_a92239eb6700066d1e9870b3db04c7961}} 
+\index{ShaderProgram@{ShaderProgram}!getID@{getID}}
+\index{getID@{getID}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily const unsigned int Shader\+Program\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the shader program ID. 
+
+\begin{DoxyReturn}{Returns}
+a unsigned int -\/ The program ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_shader_program_a8812bf4a4fe6b6d9f16ee2fa77cf4cca}\label{class_shader_program_a8812bf4a4fe6b6d9f16ee2fa77cf4cca}} 
+\index{ShaderProgram@{ShaderProgram}!load@{load}}
+\index{load@{load}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void Shader\+Program\+::load (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vertex\+Path,  }\item[{const char $\ast$}]{fragment\+Path,  }\item[{const char $\ast$}]{geometry\+Path = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Load the shader program. 
+
+\mbox{\hyperlink{class_shader_program_a8812bf4a4fe6b6d9f16ee2fa77cf4cca}{load()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Path} & a const char$\ast$ -\/ The file path of the vertex shader \\
+\hline
+{\em fragment\+Path} & a const char$\ast$ -\/ The file path of the fragment shader \\
+\hline
+{\em geometry\+Path} & a const char$\ast$ -\/ The file path of the geometry shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_program_afeb9fc83ed1b048a5256d0d6a26b7dbe}\label{class_shader_program_afeb9fc83ed1b048a5256d0d6a26b7dbe}} 
+\index{ShaderProgram@{ShaderProgram}!sendBool@{sendBool}}
+\index{sendBool@{sendBool}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendBool()}{sendBool()}}
+{\footnotesize\ttfamily void Shader\+Program\+::send\+Bool (\begin{DoxyParamCaption}\item[{const std\+::string}]{uniform\+Name,  }\item[{const bool}]{value }\end{DoxyParamCaption}) const}
+
+
+
+Send a bool value to the shader program currently bound. 
+
+\mbox{\hyperlink{class_shader_program_afeb9fc83ed1b048a5256d0d6a26b7dbe}{send\+Bool()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string -\/ The name of the uniform \\
+\hline
+{\em value} & a const bool -\/ The bool value to send to shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_program_ad0b93847dba78c5e8a7cf4dee0065e4f}\label{class_shader_program_ad0b93847dba78c5e8a7cf4dee0065e4f}} 
+\index{ShaderProgram@{ShaderProgram}!sendFloat@{sendFloat}}
+\index{sendFloat@{sendFloat}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendFloat()}{sendFloat()}}
+{\footnotesize\ttfamily void Shader\+Program\+::send\+Float (\begin{DoxyParamCaption}\item[{const std\+::string}]{uniform\+Name,  }\item[{const float}]{value }\end{DoxyParamCaption}) const}
+
+
+
+Send a float value to the shader program currently bound. 
+
+\mbox{\hyperlink{class_shader_program_ad0b93847dba78c5e8a7cf4dee0065e4f}{send\+Float()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string -\/ The name of the uniform \\
+\hline
+{\em value} & a const float -\/ The float value to send to shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_program_aa681e0258ed5d237779dd0d7011f3e2e}\label{class_shader_program_aa681e0258ed5d237779dd0d7011f3e2e}} 
+\index{ShaderProgram@{ShaderProgram}!sendInt@{sendInt}}
+\index{sendInt@{sendInt}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendInt()}{sendInt()}}
+{\footnotesize\ttfamily void Shader\+Program\+::send\+Int (\begin{DoxyParamCaption}\item[{const std\+::string}]{uniform\+Name,  }\item[{const int}]{value }\end{DoxyParamCaption}) const}
+
+
+
+Send an int value to the shader program currently bound. 
+
+\mbox{\hyperlink{class_shader_program_aa681e0258ed5d237779dd0d7011f3e2e}{send\+Int()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string -\/ The name of the uniform \\
+\hline
+{\em value} & a const int -\/ The int value to send to shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_program_a53832e028d9ec9d882e25134458a65af}\label{class_shader_program_a53832e028d9ec9d882e25134458a65af}} 
+\index{ShaderProgram@{ShaderProgram}!sendMat2@{sendMat2}}
+\index{sendMat2@{sendMat2}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendMat2()}{sendMat2()}}
+{\footnotesize\ttfamily void Shader\+Program\+::send\+Mat2 (\begin{DoxyParamCaption}\item[{const std\+::string}]{uniform\+Name,  }\item[{const glm\+::mat2 \&}]{mat }\end{DoxyParamCaption}) const}
+
+
+
+Send a mat2 value to the shader program currently bound. 
+
+\mbox{\hyperlink{class_shader_program_a53832e028d9ec9d882e25134458a65af}{send\+Mat2()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string -\/ The name of the uniform \\
+\hline
+{\em mat} & a const glm\+::mat2\& -\/ The mat2 value to send to shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_program_adff126784884621a9f60fe2074412ecf}\label{class_shader_program_adff126784884621a9f60fe2074412ecf}} 
+\index{ShaderProgram@{ShaderProgram}!sendMat3@{sendMat3}}
+\index{sendMat3@{sendMat3}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendMat3()}{sendMat3()}}
+{\footnotesize\ttfamily void Shader\+Program\+::send\+Mat3 (\begin{DoxyParamCaption}\item[{const std\+::string}]{uniform\+Name,  }\item[{const glm\+::mat3 \&}]{mat }\end{DoxyParamCaption}) const}
+
+
+
+Send a mat3 value to the shader program currently bound. 
+
+\mbox{\hyperlink{class_shader_program_adff126784884621a9f60fe2074412ecf}{send\+Mat3()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string -\/ The name of the uniform \\
+\hline
+{\em mat} & a const glm\+::mat3\& -\/ The mat3 value to send to shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_program_a63b35e4b4e5c2a8014b421789e263d24}\label{class_shader_program_a63b35e4b4e5c2a8014b421789e263d24}} 
+\index{ShaderProgram@{ShaderProgram}!sendMat4@{sendMat4}}
+\index{sendMat4@{sendMat4}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendMat4()}{sendMat4()}}
+{\footnotesize\ttfamily void Shader\+Program\+::send\+Mat4 (\begin{DoxyParamCaption}\item[{const std\+::string}]{uniform\+Name,  }\item[{const glm\+::mat4 \&}]{mat }\end{DoxyParamCaption}) const}
+
+
+
+Send a mat4 value to the shader program currently bound. 
+
+\mbox{\hyperlink{class_shader_program_a63b35e4b4e5c2a8014b421789e263d24}{send\+Mat4()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string -\/ The name of the uniform \\
+\hline
+{\em mat} & a const glm\+::mat4\& -\/ The mat4 value to send to shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_program_a50311d9a4a2c8832a6d1b39768be66fc}\label{class_shader_program_a50311d9a4a2c8832a6d1b39768be66fc}} 
+\index{ShaderProgram@{ShaderProgram}!sendVec2@{sendVec2}}
+\index{sendVec2@{sendVec2}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendVec2()}{sendVec2()}}
+{\footnotesize\ttfamily void Shader\+Program\+::send\+Vec2 (\begin{DoxyParamCaption}\item[{const std\+::string}]{uniform\+Name,  }\item[{const glm\+::vec2 \&}]{value }\end{DoxyParamCaption}) const}
+
+
+
+Send a vec2 value to the shader program currently bound. 
+
+\mbox{\hyperlink{class_shader_program_a50311d9a4a2c8832a6d1b39768be66fc}{send\+Vec2()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string -\/ The name of the uniform \\
+\hline
+{\em value} & a const glm\+::vec2\& -\/ The vec2 value to send to shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_program_aef3acdc84c4b4cdbcb268381dc44f34e}\label{class_shader_program_aef3acdc84c4b4cdbcb268381dc44f34e}} 
+\index{ShaderProgram@{ShaderProgram}!sendVec3@{sendVec3}}
+\index{sendVec3@{sendVec3}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendVec3()}{sendVec3()}}
+{\footnotesize\ttfamily void Shader\+Program\+::send\+Vec3 (\begin{DoxyParamCaption}\item[{const std\+::string}]{uniform\+Name,  }\item[{const glm\+::vec3 \&}]{value }\end{DoxyParamCaption}) const}
+
+
+
+Send a vec3 value to the shader program currently bound. 
+
+\mbox{\hyperlink{class_shader_program_aef3acdc84c4b4cdbcb268381dc44f34e}{send\+Vec3()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string -\/ The name of the uniform \\
+\hline
+{\em value} & a const glm\+::vec3\& -\/ The vec3 value to send to shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_program_a633d72749fb15bcff3f44017bd775b1e}\label{class_shader_program_a633d72749fb15bcff3f44017bd775b1e}} 
+\index{ShaderProgram@{ShaderProgram}!sendVec4@{sendVec4}}
+\index{sendVec4@{sendVec4}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendVec4()}{sendVec4()}}
+{\footnotesize\ttfamily void Shader\+Program\+::send\+Vec4 (\begin{DoxyParamCaption}\item[{const std\+::string}]{uniform\+Name,  }\item[{const glm\+::vec4 \&}]{value }\end{DoxyParamCaption}) const}
+
+
+
+Send a vec4 value to the shader program currently bound. 
+
+\mbox{\hyperlink{class_shader_program_a633d72749fb15bcff3f44017bd775b1e}{send\+Vec4()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string -\/ The name of the uniform \\
+\hline
+{\em value} & a const glm\+::vec4\& -\/ The vec4 value to send to shader \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_shader_program_afb7615fdba14cf78ded62216b11affa0}\label{class_shader_program_afb7615fdba14cf78ded62216b11affa0}} 
+\index{ShaderProgram@{ShaderProgram}!start@{start}}
+\index{start@{start}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Shader\+Program\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start the shader. 
+
+\mbox{\hyperlink{class_shader_program_afb7615fdba14cf78ded62216b11affa0}{start()}} \mbox{\Hypertarget{class_shader_program_a076debd4df727dcf5d2dd2e4557d0d12}\label{class_shader_program_a076debd4df727dcf5d2dd2e4557d0d12}} 
+\index{ShaderProgram@{ShaderProgram}!stop@{stop}}
+\index{stop@{stop}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Shader\+Program\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stop using the shader. 
+
+\mbox{\hyperlink{class_shader_program_a076debd4df727dcf5d2dd2e4557d0d12}{stop()}} \mbox{\Hypertarget{class_shader_program_a914987eea71d7e44ab0a1c7f6ba5256e}\label{class_shader_program_a914987eea71d7e44ab0a1c7f6ba5256e}} 
+\index{ShaderProgram@{ShaderProgram}!storeUniformLocations@{storeUniformLocations}}
+\index{storeUniformLocations@{storeUniformLocations}!ShaderProgram@{ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{storeUniformLocations()}{storeUniformLocations()}}
+{\footnotesize\ttfamily void Shader\+Program\+::store\+Uniform\+Locations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Store all uniform locations. 
+
+\mbox{\hyperlink{class_shader_program_a914987eea71d7e44ab0a1c7f6ba5256e}{store\+Uniform\+Locations()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/shaders/\mbox{\hyperlink{shader_program_8h}{shader\+Program.\+h}}\item 
+C\+:/doc/src/src/shaders/\mbox{\hyperlink{shader_program_8cpp}{shader\+Program.\+cpp}}\end{DoxyCompactItemize}

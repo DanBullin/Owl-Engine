@@ -1,0 +1,289 @@
+\hypertarget{class_owl_engine_1_1_scene_manager}{}\doxysection{Owl\+Engine\+::Scene\+Manager Class Reference}
+\label{class_owl_engine_1_1_scene_manager}\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+
+
+A manager class which manages scenes.  
+
+
+
+
+{\ttfamily \#include $<$scene\+Manager.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Scene\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_scene_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a82ba6c80263947e98af0251928865288}{Scene\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a9d9bc0a17e4a42200653de244ba35631}{$\sim$\+Scene\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a7dd1083d39ff80b6d5d864b38f77ad07}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a0456f0787c098527587279885a105ab3}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a3b3301b18b53116210ed3f980fd4208b}{scene\+Exists}} (const std\+::string \&scene\+Name)
+\begin{DoxyCompactList}\small\item\em Check whether scene name exists. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a59e62782ae3468beeed5430e58547268}{create\+Scene}} (const std\+::string \&scene\+Name, const std\+::string \&scene\+Folder\+Path)
+\begin{DoxyCompactList}\small\item\em Create a new scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a54bf6b51028194ce6a9c56da8e1df246}{destroy\+Scene}} (const std\+::string \&scene\+Name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Destory a scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a32142786b211bbe84e77fa59d43a6778}{destroy\+Scheduled\+Scenes}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all scheduled scenes. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a0c62c074ff242655867cdf1217820330}{get\+Scene}} (const std\+::string \&scene\+Name)
+\begin{DoxyCompactList}\small\item\em Get a scene by name. \end{DoxyCompactList}\item 
+static std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_ab375c229268d950dc066ebe4b16dde49}{get\+Scene\+List}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all the scenes. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a027ca001af4d8b7cc02fcb1ca2cf9bfb}{get\+Active\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Get the active scene. \end{DoxyCompactList}\item 
+static const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a1a6e6e37bef18fe61546db96d414b054}{get\+Active\+Scene\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the active scene name held in this class. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a7c52432da1359537e95c47ee860a09de}{set\+Active\+Scene}} (const std\+::string \&scene\+Name, const bool delete\+Old\+Scene)
+\begin{DoxyCompactList}\small\item\em Set the active scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_af531d07e6c9237f9cf396e1d1ddbeb75}{print\+Scene\+Manager\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print scene manager details. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a43f5aeda0491b561283a6b87321d820b}{print\+Scenes\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print scenes details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A manager class which manages scenes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a82ba6c80263947e98af0251928865288}\label{class_owl_engine_1_1_scene_manager_a82ba6c80263947e98af0251928865288}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!SceneManager@{SceneManager}}
+\index{SceneManager@{SceneManager}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{SceneManager()}{SceneManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Scene\+Manager\+::\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a82ba6c80263947e98af0251928865288}{Scene\+Manager()}} \mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a9d9bc0a17e4a42200653de244ba35631}\label{class_owl_engine_1_1_scene_manager_a9d9bc0a17e4a42200653de244ba35631}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!````~SceneManager@{$\sim$SceneManager}}
+\index{````~SceneManager@{$\sim$SceneManager}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$SceneManager()}{~SceneManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Scene\+Manager\+::$\sim$\+Scene\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a9d9bc0a17e4a42200653de244ba35631}{$\sim$\+Scene\+Manager()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a59e62782ae3468beeed5430e58547268}\label{class_owl_engine_1_1_scene_manager_a59e62782ae3468beeed5430e58547268}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!createScene@{createScene}}
+\index{createScene@{createScene}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{createScene()}{createScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ Owl\+Engine\+::\+Scene\+Manager\+::create\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name,  }\item[{const std\+::string \&}]{scene\+Folder\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a59e62782ae3468beeed5430e58547268}{create\+Scene()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & a const std\+::string\& -\/ The name of the scene to load \\
+\hline
+{\em scene\+Folder\+Path} & a const std\+::string\& -\/ The file path to the folder of the scene \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Scene$\ast$ -\/ A pointer to the new scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a54bf6b51028194ce6a9c56da8e1df246}\label{class_owl_engine_1_1_scene_manager_a54bf6b51028194ce6a9c56da8e1df246}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!destroyScene@{destroyScene}}
+\index{destroyScene@{destroyScene}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{destroyScene()}{destroyScene()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+Manager\+::destroy\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destory a scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a54bf6b51028194ce6a9c56da8e1df246}{destroy\+Scene()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & a const std\+::string\& -\/ The name of the scene to destroy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a32142786b211bbe84e77fa59d43a6778}\label{class_owl_engine_1_1_scene_manager_a32142786b211bbe84e77fa59d43a6778}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!destroyScheduledScenes@{destroyScheduledScenes}}
+\index{destroyScheduledScenes@{destroyScheduledScenes}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{destroyScheduledScenes()}{destroyScheduledScenes()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+Manager\+::destroy\+Scheduled\+Scenes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all scheduled scenes. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a32142786b211bbe84e77fa59d43a6778}{destroy\+Scheduled\+Scenes()}} \mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a027ca001af4d8b7cc02fcb1ca2cf9bfb}\label{class_owl_engine_1_1_scene_manager_a027ca001af4d8b7cc02fcb1ca2cf9bfb}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!getActiveScene@{getActiveScene}}
+\index{getActiveScene@{getActiveScene}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{getActiveScene()}{getActiveScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ Owl\+Engine\+::\+Scene\+Manager\+::get\+Active\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the active scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a027ca001af4d8b7cc02fcb1ca2cf9bfb}{get\+Active\+Scene()}}
+
+\begin{DoxyReturn}{Returns}
+a Scene$\ast$ -\/ A pointer to the active scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a1a6e6e37bef18fe61546db96d414b054}\label{class_owl_engine_1_1_scene_manager_a1a6e6e37bef18fe61546db96d414b054}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!getActiveSceneName@{getActiveSceneName}}
+\index{getActiveSceneName@{getActiveSceneName}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{getActiveSceneName()}{getActiveSceneName()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Scene\+Manager\+::get\+Active\+Scene\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the active scene name held in this class. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a1a6e6e37bef18fe61546db96d414b054}{get\+Active\+Scene\+Name()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The name of the active scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a0c62c074ff242655867cdf1217820330}\label{class_owl_engine_1_1_scene_manager_a0c62c074ff242655867cdf1217820330}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!getScene@{getScene}}
+\index{getScene@{getScene}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{getScene()}{getScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ Owl\+Engine\+::\+Scene\+Manager\+::get\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a scene by name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a0c62c074ff242655867cdf1217820330}{get\+Scene()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & a const std\+::string\& -\/ The name of the scene to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Scene$\ast$ -\/ A pointer to the scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_ab375c229268d950dc066ebe4b16dde49}\label{class_owl_engine_1_1_scene_manager_ab375c229268d950dc066ebe4b16dde49}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!getSceneList@{getSceneList}}
+\index{getSceneList@{getSceneList}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{getSceneList()}{getSceneList()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ $>$ \& Owl\+Engine\+::\+Scene\+Manager\+::get\+Scene\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a list of all the scenes. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_ab375c229268d950dc066ebe4b16dde49}{get\+Scene\+List()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::map$<$std\+::string, Scene$\ast$$>$\& -\/ A reference to the list of scenes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_af531d07e6c9237f9cf396e1d1ddbeb75}\label{class_owl_engine_1_1_scene_manager_af531d07e6c9237f9cf396e1d1ddbeb75}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!printSceneManagerDetails@{printSceneManagerDetails}}
+\index{printSceneManagerDetails@{printSceneManagerDetails}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{printSceneManagerDetails()}{printSceneManagerDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+Manager\+::print\+Scene\+Manager\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print scene manager details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_af531d07e6c9237f9cf396e1d1ddbeb75}{print\+Scene\+Manager\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a43f5aeda0491b561283a6b87321d820b}\label{class_owl_engine_1_1_scene_manager_a43f5aeda0491b561283a6b87321d820b}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!printScenesDetails@{printScenesDetails}}
+\index{printScenesDetails@{printScenesDetails}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{printScenesDetails()}{printScenesDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+Manager\+::print\+Scenes\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print scenes details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a43f5aeda0491b561283a6b87321d820b}{print\+Scenes\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a3b3301b18b53116210ed3f980fd4208b}\label{class_owl_engine_1_1_scene_manager_a3b3301b18b53116210ed3f980fd4208b}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!sceneExists@{sceneExists}}
+\index{sceneExists@{sceneExists}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{sceneExists()}{sceneExists()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Scene\+Manager\+::scene\+Exists (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check whether scene name exists. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a3b3301b18b53116210ed3f980fd4208b}{scene\+Exists()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & a const std\+::string\& -\/ The name of the scene to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Was the scene name found in the scene list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a7c52432da1359537e95c47ee860a09de}\label{class_owl_engine_1_1_scene_manager_a7c52432da1359537e95c47ee860a09de}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!setActiveScene@{setActiveScene}}
+\index{setActiveScene@{setActiveScene}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{setActiveScene()}{setActiveScene()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+Manager\+::set\+Active\+Scene (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name,  }\item[{const bool}]{delete\+Old\+Scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the active scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a7c52432da1359537e95c47ee860a09de}{set\+Active\+Scene()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & a const std\+::string\& -\/ The name of the scene to set as active \\
+\hline
+{\em delete\+Old\+Scene} & a const bool -\/ Delete the old active scene \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a7dd1083d39ff80b6d5d864b38f77ad07}\label{class_owl_engine_1_1_scene_manager_a7dd1083d39ff80b6d5d864b38f77ad07}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!start@{start}}
+\index{start@{start}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+Manager\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a7dd1083d39ff80b6d5d864b38f77ad07}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_scene_manager_a0456f0787c098527587279885a105ab3}\label{class_owl_engine_1_1_scene_manager_a0456f0787c098527587279885a105ab3}} 
+\index{OwlEngine::SceneManager@{OwlEngine::SceneManager}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::SceneManager@{OwlEngine::SceneManager}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Scene\+Manager\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_scene_manager_a0456f0787c098527587279885a105ab3}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{scene_manager_8h}{scene\+Manager.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{scene_manager_8cpp}{scene\+Manager.\+cpp}}\end{DoxyCompactItemize}

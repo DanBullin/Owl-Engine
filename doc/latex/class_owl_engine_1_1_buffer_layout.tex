@@ -1,0 +1,200 @@
+\hypertarget{class_owl_engine_1_1_buffer_layout}{}\doxysection{Owl\+Engine\+::Buffer\+Layout$<$ T $>$ Class Template Reference}
+\label{class_owl_engine_1_1_buffer_layout}\index{OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}}
+
+
+An abstraction of a buffer layout.  
+
+
+
+
+{\ttfamily \#include $<$buffer\+Layout.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_a1288314305806596985f9090e4e91c91}{Buffer\+Layout}} (const std\+::initializer\+\_\+list$<$ T $>$ \&element, uint32\+\_\+t stride=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_a9105affb223eb06c7fc6d8496f664516}{get\+Stride}} () const
+\begin{DoxyCompactList}\small\item\em Get the stride of the layout. \end{DoxyCompactList}\item 
+const std\+::vector$<$ T $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_a71310596f2d9ed73ceaec212f883fdc1}{get\+Elements}} () const
+\begin{DoxyCompactList}\small\item\em Get the elements in the buffer layout. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_ada04c1d537cf0bb32c2f0cbbfd110733}{add\+Element}} (const T element)
+\begin{DoxyCompactList}\small\item\em Add an element to the layout. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_aecbb42ef2e8b63c18d596af444279546}{recalculate\+Stride}} (const uint32\+\_\+t override\+Stride=0)
+\begin{DoxyCompactList}\small\item\em Recalculate the stride. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_aaf7e16c001d95796722c576292e39cdc}{calculate\+Uniform\+Buffer\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em Calculate uniform buffer layout using std140 memory layout. \end{DoxyCompactList}\item 
+std\+::vector$<$ T $>$\+::iterator \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_a25ab960286db3be08d1fd770486407d5}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Get the begin iterator for the elements. \end{DoxyCompactList}\item 
+std\+::vector$<$ T $>$\+::iterator \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_aee8ef91e6d36cd47de9cab15ad9cdc9d}{end}} ()
+\begin{DoxyCompactList}\small\item\em Get the end iterator for the elements. \end{DoxyCompactList}\item 
+std\+::vector$<$ T $>$\+::const\+\_\+iterator \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_aa77071cb3a74ae6d5d4de8ef1cbb6421}{begin}} () const
+\begin{DoxyCompactList}\small\item\em Get the const begin iterator for the elements. \end{DoxyCompactList}\item 
+std\+::vector$<$ T $>$\+::const\+\_\+iterator \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_acfab00558a2f9bd336b40202a8a56d6b}{end}} () const
+\begin{DoxyCompactList}\small\item\em Get the const end iterator for the elements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Owl\+Engine\+::\+Buffer\+Layout$<$ T $>$}
+
+An abstraction of a buffer layout. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_buffer_layout_a1288314305806596985f9090e4e91c91}\label{class_owl_engine_1_1_buffer_layout_a1288314305806596985f9090e4e91c91}} 
+\index{OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}!BufferLayout@{BufferLayout}}
+\index{BufferLayout@{BufferLayout}!OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BufferLayout()}{BufferLayout()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{class_owl_engine_1_1_buffer_layout}{Owl\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::\mbox{\hyperlink{class_owl_engine_1_1_buffer_layout}{Buffer\+Layout}} (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ T $>$ \&}]{element,  }\item[{uint32\+\_\+t}]{stride = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Constructor. 
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em element} & a const std\+::initializer\+\_\+list$<$\+T$>$\& -\/ The elements to add to the list of elements \\
+\hline
+{\em stride} & a uint32\+\_\+t -\/ The stride of the layout \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_buffer_layout_ada04c1d537cf0bb32c2f0cbbfd110733}\label{class_owl_engine_1_1_buffer_layout_ada04c1d537cf0bb32c2f0cbbfd110733}} 
+\index{OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}!addElement@{addElement}}
+\index{addElement@{addElement}!OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addElement()}{addElement()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout}{Owl\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::add\+Element (\begin{DoxyParamCaption}\item[{const T}]{element }\end{DoxyParamCaption})}
+
+
+
+Add an element to the layout. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_ada04c1d537cf0bb32c2f0cbbfd110733}{add\+Element()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & a T -\/ The buffer element to add to the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_buffer_layout_a25ab960286db3be08d1fd770486407d5}\label{class_owl_engine_1_1_buffer_layout_a25ab960286db3be08d1fd770486407d5}} 
+\index{OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::vector$<$T$>$\+::iterator \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout}{Owl\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the begin iterator for the elements. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+T$>$\+::iterator -\/ The begin iterator of the elements list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_buffer_layout_aa77071cb3a74ae6d5d4de8ef1cbb6421}\label{class_owl_engine_1_1_buffer_layout_aa77071cb3a74ae6d5d4de8ef1cbb6421}} 
+\index{OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::vector$<$T$>$\+::const\+\_\+iterator \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout}{Owl\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the const begin iterator for the elements. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+T$>$\+::const\+\_\+iterator -\/ The begin const iterator of the elements list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_buffer_layout_aaf7e16c001d95796722c576292e39cdc}\label{class_owl_engine_1_1_buffer_layout_aaf7e16c001d95796722c576292e39cdc}} 
+\index{OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}!calculateUniformBufferLayout@{calculateUniformBufferLayout}}
+\index{calculateUniformBufferLayout@{calculateUniformBufferLayout}!OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{calculateUniformBufferLayout()}{calculateUniformBufferLayout()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout}{Owl\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::calculate\+Uniform\+Buffer\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calculate uniform buffer layout using std140 memory layout. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_aaf7e16c001d95796722c576292e39cdc}{calculate\+Uniform\+Buffer\+Layout()}} \mbox{\Hypertarget{class_owl_engine_1_1_buffer_layout_aee8ef91e6d36cd47de9cab15ad9cdc9d}\label{class_owl_engine_1_1_buffer_layout_aee8ef91e6d36cd47de9cab15ad9cdc9d}} 
+\index{OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}!end@{end}}
+\index{end@{end}!OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::vector$<$T$>$\+::iterator \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout}{Owl\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the end iterator for the elements. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+T$>$\+::iterator -\/ The end iterator of the elements list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_buffer_layout_acfab00558a2f9bd336b40202a8a56d6b}\label{class_owl_engine_1_1_buffer_layout_acfab00558a2f9bd336b40202a8a56d6b}} 
+\index{OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}!end@{end}}
+\index{end@{end}!OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::vector$<$T$>$\+::const\+\_\+iterator \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout}{Owl\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the const end iterator for the elements. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+T$>$\+::const\+\_\+iterator -\/ The end const iterator of the elements list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_buffer_layout_a71310596f2d9ed73ceaec212f883fdc1}\label{class_owl_engine_1_1_buffer_layout_a71310596f2d9ed73ceaec212f883fdc1}} 
+\index{OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}!getElements@{getElements}}
+\index{getElements@{getElements}!OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getElements()}{getElements()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+const std\+::vector$<$T$>$\& \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout}{Owl\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::get\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the elements in the buffer layout. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::vector$<$\+T$>$\& -\/ The elements in the buffer layout 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_buffer_layout_a9105affb223eb06c7fc6d8496f664516}\label{class_owl_engine_1_1_buffer_layout_a9105affb223eb06c7fc6d8496f664516}} 
+\index{OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}!getStride@{getStride}}
+\index{getStride@{getStride}!OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getStride()}{getStride()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout}{Owl\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::get\+Stride (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the stride of the layout. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The stride of the buffer layout 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_buffer_layout_aecbb42ef2e8b63c18d596af444279546}\label{class_owl_engine_1_1_buffer_layout_aecbb42ef2e8b63c18d596af444279546}} 
+\index{OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}!recalculateStride@{recalculateStride}}
+\index{recalculateStride@{recalculateStride}!OwlEngine::BufferLayout$<$ T $>$@{OwlEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{recalculateStride()}{recalculateStride()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_owl_engine_1_1_buffer_layout}{Owl\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::recalculate\+Stride (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{override\+Stride = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Recalculate the stride. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_buffer_layout_aecbb42ef2e8b63c18d596af444279546}{recalculate\+Stride()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em override\+Stride} & a const uint32\+\_\+t -\/ The overriding stride value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/geometry/\mbox{\hyperlink{buffer_layout_8h}{buffer\+Layout.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,172 @@
+\hypertarget{class_hawk_engine_1_1_system_manager}{}\doxysection{Hawk\+Engine\+::System\+Manager Class Reference}
+\label{class_hawk_engine_1_1_system_manager}\index{HawkEngine::SystemManager@{HawkEngine::SystemManager}}
+
+
+A manager class which manages all subsystems.  
+
+
+
+
+{\ttfamily \#include $<$system\+Manager.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const bool \mbox{\hyperlink{class_hawk_engine_1_1_system_manager_a111850725ac780897578c7ef6d5f2f03}{add\+System}} (const \mbox{\hyperlink{system_manager_8h_a5638f178db71161d87fb348e546516d4}{Systems\+::\+Sub\+System}} sub\+System)
+\begin{DoxyCompactList}\small\item\em Add a subsystem to the system manager. \end{DoxyCompactList}\item 
+static const bool \mbox{\hyperlink{class_hawk_engine_1_1_system_manager_ac04c8f26f8b63984e02e6ef0ee90fe04}{remove\+System}} (const \mbox{\hyperlink{system_manager_8h_a5638f178db71161d87fb348e546516d4}{Systems\+::\+Sub\+System}} sub\+System)
+\begin{DoxyCompactList}\small\item\em Remove a subsystem from the system manager. \end{DoxyCompactList}\item 
+static const bool \mbox{\hyperlink{class_hawk_engine_1_1_system_manager_a2e63f1b0bfea4a7a1a4cf6945478097d}{is\+System\+Active}} (const \mbox{\hyperlink{system_manager_8h_a5638f178db71161d87fb348e546516d4}{Systems\+::\+Sub\+System}} sub\+System)
+\begin{DoxyCompactList}\small\item\em Is the sub system specified active. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_system_manager_a10202f19ab2547cf5273a59527af9e27}{remove\+All\+Systems}} ()
+\begin{DoxyCompactList}\small\item\em Remove all systems from the list. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_log}{Log}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_system_manager_a4a744cf45c2d25b752dfff2a88c1a220}{get\+Logger}} ()
+\begin{DoxyCompactList}\small\item\em Get the logger system. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_randomiser}{Randomiser}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_system_manager_a920677a8f0f26f5c83d2d86745c5c6b9}{get\+Randomiser}} ()
+\begin{DoxyCompactList}\small\item\em Get the logger system. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_timer_system}{Timer\+System}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_system_manager_ae46cd1f89ea3b81a83f5fd753972f45f}{get\+Timer\+System}} ()
+\begin{DoxyCompactList}\small\item\em Get the timer system system. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_window_system}{Window\+System}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_system_manager_a56b1ce5fbca43eb8497c276e51c8b59f}{get\+Window\+System}} ()
+\begin{DoxyCompactList}\small\item\em Get the window system system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A manager class which manages all subsystems. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_system_manager_a111850725ac780897578c7ef6d5f2f03}\label{class_hawk_engine_1_1_system_manager_a111850725ac780897578c7ef6d5f2f03}} 
+\index{HawkEngine::SystemManager@{HawkEngine::SystemManager}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!HawkEngine::SystemManager@{HawkEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+System\+Manager\+::add\+System (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{system_manager_8h_a5638f178db71161d87fb348e546516d4}{Systems\+::\+Sub\+System}}}]{sub\+System }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add a subsystem to the system manager. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_system_manager_a111850725ac780897578c7ef6d5f2f03}{add\+System()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+System} & a const Systems\+::\+Sub\+System -\/ The system type to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Result of success in adding the system desired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_system_manager_a4a744cf45c2d25b752dfff2a88c1a220}\label{class_hawk_engine_1_1_system_manager_a4a744cf45c2d25b752dfff2a88c1a220}} 
+\index{HawkEngine::SystemManager@{HawkEngine::SystemManager}!getLogger@{getLogger}}
+\index{getLogger@{getLogger}!HawkEngine::SystemManager@{HawkEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{getLogger()}{getLogger()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_log}{Log}} $\ast$ Hawk\+Engine\+::\+System\+Manager\+::get\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the logger system. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_system_manager_a4a744cf45c2d25b752dfff2a88c1a220}{get\+Logger()}}
+
+\begin{DoxyReturn}{Returns}
+a Log$\ast$ -\/ A pointer to the log system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_system_manager_a920677a8f0f26f5c83d2d86745c5c6b9}\label{class_hawk_engine_1_1_system_manager_a920677a8f0f26f5c83d2d86745c5c6b9}} 
+\index{HawkEngine::SystemManager@{HawkEngine::SystemManager}!getRandomiser@{getRandomiser}}
+\index{getRandomiser@{getRandomiser}!HawkEngine::SystemManager@{HawkEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{getRandomiser()}{getRandomiser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_randomiser}{Randomiser}} $\ast$ Hawk\+Engine\+::\+System\+Manager\+::get\+Randomiser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the logger system. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_system_manager_a920677a8f0f26f5c83d2d86745c5c6b9}{get\+Randomiser()}}
+
+\begin{DoxyReturn}{Returns}
+a Randomiser$\ast$ -\/ A pointer to the randomiser system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_system_manager_ae46cd1f89ea3b81a83f5fd753972f45f}\label{class_hawk_engine_1_1_system_manager_ae46cd1f89ea3b81a83f5fd753972f45f}} 
+\index{HawkEngine::SystemManager@{HawkEngine::SystemManager}!getTimerSystem@{getTimerSystem}}
+\index{getTimerSystem@{getTimerSystem}!HawkEngine::SystemManager@{HawkEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{getTimerSystem()}{getTimerSystem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_timer_system}{Timer\+System}} $\ast$ Hawk\+Engine\+::\+System\+Manager\+::get\+Timer\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the timer system system. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_system_manager_ae46cd1f89ea3b81a83f5fd753972f45f}{get\+Timer\+System()}}
+
+\begin{DoxyReturn}{Returns}
+a Timer\+System$\ast$ -\/ A pointer to the timer system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_system_manager_a56b1ce5fbca43eb8497c276e51c8b59f}\label{class_hawk_engine_1_1_system_manager_a56b1ce5fbca43eb8497c276e51c8b59f}} 
+\index{HawkEngine::SystemManager@{HawkEngine::SystemManager}!getWindowSystem@{getWindowSystem}}
+\index{getWindowSystem@{getWindowSystem}!HawkEngine::SystemManager@{HawkEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{getWindowSystem()}{getWindowSystem()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_window_system}{Window\+System}} $\ast$ Hawk\+Engine\+::\+System\+Manager\+::get\+Window\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the window system system. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_system_manager_a56b1ce5fbca43eb8497c276e51c8b59f}{get\+Window\+System()}}
+
+\begin{DoxyReturn}{Returns}
+a Window\+System$\ast$ -\/ A pointer to the window system 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_system_manager_a2e63f1b0bfea4a7a1a4cf6945478097d}\label{class_hawk_engine_1_1_system_manager_a2e63f1b0bfea4a7a1a4cf6945478097d}} 
+\index{HawkEngine::SystemManager@{HawkEngine::SystemManager}!isSystemActive@{isSystemActive}}
+\index{isSystemActive@{isSystemActive}!HawkEngine::SystemManager@{HawkEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{isSystemActive()}{isSystemActive()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+System\+Manager\+::is\+System\+Active (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{system_manager_8h_a5638f178db71161d87fb348e546516d4}{Systems\+::\+Sub\+System}}}]{sub\+System }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Is the sub system specified active. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_system_manager_a2e63f1b0bfea4a7a1a4cf6945478097d}{is\+System\+Active()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+System} & a const Systems\+::\+Sub\+System -\/ The system type to find \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Whether the system is currently active 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_system_manager_a10202f19ab2547cf5273a59527af9e27}\label{class_hawk_engine_1_1_system_manager_a10202f19ab2547cf5273a59527af9e27}} 
+\index{HawkEngine::SystemManager@{HawkEngine::SystemManager}!removeAllSystems@{removeAllSystems}}
+\index{removeAllSystems@{removeAllSystems}!HawkEngine::SystemManager@{HawkEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{removeAllSystems()}{removeAllSystems()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+System\+Manager\+::remove\+All\+Systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Remove all systems from the list. 
+
+remove\+All\+Systems \mbox{\Hypertarget{class_hawk_engine_1_1_system_manager_ac04c8f26f8b63984e02e6ef0ee90fe04}\label{class_hawk_engine_1_1_system_manager_ac04c8f26f8b63984e02e6ef0ee90fe04}} 
+\index{HawkEngine::SystemManager@{HawkEngine::SystemManager}!removeSystem@{removeSystem}}
+\index{removeSystem@{removeSystem}!HawkEngine::SystemManager@{HawkEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{removeSystem()}{removeSystem()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+System\+Manager\+::remove\+System (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{system_manager_8h_a5638f178db71161d87fb348e546516d4}{Systems\+::\+Sub\+System}}}]{sub\+System }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Remove a subsystem from the system manager. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_system_manager_ac04c8f26f8b63984e02e6ef0ee90fe04}{remove\+System()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+System} & a const Systems\+::\+Sub\+System -\/ The system type to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Result of success in removing the system desired 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/systems/\mbox{\hyperlink{system_manager_8h}{system\+Manager.\+h}}\item 
+C\+:/doc/src/src/independent/systems/\mbox{\hyperlink{system_manager_8cpp}{system\+Manager.\+cpp}}\end{DoxyCompactItemize}

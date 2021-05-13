@@ -1,0 +1,189 @@
+\hypertarget{class_hawk_engine_1_1_vertex_buffer}{}\doxysection{Hawk\+Engine\+::Vertex\+Buffer Class Reference}
+\label{class_hawk_engine_1_1_vertex_buffer}\index{HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}}
+
+
+An A\+PI agnostic Vertex buffer.  
+
+
+
+
+{\ttfamily \#include $<$vertex\+Buffer.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Vertex\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_vertex_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_buffer_a894d6145d41d1637cf6ea4c5051ca124}\label{class_hawk_engine_1_1_vertex_buffer_a894d6145d41d1637cf6ea4c5051ca124}} 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_a894d6145d41d1637cf6ea4c5051ca124}{$\sim$\+Vertex\+Buffer}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_a3b4bf0688698bff60bb46e9be366de14}{edit}} (const void $\ast$vertices, const uint32\+\_\+t size, const uint32\+\_\+t offset)=0
+\begin{DoxyCompactList}\small\item\em Edit the buffer contents. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_a1b9107007851fbb6f141d685b15a02b7}{get\+Buffer\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the buffer ID. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{buffer_layout_8h_ab76d932a743c18885dc3c9d4c37d894d}{Vertex\+Buffer\+Layout}} \& \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_a6d3e4b0738730f446599176ae0ee1004}{get\+Layout}} () const
+\begin{DoxyCompactList}\small\item\em Get the buffer layout. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{vertex_buffer_8h_a0ca514c81d0bfd967e8e257582ffaf9e}{Vertex\+Buffer\+Usage}} \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_ab97a14bf312d9242083f56e67b93d1f1}{get\+Usage}} () const
+\begin{DoxyCompactList}\small\item\em Get the usage of the data in the buffer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_aa208038c85658b73106a5b31d35aff36}{set\+Layout}} (const \mbox{\hyperlink{buffer_layout_8h_ab76d932a743c18885dc3c9d4c37d894d}{Vertex\+Buffer\+Layout}} \&layout)
+\begin{DoxyCompactList}\small\item\em Set the buffer layout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer}{Vertex\+Buffer}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_aadd4ae59f645852caa39818dd93143ed}{create}} (const void $\ast$vertices, const uint32\+\_\+t size, const \mbox{\hyperlink{buffer_layout_8h_ab76d932a743c18885dc3c9d4c37d894d}{Vertex\+Buffer\+Layout}} \&layout, const \mbox{\hyperlink{vertex_buffer_8h_a0ca514c81d0bfd967e8e257582ffaf9e}{Vertex\+Buffer\+Usage}} usage=Vertex\+Buffer\+Usage\+::\+Static\+Draw)
+\begin{DoxyCompactList}\small\item\em Create a vertex buffer. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer}{Vertex\+Buffer}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_a4973466f2f02eabbcc72a7148f91a962}{create}} (const uint32\+\_\+t size, const \mbox{\hyperlink{vertex_buffer_8h_a0ca514c81d0bfd967e8e257582ffaf9e}{Vertex\+Buffer\+Usage}} usage=Vertex\+Buffer\+Usage\+::\+Dynamic\+Draw)
+\begin{DoxyCompactList}\small\item\em Create a vertex buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_buffer_aefb1fe8c818d774c20b351f16f9c4f84}\label{class_hawk_engine_1_1_vertex_buffer_aefb1fe8c818d774c20b351f16f9c4f84}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_aefb1fe8c818d774c20b351f16f9c4f84}{m\+\_\+buffer\+ID}}
+\begin{DoxyCompactList}\small\item\em The vertex buffer ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_buffer_a8725e456ae1828f0015e9be64f1eec63}\label{class_hawk_engine_1_1_vertex_buffer_a8725e456ae1828f0015e9be64f1eec63}} 
+\mbox{\hyperlink{buffer_layout_8h_ab76d932a743c18885dc3c9d4c37d894d}{Vertex\+Buffer\+Layout}} \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_a8725e456ae1828f0015e9be64f1eec63}{m\+\_\+layout}}
+\begin{DoxyCompactList}\small\item\em The vertex buffer\textquotesingle{}s layout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_buffer_a0672043603d05a0900bb14af093fe658}\label{class_hawk_engine_1_1_vertex_buffer_a0672043603d05a0900bb14af093fe658}} 
+\mbox{\hyperlink{vertex_buffer_8h_a0ca514c81d0bfd967e8e257582ffaf9e}{Vertex\+Buffer\+Usage}} \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_a0672043603d05a0900bb14af093fe658}{m\+\_\+usage}}
+\begin{DoxyCompactList}\small\item\em The usage of the vertex buffer data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic Vertex buffer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_buffer_a4973466f2f02eabbcc72a7148f91a962}\label{class_hawk_engine_1_1_vertex_buffer_a4973466f2f02eabbcc72a7148f91a962}} 
+\index{HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}!create@{create}}
+\index{create@{create}!HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer}{Vertex\+Buffer}} $\ast$ Hawk\+Engine\+::\+Vertex\+Buffer\+::create (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{size,  }\item[{const \mbox{\hyperlink{vertex_buffer_8h_a0ca514c81d0bfd967e8e257582ffaf9e}{Vertex\+Buffer\+Usage}}}]{usage = {\ttfamily VertexBufferUsage\+:\+:DynamicDraw} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a vertex buffer. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_aadd4ae59f645852caa39818dd93143ed}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the buffer data \\
+\hline
+{\em usage} & a const Vertex\+Buffer\+Usage -\/ The usage of the vertices data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vertex\+Buffer$\ast$ -\/ The vertex buffer based on the current graphics A\+PI 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_buffer_aadd4ae59f645852caa39818dd93143ed}\label{class_hawk_engine_1_1_vertex_buffer_aadd4ae59f645852caa39818dd93143ed}} 
+\index{HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}!create@{create}}
+\index{create@{create}!HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer}{Vertex\+Buffer}} $\ast$ Hawk\+Engine\+::\+Vertex\+Buffer\+::create (\begin{DoxyParamCaption}\item[{const void $\ast$}]{vertices,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const \mbox{\hyperlink{buffer_layout_8h_ab76d932a743c18885dc3c9d4c37d894d}{Vertex\+Buffer\+Layout}} \&}]{layout,  }\item[{const \mbox{\hyperlink{vertex_buffer_8h_a0ca514c81d0bfd967e8e257582ffaf9e}{Vertex\+Buffer\+Usage}}}]{usage = {\ttfamily VertexBufferUsage\+:\+:StaticDraw} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a vertex buffer. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_aadd4ae59f645852caa39818dd93143ed}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a const void$\ast$ -\/ The vertices info \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the vertices data \\
+\hline
+{\em layout} & a const Vertex\+Buffer\+Layout -\/ The layout of the vertex buffer \\
+\hline
+{\em usage} & a const Vertex\+Buffer\+Usage -\/ The usage of the vertices data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Vertex\+Buffer$\ast$ -\/ The vertex buffer based on the current graphics A\+PI 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_buffer_a3b4bf0688698bff60bb46e9be366de14}\label{class_hawk_engine_1_1_vertex_buffer_a3b4bf0688698bff60bb46e9be366de14}} 
+\index{HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}!edit@{edit}}
+\index{edit@{edit}!HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Vertex\+Buffer\+::edit (\begin{DoxyParamCaption}\item[{const void $\ast$}]{vertices,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const uint32\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Edit the buffer contents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a const void$\ast$ -\/The vertices info \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the vertices data \\
+\hline
+{\em offset} & a const int32\+\_\+t -\/ The offset of where to place the new data \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_vertex_buffer_a4505f55bbd8d8016a864ecc500a39175}{Hawk\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_buffer_a1b9107007851fbb6f141d685b15a02b7}\label{class_hawk_engine_1_1_vertex_buffer_a1b9107007851fbb6f141d685b15a02b7}} 
+\index{HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}!getBufferID@{getBufferID}}
+\index{getBufferID@{getBufferID}!HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{getBufferID()}{getBufferID()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Vertex\+Buffer\+::get\+Buffer\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the buffer ID. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The ID of the buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_buffer_a6d3e4b0738730f446599176ae0ee1004}\label{class_hawk_engine_1_1_vertex_buffer_a6d3e4b0738730f446599176ae0ee1004}} 
+\index{HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}!getLayout@{getLayout}}
+\index{getLayout@{getLayout}!HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{getLayout()}{getLayout()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{buffer_layout_8h_ab76d932a743c18885dc3c9d4c37d894d}{Vertex\+Buffer\+Layout}}\& Hawk\+Engine\+::\+Vertex\+Buffer\+::get\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the buffer layout. 
+
+\begin{DoxyReturn}{Returns}
+a const \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout}{Buffer\+Layout}}\& -\/ The buffer layout 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_buffer_ab97a14bf312d9242083f56e67b93d1f1}\label{class_hawk_engine_1_1_vertex_buffer_ab97a14bf312d9242083f56e67b93d1f1}} 
+\index{HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}!getUsage@{getUsage}}
+\index{getUsage@{getUsage}!HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{getUsage()}{getUsage()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{vertex_buffer_8h_a0ca514c81d0bfd967e8e257582ffaf9e}{Vertex\+Buffer\+Usage}} Hawk\+Engine\+::\+Vertex\+Buffer\+::get\+Usage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the usage of the data in the buffer. 
+
+\begin{DoxyReturn}{Returns}
+a const Vertex\+Buffer\+Usage -\/ The usage of the data in the buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_buffer_aa208038c85658b73106a5b31d35aff36}\label{class_hawk_engine_1_1_vertex_buffer_aa208038c85658b73106a5b31d35aff36}} 
+\index{HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}!setLayout@{setLayout}}
+\index{setLayout@{setLayout}!HawkEngine::VertexBuffer@{HawkEngine::VertexBuffer}}
+\doxysubsubsection{\texorpdfstring{setLayout()}{setLayout()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Vertex\+Buffer\+::set\+Layout (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{buffer_layout_8h_ab76d932a743c18885dc3c9d4c37d894d}{Vertex\+Buffer\+Layout}} \&}]{layout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set the buffer layout. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layout} & a const Vertex\+Buffer\+Layout\& -\/ The vertex buffer layout to set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/geometry/\mbox{\hyperlink{vertex_buffer_8h}{vertex\+Buffer.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/geometry/\mbox{\hyperlink{vertex_buffer_8cpp}{vertex\+Buffer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,163 @@
+\hypertarget{class_open_g_l_utils}{}\doxysection{Open\+G\+L\+Utils Class Reference}
+\label{class_open_g_l_utils}\index{OpenGLUtils@{OpenGLUtils}}
+
+
+An utilities class for enabling/disable certain Open\+GL capabilities.  
+
+
+
+
+{\ttfamily \#include $<$open\+G\+L\+Utils.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_open_g_l_utils_a46f9a86f1163bdb799cb270e8ed99cdc}{enable\+Face\+Culling}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable face culling. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_open_g_l_utils_ad0a7c067d6de861a847cf1ee46c0dd04}{enable\+Depth\+Testing}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable depth testing. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_open_g_l_utils_a75ad2ff3bbd3c42baaae318f3af13218}{enable\+Wireframe}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable wireframe mode. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_open_g_l_utils_ab86b9575772bd1c8a29bbd4d8a0b8734}{enable\+Depth\+Writing}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable depth writing. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_open_g_l_utils_a6e2e8f8fa1326dccbfbede1f2d1d5115}{clear\+Buffers}} (const int buffers, const glm\+::vec4 colour=glm\+::vec4(0.f, 0.f, 0.f, 1.f))
+\begin{DoxyCompactList}\small\item\em Clear the buffers. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_open_g_l_utils_a5cbb673ad07073ac1b7674632b7ac228}{set\+Depth\+Comparison}} (const int comparison)
+\begin{DoxyCompactList}\small\item\em Set the depth buffer comparison value. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_open_g_l_utils_a67b5e34f743fe05e8fb9f3a495cc466a}{resize\+Viewport}} (const int width, const int height)
+\begin{DoxyCompactList}\small\item\em Resize the viewport. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An utilities class for enabling/disable certain Open\+GL capabilities. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_open_g_l_utils_a6e2e8f8fa1326dccbfbede1f2d1d5115}\label{class_open_g_l_utils_a6e2e8f8fa1326dccbfbede1f2d1d5115}} 
+\index{OpenGLUtils@{OpenGLUtils}!clearBuffers@{clearBuffers}}
+\index{clearBuffers@{clearBuffers}!OpenGLUtils@{OpenGLUtils}}
+\doxysubsubsection{\texorpdfstring{clearBuffers()}{clearBuffers()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Utils\+::clear\+Buffers (\begin{DoxyParamCaption}\item[{const int}]{buffers,  }\item[{const glm\+::vec4}]{colour = {\ttfamily glm\+:\+:vec4(0.f,~0.f,~0.f,~1.f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clear the buffers. 
+
+\mbox{\hyperlink{class_open_g_l_utils_a6e2e8f8fa1326dccbfbede1f2d1d5115}{clear\+Buffers()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffers} & a const int -\/ The bitmask of the buffers to clear \\
+\hline
+{\em colour} & a const glm\+::vec4 -\/ The colour to clear the colour buffer with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_open_g_l_utils_ad0a7c067d6de861a847cf1ee46c0dd04}\label{class_open_g_l_utils_ad0a7c067d6de861a847cf1ee46c0dd04}} 
+\index{OpenGLUtils@{OpenGLUtils}!enableDepthTesting@{enableDepthTesting}}
+\index{enableDepthTesting@{enableDepthTesting}!OpenGLUtils@{OpenGLUtils}}
+\doxysubsubsection{\texorpdfstring{enableDepthTesting()}{enableDepthTesting()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Utils\+::enable\+Depth\+Testing (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable depth testing. 
+
+\mbox{\hyperlink{class_open_g_l_utils_ad0a7c067d6de861a847cf1ee46c0dd04}{enable\+Depth\+Testing()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a bool -\/ Enable depth testing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_open_g_l_utils_ab86b9575772bd1c8a29bbd4d8a0b8734}\label{class_open_g_l_utils_ab86b9575772bd1c8a29bbd4d8a0b8734}} 
+\index{OpenGLUtils@{OpenGLUtils}!enableDepthWriting@{enableDepthWriting}}
+\index{enableDepthWriting@{enableDepthWriting}!OpenGLUtils@{OpenGLUtils}}
+\doxysubsubsection{\texorpdfstring{enableDepthWriting()}{enableDepthWriting()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Utils\+::enable\+Depth\+Writing (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable depth writing. 
+
+\mbox{\hyperlink{class_open_g_l_utils_ab86b9575772bd1c8a29bbd4d8a0b8734}{enable\+Depth\+Writing()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a bool -\/ Enable depth writing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_open_g_l_utils_a46f9a86f1163bdb799cb270e8ed99cdc}\label{class_open_g_l_utils_a46f9a86f1163bdb799cb270e8ed99cdc}} 
+\index{OpenGLUtils@{OpenGLUtils}!enableFaceCulling@{enableFaceCulling}}
+\index{enableFaceCulling@{enableFaceCulling}!OpenGLUtils@{OpenGLUtils}}
+\doxysubsubsection{\texorpdfstring{enableFaceCulling()}{enableFaceCulling()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Utils\+::enable\+Face\+Culling (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable face culling. 
+
+\mbox{\hyperlink{class_open_g_l_utils_a46f9a86f1163bdb799cb270e8ed99cdc}{enable\+Face\+Culling()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a bool -\/ Enable face culling \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_open_g_l_utils_a75ad2ff3bbd3c42baaae318f3af13218}\label{class_open_g_l_utils_a75ad2ff3bbd3c42baaae318f3af13218}} 
+\index{OpenGLUtils@{OpenGLUtils}!enableWireframe@{enableWireframe}}
+\index{enableWireframe@{enableWireframe}!OpenGLUtils@{OpenGLUtils}}
+\doxysubsubsection{\texorpdfstring{enableWireframe()}{enableWireframe()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Utils\+::enable\+Wireframe (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable wireframe mode. 
+
+\mbox{\hyperlink{class_open_g_l_utils_a75ad2ff3bbd3c42baaae318f3af13218}{enable\+Wireframe()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a bool -\/ Enable wire frame \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_open_g_l_utils_a67b5e34f743fe05e8fb9f3a495cc466a}\label{class_open_g_l_utils_a67b5e34f743fe05e8fb9f3a495cc466a}} 
+\index{OpenGLUtils@{OpenGLUtils}!resizeViewport@{resizeViewport}}
+\index{resizeViewport@{resizeViewport}!OpenGLUtils@{OpenGLUtils}}
+\doxysubsubsection{\texorpdfstring{resizeViewport()}{resizeViewport()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Utils\+::resize\+Viewport (\begin{DoxyParamCaption}\item[{const int}]{width,  }\item[{const int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resize the viewport. 
+
+\mbox{\hyperlink{class_open_g_l_utils_a67b5e34f743fe05e8fb9f3a495cc466a}{resize\+Viewport()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & a const int -\/ The width of the viewport \\
+\hline
+{\em height} & a const int -\/ The height of the viewport \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_open_g_l_utils_a5cbb673ad07073ac1b7674632b7ac228}\label{class_open_g_l_utils_a5cbb673ad07073ac1b7674632b7ac228}} 
+\index{OpenGLUtils@{OpenGLUtils}!setDepthComparison@{setDepthComparison}}
+\index{setDepthComparison@{setDepthComparison}!OpenGLUtils@{OpenGLUtils}}
+\doxysubsubsection{\texorpdfstring{setDepthComparison()}{setDepthComparison()}}
+{\footnotesize\ttfamily void Open\+G\+L\+Utils\+::set\+Depth\+Comparison (\begin{DoxyParamCaption}\item[{const int}]{comparison }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the depth buffer comparison value. 
+
+\mbox{\hyperlink{class_open_g_l_utils_a5cbb673ad07073ac1b7674632b7ac228}{set\+Depth\+Comparison()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em comparison} & a const int -\/ The depth test comparison value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/utils/\mbox{\hyperlink{open_g_l_utils_8h}{open\+G\+L\+Utils.\+h}}\item 
+C\+:/doc/src/src/utils/\mbox{\hyperlink{open_g_l_utils_8cpp}{open\+G\+L\+Utils.\+cpp}}\end{DoxyCompactItemize}

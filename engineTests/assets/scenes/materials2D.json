@@ -1,0 +1,11 @@
+{
+	"materials": [
+		{ "name": "letterMaterial", "subTexture": "letterSubTexture", "tint": [ 1.0, 1.0, 1.0, 0.5 ] },
+		{ "name": "numberMaterial", "subTexture": "numberSubTexture", "tint": [ 1.0, 1.0, 1.0, 0.5 ] },
+		{ "name": "cyborgMaterial", "subTexture": "cyborgSubTexture", "tint": [ 1.0, 1.0, 1.0, 1.0 ] },
+		{ "name": "textMaterial", "subTexture": "textSubTexture", "tint": [ 1.0, 0.0, 1.0, 1.0 ]},
+		{ "name": "text2Material", "subTexture": "textSubTexture", "tint": [ 1.0, 1.0, 1.0, 1.0 ]},
+		{ "name": "text3Material", "subTexture": "textSubTexture", "tint": [ 0.0, 1.0, 1.0, 1.0 ]},
+		{ "name": "defaultMaterial", "subTexture": "borderSubTexture", "tint": [ 1.0, 1.0, 1.0, 1.0 ] }
+	]
+}

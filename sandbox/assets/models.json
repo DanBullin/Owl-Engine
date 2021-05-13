@@ -1,0 +1,125 @@
+{
+	"models": 
+	[
+		{ 
+			"name": "plane", 
+			"modelFilePath": "assets/models/plane/plane.obj",
+			"materialFilePath": ""
+		},
+		{
+			"name": "doorLock",
+			"modelFilePath": "assets/models/sewer/door/doorLock.obj",
+			"materialFilePath": "assets/models/sewer/door/doorLock.txt"
+		},
+		{ 
+			"name": "cube", 
+			"modelFilePath": "assets/models/cube/cube.obj",
+			"materialFilePath": ""
+		},
+		{ 
+			"name": "sphere", 
+			"modelFilePath": "assets/models/sphere/sphere.obj",
+			"materialFilePath": ""
+		},
+		{ 
+			"name": "cyborg", 
+			"modelFilePath": "assets/models/cyborg/cyborg.obj",
+			"materialFilePath": "assets/models/cyborg/cyborg.txt"
+		},
+		{
+			"name": "sewer_straight",
+			"modelFilePath": "assets/models/josh/sewer_straight.obj",
+			"materialFilePath": "assets/models/josh/sewer_straight.txt"
+		},
+		{
+			"name": "sewer_short",
+			"modelFilePath": "assets/models/josh/sewer_short.obj",
+			"materialFilePath": "assets/models/josh/sewer_short.txt"
+		},
+		{
+			"name": "tunnel_end",
+			"modelFilePath": "assets/models/sewer/tunnel_end.obj",
+			"materialFilePath": "assets/models/sewer/tunnel.txt"
+		},
+		{
+			"name": "tunnel_t_junc",
+			"modelFilePath": "assets/models/josh/sewer_T.obj",
+			"materialFilePath": "assets/models/josh/sewer_T.txt"
+		},
+		{
+			"name": "tunnel_corner",
+			"modelFilePath": "assets/models/sewer/tunnel_corner.obj",
+			"materialFilePath": "assets/models/sewer/tunnelCorner.txt"
+		},
+		{
+			"name": "keycardModel",
+			"modelFilePath": "assets/models/sewer/keycard.obj",
+			"materialFilePath": ""
+		},
+		{
+			"name": "ironBarDoor",
+			"modelFilePath": "assets/models/sewer/door/door.obj",
+			"materialFilePath": ""
+		},
+		{
+			"name": "doorFrame",
+			"modelFilePath": "assets/models/sewer/door/doorFrame.obj",
+			"materialFilePath": ""
+		},
+		{
+			"name": "josh_garbage",
+			"modelFilePath": "assets/models/josh/sewer_garbage_4.obj",
+			"materialFilePath": "assets/models/josh/garbage.txt"
+		},
+		{
+			"name": "josh_pillars",
+			"modelFilePath": "assets/models/josh/sewer_pillars_frozen.obj",
+			"materialFilePath": "assets/models/josh/pillars.txt"
+		},
+		{
+			"name": "josh_room",
+			"modelFilePath": "assets/models/josh/sewer_room.obj",
+			"materialFilePath": "assets/models/josh/room.txt"
+		},
+		{
+			"name": "josh_U",
+			"modelFilePath": "assets/models/josh/sewer_U.obj",
+			"materialFilePath": "assets/models/josh/U.txt"
+		},
+		{
+			"name": "barrel",
+			"modelFilePath": "assets/models/josh/barrel.obj",
+			"materialFilePath": "assets/models/josh/barrelCrate.txt"
+		},
+		{
+			"name": "crate",
+			"modelFilePath": "assets/models/josh/crate.obj",
+			"materialFilePath": "assets/models/josh/barrelCrate.txt"
+		},
+		{
+			"name": "ladder",
+			"modelFilePath": "assets/models/josh/ladder.obj",
+			"materialFilePath": "assets/models/josh/ladder.txt"
+		},
+		{
+			"name": "ladder_roof",
+			"modelFilePath": "assets/models/josh/ladder_roof.obj",
+			"materialFilePath": "assets/models/josh/ladder_roof.txt"
+		},
+		{
+			"name": "trash",
+			"modelFilePath": "assets/models/josh/trash.obj",
+			"materialFilePath": "assets/models/josh/trash.txt"
+		},
+		{
+			"name": "flowers",
+			"modelFilePath": "assets/models/josh/flowers3.obj",
+			"materialFilePath": "assets/models/josh/flowers.txt"
+		},
+		{
+			"name": "paper",
+			"modelFilePath": "assets/models/josh/paper-rot1.obj",
+			"materialFilePath": "assets/models/josh/paper.txt"
+		}
+	]	
+}

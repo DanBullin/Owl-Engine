@@ -1,0 +1,269 @@
+\hypertarget{class_hawk_engine_1_1_entity}{}\doxysection{Hawk\+Engine\+::Entity Class Reference}
+\label{class_hawk_engine_1_1_entity}\index{HawkEngine::Entity@{HawkEngine::Entity}}
+
+
+An entity class which represents an individual existance in the game world.  
+
+
+
+
+{\ttfamily \#include $<$entity.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_ac877b0d78407ed4bc37687df5d98851c}\label{class_hawk_engine_1_1_entity_ac877b0d78407ed4bc37687df5d98851c}} 
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_ac877b0d78407ed4bc37687df5d98851c}{Entity}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_entity_a50cf0f9e8b6c7d87a0e59f6d8a510d58}{$\sim$\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_entity_a900ef0c964ba0158d58b4b086e1d2ea5}{add\+Component}} (const char $\ast$name, \mbox{\hyperlink{class_hawk_engine_1_1_entity_component}{Entity\+Component}} $\ast$component)
+\begin{DoxyCompactList}\small\item\em Add component to entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_entity_a2b04dcaef08d3a52846a73da42b981a1}{delete\+Component}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Delete a component from the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_component}{Entity\+Component}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_entity_a7ffd852aad39f6e8f72ceb2ccc5e92ef}{get\+Component}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Get a component by name. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_hawk_engine_1_1_entity_component}{Entity\+Component}} $\ast$ $>$ \mbox{\hyperlink{class_hawk_engine_1_1_entity_a996f1a8e526b4160751b7a6b750628d2}{get\+Components\+By\+Type}} (const \mbox{\hyperlink{entity_component_8h_ab44e428dd0e8e887e676b4376157f137}{Component\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Get a list of components by type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hawk_engine_1_1_entity_a76634d2b382571167ba28bf8da82d042}{contains\+Component}} (const \mbox{\hyperlink{entity_component_8h_ab44e428dd0e8e887e676b4376157f137}{Component\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Check if the entity has a type of component attached. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_transform}{Transform}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_entity_a7ec9de79a64ccc0409174fa1a4a8d70f}{get\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Get the entities transform. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d}{Transform2D}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_entity_a030114da740334eb25cdf7ccbcf61ba3}{get2\+D\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Get the entities 2D transform. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_entity_aace40cfde844ba11a2664819dc9278af}{update}} (const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Update the entity and all it\textquotesingle{}s children \& components. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_entity_a43df45c948192a9c3e5a2af8b14a1fd8}{set\+Scene}} (\mbox{\hyperlink{class_hawk_engine_1_1_scene}{Scene}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Set the scene this entity belongs to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_entity_a377e1694d931f2124f95eae9e902a799}{get\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Get the scene this entity belongs to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_entity_aa85c6a7e7c9d272275d3890f6fa0978d}{set\+Name}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Set the name of the entity. \end{DoxyCompactList}\item 
+std\+::string \& \mbox{\hyperlink{class_hawk_engine_1_1_entity_aaf9e9186fde8af27f1717c1913d11786}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An entity class which represents an individual existance in the game world. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_a50cf0f9e8b6c7d87a0e59f6d8a510d58}\label{class_hawk_engine_1_1_entity_a50cf0f9e8b6c7d87a0e59f6d8a510d58}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!````~Entity@{$\sim$Entity}}
+\index{````~Entity@{$\sim$Entity}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{$\sim$Entity()}{~Entity()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_a50cf0f9e8b6c7d87a0e59f6d8a510d58}{$\sim$\+Entity()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_a900ef0c964ba0158d58b4b086e1d2ea5}\label{class_hawk_engine_1_1_entity_a900ef0c964ba0158d58b4b086e1d2ea5}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Entity\+::add\+Component (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{\mbox{\hyperlink{class_hawk_engine_1_1_entity_component}{Entity\+Component}} $\ast$}]{component }\end{DoxyParamCaption})}
+
+
+
+Add component to entity. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_a900ef0c964ba0158d58b4b086e1d2ea5}{add\+Component()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the component \\
+\hline
+{\em component} & an Entity\+Component$\ast$ -\/ A pointer to the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_a76634d2b382571167ba28bf8da82d042}\label{class_hawk_engine_1_1_entity_a76634d2b382571167ba28bf8da82d042}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!containsComponent@{containsComponent}}
+\index{containsComponent@{containsComponent}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{containsComponent()}{containsComponent()}}
+{\footnotesize\ttfamily bool Hawk\+Engine\+::\+Entity\+::contains\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{entity_component_8h_ab44e428dd0e8e887e676b4376157f137}{Component\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Check if the entity has a type of component attached. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_a76634d2b382571167ba28bf8da82d042}{contains\+Component()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const Component\+Type -\/ The type of component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the entity have a component of type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_a2b04dcaef08d3a52846a73da42b981a1}\label{class_hawk_engine_1_1_entity_a2b04dcaef08d3a52846a73da42b981a1}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!deleteComponent@{deleteComponent}}
+\index{deleteComponent@{deleteComponent}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{deleteComponent()}{deleteComponent()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Entity\+::delete\+Component (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Delete a component from the entity. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_a2b04dcaef08d3a52846a73da42b981a1}{delete\+Component()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_a030114da740334eb25cdf7ccbcf61ba3}\label{class_hawk_engine_1_1_entity_a030114da740334eb25cdf7ccbcf61ba3}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!get2DTransform@{get2DTransform}}
+\index{get2DTransform@{get2DTransform}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{get2DTransform()}{get2DTransform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_transform2_d}{Transform2D}} $\ast$ Hawk\+Engine\+::\+Entity\+::get2\+D\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the entities 2D transform. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_a030114da740334eb25cdf7ccbcf61ba3}{get2\+D\+Transform()}}
+
+\begin{DoxyReturn}{Returns}
+a Transform2\+D$\ast$ -\/ A pointer to the transform 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_a7ffd852aad39f6e8f72ceb2ccc5e92ef}\label{class_hawk_engine_1_1_entity_a7ffd852aad39f6e8f72ceb2ccc5e92ef}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_entity_component}{Entity\+Component}} $\ast$ Hawk\+Engine\+::\+Entity\+::get\+Component (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Get a component by name. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_a7ffd852aad39f6e8f72ceb2ccc5e92ef}{get\+Component()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Entity\+Component$\ast$ -\/ A component pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_a996f1a8e526b4160751b7a6b750628d2}\label{class_hawk_engine_1_1_entity_a996f1a8e526b4160751b7a6b750628d2}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!getComponentsByType@{getComponentsByType}}
+\index{getComponentsByType@{getComponentsByType}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getComponentsByType()}{getComponentsByType()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_hawk_engine_1_1_entity_component}{Entity\+Component}} $\ast$ $>$ Hawk\+Engine\+::\+Entity\+::get\+Components\+By\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{entity_component_8h_ab44e428dd0e8e887e676b4376157f137}{Component\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Get a list of components by type. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_a996f1a8e526b4160751b7a6b750628d2}{get\+Components\+By\+Type()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const Component\+Type -\/ The type of component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Entity\+Component$\ast$$>$ -\/ A list of all the components of type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_aaf9e9186fde8af27f1717c1913d11786}\label{class_hawk_engine_1_1_entity_aaf9e9186fde8af27f1717c1913d11786}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!getName@{getName}}
+\index{getName@{getName}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string\& Hawk\+Engine\+::\+Entity\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name of the entity. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::string\& -\/ The name of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_a377e1694d931f2124f95eae9e902a799}\label{class_hawk_engine_1_1_entity_a377e1694d931f2124f95eae9e902a799}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!getScene@{getScene}}
+\index{getScene@{getScene}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getScene()}{getScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_scene}{Scene}}$\ast$ Hawk\+Engine\+::\+Entity\+::get\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the scene this entity belongs to. 
+
+\begin{DoxyReturn}{Returns}
+a Scene$\ast$ -\/ The scene this entity belongs to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_a7ec9de79a64ccc0409174fa1a4a8d70f}\label{class_hawk_engine_1_1_entity_a7ec9de79a64ccc0409174fa1a4a8d70f}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!getTransform@{getTransform}}
+\index{getTransform@{getTransform}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getTransform()}{getTransform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_transform}{Transform}} $\ast$ Hawk\+Engine\+::\+Entity\+::get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the entities transform. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_a7ec9de79a64ccc0409174fa1a4a8d70f}{get\+Transform()}}
+
+\begin{DoxyReturn}{Returns}
+a Transform$\ast$ -\/ A pointer to the transform 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_aa85c6a7e7c9d272275d3890f6fa0978d}\label{class_hawk_engine_1_1_entity_aa85c6a7e7c9d272275d3890f6fa0978d}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!setName@{setName}}
+\index{setName@{setName}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Entity\+::set\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the name of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_a43df45c948192a9c3e5a2af8b14a1fd8}\label{class_hawk_engine_1_1_entity_a43df45c948192a9c3e5a2af8b14a1fd8}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!setScene@{setScene}}
+\index{setScene@{setScene}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{setScene()}{setScene()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Entity\+::set\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_scene}{Scene}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the scene this entity belongs to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & a Scene$\ast$ -\/ The scene this entity belongs to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_aace40cfde844ba11a2664819dc9278af}\label{class_hawk_engine_1_1_entity_aace40cfde844ba11a2664819dc9278af}} 
+\index{HawkEngine::Entity@{HawkEngine::Entity}!update@{update}}
+\index{update@{update}!HawkEngine::Entity@{HawkEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Entity\+::update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the entity and all it\textquotesingle{}s children \& components. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_aace40cfde844ba11a2664819dc9278af}{update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/scene/entity/\mbox{\hyperlink{entity_8h}{entity.\+h}}\item 
+C\+:/doc/src/src/independent/scene/entity/\mbox{\hyperlink{entity_8cpp}{entity.\+cpp}}\end{DoxyCompactItemize}

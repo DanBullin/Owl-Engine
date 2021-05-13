@@ -1,0 +1,101 @@
+{
+	"subTextures": 
+	[
+		{ 
+			"name": "owlyFansSubTexture", "baseTextureName": "owlyFansLogo", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "flushedSubTexture", "baseTextureName": "flushedLogo", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "crossHairsSubTexture", "baseTextureName": "crossHairs_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "cyborgSubTexture", "baseTextureName": "cyborg_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 0.5 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "mapSubTexture", "baseTextureName": "map", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "handSubTexture", "baseTextureName": "hand", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "torchSubTexture", "baseTextureName": "torch", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "keycardSubTexture", "baseTextureName": "keycard", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "hotbarPlainSubTexture", "baseTextureName": "hotbar_plain", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "hotbarCurrentSubTexture", "baseTextureName": "hotbar_current", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "streetSubTexture", "baseTextureName": "street_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "tunnelSubTexture", "baseTextureName": "tunnel_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "garbageSubTexture", "baseTextureName": "garbage_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "pillarsSubTexture", "baseTextureName": "pillars_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "RustedIronSubTexture", "baseTextureName": "rusted_steel", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "barrelCrateSubTexture", "baseTextureName": "barrelCrate_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "blankSubTexture", "baseTextureName": "blank_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "turdSubTexture", "baseTextureName": "turd_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "scribbleSubTexture", "baseTextureName": "scribble_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "steel1SubTexture", "baseTextureName": "steel1_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "steel2SubTexture", "baseTextureName": "steel2_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "unlockedSubTexture", "baseTextureName": "unlockedDiffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "lockedSubTexture", "baseTextureName": "lockedDiffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "checkboxUSubTexture", "baseTextureName": "checkboxUnchecked", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "checkboxCSubTexture", "baseTextureName": "checkboxChecked", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "flowersSubTexture", "baseTextureName": "flowersDiffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "rootsSubTexture", "baseTextureName": "rootsDiffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "bluShroomSubTexture", "baseTextureName": "bluShroomDiffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "bigShroomSubTexture", "baseTextureName": "bigShroomDiffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "smolShroomSubTexture", "baseTextureName": "smolShroomDiffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "creditsSubTexture", "baseTextureName": "creditsImage", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		},
+		{ 
+			"name": "deadSubTexture", "baseTextureName": "deadImage", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ], "ConvertBottomLeft": false
+		}
+	]
+}

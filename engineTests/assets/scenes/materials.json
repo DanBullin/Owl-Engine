@@ -1,0 +1,9 @@
+{
+	"materials": [
+		{ "name": "gridMaterial", "subTexture": "gridSubTexture", "shader": "BlinnPhongShader", "tint": [ 1.0, 1.0, 1.0, 1.0 ] },
+		{ "name": "cyborgMaterial", "subTexture": "cyborgSubTexture", "shader": "BlinnPhongShader", "tint": [ 1.0, 1.0, 1.0, 1.0 ] },
+		{ "name": "barrelMaterial", "subTexture": "barrelSubTexture", "shader": "BlinnPhongShader", "tint": [ 1.0, 1.0, 1.0, 1.0 ] },
+		{ "name": "cubeMaterial", "subTexture": "brickSubTexture", "shader": "BlinnPhongShader", "tint": [ 1.0, 1.0, 1.0, 1.0 ] },
+		{ "name": "lightMaterial", "subTexture": "defaultSubTexture", "shader": "LightSourceShader", "tint": [ 1.0, 1.0, 1.0, 1.0 ] }
+	]
+}

@@ -1,0 +1,68 @@
+\hypertarget{entity_component_8h}{}\doxysection{C\+:/doc/src/engine/include/independent/entities/entity\+Component.h File Reference}
+\label{entity_component_8h}\index{C:/doc/src/engine/include/independent/entities/entityComponent.h@{C:/doc/src/engine/include/independent/entities/entityComponent.h}}
+
+
+An entity component which describes one particular feature of an entity. Follows the E\+CS architectural pattern.  
+
+
+{\ttfamily \#include \char`\"{}independent/core/common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/systems/systems/resource\+Manager.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_owl_engine_1_1_entity_component}{Owl\+Engine\+::\+Entity\+Component}}
+\begin{DoxyCompactList}\small\item\em An entity component which are attached to entities. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{entity_component_8h_a47b1cf4198a5037ca21e9207a5c8287e}{Owl\+Engine\+::\+Component\+Type}} \{ \newline
+{\bfseries Owl\+Engine\+::\+None} = 0, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Camera} = 1, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Transform} = 2, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Mesh\+Render3D} = 3, 
+\newline
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Mesh\+Render2D} = 4, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Text} = 5, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Character\+Controller} = 6, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Rigid\+Body} = 7, 
+\newline
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Box\+Collider} = 8, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Directional\+Light} = 9, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Point\+Light} = 10, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Spot\+Light} = 11, 
+\newline
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Native\+Script} = 12, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Sphere\+Collider} = 13, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Capsule\+Collider} = 14, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Audio\+Listener} = 15, 
+\newline
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Studio\+Sound} = 16, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Canvas} = 17, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Element} = 18, 
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+Sound} = 19, 
+\newline
+{\bfseries Owl\+Engine\+::\+Component\+Type\+::\+A\+I\+Movement\+Node} = 20
+ \}
+\begin{DoxyCompactList}\small\item\em Forward declare entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An entity component which describes one particular feature of an entity. Follows the E\+CS architectural pattern. 
+
+\begin{DoxyAuthor}{Author}
+Daniel Bullin 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{entity_component_8h_file_a47b1cf4198a5037ca21e9207a5c8287e}\label{entity_component_8h_file_a47b1cf4198a5037ca21e9207a5c8287e}} 
+\index{entityComponent.h@{entityComponent.h}!ComponentType@{ComponentType}}
+\index{ComponentType@{ComponentType}!entityComponent.h@{entityComponent.h}}
+\doxysubsubsection{\texorpdfstring{ComponentType}{ComponentType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{entity_component_8h_a47b1cf4198a5037ca21e9207a5c8287e}{Owl\+Engine\+::\+Component\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Forward declare entity. 
+
+The different types of entity components 

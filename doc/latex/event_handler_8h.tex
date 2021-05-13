@@ -1,0 +1,25 @@
+\hypertarget{event_handler_8h}{}\doxysection{C\+:/doc/src/include/independent/events/event\+Handler.h File Reference}
+\label{event_handler_8h}\index{C:/doc/src/include/independent/events/eventHandler.h@{C:/doc/src/include/independent/events/eventHandler.h}}
+
+
+An event handler which handles events.  
+
+
+{\ttfamily \#include \char`\"{}independent/events/events.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_hawk_engine_1_1_event_handler}{Hawk\+Engine\+::\+Event\+Handler}}
+\begin{DoxyCompactList}\small\item\em An event event handler class which handles events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{event_handler_8h_a97a46250a868bbfd2459bb816bb8dc32}\label{event_handler_8h_a97a46250a868bbfd2459bb816bb8dc32}} 
+\#define \mbox{\hyperlink{event_handler_8h_a97a46250a868bbfd2459bb816bb8dc32}{B\+I\+N\+D\+\_\+\+E\+V\+E\+NT}}(inst,  fn)~std\+::bind(\&inst\+::\#\#fn, this, std\+::placeholders\+::\+\_\+1)
+\begin{DoxyCompactList}\small\item\em Binds a function to a function pointer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An event handler which handles events. 
+

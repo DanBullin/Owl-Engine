@@ -1,0 +1,126 @@
+\hypertarget{class_hawk_engine_1_1_indirect_buffer}{}\doxysection{Hawk\+Engine\+::Indirect\+Buffer Class Reference}
+\label{class_hawk_engine_1_1_indirect_buffer}\index{HawkEngine::IndirectBuffer@{HawkEngine::IndirectBuffer}}
+
+
+An A\+PI agnostic Indirect buffer.  
+
+
+
+
+{\ttfamily \#include $<$indirect\+Buffer.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Indirect\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_indirect_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_indirect_buffer_a4ba317c3f5ad78d4d57bd684464e0ee8}\label{class_hawk_engine_1_1_indirect_buffer_a4ba317c3f5ad78d4d57bd684464e0ee8}} 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_indirect_buffer_a4ba317c3f5ad78d4d57bd684464e0ee8}{$\sim$\+Indirect\+Buffer}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_indirect_buffer_a72b4654d42a77284e711f1ab0bc12c20}{edit}} (\mbox{\hyperlink{struct_hawk_engine_1_1_draw_elements_indirect_command}{Draw\+Elements\+Indirect\+Command}} $\ast$commands, const uint32\+\_\+t count, const uint32\+\_\+t offset)=0
+\begin{DoxyCompactList}\small\item\em Edit the buffer contents. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_indirect_buffer_a34028238ab25f317bdac74c375c3444f}{get\+Buffer\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the buffer ID. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_indirect_buffer_aa2990639f34fcfdd78a8008171bc9a99}{get\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the command count. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_indirect_buffer}{Indirect\+Buffer}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_indirect_buffer_a77b5d836916740bd0209ad17308ea4bd}{create}} (\mbox{\hyperlink{struct_hawk_engine_1_1_draw_elements_indirect_command}{Draw\+Elements\+Indirect\+Command}} $\ast$commands, const uint32\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Create a vertex buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_indirect_buffer_a74e979fd22dc7642fe5054108ef76bb6}\label{class_hawk_engine_1_1_indirect_buffer_a74e979fd22dc7642fe5054108ef76bb6}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_indirect_buffer_a74e979fd22dc7642fe5054108ef76bb6}{m\+\_\+buffer\+ID}}
+\begin{DoxyCompactList}\small\item\em The indirect buffer ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_indirect_buffer_aca26e21cdf8392ec6ef0311386f16942}\label{class_hawk_engine_1_1_indirect_buffer_aca26e21cdf8392ec6ef0311386f16942}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_indirect_buffer_aca26e21cdf8392ec6ef0311386f16942}{m\+\_\+command\+Count}}
+\begin{DoxyCompactList}\small\item\em The number of commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic Indirect buffer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_indirect_buffer_a77b5d836916740bd0209ad17308ea4bd}\label{class_hawk_engine_1_1_indirect_buffer_a77b5d836916740bd0209ad17308ea4bd}} 
+\index{HawkEngine::IndirectBuffer@{HawkEngine::IndirectBuffer}!create@{create}}
+\index{create@{create}!HawkEngine::IndirectBuffer@{HawkEngine::IndirectBuffer}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_indirect_buffer}{Indirect\+Buffer}} $\ast$ Hawk\+Engine\+::\+Indirect\+Buffer\+::create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_hawk_engine_1_1_draw_elements_indirect_command}{Draw\+Elements\+Indirect\+Command}} $\ast$}]{commands,  }\item[{const uint32\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a vertex buffer. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_indirect_buffer_a77b5d836916740bd0209ad17308ea4bd}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em commands} & a Draw\+Elements\+Indirect\+Command$\ast$ -\/ The commands info \\
+\hline
+{\em count} & a const uint32\+\_\+t -\/ The number of commands \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Indirect\+Buffer$\ast$ -\/ The indirect buffer based on the current graphics A\+PI 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_indirect_buffer_a72b4654d42a77284e711f1ab0bc12c20}\label{class_hawk_engine_1_1_indirect_buffer_a72b4654d42a77284e711f1ab0bc12c20}} 
+\index{HawkEngine::IndirectBuffer@{HawkEngine::IndirectBuffer}!edit@{edit}}
+\index{edit@{edit}!HawkEngine::IndirectBuffer@{HawkEngine::IndirectBuffer}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Indirect\+Buffer\+::edit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_hawk_engine_1_1_draw_elements_indirect_command}{Draw\+Elements\+Indirect\+Command}} $\ast$}]{commands,  }\item[{const uint32\+\_\+t}]{count,  }\item[{const uint32\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Edit the buffer contents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em commands} & a Draw\+Elements\+Indirect\+Command$\ast$ -\/ The commands info \\
+\hline
+{\em count} & a const uint32\+\_\+t -\/ The number of commands \\
+\hline
+{\em offset} & a const uint32\+\_\+t -\/ The offset in memory \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_indirect_buffer_a188a08112fb352ec39cd39a38f6fdf96}{Hawk\+Engine\+::\+Open\+G\+L\+Indirect\+Buffer}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_indirect_buffer_a34028238ab25f317bdac74c375c3444f}\label{class_hawk_engine_1_1_indirect_buffer_a34028238ab25f317bdac74c375c3444f}} 
+\index{HawkEngine::IndirectBuffer@{HawkEngine::IndirectBuffer}!getBufferID@{getBufferID}}
+\index{getBufferID@{getBufferID}!HawkEngine::IndirectBuffer@{HawkEngine::IndirectBuffer}}
+\doxysubsubsection{\texorpdfstring{getBufferID()}{getBufferID()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Indirect\+Buffer\+::get\+Buffer\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the buffer ID. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The ID of the buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_indirect_buffer_aa2990639f34fcfdd78a8008171bc9a99}\label{class_hawk_engine_1_1_indirect_buffer_aa2990639f34fcfdd78a8008171bc9a99}} 
+\index{HawkEngine::IndirectBuffer@{HawkEngine::IndirectBuffer}!getCount@{getCount}}
+\index{getCount@{getCount}!HawkEngine::IndirectBuffer@{HawkEngine::IndirectBuffer}}
+\doxysubsubsection{\texorpdfstring{getCount()}{getCount()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Indirect\+Buffer\+::get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the command count. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The command count 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/geometry/\mbox{\hyperlink{indirect_buffer_8h}{indirect\+Buffer.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/geometry/\mbox{\hyperlink{indirect_buffer_8cpp}{indirect\+Buffer.\+cpp}}\end{DoxyCompactItemize}

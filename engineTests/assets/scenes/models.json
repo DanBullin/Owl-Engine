@@ -1,0 +1,10 @@
+{
+	"obj": [
+		{ "modelName": "cyborg", "modelFilePath": "assets/models/cyborg/cyborg.obj"},
+		{ "modelName": "cube", "modelFilePath": "assets/models/cube/cube.obj"},
+		{ "modelName": "sphere", "modelFilePath": "assets/models/sphere/sphere.obj"},
+		{ "modelName": "terrain", "modelFilePath": "assets/models/terrain/terrain.obj"},
+		{ "modelName": "plane", "modelFilePath": "assets/models/plane/plane.obj"},
+		{ "modelName": "barrel", "modelFilePath": "assets/models/barrel/barrel.obj"}
+	]	
+}

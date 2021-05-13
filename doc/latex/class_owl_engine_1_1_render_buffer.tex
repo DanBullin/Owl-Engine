@@ -1,0 +1,143 @@
+\hypertarget{class_owl_engine_1_1_render_buffer}{}\doxysection{Owl\+Engine\+::Render\+Buffer Class Reference}
+\label{class_owl_engine_1_1_render_buffer}\index{OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}}
+
+
+An A\+PI agnostic render buffer object.  
+
+
+
+
+{\ttfamily \#include $<$render\+Buffer.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Render\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_render_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_render_buffer_ab2a3b043d896a3ec633d7b861c885796}{Render\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_render_buffer_afe6da359bb214f987dedca1f12d0cbbc}{$\sim$\+Render\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_render_buffer_a0a6f2b4002e37fca62f97211987a0d71}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the render buffer ID. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{render_buffer_8h_a540e8dd60aff3dde7239a3705ff0afcb}{Attachment\+Type}} \mbox{\hyperlink{class_owl_engine_1_1_render_buffer_a8ce8b3107b3f307c1bf1b9c473c68fc3}{get\+Attachment\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the render buffer attachment type. \end{DoxyCompactList}\item 
+glm\+::ivec2 \mbox{\hyperlink{class_owl_engine_1_1_render_buffer_acb1484bf27853cb5f2494381ebb89006}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the dimensions of the renderbuffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_render_buffer}{Render\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_render_buffer_ae7dddbcdde4816ffbf353bc9193a4bb3}{create}} (\mbox{\hyperlink{render_buffer_8h_a540e8dd60aff3dde7239a3705ff0afcb}{Attachment\+Type}} type, const glm\+::ivec2 \&size)
+\begin{DoxyCompactList}\small\item\em Create a render buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_render_buffer_a5f6b393d31eeb40606425a68f0a06846}\label{class_owl_engine_1_1_render_buffer_a5f6b393d31eeb40606425a68f0a06846}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_render_buffer_a5f6b393d31eeb40606425a68f0a06846}{m\+\_\+buffer\+ID}}
+\begin{DoxyCompactList}\small\item\em The buffer ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_render_buffer_a7ecc3c6e7e41487f4a3275fc621a9f08}\label{class_owl_engine_1_1_render_buffer_a7ecc3c6e7e41487f4a3275fc621a9f08}} 
+\mbox{\hyperlink{render_buffer_8h_a540e8dd60aff3dde7239a3705ff0afcb}{Attachment\+Type}} \mbox{\hyperlink{class_owl_engine_1_1_render_buffer_a7ecc3c6e7e41487f4a3275fc621a9f08}{m\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em The render buffer attachment type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_render_buffer_a3d9ac73e06c9ebf8295447d668d40971}\label{class_owl_engine_1_1_render_buffer_a3d9ac73e06c9ebf8295447d668d40971}} 
+glm\+::ivec2 \mbox{\hyperlink{class_owl_engine_1_1_render_buffer_a3d9ac73e06c9ebf8295447d668d40971}{m\+\_\+size}}
+\begin{DoxyCompactList}\small\item\em The dimensions of the render buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic render buffer object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_buffer_ab2a3b043d896a3ec633d7b861c885796}\label{class_owl_engine_1_1_render_buffer_ab2a3b043d896a3ec633d7b861c885796}} 
+\index{OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}!RenderBuffer@{RenderBuffer}}
+\index{RenderBuffer@{RenderBuffer}!OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}}
+\doxysubsubsection{\texorpdfstring{RenderBuffer()}{RenderBuffer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Render\+Buffer\+::\+Render\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_buffer_ab2a3b043d896a3ec633d7b861c885796}{Render\+Buffer()}} \mbox{\Hypertarget{class_owl_engine_1_1_render_buffer_afe6da359bb214f987dedca1f12d0cbbc}\label{class_owl_engine_1_1_render_buffer_afe6da359bb214f987dedca1f12d0cbbc}} 
+\index{OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}!````~RenderBuffer@{$\sim$RenderBuffer}}
+\index{````~RenderBuffer@{$\sim$RenderBuffer}!OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$RenderBuffer()}{~RenderBuffer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Render\+Buffer\+::$\sim$\+Render\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_buffer_afe6da359bb214f987dedca1f12d0cbbc}{$\sim$\+Render\+Buffer()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_buffer_ae7dddbcdde4816ffbf353bc9193a4bb3}\label{class_owl_engine_1_1_render_buffer_ae7dddbcdde4816ffbf353bc9193a4bb3}} 
+\index{OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}!create@{create}}
+\index{create@{create}!OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_render_buffer}{Render\+Buffer}} $\ast$ Owl\+Engine\+::\+Render\+Buffer\+::create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{render_buffer_8h_a540e8dd60aff3dde7239a3705ff0afcb}{Attachment\+Type}}}]{type,  }\item[{const glm\+::ivec2 \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a render buffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_buffer_ae7dddbcdde4816ffbf353bc9193a4bb3}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & an Attachment\+Type -\/ The type of attachment \\
+\hline
+{\em size} & a const glm\+::ivec2\& -\/ The dimensions of the render buffer targets \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Render\+Buffer$\ast$ -\/ The render buffer based on the current graphics A\+PI 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_buffer_a8ce8b3107b3f307c1bf1b9c473c68fc3}\label{class_owl_engine_1_1_render_buffer_a8ce8b3107b3f307c1bf1b9c473c68fc3}} 
+\index{OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}!getAttachmentType@{getAttachmentType}}
+\index{getAttachmentType@{getAttachmentType}!OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}}
+\doxysubsubsection{\texorpdfstring{getAttachmentType()}{getAttachmentType()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{render_buffer_8h_a540e8dd60aff3dde7239a3705ff0afcb}{Attachment\+Type}} Owl\+Engine\+::\+Render\+Buffer\+::get\+Attachment\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the render buffer attachment type. 
+
+\begin{DoxyReturn}{Returns}
+a const Attachment\+Type -\/ The attachment type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_buffer_a0a6f2b4002e37fca62f97211987a0d71}\label{class_owl_engine_1_1_render_buffer_a0a6f2b4002e37fca62f97211987a0d71}} 
+\index{OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}!getID@{getID}}
+\index{getID@{getID}!OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Render\+Buffer\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the render buffer ID. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The render buffer ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_buffer_acb1484bf27853cb5f2494381ebb89006}\label{class_owl_engine_1_1_render_buffer_acb1484bf27853cb5f2494381ebb89006}} 
+\index{OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}!getSize@{getSize}}
+\index{getSize@{getSize}!OwlEngine::RenderBuffer@{OwlEngine::RenderBuffer}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily glm\+::ivec2 Owl\+Engine\+::\+Render\+Buffer\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the dimensions of the renderbuffer. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::ivec2 -\/ The dimensions of the renderbuffer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/\mbox{\hyperlink{render_buffer_8h}{render\+Buffer.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/\mbox{\hyperlink{render_buffer_8cpp}{render\+Buffer.\+cpp}}\end{DoxyCompactItemize}

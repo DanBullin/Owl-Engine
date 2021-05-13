@@ -1,0 +1,409 @@
+\hypertarget{class_hawk_engine_1_1_event_handler}{}\doxysection{Hawk\+Engine\+::Event\+Handler Class Reference}
+\label{class_hawk_engine_1_1_event_handler}\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+
+
+An event event handler class which handles events.  
+
+
+
+
+{\ttfamily \#include $<$event\+Handler.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a75309d3a2636e6ca9c27a71a84d44469}{set\+On\+Close\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_close_event}{Window\+Close\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for window closing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a189aa4d84a00d4b61bcae721ea54dd3c}{set\+On\+Resize\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event}{Window\+Resize\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for window resize. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a616aa5a9a5612560e06d0ebc151f60bf}{set\+On\+Focus\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_focus_event}{Window\+Focus\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for window gain focus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a6bb0077f045f57ef376c3ba8fbb999a7}{set\+On\+Lost\+Focus\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for window losing focus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a4327cf7687ad1fac33c065c3a7c02bf3}{set\+On\+Window\+Moved\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_moved_event}{Window\+Moved\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for window moving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a46ac0b2304742df898abbcd50983c8af}{set\+On\+Key\+Pressed\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for when key is pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_af708a4219f4da6a52239a7f9c338e19b}{set\+On\+Key\+Released\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_key_released_event}{Key\+Released\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for when key is released. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_ac2b0115b4d1c80b026c83b11769caeee}{set\+On\+Key\+Typed\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_key_typed_event}{Key\+Typed\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for when key is typed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a355bb69a9f6816a6da910c611f8a8968}{set\+On\+Mouse\+Pressed\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for when mouse is pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a6e117ba403c3294fc4130a02b034df2d}{set\+On\+Mouse\+Released\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for when mouse is released. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a238e85cb8b7f362064cc6168cf2c5b50}{set\+On\+Mouse\+Moved\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for when mouse moves. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a3f7d6c4a8175cbab1f0a73e1f6ec1703}{set\+On\+Mouse\+Scrolled\+Callback}} (const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} $>$ \&fn)
+\begin{DoxyCompactList}\small\item\em Set function for when mouse wheel scrolled. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_close_event}{Window\+Close\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a47dec6cd52ce4122b011e1359ccbe44c}{get\+On\+Close\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for window closing. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event}{Window\+Resize\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_ae43472d801dc26b82dbb1a82503120ec}{get\+On\+Resize\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for window resize. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_focus_event}{Window\+Focus\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a06a7d312ba9325d0a2c8e056507d4b8a}{get\+On\+Focus\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for window gain focus. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a9b9fe7a4f91fff1eb9a7f83309db07ca}{get\+On\+Lost\+Focus\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for window losing focus. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_moved_event}{Window\+Moved\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a1a330c8305e85396f57e5728d22d423e}{get\+On\+Window\+Moved\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for window moving. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a20786b0bb7ce3479c00549507cbe87fc}{get\+On\+Key\+Pressed\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for when key is pressed. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_key_released_event}{Key\+Released\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_aa904392c915ccd1b81d3d3d88400654e}{get\+On\+Key\+Released\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for when key is released. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_key_typed_event}{Key\+Typed\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_adcb275fc0887907b0c6d1804b9f55099}{get\+On\+Key\+Typed\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for when key is typed. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a3278d56e36fb02375f2d1e92bcf8e672}{get\+On\+Mouse\+Pressed\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for when mouse is pressed. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a24b4195ba851c7a3521eb69c8a7e2185}{get\+On\+Mouse\+Released\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for when mouse is released. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a65ca4caae26de2bb0ccd7964109fb354}{get\+On\+Mouse\+Moved\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for when mouse moves. \end{DoxyCompactList}\item 
+const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_event_handler_a9aa9346a420977ab1fe51999167f2e5e}{get\+On\+Mouse\+Scrolled\+Callback}} ()
+\begin{DoxyCompactList}\small\item\em Get function for when mouse wheel scrolled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An event event handler class which handles events. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a47dec6cd52ce4122b011e1359ccbe44c}\label{class_hawk_engine_1_1_event_handler_a47dec6cd52ce4122b011e1359ccbe44c}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnCloseCallback@{getOnCloseCallback}}
+\index{getOnCloseCallback@{getOnCloseCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnCloseCallback()}{getOnCloseCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_window_close_event}{Window\+Close\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Close\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for window closing. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Window\+Closed\+Event\&)$>$\& -\/ A function pointer to window close function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a06a7d312ba9325d0a2c8e056507d4b8a}\label{class_hawk_engine_1_1_event_handler_a06a7d312ba9325d0a2c8e056507d4b8a}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnFocusCallback@{getOnFocusCallback}}
+\index{getOnFocusCallback@{getOnFocusCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnFocusCallback()}{getOnFocusCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_window_focus_event}{Window\+Focus\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Focus\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for window gain focus. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Window\+Focus\+Event\&)$>$\& -\/ A function pointer to window gain focus function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a20786b0bb7ce3479c00549507cbe87fc}\label{class_hawk_engine_1_1_event_handler_a20786b0bb7ce3479c00549507cbe87fc}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnKeyPressedCallback@{getOnKeyPressedCallback}}
+\index{getOnKeyPressedCallback@{getOnKeyPressedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnKeyPressedCallback()}{getOnKeyPressedCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Key\+Pressed\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for when key is pressed. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Key\+Pressed\+Event\&)$>$\& -\/ A function pointer to key press function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_aa904392c915ccd1b81d3d3d88400654e}\label{class_hawk_engine_1_1_event_handler_aa904392c915ccd1b81d3d3d88400654e}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnKeyReleasedCallback@{getOnKeyReleasedCallback}}
+\index{getOnKeyReleasedCallback@{getOnKeyReleasedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnKeyReleasedCallback()}{getOnKeyReleasedCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_key_released_event}{Key\+Released\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Key\+Released\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for when key is released. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Key\+Released\+Event\&)$>$\& -\/ A function pointer to key release function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_adcb275fc0887907b0c6d1804b9f55099}\label{class_hawk_engine_1_1_event_handler_adcb275fc0887907b0c6d1804b9f55099}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnKeyTypedCallback@{getOnKeyTypedCallback}}
+\index{getOnKeyTypedCallback@{getOnKeyTypedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnKeyTypedCallback()}{getOnKeyTypedCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_key_typed_event}{Key\+Typed\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Key\+Typed\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for when key is typed. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Key\+Typed\+Event\&)$>$\& -\/ A function pointer to key typed function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a9b9fe7a4f91fff1eb9a7f83309db07ca}\label{class_hawk_engine_1_1_event_handler_a9b9fe7a4f91fff1eb9a7f83309db07ca}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnLostFocusCallback@{getOnLostFocusCallback}}
+\index{getOnLostFocusCallback@{getOnLostFocusCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnLostFocusCallback()}{getOnLostFocusCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Lost\+Focus\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for window losing focus. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Window\+Lost\+Focus\+Event\&)$>$\& -\/ A function pointer to window lost focus function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a65ca4caae26de2bb0ccd7964109fb354}\label{class_hawk_engine_1_1_event_handler_a65ca4caae26de2bb0ccd7964109fb354}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnMouseMovedCallback@{getOnMouseMovedCallback}}
+\index{getOnMouseMovedCallback@{getOnMouseMovedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnMouseMovedCallback()}{getOnMouseMovedCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Mouse\+Moved\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for when mouse moves. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Mouse\+Moved\+Event\&)$>$\& -\/ A function pointer to mouse moved function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a3278d56e36fb02375f2d1e92bcf8e672}\label{class_hawk_engine_1_1_event_handler_a3278d56e36fb02375f2d1e92bcf8e672}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnMousePressedCallback@{getOnMousePressedCallback}}
+\index{getOnMousePressedCallback@{getOnMousePressedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnMousePressedCallback()}{getOnMousePressedCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Mouse\+Pressed\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for when mouse is pressed. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Mouse\+Pressed\+Event\&)$>$\& -\/ A function pointer to mouse press function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a24b4195ba851c7a3521eb69c8a7e2185}\label{class_hawk_engine_1_1_event_handler_a24b4195ba851c7a3521eb69c8a7e2185}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnMouseReleasedCallback@{getOnMouseReleasedCallback}}
+\index{getOnMouseReleasedCallback@{getOnMouseReleasedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnMouseReleasedCallback()}{getOnMouseReleasedCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Mouse\+Released\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for when mouse is released. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Mouse\+Released\+Event\&)$>$\& -\/ A function pointer to mouse release function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a9aa9346a420977ab1fe51999167f2e5e}\label{class_hawk_engine_1_1_event_handler_a9aa9346a420977ab1fe51999167f2e5e}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnMouseScrolledCallback@{getOnMouseScrolledCallback}}
+\index{getOnMouseScrolledCallback@{getOnMouseScrolledCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnMouseScrolledCallback()}{getOnMouseScrolledCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Mouse\+Scrolled\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for when mouse wheel scrolled. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Mouse\+Scrolled\+Event\&)$>$\& -\/ A function pointer to mouse scrolled function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_ae43472d801dc26b82dbb1a82503120ec}\label{class_hawk_engine_1_1_event_handler_ae43472d801dc26b82dbb1a82503120ec}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnResizeCallback@{getOnResizeCallback}}
+\index{getOnResizeCallback@{getOnResizeCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnResizeCallback()}{getOnResizeCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event}{Window\+Resize\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Resize\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for window resize. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Window\+Resize\+Event\&)$>$\& -\/ A function pointer to window resize function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a1a330c8305e85396f57e5728d22d423e}\label{class_hawk_engine_1_1_event_handler_a1a330c8305e85396f57e5728d22d423e}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!getOnWindowMovedCallback@{getOnWindowMovedCallback}}
+\index{getOnWindowMovedCallback@{getOnWindowMovedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{getOnWindowMovedCallback()}{getOnWindowMovedCallback()}}
+{\footnotesize\ttfamily const Event\+Fn$<$\mbox{\hyperlink{class_hawk_engine_1_1_window_moved_event}{Window\+Moved\+Event}}$>$\& Hawk\+Engine\+::\+Event\+Handler\+::get\+On\+Window\+Moved\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get function for window moving. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::function$<$const bool(\+Window\+Moved\+Event\&)$>$\& -\/ A function pointer to window move function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a75309d3a2636e6ca9c27a71a84d44469}\label{class_hawk_engine_1_1_event_handler_a75309d3a2636e6ca9c27a71a84d44469}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnCloseCallback@{setOnCloseCallback}}
+\index{setOnCloseCallback@{setOnCloseCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnCloseCallback()}{setOnCloseCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Close\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_close_event}{Window\+Close\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for window closing. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Window\+Closed\+Event\&)$>$\& -\/ A function pointer to window close function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a616aa5a9a5612560e06d0ebc151f60bf}\label{class_hawk_engine_1_1_event_handler_a616aa5a9a5612560e06d0ebc151f60bf}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnFocusCallback@{setOnFocusCallback}}
+\index{setOnFocusCallback@{setOnFocusCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnFocusCallback()}{setOnFocusCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Focus\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_focus_event}{Window\+Focus\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for window gain focus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Window\+Focus\+Event\&)$>$\& -\/ A function pointer to window gain focus function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a46ac0b2304742df898abbcd50983c8af}\label{class_hawk_engine_1_1_event_handler_a46ac0b2304742df898abbcd50983c8af}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnKeyPressedCallback@{setOnKeyPressedCallback}}
+\index{setOnKeyPressedCallback@{setOnKeyPressedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnKeyPressedCallback()}{setOnKeyPressedCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Key\+Pressed\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for when key is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Key\+Pressed\+Event\&)$>$\& -\/ A function pointer to key press function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_af708a4219f4da6a52239a7f9c338e19b}\label{class_hawk_engine_1_1_event_handler_af708a4219f4da6a52239a7f9c338e19b}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnKeyReleasedCallback@{setOnKeyReleasedCallback}}
+\index{setOnKeyReleasedCallback@{setOnKeyReleasedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnKeyReleasedCallback()}{setOnKeyReleasedCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Key\+Released\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_key_released_event}{Key\+Released\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for when key is released. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Key\+Released\+Event\&)$>$\& -\/ A function pointer to key release function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_ac2b0115b4d1c80b026c83b11769caeee}\label{class_hawk_engine_1_1_event_handler_ac2b0115b4d1c80b026c83b11769caeee}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnKeyTypedCallback@{setOnKeyTypedCallback}}
+\index{setOnKeyTypedCallback@{setOnKeyTypedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnKeyTypedCallback()}{setOnKeyTypedCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Key\+Typed\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_key_typed_event}{Key\+Typed\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for when key is typed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Key\+Typed\+Event\&)$>$\& -\/ A function pointer to key typed function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a6bb0077f045f57ef376c3ba8fbb999a7}\label{class_hawk_engine_1_1_event_handler_a6bb0077f045f57ef376c3ba8fbb999a7}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnLostFocusCallback@{setOnLostFocusCallback}}
+\index{setOnLostFocusCallback@{setOnLostFocusCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnLostFocusCallback()}{setOnLostFocusCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Lost\+Focus\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for window losing focus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Window\+Lost\+Focus\+Event\&)$>$\& -\/ A function pointer to window lost focus function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a238e85cb8b7f362064cc6168cf2c5b50}\label{class_hawk_engine_1_1_event_handler_a238e85cb8b7f362064cc6168cf2c5b50}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnMouseMovedCallback@{setOnMouseMovedCallback}}
+\index{setOnMouseMovedCallback@{setOnMouseMovedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnMouseMovedCallback()}{setOnMouseMovedCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Mouse\+Moved\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for when mouse moves. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Mouse\+Moved\+Event\&)$>$\& -\/ A function pointer to mouse moved function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a355bb69a9f6816a6da910c611f8a8968}\label{class_hawk_engine_1_1_event_handler_a355bb69a9f6816a6da910c611f8a8968}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnMousePressedCallback@{setOnMousePressedCallback}}
+\index{setOnMousePressedCallback@{setOnMousePressedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnMousePressedCallback()}{setOnMousePressedCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Mouse\+Pressed\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for when mouse is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Mouse\+Pressed\+Event\&)$>$\& -\/ A function pointer to mouse press function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a6e117ba403c3294fc4130a02b034df2d}\label{class_hawk_engine_1_1_event_handler_a6e117ba403c3294fc4130a02b034df2d}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnMouseReleasedCallback@{setOnMouseReleasedCallback}}
+\index{setOnMouseReleasedCallback@{setOnMouseReleasedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnMouseReleasedCallback()}{setOnMouseReleasedCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Mouse\+Released\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for when mouse is released. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Mouse\+Released\+Event\&)$>$\& -\/ A function pointer to mouse release function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a3f7d6c4a8175cbab1f0a73e1f6ec1703}\label{class_hawk_engine_1_1_event_handler_a3f7d6c4a8175cbab1f0a73e1f6ec1703}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnMouseScrolledCallback@{setOnMouseScrolledCallback}}
+\index{setOnMouseScrolledCallback@{setOnMouseScrolledCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnMouseScrolledCallback()}{setOnMouseScrolledCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Mouse\+Scrolled\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for when mouse wheel scrolled. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Mouse\+Scrolled\+Event\&)$>$\& -\/ A function pointer to mouse scrolled function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a189aa4d84a00d4b61bcae721ea54dd3c}\label{class_hawk_engine_1_1_event_handler_a189aa4d84a00d4b61bcae721ea54dd3c}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnResizeCallback@{setOnResizeCallback}}
+\index{setOnResizeCallback@{setOnResizeCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnResizeCallback()}{setOnResizeCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Resize\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event}{Window\+Resize\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for window resize. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Window\+Resize\+Event\&)$>$\& -\/ A function pointer to window resize function \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_handler_a4327cf7687ad1fac33c065c3a7c02bf3}\label{class_hawk_engine_1_1_event_handler_a4327cf7687ad1fac33c065c3a7c02bf3}} 
+\index{HawkEngine::EventHandler@{HawkEngine::EventHandler}!setOnWindowMovedCallback@{setOnWindowMovedCallback}}
+\index{setOnWindowMovedCallback@{setOnWindowMovedCallback}!HawkEngine::EventHandler@{HawkEngine::EventHandler}}
+\doxysubsubsection{\texorpdfstring{setOnWindowMovedCallback()}{setOnWindowMovedCallback()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+Handler\+::set\+On\+Window\+Moved\+Callback (\begin{DoxyParamCaption}\item[{const Event\+Fn$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window_moved_event}{Window\+Moved\+Event}} $>$ \&}]{fn }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set function for window moving. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fn} & a const std\+::function$<$const bool(\+Window\+Moved\+Event\&)$>$\& -\/ A function pointer to window move function \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/events/\mbox{\hyperlink{event_handler_8h}{event\+Handler.\+h}}\end{DoxyCompactItemize}

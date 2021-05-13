@@ -1,0 +1,94 @@
+\hypertarget{class_owl_engine_1_1_key_event}{}\doxysection{Owl\+Engine\+::Key\+Event Class Reference}
+\label{class_owl_engine_1_1_key_event}\index{OwlEngine::KeyEvent@{OwlEngine::KeyEvent}}
+
+
+A base event class for key events.  
+
+
+
+
+{\ttfamily \#include $<$key\+Events.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Key\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.901554cm]{class_owl_engine_1_1_key_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const int32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_key_event_a02ab54a3b6d609de1a76897719537eb6}{get\+Key\+Code}} () const
+\begin{DoxyCompactList}\small\item\em Get the key involved in the event. \end{DoxyCompactList}\item 
+virtual const int32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_key_event_a9651e49d4df06bb652133673173ed254}{get\+Category\+Flags}} () const override
+\begin{DoxyCompactList}\small\item\em Get the category flags of the event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_key_event_ab12a128a67aa764b701326d8040b999d}{Key\+Event}} (const int32\+\_\+t keycode)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_key_event_a31090bdd27ef3518c2c96aa45081496f}\label{class_owl_engine_1_1_key_event_a31090bdd27ef3518c2c96aa45081496f}} 
+int32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_key_event_a31090bdd27ef3518c2c96aa45081496f}{m\+\_\+key\+Code}}
+\begin{DoxyCompactList}\small\item\em The key involved in the event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A base event class for key events. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_key_event_ab12a128a67aa764b701326d8040b999d}\label{class_owl_engine_1_1_key_event_ab12a128a67aa764b701326d8040b999d}} 
+\index{OwlEngine::KeyEvent@{OwlEngine::KeyEvent}!KeyEvent@{KeyEvent}}
+\index{KeyEvent@{KeyEvent}!OwlEngine::KeyEvent@{OwlEngine::KeyEvent}}
+\doxysubsubsection{\texorpdfstring{KeyEvent()}{KeyEvent()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Key\+Event\+::\+Key\+Event (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{keycode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keycode} & a const int32\+\_\+t -\/ The key involved in the event \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_key_event_a9651e49d4df06bb652133673173ed254}\label{class_owl_engine_1_1_key_event_a9651e49d4df06bb652133673173ed254}} 
+\index{OwlEngine::KeyEvent@{OwlEngine::KeyEvent}!getCategoryFlags@{getCategoryFlags}}
+\index{getCategoryFlags@{getCategoryFlags}!OwlEngine::KeyEvent@{OwlEngine::KeyEvent}}
+\doxysubsubsection{\texorpdfstring{getCategoryFlags()}{getCategoryFlags()}}
+{\footnotesize\ttfamily virtual const int32\+\_\+t Owl\+Engine\+::\+Key\+Event\+::get\+Category\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the category flags of the event. 
+
+\begin{DoxyReturn}{Returns}
+a const int32\+\_\+t -\/ The key\textquotesingle{}s event category flags 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_event_ae0cdbeda9793c157d9079b87be5b6039}{Owl\+Engine\+::\+Event}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_key_event_a02ab54a3b6d609de1a76897719537eb6}\label{class_owl_engine_1_1_key_event_a02ab54a3b6d609de1a76897719537eb6}} 
+\index{OwlEngine::KeyEvent@{OwlEngine::KeyEvent}!getKeyCode@{getKeyCode}}
+\index{getKeyCode@{getKeyCode}!OwlEngine::KeyEvent@{OwlEngine::KeyEvent}}
+\doxysubsubsection{\texorpdfstring{getKeyCode()}{getKeyCode()}}
+{\footnotesize\ttfamily const int32\+\_\+t Owl\+Engine\+::\+Key\+Event\+::get\+Key\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the key involved in the event. 
+
+\begin{DoxyReturn}{Returns}
+a const int32\+\_\+t -\/ The key involved in the event 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/events/\mbox{\hyperlink{key_events_8h}{key\+Events.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,228 @@
+\hypertarget{class_owl_engine_1_1_mesh_render2_d}{}\doxysection{Owl\+Engine\+::Mesh\+Render2D Class Reference}
+\label{class_owl_engine_1_1_mesh_render2_d}\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+
+
+A 2D mesh render which contains the material of the quad.  
+
+
+
+
+{\ttfamily \#include $<$mesh\+Render2\+D.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Mesh\+Render2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_mesh_render2_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_abf63097436aac4202e526158ceae9a83}{Mesh\+Render2D}} (\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$material)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a3da170a41088eefe3927178aafcadb9a}{$\sim$\+Mesh\+Render2D}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a54df59bd7af2eb65c73061e24b16756a}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_ac348a50219ef3a31869ff73cbca137f5}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a4fbe83e75779502f7a7b8f392fad9190}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a5078619f86c962b9715eb16be43ee809}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a09734035f01f6fc34c7434e70861694e}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component in J\+S\+ON form for saving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_ae8532295b9c87b5903d6493dd677a278}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Display the components details in Im\+Gui. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a79baf6e2505d383a58783c4579943003}{set\+Material}} (\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$material)
+\begin{DoxyCompactList}\small\item\em Set the material. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a8fa7f385caa4a707c60651054d257dc3}{get\+Material}} ()
+\begin{DoxyCompactList}\small\item\em Get the material. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a64b8d1ab0bba3ea56c232974e11ffd2c}{on\+Render}} ()
+\begin{DoxyCompactList}\small\item\em A render submission command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_aa06db171b6ab3fdcc5456769ad5c728c}\label{class_owl_engine_1_1_mesh_render2_d_aa06db171b6ab3fdcc5456769ad5c728c}} 
+bool \mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_aa06db171b6ab3fdcc5456769ad5c728c}{contains\+Point}} (const glm\+::vec2 point)
+\begin{DoxyCompactList}\small\item\em Contains a point in the geometry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A 2D mesh render which contains the material of the quad. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_abf63097436aac4202e526158ceae9a83}\label{class_owl_engine_1_1_mesh_render2_d_abf63097436aac4202e526158ceae9a83}} 
+\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}!MeshRender2D@{MeshRender2D}}
+\index{MeshRender2D@{MeshRender2D}!OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+\doxysubsubsection{\texorpdfstring{MeshRender2D()}{MeshRender2D()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Mesh\+Render2\+D\+::\+Mesh\+Render2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$}]{material }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_abf63097436aac4202e526158ceae9a83}{Mesh\+Render2\+D()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & a Material$\ast$ -\/ A pointer to the material \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_a3da170a41088eefe3927178aafcadb9a}\label{class_owl_engine_1_1_mesh_render2_d_a3da170a41088eefe3927178aafcadb9a}} 
+\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}!````~MeshRender2D@{$\sim$MeshRender2D}}
+\index{````~MeshRender2D@{$\sim$MeshRender2D}!OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+\doxysubsubsection{\texorpdfstring{$\sim$MeshRender2D()}{~MeshRender2D()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Mesh\+Render2\+D\+::$\sim$\+Mesh\+Render2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a3da170a41088eefe3927178aafcadb9a}{$\sim$\+Mesh\+Render2\+D()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_ae8532295b9c87b5903d6493dd677a278}\label{class_owl_engine_1_1_mesh_render2_d_ae8532295b9c87b5903d6493dd677a278}} 
+\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Mesh\+Render2\+D\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the components details in Im\+Gui. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_ae8532295b9c87b5903d6493dd677a278}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_a09734035f01f6fc34c7434e70861694e}\label{class_owl_engine_1_1_mesh_render2_d_a09734035f01f6fc34c7434e70861694e}} 
+\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Mesh\+Render2\+D\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component in J\+S\+ON form for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a09734035f01f6fc34c7434e70861694e}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_a8fa7f385caa4a707c60651054d257dc3}\label{class_owl_engine_1_1_mesh_render2_d_a8fa7f385caa4a707c60651054d257dc3}} 
+\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}!getMaterial@{getMaterial}}
+\index{getMaterial@{getMaterial}!OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+\doxysubsubsection{\texorpdfstring{getMaterial()}{getMaterial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$ Owl\+Engine\+::\+Mesh\+Render2\+D\+::get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the material. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a8fa7f385caa4a707c60651054d257dc3}{get\+Material()}}
+
+\begin{DoxyReturn}{Returns}
+a Material$\ast$ -\/ A pointer to the material 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_a54df59bd7af2eb65c73061e24b16756a}\label{class_owl_engine_1_1_mesh_render2_d_a54df59bd7af2eb65c73061e24b16756a}} 
+\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Mesh\+Render2\+D\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a54df59bd7af2eb65c73061e24b16756a}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_ac348a50219ef3a31869ff73cbca137f5}\label{class_owl_engine_1_1_mesh_render2_d_ac348a50219ef3a31869ff73cbca137f5}} 
+\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Mesh\+Render2\+D\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+on\+Detach 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_a64b8d1ab0bba3ea56c232974e11ffd2c}\label{class_owl_engine_1_1_mesh_render2_d_a64b8d1ab0bba3ea56c232974e11ffd2c}} 
+\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}!onRender@{onRender}}
+\index{onRender@{onRender}!OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+\doxysubsubsection{\texorpdfstring{onRender()}{onRender()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Mesh\+Render2\+D\+::on\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A render submission command. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a64b8d1ab0bba3ea56c232974e11ffd2c}{on\+Render()}} \mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_a4fbe83e75779502f7a7b8f392fad9190}\label{class_owl_engine_1_1_mesh_render2_d_a4fbe83e75779502f7a7b8f392fad9190}} 
+\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Mesh\+Render2\+D\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a4fbe83e75779502f7a7b8f392fad9190}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_a5078619f86c962b9715eb16be43ee809}\label{class_owl_engine_1_1_mesh_render2_d_a5078619f86c962b9715eb16be43ee809}} 
+\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Mesh\+Render2\+D\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a5078619f86c962b9715eb16be43ee809}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh_render2_d_a79baf6e2505d383a58783c4579943003}\label{class_owl_engine_1_1_mesh_render2_d_a79baf6e2505d383a58783c4579943003}} 
+\index{OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}!setMaterial@{setMaterial}}
+\index{setMaterial@{setMaterial}!OwlEngine::MeshRender2D@{OwlEngine::MeshRender2D}}
+\doxysubsubsection{\texorpdfstring{setMaterial()}{setMaterial()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Mesh\+Render2\+D\+::set\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$}]{material }\end{DoxyParamCaption})}
+
+
+
+Set the material. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a79baf6e2505d383a58783c4579943003}{set\+Material()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & a Material$\ast$ -\/ A pointer to the material \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{mesh_render2_d_8h}{mesh\+Render2\+D.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{mesh_render2_d_8cpp}{mesh\+Render2\+D.\+cpp}}\end{DoxyCompactItemize}

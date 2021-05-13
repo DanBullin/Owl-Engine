@@ -1,0 +1,325 @@
+\hypertarget{class_owl_engine_1_1_capsule_collider}{}\doxysection{Owl\+Engine\+::Capsule\+Collider Class Reference}
+\label{class_owl_engine_1_1_capsule_collider}\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+
+
+A capsule collider entity component that attaches to a rigidbody. Uses React\+Physics3D.  
+
+
+
+
+{\ttfamily \#include $<$capsule\+Collider.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Capsule\+Collider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_capsule_collider}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a805d996371e8633cf53d20a74899e2c0}{Capsule\+Collider}} (const float radius, const float height, glm\+::vec3 position)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_afaefc82f60ba56073424771bfd933f02}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a2508dd8f3b375e4efe5eca8f23800952}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_abd6a3741943834047a6f4d8180db2502}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a9af833103456581b9cc0118ff3114553}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+virtual nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a4e702d31df74661046a4674303d6dc29}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data as J\+S\+ON for saving. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_ab2a1c9a06b23d3924223c5e6d229173b}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data displayed in Im\+Gui form. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_ae16249802e065de882f92662c3905b09}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the local position of the collider. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_aee15dee1389c7d860b19319431e144cd}{set\+Position}} (glm\+::vec3 position)
+\begin{DoxyCompactList}\small\item\em Sets the local position of the collider. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a1ff973137e43cbad8eaeef535dffe172}{get\+Radius}} ()
+\begin{DoxyCompactList}\small\item\em Returns the radius of the collider shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_ae857e95727fc9398df7c3e1d2f3417ad}{set\+Radius}} (const float radius)
+\begin{DoxyCompactList}\small\item\em Sets the radius of the collider shape. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_ac53ee9f0a2743148e5434526fa389740}{get\+Height}} ()
+\begin{DoxyCompactList}\small\item\em Returns the height of the shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a953b10c3a8b578dd714fe7a10d53ce5b}{set\+Height}} (const float height)
+\begin{DoxyCompactList}\small\item\em Sets the height of the shape. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_ac221058b3b507339660c9e99f2facf5d}{get\+Is\+Trigger}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if collider is trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a102fc4decd26f2ca30367f61361e060e}{set\+Is\+Trigger}} (bool is\+Trigger)
+\begin{DoxyCompactList}\small\item\em Set the collider as a trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a61ec4aac4fe0345b7795a6762974ea6a}{on\+Render}} ()
+\begin{DoxyCompactList}\small\item\em Draw the collider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A capsule collider entity component that attaches to a rigidbody. Uses React\+Physics3D. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_a805d996371e8633cf53d20a74899e2c0}\label{class_owl_engine_1_1_capsule_collider_a805d996371e8633cf53d20a74899e2c0}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!CapsuleCollider@{CapsuleCollider}}
+\index{CapsuleCollider@{CapsuleCollider}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{CapsuleCollider()}{CapsuleCollider()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Capsule\+Collider\+::\+Capsule\+Collider (\begin{DoxyParamCaption}\item[{const float}]{radius,  }\item[{const float}]{height,  }\item[{glm\+::vec3}]{position }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a805d996371e8633cf53d20a74899e2c0}{Capsule\+Collider()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & a const float -\/ The radius of the colliders capsule shape hemisphere \\
+\hline
+{\em height} & a const float -\/ The distance between the centre of each of the capsules hemispheres \\
+\hline
+{\em position} & a glm\+::vec3 -\/ The local position of the collider (Relative to the rigidbody) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_ab2a1c9a06b23d3924223c5e6d229173b}\label{class_owl_engine_1_1_capsule_collider_ab2a1c9a06b23d3924223c5e6d229173b}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Capsule\+Collider\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data displayed in Im\+Gui form. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_ab2a1c9a06b23d3924223c5e6d229173b}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_a4e702d31df74661046a4674303d6dc29}\label{class_owl_engine_1_1_capsule_collider_a4e702d31df74661046a4674303d6dc29}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Capsule\+Collider\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data as J\+S\+ON for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a4e702d31df74661046a4674303d6dc29}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_ac53ee9f0a2743148e5434526fa389740}\label{class_owl_engine_1_1_capsule_collider_ac53ee9f0a2743148e5434526fa389740}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Capsule\+Collider\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the height of the shape. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_ac53ee9f0a2743148e5434526fa389740}{get\+Height()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The height of the colliders shape 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_ac221058b3b507339660c9e99f2facf5d}\label{class_owl_engine_1_1_capsule_collider_ac221058b3b507339660c9e99f2facf5d}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!getIsTrigger@{getIsTrigger}}
+\index{getIsTrigger@{getIsTrigger}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{getIsTrigger()}{getIsTrigger()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Capsule\+Collider\+::get\+Is\+Trigger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if collider is trigger. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_ac221058b3b507339660c9e99f2facf5d}{get\+Is\+Trigger()}}
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the collider a trigger 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_ae16249802e065de882f92662c3905b09}\label{class_owl_engine_1_1_capsule_collider_ae16249802e065de882f92662c3905b09}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Capsule\+Collider\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the local position of the collider. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_ae16249802e065de882f92662c3905b09}{get\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a vec3 -\/ Colliders current position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_a1ff973137e43cbad8eaeef535dffe172}\label{class_owl_engine_1_1_capsule_collider_a1ff973137e43cbad8eaeef535dffe172}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Capsule\+Collider\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the radius of the collider shape. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a1ff973137e43cbad8eaeef535dffe172}{get\+Radius()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The radius of the colliders shape 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_afaefc82f60ba56073424771bfd933f02}\label{class_owl_engine_1_1_capsule_collider_afaefc82f60ba56073424771bfd933f02}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Capsule\+Collider\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_afaefc82f60ba56073424771bfd933f02}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_a2508dd8f3b375e4efe5eca8f23800952}\label{class_owl_engine_1_1_capsule_collider_a2508dd8f3b375e4efe5eca8f23800952}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Capsule\+Collider\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a2508dd8f3b375e4efe5eca8f23800952}{on\+Detach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_a61ec4aac4fe0345b7795a6762974ea6a}\label{class_owl_engine_1_1_capsule_collider_a61ec4aac4fe0345b7795a6762974ea6a}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!onRender@{onRender}}
+\index{onRender@{onRender}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{onRender()}{onRender()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Capsule\+Collider\+::on\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw the collider. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a61ec4aac4fe0345b7795a6762974ea6a}{on\+Render()}} \mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_abd6a3741943834047a6f4d8180db2502}\label{class_owl_engine_1_1_capsule_collider_abd6a3741943834047a6f4d8180db2502}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Capsule\+Collider\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_abd6a3741943834047a6f4d8180db2502}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_a9af833103456581b9cc0118ff3114553}\label{class_owl_engine_1_1_capsule_collider_a9af833103456581b9cc0118ff3114553}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Capsule\+Collider\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a9af833103456581b9cc0118ff3114553}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_a953b10c3a8b578dd714fe7a10d53ce5b}\label{class_owl_engine_1_1_capsule_collider_a953b10c3a8b578dd714fe7a10d53ce5b}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!setHeight@{setHeight}}
+\index{setHeight@{setHeight}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{setHeight()}{setHeight()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Capsule\+Collider\+::set\+Height (\begin{DoxyParamCaption}\item[{const float}]{height }\end{DoxyParamCaption})}
+
+
+
+Sets the height of the shape. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_ae857e95727fc9398df7c3e1d2f3417ad}{set\+Radius()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & a const float -\/ The height of the colliders shape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_a102fc4decd26f2ca30367f61361e060e}\label{class_owl_engine_1_1_capsule_collider_a102fc4decd26f2ca30367f61361e060e}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!setIsTrigger@{setIsTrigger}}
+\index{setIsTrigger@{setIsTrigger}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{setIsTrigger()}{setIsTrigger()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Capsule\+Collider\+::set\+Is\+Trigger (\begin{DoxyParamCaption}\item[{bool}]{is\+Trigger }\end{DoxyParamCaption})}
+
+
+
+Set the collider as a trigger. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_a102fc4decd26f2ca30367f61361e060e}{set\+Is\+Trigger()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Trigger} & -\/ Is the collider a trigger \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_aee15dee1389c7d860b19319431e144cd}\label{class_owl_engine_1_1_capsule_collider_aee15dee1389c7d860b19319431e144cd}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Capsule\+Collider\+::set\+Position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{position }\end{DoxyParamCaption})}
+
+
+
+Sets the local position of the collider. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_aee15dee1389c7d860b19319431e144cd}{set\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & a glm\+::vec3 -\/ The local position of the collider \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_capsule_collider_ae857e95727fc9398df7c3e1d2f3417ad}\label{class_owl_engine_1_1_capsule_collider_ae857e95727fc9398df7c3e1d2f3417ad}} 
+\index{OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}!setRadius@{setRadius}}
+\index{setRadius@{setRadius}!OwlEngine::CapsuleCollider@{OwlEngine::CapsuleCollider}}
+\doxysubsubsection{\texorpdfstring{setRadius()}{setRadius()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Capsule\+Collider\+::set\+Radius (\begin{DoxyParamCaption}\item[{const float}]{radius }\end{DoxyParamCaption})}
+
+
+
+Sets the radius of the collider shape. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_ae857e95727fc9398df7c3e1d2f3417ad}{set\+Radius()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & a const float -\/ The radius of the colliders shape \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/capsule\+Collider.\+h\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{capsule_collider_8cpp}{capsule\+Collider.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,113 @@
+\hypertarget{class_hawk_engine_1_1_open_g_l_uniform_buffer}{}\doxysection{Hawk\+Engine\+::Open\+G\+L\+Uniform\+Buffer Class Reference}
+\label{class_hawk_engine_1_1_open_g_l_uniform_buffer}\index{HawkEngine::OpenGLUniformBuffer@{HawkEngine::OpenGLUniformBuffer}}
+
+
+An Open\+GL implementation of the \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer}{Uniform\+Buffer}}.  
+
+
+
+
+{\ttfamily \#include $<$open\+G\+L\+Uniform\+Buffer.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Open\+G\+L\+Uniform\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_open_g_l_uniform_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_uniform_buffer_a8a4b5076b5b37f7494eec1befe837110}{Open\+G\+L\+Uniform\+Buffer}} (const \mbox{\hyperlink{buffer_layout_8h_ac954825a02ac07e6f7caa2404de01a76}{Uniform\+Buffer\+Layout}} \&layout)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_uniform_buffer_a3e9213c370ddf9f0e71361bf8568af02}{$\sim$\+Open\+G\+L\+Uniform\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_uniform_buffer_a7c2f7df397de6a03dccf143b79372c54}{attach\+Shader\+Block}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_shader_program}{Shader\+Program}} $>$ \&shader, const char $\ast$block\+Name) override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_uniform_buffer_a7c2f7df397de6a03dccf143b79372c54}{attach\+Shader\+Block()}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_uniform_buffer_a04fc9cb0003f6a543718055bc1b33d9c}{upload\+Data}} (const char $\ast$uniform\+Name, void $\ast$data) override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_uniform_buffer_a04fc9cb0003f6a543718055bc1b33d9c}{upload\+Data()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An Open\+GL implementation of the \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer}{Uniform\+Buffer}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_uniform_buffer_a8a4b5076b5b37f7494eec1befe837110}\label{class_hawk_engine_1_1_open_g_l_uniform_buffer_a8a4b5076b5b37f7494eec1befe837110}} 
+\index{HawkEngine::OpenGLUniformBuffer@{HawkEngine::OpenGLUniformBuffer}!OpenGLUniformBuffer@{OpenGLUniformBuffer}}
+\index{OpenGLUniformBuffer@{OpenGLUniformBuffer}!HawkEngine::OpenGLUniformBuffer@{HawkEngine::OpenGLUniformBuffer}}
+\doxysubsubsection{\texorpdfstring{OpenGLUniformBuffer()}{OpenGLUniformBuffer()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Open\+G\+L\+Uniform\+Buffer\+::\+Open\+G\+L\+Uniform\+Buffer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{buffer_layout_8h_ac954825a02ac07e6f7caa2404de01a76}{Uniform\+Buffer\+Layout}} \&}]{layout }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_uniform_buffer_a8a4b5076b5b37f7494eec1befe837110}{Open\+G\+L\+Uniform\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em layout} & a const Uniform\+Buffer\+Layout\& -\/ The uniform buffer layout \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_uniform_buffer_a3e9213c370ddf9f0e71361bf8568af02}\label{class_hawk_engine_1_1_open_g_l_uniform_buffer_a3e9213c370ddf9f0e71361bf8568af02}} 
+\index{HawkEngine::OpenGLUniformBuffer@{HawkEngine::OpenGLUniformBuffer}!````~OpenGLUniformBuffer@{$\sim$OpenGLUniformBuffer}}
+\index{````~OpenGLUniformBuffer@{$\sim$OpenGLUniformBuffer}!HawkEngine::OpenGLUniformBuffer@{HawkEngine::OpenGLUniformBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$OpenGLUniformBuffer()}{~OpenGLUniformBuffer()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Open\+G\+L\+Uniform\+Buffer\+::$\sim$\+Open\+G\+L\+Uniform\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+$\sim$\+Open\+G\+L\+Uniform\+Buffer 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_uniform_buffer_a7c2f7df397de6a03dccf143b79372c54}\label{class_hawk_engine_1_1_open_g_l_uniform_buffer_a7c2f7df397de6a03dccf143b79372c54}} 
+\index{HawkEngine::OpenGLUniformBuffer@{HawkEngine::OpenGLUniformBuffer}!attachShaderBlock@{attachShaderBlock}}
+\index{attachShaderBlock@{attachShaderBlock}!HawkEngine::OpenGLUniformBuffer@{HawkEngine::OpenGLUniformBuffer}}
+\doxysubsubsection{\texorpdfstring{attachShaderBlock()}{attachShaderBlock()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Open\+G\+L\+Uniform\+Buffer\+::attach\+Shader\+Block (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_shader_program}{Shader\+Program}} $>$ \&}]{shader,  }\item[{const char $\ast$}]{block\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_uniform_buffer_a7c2f7df397de6a03dccf143b79372c54}{attach\+Shader\+Block()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & a const std\+::shared\+\_\+ptr$<$\+Shader\+Program$>$\& -\/ A reference to the shader program \\
+\hline
+{\em block\+Name} & a const char$\ast$ -\/ The name of the uniform block in the shader program \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_ae5591acad8de7d9ae4a43550071dd1b5}{Hawk\+Engine\+::\+Uniform\+Buffer}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_uniform_buffer_a04fc9cb0003f6a543718055bc1b33d9c}\label{class_hawk_engine_1_1_open_g_l_uniform_buffer_a04fc9cb0003f6a543718055bc1b33d9c}} 
+\index{HawkEngine::OpenGLUniformBuffer@{HawkEngine::OpenGLUniformBuffer}!uploadData@{uploadData}}
+\index{uploadData@{uploadData}!HawkEngine::OpenGLUniformBuffer@{HawkEngine::OpenGLUniformBuffer}}
+\doxysubsubsection{\texorpdfstring{uploadData()}{uploadData()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Open\+G\+L\+Uniform\+Buffer\+::upload\+Data (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_uniform_buffer_a04fc9cb0003f6a543718055bc1b33d9c}{upload\+Data()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const char$\ast$ -\/ The name of the uniform in the uniform cache \\
+\hline
+{\em data} & a void$\ast$ -\/ The data as a void pointer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_ac63b08e2eddabb36aa1a9769097e80e4}{Hawk\+Engine\+::\+Uniform\+Buffer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/platform/\+Open\+G\+L/\mbox{\hyperlink{open_g_l_uniform_buffer_8h}{open\+G\+L\+Uniform\+Buffer.\+h}}\item 
+C\+:/doc/src/src/platform/\+Open\+G\+L/\mbox{\hyperlink{open_g_l_uniform_buffer_8cpp}{open\+G\+L\+Uniform\+Buffer.\+cpp}}\end{DoxyCompactItemize}

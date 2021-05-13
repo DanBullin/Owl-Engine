@@ -1,0 +1,114 @@
+\hypertarget{class_texture_from_file}{}\doxysection{Texture\+From\+File Class Reference}
+\label{class_texture_from_file}\index{TextureFromFile@{TextureFromFile}}
+
+
+A 2D texture which is loaded from file.  
+
+
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+Inheritance diagram for Texture\+From\+File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_texture_from_file}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_texture_from_file_a264935041ac88bcc50fb772945f21648}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture width. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_texture_from_file_ac1095f9b9915fbfdad9eb8d76c3dd09e}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture height. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_texture_from_file_a41f7eb2a6e34fd6dfd2bfee44f6dd4d6}{get\+Channels}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture\textquotesingle{}s number of channels. \end{DoxyCompactList}\item 
+virtual const std\+::string \mbox{\hyperlink{class_texture_from_file_afba7494c51fa1e2510c5bf815b3a10ec}{get\+File\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture\textquotesingle{}s file path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_texture_from_file_a37dbabc68dbc81b43b63f083303d0597}{create}} (const std\+::string file\+Path, const \mbox{\hyperlink{struct_texture_properties}{Texture\+Properties}} properties)
+\begin{DoxyCompactList}\small\item\em Create a 2D texture from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A 2D texture which is loaded from file. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_texture_from_file_a37dbabc68dbc81b43b63f083303d0597}\label{class_texture_from_file_a37dbabc68dbc81b43b63f083303d0597}} 
+\index{TextureFromFile@{TextureFromFile}!create@{create}}
+\index{create@{create}!TextureFromFile@{TextureFromFile}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void Texture\+From\+File\+::create (\begin{DoxyParamCaption}\item[{const std\+::string}]{file\+Path,  }\item[{const \mbox{\hyperlink{struct_texture_properties}{Texture\+Properties}}}]{properties }\end{DoxyParamCaption})}
+
+
+
+Create a 2D texture from file. 
+
+\mbox{\hyperlink{class_texture_from_file_a37dbabc68dbc81b43b63f083303d0597}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string -\/ The file path of the texture \\
+\hline
+{\em properties} & a const \mbox{\hyperlink{struct_texture_properties}{Texture\+Properties}} -\/ The properties of the texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_texture_from_file_a41f7eb2a6e34fd6dfd2bfee44f6dd4d6}\label{class_texture_from_file_a41f7eb2a6e34fd6dfd2bfee44f6dd4d6}} 
+\index{TextureFromFile@{TextureFromFile}!getChannels@{getChannels}}
+\index{getChannels@{getChannels}!TextureFromFile@{TextureFromFile}}
+\doxysubsubsection{\texorpdfstring{getChannels()}{getChannels()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Texture\+From\+File\+::get\+Channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the texture\textquotesingle{}s number of channels. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The number of channels in the texture data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_texture_from_file_afba7494c51fa1e2510c5bf815b3a10ec}\label{class_texture_from_file_afba7494c51fa1e2510c5bf815b3a10ec}} 
+\index{TextureFromFile@{TextureFromFile}!getFilePath@{getFilePath}}
+\index{getFilePath@{getFilePath}!TextureFromFile@{TextureFromFile}}
+\doxysubsubsection{\texorpdfstring{getFilePath()}{getFilePath()}}
+{\footnotesize\ttfamily virtual const std\+::string Texture\+From\+File\+::get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the texture\textquotesingle{}s file path. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string -\/ The file path of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_texture_from_file_ac1095f9b9915fbfdad9eb8d76c3dd09e}\label{class_texture_from_file_ac1095f9b9915fbfdad9eb8d76c3dd09e}} 
+\index{TextureFromFile@{TextureFromFile}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!TextureFromFile@{TextureFromFile}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Texture\+From\+File\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the texture height. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The height of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_texture_from_file_a264935041ac88bcc50fb772945f21648}\label{class_texture_from_file_a264935041ac88bcc50fb772945f21648}} 
+\index{TextureFromFile@{TextureFromFile}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!TextureFromFile@{TextureFromFile}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Texture\+From\+File\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the texture width. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The width of the texture 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/rendering/textures/\mbox{\hyperlink{texture_8h}{texture.\+h}}\item 
+C\+:/doc/src/src/rendering/textures/\mbox{\hyperlink{texture_8cpp}{texture.\+cpp}}\end{DoxyCompactItemize}

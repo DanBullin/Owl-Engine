@@ -1,0 +1,225 @@
+\hypertarget{class_hawk_engine_1_1_transform2_d}{}\doxysection{Hawk\+Engine\+::Transform2D Class Reference}
+\label{class_hawk_engine_1_1_transform2_d}\index{HawkEngine::Transform2D@{HawkEngine::Transform2D}}
+
+
+The position, scale and rotation of an 2D object in the world. Every entity needs a transform.  
+
+
+
+
+{\ttfamily \#include $<$transform2\+D.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Transform2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_transform2_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a699d8a7d72daf3cb4b2ceac48b4326ae}{Transform2D}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_aac5cf35d06821562847aee73bf110379}{Transform2D}} (const float x\+Pos, const float y\+Pos, const float rotation, const float sX, const float sY)
+\begin{DoxyCompactList}\small\item\em Constructor requiring all transform types. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_transform2_d_abbec21998766a4e890e1cd32a3377415}\label{class_hawk_engine_1_1_transform2_d_abbec21998766a4e890e1cd32a3377415}} 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_abbec21998766a4e890e1cd32a3377415}{$\sim$\+Transform2D}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+glm\+::vec2 \mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a740e38588c55d0f26b36e252b53f3640}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get the position of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a42bc3cd361f3e2716681352aa1ad05ea}{set\+Position}} (const float x\+Pos, const float y\+Pos)
+\begin{DoxyCompactList}\small\item\em Set the position of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a5d52495711fa5cbc5cc7ba1d7320c37c}{set\+Position}} (const glm\+::vec2 \&new\+Pos)
+\begin{DoxyCompactList}\small\item\em Set the position of the entity in the world. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_add9648b758c8c54226b648de1651a870}{get\+Orientation}} () const
+\begin{DoxyCompactList}\small\item\em Get the orientation of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a2f90cc50e203123fafdd2da8bd2cd238}{set\+Orientation}} (const float rotation)
+\begin{DoxyCompactList}\small\item\em Set the orientation of the entity in the world. \end{DoxyCompactList}\item 
+const glm\+::vec2 \& \mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a5fa3c0fd2b7cd3f6471671455892237b}{get\+Scale}} () const
+\begin{DoxyCompactList}\small\item\em Get the scale of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_afa798b565a74894d5b833aef6f45e0fb}{set\+Scale}} (const float sX, const float sY)
+\begin{DoxyCompactList}\small\item\em Set the scale of the entity in the world. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a1c74ae2ddf8dd4d15cbf49320c804db0}{get\+Transformation\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Get the model transformation matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The position, scale and rotation of an 2D object in the world. Every entity needs a transform. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_transform2_d_a699d8a7d72daf3cb4b2ceac48b4326ae}\label{class_hawk_engine_1_1_transform2_d_a699d8a7d72daf3cb4b2ceac48b4326ae}} 
+\index{HawkEngine::Transform2D@{HawkEngine::Transform2D}!Transform2D@{Transform2D}}
+\index{Transform2D@{Transform2D}!HawkEngine::Transform2D@{HawkEngine::Transform2D}}
+\doxysubsubsection{\texorpdfstring{Transform2D()}{Transform2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Transform2\+D\+::\+Transform2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a699d8a7d72daf3cb4b2ceac48b4326ae}{Transform2\+D()}} \mbox{\Hypertarget{class_hawk_engine_1_1_transform2_d_aac5cf35d06821562847aee73bf110379}\label{class_hawk_engine_1_1_transform2_d_aac5cf35d06821562847aee73bf110379}} 
+\index{HawkEngine::Transform2D@{HawkEngine::Transform2D}!Transform2D@{Transform2D}}
+\index{Transform2D@{Transform2D}!HawkEngine::Transform2D@{HawkEngine::Transform2D}}
+\doxysubsubsection{\texorpdfstring{Transform2D()}{Transform2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Transform2\+D\+::\+Transform2D (\begin{DoxyParamCaption}\item[{const float}]{x\+Pos,  }\item[{const float}]{y\+Pos,  }\item[{const float}]{rotation,  }\item[{const float}]{sX,  }\item[{const float}]{sY }\end{DoxyParamCaption})}
+
+
+
+Constructor requiring all transform types. 
+
+Transform()
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Pos} & a const float -\/ The x position of the entity in the game world \\
+\hline
+{\em y\+Pos} & a const float -\/ The y position of the entity in the game world \\
+\hline
+{\em rotation} & a const float -\/ The rotation around of the entity in the game world \\
+\hline
+{\em sX} & a const float -\/ The scale in the x axis of the entity in the game world \\
+\hline
+{\em sY} & a const float -\/ The scale in the y axis of the entity in the game world \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_transform2_d_add9648b758c8c54226b648de1651a870}\label{class_hawk_engine_1_1_transform2_d_add9648b758c8c54226b648de1651a870}} 
+\index{HawkEngine::Transform2D@{HawkEngine::Transform2D}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!HawkEngine::Transform2D@{HawkEngine::Transform2D}}
+\doxysubsubsection{\texorpdfstring{getOrientation()}{getOrientation()}}
+{\footnotesize\ttfamily const float Hawk\+Engine\+::\+Transform2\+D\+::get\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the orientation of the entity in the world. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_add9648b758c8c54226b648de1651a870}{get\+Orientation()}}
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The orientation of the transform 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_transform2_d_a740e38588c55d0f26b36e252b53f3640}\label{class_hawk_engine_1_1_transform2_d_a740e38588c55d0f26b36e252b53f3640}} 
+\index{HawkEngine::Transform2D@{HawkEngine::Transform2D}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!HawkEngine::Transform2D@{HawkEngine::Transform2D}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec2 Hawk\+Engine\+::\+Transform2\+D\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the position of the entity in the world. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a740e38588c55d0f26b36e252b53f3640}{get\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The position of the entity in the game world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_transform2_d_a5fa3c0fd2b7cd3f6471671455892237b}\label{class_hawk_engine_1_1_transform2_d_a5fa3c0fd2b7cd3f6471671455892237b}} 
+\index{HawkEngine::Transform2D@{HawkEngine::Transform2D}!getScale@{getScale}}
+\index{getScale@{getScale}!HawkEngine::Transform2D@{HawkEngine::Transform2D}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily const glm\+::vec2 \& Hawk\+Engine\+::\+Transform2\+D\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the scale of the entity in the world. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a5fa3c0fd2b7cd3f6471671455892237b}{get\+Scale()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec2\& -\/ The scale of the transform 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_transform2_d_a1c74ae2ddf8dd4d15cbf49320c804db0}\label{class_hawk_engine_1_1_transform2_d_a1c74ae2ddf8dd4d15cbf49320c804db0}} 
+\index{HawkEngine::Transform2D@{HawkEngine::Transform2D}!getTransformationMatrix@{getTransformationMatrix}}
+\index{getTransformationMatrix@{getTransformationMatrix}!HawkEngine::Transform2D@{HawkEngine::Transform2D}}
+\doxysubsubsection{\texorpdfstring{getTransformationMatrix()}{getTransformationMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Hawk\+Engine\+::\+Transform2\+D\+::get\+Transformation\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the model transformation matrix. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a1c74ae2ddf8dd4d15cbf49320c804db0}{get\+Transformation\+Matrix()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The model transformation matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_transform2_d_a2f90cc50e203123fafdd2da8bd2cd238}\label{class_hawk_engine_1_1_transform2_d_a2f90cc50e203123fafdd2da8bd2cd238}} 
+\index{HawkEngine::Transform2D@{HawkEngine::Transform2D}!setOrientation@{setOrientation}}
+\index{setOrientation@{setOrientation}!HawkEngine::Transform2D@{HawkEngine::Transform2D}}
+\doxysubsubsection{\texorpdfstring{setOrientation()}{setOrientation()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Transform2\+D\+::set\+Orientation (\begin{DoxyParamCaption}\item[{const float}]{rotation }\end{DoxyParamCaption})}
+
+
+
+Set the orientation of the entity in the world. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a2f90cc50e203123fafdd2da8bd2cd238}{set\+Orientation()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation} & a const float -\/ The rotation of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_transform2_d_a42bc3cd361f3e2716681352aa1ad05ea}\label{class_hawk_engine_1_1_transform2_d_a42bc3cd361f3e2716681352aa1ad05ea}} 
+\index{HawkEngine::Transform2D@{HawkEngine::Transform2D}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!HawkEngine::Transform2D@{HawkEngine::Transform2D}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Transform2\+D\+::set\+Position (\begin{DoxyParamCaption}\item[{const float}]{x\+Pos,  }\item[{const float}]{y\+Pos }\end{DoxyParamCaption})}
+
+
+
+Set the position of the entity in the world. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a42bc3cd361f3e2716681352aa1ad05ea}{set\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Pos} & a const float -\/ The x position of the entity \\
+\hline
+{\em y\+Pos} & a const float -\/ The y position of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_transform2_d_a5d52495711fa5cbc5cc7ba1d7320c37c}\label{class_hawk_engine_1_1_transform2_d_a5d52495711fa5cbc5cc7ba1d7320c37c}} 
+\index{HawkEngine::Transform2D@{HawkEngine::Transform2D}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!HawkEngine::Transform2D@{HawkEngine::Transform2D}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Transform2\+D\+::set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{new\+Pos }\end{DoxyParamCaption})}
+
+
+
+Set the position of the entity in the world. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_a42bc3cd361f3e2716681352aa1ad05ea}{set\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Pos} & a const glm\+::vec2\& -\/ The position of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_transform2_d_afa798b565a74894d5b833aef6f45e0fb}\label{class_hawk_engine_1_1_transform2_d_afa798b565a74894d5b833aef6f45e0fb}} 
+\index{HawkEngine::Transform2D@{HawkEngine::Transform2D}!setScale@{setScale}}
+\index{setScale@{setScale}!HawkEngine::Transform2D@{HawkEngine::Transform2D}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Transform2\+D\+::set\+Scale (\begin{DoxyParamCaption}\item[{const float}]{sX,  }\item[{const float}]{sY }\end{DoxyParamCaption})}
+
+
+
+Set the scale of the entity in the world. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d_afa798b565a74894d5b833aef6f45e0fb}{set\+Scale()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sX} & a const float -\/ The scale of the transform in the x axis \\
+\hline
+{\em sY} & a const float -\/ The scale of the transform in the y axis \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/scene/entity/components/\mbox{\hyperlink{transform2_d_8h}{transform2\+D.\+h}}\item 
+C\+:/doc/src/src/independent/scene/entity/components/\mbox{\hyperlink{transform2_d_8cpp}{transform2\+D.\+cpp}}\end{DoxyCompactItemize}

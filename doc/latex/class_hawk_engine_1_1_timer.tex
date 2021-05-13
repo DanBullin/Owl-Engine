@@ -1,0 +1,56 @@
+\hypertarget{class_hawk_engine_1_1_timer}{}\doxysection{Hawk\+Engine\+::Timer Class Reference}
+\label{class_hawk_engine_1_1_timer}\index{HawkEngine::Timer@{HawkEngine::Timer}}
+
+
+Interface class for timers.  
+
+
+
+
+{\ttfamily \#include $<$timer.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Timer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_timer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_timer_a67da2c40ed06736eeec3dcedf890a396}\label{class_hawk_engine_1_1_timer_a67da2c40ed06736eeec3dcedf890a396}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_timer_a67da2c40ed06736eeec3dcedf890a396}{start}} ()=0
+\begin{DoxyCompactList}\small\item\em Start the timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_timer_a32c366e9f2eb82f3039c1560f9d7cc9f}\label{class_hawk_engine_1_1_timer_a32c366e9f2eb82f3039c1560f9d7cc9f}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_timer_a32c366e9f2eb82f3039c1560f9d7cc9f}{reset}} ()=0
+\begin{DoxyCompactList}\small\item\em Reset the timer. \end{DoxyCompactList}\item 
+virtual const float \mbox{\hyperlink{class_hawk_engine_1_1_timer_afc54a4b62531c7e2dbd1465f595904f3}{get\+Elapsed\+Time}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the time elapsed since the last start or reset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface class for timers. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_timer_afc54a4b62531c7e2dbd1465f595904f3}\label{class_hawk_engine_1_1_timer_afc54a4b62531c7e2dbd1465f595904f3}} 
+\index{HawkEngine::Timer@{HawkEngine::Timer}!getElapsedTime@{getElapsedTime}}
+\index{getElapsedTime@{getElapsedTime}!HawkEngine::Timer@{HawkEngine::Timer}}
+\doxysubsubsection{\texorpdfstring{getElapsedTime()}{getElapsedTime()}}
+{\footnotesize\ttfamily virtual const float Hawk\+Engine\+::\+Timer\+::get\+Elapsed\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the time elapsed since the last start or reset. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The elapsed time 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_chrono_timer_af0e4ee241083df3ad37c536fc83ebfd0}{Hawk\+Engine\+::\+Chrono\+Timer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/systems/components/\mbox{\hyperlink{timer_8h}{timer.\+h}}\end{DoxyCompactItemize}

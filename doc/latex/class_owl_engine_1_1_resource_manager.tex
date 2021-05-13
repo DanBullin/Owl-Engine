@@ -1,0 +1,457 @@
+\hypertarget{class_owl_engine_1_1_resource_manager}{}\doxysection{Owl\+Engine\+::Resource\+Manager Class Reference}
+\label{class_owl_engine_1_1_resource_manager}\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+
+
+A resource manager managing resources.  
+
+
+
+
+{\ttfamily \#include $<$resource\+Manager.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Resource\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_resource_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a6a69348ef888693de141ffc264c37ff2}{Resource\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_afec638c3b7d192746e222830b908ead7}{$\sim$\+Resource\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a205936ec2c970514b2e11e7f0bb5fe6f}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_af499a75547e2d96dcbab2adc5d73acb7}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const bool \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a83d63ffa73269788e771444da1efbe1c}{resource\+Exists}} (const std\+::string \&resource\+Name)
+\begin{DoxyCompactList}\small\item\em Check if the resource name exists. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_abe700bb5994d5b964e06fb83c1973792}{register\+Resource}} (const std\+::string \&resource\+Name, \mbox{\hyperlink{class_owl_engine_1_1_resource}{Resource}} $\ast$resource)
+\begin{DoxyCompactList}\small\item\em Register a resource. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_ac356f5a61f5e94e6c19fe16c7d46e8d1}{destroy\+Resource}} (const std\+::string \&resource\+Name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Destroy a resource by name or all of them. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a344429ce099e11e0210c18083e42c31a}{load\+N\+T\+Resources}} ()
+\begin{DoxyCompactList}\small\item\em Load non-\/threaded resources. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_aa682a089bcdc718953574e8043b9c3df}{load\+T\+Resources}} ()
+\begin{DoxyCompactList}\small\item\em Load threaded resources. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a7dd405e9edb86682fece91a694ca7243}\label{class_owl_engine_1_1_resource_manager_a7dd405e9edb86682fece91a694ca7243}} 
+{\footnotesize template$<$typename T $>$ }\\static T $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a7dd405e9edb86682fece91a694ca7243}{get\+Resource}} (const std\+::string \&resource\+Name)
+\begin{DoxyCompactList}\small\item\em Get a resource by name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a239a9bda71ae34592c98a1067f410037}\label{class_owl_engine_1_1_resource_manager_a239a9bda71ae34592c98a1067f410037}} 
+{\footnotesize template$<$typename T $>$ }\\static std\+::vector$<$ T $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a239a9bda71ae34592c98a1067f410037}{get\+Resources\+Of\+Type}} (const \mbox{\hyperlink{resource_8h_a3f3bdad1ec3705aa4956c3f79d741c36}{Resource\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Get all resources of a certain type. \end{DoxyCompactList}\item 
+static std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_resource}{Resource}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a1744db1f6851ee922dec0689eedce54b}{get\+Resources}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all resources. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_ae6532032c8f03c8d4b22a84bdf18b27c}{get\+Current\+Directory}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current directory. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_aea3c44d63a52830a150cd63b56229caa}{get\+Contents}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Return the file contents. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a46f4c9b9f6acf8b8f99a3038424af920}{get\+Line\+From\+String}} (const std\+::string \&string\+Contents, const uint32\+\_\+t line\+Index)
+\begin{DoxyCompactList}\small\item\em Return the contents on line. \end{DoxyCompactList}\item 
+static nlohmann\+::json \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_ab159a409235459806d58b70dcf015e03}{get\+J\+S\+ON}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the contents of a file into a J\+S\+ON object and return the object. \end{DoxyCompactList}\item 
+static const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_ae86b921aec7b00cce36e02692b31ad66}{get\+Config\+Value}} (const \mbox{\hyperlink{resource_manager_8h_aad36219e68be89ae1e2cb10fa13a0f77}{Config\+::\+Config\+Data}} data)
+\begin{DoxyCompactList}\small\item\em Get a config value. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a72550e441cd5749922093aa65c939a93}{set\+Config\+Value}} (const \mbox{\hyperlink{resource_manager_8h_aad36219e68be89ae1e2cb10fa13a0f77}{Config\+::\+Config\+Data}} data, const uint32\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Set a config value. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a2799d17fcb788692f3127964da7fcf41}{get\+Default\+Frame\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Get the default framebuffer. \end{DoxyCompactList}\item 
+static const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a27c7e514e0cdbb14b62dbbd1c829ad8f}{get\+Res\+Being\+Loaded}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the resource being loaded. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_ac2eb8aab81ef647e9fe43057f866d97a}{set\+Res\+Being\+Loaded}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Set the name of the resource being loaded. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_adf36c0528eac8b3b5a375800526fb369}{print\+Resource\+Manager\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print resource manager details. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a13ef58f52925f5cc4155b127b222ff70}{print\+Resource\+Details}} (const std\+::string \&resource\+Name=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Print resource details. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\static T $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a7dd405e9edb86682fece91a694ca7243}{get\+Resource}} (const std\+::string \&resource\+Name)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a7dd405e9edb86682fece91a694ca7243}{get\+Resource()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\static std\+::vector$<$ T $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a239a9bda71ae34592c98a1067f410037}{get\+Resources\+Of\+Type}} (const \mbox{\hyperlink{resource_8h_a3f3bdad1ec3705aa4956c3f79d741c36}{Resource\+Type}} type)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a239a9bda71ae34592c98a1067f410037}{get\+Resources\+Of\+Type()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A resource manager managing resources. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a6a69348ef888693de141ffc264c37ff2}\label{class_owl_engine_1_1_resource_manager_a6a69348ef888693de141ffc264c37ff2}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!ResourceManager@{ResourceManager}}
+\index{ResourceManager@{ResourceManager}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{ResourceManager()}{ResourceManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Resource\+Manager\+::\+Resource\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a6a69348ef888693de141ffc264c37ff2}{Resource\+Manager()}} \mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_afec638c3b7d192746e222830b908ead7}\label{class_owl_engine_1_1_resource_manager_afec638c3b7d192746e222830b908ead7}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!````~ResourceManager@{$\sim$ResourceManager}}
+\index{````~ResourceManager@{$\sim$ResourceManager}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ResourceManager()}{~ResourceManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Resource\+Manager\+::$\sim$\+Resource\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_afec638c3b7d192746e222830b908ead7}{$\sim$\+Resource\+Manager()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_ac356f5a61f5e94e6c19fe16c7d46e8d1}\label{class_owl_engine_1_1_resource_manager_ac356f5a61f5e94e6c19fe16c7d46e8d1}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!destroyResource@{destroyResource}}
+\index{destroyResource@{destroyResource}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{destroyResource()}{destroyResource()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Manager\+::destroy\+Resource (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{resource\+Name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy a resource by name or all of them. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_ac356f5a61f5e94e6c19fe16c7d46e8d1}{destroy\+Resource()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & a const std\+::string\& -\/ The name of the resource \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_ae86b921aec7b00cce36e02692b31ad66}\label{class_owl_engine_1_1_resource_manager_ae86b921aec7b00cce36e02692b31ad66}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!getConfigValue@{getConfigValue}}
+\index{getConfigValue@{getConfigValue}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getConfigValue()}{getConfigValue()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Resource\+Manager\+::get\+Config\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{resource_manager_8h_aad36219e68be89ae1e2cb10fa13a0f77}{Config\+::\+Config\+Data}}}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a config value. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_ae86b921aec7b00cce36e02692b31ad66}{get\+Config\+Value()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & const Config\+::\+Config\+Data -\/ The configurable data to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The value of the configured data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_aea3c44d63a52830a150cd63b56229caa}\label{class_owl_engine_1_1_resource_manager_aea3c44d63a52830a150cd63b56229caa}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!getContents@{getContents}}
+\index{getContents@{getContents}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getContents()}{getContents()}}
+{\footnotesize\ttfamily std\+::string Owl\+Engine\+::\+Resource\+Manager\+::get\+Contents (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return the file contents. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_aea3c44d63a52830a150cd63b56229caa}{get\+Contents()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ A reference to the file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::string -\/ The contents of the file 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_ae6532032c8f03c8d4b22a84bdf18b27c}\label{class_owl_engine_1_1_resource_manager_ae6532032c8f03c8d4b22a84bdf18b27c}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!getCurrentDirectory@{getCurrentDirectory}}
+\index{getCurrentDirectory@{getCurrentDirectory}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentDirectory()}{getCurrentDirectory()}}
+{\footnotesize\ttfamily std\+::string Owl\+Engine\+::\+Resource\+Manager\+::get\+Current\+Directory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the current directory. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_ae6532032c8f03c8d4b22a84bdf18b27c}{get\+Current\+Directory()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::string -\/ The current directory as a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a2799d17fcb788692f3127964da7fcf41}\label{class_owl_engine_1_1_resource_manager_a2799d17fcb788692f3127964da7fcf41}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!getDefaultFrameBuffer@{getDefaultFrameBuffer}}
+\index{getDefaultFrameBuffer@{getDefaultFrameBuffer}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getDefaultFrameBuffer()}{getDefaultFrameBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ Owl\+Engine\+::\+Resource\+Manager\+::get\+Default\+Frame\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the default framebuffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a2799d17fcb788692f3127964da7fcf41}{get\+Default\+Frame\+Buffer()}}
+
+\begin{DoxyReturn}{Returns}
+a Frame\+Buffer$\ast$ -\/ The default framebuffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_ab159a409235459806d58b70dcf015e03}\label{class_owl_engine_1_1_resource_manager_ab159a409235459806d58b70dcf015e03}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!getJSON@{getJSON}}
+\index{getJSON@{getJSON}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getJSON()}{getJSON()}}
+{\footnotesize\ttfamily nlohmann\+::json Owl\+Engine\+::\+Resource\+Manager\+::get\+J\+S\+ON (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the contents of a file into a J\+S\+ON object and return the object. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_ab159a409235459806d58b70dcf015e03}{get\+J\+S\+O\+N()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ A reference to the file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::json -\/ The J\+S\+ON object filled with data from the file 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a46f4c9b9f6acf8b8f99a3038424af920}\label{class_owl_engine_1_1_resource_manager_a46f4c9b9f6acf8b8f99a3038424af920}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!getLineFromString@{getLineFromString}}
+\index{getLineFromString@{getLineFromString}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getLineFromString()}{getLineFromString()}}
+{\footnotesize\ttfamily std\+::string Owl\+Engine\+::\+Resource\+Manager\+::get\+Line\+From\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{string\+Contents,  }\item[{const uint32\+\_\+t}]{line\+Index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return the contents on line. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a46f4c9b9f6acf8b8f99a3038424af920}{get\+Line\+From\+String()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+Contents} & a const std\+::string\& -\/ The string to look at \\
+\hline
+{\em line\+Index} & a const uint32\+\_\+t -\/ The index of the line to return \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::string -\/ The line\textquotesingle{}s contents 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a27c7e514e0cdbb14b62dbbd1c829ad8f}\label{class_owl_engine_1_1_resource_manager_a27c7e514e0cdbb14b62dbbd1c829ad8f}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!getResBeingLoaded@{getResBeingLoaded}}
+\index{getResBeingLoaded@{getResBeingLoaded}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getResBeingLoaded()}{getResBeingLoaded()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Resource\+Manager\+::get\+Res\+Being\+Loaded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the name of the resource being loaded. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a27c7e514e0cdbb14b62dbbd1c829ad8f}{get\+Res\+Being\+Loaded()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The name of the resource being loaded 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a7dd405e9edb86682fece91a694ca7243}\label{class_owl_engine_1_1_resource_manager_a7dd405e9edb86682fece91a694ca7243}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!getResource@{getResource}}
+\index{getResource@{getResource}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getResource()}{getResource()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static T$\ast$ Owl\+Engine\+::\+Resource\+Manager\+::get\+Resource (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{resource\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a7dd405e9edb86682fece91a694ca7243}{get\+Resource()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & a const std\+::string\& -\/ The name of the resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a T$\ast$ -\/ The resource in type T 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a1744db1f6851ee922dec0689eedce54b}\label{class_owl_engine_1_1_resource_manager_a1744db1f6851ee922dec0689eedce54b}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!getResources@{getResources}}
+\index{getResources@{getResources}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getResources()}{getResources()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_resource}{Resource}} $\ast$ $>$ \& Owl\+Engine\+::\+Resource\+Manager\+::get\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a list of all resources. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a1744db1f6851ee922dec0689eedce54b}{get\+Resources()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::map$<$std\+::string, Resource$\ast$$>$\& -\/ A list of all resources that are currently loaded 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a239a9bda71ae34592c98a1067f410037}\label{class_owl_engine_1_1_resource_manager_a239a9bda71ae34592c98a1067f410037}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!getResourcesOfType@{getResourcesOfType}}
+\index{getResourcesOfType@{getResourcesOfType}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getResourcesOfType()}{getResourcesOfType()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static std\+::vector$<$T$\ast$$>$ Owl\+Engine\+::\+Resource\+Manager\+::get\+Resources\+Of\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{resource_8h_a3f3bdad1ec3705aa4956c3f79d741c36}{Resource\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a239a9bda71ae34592c98a1067f410037}{get\+Resources\+Of\+Type()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const Resource\+Type -\/ The resource type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+T$\ast$$>$ -\/ The list of resources of type T 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a344429ce099e11e0210c18083e42c31a}\label{class_owl_engine_1_1_resource_manager_a344429ce099e11e0210c18083e42c31a}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!loadNTResources@{loadNTResources}}
+\index{loadNTResources@{loadNTResources}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{loadNTResources()}{loadNTResources()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Manager\+::load\+N\+T\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load non-\/threaded resources. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a344429ce099e11e0210c18083e42c31a}{load\+N\+T\+Resources()}} \mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_aa682a089bcdc718953574e8043b9c3df}\label{class_owl_engine_1_1_resource_manager_aa682a089bcdc718953574e8043b9c3df}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!loadTResources@{loadTResources}}
+\index{loadTResources@{loadTResources}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{loadTResources()}{loadTResources()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Manager\+::load\+T\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load threaded resources. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_aa682a089bcdc718953574e8043b9c3df}{load\+T\+Resources()}} \mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a13ef58f52925f5cc4155b127b222ff70}\label{class_owl_engine_1_1_resource_manager_a13ef58f52925f5cc4155b127b222ff70}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!printResourceDetails@{printResourceDetails}}
+\index{printResourceDetails@{printResourceDetails}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{printResourceDetails()}{printResourceDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Manager\+::print\+Resource\+Details (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{resource\+Name = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print resource details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a13ef58f52925f5cc4155b127b222ff70}{print\+Resource\+Details()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & a const std\+::string\& -\/ The name of the resource whose details to print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_adf36c0528eac8b3b5a375800526fb369}\label{class_owl_engine_1_1_resource_manager_adf36c0528eac8b3b5a375800526fb369}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!printResourceManagerDetails@{printResourceManagerDetails}}
+\index{printResourceManagerDetails@{printResourceManagerDetails}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{printResourceManagerDetails()}{printResourceManagerDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Manager\+::print\+Resource\+Manager\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print resource manager details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_adf36c0528eac8b3b5a375800526fb369}{print\+Resource\+Manager\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_abe700bb5994d5b964e06fb83c1973792}\label{class_owl_engine_1_1_resource_manager_abe700bb5994d5b964e06fb83c1973792}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!registerResource@{registerResource}}
+\index{registerResource@{registerResource}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{registerResource()}{registerResource()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Manager\+::register\+Resource (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{resource\+Name,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_resource}{Resource}} $\ast$}]{resource }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Register a resource. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_abe700bb5994d5b964e06fb83c1973792}{register\+Resource()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & a const std\+::string\& -\/ The name of the resource \\
+\hline
+{\em resource} & a Resource$\ast$ -\/ A pointer to the resource \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a83d63ffa73269788e771444da1efbe1c}\label{class_owl_engine_1_1_resource_manager_a83d63ffa73269788e771444da1efbe1c}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!resourceExists@{resourceExists}}
+\index{resourceExists@{resourceExists}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{resourceExists()}{resourceExists()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Resource\+Manager\+::resource\+Exists (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{resource\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if the resource name exists. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a83d63ffa73269788e771444da1efbe1c}{resource\+Exists()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & a const std\+::string\& -\/ The name of the resource \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Was the resource name found in the resource list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a72550e441cd5749922093aa65c939a93}\label{class_owl_engine_1_1_resource_manager_a72550e441cd5749922093aa65c939a93}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!setConfigValue@{setConfigValue}}
+\index{setConfigValue@{setConfigValue}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{setConfigValue()}{setConfigValue()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Manager\+::set\+Config\+Value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{resource_manager_8h_aad36219e68be89ae1e2cb10fa13a0f77}{Config\+::\+Config\+Data}}}]{data,  }\item[{const uint32\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set a config value. 
+
+set\+Config\+Value
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a const Config\+::\+Config\+Data -\/ The config value to edit \\
+\hline
+{\em value} & a const uint32\+\_\+t -\/ The new config value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_ac2eb8aab81ef647e9fe43057f866d97a}\label{class_owl_engine_1_1_resource_manager_ac2eb8aab81ef647e9fe43057f866d97a}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!setResBeingLoaded@{setResBeingLoaded}}
+\index{setResBeingLoaded@{setResBeingLoaded}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{setResBeingLoaded()}{setResBeingLoaded()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Manager\+::set\+Res\+Being\+Loaded (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the name of the resource being loaded. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_ac2eb8aab81ef647e9fe43057f866d97a}{set\+Res\+Being\+Loaded()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const std\+::string\& -\/ The name of the resource being loaded \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_a205936ec2c970514b2e11e7f0bb5fe6f}\label{class_owl_engine_1_1_resource_manager_a205936ec2c970514b2e11e7f0bb5fe6f}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!start@{start}}
+\index{start@{start}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Manager\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_a205936ec2c970514b2e11e7f0bb5fe6f}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_manager_af499a75547e2d96dcbab2adc5d73acb7}\label{class_owl_engine_1_1_resource_manager_af499a75547e2d96dcbab2adc5d73acb7}} 
+\index{OwlEngine::ResourceManager@{OwlEngine::ResourceManager}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::ResourceManager@{OwlEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Manager\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_manager_af499a75547e2d96dcbab2adc5d73acb7}{stop()}} $<$ By providing no resource name, all resources will be deleted
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{resource_manager_8h}{resource\+Manager.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{resource_manager_8cpp}{resource\+Manager.\+cpp}}\end{DoxyCompactItemize}

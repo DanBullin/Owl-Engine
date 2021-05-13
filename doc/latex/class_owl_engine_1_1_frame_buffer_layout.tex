@@ -1,0 +1,145 @@
+\hypertarget{class_owl_engine_1_1_frame_buffer_layout}{}\doxysection{Owl\+Engine\+::Frame\+Buffer\+Layout Class Reference}
+\label{class_owl_engine_1_1_frame_buffer_layout}\index{OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}}
+
+
+An abstraction of a frame buffer layout.  
+
+
+
+
+{\ttfamily \#include $<$frame\+Buffer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_layout_a35ed4bd81ee149f3dc6e32de206d2bd4}\label{class_owl_engine_1_1_frame_buffer_layout_a35ed4bd81ee149f3dc6e32de206d2bd4}} 
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout_a35ed4bd81ee149f3dc6e32de206d2bd4}{Frame\+Buffer\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout_adbbc529ef39b67cec11bd8c5032fb943}{Frame\+Buffer\+Layout}} (const std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}} $>$ \&attachments)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}} $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout_aae36d669dd2519a7ca58b99c4b2dc00d}{get\+Attachments}} () const
+\begin{DoxyCompactList}\small\item\em Get the attachments in the frame buffer layout. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout_a6b7092d942b3f14d23152875c1cef8a9}{add\+Attachment}} (const \mbox{\hyperlink{render_buffer_8h_a540e8dd60aff3dde7239a3705ff0afcb}{Attachment\+Type}} type, const bool sampled=false)
+\begin{DoxyCompactList}\small\item\em Add an attachment to the layout. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}} $>$\+::iterator \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout_a247264ed0e6fd1cf01ef16e8c3e9a7f1}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Get the begin iterator for the attachments. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}} $>$\+::iterator \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout_a459769dd30bfd7f4e064b3c859ec157f}{end}} ()
+\begin{DoxyCompactList}\small\item\em Get the end iterator for the attachments. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}} $>$\+::const\+\_\+iterator \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout_a43338d7d681405f9b8d81ae5f802c555}{begin}} () const
+\begin{DoxyCompactList}\small\item\em Get the const begin iterator for the attachments. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}} $>$\+::const\+\_\+iterator \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout_a509f51193a230ecb146f2ff452692d57}{end}} () const
+\begin{DoxyCompactList}\small\item\em Get the const end iterator for the attachments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstraction of a frame buffer layout. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_layout_adbbc529ef39b67cec11bd8c5032fb943}\label{class_owl_engine_1_1_frame_buffer_layout_adbbc529ef39b67cec11bd8c5032fb943}} 
+\index{OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}!FrameBufferLayout@{FrameBufferLayout}}
+\index{FrameBufferLayout@{FrameBufferLayout}!OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}}
+\doxysubsubsection{\texorpdfstring{FrameBufferLayout()}{FrameBufferLayout()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Frame\+Buffer\+Layout\+::\+Frame\+Buffer\+Layout (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ \mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}} $>$ \&}]{attachments }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em attachments} & a const std\+::initializer\+\_\+list$<$\+Attachment$>$\& -\/ The attachments to add to the list of attachments \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_layout_a6b7092d942b3f14d23152875c1cef8a9}\label{class_owl_engine_1_1_frame_buffer_layout_a6b7092d942b3f14d23152875c1cef8a9}} 
+\index{OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}!addAttachment@{addAttachment}}
+\index{addAttachment@{addAttachment}!OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}}
+\doxysubsubsection{\texorpdfstring{addAttachment()}{addAttachment()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Frame\+Buffer\+Layout\+::add\+Attachment (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{render_buffer_8h_a540e8dd60aff3dde7239a3705ff0afcb}{Attachment\+Type}}}]{type,  }\item[{const bool}]{sampled = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Add an attachment to the layout. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout_a6b7092d942b3f14d23152875c1cef8a9}{add\+Attachment()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const Attachment\+Type -\/ The type of attachment \\
+\hline
+{\em sampled} & a const bool -\/ Is the attachment to be sampled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_layout_a247264ed0e6fd1cf01ef16e8c3e9a7f1}\label{class_owl_engine_1_1_frame_buffer_layout_a247264ed0e6fd1cf01ef16e8c3e9a7f1}} 
+\index{OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}!begin@{begin}}
+\index{begin@{begin}!OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}}$>$\+::iterator Owl\+Engine\+::\+Frame\+Buffer\+Layout\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the begin iterator for the attachments. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Attachment$>$\+::iterator -\/ The begin iterator of the attachments list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_layout_a43338d7d681405f9b8d81ae5f802c555}\label{class_owl_engine_1_1_frame_buffer_layout_a43338d7d681405f9b8d81ae5f802c555}} 
+\index{OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}!begin@{begin}}
+\index{begin@{begin}!OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}}$>$\+::const\+\_\+iterator Owl\+Engine\+::\+Frame\+Buffer\+Layout\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the const begin iterator for the attachments. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Attachment$>$\+::const\+\_\+iterator -\/ The begin const iterator of the attachments list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_layout_a459769dd30bfd7f4e064b3c859ec157f}\label{class_owl_engine_1_1_frame_buffer_layout_a459769dd30bfd7f4e064b3c859ec157f}} 
+\index{OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}!end@{end}}
+\index{end@{end}!OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}}$>$\+::iterator Owl\+Engine\+::\+Frame\+Buffer\+Layout\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the end iterator for the attachments. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Attachment$>$\+::iterator -\/ The end iterator of the attachments list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_layout_a509f51193a230ecb146f2ff452692d57}\label{class_owl_engine_1_1_frame_buffer_layout_a509f51193a230ecb146f2ff452692d57}} 
+\index{OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}!end@{end}}
+\index{end@{end}!OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}}$>$\+::const\+\_\+iterator Owl\+Engine\+::\+Frame\+Buffer\+Layout\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the const end iterator for the attachments. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Attachment$>$\+::const\+\_\+iterator -\/ The end const iterator of the attachments list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_layout_aae36d669dd2519a7ca58b99c4b2dc00d}\label{class_owl_engine_1_1_frame_buffer_layout_aae36d669dd2519a7ca58b99c4b2dc00d}} 
+\index{OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}!getAttachments@{getAttachments}}
+\index{getAttachments@{getAttachments}!OwlEngine::FrameBufferLayout@{OwlEngine::FrameBufferLayout}}
+\doxysubsubsection{\texorpdfstring{getAttachments()}{getAttachments()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Attachment}}$>$\& Owl\+Engine\+::\+Frame\+Buffer\+Layout\+::get\+Attachments (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the attachments in the frame buffer layout. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::vector$<$\+Attachment$>$\& -\/ The attachments in the frame buffer layout 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/\mbox{\hyperlink{frame_buffer_8h}{frame\+Buffer.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/\mbox{\hyperlink{frame_buffer_8cpp}{frame\+Buffer.\+cpp}}\end{DoxyCompactItemize}

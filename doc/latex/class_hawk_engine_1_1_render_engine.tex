@@ -1,0 +1,129 @@
+\hypertarget{class_hawk_engine_1_1_render_engine}{}\doxysection{Hawk\+Engine\+::Render\+Engine Class Reference}
+\label{class_hawk_engine_1_1_render_engine}\index{HawkEngine::RenderEngine@{HawkEngine::RenderEngine}}
+
+
+A render engine which handles all the rendering.  
+
+
+
+
+{\ttfamily \#include $<$render\+Engine.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_render_engine_aed0fbaee8a039fa304011858bdeafa08}{Render\+Engine}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window}{Window}} $>$ \&window)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_render_engine_a677bca2535a6dae877028587c105311a}{$\sim$\+Render\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_render_engine_a2aeafb0dcbbc699125bb560df0ec4855}{prepare3D}} ()
+\begin{DoxyCompactList}\small\item\em Prepare 3D data before rendering. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_render_engine_adc63b644e95d66dd6c7d719f1e856368}{prepare2D}} ()
+\begin{DoxyCompactList}\small\item\em Prepare 2D data before rendering. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_render_engine_a3071132a582b172261ae49950913c474}{update}} (const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_render_engine_a2d71bc2c73cb218380b5238e17924dda}{render}} ()
+\begin{DoxyCompactList}\small\item\em Render the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_render_engine_a12e764e1a51700a813100e483a9bbb54}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the render engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A render engine which handles all the rendering. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_render_engine_aed0fbaee8a039fa304011858bdeafa08}\label{class_hawk_engine_1_1_render_engine_aed0fbaee8a039fa304011858bdeafa08}} 
+\index{HawkEngine::RenderEngine@{HawkEngine::RenderEngine}!RenderEngine@{RenderEngine}}
+\index{RenderEngine@{RenderEngine}!HawkEngine::RenderEngine@{HawkEngine::RenderEngine}}
+\doxysubsubsection{\texorpdfstring{RenderEngine()}{RenderEngine()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Render\+Engine\+::\+Render\+Engine (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window}{Window}} $>$ \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_render_engine_aed0fbaee8a039fa304011858bdeafa08}{Render\+Engine()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a const std\+::shared\+\_\+ptr$<$\+Window$>$\& -\/ A pointer to the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_render_engine_a677bca2535a6dae877028587c105311a}\label{class_hawk_engine_1_1_render_engine_a677bca2535a6dae877028587c105311a}} 
+\index{HawkEngine::RenderEngine@{HawkEngine::RenderEngine}!````~RenderEngine@{$\sim$RenderEngine}}
+\index{````~RenderEngine@{$\sim$RenderEngine}!HawkEngine::RenderEngine@{HawkEngine::RenderEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$RenderEngine()}{~RenderEngine()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Render\+Engine\+::$\sim$\+Render\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_render_engine_a677bca2535a6dae877028587c105311a}{$\sim$\+Render\+Engine()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_render_engine_a12e764e1a51700a813100e483a9bbb54}\label{class_hawk_engine_1_1_render_engine_a12e764e1a51700a813100e483a9bbb54}} 
+\index{HawkEngine::RenderEngine@{HawkEngine::RenderEngine}!destroy@{destroy}}
+\index{destroy@{destroy}!HawkEngine::RenderEngine@{HawkEngine::RenderEngine}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Render\+Engine\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the render engine. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_render_engine_a12e764e1a51700a813100e483a9bbb54}{destroy()}} \mbox{\Hypertarget{class_hawk_engine_1_1_render_engine_adc63b644e95d66dd6c7d719f1e856368}\label{class_hawk_engine_1_1_render_engine_adc63b644e95d66dd6c7d719f1e856368}} 
+\index{HawkEngine::RenderEngine@{HawkEngine::RenderEngine}!prepare2D@{prepare2D}}
+\index{prepare2D@{prepare2D}!HawkEngine::RenderEngine@{HawkEngine::RenderEngine}}
+\doxysubsubsection{\texorpdfstring{prepare2D()}{prepare2D()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Render\+Engine\+::prepare2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prepare 2D data before rendering. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_render_engine_adc63b644e95d66dd6c7d719f1e856368}{prepare2\+D()}} \mbox{\Hypertarget{class_hawk_engine_1_1_render_engine_a2aeafb0dcbbc699125bb560df0ec4855}\label{class_hawk_engine_1_1_render_engine_a2aeafb0dcbbc699125bb560df0ec4855}} 
+\index{HawkEngine::RenderEngine@{HawkEngine::RenderEngine}!prepare3D@{prepare3D}}
+\index{prepare3D@{prepare3D}!HawkEngine::RenderEngine@{HawkEngine::RenderEngine}}
+\doxysubsubsection{\texorpdfstring{prepare3D()}{prepare3D()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Render\+Engine\+::prepare3D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prepare 3D data before rendering. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_render_engine_a2aeafb0dcbbc699125bb560df0ec4855}{prepare3\+D()}} \mbox{\Hypertarget{class_hawk_engine_1_1_render_engine_a2d71bc2c73cb218380b5238e17924dda}\label{class_hawk_engine_1_1_render_engine_a2d71bc2c73cb218380b5238e17924dda}} 
+\index{HawkEngine::RenderEngine@{HawkEngine::RenderEngine}!render@{render}}
+\index{render@{render}!HawkEngine::RenderEngine@{HawkEngine::RenderEngine}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Render\+Engine\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Render the scene. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_render_engine_a2d71bc2c73cb218380b5238e17924dda}{render()}} \mbox{\Hypertarget{class_hawk_engine_1_1_render_engine_a3071132a582b172261ae49950913c474}\label{class_hawk_engine_1_1_render_engine_a3071132a582b172261ae49950913c474}} 
+\index{HawkEngine::RenderEngine@{HawkEngine::RenderEngine}!update@{update}}
+\index{update@{update}!HawkEngine::RenderEngine@{HawkEngine::RenderEngine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Render\+Engine\+::update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})}
+
+
+
+Update. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_render_engine_a3071132a582b172261ae49950913c474}{update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/\mbox{\hyperlink{render_engine_8h}{render\+Engine.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/\mbox{\hyperlink{render_engine_8cpp}{render\+Engine.\+cpp}}\end{DoxyCompactItemize}

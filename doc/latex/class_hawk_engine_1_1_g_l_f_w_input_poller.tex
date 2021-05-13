@@ -1,0 +1,104 @@
+\hypertarget{class_hawk_engine_1_1_g_l_f_w_input_poller}{}\doxysection{Hawk\+Engine\+::G\+L\+F\+W\+Input\+Poller Class Reference}
+\label{class_hawk_engine_1_1_g_l_f_w_input_poller}\index{HawkEngine::GLFWInputPoller@{HawkEngine::GLFWInputPoller}}
+
+
+G\+F\+LW specific Input poller for getting current keyboard/mouse state.  
+
+
+
+
+{\ttfamily \#include $<$G\+L\+F\+W\+Input\+Poller.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_input_poller_a034b2af9d140e16ae16f0009977c074b}{set\+Current\+Window}} (G\+L\+F\+Wwindow $\ast$win)
+\begin{DoxyCompactList}\small\item\em Set the current window. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_input_poller_a969c37d3860dd38e905749c1862d58ab}{is\+Key\+Pressed}} (const int32\+\_\+t key\+Code)
+\begin{DoxyCompactList}\small\item\em Is the key pressed. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_input_poller_a3df676fb8fa4bba0c8f0da32a2f962c1}{is\+Mouse\+Pressed}} (const int32\+\_\+t mouse\+Button)
+\begin{DoxyCompactList}\small\item\em Is the mouse button pressed. \end{DoxyCompactList}\item 
+static glm\+::vec2 \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_input_poller_ac1bb694805fd550ca8960b5bcc1cdacf}{get\+Mouse\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the current mouse position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+G\+F\+LW specific Input poller for getting current keyboard/mouse state. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_input_poller_ac1bb694805fd550ca8960b5bcc1cdacf}\label{class_hawk_engine_1_1_g_l_f_w_input_poller_ac1bb694805fd550ca8960b5bcc1cdacf}} 
+\index{HawkEngine::GLFWInputPoller@{HawkEngine::GLFWInputPoller}!getMousePosition@{getMousePosition}}
+\index{getMousePosition@{getMousePosition}!HawkEngine::GLFWInputPoller@{HawkEngine::GLFWInputPoller}}
+\doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
+{\footnotesize\ttfamily glm\+::vec2 Hawk\+Engine\+::\+G\+L\+F\+W\+Input\+Poller\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the current mouse position. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_input_poller_ac1bb694805fd550ca8960b5bcc1cdacf}{get\+Mouse\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The mouse position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_input_poller_a969c37d3860dd38e905749c1862d58ab}\label{class_hawk_engine_1_1_g_l_f_w_input_poller_a969c37d3860dd38e905749c1862d58ab}} 
+\index{HawkEngine::GLFWInputPoller@{HawkEngine::GLFWInputPoller}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!HawkEngine::GLFWInputPoller@{HawkEngine::GLFWInputPoller}}
+\doxysubsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool Hawk\+Engine\+::\+G\+L\+F\+W\+Input\+Poller\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Is the key pressed. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_input_poller_a969c37d3860dd38e905749c1862d58ab}{is\+Key\+Pressed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & a const int32\+\_\+t -\/ The key pressed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the key pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_input_poller_a3df676fb8fa4bba0c8f0da32a2f962c1}\label{class_hawk_engine_1_1_g_l_f_w_input_poller_a3df676fb8fa4bba0c8f0da32a2f962c1}} 
+\index{HawkEngine::GLFWInputPoller@{HawkEngine::GLFWInputPoller}!isMousePressed@{isMousePressed}}
+\index{isMousePressed@{isMousePressed}!HawkEngine::GLFWInputPoller@{HawkEngine::GLFWInputPoller}}
+\doxysubsubsection{\texorpdfstring{isMousePressed()}{isMousePressed()}}
+{\footnotesize\ttfamily bool Hawk\+Engine\+::\+G\+L\+F\+W\+Input\+Poller\+::is\+Mouse\+Pressed (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{mouse\+Button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Is the mouse button pressed. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_input_poller_a3df676fb8fa4bba0c8f0da32a2f962c1}{is\+Mouse\+Pressed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Button} & a const int32\+\_\+t -\/ The mouse button pressed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the mouse button pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_input_poller_a034b2af9d140e16ae16f0009977c074b}\label{class_hawk_engine_1_1_g_l_f_w_input_poller_a034b2af9d140e16ae16f0009977c074b}} 
+\index{HawkEngine::GLFWInputPoller@{HawkEngine::GLFWInputPoller}!setCurrentWindow@{setCurrentWindow}}
+\index{setCurrentWindow@{setCurrentWindow}!HawkEngine::GLFWInputPoller@{HawkEngine::GLFWInputPoller}}
+\doxysubsubsection{\texorpdfstring{setCurrentWindow()}{setCurrentWindow()}}
+{\footnotesize\ttfamily static void Hawk\+Engine\+::\+G\+L\+F\+W\+Input\+Poller\+::set\+Current\+Window (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{win }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set the current window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em win} & a G\+L\+F\+Wwindow$\ast$ -\/ A pointer to the G\+L\+FW window \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/platform/\+G\+L\+F\+W/\mbox{\hyperlink{_g_l_f_w_input_poller_8h}{G\+L\+F\+W\+Input\+Poller.\+h}}\item 
+C\+:/doc/src/src/platform/\+G\+L\+F\+W/\mbox{\hyperlink{_g_l_f_w_input_poller_8cpp}{G\+L\+F\+W\+Input\+Poller.\+cpp}}\end{DoxyCompactItemize}

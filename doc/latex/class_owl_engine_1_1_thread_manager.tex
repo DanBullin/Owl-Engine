@@ -1,0 +1,227 @@
+\hypertarget{class_owl_engine_1_1_thread_manager}{}\doxysection{Owl\+Engine\+::Thread\+Manager Class Reference}
+\label{class_owl_engine_1_1_thread_manager}\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+
+
+A system which creates and manages threads.  
+
+
+
+
+{\ttfamily \#include $<$thread\+Manager.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Thread\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_thread_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a7b8e88de75ae604367300b69cbbd50db}{Thread\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a02f0197f0c102d7a75f5e849c2a695b8}{$\sim$\+Thread\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a2b453b3f734faedf576b3ac6e6195004}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a6b802a81b79b6c8688a61abc8a193c24}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const bool \mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a8f058b8e13e485fe0526f3bc82cc7d1a}{check\+Thread\+Name\+Taken}} (const std\+::string \&thread\+Name)
+\begin{DoxyCompactList}\small\item\em Check if a thread name is taken. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Function , typename ... Args$>$ }\\static void \mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a693171b249d26176ae210d7aaf8e15ee}{start\+Thread}} (const std\+::string \&thread\+Name, const bool delete\+Once\+Finished, Function \&\&func, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Create a thread. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_thread}{Thread}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a1e2265a00d5863ec56df72f8a4f72ea8}{get\+Thread}} (const std\+::string \&thread\+Name)
+\begin{DoxyCompactList}\small\item\em Get a thread by name. \end{DoxyCompactList}\item 
+static std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_thread}{Thread}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_thread_manager_ac79f442341a4c9705585851a7a6146c8}{get\+Threads}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all current threads. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_thread_manager_aff0a696c30e05e702839468011285bb9}{delete\+Thread}} (const std\+::string \&thread\+Name)
+\begin{DoxyCompactList}\small\item\em Delete a thread after its finished executing. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_thread_manager_ac10c7fc5b8b8b0d124eb8a6e46ec64c0}{on\+Update}} (float time\+Step, float total\+Time)
+\begin{DoxyCompactList}\small\item\em Update the thread manager. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_thread_manager_ab498ae8482958e737e6252b434b13776}{print\+Threads\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print thread manager details. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_thread_manager_ac5b2b7e43ef3f99eb7cc55aee14320d9}{print\+Thread\+Details}} (const std\+::string \&thread\+Name)
+\begin{DoxyCompactList}\small\item\em Print a thread\textquotesingle{}s details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A system which creates and manages threads. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_a7b8e88de75ae604367300b69cbbd50db}\label{class_owl_engine_1_1_thread_manager_a7b8e88de75ae604367300b69cbbd50db}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!ThreadManager@{ThreadManager}}
+\index{ThreadManager@{ThreadManager}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{ThreadManager()}{ThreadManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Thread\+Manager\+::\+Thread\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a7b8e88de75ae604367300b69cbbd50db}{Thread\+Manager()}} \mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_a02f0197f0c102d7a75f5e849c2a695b8}\label{class_owl_engine_1_1_thread_manager_a02f0197f0c102d7a75f5e849c2a695b8}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!````~ThreadManager@{$\sim$ThreadManager}}
+\index{````~ThreadManager@{$\sim$ThreadManager}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ThreadManager()}{~ThreadManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Thread\+Manager\+::$\sim$\+Thread\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a02f0197f0c102d7a75f5e849c2a695b8}{$\sim$\+Thread\+Manager()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_a8f058b8e13e485fe0526f3bc82cc7d1a}\label{class_owl_engine_1_1_thread_manager_a8f058b8e13e485fe0526f3bc82cc7d1a}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!checkThreadNameTaken@{checkThreadNameTaken}}
+\index{checkThreadNameTaken@{checkThreadNameTaken}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{checkThreadNameTaken()}{checkThreadNameTaken()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Thread\+Manager\+::check\+Thread\+Name\+Taken (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{thread\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if a thread name is taken. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a8f058b8e13e485fe0526f3bc82cc7d1a}{check\+Thread\+Name\+Taken()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em thread\+Name} & a const std\+::string\& -\/ The name of the thread \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_aff0a696c30e05e702839468011285bb9}\label{class_owl_engine_1_1_thread_manager_aff0a696c30e05e702839468011285bb9}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!deleteThread@{deleteThread}}
+\index{deleteThread@{deleteThread}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{deleteThread()}{deleteThread()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Thread\+Manager\+::delete\+Thread (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{thread\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Delete a thread after its finished executing. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_aff0a696c30e05e702839468011285bb9}{delete\+Thread()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em thread\+Name} & a const std\+::string\& -\/ The name of the thread \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_a1e2265a00d5863ec56df72f8a4f72ea8}\label{class_owl_engine_1_1_thread_manager_a1e2265a00d5863ec56df72f8a4f72ea8}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!getThread@{getThread}}
+\index{getThread@{getThread}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{getThread()}{getThread()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_thread}{Thread}} $\ast$ Owl\+Engine\+::\+Thread\+Manager\+::get\+Thread (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{thread\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a thread by name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a1e2265a00d5863ec56df72f8a4f72ea8}{get\+Thread()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em thread\+Name} & a const std\+::stirng\& -\/ The name of the thread desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Thread$\ast$ -\/ A pointer to the thread 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_ac79f442341a4c9705585851a7a6146c8}\label{class_owl_engine_1_1_thread_manager_ac79f442341a4c9705585851a7a6146c8}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!getThreads@{getThreads}}
+\index{getThreads@{getThreads}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{getThreads()}{getThreads()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_thread}{Thread}} $\ast$ $>$ \& Owl\+Engine\+::\+Thread\+Manager\+::get\+Threads (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a list of all current threads. 
+
+get\+Threads
+
+\begin{DoxyReturn}{Returns}
+a std\+::unordered\+\_\+map$<$std\+::string, Thread$\ast$$>$\& -\/ A reference to the list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_ac10c7fc5b8b8b0d124eb8a6e46ec64c0}\label{class_owl_engine_1_1_thread_manager_ac10c7fc5b8b8b0d124eb8a6e46ec64c0}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Thread\+Manager\+::on\+Update (\begin{DoxyParamCaption}\item[{float}]{time\+Step,  }\item[{float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Update the thread manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_ac10c7fc5b8b8b0d124eb8a6e46ec64c0}{on\+Update()}} \mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_ac5b2b7e43ef3f99eb7cc55aee14320d9}\label{class_owl_engine_1_1_thread_manager_ac5b2b7e43ef3f99eb7cc55aee14320d9}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!printThreadDetails@{printThreadDetails}}
+\index{printThreadDetails@{printThreadDetails}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{printThreadDetails()}{printThreadDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Thread\+Manager\+::print\+Thread\+Details (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{thread\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print a thread\textquotesingle{}s details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_ac5b2b7e43ef3f99eb7cc55aee14320d9}{print\+Thread\+Details()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em thread\+Name} & a const std\+::string\& -\/ The name of the thread \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_ab498ae8482958e737e6252b434b13776}\label{class_owl_engine_1_1_thread_manager_ab498ae8482958e737e6252b434b13776}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!printThreadsDetails@{printThreadsDetails}}
+\index{printThreadsDetails@{printThreadsDetails}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{printThreadsDetails()}{printThreadsDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Thread\+Manager\+::print\+Threads\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print thread manager details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_ac5b2b7e43ef3f99eb7cc55aee14320d9}{print\+Thread\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_a2b453b3f734faedf576b3ac6e6195004}\label{class_owl_engine_1_1_thread_manager_a2b453b3f734faedf576b3ac6e6195004}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!start@{start}}
+\index{start@{start}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Thread\+Manager\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a2b453b3f734faedf576b3ac6e6195004}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_a693171b249d26176ae210d7aaf8e15ee}\label{class_owl_engine_1_1_thread_manager_a693171b249d26176ae210d7aaf8e15ee}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!startThread@{startThread}}
+\index{startThread@{startThread}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{startThread()}{startThread()}}
+{\footnotesize\ttfamily template$<$typename Function , typename... Args$>$ \\
+void Owl\+Engine\+::\+Thread\+Manager\+::start\+Thread (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{thread\+Name,  }\item[{const bool}]{delete\+Once\+Finished,  }\item[{Function \&\&}]{func,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a thread. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a693171b249d26176ae210d7aaf8e15ee}{start\+Thread()}} \mbox{\Hypertarget{class_owl_engine_1_1_thread_manager_a6b802a81b79b6c8688a61abc8a193c24}\label{class_owl_engine_1_1_thread_manager_a6b802a81b79b6c8688a61abc8a193c24}} 
+\index{OwlEngine::ThreadManager@{OwlEngine::ThreadManager}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::ThreadManager@{OwlEngine::ThreadManager}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Thread\+Manager\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_manager_a6b802a81b79b6c8688a61abc8a193c24}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{thread_manager_8h}{thread\+Manager.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{thread_manager_8cpp}{thread\+Manager.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,301 @@
+\hypertarget{class_owl_engine_1_1_text}{}\doxysection{Owl\+Engine\+::Text Class Reference}
+\label{class_owl_engine_1_1_text}\index{OwlEngine::Text@{OwlEngine::Text}}
+
+
+A text component to render text.  
+
+
+
+
+{\ttfamily \#include $<$text.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Text\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_text}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_text_af983945429b878f9b247decb1f69112f}{Text}} (const std\+::string \&text, const glm\+::vec4 \&tint, const std\+::string \&font\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_text_ad4b70ae0bce0c0647c4ed98b0bb569bc}{$\sim$\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_text_afbbc17e954ec37717f40897639ae9dab}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_text_a173d4cb5b644ff671dad374e8b120ecc}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_text_a1f6fe11b82b117fbc36fb2321bcbddb3}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_text_a961df8eaac57f3a02c739e5f481ae4bc}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_text_ade7d81fce0b347b6a8ae2f4f2fa2b4b7}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component in J\+S\+ON form for saving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_text_ad5a680dea0e01b5cde5ae7280e1bc41c}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Display the component in Im\+G\+UI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_text_a6e37d1cbee0c2ab21930af60d084c45d}{set\+Text}} (const std\+::string \&text)
+\begin{DoxyCompactList}\small\item\em Set the text. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_text_acc0055945606dd9be7eb7d9b06e23d3d}{get\+Text}} () const
+\begin{DoxyCompactList}\small\item\em Get the text. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_text_ac244264bc2e765a13f3e5ff32975f51e}{set\+Colour}} (const glm\+::vec4 \&colour)
+\begin{DoxyCompactList}\small\item\em Set the text colour. \end{DoxyCompactList}\item 
+const glm\+::vec4 \& \mbox{\hyperlink{class_owl_engine_1_1_text_afc164cf950f90df5ad7e8a266203c827}{get\+Colour}} () const
+\begin{DoxyCompactList}\small\item\em Get the text colour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_text_afd71cba6107a0c9ed0ba8260e1625dff}{set\+Font}} (const std\+::string \&font\+Name)
+\begin{DoxyCompactList}\small\item\em Set the font name. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_text_a0fc746983cf3742f4fa929a70398deb5}{get\+Font}} () const
+\begin{DoxyCompactList}\small\item\em Get the font name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_text_af886e06038bf768bd80ed1a9a63bf167}{on\+Render}} ()
+\begin{DoxyCompactList}\small\item\em A render submission command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A text component to render text. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_text_af983945429b878f9b247decb1f69112f}\label{class_owl_engine_1_1_text_af983945429b878f9b247decb1f69112f}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!Text@{Text}}
+\index{Text@{Text}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{Text()}{Text()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Text\+::\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{const glm\+::vec4 \&}]{tint,  }\item[{const std\+::string \&}]{font\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_af983945429b878f9b247decb1f69112f}{Text()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a const std\+::string\& -\/ The text \\
+\hline
+{\em tint} & a const glm\+::vec4\& -\/ The text colour \\
+\hline
+{\em font\+Name} & a const std\+::string\& -\/ The font name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_text_ad4b70ae0bce0c0647c4ed98b0bb569bc}\label{class_owl_engine_1_1_text_ad4b70ae0bce0c0647c4ed98b0bb569bc}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!````~Text@{$\sim$Text}}
+\index{````~Text@{$\sim$Text}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{$\sim$Text()}{~Text()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Text\+::$\sim$\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_ad4b70ae0bce0c0647c4ed98b0bb569bc}{$\sim$\+Text()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_text_ad5a680dea0e01b5cde5ae7280e1bc41c}\label{class_owl_engine_1_1_text_ad5a680dea0e01b5cde5ae7280e1bc41c}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Text\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the component in Im\+G\+UI. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_ad5a680dea0e01b5cde5ae7280e1bc41c}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_text_ade7d81fce0b347b6a8ae2f4f2fa2b4b7}\label{class_owl_engine_1_1_text_ade7d81fce0b347b6a8ae2f4f2fa2b4b7}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Text\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component in J\+S\+ON form for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_ade7d81fce0b347b6a8ae2f4f2fa2b4b7}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_text_afc164cf950f90df5ad7e8a266203c827}\label{class_owl_engine_1_1_text_afc164cf950f90df5ad7e8a266203c827}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!getColour@{getColour}}
+\index{getColour@{getColour}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{getColour()}{getColour()}}
+{\footnotesize\ttfamily const glm\+::vec4 \& Owl\+Engine\+::\+Text\+::get\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the text colour. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_afc164cf950f90df5ad7e8a266203c827}{get\+Colour()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec4\& -\/ The text colour 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_text_a0fc746983cf3742f4fa929a70398deb5}\label{class_owl_engine_1_1_text_a0fc746983cf3742f4fa929a70398deb5}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!getFont@{getFont}}
+\index{getFont@{getFont}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{getFont()}{getFont()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Text\+::get\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the font name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_a0fc746983cf3742f4fa929a70398deb5}{get\+Font()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The font name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_text_acc0055945606dd9be7eb7d9b06e23d3d}\label{class_owl_engine_1_1_text_acc0055945606dd9be7eb7d9b06e23d3d}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!getText@{getText}}
+\index{getText@{getText}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Text\+::get\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the text. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_acc0055945606dd9be7eb7d9b06e23d3d}{get\+Text()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_text_afbbc17e954ec37717f40897639ae9dab}\label{class_owl_engine_1_1_text_afbbc17e954ec37717f40897639ae9dab}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Text\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_afbbc17e954ec37717f40897639ae9dab}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_text_a173d4cb5b644ff671dad374e8b120ecc}\label{class_owl_engine_1_1_text_a173d4cb5b644ff671dad374e8b120ecc}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Text\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+on\+Detach 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_text_af886e06038bf768bd80ed1a9a63bf167}\label{class_owl_engine_1_1_text_af886e06038bf768bd80ed1a9a63bf167}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!onRender@{onRender}}
+\index{onRender@{onRender}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{onRender()}{onRender()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Text\+::on\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A render submission command. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_af886e06038bf768bd80ed1a9a63bf167}{on\+Render()}} \mbox{\Hypertarget{class_owl_engine_1_1_text_a1f6fe11b82b117fbc36fb2321bcbddb3}\label{class_owl_engine_1_1_text_a1f6fe11b82b117fbc36fb2321bcbddb3}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Text\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_a1f6fe11b82b117fbc36fb2321bcbddb3}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_text_a961df8eaac57f3a02c739e5f481ae4bc}\label{class_owl_engine_1_1_text_a961df8eaac57f3a02c739e5f481ae4bc}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Text\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_a961df8eaac57f3a02c739e5f481ae4bc}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_text_ac244264bc2e765a13f3e5ff32975f51e}\label{class_owl_engine_1_1_text_ac244264bc2e765a13f3e5ff32975f51e}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!setColour@{setColour}}
+\index{setColour@{setColour}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{setColour()}{setColour()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Text\+::set\+Colour (\begin{DoxyParamCaption}\item[{const glm\+::vec4 \&}]{colour }\end{DoxyParamCaption})}
+
+
+
+Set the text colour. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_ac244264bc2e765a13f3e5ff32975f51e}{set\+Colour()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em colour} & a const glm\+::vec4\& -\/ The text colour \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_text_afd71cba6107a0c9ed0ba8260e1625dff}\label{class_owl_engine_1_1_text_afd71cba6107a0c9ed0ba8260e1625dff}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!setFont@{setFont}}
+\index{setFont@{setFont}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{setFont()}{setFont()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Text\+::set\+Font (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Name }\end{DoxyParamCaption})}
+
+
+
+Set the font name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_a6e37d1cbee0c2ab21930af60d084c45d}{set\+Text()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Name} & a const std\+::string\& -\/ The font name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_text_a6e37d1cbee0c2ab21930af60d084c45d}\label{class_owl_engine_1_1_text_a6e37d1cbee0c2ab21930af60d084c45d}} 
+\index{OwlEngine::Text@{OwlEngine::Text}!setText@{setText}}
+\index{setText@{setText}!OwlEngine::Text@{OwlEngine::Text}}
+\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Text\+::set\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Set the text. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_text_a6e37d1cbee0c2ab21930af60d084c45d}{set\+Text()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a const std\+::string\& -\/ The text \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{text_8h}{text.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{text_8cpp}{text.\+cpp}}\end{DoxyCompactItemize}

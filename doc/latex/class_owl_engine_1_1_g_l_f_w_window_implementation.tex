@@ -1,0 +1,611 @@
+\hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation}{}\doxysection{Owl\+Engine\+::G\+L\+F\+W\+Window\+Implementation Class Reference}
+\label{class_owl_engine_1_1_g_l_f_w_window_implementation}\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+
+
+Implementation of a window using G\+L\+FW.  
+
+
+
+
+{\ttfamily \#include $<$G\+L\+F\+W\+Window\+Implementation.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::G\+L\+F\+W\+Window\+Implementation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_owl_engine_1_1_g_l_f_w_window_implementation}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a2f2c421a9786486e67322648b14916b6}{G\+L\+F\+W\+Window\+Implementation}} (const std\+::string \&window\+Name, const \mbox{\hyperlink{class_owl_engine_1_1_window_properties}{Window\+Properties}} \&properties)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a4173b7a75e89a0e0e49c6479cbacf135}{$\sim$\+G\+L\+F\+W\+Window\+Implementation}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a985b39576efb8439a493369739fe5fe6}{get\+Native\+Window}} () const override
+\begin{DoxyCompactList}\small\item\em Get the native window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_ae6eec49fbe429350d7cccf5a1fdc76ec}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_aac72ce5a23737ee2a849c182e9f5f171}{on\+Window\+Close}} (\mbox{\hyperlink{class_owl_engine_1_1_window_close_event}{Window\+Close\+Event}} \&e) override
+\begin{DoxyCompactList}\small\item\em Called when a window closes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a80faaf2ffebda25ef2af58c38d16ad43}{on\+Window\+Resize}} (\mbox{\hyperlink{class_owl_engine_1_1_window_resize_event}{Window\+Resize\+Event}} \&e) override
+\begin{DoxyCompactList}\small\item\em Called when a window is resized. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_ac3100e873fc82b2bdd60d2941317fa04}{on\+Window\+Focus}} (\mbox{\hyperlink{class_owl_engine_1_1_window_focus_event}{Window\+Focus\+Event}} \&e) override
+\begin{DoxyCompactList}\small\item\em Called when a window gains focus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a4343cbf574c7e45055e63de8ac708e0f}{on\+Window\+Lost\+Focus}} (\mbox{\hyperlink{class_owl_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}} \&e) override
+\begin{DoxyCompactList}\small\item\em Called when a window loses focus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a6e84d09a7b9a1d18f75d4d773a001415}{on\+Window\+Moved}} (\mbox{\hyperlink{class_owl_engine_1_1_window_moved_event}{Window\+Moved\+Event}} \&e) override
+\begin{DoxyCompactList}\small\item\em Called when a window is moved. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a1818211a1689d258c9108c10471dacd4}{close}} () override
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a881f2dda54389fc5cce7b1965b6a7e66}{set\+Title}} (const char $\ast$title) override
+\begin{DoxyCompactList}\small\item\em Set the title of the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a6b466b3f281060064e816754b690d888}{set\+Size}} (const glm\+::ivec2 \&size) override
+\begin{DoxyCompactList}\small\item\em Set the size of the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a7bbf2d1b677a3cf1a26e37b94812f3a0}{set\+Position}} (const glm\+::ivec2 \&new\+Position) override
+\begin{DoxyCompactList}\small\item\em Set the position of the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a9a8253832e31402df7fee12b23eab404}{set\+Position}} (const uint32\+\_\+t x, const uint32\+\_\+t y) override
+\begin{DoxyCompactList}\small\item\em Set the position of the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a762aee77299ab33eafa7137a7d09f3ed}{set\+V\+Sync}} (const bool V\+Sync) override
+\begin{DoxyCompactList}\small\item\em Set the V\+Sync. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_aa74f6728fa6b6c0d6343bb6d595283bf}{set\+Fullscreen}} (const bool fullscreen) override
+\begin{DoxyCompactList}\small\item\em Set whether the window is fullscreen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a4a4ba2d695506569e04af40807fbec73}{set\+Minimised}} (const bool minimised) override
+\begin{DoxyCompactList}\small\item\em Set whether the window is minimised. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a1ede9906797910979b38430a1c23cd3e}{set\+Opacity}} (const float opacity) override
+\begin{DoxyCompactList}\small\item\em Set the opacity of the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a7180cd325a35442190161fa2ae7e06ec}{focus}} () override
+\begin{DoxyCompactList}\small\item\em Focus the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a3dad1151bc74e9f6679897bac87327ad}{hide}} () override
+\begin{DoxyCompactList}\small\item\em Hide the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_ae512f1337e5818f44a14ae9e52a74dd4}{show}} () override
+\begin{DoxyCompactList}\small\item\em Show the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a3c762e083899a245968d4e8469cef481}{set\+Cursor\+Input\+Mode}} (const \mbox{\hyperlink{window_properties_8h_a107727b1f737f8a1e23fcf893e82aba3}{Cursor\+Input\+Mode}} mode) override
+\begin{DoxyCompactList}\small\item\em Set the cursor input mode. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_abe5aba8f0464ffcdc610d91afdcf5931}{set\+Icon}} (const uint32\+\_\+t width, const uint32\+\_\+t height, unsigned char $\ast$pixels) override
+\begin{DoxyCompactList}\small\item\em Set the icon of the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a540c3b841852cebdd531eba8e000cf31}{set\+Icon}} (const std\+::string \&file\+Path) override
+\begin{DoxyCompactList}\small\item\em Set the icon of the window by filepath. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a52a40bb93f4510e3be228ee7a9329133}{set\+Decorated}} (bool decorated)
+\begin{DoxyCompactList}\small\item\em Sets whether the window has a title bar etc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a3b620a46c00a4792b611a0288d6df9a4}{print\+Window\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print window details with the logger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a1c26143be819553de28fa183bd1003c4}{set\+Event\+Callbacks}} () override
+\begin{DoxyCompactList}\small\item\em Set up the event callbacks for the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Implementation of a window using G\+L\+FW. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a2f2c421a9786486e67322648b14916b6}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a2f2c421a9786486e67322648b14916b6}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!GLFWWindowImplementation@{GLFWWindowImplementation}}
+\index{GLFWWindowImplementation@{GLFWWindowImplementation}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{GLFWWindowImplementation()}{GLFWWindowImplementation()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::\+G\+L\+F\+W\+Window\+Implementation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{window\+Name,  }\item[{const \mbox{\hyperlink{class_owl_engine_1_1_window_properties}{Window\+Properties}} \&}]{properties }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a2f2c421a9786486e67322648b14916b6}{G\+L\+F\+W\+Window\+Implementation()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Name} & a const std\+::string\& -\/ The name of the window \\
+\hline
+{\em properties} & a const \mbox{\hyperlink{class_owl_engine_1_1_window_properties}{Window\+Properties}}\& -\/ The window properties \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a4173b7a75e89a0e0e49c6479cbacf135}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a4173b7a75e89a0e0e49c6479cbacf135}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!````~GLFWWindowImplementation@{$\sim$GLFWWindowImplementation}}
+\index{````~GLFWWindowImplementation@{$\sim$GLFWWindowImplementation}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{$\sim$GLFWWindowImplementation()}{~GLFWWindowImplementation()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::$\sim$\+G\+L\+F\+W\+Window\+Implementation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a4173b7a75e89a0e0e49c6479cbacf135}{$\sim$\+G\+L\+F\+W\+Window\+Implementation()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a1818211a1689d258c9108c10471dacd4}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a1818211a1689d258c9108c10471dacd4}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!close@{close}}
+\index{close@{close}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Close the window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a1818211a1689d258c9108c10471dacd4}{close()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a2754347161c34e58ea6051c34d7226d3}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a7180cd325a35442190161fa2ae7e06ec}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a7180cd325a35442190161fa2ae7e06ec}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!focus@{focus}}
+\index{focus@{focus}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{focus()}{focus()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Focus the window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a7180cd325a35442190161fa2ae7e06ec}{focus()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_ab06f9a9d91827ebe0e28f13bc9be7732}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a985b39576efb8439a493369739fe5fe6}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a985b39576efb8439a493369739fe5fe6}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!getNativeWindow@{getNativeWindow}}
+\index{getNativeWindow@{getNativeWindow}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{getNativeWindow()}{getNativeWindow()}}
+{\footnotesize\ttfamily void $\ast$ Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::get\+Native\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the native window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a985b39576efb8439a493369739fe5fe6}{get\+Native\+Window()}}
+
+\begin{DoxyReturn}{Returns}
+a void$\ast$ -\/ A pointer to the native G\+L\+FW window 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a2c266ce7ee0135d6697226c2df1d69bb}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a3dad1151bc74e9f6679897bac87327ad}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a3dad1151bc74e9f6679897bac87327ad}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!hide@{hide}}
+\index{hide@{hide}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{hide()}{hide()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::hide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Hide the window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a3dad1151bc74e9f6679897bac87327ad}{hide()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a48e96538d36c7bc001c5f2b7d8417026}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_ae6eec49fbe429350d7cccf5a1fdc76ec}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_ae6eec49fbe429350d7cccf5a1fdc76ec}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_ae6eec49fbe429350d7cccf5a1fdc76ec}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a031655cd191370dc6cae9028d865c67e}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_aac72ce5a23737ee2a849c182e9f5f171}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_aac72ce5a23737ee2a849c182e9f5f171}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!onWindowClose@{onWindowClose}}
+\index{onWindowClose@{onWindowClose}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{onWindowClose()}{onWindowClose()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::on\+Window\+Close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window_close_event}{Window\+Close\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called when a window closes. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_aac72ce5a23737ee2a849c182e9f5f171}{on\+Window\+Close()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_window_close_event}{Window\+Close\+Event}}\& -\/ Reference to the window close event \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_ab3e16347bf5e0f01f6c38d6682aeda6b}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_ac3100e873fc82b2bdd60d2941317fa04}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_ac3100e873fc82b2bdd60d2941317fa04}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!onWindowFocus@{onWindowFocus}}
+\index{onWindowFocus@{onWindowFocus}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{onWindowFocus()}{onWindowFocus()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::on\+Window\+Focus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window_focus_event}{Window\+Focus\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called when a window gains focus. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_ac3100e873fc82b2bdd60d2941317fa04}{on\+Window\+Focus()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_window_focus_event}{Window\+Focus\+Event}}\& -\/ Reference to the window focus event \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_aa45279364384b54a0799f8f20b580453}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a4343cbf574c7e45055e63de8ac708e0f}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a4343cbf574c7e45055e63de8ac708e0f}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!onWindowLostFocus@{onWindowLostFocus}}
+\index{onWindowLostFocus@{onWindowLostFocus}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{onWindowLostFocus()}{onWindowLostFocus()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::on\+Window\+Lost\+Focus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called when a window loses focus. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a4343cbf574c7e45055e63de8ac708e0f}{on\+Window\+Lost\+Focus()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}}\& -\/ Reference to the window lost focus event \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_af636809759d12cc1c9e862ce4e35e054}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a6e84d09a7b9a1d18f75d4d773a001415}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a6e84d09a7b9a1d18f75d4d773a001415}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!onWindowMoved@{onWindowMoved}}
+\index{onWindowMoved@{onWindowMoved}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{onWindowMoved()}{onWindowMoved()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::on\+Window\+Moved (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window_moved_event}{Window\+Moved\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called when a window is moved. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a6e84d09a7b9a1d18f75d4d773a001415}{on\+Window\+Moved()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_window_moved_event}{Window\+Moved\+Event}}\& -\/ Reference to the window moved event \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a3a943f74ba61c460da65ce8da7d5e6b4}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a80faaf2ffebda25ef2af58c38d16ad43}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a80faaf2ffebda25ef2af58c38d16ad43}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!onWindowResize@{onWindowResize}}
+\index{onWindowResize@{onWindowResize}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{onWindowResize()}{onWindowResize()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::on\+Window\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window_resize_event}{Window\+Resize\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called when a window is resized. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a80faaf2ffebda25ef2af58c38d16ad43}{on\+Window\+Resize()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_window_resize_event}{Window\+Resize\+Event}}\& -\/ Reference to the window resize event \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a1c2f76d8fc7679d9ffbba858adbc5fd4}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a3b620a46c00a4792b611a0288d6df9a4}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a3b620a46c00a4792b611a0288d6df9a4}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!printWindowDetails@{printWindowDetails}}
+\index{printWindowDetails@{printWindowDetails}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{printWindowDetails()}{printWindowDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::print\+Window\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print window details with the logger. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a3b620a46c00a4792b611a0288d6df9a4}{print\+Window\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a8814630785aac5faf719bf8359188768}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a3c762e083899a245968d4e8469cef481}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a3c762e083899a245968d4e8469cef481}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setCursorInputMode@{setCursorInputMode}}
+\index{setCursorInputMode@{setCursorInputMode}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setCursorInputMode()}{setCursorInputMode()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Cursor\+Input\+Mode (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{window_properties_8h_a107727b1f737f8a1e23fcf893e82aba3}{Cursor\+Input\+Mode}}}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the cursor input mode. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a3c762e083899a245968d4e8469cef481}{set\+Cursor\+Input\+Mode()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & a const Cursor\+Input\+Mode -\/ The cursor input mode \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a583ab01993af4ad0e2449f27e16324ef}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a52a40bb93f4510e3be228ee7a9329133}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a52a40bb93f4510e3be228ee7a9329133}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setDecorated@{setDecorated}}
+\index{setDecorated@{setDecorated}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setDecorated()}{setDecorated()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Decorated (\begin{DoxyParamCaption}\item[{bool}]{decorated }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets whether the window has a title bar etc. 
+
+set\+Decorated
+
+
+\begin{DoxyParams}{Parameters}
+{\em decorated} & a bool -\/ Set the glfw decorated flag \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_ad95a374e79d805bd0fb5a09218164b9e}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a1c26143be819553de28fa183bd1003c4}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a1c26143be819553de28fa183bd1003c4}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setEventCallbacks@{setEventCallbacks}}
+\index{setEventCallbacks@{setEventCallbacks}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setEventCallbacks()}{setEventCallbacks()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Event\+Callbacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Set up the event callbacks for the window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a1c26143be819553de28fa183bd1003c4}{set\+Event\+Callbacks()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a3136a001835c2b7fbb588c75696ae951}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_aa74f6728fa6b6c0d6343bb6d595283bf}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_aa74f6728fa6b6c0d6343bb6d595283bf}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setFullscreen@{setFullscreen}}
+\index{setFullscreen@{setFullscreen}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setFullscreen()}{setFullscreen()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Fullscreen (\begin{DoxyParamCaption}\item[{const bool}]{fullscreen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set whether the window is fullscreen. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_aa74f6728fa6b6c0d6343bb6d595283bf}{set\+Fullscreen()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em fullscreen} & a const bool -\/ Will this window be fullscreen \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a1aebf92a2ca5de636c0c3becb05c9fc9}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a540c3b841852cebdd531eba8e000cf31}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a540c3b841852cebdd531eba8e000cf31}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setIcon@{setIcon}}
+\index{setIcon@{setIcon}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setIcon()}{setIcon()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Icon (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the icon of the window by filepath. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a3c762e083899a245968d4e8469cef481}{set\+Cursor\+Input\+Mode()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The filepath of the icon \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a131a594dd11d0d58e21fcd0ecfaaa83e}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_abe5aba8f0464ffcdc610d91afdcf5931}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_abe5aba8f0464ffcdc610d91afdcf5931}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setIcon@{setIcon}}
+\index{setIcon@{setIcon}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setIcon()}{setIcon()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Icon (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{width,  }\item[{const uint32\+\_\+t}]{height,  }\item[{unsigned char $\ast$}]{pixels }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the icon of the window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a3c762e083899a245968d4e8469cef481}{set\+Cursor\+Input\+Mode()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & a const uint32\+\_\+t -\/ The width of the icon \\
+\hline
+{\em height} & a const uint32\+\_\+t -\/ The height of the icon \\
+\hline
+{\em pixels} & an unsigned char$\ast$ -\/ The pixel data (4 channel pixel data) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a64ea62d4defaeb3a323c766b0522e5af}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a4a4ba2d695506569e04af40807fbec73}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a4a4ba2d695506569e04af40807fbec73}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setMinimised@{setMinimised}}
+\index{setMinimised@{setMinimised}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setMinimised()}{setMinimised()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Minimised (\begin{DoxyParamCaption}\item[{const bool}]{minimised }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set whether the window is minimised. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a4a4ba2d695506569e04af40807fbec73}{set\+Minimised()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em minimised} & a const bool -\/ Minimise the window \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a3d4ae0e6ca9a7e23d997c96aec2f8792}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a1ede9906797910979b38430a1c23cd3e}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a1ede9906797910979b38430a1c23cd3e}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setOpacity@{setOpacity}}
+\index{setOpacity@{setOpacity}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setOpacity()}{setOpacity()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Opacity (\begin{DoxyParamCaption}\item[{const float}]{opacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the opacity of the window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a1ede9906797910979b38430a1c23cd3e}{set\+Opacity()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em opacity} & a const float -\/ The new opacity (0.\+0 -\/ 1.\+0) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a0b5a478d9983c46ba660b38459e38b47}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a7bbf2d1b677a3cf1a26e37b94812f3a0}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a7bbf2d1b677a3cf1a26e37b94812f3a0}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::ivec2 \&}]{new\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the position of the window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a7bbf2d1b677a3cf1a26e37b94812f3a0}{set\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Position} & a const glm\+::ivec2\& -\/ The new position \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a1e0780230ede686991357758ad97d3ac}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a9a8253832e31402df7fee12b23eab404}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a9a8253832e31402df7fee12b23eab404}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Position (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{x,  }\item[{const uint32\+\_\+t}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the position of the window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a7bbf2d1b677a3cf1a26e37b94812f3a0}{set\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a const uint32\+\_\+t -\/ The x position of the window \\
+\hline
+{\em y} & a const uint32\+\_\+t -\/ The y position of the window \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_aba66aa40479eaf1aea38fe2ebb9a5137}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a6b466b3f281060064e816754b690d888}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a6b466b3f281060064e816754b690d888}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setSize@{setSize}}
+\index{setSize@{setSize}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Size (\begin{DoxyParamCaption}\item[{const glm\+::ivec2 \&}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the size of the window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a6b466b3f281060064e816754b690d888}{set\+Size()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & a const glm\+::ivec2\& -\/ The new size \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a01b042b7095b8232496d3657d8c065b9}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a881f2dda54389fc5cce7b1965b6a7e66}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a881f2dda54389fc5cce7b1965b6a7e66}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setTitle@{setTitle}}
+\index{setTitle@{setTitle}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setTitle()}{setTitle()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+Title (\begin{DoxyParamCaption}\item[{const char $\ast$}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the title of the window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a881f2dda54389fc5cce7b1965b6a7e66}{set\+Title()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & a const char$\ast$ -\/ The new title \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a514d6334bbe753267f03aae132422262}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_a762aee77299ab33eafa7137a7d09f3ed}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_a762aee77299ab33eafa7137a7d09f3ed}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!setVSync@{setVSync}}
+\index{setVSync@{setVSync}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{setVSync()}{setVSync()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::set\+V\+Sync (\begin{DoxyParamCaption}\item[{const bool}]{V\+Sync }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set the V\+Sync. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_a762aee77299ab33eafa7137a7d09f3ed}{set\+V\+Sync()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em V\+Sync} & a const bool -\/ Enable/\+Disable V\+Sync \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a8b886f2f8fa7888410eba77804c056c0}{Owl\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_window_implementation_ae512f1337e5818f44a14ae9e52a74dd4}\label{class_owl_engine_1_1_g_l_f_w_window_implementation_ae512f1337e5818f44a14ae9e52a74dd4}} 
+\index{OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}!show@{show}}
+\index{show@{show}!OwlEngine::GLFWWindowImplementation@{OwlEngine::GLFWWindowImplementation}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+Window\+Implementation\+::show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Show the window. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_window_implementation_ae512f1337e5818f44a14ae9e52a74dd4}{show()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_window_a1dad8f06f1834e35af469187cc836f64}{Owl\+Engine\+::\+Window}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/platform/\+G\+L\+F\+W/\mbox{\hyperlink{_g_l_f_w_window_implementation_8h}{G\+L\+F\+W\+Window\+Implementation.\+h}}\item 
+C\+:/doc/src/engine/src/platform/\+G\+L\+F\+W/\mbox{\hyperlink{_g_l_f_w_window_implementation_8cpp}{G\+L\+F\+W\+Window\+Implementation.\+cpp}}\end{DoxyCompactItemize}

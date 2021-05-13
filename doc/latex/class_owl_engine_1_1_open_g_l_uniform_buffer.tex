@@ -1,0 +1,135 @@
+\hypertarget{class_owl_engine_1_1_open_g_l_uniform_buffer}{}\doxysection{Owl\+Engine\+::Open\+G\+L\+Uniform\+Buffer Class Reference}
+\label{class_owl_engine_1_1_open_g_l_uniform_buffer}\index{OwlEngine::OpenGLUniformBuffer@{OwlEngine::OpenGLUniformBuffer}}
+
+
+An Open\+GL implementation of the \mbox{\hyperlink{class_owl_engine_1_1_uniform_buffer}{Uniform\+Buffer}}.  
+
+
+
+
+{\ttfamily \#include $<$open\+G\+L\+Uniform\+Buffer.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Open\+G\+L\+Uniform\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_owl_engine_1_1_open_g_l_uniform_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_uniform_buffer_add3a6895825cc58e0ef2405cee5c1c4c}{Open\+G\+L\+Uniform\+Buffer}} (const std\+::string \&uniform\+Buffer\+Name, const \mbox{\hyperlink{buffer_layout_8h_ab17840db1780f2ae8057b31012080dfe}{Uniform\+Buffer\+Layout}} \&layout)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_uniform_buffer_a00c90341b907466361aad5ae71c95d5a}{$\sim$\+Open\+G\+L\+Uniform\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_uniform_buffer_a335bb440f9e2755cf932cfa1976bfb61}{attach\+Shader\+Block}} (\mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$shader, const char $\ast$block\+Name) override
+\begin{DoxyCompactList}\small\item\em Attach shader block. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_uniform_buffer_a0e42c6a5ff9199d287f2aa30250d2cb2}{upload\+Data}} (const char $\ast$uniform\+Name, void $\ast$data) override
+\begin{DoxyCompactList}\small\item\em Upload data to buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_uniform_buffer_ab371b3ce530e1ab6f474bb9722a742c1}{print\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An Open\+GL implementation of the \mbox{\hyperlink{class_owl_engine_1_1_uniform_buffer}{Uniform\+Buffer}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_uniform_buffer_add3a6895825cc58e0ef2405cee5c1c4c}\label{class_owl_engine_1_1_open_g_l_uniform_buffer_add3a6895825cc58e0ef2405cee5c1c4c}} 
+\index{OwlEngine::OpenGLUniformBuffer@{OwlEngine::OpenGLUniformBuffer}!OpenGLUniformBuffer@{OpenGLUniformBuffer}}
+\index{OpenGLUniformBuffer@{OpenGLUniformBuffer}!OwlEngine::OpenGLUniformBuffer@{OwlEngine::OpenGLUniformBuffer}}
+\doxysubsubsection{\texorpdfstring{OpenGLUniformBuffer()}{OpenGLUniformBuffer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Open\+G\+L\+Uniform\+Buffer\+::\+Open\+G\+L\+Uniform\+Buffer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Buffer\+Name,  }\item[{const \mbox{\hyperlink{buffer_layout_8h_ab17840db1780f2ae8057b31012080dfe}{Uniform\+Buffer\+Layout}} \&}]{layout }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_uniform_buffer_add3a6895825cc58e0ef2405cee5c1c4c}{Open\+G\+L\+Uniform\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Buffer\+Name} & a const std\+::string\& -\/ The name of the uniform buffer \\
+\hline
+{\em layout} & a const Uniform\+Buffer\+Layout\& -\/ The uniform buffer layout \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_uniform_buffer_a00c90341b907466361aad5ae71c95d5a}\label{class_owl_engine_1_1_open_g_l_uniform_buffer_a00c90341b907466361aad5ae71c95d5a}} 
+\index{OwlEngine::OpenGLUniformBuffer@{OwlEngine::OpenGLUniformBuffer}!````~OpenGLUniformBuffer@{$\sim$OpenGLUniformBuffer}}
+\index{````~OpenGLUniformBuffer@{$\sim$OpenGLUniformBuffer}!OwlEngine::OpenGLUniformBuffer@{OwlEngine::OpenGLUniformBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$OpenGLUniformBuffer()}{~OpenGLUniformBuffer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Open\+G\+L\+Uniform\+Buffer\+::$\sim$\+Open\+G\+L\+Uniform\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+$\sim$\+Open\+G\+L\+Uniform\+Buffer 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_uniform_buffer_a335bb440f9e2755cf932cfa1976bfb61}\label{class_owl_engine_1_1_open_g_l_uniform_buffer_a335bb440f9e2755cf932cfa1976bfb61}} 
+\index{OwlEngine::OpenGLUniformBuffer@{OwlEngine::OpenGLUniformBuffer}!attachShaderBlock@{attachShaderBlock}}
+\index{attachShaderBlock@{attachShaderBlock}!OwlEngine::OpenGLUniformBuffer@{OwlEngine::OpenGLUniformBuffer}}
+\doxysubsubsection{\texorpdfstring{attachShaderBlock()}{attachShaderBlock()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Uniform\+Buffer\+::attach\+Shader\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$}]{shader,  }\item[{const char $\ast$}]{block\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Attach shader block. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_uniform_buffer_a335bb440f9e2755cf932cfa1976bfb61}{attach\+Shader\+Block()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & a Shader\+Program$\ast$ -\/ A pointer to the shader program \\
+\hline
+{\em block\+Name} & a const char$\ast$ -\/ The name of the uniform block in the shader program \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_uniform_buffer_ab15ef98beca080f797fdfa8d067d28bf}{Owl\+Engine\+::\+Uniform\+Buffer}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_uniform_buffer_ab371b3ce530e1ab6f474bb9722a742c1}\label{class_owl_engine_1_1_open_g_l_uniform_buffer_ab371b3ce530e1ab6f474bb9722a742c1}} 
+\index{OwlEngine::OpenGLUniformBuffer@{OwlEngine::OpenGLUniformBuffer}!printDetails@{printDetails}}
+\index{printDetails@{printDetails}!OwlEngine::OpenGLUniformBuffer@{OwlEngine::OpenGLUniformBuffer}}
+\doxysubsubsection{\texorpdfstring{printDetails()}{printDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Uniform\+Buffer\+::print\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print the resource details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_uniform_buffer_ab371b3ce530e1ab6f474bb9722a742c1}{print\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_uniform_buffer_a53210abf4ac0cee118ce81d179853ad1}{Owl\+Engine\+::\+Uniform\+Buffer}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_uniform_buffer_a0e42c6a5ff9199d287f2aa30250d2cb2}\label{class_owl_engine_1_1_open_g_l_uniform_buffer_a0e42c6a5ff9199d287f2aa30250d2cb2}} 
+\index{OwlEngine::OpenGLUniformBuffer@{OwlEngine::OpenGLUniformBuffer}!uploadData@{uploadData}}
+\index{uploadData@{uploadData}!OwlEngine::OpenGLUniformBuffer@{OwlEngine::OpenGLUniformBuffer}}
+\doxysubsubsection{\texorpdfstring{uploadData()}{uploadData()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Uniform\+Buffer\+::upload\+Data (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name,  }\item[{void $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Upload data to buffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_uniform_buffer_a0e42c6a5ff9199d287f2aa30250d2cb2}{upload\+Data()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const char$\ast$ -\/ The name of the uniform in the uniform cache \\
+\hline
+{\em data} & a void$\ast$ -\/ The data as a void pointer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_uniform_buffer_aa1d4795ab63d2f38ae38016c69d0a63e}{Owl\+Engine\+::\+Uniform\+Buffer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/platform/\+Open\+G\+L/\mbox{\hyperlink{open_g_l_uniform_buffer_8h}{open\+G\+L\+Uniform\+Buffer.\+h}}\item 
+C\+:/doc/src/engine/src/platform/\+Open\+G\+L/\mbox{\hyperlink{open_g_l_uniform_buffer_8cpp}{open\+G\+L\+Uniform\+Buffer.\+cpp}}\end{DoxyCompactItemize}

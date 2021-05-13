@@ -1,0 +1,185 @@
+\hypertarget{class_hawk_engine_1_1_vertex_array}{}\doxysection{Hawk\+Engine\+::Vertex\+Array Class Reference}
+\label{class_hawk_engine_1_1_vertex_array}\index{HawkEngine::VertexArray@{HawkEngine::VertexArray}}
+
+
+An A\+PI agnostic vertex array.  
+
+
+
+
+{\ttfamily \#include $<$vertex\+Array.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Vertex\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_vertex_array}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_aa51233bfeb7a65d8416769d094d3bd65}\label{class_hawk_engine_1_1_vertex_array_aa51233bfeb7a65d8416769d094d3bd65}} 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_aa51233bfeb7a65d8416769d094d3bd65}{$\sim$\+Vertex\+Array}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_ad2680cb1428e8ca33072b57bb6d48e60}{add\+Vertex\+Buffer}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer}{Vertex\+Buffer}} $>$ vertex\+Buffer)=0
+\begin{DoxyCompactList}\small\item\em Add vertex buffer to array. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_a60fe255f7287a6bed6da4994a1eae31d}{set\+Index\+Buffer}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer}{Index\+Buffer}} $>$ index\+Buffer)
+\begin{DoxyCompactList}\small\item\em Set the index buffer. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_a9cbadda7866b3ca79a11badb502c5c6d}{get\+Draw\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the indices count. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_a05830672660c50365a7fcb82599ab5d7}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the array ID. \end{DoxyCompactList}\item 
+virtual std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer}{Vertex\+Buffer}} $>$ $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_af0ce1c252f09f8bc292a89d728e0c828}{get\+Vertex\+Buffers}} ()
+\begin{DoxyCompactList}\small\item\em Get all vertex buffers. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer}{Index\+Buffer}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_ac13c0a3b60d6562fb779b99fd0c2b048}{get\+Index\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Get the index buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_ade1b33e7dbbe06727d03fc974e290115}\label{class_hawk_engine_1_1_vertex_array_ade1b33e7dbbe06727d03fc974e290115}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_ade1b33e7dbbe06727d03fc974e290115}{bind}} ()=0
+\begin{DoxyCompactList}\small\item\em Bind the V\+AO. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_a551416972e2b43b37735c27488c33d8e}\label{class_hawk_engine_1_1_vertex_array_a551416972e2b43b37735c27488c33d8e}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_a551416972e2b43b37735c27488c33d8e}{unbind}} ()=0
+\begin{DoxyCompactList}\small\item\em Unbind the V\+AO. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_a2e48c2e48f2d539d53025f3785e88d83}\label{class_hawk_engine_1_1_vertex_array_a2e48c2e48f2d539d53025f3785e88d83}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_a2e48c2e48f2d539d53025f3785e88d83}{draw}} ()=0
+\begin{DoxyCompactList}\small\item\em Draw the geometry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_ac25d1b8ac27bf9aa4626366f8e439f66}\label{class_hawk_engine_1_1_vertex_array_ac25d1b8ac27bf9aa4626366f8e439f66}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_ac25d1b8ac27bf9aa4626366f8e439f66}{draw}} (const uint32\+\_\+t draw\+Count)=0
+\begin{DoxyCompactList}\small\item\em Draw the geometry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_a028bb50f1bb481d130b70772481ea520}\label{class_hawk_engine_1_1_vertex_array_a028bb50f1bb481d130b70772481ea520}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_a028bb50f1bb481d130b70772481ea520}{draw\+Multi\+Indirect}} (const uint32\+\_\+t commands\+Size)=0
+\begin{DoxyCompactList}\small\item\em Draw the geometry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array}{Vertex\+Array}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_a1bed19aa14a69a2763b1f7cb0098287f}{create}} ()
+\begin{DoxyCompactList}\small\item\em Create a vertex array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_aadb868ce0c95d77662c4d115409f7a3f}\label{class_hawk_engine_1_1_vertex_array_aadb868ce0c95d77662c4d115409f7a3f}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_aadb868ce0c95d77662c4d115409f7a3f}{m\+\_\+array\+ID}}
+\begin{DoxyCompactList}\small\item\em The array ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_add5400bbade7b6e9a7f0df5933945a40}\label{class_hawk_engine_1_1_vertex_array_add5400bbade7b6e9a7f0df5933945a40}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_add5400bbade7b6e9a7f0df5933945a40}{m\+\_\+attrib\+Index}} = 0
+\begin{DoxyCompactList}\small\item\em The number of vertex attributes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_a8cabf9f07a0ca9c2f307e41a6114f3ed}\label{class_hawk_engine_1_1_vertex_array_a8cabf9f07a0ca9c2f307e41a6114f3ed}} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer}{Vertex\+Buffer}} $>$ $>$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_a8cabf9f07a0ca9c2f307e41a6114f3ed}{m\+\_\+vertex\+Buffers}}
+\begin{DoxyCompactList}\small\item\em All the vertex buffers in the array. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_a74a27138653428167d3aa00030022eee}\label{class_hawk_engine_1_1_vertex_array_a74a27138653428167d3aa00030022eee}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer}{Index\+Buffer}} $>$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_a74a27138653428167d3aa00030022eee}{m\+\_\+index\+Buffer}}
+\begin{DoxyCompactList}\small\item\em The index buffer for the array. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic vertex array. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_ad2680cb1428e8ca33072b57bb6d48e60}\label{class_hawk_engine_1_1_vertex_array_ad2680cb1428e8ca33072b57bb6d48e60}} 
+\index{HawkEngine::VertexArray@{HawkEngine::VertexArray}!addVertexBuffer@{addVertexBuffer}}
+\index{addVertexBuffer@{addVertexBuffer}!HawkEngine::VertexArray@{HawkEngine::VertexArray}}
+\doxysubsubsection{\texorpdfstring{addVertexBuffer()}{addVertexBuffer()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Vertex\+Array\+::add\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer}{Vertex\+Buffer}} $>$}]{vertex\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add vertex buffer to array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Buffer} & a const std\+::shared\+\_\+ptr$<$\+Vertex\+Buffer$>$ -\/ A pointer to a vertex buffer \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_vertex_array_ab96da9cb903b6ed5c0b6610918b5ee7c}{Hawk\+Engine\+::\+Open\+G\+L\+Vertex\+Array}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_a1bed19aa14a69a2763b1f7cb0098287f}\label{class_hawk_engine_1_1_vertex_array_a1bed19aa14a69a2763b1f7cb0098287f}} 
+\index{HawkEngine::VertexArray@{HawkEngine::VertexArray}!create@{create}}
+\index{create@{create}!HawkEngine::VertexArray@{HawkEngine::VertexArray}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array}{Vertex\+Array}} $\ast$ Hawk\+Engine\+::\+Vertex\+Array\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a vertex array. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_a1bed19aa14a69a2763b1f7cb0098287f}{create()}}
+
+\begin{DoxyReturn}{Returns}
+a Vertex\+Array$\ast$ -\/ The vertex array based on the current graphics A\+PI 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_a9cbadda7866b3ca79a11badb502c5c6d}\label{class_hawk_engine_1_1_vertex_array_a9cbadda7866b3ca79a11badb502c5c6d}} 
+\index{HawkEngine::VertexArray@{HawkEngine::VertexArray}!getDrawCount@{getDrawCount}}
+\index{getDrawCount@{getDrawCount}!HawkEngine::VertexArray@{HawkEngine::VertexArray}}
+\doxysubsubsection{\texorpdfstring{getDrawCount()}{getDrawCount()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Vertex\+Array\+::get\+Draw\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the indices count. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The number of indices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_a05830672660c50365a7fcb82599ab5d7}\label{class_hawk_engine_1_1_vertex_array_a05830672660c50365a7fcb82599ab5d7}} 
+\index{HawkEngine::VertexArray@{HawkEngine::VertexArray}!getID@{getID}}
+\index{getID@{getID}!HawkEngine::VertexArray@{HawkEngine::VertexArray}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Vertex\+Array\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the array ID. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The ID of the buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_ac13c0a3b60d6562fb779b99fd0c2b048}\label{class_hawk_engine_1_1_vertex_array_ac13c0a3b60d6562fb779b99fd0c2b048}} 
+\index{HawkEngine::VertexArray@{HawkEngine::VertexArray}!getIndexBuffer@{getIndexBuffer}}
+\index{getIndexBuffer@{getIndexBuffer}!HawkEngine::VertexArray@{HawkEngine::VertexArray}}
+\doxysubsubsection{\texorpdfstring{getIndexBuffer()}{getIndexBuffer()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_hawk_engine_1_1_index_buffer}{Index\+Buffer}}$>$\& Hawk\+Engine\+::\+Vertex\+Array\+::get\+Index\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the index buffer. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Index\+Buffer$>$\& -\/ A reference to the index buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_af0ce1c252f09f8bc292a89d728e0c828}\label{class_hawk_engine_1_1_vertex_array_af0ce1c252f09f8bc292a89d728e0c828}} 
+\index{HawkEngine::VertexArray@{HawkEngine::VertexArray}!getVertexBuffers@{getVertexBuffers}}
+\index{getVertexBuffers@{getVertexBuffers}!HawkEngine::VertexArray@{HawkEngine::VertexArray}}
+\doxysubsubsection{\texorpdfstring{getVertexBuffers()}{getVertexBuffers()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer}{Vertex\+Buffer}}$>$ $>$\& Hawk\+Engine\+::\+Vertex\+Array\+::get\+Vertex\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get all vertex buffers. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$std\+::shared\+\_\+ptr$<$\+Vertex\+Buffer$>$$>$\& -\/ A reference to all vertex buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_vertex_array_a60fe255f7287a6bed6da4994a1eae31d}\label{class_hawk_engine_1_1_vertex_array_a60fe255f7287a6bed6da4994a1eae31d}} 
+\index{HawkEngine::VertexArray@{HawkEngine::VertexArray}!setIndexBuffer@{setIndexBuffer}}
+\index{setIndexBuffer@{setIndexBuffer}!HawkEngine::VertexArray@{HawkEngine::VertexArray}}
+\doxysubsubsection{\texorpdfstring{setIndexBuffer()}{setIndexBuffer()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Vertex\+Array\+::set\+Index\+Buffer (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer}{Index\+Buffer}} $>$}]{index\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the index buffer. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_vertex_array_a60fe255f7287a6bed6da4994a1eae31d}{set\+Index\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Buffer} & a const std\+::shared\+\_\+ptr$<$\+Index\+Buffer$>$\& -\/ The index buffer to set \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/geometry/\mbox{\hyperlink{vertex_array_8h}{vertex\+Array.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/geometry/\mbox{\hyperlink{vertex_array_8cpp}{vertex\+Array.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+\hypertarget{class_hawk_engine_1_1_open_g_l_vertex_buffer}{}\doxysection{Hawk\+Engine\+::Open\+G\+L\+Vertex\+Buffer Class Reference}
+\label{class_hawk_engine_1_1_open_g_l_vertex_buffer}\index{HawkEngine::OpenGLVertexBuffer@{HawkEngine::OpenGLVertexBuffer}}
+
+
+An Open\+GL Vertex buffer object.  
+
+
+
+
+{\ttfamily \#include $<$open\+G\+L\+Vertex\+Buffer.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Open\+G\+L\+Vertex\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_open_g_l_vertex_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_vertex_buffer_a7258f7649edeb9363130f2908ee615ca}{Open\+G\+L\+Vertex\+Buffer}} (const void $\ast$vertices, const uint32\+\_\+t size, const \mbox{\hyperlink{buffer_layout_8h_ab76d932a743c18885dc3c9d4c37d894d}{Vertex\+Buffer\+Layout}} layout, const \mbox{\hyperlink{vertex_buffer_8h_a0ca514c81d0bfd967e8e257582ffaf9e}{Vertex\+Buffer\+Usage}} usage=Vertex\+Buffer\+Usage\+::\+Static\+Draw)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_vertex_buffer_a3d1f863e2a3f206f2a5bdde2cdadc44f}{Open\+G\+L\+Vertex\+Buffer}} (const uint32\+\_\+t size, const \mbox{\hyperlink{vertex_buffer_8h_a0ca514c81d0bfd967e8e257582ffaf9e}{Vertex\+Buffer\+Usage}} usage=Vertex\+Buffer\+Usage\+::\+Dynamic\+Draw)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_vertex_buffer_aa2e6d3790b8482dad0356cba1c50b20d}{$\sim$\+Open\+G\+L\+Vertex\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_vertex_buffer_a4505f55bbd8d8016a864ecc500a39175}{edit}} (const void $\ast$vertices, const uint32\+\_\+t size, const uint32\+\_\+t offset) override
+\begin{DoxyCompactList}\small\item\em Edit the buffer contents. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An Open\+GL Vertex buffer object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_vertex_buffer_a7258f7649edeb9363130f2908ee615ca}\label{class_hawk_engine_1_1_open_g_l_vertex_buffer_a7258f7649edeb9363130f2908ee615ca}} 
+\index{HawkEngine::OpenGLVertexBuffer@{HawkEngine::OpenGLVertexBuffer}!OpenGLVertexBuffer@{OpenGLVertexBuffer}}
+\index{OpenGLVertexBuffer@{OpenGLVertexBuffer}!HawkEngine::OpenGLVertexBuffer@{HawkEngine::OpenGLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{OpenGLVertexBuffer()}{OpenGLVertexBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer\+::\+Open\+G\+L\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{const void $\ast$}]{vertices,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const \mbox{\hyperlink{buffer_layout_8h_ab76d932a743c18885dc3c9d4c37d894d}{Vertex\+Buffer\+Layout}}}]{layout,  }\item[{const \mbox{\hyperlink{vertex_buffer_8h_a0ca514c81d0bfd967e8e257582ffaf9e}{Vertex\+Buffer\+Usage}}}]{usage = {\ttfamily VertexBufferUsage\+:\+:StaticDraw} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_vertex_buffer_a7258f7649edeb9363130f2908ee615ca}{Open\+G\+L\+Vertex\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a const void$\ast$ -\/ The vertices info \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the vertices data \\
+\hline
+{\em layout} & a const Vertex\+Buffer\+Layout -\/ The layout of the vertex buffer \\
+\hline
+{\em usage} & a const Vertex\+Buffer\+Usage -\/ The usage of the vertices data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_vertex_buffer_a3d1f863e2a3f206f2a5bdde2cdadc44f}\label{class_hawk_engine_1_1_open_g_l_vertex_buffer_a3d1f863e2a3f206f2a5bdde2cdadc44f}} 
+\index{HawkEngine::OpenGLVertexBuffer@{HawkEngine::OpenGLVertexBuffer}!OpenGLVertexBuffer@{OpenGLVertexBuffer}}
+\index{OpenGLVertexBuffer@{OpenGLVertexBuffer}!HawkEngine::OpenGLVertexBuffer@{HawkEngine::OpenGLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{OpenGLVertexBuffer()}{OpenGLVertexBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer\+::\+Open\+G\+L\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{size,  }\item[{const \mbox{\hyperlink{vertex_buffer_8h_a0ca514c81d0bfd967e8e257582ffaf9e}{Vertex\+Buffer\+Usage}}}]{usage = {\ttfamily VertexBufferUsage\+:\+:DynamicDraw} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_vertex_buffer_a7258f7649edeb9363130f2908ee615ca}{Open\+G\+L\+Vertex\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the buffer data \\
+\hline
+{\em usage} & a const Vertex\+Buffer\+Usage -\/ The usage of the vertices data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_vertex_buffer_aa2e6d3790b8482dad0356cba1c50b20d}\label{class_hawk_engine_1_1_open_g_l_vertex_buffer_aa2e6d3790b8482dad0356cba1c50b20d}} 
+\index{HawkEngine::OpenGLVertexBuffer@{HawkEngine::OpenGLVertexBuffer}!````~OpenGLVertexBuffer@{$\sim$OpenGLVertexBuffer}}
+\index{````~OpenGLVertexBuffer@{$\sim$OpenGLVertexBuffer}!HawkEngine::OpenGLVertexBuffer@{HawkEngine::OpenGLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$OpenGLVertexBuffer()}{~OpenGLVertexBuffer()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer\+::$\sim$\+Open\+G\+L\+Vertex\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_vertex_buffer_aa2e6d3790b8482dad0356cba1c50b20d}{$\sim$\+Open\+G\+L\+Vertex\+Buffer()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_vertex_buffer_a4505f55bbd8d8016a864ecc500a39175}\label{class_hawk_engine_1_1_open_g_l_vertex_buffer_a4505f55bbd8d8016a864ecc500a39175}} 
+\index{HawkEngine::OpenGLVertexBuffer@{HawkEngine::OpenGLVertexBuffer}!edit@{edit}}
+\index{edit@{edit}!HawkEngine::OpenGLVertexBuffer@{HawkEngine::OpenGLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer\+::edit (\begin{DoxyParamCaption}\item[{const void $\ast$}]{vertices,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const uint32\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Edit the buffer contents. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_vertex_buffer_a4505f55bbd8d8016a864ecc500a39175}{edit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a const void$\ast$ -\/ The vertices info \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the vertices data \\
+\hline
+{\em offset} & a const int32\+\_\+t -\/ The offset of where to place the new data \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_vertex_buffer_a3b4bf0688698bff60bb46e9be366de14}{Hawk\+Engine\+::\+Vertex\+Buffer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/platform/\+Open\+G\+L/geometry/\mbox{\hyperlink{open_g_l_vertex_buffer_8h}{open\+G\+L\+Vertex\+Buffer.\+h}}\item 
+C\+:/doc/src/src/platform/\+Open\+G\+L/geometry/\mbox{\hyperlink{open_g_l_vertex_buffer_8cpp}{open\+G\+L\+Vertex\+Buffer.\+cpp}}\end{DoxyCompactItemize}

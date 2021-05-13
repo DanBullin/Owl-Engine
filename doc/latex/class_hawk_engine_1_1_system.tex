@@ -1,0 +1,77 @@
+\hypertarget{class_hawk_engine_1_1_system}{}\doxysection{Hawk\+Engine\+::System Class Reference}
+\label{class_hawk_engine_1_1_system}\index{HawkEngine::System@{HawkEngine::System}}
+
+
+Interface class for all systems.  
+
+
+
+
+{\ttfamily \#include $<$system.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.333333cm]{class_hawk_engine_1_1_system}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_system_a7b3de2e970b27a900583fa66c1063a6c}{start}} (\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}} init=System\+Signal\+::\+None,...)=0
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_system_a29d9ba02d3c28510f4ef02bc0fdfbb3b}{stop}} (\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}} close=System\+Signal\+::\+None,...)=0
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface class for all systems. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_system_a7b3de2e970b27a900583fa66c1063a6c}\label{class_hawk_engine_1_1_system_a7b3de2e970b27a900583fa66c1063a6c}} 
+\index{HawkEngine::System@{HawkEngine::System}!start@{start}}
+\index{start@{start}!HawkEngine::System@{HawkEngine::System}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+System\+::start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}}}]{init = {\ttfamily SystemSignal\+:\+:None},  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destructor. 
+
+Start the system 
+\begin{DoxyParams}{Parameters}
+{\em init} & a System\+Signal -\/ A system signal \\
+\hline
+{\em ...} & -\/ Various parameters \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_window_system_a2b93e606c00fa2a8174fb807891ea528}{Hawk\+Engine\+::\+Window\+System}}, \mbox{\hyperlink{class_hawk_engine_1_1_randomiser_a5f637374ac874a25f70b648c1c9df120}{Hawk\+Engine\+::\+Randomiser}}, \mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a8334b43f84717a5d57be6918a6d15b41}{Hawk\+Engine\+::\+Timer\+System}}, \mbox{\hyperlink{class_hawk_engine_1_1_log_aea4911109fad1a3e706cd8a431d54cc9}{Hawk\+Engine\+::\+Log}}, and \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_system_a7ff1beafc2298ee65163168fab817657}{Hawk\+Engine\+::\+G\+L\+F\+W\+System}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_system_a29d9ba02d3c28510f4ef02bc0fdfbb3b}\label{class_hawk_engine_1_1_system_a29d9ba02d3c28510f4ef02bc0fdfbb3b}} 
+\index{HawkEngine::System@{HawkEngine::System}!stop@{stop}}
+\index{stop@{stop}!HawkEngine::System@{HawkEngine::System}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+System\+::stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}}}]{close = {\ttfamily SystemSignal\+:\+:None},  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Stop the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em close} & a System\+Signal -\/ A system signal \\
+\hline
+{\em ...} & -\/ Various parameters \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_window_system_a326c3a246d3566b05a4245b008ef6b2c}{Hawk\+Engine\+::\+Window\+System}}, \mbox{\hyperlink{class_hawk_engine_1_1_randomiser_af7e0685ababd650c1648684234b90f58}{Hawk\+Engine\+::\+Randomiser}}, \mbox{\hyperlink{class_hawk_engine_1_1_timer_system_a4cef2a36121926bfab6ba43807f4e4bc}{Hawk\+Engine\+::\+Timer\+System}}, \mbox{\hyperlink{class_hawk_engine_1_1_log_ae61398e44095912308650ee05262b4b8}{Hawk\+Engine\+::\+Log}}, and \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_system_ad94526678b84b2022fe657cf41e9187f}{Hawk\+Engine\+::\+G\+L\+F\+W\+System}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/systems/\mbox{\hyperlink{system_8h}{system.\+h}}\end{DoxyCompactItemize}

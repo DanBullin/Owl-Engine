@@ -1,0 +1,108 @@
+\hypertarget{class_mesh}{}\doxysection{Mesh Class Reference}
+\label{class_mesh}\index{Mesh@{Mesh}}
+
+
+A mesh class that contains all the vertices and indices.  
+
+
+
+
+{\ttfamily \#include $<$mesh.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_mesh_a1bfd1eb4e2530fe0fe46bf798a8b7ecd}{Mesh}} (const std\+::vector$<$ \mbox{\hyperlink{struct_vertex}{Vertex}} $>$ \&vertices, const std\+::vector$<$ unsigned int $>$ \&indices)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mesh_a5efe4da1a4c0971cfb037bd70304c303}{$\sim$\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const unsigned int \mbox{\hyperlink{class_mesh_ab2712ca276dbae39491b021f885d4b58}{get\+V\+AO}} () const
+\begin{DoxyCompactList}\small\item\em Get the V\+AO. \end{DoxyCompactList}\item 
+const unsigned int \mbox{\hyperlink{class_mesh_a850abbfa2b160ad35adb85ac9319caec}{get\+Indices\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the indices count. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mesh_a2dcd4d69537f8ee86d687c442cea5203}{submit\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Submit the geometry data to the buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A mesh class that contains all the vertices and indices. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mesh_a1bfd1eb4e2530fe0fe46bf798a8b7ecd}\label{class_mesh_a1bfd1eb4e2530fe0fe46bf798a8b7ecd}} 
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{Mesh()}{Mesh()}}
+{\footnotesize\ttfamily Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_vertex}{Vertex}} $>$ \&}]{vertices,  }\item[{const std\+::vector$<$ unsigned int $>$ \&}]{indices }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_mesh_a1bfd1eb4e2530fe0fe46bf798a8b7ecd}{Mesh()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a const std\+::vector$<$\+Vertex$>$\& -\/ List of all the vertices \\
+\hline
+{\em indices} & a const std\+::vector$<$unsigned int$>$\& -\/ List of all the indices \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mesh_a5efe4da1a4c0971cfb037bd70304c303}\label{class_mesh_a5efe4da1a4c0971cfb037bd70304c303}} 
+\index{Mesh@{Mesh}!````~Mesh@{$\sim$Mesh}}
+\index{````~Mesh@{$\sim$Mesh}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mesh()}{~Mesh()}}
+{\footnotesize\ttfamily Mesh\+::$\sim$\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_mesh_a5efe4da1a4c0971cfb037bd70304c303}{$\sim$\+Mesh()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mesh_a850abbfa2b160ad35adb85ac9319caec}\label{class_mesh_a850abbfa2b160ad35adb85ac9319caec}} 
+\index{Mesh@{Mesh}!getIndicesCount@{getIndicesCount}}
+\index{getIndicesCount@{getIndicesCount}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{getIndicesCount()}{getIndicesCount()}}
+{\footnotesize\ttfamily const unsigned int Mesh\+::get\+Indices\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the indices count. 
+
+\mbox{\hyperlink{class_mesh_a850abbfa2b160ad35adb85ac9319caec}{get\+Indices\+Count()}}
+
+\begin{DoxyReturn}{Returns}
+a const unsigned int -\/ The number of indices the mesh has 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mesh_ab2712ca276dbae39491b021f885d4b58}\label{class_mesh_ab2712ca276dbae39491b021f885d4b58}} 
+\index{Mesh@{Mesh}!getVAO@{getVAO}}
+\index{getVAO@{getVAO}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{getVAO()}{getVAO()}}
+{\footnotesize\ttfamily const unsigned int Mesh\+::get\+V\+AO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the V\+AO. 
+
+\mbox{\hyperlink{class_mesh_ab2712ca276dbae39491b021f885d4b58}{get\+V\+A\+O()}}
+
+\begin{DoxyReturn}{Returns}
+a const unsigned int -\/ The V\+AO ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mesh_a2dcd4d69537f8ee86d687c442cea5203}\label{class_mesh_a2dcd4d69537f8ee86d687c442cea5203}} 
+\index{Mesh@{Mesh}!submitData@{submitData}}
+\index{submitData@{submitData}!Mesh@{Mesh}}
+\doxysubsubsection{\texorpdfstring{submitData()}{submitData()}}
+{\footnotesize\ttfamily void Mesh\+::submit\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Submit the geometry data to the buffers. 
+
+\mbox{\hyperlink{class_mesh_a2dcd4d69537f8ee86d687c442cea5203}{submit\+Data()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/rendering/geometry/\mbox{\hyperlink{mesh_8h}{mesh.\+h}}\item 
+C\+:/doc/src/src/rendering/geometry/\mbox{\hyperlink{mesh_8cpp}{mesh.\+cpp}}\end{DoxyCompactItemize}

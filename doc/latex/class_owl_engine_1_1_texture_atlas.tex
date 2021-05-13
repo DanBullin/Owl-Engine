@@ -1,0 +1,139 @@
+\hypertarget{class_owl_engine_1_1_texture_atlas}{}\doxysection{Owl\+Engine\+::Texture\+Atlas Class Reference}
+\label{class_owl_engine_1_1_texture_atlas}\index{OwlEngine::TextureAtlas@{OwlEngine::TextureAtlas}}
+
+
+A dynamic texture atlas.  
+
+
+
+
+{\ttfamily \#include $<$texture\+Atlas.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_texture_atlas_acd3b28b76c68fcf2ac550031bceb48a5}{Texture\+Atlas}} (const std\+::string \&name, const glm\+::ivec2 size=\{ 4096, 4096 \}, const uint32\+\_\+t channels=4, const uint32\+\_\+t reserved\+Spaces=32)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_texture_atlas_a40e31c8b5fc52e754570f3d17f29ceda}{$\sim$\+Texture\+Atlas}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_texture_atlas_acee8c626778c5d21b69608dde54450bf}{get\+Base\+Texture}} () const
+\begin{DoxyCompactList}\small\item\em Get the base texture. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_texture_atlas_a08276cfbef25934eda641fba2277de99}{add}} (const std\+::string \&file\+Path, \mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$\&result, const std\+::string \&sub\+Texture\+Name)
+\begin{DoxyCompactList}\small\item\em Attempt to add a subtexture with a file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_texture_atlas_a944f9f2661412a29ef905d1b4fe2362d}{add}} (int32\+\_\+t width, int32\+\_\+t height, uint32\+\_\+t channels, unsigned char $\ast$data, \mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$\&result, const std\+::string \&sub\+Texture\+Name)
+\begin{DoxyCompactList}\small\item\em Attempt to add a subtexture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A dynamic texture atlas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_atlas_acd3b28b76c68fcf2ac550031bceb48a5}\label{class_owl_engine_1_1_texture_atlas_acd3b28b76c68fcf2ac550031bceb48a5}} 
+\index{OwlEngine::TextureAtlas@{OwlEngine::TextureAtlas}!TextureAtlas@{TextureAtlas}}
+\index{TextureAtlas@{TextureAtlas}!OwlEngine::TextureAtlas@{OwlEngine::TextureAtlas}}
+\doxysubsubsection{\texorpdfstring{TextureAtlas()}{TextureAtlas()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Texture\+Atlas\+::\+Texture\+Atlas (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const glm\+::ivec2}]{size = {\ttfamily \{~4096,~4096~\}},  }\item[{const uint32\+\_\+t}]{channels = {\ttfamily 4},  }\item[{const uint32\+\_\+t}]{reserved\+Spaces = {\ttfamily 32} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_atlas_acd3b28b76c68fcf2ac550031bceb48a5}{Texture\+Atlas()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const std\+::string\& -\/ The name of the texture atlas \\
+\hline
+{\em size} & a const glm\+::ivec2 -\/ The size of the texture atlas \\
+\hline
+{\em channels} & a const uint32\+\_\+t -\/ The number of channels for this atlas \\
+\hline
+{\em reserved\+Spaces} & a const uint32\+\_\+t -\/ The number of spaces to reserve \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_atlas_a40e31c8b5fc52e754570f3d17f29ceda}\label{class_owl_engine_1_1_texture_atlas_a40e31c8b5fc52e754570f3d17f29ceda}} 
+\index{OwlEngine::TextureAtlas@{OwlEngine::TextureAtlas}!````~TextureAtlas@{$\sim$TextureAtlas}}
+\index{````~TextureAtlas@{$\sim$TextureAtlas}!OwlEngine::TextureAtlas@{OwlEngine::TextureAtlas}}
+\doxysubsubsection{\texorpdfstring{$\sim$TextureAtlas()}{~TextureAtlas()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Texture\+Atlas\+::$\sim$\+Texture\+Atlas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_atlas_a40e31c8b5fc52e754570f3d17f29ceda}{$\sim$\+Texture\+Atlas()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_atlas_a08276cfbef25934eda641fba2277de99}\label{class_owl_engine_1_1_texture_atlas_a08276cfbef25934eda641fba2277de99}} 
+\index{OwlEngine::TextureAtlas@{OwlEngine::TextureAtlas}!add@{add}}
+\index{add@{add}!OwlEngine::TextureAtlas@{OwlEngine::TextureAtlas}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Texture\+Atlas\+::add (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$\&}]{result,  }\item[{const std\+::string \&}]{sub\+Texture\+Name }\end{DoxyParamCaption})}
+
+
+
+Attempt to add a subtexture with a file. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_atlas_a08276cfbef25934eda641fba2277de99}{add()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The filepath of the texture to add \\
+\hline
+{\em result} & a Sub\+Texture$\ast$\& -\/ The subtexture created when adding the texture to the atlas \\
+\hline
+{\em sub\+Texture\+Name} & a const std\+::string\& -\/ The name of the subtexture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Returns whether the addition was successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_atlas_a944f9f2661412a29ef905d1b4fe2362d}\label{class_owl_engine_1_1_texture_atlas_a944f9f2661412a29ef905d1b4fe2362d}} 
+\index{OwlEngine::TextureAtlas@{OwlEngine::TextureAtlas}!add@{add}}
+\index{add@{add}!OwlEngine::TextureAtlas@{OwlEngine::TextureAtlas}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Texture\+Atlas\+::add (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{width,  }\item[{int32\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{channels,  }\item[{unsigned char $\ast$}]{data,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$\&}]{result,  }\item[{const std\+::string \&}]{sub\+Texture\+Name }\end{DoxyParamCaption})}
+
+
+
+Attempt to add a subtexture. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_atlas_a08276cfbef25934eda641fba2277de99}{add()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & a int32\+\_\+t -\/ The width of the texture to add \\
+\hline
+{\em height} & a int32\+\_\+t -\/ The height of the texture to add \\
+\hline
+{\em channels} & a uint32\+\_\+t -\/ The number of channels of the texture \\
+\hline
+{\em data} & an unsigned char$\ast$ -\/ The data of the texture \\
+\hline
+{\em result} & a Sub\+Texture$\ast$\& -\/ The subtexture created when adding the texture to the atlas \\
+\hline
+{\em sub\+Texture\+Name} & a const std\+::string\& -\/ The name of the subtexture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Returns whether the addition was successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_atlas_acee8c626778c5d21b69608dde54450bf}\label{class_owl_engine_1_1_texture_atlas_acee8c626778c5d21b69608dde54450bf}} 
+\index{OwlEngine::TextureAtlas@{OwlEngine::TextureAtlas}!getBaseTexture@{getBaseTexture}}
+\index{getBaseTexture@{getBaseTexture}!OwlEngine::TextureAtlas@{OwlEngine::TextureAtlas}}
+\doxysubsubsection{\texorpdfstring{getBaseTexture()}{getBaseTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}}$\ast$ Owl\+Engine\+::\+Texture\+Atlas\+::get\+Base\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the base texture. 
+
+\begin{DoxyReturn}{Returns}
+a const Texture2\+D$\ast$ -\/ The base texture pointer 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/textures/\mbox{\hyperlink{texture_atlas_8h}{texture\+Atlas.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/textures/\mbox{\hyperlink{texture_atlas_8cpp}{texture\+Atlas.\+cpp}}\end{DoxyCompactItemize}

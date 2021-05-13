@@ -1,0 +1,359 @@
+\hypertarget{class_owl_engine_1_1_material}{}\doxysection{Owl\+Engine\+::Material Class Reference}
+\label{class_owl_engine_1_1_material}\index{OwlEngine::Material@{OwlEngine::Material}}
+
+
+A material class containing shader data to use when rendering.  
+
+
+
+
+{\ttfamily \#include $<$material.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Material\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_material}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_material_a5f270f568295d3ecfcae4de21b3cf469}{Material}} (const std\+::string \&material\+Name, const std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$ $>$ \&sub\+Textures, const std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$ $>$ \&cubemaps, \mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$shader, const glm\+::vec4 \&tint, const float shininess)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_material_af3c3af46351b005b5e55eb8df6a99e77}{$\sim$\+Material}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_material_a3f892e2d5fdbf013679a6c39308f57c9}{add\+Sub\+Texture}} (\mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$texture)
+\begin{DoxyCompactList}\small\item\em Add the subtexture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_material_a919e7fd070306ceee012448e79ac680f}{set\+Sub\+Texture}} (const uint32\+\_\+t index, \mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$texture)
+\begin{DoxyCompactList}\small\item\em Set the subtexture at index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_material_ad8ef2eabcbfb12e5409ea00e96f0f897}{get\+Sub\+Texture}} (const uint32\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get the subtexture at index. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_material_af2ec31b1385a0d4d5c154d3a2b40324c}{get\+Sub\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all subtextures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_material_a7603c71601a2b9e2718362adcc415177}{add\+Cubemap\+Texture}} (\mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$texture)
+\begin{DoxyCompactList}\small\item\em Add the cubemap texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_material_ab8d273efd382a39722fc0fdb5eed73ee}{set\+Cubemap\+Texture}} (const uint32\+\_\+t index, \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$texture)
+\begin{DoxyCompactList}\small\item\em Set the cubmap texture at index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_material_ad7d36a781829ce516a8204b12df2eeb1}{get\+Cubemap\+Texture}} (const uint32\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Get the cubemap at index. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_material_ab1dcae8e90fa5812051818c5b5715d61}{get\+Cubemap\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all cubemaps. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_material_a794e93662dc2a62fe3e52ab816d29582}{set\+Shader}} (\mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$shader\+Program)
+\begin{DoxyCompactList}\small\item\em Set the shader to use. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_material_a4b6b240a5385166a8ffb125947d54422}{get\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em Get the shader to use. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_material_a964b2eca05b27a2204975f599250d354}{set\+Tint}} (const glm\+::vec4 \&tint)
+\begin{DoxyCompactList}\small\item\em Set the material tint. \end{DoxyCompactList}\item 
+glm\+::vec4 \& \mbox{\hyperlink{class_owl_engine_1_1_material_a949875eeb694f5717990b18f4edf3a66}{get\+Tint}} ()
+\begin{DoxyCompactList}\small\item\em Get the material tint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_material_a7bb20dae1a3eab9cedbbbda08d5d77b4}{set\+Shininess}} (const float shininess)
+\begin{DoxyCompactList}\small\item\em Set the material\textquotesingle{}s shininess. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_material_ade276788d337811f702a5e54eea3c3a9}{get\+Shininess}} () const
+\begin{DoxyCompactList}\small\item\em Get the material\textquotesingle{}s shininess. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_material_a0c93172882201a4ad71cdf8dafc08303}{print\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A material class containing shader data to use when rendering. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_a5f270f568295d3ecfcae4de21b3cf469}\label{class_owl_engine_1_1_material_a5f270f568295d3ecfcae4de21b3cf469}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!Material@{Material}}
+\index{Material@{Material}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{Material()}{Material()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Material\+::\+Material (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{material\+Name,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$ $>$ \&}]{sub\+Textures,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$ $>$ \&}]{cubemaps,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$}]{shader,  }\item[{const glm\+::vec4 \&}]{tint,  }\item[{const float}]{shininess }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_a5f270f568295d3ecfcae4de21b3cf469}{Material()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em material\+Name} & a const std\+::string\& -\/ The name of the material \\
+\hline
+{\em sub\+Textures} & a const std\+::vector$<$\+Sub\+Texture$\ast$$>$\& -\/ A list of all subtextures \\
+\hline
+{\em cubemaps} & a const std\+::vector$<$\+Cube\+Map\+Texture$\ast$$>$\& -\/ A list of all cubemaps \\
+\hline
+{\em shader} & a Shader\+Program$\ast$ -\/ A pointer to the shader program \\
+\hline
+{\em tint} & a const glm\+::vec4\& -\/ A reference to a colour \\
+\hline
+{\em shininess} & a const float -\/ The material\textquotesingle{}s shininess \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_af3c3af46351b005b5e55eb8df6a99e77}\label{class_owl_engine_1_1_material_af3c3af46351b005b5e55eb8df6a99e77}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!````~Material@{$\sim$Material}}
+\index{````~Material@{$\sim$Material}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{$\sim$Material()}{~Material()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Material\+::$\sim$\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_af3c3af46351b005b5e55eb8df6a99e77}{$\sim$\+Material()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_a7603c71601a2b9e2718362adcc415177}\label{class_owl_engine_1_1_material_a7603c71601a2b9e2718362adcc415177}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!addCubemapTexture@{addCubemapTexture}}
+\index{addCubemapTexture@{addCubemapTexture}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{addCubemapTexture()}{addCubemapTexture()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Material\+::add\+Cubemap\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+Add the cubemap texture. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_a7603c71601a2b9e2718362adcc415177}{add\+Cubemap\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & a Cube\+Map\+Texture$\ast$ -\/ A pointer to the cubemap texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_a3f892e2d5fdbf013679a6c39308f57c9}\label{class_owl_engine_1_1_material_a3f892e2d5fdbf013679a6c39308f57c9}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!addSubTexture@{addSubTexture}}
+\index{addSubTexture@{addSubTexture}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{addSubTexture()}{addSubTexture()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Material\+::add\+Sub\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+Add the subtexture. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_a3f892e2d5fdbf013679a6c39308f57c9}{add\+Sub\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & a Sub\+Texture$\ast$ -\/ A pointer to the subtexture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_ad7d36a781829ce516a8204b12df2eeb1}\label{class_owl_engine_1_1_material_ad7d36a781829ce516a8204b12df2eeb1}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!getCubemapTexture@{getCubemapTexture}}
+\index{getCubemapTexture@{getCubemapTexture}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{getCubemapTexture()}{getCubemapTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$ Owl\+Engine\+::\+Material\+::get\+Cubemap\+Texture (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Get the cubemap at index. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_ad7d36a781829ce516a8204b12df2eeb1}{get\+Cubemap\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & a const uint32\+\_\+t -\/ The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Cube\+Map\+Texture$\ast$ -\/ A pointer to the cubemap texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_ab1dcae8e90fa5812051818c5b5715d61}\label{class_owl_engine_1_1_material_ab1dcae8e90fa5812051818c5b5715d61}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!getCubemapTextures@{getCubemapTextures}}
+\index{getCubemapTextures@{getCubemapTextures}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{getCubemapTextures()}{getCubemapTextures()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$ $>$ \& Owl\+Engine\+::\+Material\+::get\+Cubemap\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a list of all cubemaps. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_ab1dcae8e90fa5812051818c5b5715d61}{get\+Cubemap\+Textures()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Cube\+Map\+Texture$\ast$$>$\& -\/ A list of all cubemap textures 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_a4b6b240a5385166a8ffb125947d54422}\label{class_owl_engine_1_1_material_a4b6b240a5385166a8ffb125947d54422}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!getShader@{getShader}}
+\index{getShader@{getShader}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{getShader()}{getShader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$ Owl\+Engine\+::\+Material\+::get\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the shader to use. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_a4b6b240a5385166a8ffb125947d54422}{get\+Shader()}}
+
+\begin{DoxyReturn}{Returns}
+a Shader\+Program$\ast$ -\/ A pointer to the shader program 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_ade276788d337811f702a5e54eea3c3a9}\label{class_owl_engine_1_1_material_ade276788d337811f702a5e54eea3c3a9}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!getShininess@{getShininess}}
+\index{getShininess@{getShininess}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{getShininess()}{getShininess()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Material\+::get\+Shininess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the material\textquotesingle{}s shininess. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_ade276788d337811f702a5e54eea3c3a9}{get\+Shininess()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The material\textquotesingle{}s shininess 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_ad8ef2eabcbfb12e5409ea00e96f0f897}\label{class_owl_engine_1_1_material_ad8ef2eabcbfb12e5409ea00e96f0f897}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!getSubTexture@{getSubTexture}}
+\index{getSubTexture@{getSubTexture}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{getSubTexture()}{getSubTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$ Owl\+Engine\+::\+Material\+::get\+Sub\+Texture (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Get the subtexture at index. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_ad8ef2eabcbfb12e5409ea00e96f0f897}{get\+Sub\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & a const uint32\+\_\+t -\/ The index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Sub\+Texture$\ast$ -\/ A pointer to the subtexture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_af2ec31b1385a0d4d5c154d3a2b40324c}\label{class_owl_engine_1_1_material_af2ec31b1385a0d4d5c154d3a2b40324c}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!getSubTextures@{getSubTextures}}
+\index{getSubTextures@{getSubTextures}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{getSubTextures()}{getSubTextures()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$ $>$ \& Owl\+Engine\+::\+Material\+::get\+Sub\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a list of all subtextures. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_af2ec31b1385a0d4d5c154d3a2b40324c}{get\+Sub\+Textures()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Sub\+Texture$\ast$$>$\& -\/ A list of all sub textures 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_a949875eeb694f5717990b18f4edf3a66}\label{class_owl_engine_1_1_material_a949875eeb694f5717990b18f4edf3a66}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!getTint@{getTint}}
+\index{getTint@{getTint}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{getTint()}{getTint()}}
+{\footnotesize\ttfamily glm\+::vec4 \& Owl\+Engine\+::\+Material\+::get\+Tint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the material tint. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_a949875eeb694f5717990b18f4edf3a66}{get\+Tint()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec4\& -\/ A reference to a colour 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_a0c93172882201a4ad71cdf8dafc08303}\label{class_owl_engine_1_1_material_a0c93172882201a4ad71cdf8dafc08303}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!printDetails@{printDetails}}
+\index{printDetails@{printDetails}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{printDetails()}{printDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Material\+::print\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print the resource details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_a0c93172882201a4ad71cdf8dafc08303}{print\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_resource_a8b38cc50cd98c027bf848b9e65a5ca89}{Owl\+Engine\+::\+Resource}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_material_ab8d273efd382a39722fc0fdb5eed73ee}\label{class_owl_engine_1_1_material_ab8d273efd382a39722fc0fdb5eed73ee}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!setCubemapTexture@{setCubemapTexture}}
+\index{setCubemapTexture@{setCubemapTexture}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{setCubemapTexture()}{setCubemapTexture()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Material\+::set\+Cubemap\+Texture (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{index,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+Set the cubmap texture at index. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_ab8d273efd382a39722fc0fdb5eed73ee}{set\+Cubemap\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & a const uint32\+\_\+t -\/ The index \\
+\hline
+{\em texture} & a Cube\+Map\+Texture$\ast$ -\/ A pointer to the cubemap texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_a794e93662dc2a62fe3e52ab816d29582}\label{class_owl_engine_1_1_material_a794e93662dc2a62fe3e52ab816d29582}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!setShader@{setShader}}
+\index{setShader@{setShader}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{setShader()}{setShader()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Material\+::set\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$}]{shader\+Program }\end{DoxyParamCaption})}
+
+
+
+Set the shader to use. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_a794e93662dc2a62fe3e52ab816d29582}{set\+Shader()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader\+Program} & a Shader\+Program$\ast$ -\/ A pointer to the shader program \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_a7bb20dae1a3eab9cedbbbda08d5d77b4}\label{class_owl_engine_1_1_material_a7bb20dae1a3eab9cedbbbda08d5d77b4}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!setShininess@{setShininess}}
+\index{setShininess@{setShininess}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{setShininess()}{setShininess()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Material\+::set\+Shininess (\begin{DoxyParamCaption}\item[{const float}]{shininess }\end{DoxyParamCaption})}
+
+
+
+Set the material\textquotesingle{}s shininess. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_a7bb20dae1a3eab9cedbbbda08d5d77b4}{set\+Shininess()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shininess} & a const float -\/ The material\textquotesingle{}s shininess \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_a919e7fd070306ceee012448e79ac680f}\label{class_owl_engine_1_1_material_a919e7fd070306ceee012448e79ac680f}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!setSubTexture@{setSubTexture}}
+\index{setSubTexture@{setSubTexture}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{setSubTexture()}{setSubTexture()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Material\+::set\+Sub\+Texture (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{index,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$}]{texture }\end{DoxyParamCaption})}
+
+
+
+Set the subtexture at index. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_a919e7fd070306ceee012448e79ac680f}{set\+Sub\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & a const uint32\+\_\+t -\/ The index \\
+\hline
+{\em texture} & a Sub\+Texture$\ast$ -\/ A pointer to the subtexture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_material_a964b2eca05b27a2204975f599250d354}\label{class_owl_engine_1_1_material_a964b2eca05b27a2204975f599250d354}} 
+\index{OwlEngine::Material@{OwlEngine::Material}!setTint@{setTint}}
+\index{setTint@{setTint}!OwlEngine::Material@{OwlEngine::Material}}
+\doxysubsubsection{\texorpdfstring{setTint()}{setTint()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Material\+::set\+Tint (\begin{DoxyParamCaption}\item[{const glm\+::vec4 \&}]{tint }\end{DoxyParamCaption})}
+
+
+
+Set the material tint. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_material_a964b2eca05b27a2204975f599250d354}{set\+Tint()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em tint} & a const glm\+::vec4\& -\/ A reference to a colour \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/materials/\mbox{\hyperlink{material_8h}{material.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/materials/\mbox{\hyperlink{material_8cpp}{material.\+cpp}}\end{DoxyCompactItemize}

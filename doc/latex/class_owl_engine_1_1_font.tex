@@ -1,0 +1,223 @@
+\hypertarget{class_owl_engine_1_1_font}{}\doxysection{Owl\+Engine\+::Font Class Reference}
+\label{class_owl_engine_1_1_font}\index{OwlEngine::Font@{OwlEngine::Font}}
+
+
+A class which stores all the data about a font.  
+
+
+
+
+{\ttfamily \#include $<$font.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_font_a798a1585c6d392f647a387f765724969}{Font}} (F\+T\+\_\+\+Library \&ft, const std\+::string \&font\+Name, const std\+::string \&font\+File\+Path, const uint32\+\_\+t pixel\+Size, unsigned char first\+Glyph, unsigned char last\+Glyph)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_font_af7e7102b53588bedb07caffb897a6a1d}{$\sim$\+Font}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_font_a2812663e8f1dcddf83340b6ae61f5287}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the font. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_font_a57b3cad5e07371db0a6cb7fd46b01f47}{get\+File\+Path}} () const
+\begin{DoxyCompactList}\small\item\em Get the filepath of the font. \end{DoxyCompactList}\item 
+const unsigned char \mbox{\hyperlink{class_owl_engine_1_1_font_a8735ad5b8777b647121913c9b45055c9}{get\+First\+Glyph}} () const
+\begin{DoxyCompactList}\small\item\em Get the first glyph. \end{DoxyCompactList}\item 
+const unsigned char \mbox{\hyperlink{class_owl_engine_1_1_font_a2191e112c4f53ac05d5fc53b6edfdf76}{get\+Last\+Glyph}} () const
+\begin{DoxyCompactList}\small\item\em Get the last glyph. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_glyph_data}{Glyph\+Data}} $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_font_a91c92d8abb74774e6a46d940e9383d5a}{get\+Glyph\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the glyph data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_font_aafc1afd52182d8112d0df3f17142b9ab}{print\+Font\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print font details. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_font_a9e6fb17b107c2a560c93a5584e367edc}{print\+Character\+Details}} (unsigned char character)
+\begin{DoxyCompactList}\small\item\em Print a character\textquotesingle{}s glyph details. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_font_a848bb2b16d75ab501b6e7af843281f78}{print\+Characters\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print all character glyph details. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_font_a29cb9129a706c159b275076d03044fbc}{Rto\+R\+G\+BA}} (unsigned char $\ast$D\+S\+T\+Buffer, unsigned char $\ast$S\+R\+C\+Buffer, uint32\+\_\+t width, uint32\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Convert single channel data to 4 channels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class which stores all the data about a font. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_a798a1585c6d392f647a387f765724969}\label{class_owl_engine_1_1_font_a798a1585c6d392f647a387f765724969}} 
+\index{OwlEngine::Font@{OwlEngine::Font}!Font@{Font}}
+\index{Font@{Font}!OwlEngine::Font@{OwlEngine::Font}}
+\doxysubsubsection{\texorpdfstring{Font()}{Font()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Font\+::\+Font (\begin{DoxyParamCaption}\item[{F\+T\+\_\+\+Library \&}]{ft,  }\item[{const std\+::string \&}]{font\+Name,  }\item[{const std\+::string \&}]{font\+File\+Path,  }\item[{const uint32\+\_\+t}]{pixel\+Size,  }\item[{unsigned char}]{first\+Glyph,  }\item[{unsigned char}]{last\+Glyph }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_a798a1585c6d392f647a387f765724969}{Font()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ft} & a F\+T\+\_\+\+Library\& -\/ A reference to the freetype library \\
+\hline
+{\em font\+Name} & a const std\+::string\& -\/ The name of the font \\
+\hline
+{\em font\+File\+Path} & a const std\+::string\& -\/ The filepath of the font \\
+\hline
+{\em pixel\+Size} & a const uint32\+\_\+t -\/ The size of the font \\
+\hline
+{\em first\+Glyph} & an unsigned char -\/ The A\+S\+C\+II value of the first glyph \\
+\hline
+{\em last\+Glyph} & an unsigned char -\/ The A\+S\+C\+II value of the last glyph \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_af7e7102b53588bedb07caffb897a6a1d}\label{class_owl_engine_1_1_font_af7e7102b53588bedb07caffb897a6a1d}} 
+\index{OwlEngine::Font@{OwlEngine::Font}!````~Font@{$\sim$Font}}
+\index{````~Font@{$\sim$Font}!OwlEngine::Font@{OwlEngine::Font}}
+\doxysubsubsection{\texorpdfstring{$\sim$Font()}{~Font()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Font\+::$\sim$\+Font (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_af7e7102b53588bedb07caffb897a6a1d}{$\sim$\+Font()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_a57b3cad5e07371db0a6cb7fd46b01f47}\label{class_owl_engine_1_1_font_a57b3cad5e07371db0a6cb7fd46b01f47}} 
+\index{OwlEngine::Font@{OwlEngine::Font}!getFilePath@{getFilePath}}
+\index{getFilePath@{getFilePath}!OwlEngine::Font@{OwlEngine::Font}}
+\doxysubsubsection{\texorpdfstring{getFilePath()}{getFilePath()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Font\+::get\+File\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the filepath of the font. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_a57b3cad5e07371db0a6cb7fd46b01f47}{get\+File\+Path()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The filepath of the font 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_a8735ad5b8777b647121913c9b45055c9}\label{class_owl_engine_1_1_font_a8735ad5b8777b647121913c9b45055c9}} 
+\index{OwlEngine::Font@{OwlEngine::Font}!getFirstGlyph@{getFirstGlyph}}
+\index{getFirstGlyph@{getFirstGlyph}!OwlEngine::Font@{OwlEngine::Font}}
+\doxysubsubsection{\texorpdfstring{getFirstGlyph()}{getFirstGlyph()}}
+{\footnotesize\ttfamily const unsigned char Owl\+Engine\+::\+Font\+::get\+First\+Glyph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the first glyph. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_a8735ad5b8777b647121913c9b45055c9}{get\+First\+Glyph()}}
+
+\begin{DoxyReturn}{Returns}
+a const unsigned char -\/ The first glyph 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_a91c92d8abb74774e6a46d940e9383d5a}\label{class_owl_engine_1_1_font_a91c92d8abb74774e6a46d940e9383d5a}} 
+\index{OwlEngine::Font@{OwlEngine::Font}!getGlyphData@{getGlyphData}}
+\index{getGlyphData@{getGlyphData}!OwlEngine::Font@{OwlEngine::Font}}
+\doxysubsubsection{\texorpdfstring{getGlyphData()}{getGlyphData()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_glyph_data}{Glyph\+Data}} $>$ \& Owl\+Engine\+::\+Font\+::get\+Glyph\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the glyph data. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_a91c92d8abb74774e6a46d940e9383d5a}{get\+Glyph\+Data()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Glyph\+Data$>$\& -\/ A reference to the glyph data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_a2191e112c4f53ac05d5fc53b6edfdf76}\label{class_owl_engine_1_1_font_a2191e112c4f53ac05d5fc53b6edfdf76}} 
+\index{OwlEngine::Font@{OwlEngine::Font}!getLastGlyph@{getLastGlyph}}
+\index{getLastGlyph@{getLastGlyph}!OwlEngine::Font@{OwlEngine::Font}}
+\doxysubsubsection{\texorpdfstring{getLastGlyph()}{getLastGlyph()}}
+{\footnotesize\ttfamily const unsigned char Owl\+Engine\+::\+Font\+::get\+Last\+Glyph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the last glyph. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_a2191e112c4f53ac05d5fc53b6edfdf76}{get\+Last\+Glyph()}}
+
+\begin{DoxyReturn}{Returns}
+a const unsigned char -\/ The last glyph 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_a2812663e8f1dcddf83340b6ae61f5287}\label{class_owl_engine_1_1_font_a2812663e8f1dcddf83340b6ae61f5287}} 
+\index{OwlEngine::Font@{OwlEngine::Font}!getName@{getName}}
+\index{getName@{getName}!OwlEngine::Font@{OwlEngine::Font}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Font\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of the font. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_a2812663e8f1dcddf83340b6ae61f5287}{get\+Name()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The name of the font 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_a9e6fb17b107c2a560c93a5584e367edc}\label{class_owl_engine_1_1_font_a9e6fb17b107c2a560c93a5584e367edc}} 
+\index{OwlEngine::Font@{OwlEngine::Font}!printCharacterDetails@{printCharacterDetails}}
+\index{printCharacterDetails@{printCharacterDetails}!OwlEngine::Font@{OwlEngine::Font}}
+\doxysubsubsection{\texorpdfstring{printCharacterDetails()}{printCharacterDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Font\+::print\+Character\+Details (\begin{DoxyParamCaption}\item[{unsigned char}]{character }\end{DoxyParamCaption})}
+
+
+
+Print a character\textquotesingle{}s glyph details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_a9e6fb17b107c2a560c93a5584e367edc}{print\+Character\+Details()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em character} & an unsigned char -\/ The character to print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_a848bb2b16d75ab501b6e7af843281f78}\label{class_owl_engine_1_1_font_a848bb2b16d75ab501b6e7af843281f78}} 
+\index{OwlEngine::Font@{OwlEngine::Font}!printCharactersDetails@{printCharactersDetails}}
+\index{printCharactersDetails@{printCharactersDetails}!OwlEngine::Font@{OwlEngine::Font}}
+\doxysubsubsection{\texorpdfstring{printCharactersDetails()}{printCharactersDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Font\+::print\+Characters\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print all character glyph details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_a848bb2b16d75ab501b6e7af843281f78}{print\+Characters\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_font_aafc1afd52182d8112d0df3f17142b9ab}\label{class_owl_engine_1_1_font_aafc1afd52182d8112d0df3f17142b9ab}} 
+\index{OwlEngine::Font@{OwlEngine::Font}!printFontDetails@{printFontDetails}}
+\index{printFontDetails@{printFontDetails}!OwlEngine::Font@{OwlEngine::Font}}
+\doxysubsubsection{\texorpdfstring{printFontDetails()}{printFontDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Font\+::print\+Font\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print font details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_aafc1afd52182d8112d0df3f17142b9ab}{print\+Font\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_font_a29cb9129a706c159b275076d03044fbc}\label{class_owl_engine_1_1_font_a29cb9129a706c159b275076d03044fbc}} 
+\index{OwlEngine::Font@{OwlEngine::Font}!RtoRGBA@{RtoRGBA}}
+\index{RtoRGBA@{RtoRGBA}!OwlEngine::Font@{OwlEngine::Font}}
+\doxysubsubsection{\texorpdfstring{RtoRGBA()}{RtoRGBA()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Font\+::\+Rto\+R\+G\+BA (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{D\+S\+T\+Buffer,  }\item[{unsigned char $\ast$}]{S\+R\+C\+Buffer,  }\item[{uint32\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{height }\end{DoxyParamCaption})}
+
+
+
+Convert single channel data to 4 channels. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_a29cb9129a706c159b275076d03044fbc}{Rto\+R\+G\+B\+A()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+S\+T\+Buffer} & an unsigned char$\ast$ -\/ The destination buffer \\
+\hline
+{\em S\+R\+C\+Buffer} & an unsigned char$\ast$ -\/ The source single channel buffer \\
+\hline
+{\em width} & an uint32\+\_\+t -\/ The width of the glyph \\
+\hline
+{\em height} & an uint32\+\_\+t -\/ The height of the glyph \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/components/\mbox{\hyperlink{font_8h}{font.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/components/\mbox{\hyperlink{font_8cpp}{font.\+cpp}}\end{DoxyCompactItemize}

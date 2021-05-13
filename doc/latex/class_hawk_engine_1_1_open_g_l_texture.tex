@@ -1,0 +1,146 @@
+\hypertarget{class_hawk_engine_1_1_open_g_l_texture}{}\doxysection{Hawk\+Engine\+::Open\+G\+L\+Texture Class Reference}
+\label{class_hawk_engine_1_1_open_g_l_texture}\index{HawkEngine::OpenGLTexture@{HawkEngine::OpenGLTexture}}
+
+
+An Open\+GL texture object.  
+
+
+
+
+{\ttfamily \#include $<$open\+G\+L\+Texture.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Open\+G\+L\+Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_open_g_l_texture}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_texture_adef0610a74967c296696d407e69e26e2}{Open\+G\+L\+Texture}} (const char $\ast$file\+Path, \mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}} \&properties)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_texture_aaecfbd0a6959887e91e8846497febd1d}{Open\+G\+L\+Texture}} (const \mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}} \&properties, const uint32\+\_\+t channels, unsigned char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_texture_a46a84fe43d109f359387cc3bef34bbe9}{$\sim$\+Open\+G\+L\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_texture_a26871cfb47982eb3cc743d09b551fac6}{edit}} (const uint32\+\_\+t offsetX, const uint32\+\_\+t offsetY, const uint32\+\_\+t width, const uint32\+\_\+t height, const unsigned char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Edit the texture data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_texture_a69fc21aaa2ffed63443043dad61dfd3e}{bind}} (const uint32\+\_\+t slot=0) override
+\begin{DoxyCompactList}\small\item\em Bind the texture to a texture unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An Open\+GL texture object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_texture_adef0610a74967c296696d407e69e26e2}\label{class_hawk_engine_1_1_open_g_l_texture_adef0610a74967c296696d407e69e26e2}} 
+\index{HawkEngine::OpenGLTexture@{HawkEngine::OpenGLTexture}!OpenGLTexture@{OpenGLTexture}}
+\index{OpenGLTexture@{OpenGLTexture}!HawkEngine::OpenGLTexture@{HawkEngine::OpenGLTexture}}
+\doxysubsubsection{\texorpdfstring{OpenGLTexture()}{OpenGLTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Open\+G\+L\+Texture\+::\+Open\+G\+L\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Path,  }\item[{\mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}} \&}]{properties }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_texture_adef0610a74967c296696d407e69e26e2}{Open\+G\+L\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const char$\ast$ -\/ The filepath of the texture \\
+\hline
+{\em properties} & a \mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}}\& -\/ A reference to the texture properties \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_texture_aaecfbd0a6959887e91e8846497febd1d}\label{class_hawk_engine_1_1_open_g_l_texture_aaecfbd0a6959887e91e8846497febd1d}} 
+\index{HawkEngine::OpenGLTexture@{HawkEngine::OpenGLTexture}!OpenGLTexture@{OpenGLTexture}}
+\index{OpenGLTexture@{OpenGLTexture}!HawkEngine::OpenGLTexture@{HawkEngine::OpenGLTexture}}
+\doxysubsubsection{\texorpdfstring{OpenGLTexture()}{OpenGLTexture()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Open\+G\+L\+Texture\+::\+Open\+G\+L\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}} \&}]{properties,  }\item[{const uint32\+\_\+t}]{channels,  }\item[{unsigned char $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_texture_adef0610a74967c296696d407e69e26e2}{Open\+G\+L\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & a const \mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}}\& -\/ A reference to the texture properties \\
+\hline
+{\em channels} & a const uint32\+\_\+t -\/ The number of channels of the data format \\
+\hline
+{\em data} & an unsigned char$\ast$ -\/ A pointer to the data to store \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_texture_a46a84fe43d109f359387cc3bef34bbe9}\label{class_hawk_engine_1_1_open_g_l_texture_a46a84fe43d109f359387cc3bef34bbe9}} 
+\index{HawkEngine::OpenGLTexture@{HawkEngine::OpenGLTexture}!````~OpenGLTexture@{$\sim$OpenGLTexture}}
+\index{````~OpenGLTexture@{$\sim$OpenGLTexture}!HawkEngine::OpenGLTexture@{HawkEngine::OpenGLTexture}}
+\doxysubsubsection{\texorpdfstring{$\sim$OpenGLTexture()}{~OpenGLTexture()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Open\+G\+L\+Texture\+::$\sim$\+Open\+G\+L\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+$\sim$\+Open\+G\+L\+Vertex\+Array() 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_texture_a69fc21aaa2ffed63443043dad61dfd3e}\label{class_hawk_engine_1_1_open_g_l_texture_a69fc21aaa2ffed63443043dad61dfd3e}} 
+\index{HawkEngine::OpenGLTexture@{HawkEngine::OpenGLTexture}!bind@{bind}}
+\index{bind@{bind}!HawkEngine::OpenGLTexture@{HawkEngine::OpenGLTexture}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Open\+G\+L\+Texture\+::bind (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{slot = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Bind the texture to a texture unit. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_texture_a69fc21aaa2ffed63443043dad61dfd3e}{bind()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & a const uint32\+\_\+t -\/ Bind the texture to texture unit \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_texture_a5ecf2bdcb75ed7d17951f55475798c2f}{Hawk\+Engine\+::\+Texture}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_open_g_l_texture_a26871cfb47982eb3cc743d09b551fac6}\label{class_hawk_engine_1_1_open_g_l_texture_a26871cfb47982eb3cc743d09b551fac6}} 
+\index{HawkEngine::OpenGLTexture@{HawkEngine::OpenGLTexture}!edit@{edit}}
+\index{edit@{edit}!HawkEngine::OpenGLTexture@{HawkEngine::OpenGLTexture}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Open\+G\+L\+Texture\+::edit (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{offsetX,  }\item[{const uint32\+\_\+t}]{offsetY,  }\item[{const uint32\+\_\+t}]{width,  }\item[{const uint32\+\_\+t}]{height,  }\item[{const unsigned char $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Edit the texture data. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_texture_a26871cfb47982eb3cc743d09b551fac6}{edit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em offsetX} & a const uint32\+\_\+t -\/ The x offset in memory to edit \\
+\hline
+{\em offsetY} & a const uint32\+\_\+t -\/ The y offset in memory to edit \\
+\hline
+{\em width} & a const uint32\+\_\+t -\/ The width of the texture \\
+\hline
+{\em height} & a const uint32\+\_\+t -\/ The height of the texture \\
+\hline
+{\em data} & a const unsigned char$\ast$ -\/ A pointer to the data to store \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_texture_a95c84e33b09b283c187bdc04cb2e1337}{Hawk\+Engine\+::\+Texture}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/platform/\+Open\+G\+L/textures/\mbox{\hyperlink{open_g_l_texture_8h}{open\+G\+L\+Texture.\+h}}\item 
+C\+:/doc/src/src/platform/\+Open\+G\+L/textures/\mbox{\hyperlink{open_g_l_texture_8cpp}{open\+G\+L\+Texture.\+cpp}}\end{DoxyCompactItemize}

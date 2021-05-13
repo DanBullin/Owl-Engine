@@ -1,0 +1,190 @@
+\hypertarget{class_scene_render_pass}{}\doxysection{Scene\+Render\+Pass Class Reference}
+\label{class_scene_render_pass}\index{SceneRenderPass@{SceneRenderPass}}
+
+
+A scene render pass which renders the scene to the default frame buffer.  
+
+
+
+
+{\ttfamily \#include $<$scene\+Render\+Pass.\+h$>$}
+
+Inheritance diagram for Scene\+Render\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_scene_render_pass}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_render_pass_a1455a55da77831055d714f71582f2387}{$\sim$\+Scene\+Render\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_render_pass_a563c2e495cfdf6945641717aaffa30a6}{init}} () override
+\begin{DoxyCompactList}\small\item\em Initialise the scene render pass. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_render_pass_afda1718b93417a9fdde8cae30d7d09ec}{update}} (\mbox{\hyperlink{class_window}{Window}} $\ast$window) override
+\begin{DoxyCompactList}\small\item\em Update the scene render pass. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_render_pass_a6d502a0afb869105a1df8c13683e1c32}{begin}} () override
+\begin{DoxyCompactList}\small\item\em Begin the scene render pass. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_render_pass_a75b3f517d5c89abfc24dc5829356610f}{render}} () override
+\begin{DoxyCompactList}\small\item\em Render the geometry. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_scene_render_pass_a6fa118d289c2d9de70315e9285590351}{end}} () override
+\begin{DoxyCompactList}\small\item\em End the scene render pass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_render_pass_a14f8edd34b3f5ab073464c2bd917f912}{set\+Post\+Processing\+Effect}} (const \mbox{\hyperlink{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38}{Post\+Processing\+Effect}} effect)
+\begin{DoxyCompactList}\small\item\em Set the post processing effect to apply. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{class_scene_render_pass_a198fbb0e2922e33facb96b55bdc5f84e}{get\+Post\+Processing\+Effect}} ()
+\begin{DoxyCompactList}\small\item\em Get the post processing effect to apply. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_render_pass_aa6eb4af01751f25ec6459586751e2e07}{adjust\+Heightscale}} (const bool increase)
+\begin{DoxyCompactList}\small\item\em Increase/\+Decrease the heightscale. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A scene render pass which renders the scene to the default frame buffer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_render_pass_a1455a55da77831055d714f71582f2387}\label{class_scene_render_pass_a1455a55da77831055d714f71582f2387}} 
+\index{SceneRenderPass@{SceneRenderPass}!````~SceneRenderPass@{$\sim$SceneRenderPass}}
+\index{````~SceneRenderPass@{$\sim$SceneRenderPass}!SceneRenderPass@{SceneRenderPass}}
+\doxysubsubsection{\texorpdfstring{$\sim$SceneRenderPass()}{~SceneRenderPass()}}
+{\footnotesize\ttfamily Scene\+Render\+Pass\+::$\sim$\+Scene\+Render\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_scene_render_pass_a1455a55da77831055d714f71582f2387}{$\sim$\+Scene\+Render\+Pass()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_render_pass_aa6eb4af01751f25ec6459586751e2e07}\label{class_scene_render_pass_aa6eb4af01751f25ec6459586751e2e07}} 
+\index{SceneRenderPass@{SceneRenderPass}!adjustHeightscale@{adjustHeightscale}}
+\index{adjustHeightscale@{adjustHeightscale}!SceneRenderPass@{SceneRenderPass}}
+\doxysubsubsection{\texorpdfstring{adjustHeightscale()}{adjustHeightscale()}}
+{\footnotesize\ttfamily void Scene\+Render\+Pass\+::adjust\+Heightscale (\begin{DoxyParamCaption}\item[{const bool}]{increase }\end{DoxyParamCaption})}
+
+
+
+Increase/\+Decrease the heightscale. 
+
+adjust\+Heightscale
+
+
+\begin{DoxyParams}{Parameters}
+{\em increase} & a const bool -\/ Increase/\+Decrease the heightscale \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_render_pass_a6d502a0afb869105a1df8c13683e1c32}\label{class_scene_render_pass_a6d502a0afb869105a1df8c13683e1c32}} 
+\index{SceneRenderPass@{SceneRenderPass}!begin@{begin}}
+\index{begin@{begin}!SceneRenderPass@{SceneRenderPass}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Scene\+Render\+Pass\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Begin the scene render pass. 
+
+\mbox{\hyperlink{class_scene_render_pass_a6d502a0afb869105a1df8c13683e1c32}{begin()}} 
+
+Implements \mbox{\hyperlink{class_render_pass_a427e3c83103417a03d05ced68c3362e8}{Render\+Pass}}.
+
+\mbox{\Hypertarget{class_scene_render_pass_a6fa118d289c2d9de70315e9285590351}\label{class_scene_render_pass_a6fa118d289c2d9de70315e9285590351}} 
+\index{SceneRenderPass@{SceneRenderPass}!end@{end}}
+\index{end@{end}!SceneRenderPass@{SceneRenderPass}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void Scene\+Render\+Pass\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+End the scene render pass. 
+
+\mbox{\hyperlink{class_scene_render_pass_a6fa118d289c2d9de70315e9285590351}{end()}} 
+
+Implements \mbox{\hyperlink{class_render_pass_a38405b44b19c7db7ddd98d0cabd053cd}{Render\+Pass}}.
+
+\mbox{\Hypertarget{class_scene_render_pass_a198fbb0e2922e33facb96b55bdc5f84e}\label{class_scene_render_pass_a198fbb0e2922e33facb96b55bdc5f84e}} 
+\index{SceneRenderPass@{SceneRenderPass}!getPostProcessingEffect@{getPostProcessingEffect}}
+\index{getPostProcessingEffect@{getPostProcessingEffect}!SceneRenderPass@{SceneRenderPass}}
+\doxysubsubsection{\texorpdfstring{getPostProcessingEffect()}{getPostProcessingEffect()}}
+{\footnotesize\ttfamily const int Scene\+Render\+Pass\+::get\+Post\+Processing\+Effect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the post processing effect to apply. 
+
+get\+Post\+Processing\+Effect
+
+\begin{DoxyReturn}{Returns}
+a const int -\/ The post processing effect to apply to the scene texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_render_pass_a563c2e495cfdf6945641717aaffa30a6}\label{class_scene_render_pass_a563c2e495cfdf6945641717aaffa30a6}} 
+\index{SceneRenderPass@{SceneRenderPass}!init@{init}}
+\index{init@{init}!SceneRenderPass@{SceneRenderPass}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Scene\+Render\+Pass\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialise the scene render pass. 
+
+\mbox{\hyperlink{class_scene_render_pass_a563c2e495cfdf6945641717aaffa30a6}{init()}} 
+
+Implements \mbox{\hyperlink{class_render_pass_aba01989082cece85d1a2921bb3a70fe5}{Render\+Pass}}.
+
+\mbox{\Hypertarget{class_scene_render_pass_a75b3f517d5c89abfc24dc5829356610f}\label{class_scene_render_pass_a75b3f517d5c89abfc24dc5829356610f}} 
+\index{SceneRenderPass@{SceneRenderPass}!render@{render}}
+\index{render@{render}!SceneRenderPass@{SceneRenderPass}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Scene\+Render\+Pass\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Render the geometry. 
+
+\mbox{\hyperlink{class_scene_render_pass_a75b3f517d5c89abfc24dc5829356610f}{render()}} 
+
+Implements \mbox{\hyperlink{class_render_pass_a30951ffd20b334abc1eac92cbceb1da8}{Render\+Pass}}.
+
+\mbox{\Hypertarget{class_scene_render_pass_a14f8edd34b3f5ab073464c2bd917f912}\label{class_scene_render_pass_a14f8edd34b3f5ab073464c2bd917f912}} 
+\index{SceneRenderPass@{SceneRenderPass}!setPostProcessingEffect@{setPostProcessingEffect}}
+\index{setPostProcessingEffect@{setPostProcessingEffect}!SceneRenderPass@{SceneRenderPass}}
+\doxysubsubsection{\texorpdfstring{setPostProcessingEffect()}{setPostProcessingEffect()}}
+{\footnotesize\ttfamily void Scene\+Render\+Pass\+::set\+Post\+Processing\+Effect (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38}{Post\+Processing\+Effect}}}]{effect }\end{DoxyParamCaption})}
+
+
+
+Set the post processing effect to apply. 
+
+set\+Post\+Processing\+Effect
+
+
+\begin{DoxyParams}{Parameters}
+{\em effect} & a const Post\+Processing\+Effect -\/ The post processing effect to apply to the scene texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_render_pass_afda1718b93417a9fdde8cae30d7d09ec}\label{class_scene_render_pass_afda1718b93417a9fdde8cae30d7d09ec}} 
+\index{SceneRenderPass@{SceneRenderPass}!update@{update}}
+\index{update@{update}!SceneRenderPass@{SceneRenderPass}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Scene\+Render\+Pass\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_window}{Window}} $\ast$}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the scene render pass. 
+
+\mbox{\hyperlink{class_scene_render_pass_afda1718b93417a9fdde8cae30d7d09ec}{update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_render_pass_a29f3d86656e20c9fe701f6c68342a6be}{Render\+Pass}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/rendering/render\+Passes/\mbox{\hyperlink{scene_render_pass_8h}{scene\+Render\+Pass.\+h}}\item 
+C\+:/doc/src/src/rendering/render\+Passes/\mbox{\hyperlink{scene_render_pass_8cpp}{scene\+Render\+Pass.\+cpp}}\end{DoxyCompactItemize}

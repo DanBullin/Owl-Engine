@@ -1,0 +1,139 @@
+\hypertarget{class_entity_component}{}\doxysection{Entity\+Component Class Reference}
+\label{class_entity_component}\index{EntityComponent@{EntityComponent}}
+
+
+An entity component which are attached to entities.  
+
+
+
+
+{\ttfamily \#include $<$entity\+Component.\+h$>$}
+
+Inheritance diagram for Entity\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entity_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_entity_component_ab32f670e2e9835283d25efc0fbe1ab47}{Entity\+Component}} (const \mbox{\hyperlink{entity_component_8h_a81f78fc173dedefe5a049c0aa3eed2c0}{Component\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Constructor requiring type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entity_component_a242864ddd9852130396e445386ae123f}\label{class_entity_component_a242864ddd9852130396e445386ae123f}} 
+virtual \mbox{\hyperlink{class_entity_component_a242864ddd9852130396e445386ae123f}{$\sim$\+Entity\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_component_adac71723c4b35a56ee09dcb4b720402c}{set\+Parent}} (\mbox{\hyperlink{class_entity}{Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Set the component\textquotesingle{}s parent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_entity_component_a2e6269d6aaefb95e1c6176992c15c46a}{get\+Parent}} ()
+\begin{DoxyCompactList}\small\item\em Get the entity this component is attached to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_component_8h_a81f78fc173dedefe5a049c0aa3eed2c0}{Component\+Type}} \& \mbox{\hyperlink{class_entity_component_a992e55e35a0893a185f41d5697988ea2}{get\+Component\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the component type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_component_a09f99245c29d38f964a6c0e716f883d5}{set\+Name}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Set the name of the component. \end{DoxyCompactList}\item 
+std\+::string \& \mbox{\hyperlink{class_entity_component_a73ca1c4ac153b3d969bb997521fcd8b7}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the component. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entity_component_ad93838081b9582b288edbfc74d84692d}\label{class_entity_component_ad93838081b9582b288edbfc74d84692d}} 
+virtual void {\bfseries update} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An entity component which are attached to entities. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_entity_component_ab32f670e2e9835283d25efc0fbe1ab47}\label{class_entity_component_ab32f670e2e9835283d25efc0fbe1ab47}} 
+\index{EntityComponent@{EntityComponent}!EntityComponent@{EntityComponent}}
+\index{EntityComponent@{EntityComponent}!EntityComponent@{EntityComponent}}
+\doxysubsubsection{\texorpdfstring{EntityComponent()}{EntityComponent()}}
+{\footnotesize\ttfamily Entity\+Component\+::\+Entity\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{entity_component_8h_a81f78fc173dedefe5a049c0aa3eed2c0}{Component\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor requiring type. 
+
+\mbox{\hyperlink{class_entity_component}{Entity\+Component()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const Component\+Type -\/ The type of component \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_entity_component_a992e55e35a0893a185f41d5697988ea2}\label{class_entity_component_a992e55e35a0893a185f41d5697988ea2}} 
+\index{EntityComponent@{EntityComponent}!getComponentType@{getComponentType}}
+\index{getComponentType@{getComponentType}!EntityComponent@{EntityComponent}}
+\doxysubsubsection{\texorpdfstring{getComponentType()}{getComponentType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_component_8h_a81f78fc173dedefe5a049c0aa3eed2c0}{Component\+Type}}\& Entity\+Component\+::get\+Component\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the component type. 
+
+\begin{DoxyReturn}{Returns}
+a Component\+Type\& -\/ A reference to the component type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_component_a73ca1c4ac153b3d969bb997521fcd8b7}\label{class_entity_component_a73ca1c4ac153b3d969bb997521fcd8b7}} 
+\index{EntityComponent@{EntityComponent}!getName@{getName}}
+\index{getName@{getName}!EntityComponent@{EntityComponent}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string\& Entity\+Component\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name of the component. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::string\& -\/ The name of the component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_component_a2e6269d6aaefb95e1c6176992c15c46a}\label{class_entity_component_a2e6269d6aaefb95e1c6176992c15c46a}} 
+\index{EntityComponent@{EntityComponent}!getParent@{getParent}}
+\index{getParent@{getParent}!EntityComponent@{EntityComponent}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity}{Entity}}$\ast$ Entity\+Component\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the entity this component is attached to. 
+
+\begin{DoxyReturn}{Returns}
+an Entity$\ast$ -\/ A pointer to the entity parent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_component_a09f99245c29d38f964a6c0e716f883d5}\label{class_entity_component_a09f99245c29d38f964a6c0e716f883d5}} 
+\index{EntityComponent@{EntityComponent}!setName@{setName}}
+\index{setName@{setName}!EntityComponent@{EntityComponent}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Entity\+Component\+::set\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the name of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_component_adac71723c4b35a56ee09dcb4b720402c}\label{class_entity_component_adac71723c4b35a56ee09dcb4b720402c}} 
+\index{EntityComponent@{EntityComponent}!setParent@{setParent}}
+\index{setParent@{setParent}!EntityComponent@{EntityComponent}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily void Entity\+Component\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_entity}{Entity}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the component\textquotesingle{}s parent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & an Entity$\ast$ -\/ A pointer to the entity parent \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/scene/entity/\mbox{\hyperlink{entity_component_8h}{entity\+Component.\+h}}\item 
+C\+:/doc/src/src/scene/entity/\mbox{\hyperlink{entity_component_8cpp}{entity\+Component.\+cpp}}\end{DoxyCompactItemize}

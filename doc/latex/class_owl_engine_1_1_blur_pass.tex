@@ -1,0 +1,120 @@
+\hypertarget{class_owl_engine_1_1_blur_pass}{}\doxysection{Owl\+Engine\+::Blur\+Pass Class Reference}
+\label{class_owl_engine_1_1_blur_pass}\index{OwlEngine::BlurPass@{OwlEngine::BlurPass}}
+
+
+A blur render pass.  
+
+
+
+
+{\ttfamily \#include $<$blur\+Pass.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Blur\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_blur_pass}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_blur_pass_a11e27ccebbcb350ff9d4997cdad1ac14}{Blur\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_blur_pass_a6a02e84e82f471ea9b2cb3d09c97a9aa}{$\sim$\+Blur\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_blur_pass_a4a30df6c4328edb0d2f2e852c0a399df}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Called when the pass is attached to a scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_blur_pass_a7df4fde0bc270a0359fe34cd1b0c2d62}{on\+Render}} (std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \&entities) override
+\begin{DoxyCompactList}\small\item\em The rendering to perform for this pass. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_blur_pass_a60602a3c058ee0a413af8783a3dbb455}{get\+Frame\+Buffer}} () override
+\begin{DoxyCompactList}\small\item\em Get the framebuffer of this render pass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A blur render pass. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_blur_pass_a11e27ccebbcb350ff9d4997cdad1ac14}\label{class_owl_engine_1_1_blur_pass_a11e27ccebbcb350ff9d4997cdad1ac14}} 
+\index{OwlEngine::BlurPass@{OwlEngine::BlurPass}!BlurPass@{BlurPass}}
+\index{BlurPass@{BlurPass}!OwlEngine::BlurPass@{OwlEngine::BlurPass}}
+\doxysubsubsection{\texorpdfstring{BlurPass()}{BlurPass()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Blur\+Pass\+::\+Blur\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_blur_pass_a11e27ccebbcb350ff9d4997cdad1ac14}{Blur\+Pass()}} \mbox{\Hypertarget{class_owl_engine_1_1_blur_pass_a6a02e84e82f471ea9b2cb3d09c97a9aa}\label{class_owl_engine_1_1_blur_pass_a6a02e84e82f471ea9b2cb3d09c97a9aa}} 
+\index{OwlEngine::BlurPass@{OwlEngine::BlurPass}!````~BlurPass@{$\sim$BlurPass}}
+\index{````~BlurPass@{$\sim$BlurPass}!OwlEngine::BlurPass@{OwlEngine::BlurPass}}
+\doxysubsubsection{\texorpdfstring{$\sim$BlurPass()}{~BlurPass()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Blur\+Pass\+::$\sim$\+Blur\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_blur_pass_a6a02e84e82f471ea9b2cb3d09c97a9aa}{$\sim$\+Blur\+Pass()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_blur_pass_a60602a3c058ee0a413af8783a3dbb455}\label{class_owl_engine_1_1_blur_pass_a60602a3c058ee0a413af8783a3dbb455}} 
+\index{OwlEngine::BlurPass@{OwlEngine::BlurPass}!getFrameBuffer@{getFrameBuffer}}
+\index{getFrameBuffer@{getFrameBuffer}!OwlEngine::BlurPass@{OwlEngine::BlurPass}}
+\doxysubsubsection{\texorpdfstring{getFrameBuffer()}{getFrameBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ Owl\+Engine\+::\+Blur\+Pass\+::get\+Frame\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the framebuffer of this render pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_blur_pass_a60602a3c058ee0a413af8783a3dbb455}{get\+Frame\+Buffer()}}
+
+\begin{DoxyReturn}{Returns}
+a Frame\+Buffer$\ast$ -\/ The framebuffer 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a3589ca78070a8173282ea6890d592103}{Owl\+Engine\+::\+Render\+Pass}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_blur_pass_a4a30df6c4328edb0d2f2e852c0a399df}\label{class_owl_engine_1_1_blur_pass_a4a30df6c4328edb0d2f2e852c0a399df}} 
+\index{OwlEngine::BlurPass@{OwlEngine::BlurPass}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::BlurPass@{OwlEngine::BlurPass}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Blur\+Pass\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called when the pass is attached to a scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_blur_pass_a4a30df6c4328edb0d2f2e852c0a399df}{on\+Attach()}} 
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a53acb6a6d144feea5b09039e722d24ae}{Owl\+Engine\+::\+Render\+Pass}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_blur_pass_a7df4fde0bc270a0359fe34cd1b0c2d62}\label{class_owl_engine_1_1_blur_pass_a7df4fde0bc270a0359fe34cd1b0c2d62}} 
+\index{OwlEngine::BlurPass@{OwlEngine::BlurPass}!onRender@{onRender}}
+\index{onRender@{onRender}!OwlEngine::BlurPass@{OwlEngine::BlurPass}}
+\doxysubsubsection{\texorpdfstring{onRender()}{onRender()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Blur\+Pass\+::on\+Render (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \&}]{entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+The rendering to perform for this pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_blur_pass_a7df4fde0bc270a0359fe34cd1b0c2d62}{on\+Render()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & a std\+::vector$<$\+Entity$\ast$$>$\& -\/ The list of entities to render \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_render_pass_ace743fe2847d4a4521eb5308d9d2bcd3}{Owl\+Engine\+::\+Render\+Pass}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/render\+Passes/passes/\mbox{\hyperlink{blur_pass_8h}{blur\+Pass.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/render\+Passes/passes/\mbox{\hyperlink{blur_pass_8cpp}{blur\+Pass.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,483 @@
+\hypertarget{class_owl_engine_1_1_camera}{}\doxysection{Owl\+Engine\+::Camera Class Reference}
+\label{class_owl_engine_1_1_camera}\index{OwlEngine::Camera@{OwlEngine::Camera}}
+
+
+A camera object in the game world.  
+
+
+
+
+{\ttfamily \#include $<$camera.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_camera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_camera_ad9f6221b1830ad4d77c9ddf1475c9475}{Camera}} (const \mbox{\hyperlink{struct_owl_engine_1_1_camera_data}{Camera\+Data}} \&camera\+Data)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_camera_abd7dd065adf789a985a49bdac255df98}{$\sim$\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_a9fcd2f485319974491921b2ce988ae8b}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_a8d71bccacbe94790854532133aa92332}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_ae9a617053a904c8640cd572c28759463}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_a1da852a8bc4612b7f86fdecff923c6e3}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_camera_a07854c3424941c9ec4cf634b0f88ea36}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data in J\+S\+ON format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_aa48c42ff6c92dc6699f519a7630eb831}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Display the component in Im\+G\+UI. \end{DoxyCompactList}\item 
+const glm\+::vec4 \& \mbox{\hyperlink{class_owl_engine_1_1_camera_a6e5a3c05692f86a2a471a4992fdfd267}{get\+Clear\+Colour}} ()
+\begin{DoxyCompactList}\small\item\em Get the clear colour. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_af18b751b10d253a1c51c9bd386b0da9f}{set\+Clear\+Colour}} (const glm\+::vec4 \&colour)
+\begin{DoxyCompactList}\small\item\em Set the clear colour. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_owl_engine_1_1_camera_a7ed1d224d67fd1704df695510b26ffc0}{get\+View\+Matrix}} (const bool perspective)
+\begin{DoxyCompactList}\small\item\em Get the view matrix. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_owl_engine_1_1_camera_a04a4190314cf73f1d36d86b95b9e107e}{get\+Projection\+Matrix}} (const bool perspective)
+\begin{DoxyCompactList}\small\item\em Get the projection matrix. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_camera_a247569412382488a86d7678abd386385}{get\+World\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the world position of the camera. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_camera_a652b23e5e010cda59c5093342516907b}{get\+Front\+World\+Position}} (const float front\+Multiplied)
+\begin{DoxyCompactList}\small\item\em Get the world position along the camera\textquotesingle{}s front vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_a788a898b3e9f9e080879b30ef4135498}{set\+Projection}} (const \mbox{\hyperlink{struct_owl_engine_1_1_projection}{Projection}} \&projection)
+\begin{DoxyCompactList}\small\item\em Set the projection data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_owl_engine_1_1_projection}{Projection}} \& \mbox{\hyperlink{class_owl_engine_1_1_camera_aaf61343926b5260dc8c770e252158b5d}{get\+Projection}} ()
+\begin{DoxyCompactList}\small\item\em Get the projection data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_af1ae7cfd69a3e8c4333b4b4b87bc2a1e}{set\+Camera\+Data}} (const \mbox{\hyperlink{struct_owl_engine_1_1_camera_data}{Camera\+Data}} \&data)
+\begin{DoxyCompactList}\small\item\em Set the camera data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_owl_engine_1_1_camera_data}{Camera\+Data}} \& \mbox{\hyperlink{class_owl_engine_1_1_camera_a5f95684d836c3490bb2765966d3c2728}{get\+Camera\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the camera data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_abc0d2a69a94dea7c6d3c9bfe375d9def}{set\+Main\+Camera}} (const bool main\+Camera)
+\begin{DoxyCompactList}\small\item\em Set if this camera is the main camera. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_camera_ae15e6ef6e248513329af1bc785ea0bda}{get\+Main\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Get if this camera is the main camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_ac500eca5408801617868045e75641e16}{set\+Skybox}} (\mbox{\hyperlink{class_owl_engine_1_1_skybox}{Skybox}} $\ast$skybox)
+\begin{DoxyCompactList}\small\item\em Set the attatched skybox. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_skybox}{Skybox}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_camera_abadd6bc34a613d525a1849914a6e2d22}{get\+Skybox}} ()
+\begin{DoxyCompactList}\small\item\em Get the attatched skybox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_a025ba6ea107fd36a6f8e9844317fb108}{update\+Camera\+Vectors}} ()
+\begin{DoxyCompactList}\small\item\em Update all camera vectors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_ab531a4e5263ef9f33bc21826dc0e6179}{update\+Projection}} ()
+\begin{DoxyCompactList}\small\item\em Update the projection. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_camera_a3cc16f7ae3abbe4be4afdd6f35c5e908}{update\+Projection}} (glm\+::ivec2 size)
+\begin{DoxyCompactList}\small\item\em Update the projection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A camera object in the game world. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_ad9f6221b1830ad4d77c9ddf1475c9475}\label{class_owl_engine_1_1_camera_ad9f6221b1830ad4d77c9ddf1475c9475}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_owl_engine_1_1_camera_data}{Camera\+Data}} \&}]{camera\+Data }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_ad9f6221b1830ad4d77c9ddf1475c9475}{Camera()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Data} & a const \mbox{\hyperlink{struct_owl_engine_1_1_camera_data}{Camera\+Data}}\& -\/ The camera\textquotesingle{}s data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_abd7dd065adf789a985a49bdac255df98}\label{class_owl_engine_1_1_camera_abd7dd065adf789a985a49bdac255df98}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!````~Camera@{$\sim$Camera}}
+\index{````~Camera@{$\sim$Camera}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{$\sim$Camera()}{~Camera()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Camera\+::$\sim$\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_abd7dd065adf789a985a49bdac255df98}{$\sim$\+Camera()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_aa48c42ff6c92dc6699f519a7630eb831}\label{class_owl_engine_1_1_camera_aa48c42ff6c92dc6699f519a7630eb831}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the component in Im\+G\+UI. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_aa48c42ff6c92dc6699f519a7630eb831}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a07854c3424941c9ec4cf634b0f88ea36}\label{class_owl_engine_1_1_camera_a07854c3424941c9ec4cf634b0f88ea36}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Camera\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data in J\+S\+ON format. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_a07854c3424941c9ec4cf634b0f88ea36}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a5f95684d836c3490bb2765966d3c2728}\label{class_owl_engine_1_1_camera_a5f95684d836c3490bb2765966d3c2728}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!getCameraData@{getCameraData}}
+\index{getCameraData@{getCameraData}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getCameraData()}{getCameraData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_owl_engine_1_1_camera_data}{Camera\+Data}} \& Owl\+Engine\+::\+Camera\+::get\+Camera\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the camera data. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_a5f95684d836c3490bb2765966d3c2728}{get\+Camera\+Data()}}
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_owl_engine_1_1_camera_data}{Camera\+Data}}\& -\/ The camera data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a6e5a3c05692f86a2a471a4992fdfd267}\label{class_owl_engine_1_1_camera_a6e5a3c05692f86a2a471a4992fdfd267}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!getClearColour@{getClearColour}}
+\index{getClearColour@{getClearColour}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getClearColour()}{getClearColour()}}
+{\footnotesize\ttfamily const glm\+::vec4 \& Owl\+Engine\+::\+Camera\+::get\+Clear\+Colour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the clear colour. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_a6e5a3c05692f86a2a471a4992fdfd267}{get\+Clear\+Colour()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec4\& -\/ The clear colour 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a652b23e5e010cda59c5093342516907b}\label{class_owl_engine_1_1_camera_a652b23e5e010cda59c5093342516907b}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!getFrontWorldPosition@{getFrontWorldPosition}}
+\index{getFrontWorldPosition@{getFrontWorldPosition}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getFrontWorldPosition()}{getFrontWorldPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Camera\+::get\+Front\+World\+Position (\begin{DoxyParamCaption}\item[{const float}]{front\+Multiplied }\end{DoxyParamCaption})}
+
+
+
+Get the world position along the camera\textquotesingle{}s front vector. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_a652b23e5e010cda59c5093342516907b}{get\+Front\+World\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em front\+Multiplied} & a const float -\/ The multiplier for the front vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The world position along the camera\textquotesingle{}s front vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_ae15e6ef6e248513329af1bc785ea0bda}\label{class_owl_engine_1_1_camera_ae15e6ef6e248513329af1bc785ea0bda}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!getMainCamera@{getMainCamera}}
+\index{getMainCamera@{getMainCamera}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getMainCamera()}{getMainCamera()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Camera\+::get\+Main\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get if this camera is the main camera. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_ae15e6ef6e248513329af1bc785ea0bda}{get\+Main\+Camera()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is this the main camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_aaf61343926b5260dc8c770e252158b5d}\label{class_owl_engine_1_1_camera_aaf61343926b5260dc8c770e252158b5d}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!getProjection@{getProjection}}
+\index{getProjection@{getProjection}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getProjection()}{getProjection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_owl_engine_1_1_projection}{Projection}} \& Owl\+Engine\+::\+Camera\+::get\+Projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the projection data. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_aaf61343926b5260dc8c770e252158b5d}{get\+Projection()}}
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_owl_engine_1_1_projection}{Projection}}\& -\/ The projection data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a04a4190314cf73f1d36d86b95b9e107e}\label{class_owl_engine_1_1_camera_a04a4190314cf73f1d36d86b95b9e107e}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!getProjectionMatrix@{getProjectionMatrix}}
+\index{getProjectionMatrix@{getProjectionMatrix}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getProjectionMatrix()}{getProjectionMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Owl\+Engine\+::\+Camera\+::get\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{const bool}]{perspective }\end{DoxyParamCaption})}
+
+
+
+Get the projection matrix. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_a04a4190314cf73f1d36d86b95b9e107e}{get\+Projection\+Matrix()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em perspective} & a const bool -\/ Use the perspective projection, false for orthographic \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The projection matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_abadd6bc34a613d525a1849914a6e2d22}\label{class_owl_engine_1_1_camera_abadd6bc34a613d525a1849914a6e2d22}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!getSkybox@{getSkybox}}
+\index{getSkybox@{getSkybox}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getSkybox()}{getSkybox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_skybox}{Skybox}} $\ast$ Owl\+Engine\+::\+Camera\+::get\+Skybox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the attatched skybox. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_abadd6bc34a613d525a1849914a6e2d22}{get\+Skybox()}}
+
+\begin{DoxyReturn}{Returns}
+a Skybox$\ast$ -\/ Pointer to the attached skybox 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a7ed1d224d67fd1704df695510b26ffc0}\label{class_owl_engine_1_1_camera_a7ed1d224d67fd1704df695510b26ffc0}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!getViewMatrix@{getViewMatrix}}
+\index{getViewMatrix@{getViewMatrix}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getViewMatrix()}{getViewMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Owl\+Engine\+::\+Camera\+::get\+View\+Matrix (\begin{DoxyParamCaption}\item[{const bool}]{perspective }\end{DoxyParamCaption})}
+
+
+
+Get the view matrix. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_a7ed1d224d67fd1704df695510b26ffc0}{get\+View\+Matrix()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em perspective} & a const bool -\/ Use the perspective projection, false for orthographic \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The view matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a247569412382488a86d7678abd386385}\label{class_owl_engine_1_1_camera_a247569412382488a86d7678abd386385}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!getWorldPosition@{getWorldPosition}}
+\index{getWorldPosition@{getWorldPosition}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getWorldPosition()}{getWorldPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Camera\+::get\+World\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the world position of the camera. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_a247569412382488a86d7678abd386385}{get\+World\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec3 -\/ The world position of the camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a9fcd2f485319974491921b2ce988ae8b}\label{class_owl_engine_1_1_camera_a9fcd2f485319974491921b2ce988ae8b}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_a9fcd2f485319974491921b2ce988ae8b}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a8d71bccacbe94790854532133aa92332}\label{class_owl_engine_1_1_camera_a8d71bccacbe94790854532133aa92332}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+on\+Detach 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_ae9a617053a904c8640cd572c28759463}\label{class_owl_engine_1_1_camera_ae9a617053a904c8640cd572c28759463}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_ae9a617053a904c8640cd572c28759463}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a1da852a8bc4612b7f86fdecff923c6e3}\label{class_owl_engine_1_1_camera_a1da852a8bc4612b7f86fdecff923c6e3}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_a1da852a8bc4612b7f86fdecff923c6e3}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_af1ae7cfd69a3e8c4333b4b4b87bc2a1e}\label{class_owl_engine_1_1_camera_af1ae7cfd69a3e8c4333b4b4b87bc2a1e}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!setCameraData@{setCameraData}}
+\index{setCameraData@{setCameraData}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{setCameraData()}{setCameraData()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::set\+Camera\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_owl_engine_1_1_camera_data}{Camera\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Set the camera data. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_af1ae7cfd69a3e8c4333b4b4b87bc2a1e}{set\+Camera\+Data()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a const \mbox{\hyperlink{struct_owl_engine_1_1_camera_data}{Camera\+Data}}\& -\/ The new camera data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_af18b751b10d253a1c51c9bd386b0da9f}\label{class_owl_engine_1_1_camera_af18b751b10d253a1c51c9bd386b0da9f}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!setClearColour@{setClearColour}}
+\index{setClearColour@{setClearColour}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{setClearColour()}{setClearColour()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::set\+Clear\+Colour (\begin{DoxyParamCaption}\item[{const glm\+::vec4 \&}]{colour }\end{DoxyParamCaption})}
+
+
+
+Set the clear colour. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_af18b751b10d253a1c51c9bd386b0da9f}{set\+Clear\+Colour()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em colour} & a const glm\+::vec4\& -\/ The clear colour \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_abc0d2a69a94dea7c6d3c9bfe375d9def}\label{class_owl_engine_1_1_camera_abc0d2a69a94dea7c6d3c9bfe375d9def}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!setMainCamera@{setMainCamera}}
+\index{setMainCamera@{setMainCamera}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{setMainCamera()}{setMainCamera()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::set\+Main\+Camera (\begin{DoxyParamCaption}\item[{const bool}]{main\+Camera }\end{DoxyParamCaption})}
+
+
+
+Set if this camera is the main camera. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_abc0d2a69a94dea7c6d3c9bfe375d9def}{set\+Main\+Camera()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em main\+Camera} & a const bool -\/ Is this the main camera \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a788a898b3e9f9e080879b30ef4135498}\label{class_owl_engine_1_1_camera_a788a898b3e9f9e080879b30ef4135498}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!setProjection@{setProjection}}
+\index{setProjection@{setProjection}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{setProjection()}{setProjection()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::set\+Projection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_owl_engine_1_1_projection}{Projection}} \&}]{projection }\end{DoxyParamCaption})}
+
+
+
+Set the projection data. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_a788a898b3e9f9e080879b30ef4135498}{set\+Projection()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em projection} & a const \mbox{\hyperlink{struct_owl_engine_1_1_projection}{Projection}}\& -\/ The new projection data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_ac500eca5408801617868045e75641e16}\label{class_owl_engine_1_1_camera_ac500eca5408801617868045e75641e16}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!setSkybox@{setSkybox}}
+\index{setSkybox@{setSkybox}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{setSkybox()}{setSkybox()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::set\+Skybox (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_skybox}{Skybox}} $\ast$}]{skybox }\end{DoxyParamCaption})}
+
+
+
+Set the attatched skybox. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_ac500eca5408801617868045e75641e16}{set\+Skybox()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em skybox} & a Skybox$\ast$ -\/ Pointer to attatched skybox \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_camera_a025ba6ea107fd36a6f8e9844317fb108}\label{class_owl_engine_1_1_camera_a025ba6ea107fd36a6f8e9844317fb108}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!updateCameraVectors@{updateCameraVectors}}
+\index{updateCameraVectors@{updateCameraVectors}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{updateCameraVectors()}{updateCameraVectors()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::update\+Camera\+Vectors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update all camera vectors. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_a025ba6ea107fd36a6f8e9844317fb108}{update\+Camera\+Vectors()}} \mbox{\Hypertarget{class_owl_engine_1_1_camera_ab531a4e5263ef9f33bc21826dc0e6179}\label{class_owl_engine_1_1_camera_ab531a4e5263ef9f33bc21826dc0e6179}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!updateProjection@{updateProjection}}
+\index{updateProjection@{updateProjection}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{updateProjection()}{updateProjection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::update\+Projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update the projection. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_ab531a4e5263ef9f33bc21826dc0e6179}{update\+Projection()}} \mbox{\Hypertarget{class_owl_engine_1_1_camera_a3cc16f7ae3abbe4be4afdd6f35c5e908}\label{class_owl_engine_1_1_camera_a3cc16f7ae3abbe4be4afdd6f35c5e908}} 
+\index{OwlEngine::Camera@{OwlEngine::Camera}!updateProjection@{updateProjection}}
+\index{updateProjection@{updateProjection}!OwlEngine::Camera@{OwlEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{updateProjection()}{updateProjection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Camera\+::update\+Projection (\begin{DoxyParamCaption}\item[{glm\+::ivec2}]{size }\end{DoxyParamCaption})}
+
+
+
+Update the projection. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_camera_ab531a4e5263ef9f33bc21826dc0e6179}{update\+Projection()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & a glm\+::ivec2 -\/ The new viewport size \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{camera_8h}{camera.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{camera_8cpp}{camera.\+cpp}}\end{DoxyCompactItemize}

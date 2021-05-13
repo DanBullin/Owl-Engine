@@ -1,0 +1,113 @@
+\hypertarget{class_hawk_engine_1_1_mesh}{}\doxysection{Hawk\+Engine\+::Mesh Class Reference}
+\label{class_hawk_engine_1_1_mesh}\index{HawkEngine::Mesh@{HawkEngine::Mesh}}
+
+
+A mesh class that contains all the vertices and indices.  
+
+
+
+
+{\ttfamily \#include $<$mesh.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh_a7d2808efca98c9a63e414bdb900e7955}{Mesh}} (const std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex3_d}{Vertex3D}} $>$ \&vertices, const std\+::vector$<$ unsigned int $>$ \&indices)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh_a938fac310e0de7a021324fd4aa5bcc30}{$\sim$\+Mesh}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_mesh_aa25a5392b8c1f004fcff4f317e11af0c}{get\+Indices\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the indices count. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex3_d}{Vertex3D}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_mesh_a573b072fad27ae1ad7953dae5c86f6fc}{get\+Vertices}} ()
+\begin{DoxyCompactList}\small\item\em Get the vertices. \end{DoxyCompactList}\item 
+std\+::vector$<$ unsigned int $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_mesh_a5a1c30a0a284595cee3b6314d57afb5c}{get\+Indices}} ()
+\begin{DoxyCompactList}\small\item\em Get the indices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A mesh class that contains all the vertices and indices. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh_a7d2808efca98c9a63e414bdb900e7955}\label{class_hawk_engine_1_1_mesh_a7d2808efca98c9a63e414bdb900e7955}} 
+\index{HawkEngine::Mesh@{HawkEngine::Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!HawkEngine::Mesh@{HawkEngine::Mesh}}
+\doxysubsubsection{\texorpdfstring{Mesh()}{Mesh()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex3_d}{Vertex3D}} $>$ \&}]{vertices,  }\item[{const std\+::vector$<$ unsigned int $>$ \&}]{indices }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh_a7d2808efca98c9a63e414bdb900e7955}{Mesh()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a const std\+::vector$<$\+Vertex3\+D$>$\& -\/ List of all the vertices \\
+\hline
+{\em indices} & a const std\+::vector$<$unsigned int$>$\& -\/ List of all the indices \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh_a938fac310e0de7a021324fd4aa5bcc30}\label{class_hawk_engine_1_1_mesh_a938fac310e0de7a021324fd4aa5bcc30}} 
+\index{HawkEngine::Mesh@{HawkEngine::Mesh}!````~Mesh@{$\sim$Mesh}}
+\index{````~Mesh@{$\sim$Mesh}!HawkEngine::Mesh@{HawkEngine::Mesh}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mesh()}{~Mesh()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Mesh\+::$\sim$\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh_a938fac310e0de7a021324fd4aa5bcc30}{$\sim$\+Mesh()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh_a5a1c30a0a284595cee3b6314d57afb5c}\label{class_hawk_engine_1_1_mesh_a5a1c30a0a284595cee3b6314d57afb5c}} 
+\index{HawkEngine::Mesh@{HawkEngine::Mesh}!getIndices@{getIndices}}
+\index{getIndices@{getIndices}!HawkEngine::Mesh@{HawkEngine::Mesh}}
+\doxysubsubsection{\texorpdfstring{getIndices()}{getIndices()}}
+{\footnotesize\ttfamily std\+::vector$<$ unsigned int $>$ \& Hawk\+Engine\+::\+Mesh\+::get\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the indices. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh_a5a1c30a0a284595cee3b6314d57afb5c}{get\+Indices()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$unsigned int$>$\& -\/ A reference to all the indices in the mesh 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh_aa25a5392b8c1f004fcff4f317e11af0c}\label{class_hawk_engine_1_1_mesh_aa25a5392b8c1f004fcff4f317e11af0c}} 
+\index{HawkEngine::Mesh@{HawkEngine::Mesh}!getIndicesCount@{getIndicesCount}}
+\index{getIndicesCount@{getIndicesCount}!HawkEngine::Mesh@{HawkEngine::Mesh}}
+\doxysubsubsection{\texorpdfstring{getIndicesCount()}{getIndicesCount()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Hawk\+Engine\+::\+Mesh\+::get\+Indices\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the indices count. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh_aa25a5392b8c1f004fcff4f317e11af0c}{get\+Indices\+Count()}}
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The number of indices the mesh has 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mesh_a573b072fad27ae1ad7953dae5c86f6fc}\label{class_hawk_engine_1_1_mesh_a573b072fad27ae1ad7953dae5c86f6fc}} 
+\index{HawkEngine::Mesh@{HawkEngine::Mesh}!getVertices@{getVertices}}
+\index{getVertices@{getVertices}!HawkEngine::Mesh@{HawkEngine::Mesh}}
+\doxysubsubsection{\texorpdfstring{getVertices()}{getVertices()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex3_d}{Vertex3D}} $>$ \& Hawk\+Engine\+::\+Mesh\+::get\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the vertices. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_mesh_a573b072fad27ae1ad7953dae5c86f6fc}{get\+Vertices()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Vertex3\+D$>$\& -\/ A reference to all the vertices in the mesh 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/geometry/\mbox{\hyperlink{mesh_8h}{mesh.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/geometry/\mbox{\hyperlink{mesh_8cpp}{mesh.\+cpp}}\end{DoxyCompactItemize}

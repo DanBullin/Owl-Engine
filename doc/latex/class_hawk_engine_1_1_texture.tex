@@ -1,0 +1,243 @@
+\hypertarget{class_hawk_engine_1_1_texture}{}\doxysection{Hawk\+Engine\+::Texture Class Reference}
+\label{class_hawk_engine_1_1_texture}\index{HawkEngine::Texture@{HawkEngine::Texture}}
+
+
+An A\+PI agnostic texture.  
+
+
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_texture}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a65ea93f3327bb05b66fa87d1f1dc61e8}\label{class_hawk_engine_1_1_texture_a65ea93f3327bb05b66fa87d1f1dc61e8}} 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_texture_a65ea93f3327bb05b66fa87d1f1dc61e8}{$\sim$\+Texture}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_texture_a7851cf8942733eec0d582c04ade88b09}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture ID. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_texture_a6e5568ad7389fd0babdef5a4cb299046}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture width. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_texture_ab5925dcb4dec70b97890f088b92c9afd}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture height. \end{DoxyCompactList}\item 
+virtual const float \mbox{\hyperlink{class_hawk_engine_1_1_texture_a6a27c3e767d89f0ceeac9b96b4c5939d}{get\+Widthf}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture width. \end{DoxyCompactList}\item 
+virtual const float \mbox{\hyperlink{class_hawk_engine_1_1_texture_a3a6a90276686a2c55e6b95bee71005f4}{get\+Heightf}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture height. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_texture_a462f88319a3553ae3ac48e2cae458b87}{get\+Channels}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture\textquotesingle{}s number of channels. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_texture_a95c84e33b09b283c187bdc04cb2e1337}{edit}} (const uint32\+\_\+t offsetX, const uint32\+\_\+t offsetY, const uint32\+\_\+t width, const uint32\+\_\+t height, const unsigned char $\ast$data)=0
+\begin{DoxyCompactList}\small\item\em Edit the texture data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_texture_a5ecf2bdcb75ed7d17951f55475798c2f}{bind}} (const uint32\+\_\+t slot=0)=0
+\begin{DoxyCompactList}\small\item\em Bind the texture to a texture unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_texture_a5081f466e66faa1a30b3b11f78994dbb}{create}} (const \mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}} \&properties, const uint32\+\_\+t channels, unsigned char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Create a texture. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_texture_a643813c997d5dd4e4fd445a77f852525}{create}} (const char $\ast$file\+Path, \mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}} \&properties)
+\begin{DoxyCompactList}\small\item\em Create a texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_ab39e504201cf4c8cff247ef278f444fc}\label{class_hawk_engine_1_1_texture_ab39e504201cf4c8cff247ef278f444fc}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_texture_ab39e504201cf4c8cff247ef278f444fc}{m\+\_\+texture\+ID}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a0a5641edc74ff8156ea8a6f7d532671b}\label{class_hawk_engine_1_1_texture_a0a5641edc74ff8156ea8a6f7d532671b}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_texture_a0a5641edc74ff8156ea8a6f7d532671b}{m\+\_\+width}}
+\begin{DoxyCompactList}\small\item\em The width of the texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a4acfcafe20836eddd04ce7a23cb598e9}\label{class_hawk_engine_1_1_texture_a4acfcafe20836eddd04ce7a23cb598e9}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_texture_a4acfcafe20836eddd04ce7a23cb598e9}{m\+\_\+height}}
+\begin{DoxyCompactList}\small\item\em The height of the texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a304605ec2067a992a9217ed9ca99c44b}\label{class_hawk_engine_1_1_texture_a304605ec2067a992a9217ed9ca99c44b}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_texture_a304605ec2067a992a9217ed9ca99c44b}{m\+\_\+channels}}
+\begin{DoxyCompactList}\small\item\em The number of channels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic texture. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a5ecf2bdcb75ed7d17951f55475798c2f}\label{class_hawk_engine_1_1_texture_a5ecf2bdcb75ed7d17951f55475798c2f}} 
+\index{HawkEngine::Texture@{HawkEngine::Texture}!bind@{bind}}
+\index{bind@{bind}!HawkEngine::Texture@{HawkEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Texture\+::bind (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{slot = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bind the texture to a texture unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & a const uint32\+\_\+t -\/ Bind the texture to texture unit \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_texture_a69fc21aaa2ffed63443043dad61dfd3e}{Hawk\+Engine\+::\+Open\+G\+L\+Texture}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a643813c997d5dd4e4fd445a77f852525}\label{class_hawk_engine_1_1_texture_a643813c997d5dd4e4fd445a77f852525}} 
+\index{HawkEngine::Texture@{HawkEngine::Texture}!create@{create}}
+\index{create@{create}!HawkEngine::Texture@{HawkEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $\ast$ Hawk\+Engine\+::\+Texture\+::create (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Path,  }\item[{\mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}} \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a texture. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_a5081f466e66faa1a30b3b11f78994dbb}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const char$\ast$ -\/ The filepath of the texture \\
+\hline
+{\em properties} & a \mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}}\& -\/ A reference to the properties of the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Texture$\ast$ -\/ The texture of type defined by the graphics A\+PI chosen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a5081f466e66faa1a30b3b11f78994dbb}\label{class_hawk_engine_1_1_texture_a5081f466e66faa1a30b3b11f78994dbb}} 
+\index{HawkEngine::Texture@{HawkEngine::Texture}!create@{create}}
+\index{create@{create}!HawkEngine::Texture@{HawkEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $\ast$ Hawk\+Engine\+::\+Texture\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}} \&}]{properties,  }\item[{const uint32\+\_\+t}]{channels,  }\item[{unsigned char $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a texture. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_a5081f466e66faa1a30b3b11f78994dbb}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & a const \mbox{\hyperlink{struct_hawk_engine_1_1_texture_properties}{Texture\+Properties}}\& -\/ A reference to the properties of the texture \\
+\hline
+{\em channels} & a const uint32\+\_\+t -\/ The number of channels in the texture data \\
+\hline
+{\em data} & an unsigned char$\ast$ -\/ The data of the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Texture$\ast$ -\/ The texture of type defined by the graphics A\+PI chosen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a95c84e33b09b283c187bdc04cb2e1337}\label{class_hawk_engine_1_1_texture_a95c84e33b09b283c187bdc04cb2e1337}} 
+\index{HawkEngine::Texture@{HawkEngine::Texture}!edit@{edit}}
+\index{edit@{edit}!HawkEngine::Texture@{HawkEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Texture\+::edit (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{offsetX,  }\item[{const uint32\+\_\+t}]{offsetY,  }\item[{const uint32\+\_\+t}]{width,  }\item[{const uint32\+\_\+t}]{height,  }\item[{const unsigned char $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Edit the texture data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offsetX} & a const uint32\+\_\+t -\/ The x offset in memory to edit \\
+\hline
+{\em offsetY} & a const uint32\+\_\+t -\/ The y offset in memory to edit \\
+\hline
+{\em width} & a const uint32\+\_\+t -\/ The width of the texture \\
+\hline
+{\em height} & a const uint32\+\_\+t -\/ The height of the texture \\
+\hline
+{\em data} & a const unsigned char$\ast$ -\/ A pointer to the data to store \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_texture_a26871cfb47982eb3cc743d09b551fac6}{Hawk\+Engine\+::\+Open\+G\+L\+Texture}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a462f88319a3553ae3ac48e2cae458b87}\label{class_hawk_engine_1_1_texture_a462f88319a3553ae3ac48e2cae458b87}} 
+\index{HawkEngine::Texture@{HawkEngine::Texture}!getChannels@{getChannels}}
+\index{getChannels@{getChannels}!HawkEngine::Texture@{HawkEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{getChannels()}{getChannels()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Texture\+::get\+Channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the texture\textquotesingle{}s number of channels. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The number of channels in the texture data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_ab5925dcb4dec70b97890f088b92c9afd}\label{class_hawk_engine_1_1_texture_ab5925dcb4dec70b97890f088b92c9afd}} 
+\index{HawkEngine::Texture@{HawkEngine::Texture}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!HawkEngine::Texture@{HawkEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Texture\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the texture height. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The height of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a3a6a90276686a2c55e6b95bee71005f4}\label{class_hawk_engine_1_1_texture_a3a6a90276686a2c55e6b95bee71005f4}} 
+\index{HawkEngine::Texture@{HawkEngine::Texture}!getHeightf@{getHeightf}}
+\index{getHeightf@{getHeightf}!HawkEngine::Texture@{HawkEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{getHeightf()}{getHeightf()}}
+{\footnotesize\ttfamily virtual const float Hawk\+Engine\+::\+Texture\+::get\+Heightf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the texture height. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The height of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a7851cf8942733eec0d582c04ade88b09}\label{class_hawk_engine_1_1_texture_a7851cf8942733eec0d582c04ade88b09}} 
+\index{HawkEngine::Texture@{HawkEngine::Texture}!getID@{getID}}
+\index{getID@{getID}!HawkEngine::Texture@{HawkEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Texture\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the texture ID. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The ID of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a6e5568ad7389fd0babdef5a4cb299046}\label{class_hawk_engine_1_1_texture_a6e5568ad7389fd0babdef5a4cb299046}} 
+\index{HawkEngine::Texture@{HawkEngine::Texture}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!HawkEngine::Texture@{HawkEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Texture\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the texture width. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The width of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_a6a27c3e767d89f0ceeac9b96b4c5939d}\label{class_hawk_engine_1_1_texture_a6a27c3e767d89f0ceeac9b96b4c5939d}} 
+\index{HawkEngine::Texture@{HawkEngine::Texture}!getWidthf@{getWidthf}}
+\index{getWidthf@{getWidthf}!HawkEngine::Texture@{HawkEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{getWidthf()}{getWidthf()}}
+{\footnotesize\ttfamily virtual const float Hawk\+Engine\+::\+Texture\+::get\+Widthf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the texture width. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The width of the texture 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/textures/\mbox{\hyperlink{texture_8h}{texture.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/textures/\mbox{\hyperlink{texture_8cpp}{texture.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,180 @@
+\hypertarget{class_monster}{}\doxysection{Monster Class Reference}
+\label{class_monster}\index{Monster@{Monster}}
+
+
+The monster script.  
+
+
+
+
+{\ttfamily \#include $<$monster.\+h$>$}
+
+Inheritance diagram for Monster\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_monster}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_monster_a3dfc253fbec8331d42ac13c20bf9425f}{Monster}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_monster_ada9ca3b5b66bfc2d2e1dde9946ff6969}\label{class_monster_ada9ca3b5b66bfc2d2e1dde9946ff6969}} 
+\mbox{\hyperlink{class_monster_ada9ca3b5b66bfc2d2e1dde9946ff6969}{Monster}} (nlohmann\+::json script\+Data)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_monster_a21619ba1759b910cd2fd50d858aab338}{$\sim$\+Monster}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_monster_a2f4a7fcada931e10f25165c5c34f62a8}\label{class_monster_a2f4a7fcada931e10f25165c5c34f62a8}} 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_monster_a2f4a7fcada931e10f25165c5c34f62a8}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the script in J\+S\+ON format. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_monster_a82e1af8f430951cd726518081a08544b}\label{class_monster_a82e1af8f430951cd726518081a08544b}} 
+void \mbox{\hyperlink{class_monster_a82e1af8f430951cd726518081a08544b}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em on\+Attach \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monster_ae51edbb6c47394bce2838e3b7f178f63}{on\+Pre\+Update}} (float timestep, float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call before game update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monster_a0a973d6376fbbafe7d666bf7d6234081}{on\+Post\+Update}} (float timestep, float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call after game update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monster_ad6759f6ea79336c048359217042cd294}{on\+Trigger}} (\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$overlap\+Entity) override
+\begin{DoxyCompactList}\small\item\em On overlap with R\+P3D trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monster_aa6c271b9c7924eeb91390f4aee745e9d}{display\+Im\+Gui}} ()
+\begin{DoxyCompactList}\small\item\em The Im\+G\+UI display controls for this component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_monster_a2c26a2eed1fd3d4679731253fb8d17c3}{move\+To\+Node}} (\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$target\+Node, float timestep)
+\begin{DoxyCompactList}\small\item\em Move towards a given target entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_monster_a8e3dd30a5ee1b967defd463314d459b1}\label{class_monster_a8e3dd30a5ee1b967defd463314d459b1}} 
+void \mbox{\hyperlink{class_monster_a8e3dd30a5ee1b967defd463314d459b1}{update\+Movement\+Node\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em Call to update the monsters attached movement nodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The monster script. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_monster_a3dfc253fbec8331d42ac13c20bf9425f}\label{class_monster_a3dfc253fbec8331d42ac13c20bf9425f}} 
+\index{Monster@{Monster}!Monster@{Monster}}
+\index{Monster@{Monster}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{Monster()}{Monster()}}
+{\footnotesize\ttfamily Monster\+::\+Monster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_monster_a3dfc253fbec8331d42ac13c20bf9425f}{Monster()}} \mbox{\Hypertarget{class_monster_a21619ba1759b910cd2fd50d858aab338}\label{class_monster_a21619ba1759b910cd2fd50d858aab338}} 
+\index{Monster@{Monster}!````~Monster@{$\sim$Monster}}
+\index{````~Monster@{$\sim$Monster}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{$\sim$Monster()}{~Monster()}}
+{\footnotesize\ttfamily Monster\+::$\sim$\+Monster (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_monster_a21619ba1759b910cd2fd50d858aab338}{$\sim$\+Monster()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_monster_aa6c271b9c7924eeb91390f4aee745e9d}\label{class_monster_aa6c271b9c7924eeb91390f4aee745e9d}} 
+\index{Monster@{Monster}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Monster\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The Im\+G\+UI display controls for this component. 
+
+\mbox{\hyperlink{class_monster_aa6c271b9c7924eeb91390f4aee745e9d}{display\+Im\+Gui()}} 
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a04032a08abd5b84edd8e5dbffbe61971}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_monster_a2c26a2eed1fd3d4679731253fb8d17c3}\label{class_monster_a2c26a2eed1fd3d4679731253fb8d17c3}} 
+\index{Monster@{Monster}!moveToNode@{moveToNode}}
+\index{moveToNode@{moveToNode}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{moveToNode()}{moveToNode()}}
+{\footnotesize\ttfamily void Monster\+::move\+To\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$}]{target\+Node,  }\item[{float}]{timestep }\end{DoxyParamCaption})}
+
+
+
+Move towards a given target entity. 
+
+\mbox{\hyperlink{class_monster_a2c26a2eed1fd3d4679731253fb8d17c3}{move\+To\+Node()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Node} & a Entity$\ast$ -\/ Pointer to targeted entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_monster_a0a973d6376fbbafe7d666bf7d6234081}\label{class_monster_a0a973d6376fbbafe7d666bf7d6234081}} 
+\index{Monster@{Monster}!onPostUpdate@{onPostUpdate}}
+\index{onPostUpdate@{onPostUpdate}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{onPostUpdate()}{onPostUpdate()}}
+{\footnotesize\ttfamily void Monster\+::on\+Post\+Update (\begin{DoxyParamCaption}\item[{float}]{timestep,  }\item[{float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call after game update. 
+
+\mbox{\hyperlink{class_monster_a0a973d6376fbbafe7d666bf7d6234081}{on\+Post\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a72322920d1ad5b3fa18efe237b68ebef}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_monster_ae51edbb6c47394bce2838e3b7f178f63}\label{class_monster_ae51edbb6c47394bce2838e3b7f178f63}} 
+\index{Monster@{Monster}!onPreUpdate@{onPreUpdate}}
+\index{onPreUpdate@{onPreUpdate}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{onPreUpdate()}{onPreUpdate()}}
+{\footnotesize\ttfamily void Monster\+::on\+Pre\+Update (\begin{DoxyParamCaption}\item[{float}]{timestep,  }\item[{float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call before game update. 
+
+\mbox{\hyperlink{class_monster_ae51edbb6c47394bce2838e3b7f178f63}{on\+Pre\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a2701d4b32ce0be26b5da26929ccb1e07}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_monster_ad6759f6ea79336c048359217042cd294}\label{class_monster_ad6759f6ea79336c048359217042cd294}} 
+\index{Monster@{Monster}!onTrigger@{onTrigger}}
+\index{onTrigger@{onTrigger}!Monster@{Monster}}
+\doxysubsubsection{\texorpdfstring{onTrigger()}{onTrigger()}}
+{\footnotesize\ttfamily void Monster\+::on\+Trigger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$}]{overlap\+Entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+On overlap with R\+P3D trigger. 
+
+\mbox{\hyperlink{class_monster_ad6759f6ea79336c048359217042cd294}{on\+Trigger()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Entity} & a Entity$\ast$ -\/ Pointer to other entity in collision \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a94bc9c6ce133c0a53465841b4630ec3e}{Owl\+Engine\+::\+Native\+Script}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/sandbox/include/scripts/game\+Objects/monster.\+h\item 
+C\+:/doc/src/sandbox/src/scripts/game\+Objects/\mbox{\hyperlink{monster_8cpp}{monster.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{7b7146a9-7965-4e2c-9483-4a02b9d83945}">
+		<property name="assetPath">
+			<value>Ambient/Flashlight_Click.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.17904166666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5033613f-b813-4094-b787-2fb291559bd7}</destination>
+		</relationship>
+	</object>
+</objects>

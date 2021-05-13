@@ -1,0 +1,144 @@
+{
+	"sounds": 
+	[
+		
+	],
+	
+	"banks": 
+	[
+		{ 
+			"name": "master", 
+			"soundFilePath": "assets/sounds/Master.Bank",
+			"flag": 0
+		},
+		{ 
+			"name": "master_strings", 
+			"soundFilePath": "assets/sounds/Master.strings.Bank",
+			"flag": 0
+		},
+		{ 
+			"name": "Ambient", 
+			"soundFilePath": "assets/sounds/Ambient.Bank",
+			"flag": 0
+		},
+		{ 
+			"name": "Player", 
+			"soundFilePath": "assets/sounds/Player.Bank",
+			"flag": 0
+		},
+		{ 
+			"name": "Monster", 
+			"soundFilePath": "assets/sounds/Monster.Bank",
+			"flag": 0
+		},
+		{ 
+			"name": "Menu", 
+			"soundFilePath": "assets/sounds/Menu.Bank",
+			"flag": 0
+		}
+	],
+	
+	"events": 
+	[
+		{ 
+			"name": "scared_breath", 
+			"eventPath": "event:/Player/scared_breath"
+		},
+		{ 
+			"name": "door_open", 
+			"eventPath": "event:/Ambient/door_open"
+		},
+		{ 
+			"name": "player_footsteps1", 
+			"eventPath": "event:/Player/footsteps_water1"
+		},
+		{ 
+			"name": "player_footsteps2", 
+			"eventPath": "event:/Player/footsteps_water2"
+		},
+		{ 
+			"name": "player_footsteps3", 
+			"eventPath": "event:/Player/footsteps_water3"
+		},
+		{ 
+			"name": "player_footsteps4", 
+			"eventPath": "event:/Player/footsteps_water4"
+		},
+		{ 
+			"name": "player_footsteps5", 
+			"eventPath": "event:/Player/footsteps_water1"
+		},
+		{ 
+			"name": "player_footsteps6", 
+			"eventPath": "event:/Player/footsteps_water2"
+		},
+		{ 
+			"name": "player_footsteps7", 
+			"eventPath": "event:/Player/footsteps_water3"
+		},
+		{ 
+			"name": "player_footsteps8", 
+			"eventPath": "event:/Player/footsteps_water4"
+		},
+		{ 
+			"name": "player_footsteps9", 
+			"eventPath": "event:/Player/footsteps_water1"
+		},
+		{ 
+			"name": "player_footsteps10", 
+			"eventPath": "event:/Player/footsteps_water2"
+		},
+		{ 
+			"name": "player_footsteps11", 
+			"eventPath": "event:/Player/footsteps_water3"
+		},
+		{ 
+			"name": "player_footsteps12", 
+			"eventPath": "event:/Player/footsteps_water4"
+		},
+		{ 
+			"name": "player_death", 
+			"eventPath": "event:/Player/Player_Death"
+		},
+		{ 
+			"name": "monster_scream", 
+			"eventPath": "event:/Monster/monster_scream"
+		},
+		{ 
+			"name": "click", 
+			"eventPath": "event:/Menu/click"
+		},
+		{ 
+			"name": "menu_music", 
+			"eventPath": "event:/Menu/spooky_menu"
+		},
+		{ 
+			"name": "elevator_music", 
+			"eventPath": "event:/Menu/elevator_music"
+		},
+		{ 
+			"name": "pause_game", 
+			"eventPath": "event:/Menu/pause_game"
+		},
+		{ 
+			"name": "card_accepted", 
+			"eventPath": "event:/Ambient/Card_Accepted"
+		},
+		{ 
+			"name": "card_denied", 
+			"eventPath": "event:/Ambient/Card_Denied"
+		},
+		{ 
+			"name": "flashlight_click", 
+			"eventPath": "event:/Ambient/Flashlight_Click"
+		},
+		{ 
+			"name": "item_pickup", 
+			"eventPath": "event:/Ambient/Item_Pickup"
+		},
+		{ 
+			"name": "paper", 
+			"eventPath": "event:/Ambient/Paper"
+		}
+	]
+}

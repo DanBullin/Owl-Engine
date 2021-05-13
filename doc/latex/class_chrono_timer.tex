@@ -1,0 +1,51 @@
+\hypertarget{class_chrono_timer}{}\doxysection{Chrono\+Timer Class Reference}
+\label{class_chrono_timer}\index{ChronoTimer@{ChronoTimer}}
+
+
+A choro timer class which can measure time. Used to get F\+PS or time a piece of code execution.  
+
+
+
+
+{\ttfamily \#include $<$timer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_chrono_timer_a0581453f45ec2adca694decf55925948}\label{class_chrono_timer_a0581453f45ec2adca694decf55925948}} 
+void \mbox{\hyperlink{class_chrono_timer_a0581453f45ec2adca694decf55925948}{start}} ()
+\begin{DoxyCompactList}\small\item\em Reset the chrono timer. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_chrono_timer_a5e5e12fc1a0810e57e5000cc01d75749}{get\+Elapsed\+Time}} (const bool restart)
+\begin{DoxyCompactList}\small\item\em Get the current elapsed time from when it was reset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A choro timer class which can measure time. Used to get F\+PS or time a piece of code execution. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_chrono_timer_a5e5e12fc1a0810e57e5000cc01d75749}\label{class_chrono_timer_a5e5e12fc1a0810e57e5000cc01d75749}} 
+\index{ChronoTimer@{ChronoTimer}!getElapsedTime@{getElapsedTime}}
+\index{getElapsedTime@{getElapsedTime}!ChronoTimer@{ChronoTimer}}
+\doxysubsubsection{\texorpdfstring{getElapsedTime()}{getElapsedTime()}}
+{\footnotesize\ttfamily const float Chrono\+Timer\+::get\+Elapsed\+Time (\begin{DoxyParamCaption}\item[{const bool}]{restart }\end{DoxyParamCaption})}
+
+
+
+Get the current elapsed time from when it was reset. 
+
+\mbox{\hyperlink{class_chrono_timer_a5e5e12fc1a0810e57e5000cc01d75749}{get\+Elapsed\+Time()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em restart} & a const bool -\/ Restart the timer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const float -\/ The time in seconds 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/core/\mbox{\hyperlink{timer_8h}{timer.\+h}}\item 
+C\+:/doc/src/src/core/\mbox{\hyperlink{timer_8cpp}{timer.\+cpp}}\end{DoxyCompactItemize}

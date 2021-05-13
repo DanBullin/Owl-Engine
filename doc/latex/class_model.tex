@@ -1,0 +1,94 @@
+\hypertarget{class_model}{}\doxysection{Model Class Reference}
+\label{class_model}\index{Model@{Model}}
+
+
+A model class that contains all the meshes of the model.  
+
+
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_mesh}{Mesh}} $>$ $>$ \& \mbox{\hyperlink{class_model_ada9ef29e8581a73f66655ff2b788440b}{get\+Meshes}} ()
+\begin{DoxyCompactList}\small\item\em Get the list of meshes as a reference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a2dcbf4ee0607de521bbeba534d3a232e}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destory the meshes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_ac1b343e7331d8e44c7bb778cace2b35b}{submit\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Submit the data to the buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A model class that contains all the meshes of the model. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_model_ae3b375de5f6df4faf74a95d64748e048}\label{class_model_ae3b375de5f6df4faf74a95d64748e048}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model()}} \mbox{\Hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}\label{class_model_ad6ebd2062a0b823db841a0b88baac4c0}} 
+\index{Model@{Model}!````~Model@{$\sim$Model}}
+\index{````~Model@{$\sim$Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{$\sim$Model()}{~Model()}}
+{\footnotesize\ttfamily Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_a2dcbf4ee0607de521bbeba534d3a232e}\label{class_model_a2dcbf4ee0607de521bbeba534d3a232e}} 
+\index{Model@{Model}!destroy@{destroy}}
+\index{destroy@{destroy}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Model\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destory the meshes. 
+
+\mbox{\hyperlink{class_model_a2dcbf4ee0607de521bbeba534d3a232e}{destroy()}} \mbox{\Hypertarget{class_model_ada9ef29e8581a73f66655ff2b788440b}\label{class_model_ada9ef29e8581a73f66655ff2b788440b}} 
+\index{Model@{Model}!getMeshes@{getMeshes}}
+\index{getMeshes@{getMeshes}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getMeshes()}{getMeshes()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_mesh}{Mesh}} $>$ $>$ \& Model\+::get\+Meshes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the list of meshes as a reference. 
+
+\mbox{\hyperlink{class_model_ada9ef29e8581a73f66655ff2b788440b}{get\+Meshes()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$std\+::shared\+\_\+ptr$<$\+Mesh$>$$>$\& -\/ The reference to a vector of meshes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_ac1b343e7331d8e44c7bb778cace2b35b}\label{class_model_ac1b343e7331d8e44c7bb778cace2b35b}} 
+\index{Model@{Model}!submitData@{submitData}}
+\index{submitData@{submitData}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{submitData()}{submitData()}}
+{\footnotesize\ttfamily void Model\+::submit\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Submit the data to the buffers. 
+
+\mbox{\hyperlink{class_model_ac1b343e7331d8e44c7bb778cace2b35b}{submit\+Data()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/rendering/geometry/\mbox{\hyperlink{model_8h}{model.\+h}}\item 
+C\+:/doc/src/src/rendering/geometry/\mbox{\hyperlink{model_8cpp}{model.\+cpp}}\end{DoxyCompactItemize}

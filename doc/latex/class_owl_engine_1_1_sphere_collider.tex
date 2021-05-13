@@ -1,0 +1,287 @@
+\hypertarget{class_owl_engine_1_1_sphere_collider}{}\doxysection{Owl\+Engine\+::Sphere\+Collider Class Reference}
+\label{class_owl_engine_1_1_sphere_collider}\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+
+
+A sphere collider entity component that attaches to a rigidbody. Uses React\+Physics3D.  
+
+
+
+
+{\ttfamily \#include $<$sphere\+Collider.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Sphere\+Collider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_sphere_collider}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a99795b2c33e5e6464c124ac21a4246e8}{Sphere\+Collider}} (const float radius, glm\+::vec3 position)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a241616732b481fef4b432ea608287092}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_aafb31600dd1453be1e1b6e51d34ba5e7}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a6c62382a008864b7add653296030f94e}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_ab4a9371ca8c298ba388685c9c4681362}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+virtual nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_ac077bb4be7c87ed284ae88d1eb5708ef}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data as J\+S\+ON for saving. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a6c0a0970483628b706e1e079c8d0fddd}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data displayed in Im\+Gui form. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_adffd82587e1acde15e6f17cb3f37fef8}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the local position of the collider. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_aa15b043c628d50d989937cd0b9b4d473}{set\+Position}} (glm\+::vec3 position)
+\begin{DoxyCompactList}\small\item\em Sets the local position of the collider. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_ac1b6696308dc1652ccbadcbffce4feda}{get\+Radius}} ()
+\begin{DoxyCompactList}\small\item\em Returns the radius of the collider shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_abe60a5011cb84a4f16c2a8724f89d317}{set\+Radius}} (const float radius)
+\begin{DoxyCompactList}\small\item\em Sets the radius of the collider shape. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a62e25e44fe69c1459aea52a0ffdc2f89}{get\+Is\+Trigger}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if collider is a trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_aece6b92f1a11f609443daed11b37d738}{set\+Is\+Trigger}} (bool is\+Trigger)
+\begin{DoxyCompactList}\small\item\em Set the collider as a trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a04e36065b6904230d3dafa86e7435e12}{on\+Render}} ()
+\begin{DoxyCompactList}\small\item\em Draw the collider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A sphere collider entity component that attaches to a rigidbody. Uses React\+Physics3D. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_a99795b2c33e5e6464c124ac21a4246e8}\label{class_owl_engine_1_1_sphere_collider_a99795b2c33e5e6464c124ac21a4246e8}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!SphereCollider@{SphereCollider}}
+\index{SphereCollider@{SphereCollider}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{SphereCollider()}{SphereCollider()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Sphere\+Collider\+::\+Sphere\+Collider (\begin{DoxyParamCaption}\item[{const float}]{radius,  }\item[{glm\+::vec3}]{position }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a99795b2c33e5e6464c124ac21a4246e8}{Sphere\+Collider()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & a const float -\/ The radius of the colliders sphere shape \\
+\hline
+{\em position} & a glm\+::vec3 -\/ The local position of the collider (Relative to the rigidbody) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_a6c0a0970483628b706e1e079c8d0fddd}\label{class_owl_engine_1_1_sphere_collider_a6c0a0970483628b706e1e079c8d0fddd}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sphere\+Collider\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data displayed in Im\+Gui form. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a6c0a0970483628b706e1e079c8d0fddd}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_ac077bb4be7c87ed284ae88d1eb5708ef}\label{class_owl_engine_1_1_sphere_collider_ac077bb4be7c87ed284ae88d1eb5708ef}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Sphere\+Collider\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data as J\+S\+ON for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_ac077bb4be7c87ed284ae88d1eb5708ef}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_a62e25e44fe69c1459aea52a0ffdc2f89}\label{class_owl_engine_1_1_sphere_collider_a62e25e44fe69c1459aea52a0ffdc2f89}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!getIsTrigger@{getIsTrigger}}
+\index{getIsTrigger@{getIsTrigger}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{getIsTrigger()}{getIsTrigger()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Sphere\+Collider\+::get\+Is\+Trigger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if collider is a trigger. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a62e25e44fe69c1459aea52a0ffdc2f89}{get\+Is\+Trigger()}}
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the collider a trigger 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_adffd82587e1acde15e6f17cb3f37fef8}\label{class_owl_engine_1_1_sphere_collider_adffd82587e1acde15e6f17cb3f37fef8}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Sphere\+Collider\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the local position of the collider. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_adffd82587e1acde15e6f17cb3f37fef8}{get\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a vec3 -\/ Colliders current position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_ac1b6696308dc1652ccbadcbffce4feda}\label{class_owl_engine_1_1_sphere_collider_ac1b6696308dc1652ccbadcbffce4feda}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!getRadius@{getRadius}}
+\index{getRadius@{getRadius}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{getRadius()}{getRadius()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Sphere\+Collider\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the radius of the collider shape. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_ac1b6696308dc1652ccbadcbffce4feda}{get\+Radius()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The radius of the colliders shape 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_a241616732b481fef4b432ea608287092}\label{class_owl_engine_1_1_sphere_collider_a241616732b481fef4b432ea608287092}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sphere\+Collider\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a241616732b481fef4b432ea608287092}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_aafb31600dd1453be1e1b6e51d34ba5e7}\label{class_owl_engine_1_1_sphere_collider_aafb31600dd1453be1e1b6e51d34ba5e7}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sphere\+Collider\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_aafb31600dd1453be1e1b6e51d34ba5e7}{on\+Detach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_a04e36065b6904230d3dafa86e7435e12}\label{class_owl_engine_1_1_sphere_collider_a04e36065b6904230d3dafa86e7435e12}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!onRender@{onRender}}
+\index{onRender@{onRender}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{onRender()}{onRender()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sphere\+Collider\+::on\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw the collider. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a04e36065b6904230d3dafa86e7435e12}{on\+Render()}} \mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_a6c62382a008864b7add653296030f94e}\label{class_owl_engine_1_1_sphere_collider_a6c62382a008864b7add653296030f94e}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sphere\+Collider\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a6c62382a008864b7add653296030f94e}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_ab4a9371ca8c298ba388685c9c4681362}\label{class_owl_engine_1_1_sphere_collider_ab4a9371ca8c298ba388685c9c4681362}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sphere\+Collider\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_ab4a9371ca8c298ba388685c9c4681362}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_aece6b92f1a11f609443daed11b37d738}\label{class_owl_engine_1_1_sphere_collider_aece6b92f1a11f609443daed11b37d738}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!setIsTrigger@{setIsTrigger}}
+\index{setIsTrigger@{setIsTrigger}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{setIsTrigger()}{setIsTrigger()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sphere\+Collider\+::set\+Is\+Trigger (\begin{DoxyParamCaption}\item[{bool}]{is\+Trigger }\end{DoxyParamCaption})}
+
+
+
+Set the collider as a trigger. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_aece6b92f1a11f609443daed11b37d738}{set\+Is\+Trigger()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Trigger} & -\/ Is the collider a trigger \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_aa15b043c628d50d989937cd0b9b4d473}\label{class_owl_engine_1_1_sphere_collider_aa15b043c628d50d989937cd0b9b4d473}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sphere\+Collider\+::set\+Position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{position }\end{DoxyParamCaption})}
+
+
+
+Sets the local position of the collider. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_aa15b043c628d50d989937cd0b9b4d473}{set\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & a glm\+::vec3 -\/ The local position of the collider \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_sphere_collider_abe60a5011cb84a4f16c2a8724f89d317}\label{class_owl_engine_1_1_sphere_collider_abe60a5011cb84a4f16c2a8724f89d317}} 
+\index{OwlEngine::SphereCollider@{OwlEngine::SphereCollider}!setRadius@{setRadius}}
+\index{setRadius@{setRadius}!OwlEngine::SphereCollider@{OwlEngine::SphereCollider}}
+\doxysubsubsection{\texorpdfstring{setRadius()}{setRadius()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sphere\+Collider\+::set\+Radius (\begin{DoxyParamCaption}\item[{const float}]{radius }\end{DoxyParamCaption})}
+
+
+
+Sets the radius of the collider shape. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_abe60a5011cb84a4f16c2a8724f89d317}{set\+Radius()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em radius} & a const float -\/ The radius of the colliders shape \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{sphere_collider_8h}{sphere\+Collider.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{sphere_collider_8cpp}{sphere\+Collider.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,241 @@
+\hypertarget{class_hawk_engine_1_1_text2_d}{}\doxysection{Hawk\+Engine\+::Text2D Class Reference}
+\label{class_hawk_engine_1_1_text2_d}\index{HawkEngine::Text2D@{HawkEngine::Text2D}}
+
+
+A class to render 2D Text.  
+
+
+
+
+{\ttfamily \#include $<$text2\+D.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Text2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_text2_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a6ec1d0b440863467a4f70c6f4e39ddc0}{Text2D}} (const char $\ast$text, const char $\ast$font\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a6bfcc02f343e4e9d5bbc4fe5cf5b2861}{set\+Text}} (const char $\ast$text)
+\begin{DoxyCompactList}\small\item\em Set the text. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_hawk_engine_1_1_text2_d_ae4f29ccac5b8f1ac88ff51d5bb18b817}{get\+Text}} ()
+\begin{DoxyCompactList}\small\item\em Get the material. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_hawk_engine_1_1_text2_d_ad258f3093dc07f0e344bbcf29a5d0436}{is\+Initialised}} ()
+\begin{DoxyCompactList}\small\item\em Is FT initialised. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a5b9a12def79451d9383be75217989d81}{init}} (const char $\ast$file\+Path)
+\begin{DoxyCompactList}\small\item\em Initialise text. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a1844bd1aa399d44c6fd4cf2c106bc790}{Rto\+R\+G\+BA}} (unsigned char $\ast$D\+S\+T\+Buffer, unsigned char $\ast$S\+R\+C\+Buffer, uint32\+\_\+t width, uint32\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Convert r buffer to R\+G\+BA. \end{DoxyCompactList}\item 
+static F\+T\+\_\+\+Face \& \mbox{\hyperlink{class_hawk_engine_1_1_text2_d_abf3b55cc2e6096272acbce2b573ce93d}{get\+Font\+Face}} ()
+\begin{DoxyCompactList}\small\item\em Get the font face. \end{DoxyCompactList}\item 
+static unsigned char \mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a2b9bd0597fb3b57ab16c5f85f75a0441}{get\+First\+Glyph}} ()
+\begin{DoxyCompactList}\small\item\em Get the first glyph. \end{DoxyCompactList}\item 
+static unsigned char \mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a2a0c5ccb7e544ee4915554c0c6f39bf3}{get\+Last\+Glyph}} ()
+\begin{DoxyCompactList}\small\item\em Get the last glyph. \end{DoxyCompactList}\item 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas}{Texture\+Atlas}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a1792cb69b3d28ca369865f37a69e422a}{get\+Atlas}} ()
+\begin{DoxyCompactList}\small\item\em Get the texture atlas for the glyphs. \end{DoxyCompactList}\item 
+static std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_glyph_data}{Glyph\+Data}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a8868a7d72de369e101a4212c4d3cad8e}{get\+Glyph\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the glyph data. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a523eeee0579cfabcb803dfc05fb3cc9c}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the static text objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to render 2D Text. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_a6ec1d0b440863467a4f70c6f4e39ddc0}\label{class_hawk_engine_1_1_text2_d_a6ec1d0b440863467a4f70c6f4e39ddc0}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!Text2D@{Text2D}}
+\index{Text2D@{Text2D}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{Text2D()}{Text2D()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Text2\+D\+::\+Text2D (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text,  }\item[{const char $\ast$}]{font\+File\+Path }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a6ec1d0b440863467a4f70c6f4e39ddc0}{Text2\+D()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a const char$\ast$ -\/ The text to render \\
+\hline
+{\em font\+File\+Path} & a const char$\ast$ -\/ The filepath of the font \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_a523eeee0579cfabcb803dfc05fb3cc9c}\label{class_hawk_engine_1_1_text2_d_a523eeee0579cfabcb803dfc05fb3cc9c}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!destroy@{destroy}}
+\index{destroy@{destroy}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Text2\+D\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy the static text objects. 
+
+destroy \mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_a1792cb69b3d28ca369865f37a69e422a}\label{class_hawk_engine_1_1_text2_d_a1792cb69b3d28ca369865f37a69e422a}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!getAtlas@{getAtlas}}
+\index{getAtlas@{getAtlas}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{getAtlas()}{getAtlas()}}
+{\footnotesize\ttfamily static std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas}{Texture\+Atlas}}$>$\& Hawk\+Engine\+::\+Text2\+D\+::get\+Atlas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the texture atlas for the glyphs. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Texture\+Atlas$>$\& -\/ The texture atlas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_a2b9bd0597fb3b57ab16c5f85f75a0441}\label{class_hawk_engine_1_1_text2_d_a2b9bd0597fb3b57ab16c5f85f75a0441}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!getFirstGlyph@{getFirstGlyph}}
+\index{getFirstGlyph@{getFirstGlyph}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{getFirstGlyph()}{getFirstGlyph()}}
+{\footnotesize\ttfamily static unsigned char Hawk\+Engine\+::\+Text2\+D\+::get\+First\+Glyph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the first glyph. 
+
+\begin{DoxyReturn}{Returns}
+an unsigned char -\/ The first glyph 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_abf3b55cc2e6096272acbce2b573ce93d}\label{class_hawk_engine_1_1_text2_d_abf3b55cc2e6096272acbce2b573ce93d}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!getFontFace@{getFontFace}}
+\index{getFontFace@{getFontFace}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{getFontFace()}{getFontFace()}}
+{\footnotesize\ttfamily static F\+T\+\_\+\+Face\& Hawk\+Engine\+::\+Text2\+D\+::get\+Font\+Face (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the font face. 
+
+\begin{DoxyReturn}{Returns}
+a F\+T\+\_\+\+Face\& -\/ Is face of the font 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_a8868a7d72de369e101a4212c4d3cad8e}\label{class_hawk_engine_1_1_text2_d_a8868a7d72de369e101a4212c4d3cad8e}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!getGlyphData@{getGlyphData}}
+\index{getGlyphData@{getGlyphData}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{getGlyphData()}{getGlyphData()}}
+{\footnotesize\ttfamily static std\+::vector$<$\mbox{\hyperlink{struct_hawk_engine_1_1_glyph_data}{Glyph\+Data}}$>$\& Hawk\+Engine\+::\+Text2\+D\+::get\+Glyph\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the glyph data. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Glyph\+Data$>$\& -\/ The list of loaded glyphs 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_a2a0c5ccb7e544ee4915554c0c6f39bf3}\label{class_hawk_engine_1_1_text2_d_a2a0c5ccb7e544ee4915554c0c6f39bf3}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!getLastGlyph@{getLastGlyph}}
+\index{getLastGlyph@{getLastGlyph}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{getLastGlyph()}{getLastGlyph()}}
+{\footnotesize\ttfamily static unsigned char Hawk\+Engine\+::\+Text2\+D\+::get\+Last\+Glyph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get the last glyph. 
+
+\begin{DoxyReturn}{Returns}
+an unsigned char -\/ The final glyph 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_ae4f29ccac5b8f1ac88ff51d5bb18b817}\label{class_hawk_engine_1_1_text2_d_ae4f29ccac5b8f1ac88ff51d5bb18b817}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!getText@{getText}}
+\index{getText@{getText}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{getText()}{getText()}}
+{\footnotesize\ttfamily const std\+::string \& Hawk\+Engine\+::\+Text2\+D\+::get\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the material. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_text2_d_ae4f29ccac5b8f1ac88ff51d5bb18b817}{get\+Text()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ A reference to the text 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_a5b9a12def79451d9383be75217989d81}\label{class_hawk_engine_1_1_text2_d_a5b9a12def79451d9383be75217989d81}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!init@{init}}
+\index{init@{init}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Text2\+D\+::init (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initialise text. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a5b9a12def79451d9383be75217989d81}{init()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const char$\ast$ -\/ The filepath of the font \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_ad258f3093dc07f0e344bbcf29a5d0436}\label{class_hawk_engine_1_1_text2_d_ad258f3093dc07f0e344bbcf29a5d0436}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!isInitialised@{isInitialised}}
+\index{isInitialised@{isInitialised}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{isInitialised()}{isInitialised()}}
+{\footnotesize\ttfamily static bool Hawk\+Engine\+::\+Text2\+D\+::is\+Initialised (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Is FT initialised. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is 2D Text initialised 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_a1844bd1aa399d44c6fd4cf2c106bc790}\label{class_hawk_engine_1_1_text2_d_a1844bd1aa399d44c6fd4cf2c106bc790}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!RtoRGBA@{RtoRGBA}}
+\index{RtoRGBA@{RtoRGBA}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{RtoRGBA()}{RtoRGBA()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Text2\+D\+::\+Rto\+R\+G\+BA (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{D\+S\+T\+Buffer,  }\item[{unsigned char $\ast$}]{S\+R\+C\+Buffer,  }\item[{uint32\+\_\+t}]{width,  }\item[{uint32\+\_\+t}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert r buffer to R\+G\+BA. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a1844bd1aa399d44c6fd4cf2c106bc790}{Rto\+R\+G\+B\+A()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em D\+S\+T\+Buffer} & an unsigned char$\ast$ -\/ The destination buffer \\
+\hline
+{\em S\+R\+C\+Buffer} & an unsigned char$\ast$ -\/ The source single channel buffer \\
+\hline
+{\em width} & a uint32\+\_\+t -\/ The width of the glyph \\
+\hline
+{\em height} & a uint32\+\_\+t -\/ The height of the glyph \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_text2_d_a6bfcc02f343e4e9d5bbc4fe5cf5b2861}\label{class_hawk_engine_1_1_text2_d_a6bfcc02f343e4e9d5bbc4fe5cf5b2861}} 
+\index{HawkEngine::Text2D@{HawkEngine::Text2D}!setText@{setText}}
+\index{setText@{setText}!HawkEngine::Text2D@{HawkEngine::Text2D}}
+\doxysubsubsection{\texorpdfstring{setText()}{setText()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Text2\+D\+::set\+Text (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})}
+
+
+
+Set the text. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_text2_d_a6bfcc02f343e4e9d5bbc4fe5cf5b2861}{set\+Text()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a const char$\ast$ -\/ A reference to the text \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/scene/entity/components/\mbox{\hyperlink{text2_d_8h}{text2\+D.\+h}}\item 
+C\+:/doc/src/src/independent/scene/entity/components/\mbox{\hyperlink{text2_d_8cpp}{text2\+D.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,519 @@
+\hypertarget{class_owl_engine_1_1_audio_manager}{}\doxysection{Owl\+Engine\+::Audio\+Manager Class Reference}
+\label{class_owl_engine_1_1_audio_manager}\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+
+
+audio manager to handle 3D audio recources.  
+
+
+
+
+{\ttfamily \#include $<$audio\+Manager.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Audio\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_audio_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_aa1bcca7e69bbd4ae7bdf69a44ee1d766}{Audio\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a48014a13df941c2812bd65970fb8ef96}{$\sim$\+Audio\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_ab11a4300332d5e54884faaef9e490d32}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start audio manager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a0a124541fa2b43e33ea95fb877660576}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop audio manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a3ddfc1a01b7ffee2f244791338f2d09a}{on\+Update}} ()
+\begin{DoxyCompactList}\small\item\em Called once every frame. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_ab5322b41865009132592be4467b464ae}{load\+Bank}} (const std\+::string \&str\+Bank\+Name, F\+M\+O\+D\+\_\+\+S\+T\+U\+D\+I\+O\+\_\+\+L\+O\+A\+D\+\_\+\+B\+A\+N\+K\+\_\+\+F\+L\+A\+GS flags)
+\begin{DoxyCompactList}\small\item\em Loads studio banks. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a229ae28858a6498c640b0b040c6e8889}{load\+Event}} (const std\+::string \&str\+Event\+Name, const std\+::string \&event\+Path)
+\begin{DoxyCompactList}\small\item\em Loads studio events. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a9b2a59f97114538f8b65838e21845c7a}{load\+Sound}} (const std\+::string \&str\+Sound\+Name, const std\+::string \&sound\+File\+Path, bool b3d=true, bool blooping=false, bool b\+Stream=false, float min\+Dist=0.\+25f, float max\+Dist=1000.f, Roll\+Off roll\+Off=Roll\+Off\+::\+Inverse)
+\begin{DoxyCompactList}\small\item\em Loads sound files. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_acf621b0a86dee1893a10d009c01e7490}{un\+Load\+Sound}} (const std\+::string \&str\+Sound\+Name)
+\begin{DoxyCompactList}\small\item\em Unloads sound files. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a6d0c9c0601af766412dd48834c84a79b}{set3d\+Listener\+And\+Orientation}} (glm\+::mat4 \&transform, glm\+::vec3 \&velocity)
+\begin{DoxyCompactList}\small\item\em Creates and sets 3D listener. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a55e9808cb92acc87bf2a59343d4b1062}{add\+Geometry}} (const std\+::string \&label, const \mbox{\hyperlink{struct_owl_engine_1_1_audio_geometry_definition}{Audio\+Geometry\+Definition}} \&def)
+\begin{DoxyCompactList}\small\item\em Adds audio geometry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a03b80b4a9729d0c10c0a1581cf85ea88}\label{class_owl_engine_1_1_audio_manager_a03b80b4a9729d0c10c0a1581cf85ea88}} 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a03b80b4a9729d0c10c0a1581cf85ea88}{move\+Geometry}} (const std\+::string \&label, const glm\+::vec3 \&pos, const glm\+::vec3 \&forward, const glm\+::vec3 \&up, const glm\+::vec3 \&scale)
+\begin{DoxyCompactList}\small\item\em Move a piece of asudio geometry. \end{DoxyCompactList}\item 
+static int32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a697bf472461a2db30a7bdc00beb749a1}{play\+Sound}} (const std\+::string \&str\+Sound\+Name, const glm\+::vec3 \&positon)
+\begin{DoxyCompactList}\small\item\em Plays loaded audio files. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a53e643d225d22bd2b467f6ad52b061fd}{stop\+Sound}} (const int32\+\_\+t channel)
+\begin{DoxyCompactList}\small\item\em Stop a sound. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a6da5c4e1fb3485334430b42bad3a647a}{play\+Event}} (const std\+::string \&str\+Event\+Name)
+\begin{DoxyCompactList}\small\item\em Plays studio events. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a29c5a15ef7e1ad3b7f8b776d39404cff}{toggle\+Channel\+Pause}} (int32\+\_\+t n\+Channel\+ID)
+\begin{DoxyCompactList}\small\item\em Pause a channel. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a15e0215a4d398a35bc1880ebd5dcd720}{stop\+Event}} (const std\+::string \&str\+Event\+Name, bool b\+Immediate=false)
+\begin{DoxyCompactList}\small\item\em Stops playing studio event. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a2b806e6a1775024eabe8b7e2723e92b3}{set\+Event\+Parameter}} (const std\+::string \&str\+Event\+Name, const std\+::string \&str\+Param\+Name, float value)
+\begin{DoxyCompactList}\small\item\em Sets event parameters. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a6fe4674d271156f6fb8fd6557bd376ca}{set\+Event3\+D\+Attributes}} (const std\+::string \&str\+Event\+Name, const glm\+::mat4 \&transform, const glm\+::vec3 velocity)
+\begin{DoxyCompactList}\small\item\em Sets event 3D attributes. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a34a2b0ec0c825051e5908d97fc2ace2e}{set\+Channel3d\+Attributes}} (int32\+\_\+t n\+Channel\+ID, const glm\+::vec3 \&pos, const glm\+::vec3 \&velocity)
+\begin{DoxyCompactList}\small\item\em Set a channel\textquotesingle{}s attributes. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a8bd38d2272e61cd2261c62bbd026cd95}{is\+Playing}} (int32\+\_\+t n\+Channel\+ID)
+\begin{DoxyCompactList}\small\item\em Is a channel being played. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a3370d76e3926cfa260630e9b08ebaf0d}{is\+Event\+Playing}} (const std\+::string \&str\+Event\+Name)
+\begin{DoxyCompactList}\small\item\em Is a channel being played. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_ab06120b876bd2c4a5e0b37e3d6678e1a}{mute\+Audio}} (bool mute)
+\begin{DoxyCompactList}\small\item\em Mute the audio. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a1826c31e5ef0c00bfcee9cda2f549b5f}{is\+Audio\+Muted}} ()
+\begin{DoxyCompactList}\small\item\em Get whether audio is muted. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_ac3a8a8f4f7704ed8cc4d0192272cc515}\label{class_owl_engine_1_1_audio_manager_ac3a8a8f4f7704ed8cc4d0192272cc515}} 
+static void {\bfseries set\+Event\+Volume} (const std\+::string \&str\+Event\+Name)
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_ae83b795e8ab799514b7eb963ed9a5734}\label{class_owl_engine_1_1_audio_manager_ae83b795e8ab799514b7eb963ed9a5734}} 
+static void {\bfseries get\+Volume\+Settings} (const float \&volume)
+\item 
+static std\+::map$<$ std\+::string, F\+M\+O\+D\+::\+Sound $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_ad3121f184313760d2db15590b430c503}{get\+Sounds}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all loaded sounds. \end{DoxyCompactList}\item 
+static std\+::map$<$ std\+::string, F\+M\+O\+D\+::\+Studio\+::\+Event\+Instance $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_audio_manager_abe574f3153d90bf645e7bf49c147b780}{get\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all loaded events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+audio manager to handle 3D audio recources. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_aa1bcca7e69bbd4ae7bdf69a44ee1d766}\label{class_owl_engine_1_1_audio_manager_aa1bcca7e69bbd4ae7bdf69a44ee1d766}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!AudioManager@{AudioManager}}
+\index{AudioManager@{AudioManager}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{AudioManager()}{AudioManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Audio\+Manager\+::\+Audio\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_aa1bcca7e69bbd4ae7bdf69a44ee1d766}{Audio\+Manager()}} \mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a48014a13df941c2812bd65970fb8ef96}\label{class_owl_engine_1_1_audio_manager_a48014a13df941c2812bd65970fb8ef96}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!````~AudioManager@{$\sim$AudioManager}}
+\index{````~AudioManager@{$\sim$AudioManager}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$AudioManager()}{~AudioManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Audio\+Manager\+::$\sim$\+Audio\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a48014a13df941c2812bd65970fb8ef96}{$\sim$\+Audio\+Manager()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a55e9808cb92acc87bf2a59343d4b1062}\label{class_owl_engine_1_1_audio_manager_a55e9808cb92acc87bf2a59343d4b1062}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!addGeometry@{addGeometry}}
+\index{addGeometry@{addGeometry}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{addGeometry()}{addGeometry()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::add\+Geometry (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{label,  }\item[{const \mbox{\hyperlink{struct_owl_engine_1_1_audio_geometry_definition}{Audio\+Geometry\+Definition}} \&}]{def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Adds audio geometry. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a55e9808cb92acc87bf2a59343d4b1062}{add\+Geometry()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em label} & a const std\+::string\& -\/ A reference to the geometry\textquotesingle{}s label \\
+\hline
+{\em def} & a const \mbox{\hyperlink{struct_owl_engine_1_1_audio_geometry_definition}{Audio\+Geometry\+Definition}}\& -\/ A reference to the geometry definition \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_abe574f3153d90bf645e7bf49c147b780}\label{class_owl_engine_1_1_audio_manager_abe574f3153d90bf645e7bf49c147b780}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, F\+M\+O\+D\+::\+Studio\+::\+Event\+Instance $\ast$ $>$ \& Owl\+Engine\+::\+Audio\+Manager\+::get\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a list of all loaded events. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_abe574f3153d90bf645e7bf49c147b780}{get\+Events()}} \mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_ad3121f184313760d2db15590b430c503}\label{class_owl_engine_1_1_audio_manager_ad3121f184313760d2db15590b430c503}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!getSounds@{getSounds}}
+\index{getSounds@{getSounds}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{getSounds()}{getSounds()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, F\+M\+O\+D\+::\+Sound $\ast$ $>$ \& Owl\+Engine\+::\+Audio\+Manager\+::get\+Sounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a list of all loaded sounds. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_ad3121f184313760d2db15590b430c503}{get\+Sounds()}} \mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a1826c31e5ef0c00bfcee9cda2f549b5f}\label{class_owl_engine_1_1_audio_manager_a1826c31e5ef0c00bfcee9cda2f549b5f}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!isAudioMuted@{isAudioMuted}}
+\index{isAudioMuted@{isAudioMuted}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{isAudioMuted()}{isAudioMuted()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Audio\+Manager\+::is\+Audio\+Muted (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get whether audio is muted. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a1826c31e5ef0c00bfcee9cda2f549b5f}{is\+Audio\+Muted()}}
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the audio muted 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a3370d76e3926cfa260630e9b08ebaf0d}\label{class_owl_engine_1_1_audio_manager_a3370d76e3926cfa260630e9b08ebaf0d}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!isEventPlaying@{isEventPlaying}}
+\index{isEventPlaying@{isEventPlaying}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{isEventPlaying()}{isEventPlaying()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Audio\+Manager\+::is\+Event\+Playing (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Event\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Is a channel being played. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a3370d76e3926cfa260630e9b08ebaf0d}{is\+Event\+Playing()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Event\+Name} & a const std\+::string\& -\/ The event name to check if it\textquotesingle{}s playing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the event currently playing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a8bd38d2272e61cd2261c62bbd026cd95}\label{class_owl_engine_1_1_audio_manager_a8bd38d2272e61cd2261c62bbd026cd95}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!isPlaying@{isPlaying}}
+\index{isPlaying@{isPlaying}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{isPlaying()}{isPlaying()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Audio\+Manager\+::is\+Playing (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{n\+Channel\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Is a channel being played. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a8bd38d2272e61cd2261c62bbd026cd95}{is\+Playing()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Channel\+ID} & an int32\+\_\+t -\/ The channel ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the channel currently playing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_ab5322b41865009132592be4467b464ae}\label{class_owl_engine_1_1_audio_manager_ab5322b41865009132592be4467b464ae}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!loadBank@{loadBank}}
+\index{loadBank@{loadBank}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{loadBank()}{loadBank()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::load\+Bank (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Bank\+Name,  }\item[{F\+M\+O\+D\+\_\+\+S\+T\+U\+D\+I\+O\+\_\+\+L\+O\+A\+D\+\_\+\+B\+A\+N\+K\+\_\+\+F\+L\+A\+GS}]{flags }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads studio banks. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_ab5322b41865009132592be4467b464ae}{load\+Bank()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Bank\+Name} & a const std\+::string\& -\/ A reference the bank name \\
+\hline
+{\em flags} & a F\+M\+O\+D\+\_\+\+S\+T\+U\+D\+I\+O\+\_\+\+F\+L\+A\+GS -\/ The studio flags \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a229ae28858a6498c640b0b040c6e8889}\label{class_owl_engine_1_1_audio_manager_a229ae28858a6498c640b0b040c6e8889}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!loadEvent@{loadEvent}}
+\index{loadEvent@{loadEvent}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{loadEvent()}{loadEvent()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::load\+Event (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Event\+Name,  }\item[{const std\+::string \&}]{event\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads studio events. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a229ae28858a6498c640b0b040c6e8889}{load\+Event()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Event\+Name} & a const std\+::string\& -\/ A reference the \mbox{\hyperlink{class_owl_engine_1_1_event}{Event}} name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a9b2a59f97114538f8b65838e21845c7a}\label{class_owl_engine_1_1_audio_manager_a9b2a59f97114538f8b65838e21845c7a}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!loadSound@{loadSound}}
+\index{loadSound@{loadSound}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{loadSound()}{loadSound()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::load\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Sound\+Name,  }\item[{const std\+::string \&}]{sound\+File\+Path,  }\item[{bool}]{b3d = {\ttfamily true},  }\item[{bool}]{blooping = {\ttfamily false},  }\item[{bool}]{b\+Stream = {\ttfamily false},  }\item[{float}]{min\+Dist = {\ttfamily 0.25f},  }\item[{float}]{max\+Dist = {\ttfamily 1000.f},  }\item[{Roll\+Off}]{roll\+Off = {\ttfamily RollOff\+:\+:Inverse} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads sound files. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a9b2a59f97114538f8b65838e21845c7a}{load\+Sound()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Sound\+Name} & a const std\+::string\& -\/ A reference the sound filename \\
+\hline
+{\em b3d} & a bool -\/ Sets b3d \\
+\hline
+{\em blooping} & a bool -\/ Sets blooping \\
+\hline
+{\em b\+Stream} & a bool -\/ Sets b\+Stream \\
+\hline
+{\em min\+Dist} & a float -\/ The min distance \\
+\hline
+{\em max\+Dist} & a float -\/ The max distance \\
+\hline
+{\em roll\+Off} & a Roll\+Off -\/ The rolloff \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_ab06120b876bd2c4a5e0b37e3d6678e1a}\label{class_owl_engine_1_1_audio_manager_ab06120b876bd2c4a5e0b37e3d6678e1a}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!muteAudio@{muteAudio}}
+\index{muteAudio@{muteAudio}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{muteAudio()}{muteAudio()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::mute\+Audio (\begin{DoxyParamCaption}\item[{bool}]{mute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Mute the audio. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_ab06120b876bd2c4a5e0b37e3d6678e1a}{mute\+Audio()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mute} & a bool -\/ Mute the audio \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a3ddfc1a01b7ffee2f244791338f2d09a}\label{class_owl_engine_1_1_audio_manager_a3ddfc1a01b7ffee2f244791338f2d09a}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::on\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called once every frame. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a3ddfc1a01b7ffee2f244791338f2d09a}{on\+Update()}} \mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a6da5c4e1fb3485334430b42bad3a647a}\label{class_owl_engine_1_1_audio_manager_a6da5c4e1fb3485334430b42bad3a647a}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!playEvent@{playEvent}}
+\index{playEvent@{playEvent}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{playEvent()}{playEvent()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::play\+Event (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Event\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Plays studio events. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a6da5c4e1fb3485334430b42bad3a647a}{play\+Event()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Event\+Name} & a const std\+::string\& -\/ A reference the \mbox{\hyperlink{class_owl_engine_1_1_event}{Event}} name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a697bf472461a2db30a7bdc00beb749a1}\label{class_owl_engine_1_1_audio_manager_a697bf472461a2db30a7bdc00beb749a1}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!playSound@{playSound}}
+\index{playSound@{playSound}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily int32\+\_\+t Owl\+Engine\+::\+Audio\+Manager\+::play\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Sound\+Name,  }\item[{const glm\+::vec3 \&}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Plays loaded audio files. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a697bf472461a2db30a7bdc00beb749a1}{play\+Sound()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Sound\+Name} & a const std\+::string\& -\/ A reference the sound filename \\
+\hline
+{\em position} & a const glm\+::vec3\& -\/ A reference to the sound\textquotesingle{}s position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a6d0c9c0601af766412dd48834c84a79b}\label{class_owl_engine_1_1_audio_manager_a6d0c9c0601af766412dd48834c84a79b}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!set3dListenerAndOrientation@{set3dListenerAndOrientation}}
+\index{set3dListenerAndOrientation@{set3dListenerAndOrientation}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{set3dListenerAndOrientation()}{set3dListenerAndOrientation()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::set3d\+Listener\+And\+Orientation (\begin{DoxyParamCaption}\item[{glm\+::mat4 \&}]{transform,  }\item[{glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates and sets 3D listener. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a6d0c9c0601af766412dd48834c84a79b}{set3d\+Listener\+And\+Orientation()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em transform} & a glm\+::mat4\& -\/ A reference to the listener\textquotesingle{}s transform \\
+\hline
+{\em velocity} & a glm\+::vec3\& -\/ A reference to the listener\textquotesingle{}s velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a34a2b0ec0c825051e5908d97fc2ace2e}\label{class_owl_engine_1_1_audio_manager_a34a2b0ec0c825051e5908d97fc2ace2e}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!setChannel3dAttributes@{setChannel3dAttributes}}
+\index{setChannel3dAttributes@{setChannel3dAttributes}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{setChannel3dAttributes()}{setChannel3dAttributes()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::set\+Channel3d\+Attributes (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{n\+Channel\+ID,  }\item[{const glm\+::vec3 \&}]{pos,  }\item[{const glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set a channel\textquotesingle{}s attributes. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a34a2b0ec0c825051e5908d97fc2ace2e}{set\+Channel3d\+Attributes()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Channel\+ID} & an int32\+\_\+t -\/ The channel ID \\
+\hline
+{\em pos} & a const glm\+::vec3\& -\/ The position to set \\
+\hline
+{\em velocity} & a const glm\+::vec3\& -\/ The velocity to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a6fe4674d271156f6fb8fd6557bd376ca}\label{class_owl_engine_1_1_audio_manager_a6fe4674d271156f6fb8fd6557bd376ca}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!setEvent3DAttributes@{setEvent3DAttributes}}
+\index{setEvent3DAttributes@{setEvent3DAttributes}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{setEvent3DAttributes()}{setEvent3DAttributes()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::set\+Event3\+D\+Attributes (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Event\+Name,  }\item[{const glm\+::mat4 \&}]{transform,  }\item[{const glm\+::vec3}]{velocity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets event 3D attributes. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a6fe4674d271156f6fb8fd6557bd376ca}{set\+Event3\+D\+Attributes()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Event\+Name} & a const std\+::string\& -\/ A reference the \mbox{\hyperlink{class_owl_engine_1_1_event}{Event}} name \\
+\hline
+{\em transform} & a const glm\+::mat4\& -\/ A reference to the event\textquotesingle{}s transform \\
+\hline
+{\em velocity} & a const glm\+::vec3\& -\/ A reference to the event\textquotesingle{}s velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a2b806e6a1775024eabe8b7e2723e92b3}\label{class_owl_engine_1_1_audio_manager_a2b806e6a1775024eabe8b7e2723e92b3}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!setEventParameter@{setEventParameter}}
+\index{setEventParameter@{setEventParameter}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{setEventParameter()}{setEventParameter()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::set\+Event\+Parameter (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Event\+Name,  }\item[{const std\+::string \&}]{str\+Param\+Name,  }\item[{float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Sets event parameters. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a2b806e6a1775024eabe8b7e2723e92b3}{set\+Event\+Parameter()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Event\+Name} & a const std\+::string\& -\/ A reference the \mbox{\hyperlink{class_owl_engine_1_1_event}{Event}} name \\
+\hline
+{\em str\+Param\+Name} & a const std\+::string\& -\/ A reference the parameter name \\
+\hline
+{\em value} & a float -\/ The value of the parameter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_ab11a4300332d5e54884faaef9e490d32}\label{class_owl_engine_1_1_audio_manager_ab11a4300332d5e54884faaef9e490d32}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!start@{start}}
+\index{start@{start}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start audio manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_ab11a4300332d5e54884faaef9e490d32}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a0a124541fa2b43e33ea95fb877660576}\label{class_owl_engine_1_1_audio_manager_a0a124541fa2b43e33ea95fb877660576}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop audio manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a0a124541fa2b43e33ea95fb877660576}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a15e0215a4d398a35bc1880ebd5dcd720}\label{class_owl_engine_1_1_audio_manager_a15e0215a4d398a35bc1880ebd5dcd720}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!stopEvent@{stopEvent}}
+\index{stopEvent@{stopEvent}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{stopEvent()}{stopEvent()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::stop\+Event (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Event\+Name,  }\item[{bool}]{b\+Immediate = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stops playing studio event. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a15e0215a4d398a35bc1880ebd5dcd720}{stop\+Event()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Event\+Name} & a const std\+::string\& -\/ A reference the \mbox{\hyperlink{class_owl_engine_1_1_event}{Event}} name \\
+\hline
+{\em b\+Immediate} & a bool -\/ Sets if the event stops immediately \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a53e643d225d22bd2b467f6ad52b061fd}\label{class_owl_engine_1_1_audio_manager_a53e643d225d22bd2b467f6ad52b061fd}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!stopSound@{stopSound}}
+\index{stopSound@{stopSound}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{stopSound()}{stopSound()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::stop\+Sound (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stop a sound. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a53e643d225d22bd2b467f6ad52b061fd}{stop\+Sound()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em channel} & a const int32\+\_\+t -\/ The channel to stop \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_a29c5a15ef7e1ad3b7f8b776d39404cff}\label{class_owl_engine_1_1_audio_manager_a29c5a15ef7e1ad3b7f8b776d39404cff}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!toggleChannelPause@{toggleChannelPause}}
+\index{toggleChannelPause@{toggleChannelPause}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{toggleChannelPause()}{toggleChannelPause()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::toggle\+Channel\+Pause (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{n\+Channel\+ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Pause a channel. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_a29c5a15ef7e1ad3b7f8b776d39404cff}{toggle\+Channel\+Pause()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Channel\+ID} & an int32\+\_\+t -\/ The channel to pause \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_manager_acf621b0a86dee1893a10d009c01e7490}\label{class_owl_engine_1_1_audio_manager_acf621b0a86dee1893a10d009c01e7490}} 
+\index{OwlEngine::AudioManager@{OwlEngine::AudioManager}!unLoadSound@{unLoadSound}}
+\index{unLoadSound@{unLoadSound}!OwlEngine::AudioManager@{OwlEngine::AudioManager}}
+\doxysubsubsection{\texorpdfstring{unLoadSound()}{unLoadSound()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Manager\+::un\+Load\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str\+Sound\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Unloads sound files. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_manager_acf621b0a86dee1893a10d009c01e7490}{un\+Load\+Sound()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Sound\+Name} & a const std\+::string\& -\/ A reference the sound filename \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{audio_manager_8h}{audio\+Manager.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{audio_manager_8cpp}{audio\+Manager.\+cpp}}\end{DoxyCompactItemize}

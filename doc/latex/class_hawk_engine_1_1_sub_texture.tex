@@ -1,0 +1,278 @@
+\hypertarget{class_hawk_engine_1_1_sub_texture}{}\doxysection{Hawk\+Engine\+::Sub\+Texture Class Reference}
+\label{class_hawk_engine_1_1_sub_texture}\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+
+
+A subtexture holding texture and UV data.  
+
+
+
+
+{\ttfamily \#include $<$sub\+Texture.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_af313874bba1b0e6808cfe409ca74deea}\label{class_hawk_engine_1_1_sub_texture_af313874bba1b0e6808cfe409ca74deea}} 
+\mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_af313874bba1b0e6808cfe409ca74deea}{Sub\+Texture}} ()=default
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_aaad3d9697999b3c67d016ab3a5b2fc2a}{Sub\+Texture}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $>$ \&base\+Texture, const glm\+::vec2 \&U\+V\+Start, const glm\+::vec2 \&U\+V\+End)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+glm\+::vec2 \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_a5a7d961aa1fe176c0f9e28aeef95961f}{get\+U\+V\+Start}} () const
+\begin{DoxyCompactList}\small\item\em Get the UV start coordinates. \end{DoxyCompactList}\item 
+glm\+::vec2 \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_aa384799294ffc931121689a016431b0e}{get\+U\+V\+End}} () const
+\begin{DoxyCompactList}\small\item\em Get the UV end coordinates. \end{DoxyCompactList}\item 
+glm\+::ivec2 \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_a4d01c232db4702482ed85cb4cf9e8fc0}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size in pixels of subtexture. \end{DoxyCompactList}\item 
+glm\+::vec2 \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_ae204e5917246f03712953532886e393b}{get\+Sizef}} () const
+\begin{DoxyCompactList}\small\item\em Get the size in pixels of subtexture as float. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_af95f47fe7e029ed051310561ad245f36}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture width. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_a21f9cc5c52781270b4ca13424648fb21}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture height. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_a880e8d59829b13d30a8eb884a3eac3c4}{get\+Widthf}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture width. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_a821177a7b056bbc9402c74dccbd7ff49}{get\+Heightf}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture height. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_aa1624a87def19d8e9c50c3301e3ad5fe}{get\+Base\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Get the base texture. \end{DoxyCompactList}\item 
+const glm\+::vec2 \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_a16fd446b3e329fdd91e8aafb285a6325}{transform\+UV}} (const glm\+::vec2 \&uv)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. \end{DoxyCompactList}\item 
+const std\+::array$<$ int16\+\_\+t, 2 $>$ \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_a228afd499cba720b4a29334cb3c63a5a}{transform\+UV}} (const std\+::array$<$ int16\+\_\+t, 2 $>$ \&uv)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. \end{DoxyCompactList}\item 
+const int16\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_ab0f2072a13265d0a0dc58be3af550f93}{transformU}} (const int16\+\_\+t u)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. \end{DoxyCompactList}\item 
+const int16\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_a8c662d010492ccd25fbc9f1261c80e86}{transformV}} (const int16\+\_\+t v)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A subtexture holding texture and UV data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_aaad3d9697999b3c67d016ab3a5b2fc2a}\label{class_hawk_engine_1_1_sub_texture_aaad3d9697999b3c67d016ab3a5b2fc2a}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!SubTexture@{SubTexture}}
+\index{SubTexture@{SubTexture}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{SubTexture()}{SubTexture()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Sub\+Texture\+::\+Sub\+Texture (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $>$ \&}]{base\+Texture,  }\item[{const glm\+::vec2 \&}]{U\+V\+Start,  }\item[{const glm\+::vec2 \&}]{U\+V\+End }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_af313874bba1b0e6808cfe409ca74deea}{Sub\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ The base texutre \\
+\hline
+{\em U\+V\+Start} & a const glm\+::vec2\& -\/ The UV start coordinates \\
+\hline
+{\em U\+V\+End} & a const glm\+::vec2\& -\/ The UV end coordinates \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_aa1624a87def19d8e9c50c3301e3ad5fe}\label{class_hawk_engine_1_1_sub_texture_aa1624a87def19d8e9c50c3301e3ad5fe}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!getBaseTexture@{getBaseTexture}}
+\index{getBaseTexture@{getBaseTexture}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getBaseTexture()}{getBaseTexture()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}}$>$\& Hawk\+Engine\+::\+Sub\+Texture\+::get\+Base\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the base texture. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ The base texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_a21f9cc5c52781270b4ca13424648fb21}\label{class_hawk_engine_1_1_sub_texture_a21f9cc5c52781270b4ca13424648fb21}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Hawk\+Engine\+::\+Sub\+Texture\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture height. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The height of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_a821177a7b056bbc9402c74dccbd7ff49}\label{class_hawk_engine_1_1_sub_texture_a821177a7b056bbc9402c74dccbd7ff49}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!getHeightf@{getHeightf}}
+\index{getHeightf@{getHeightf}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getHeightf()}{getHeightf()}}
+{\footnotesize\ttfamily const float Hawk\+Engine\+::\+Sub\+Texture\+::get\+Heightf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture height. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The height of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_a4d01c232db4702482ed85cb4cf9e8fc0}\label{class_hawk_engine_1_1_sub_texture_a4d01c232db4702482ed85cb4cf9e8fc0}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!getSize@{getSize}}
+\index{getSize@{getSize}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily glm\+::ivec2 Hawk\+Engine\+::\+Sub\+Texture\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the size in pixels of subtexture. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::ivec2 -\/ The size of the subtexture in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_ae204e5917246f03712953532886e393b}\label{class_hawk_engine_1_1_sub_texture_ae204e5917246f03712953532886e393b}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!getSizef@{getSizef}}
+\index{getSizef@{getSizef}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getSizef()}{getSizef()}}
+{\footnotesize\ttfamily glm\+::vec2 Hawk\+Engine\+::\+Sub\+Texture\+::get\+Sizef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the size in pixels of subtexture as float. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The size of the subtexture in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_aa384799294ffc931121689a016431b0e}\label{class_hawk_engine_1_1_sub_texture_aa384799294ffc931121689a016431b0e}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!getUVEnd@{getUVEnd}}
+\index{getUVEnd@{getUVEnd}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getUVEnd()}{getUVEnd()}}
+{\footnotesize\ttfamily glm\+::vec2 Hawk\+Engine\+::\+Sub\+Texture\+::get\+U\+V\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the UV end coordinates. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The UV end coorindates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_a5a7d961aa1fe176c0f9e28aeef95961f}\label{class_hawk_engine_1_1_sub_texture_a5a7d961aa1fe176c0f9e28aeef95961f}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!getUVStart@{getUVStart}}
+\index{getUVStart@{getUVStart}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getUVStart()}{getUVStart()}}
+{\footnotesize\ttfamily glm\+::vec2 Hawk\+Engine\+::\+Sub\+Texture\+::get\+U\+V\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the UV start coordinates. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The UV start coorindates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_af95f47fe7e029ed051310561ad245f36}\label{class_hawk_engine_1_1_sub_texture_af95f47fe7e029ed051310561ad245f36}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Hawk\+Engine\+::\+Sub\+Texture\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture width. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The width of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_a880e8d59829b13d30a8eb884a3eac3c4}\label{class_hawk_engine_1_1_sub_texture_a880e8d59829b13d30a8eb884a3eac3c4}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!getWidthf@{getWidthf}}
+\index{getWidthf@{getWidthf}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getWidthf()}{getWidthf()}}
+{\footnotesize\ttfamily const float Hawk\+Engine\+::\+Sub\+Texture\+::get\+Widthf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture width. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The width of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_ab0f2072a13265d0a0dc58be3af550f93}\label{class_hawk_engine_1_1_sub_texture_ab0f2072a13265d0a0dc58be3af550f93}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!transformU@{transformU}}
+\index{transformU@{transformU}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{transformU()}{transformU()}}
+{\footnotesize\ttfamily const int16\+\_\+t Hawk\+Engine\+::\+Sub\+Texture\+::transformU (\begin{DoxyParamCaption}\item[{const int16\+\_\+t}]{u }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_ab0f2072a13265d0a0dc58be3af550f93}{transform\+U()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & a const int16\+\_\+t -\/ The U coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const int16\+\_\+t -\/ The transformed U coordinate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_a16fd446b3e329fdd91e8aafb285a6325}\label{class_hawk_engine_1_1_sub_texture_a16fd446b3e329fdd91e8aafb285a6325}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!transformUV@{transformUV}}
+\index{transformUV@{transformUV}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{transformUV()}{transformUV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const glm\+::vec2 Hawk\+Engine\+::\+Sub\+Texture\+::transform\+UV (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{uv }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_a16fd446b3e329fdd91e8aafb285a6325}{transform\+U\+V()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uv} & a const glm\+::vec2\& -\/ The UV coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec2 -\/ The transformed UV coordinates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_a228afd499cba720b4a29334cb3c63a5a}\label{class_hawk_engine_1_1_sub_texture_a228afd499cba720b4a29334cb3c63a5a}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!transformUV@{transformUV}}
+\index{transformUV@{transformUV}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{transformUV()}{transformUV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::array$<$ int16\+\_\+t, 2 $>$ Hawk\+Engine\+::\+Sub\+Texture\+::transform\+UV (\begin{DoxyParamCaption}\item[{const std\+::array$<$ int16\+\_\+t, 2 $>$ \&}]{uv }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_a16fd446b3e329fdd91e8aafb285a6325}{transform\+U\+V()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uv} & a const std\+::array$<$int16\+\_\+t, 2$>$\& -\/ The UV coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const std\+::array$<$int16\+\_\+t, 2$>$ -\/ The transformed UV coordinates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_sub_texture_a8c662d010492ccd25fbc9f1261c80e86}\label{class_hawk_engine_1_1_sub_texture_a8c662d010492ccd25fbc9f1261c80e86}} 
+\index{HawkEngine::SubTexture@{HawkEngine::SubTexture}!transformV@{transformV}}
+\index{transformV@{transformV}!HawkEngine::SubTexture@{HawkEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{transformV()}{transformV()}}
+{\footnotesize\ttfamily const int16\+\_\+t Hawk\+Engine\+::\+Sub\+Texture\+::transformV (\begin{DoxyParamCaption}\item[{const int16\+\_\+t}]{v }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_sub_texture_a8c662d010492ccd25fbc9f1261c80e86}{transform\+V()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & a const int16\+\_\+t -\/ The V coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const int16\+\_\+t -\/ The transformed V coordinate 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/textures/\mbox{\hyperlink{sub_texture_8h}{sub\+Texture.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/textures/\mbox{\hyperlink{sub_texture_8cpp}{sub\+Texture.\+cpp}}\end{DoxyCompactItemize}

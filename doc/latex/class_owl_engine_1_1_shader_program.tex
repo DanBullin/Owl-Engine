@@ -1,0 +1,501 @@
+\hypertarget{class_owl_engine_1_1_shader_program}{}\doxysection{Owl\+Engine\+::Shader\+Program Class Reference}
+\label{class_owl_engine_1_1_shader_program}\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+
+
+An A\+PI agnostic shader program.  
+
+
+
+
+{\ttfamily \#include $<$shader\+Program.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Shader\+Program\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_owl_engine_1_1_shader_program}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_shader_program_a0703992e48790c6669b21fbf4d29441c}{Shader\+Program}} (const std\+::string \&shader\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a478a22c20f18cbab09dbb6aa85106090}{$\sim$\+Shader\+Program}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a397009b26dce86d813c79e607f63b2ba}{build}} (\mbox{\hyperlink{class_owl_engine_1_1_vertex_array}{Vertex\+Array}} $\ast$vertex\+Array, const std\+::string \&vertex\+Path, const std\+::string \&fragment\+Path, const std\+::string \&geometry\+Path, const std\+::string \&tess\+Control\+Path, const std\+::string \&tess\+Eval\+Path)=0
+\begin{DoxyCompactList}\small\item\em Create a shader program based on the files passed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_ad0dbe093b3092afa80f07355adab2fa6}{set\+Uniforms}} (const std\+::vector$<$ std\+::string $>$ \&uniform\+Names)=0
+\begin{DoxyCompactList}\small\item\em Set all uniform locations. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_aa798e58e74e9ef9780a349d9d96ba87c}{set\+Uniform\+Buffers}} (const std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_uniform_buffer}{Uniform\+Buffer}} $\ast$ $>$ \&uniform\+Buffers)=0
+\begin{DoxyCompactList}\small\item\em Set the uniform buffers used by this shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a566780181e17f0ff21cd12b5105d392c}\label{class_owl_engine_1_1_shader_program_a566780181e17f0ff21cd12b5105d392c}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a566780181e17f0ff21cd12b5105d392c}{start}} ()=0
+\begin{DoxyCompactList}\small\item\em Start the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_ac39c95e8ad25c38b4735c002059a25c0}\label{class_owl_engine_1_1_shader_program_ac39c95e8ad25c38b4735c002059a25c0}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_ac39c95e8ad25c38b4735c002059a25c0}{stop}} ()=0
+\begin{DoxyCompactList}\small\item\em Stop using the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a61d705d76b7737e8d94eb49fabb61656}\label{class_owl_engine_1_1_shader_program_a61d705d76b7737e8d94eb49fabb61656}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a61d705d76b7737e8d94eb49fabb61656}{destroy}} ()=0
+\begin{DoxyCompactList}\small\item\em Destroy the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_ab8d6e194bca8a79bab18a96d4ed38705}\label{class_owl_engine_1_1_shader_program_ab8d6e194bca8a79bab18a96d4ed38705}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_ab8d6e194bca8a79bab18a96d4ed38705}{print\+Details}} () override=0
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a9dca05f5291b04fded0a8d55ea8b01df}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the program ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_vertex_array}{Vertex\+Array}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_shader_program_aeee1eac563a100b8d3f5ec54594ffb09}{get\+Vertex\+Array}} () const
+\begin{DoxyCompactList}\small\item\em Get the vertex array associated with this shader. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, int $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a73fa8ff051e0affe6034e468bb99695b}{get\+Uniforms}} ()
+\begin{DoxyCompactList}\small\item\em Get the uniforms. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_uniform_buffer}{Uniform\+Buffer}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a3c0cf36ad359778ab15d465bd381da5d}{get\+Uniform\+Buffers}} ()
+\begin{DoxyCompactList}\small\item\em Get the uniform buffers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a2d5e3750b974269cd533522ce09f71ec}\label{class_owl_engine_1_1_shader_program_a2d5e3750b974269cd533522ce09f71ec}} 
+void {\bfseries set\+Order\+Importance} (const uint32\+\_\+t value)
+\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a563690bd0e27806ccb684b0eb2a555a6}{get\+Order\+Importance}} () const
+\begin{DoxyCompactList}\small\item\em Set the shader\textquotesingle{}s order priority. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a6ce50bd8f3b066db13d2c35500963916}{send\+Int}} (const std\+::string \&uniform\+Name, const int value)=0
+\begin{DoxyCompactList}\small\item\em Upload integer to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a686fe5af48cc0b55752564ba5a866ec8}{send\+Int\+Array}} (const std\+::string \&uniform\+Name, int32\+\_\+t $\ast$values, const uint32\+\_\+t count)=0
+\begin{DoxyCompactList}\small\item\em Upload an array of integers to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_ac6620fdcdc0639d4b1c84289f6f0963f}{send\+Bool}} (const std\+::string \&uniform\+Name, const bool value)=0
+\begin{DoxyCompactList}\small\item\em Upload bool to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a5ce09c7eedc147b232ae758c99fa41f5}{send\+Float}} (const std\+::string \&uniform\+Name, const float value)=0
+\begin{DoxyCompactList}\small\item\em Upload float to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a39bcf22ef3e2bccd86b4ab6e5a8a5e3d}{send\+Vec2}} (const std\+::string \&uniform\+Name, const glm\+::vec2 \&value)=0
+\begin{DoxyCompactList}\small\item\em Upload vec2 to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a74e716f8e1800b89fbdf8307c52e68e1}{send\+Vec3}} (const std\+::string \&uniform\+Name, const glm\+::vec3 \&value)=0
+\begin{DoxyCompactList}\small\item\em Upload vec3 to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a8d403c9512d11d15ba7c475a55762e9d}{send\+Vec4}} (const std\+::string \&uniform\+Name, const glm\+::vec4 \&value)=0
+\begin{DoxyCompactList}\small\item\em Upload vec4 to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a281f5fec34d911ebc7ca71a5b7140ced}{send\+Mat3}} (const std\+::string \&uniform\+Name, const glm\+::mat3 \&mat)=0
+\begin{DoxyCompactList}\small\item\em Upload mat3 to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a7b800cc4389a725fb17546f485dedd00}{send\+Mat4}} (const std\+::string \&uniform\+Name, const glm\+::mat4 \&mat)=0
+\begin{DoxyCompactList}\small\item\em Upload mat4 to shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a39e1fbaf110f8a4f2409f035e3d971b7}{create}} (const std\+::string \&shader\+Name)
+\begin{DoxyCompactList}\small\item\em Create a shader program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_acdb7ce1f6134510ae89a4b54d1c98687}\label{class_owl_engine_1_1_shader_program_acdb7ce1f6134510ae89a4b54d1c98687}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_shader_program_acdb7ce1f6134510ae89a4b54d1c98687}{m\+\_\+program\+ID}}
+\begin{DoxyCompactList}\small\item\em The shader program ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a3a5df9d58f23ef6d3a3f05e2b83b1623}\label{class_owl_engine_1_1_shader_program_a3a5df9d58f23ef6d3a3f05e2b83b1623}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a3a5df9d58f23ef6d3a3f05e2b83b1623}{m\+\_\+order}}
+\begin{DoxyCompactList}\small\item\em The order of the shader list in the renderer queue (Blending demands order importance) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a85b30bc599d72a410f42b5f3e6b3fd11}\label{class_owl_engine_1_1_shader_program_a85b30bc599d72a410f42b5f3e6b3fd11}} 
+std\+::string \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a85b30bc599d72a410f42b5f3e6b3fd11}{m\+\_\+vertex\+Path}}
+\begin{DoxyCompactList}\small\item\em The file path of the vertex shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a94fd0211a125886511c91310ebf65a0e}\label{class_owl_engine_1_1_shader_program_a94fd0211a125886511c91310ebf65a0e}} 
+std\+::string \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a94fd0211a125886511c91310ebf65a0e}{m\+\_\+fragment\+Path}}
+\begin{DoxyCompactList}\small\item\em The file path of the fragment shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_aaa2a941926cc66b7d0d127a9015e0ce5}\label{class_owl_engine_1_1_shader_program_aaa2a941926cc66b7d0d127a9015e0ce5}} 
+std\+::string \mbox{\hyperlink{class_owl_engine_1_1_shader_program_aaa2a941926cc66b7d0d127a9015e0ce5}{m\+\_\+geometry\+Path}}
+\begin{DoxyCompactList}\small\item\em The file path of the geometry shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_ae2a10c05fde18ba7416f32058b8966d0}\label{class_owl_engine_1_1_shader_program_ae2a10c05fde18ba7416f32058b8966d0}} 
+std\+::string \mbox{\hyperlink{class_owl_engine_1_1_shader_program_ae2a10c05fde18ba7416f32058b8966d0}{m\+\_\+tessellation\+Control\+Path}}
+\begin{DoxyCompactList}\small\item\em The file path of the tessellation control shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a8f9fa7b02211316908e17ff575319ff1}\label{class_owl_engine_1_1_shader_program_a8f9fa7b02211316908e17ff575319ff1}} 
+std\+::string \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a8f9fa7b02211316908e17ff575319ff1}{m\+\_\+tessellation\+Eval\+Path}}
+\begin{DoxyCompactList}\small\item\em The file path of the tessellation evaluation shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a37264ae39c15a0f8f9ecf28c96baff25}\label{class_owl_engine_1_1_shader_program_a37264ae39c15a0f8f9ecf28c96baff25}} 
+std\+::map$<$ std\+::string, int $>$ \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a37264ae39c15a0f8f9ecf28c96baff25}{m\+\_\+uniforms}}
+\begin{DoxyCompactList}\small\item\em All the uniforms for the shader program. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a70201f1cd2aeb05c7c2d7bfe5ff6f3ea}\label{class_owl_engine_1_1_shader_program_a70201f1cd2aeb05c7c2d7bfe5ff6f3ea}} 
+\mbox{\hyperlink{class_owl_engine_1_1_vertex_array}{Vertex\+Array}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a70201f1cd2aeb05c7c2d7bfe5ff6f3ea}{m\+\_\+vertex\+Array}}
+\begin{DoxyCompactList}\small\item\em The vertex data format which complies with the data format in the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a7fe591510320d463ba0f7a5c9cd10dea}\label{class_owl_engine_1_1_shader_program_a7fe591510320d463ba0f7a5c9cd10dea}} 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_uniform_buffer}{Uniform\+Buffer}} $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_shader_program_a7fe591510320d463ba0f7a5c9cd10dea}{m\+\_\+uniform\+Buffers}}
+\begin{DoxyCompactList}\small\item\em The uniform buffers used by this shader program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic shader program. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a0703992e48790c6669b21fbf4d29441c}\label{class_owl_engine_1_1_shader_program_a0703992e48790c6669b21fbf4d29441c}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!ShaderProgram@{ShaderProgram}}
+\index{ShaderProgram@{ShaderProgram}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{ShaderProgram()}{ShaderProgram()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Shader\+Program\+::\+Shader\+Program (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{shader\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_shader_program_a0703992e48790c6669b21fbf4d29441c}{Shader\+Program()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader\+Name} & a const std\+::string\& -\/ The name of the shader program \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a478a22c20f18cbab09dbb6aa85106090}\label{class_owl_engine_1_1_shader_program_a478a22c20f18cbab09dbb6aa85106090}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!````~ShaderProgram@{$\sim$ShaderProgram}}
+\index{````~ShaderProgram@{$\sim$ShaderProgram}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{$\sim$ShaderProgram()}{~ShaderProgram()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Shader\+Program\+::$\sim$\+Shader\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_shader_program_a478a22c20f18cbab09dbb6aa85106090}{$\sim$\+Shader\+Program()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a397009b26dce86d813c79e607f63b2ba}\label{class_owl_engine_1_1_shader_program_a397009b26dce86d813c79e607f63b2ba}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!build@{build}}
+\index{build@{build}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::build (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_vertex_array}{Vertex\+Array}} $\ast$}]{vertex\+Array,  }\item[{const std\+::string \&}]{vertex\+Path,  }\item[{const std\+::string \&}]{fragment\+Path,  }\item[{const std\+::string \&}]{geometry\+Path,  }\item[{const std\+::string \&}]{tess\+Control\+Path,  }\item[{const std\+::string \&}]{tess\+Eval\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a shader program based on the files passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Array} & a Vertex\+Array$\ast$ -\/ A pointer to the vertex array \\
+\hline
+{\em vertex\+Path} & a const std\+::string\& -\/ The vertex shader file path \\
+\hline
+{\em fragment\+Path} & a const std\+::string\& -\/ The fragment shader file path \\
+\hline
+{\em geometry\+Path} & a const std\+::string\& -\/ The geometry shader file path \\
+\hline
+{\em tess\+Control\+Path} & a const std\+::string\& -\/ The tessellation control shader file path \\
+\hline
+{\em tess\+Eval\+Path} & a const std\+::string\& -\/ The tessellation evaluation shader file path \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_a41455b53966ddcd9c59bfdd13a9108fb}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a39e1fbaf110f8a4f2409f035e3d971b7}\label{class_owl_engine_1_1_shader_program_a39e1fbaf110f8a4f2409f035e3d971b7}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!create@{create}}
+\index{create@{create}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$ Owl\+Engine\+::\+Shader\+Program\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{shader\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a shader program. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_shader_program_a39e1fbaf110f8a4f2409f035e3d971b7}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader\+Name} & a const std\+::string\& -\/ The name of the shader program \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Shader\+Program$\ast$ -\/ The shader object of type defined by the graphics A\+PI chosen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a9dca05f5291b04fded0a8d55ea8b01df}\label{class_owl_engine_1_1_shader_program_a9dca05f5291b04fded0a8d55ea8b01df}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!getID@{getID}}
+\index{getID@{getID}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Shader\+Program\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the program ID. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The program ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a563690bd0e27806ccb684b0eb2a555a6}\label{class_owl_engine_1_1_shader_program_a563690bd0e27806ccb684b0eb2a555a6}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!getOrderImportance@{getOrderImportance}}
+\index{getOrderImportance@{getOrderImportance}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{getOrderImportance()}{getOrderImportance()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Shader\+Program\+::get\+Order\+Importance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the shader\textquotesingle{}s order priority. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & a const uint32\+\_\+t -\/ The order priority (0 is lowest) Get the shader\textquotesingle{}s order priority \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The shader\textquotesingle{}s order priority 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a3c0cf36ad359778ab15d465bd381da5d}\label{class_owl_engine_1_1_shader_program_a3c0cf36ad359778ab15d465bd381da5d}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!getUniformBuffers@{getUniformBuffers}}
+\index{getUniformBuffers@{getUniformBuffers}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{getUniformBuffers()}{getUniformBuffers()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_uniform_buffer}{Uniform\+Buffer}}$\ast$$>$\& Owl\+Engine\+::\+Shader\+Program\+::get\+Uniform\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the uniform buffers. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::unordered\+\_\+map$<$std\+::string, Uniform\+Buffer$\ast$$>$\& -\/ The uniform buffers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a73fa8ff051e0affe6034e468bb99695b}\label{class_owl_engine_1_1_shader_program_a73fa8ff051e0affe6034e468bb99695b}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!getUniforms@{getUniforms}}
+\index{getUniforms@{getUniforms}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{getUniforms()}{getUniforms()}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, int$>$\& Owl\+Engine\+::\+Shader\+Program\+::get\+Uniforms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the uniforms. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::map$<$std\+::string, int$>$\& -\/ The uniforms 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_aeee1eac563a100b8d3f5ec54594ffb09}\label{class_owl_engine_1_1_shader_program_aeee1eac563a100b8d3f5ec54594ffb09}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!getVertexArray@{getVertexArray}}
+\index{getVertexArray@{getVertexArray}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{getVertexArray()}{getVertexArray()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_vertex_array}{Vertex\+Array}}$\ast$ Owl\+Engine\+::\+Shader\+Program\+::get\+Vertex\+Array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the vertex array associated with this shader. 
+
+\begin{DoxyReturn}{Returns}
+a Vertex\+Array$\ast$ -\/ The vertex array associated with this shader 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_ac6620fdcdc0639d4b1c84289f6f0963f}\label{class_owl_engine_1_1_shader_program_ac6620fdcdc0639d4b1c84289f6f0963f}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!sendBool@{sendBool}}
+\index{sendBool@{sendBool}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendBool()}{sendBool()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::send\+Bool (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload bool to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const bool -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_acb7fab43c9266df364930595051df68e}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a5ce09c7eedc147b232ae758c99fa41f5}\label{class_owl_engine_1_1_shader_program_a5ce09c7eedc147b232ae758c99fa41f5}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!sendFloat@{sendFloat}}
+\index{sendFloat@{sendFloat}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendFloat()}{sendFloat()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::send\+Float (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload float to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const float -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_a65cb427a46df41cf064e20aa333d6c0d}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a6ce50bd8f3b066db13d2c35500963916}\label{class_owl_engine_1_1_shader_program_a6ce50bd8f3b066db13d2c35500963916}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!sendInt@{sendInt}}
+\index{sendInt@{sendInt}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendInt()}{sendInt()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::send\+Int (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload integer to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const int -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_ab3512e66c2228a2b2f432c5ca59de88d}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a686fe5af48cc0b55752564ba5a866ec8}\label{class_owl_engine_1_1_shader_program_a686fe5af48cc0b55752564ba5a866ec8}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!sendIntArray@{sendIntArray}}
+\index{sendIntArray@{sendIntArray}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendIntArray()}{sendIntArray()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::send\+Int\+Array (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{int32\+\_\+t $\ast$}]{values,  }\item[{const uint32\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload an array of integers to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em values} & a int32\+\_\+t$\ast$ -\/ The uniform values \\
+\hline
+{\em count} & a const uint32\+\_\+t -\/ The number of elements \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_aeb50c02dce9c75989bd4837ebe27bad4}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a281f5fec34d911ebc7ca71a5b7140ced}\label{class_owl_engine_1_1_shader_program_a281f5fec34d911ebc7ca71a5b7140ced}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!sendMat3@{sendMat3}}
+\index{sendMat3@{sendMat3}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendMat3()}{sendMat3()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::send\+Mat3 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const glm\+::mat3 \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload mat3 to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em mat} & a const glm\+::mat3\& -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_a1b7c541459bc4ffcb966a4d8a06be39b}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a7b800cc4389a725fb17546f485dedd00}\label{class_owl_engine_1_1_shader_program_a7b800cc4389a725fb17546f485dedd00}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!sendMat4@{sendMat4}}
+\index{sendMat4@{sendMat4}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendMat4()}{sendMat4()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::send\+Mat4 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const glm\+::mat4 \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload mat4 to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em mat} & a const glm\+::mat4\& -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_a9e1f3b770ecc9fa689b403e82a913c64}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a39bcf22ef3e2bccd86b4ab6e5a8a5e3d}\label{class_owl_engine_1_1_shader_program_a39bcf22ef3e2bccd86b4ab6e5a8a5e3d}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!sendVec2@{sendVec2}}
+\index{sendVec2@{sendVec2}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendVec2()}{sendVec2()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::send\+Vec2 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const glm\+::vec2 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload vec2 to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const glm\+::vec2\& -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_a61ab518f94993831b09d97b92119fa25}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a74e716f8e1800b89fbdf8307c52e68e1}\label{class_owl_engine_1_1_shader_program_a74e716f8e1800b89fbdf8307c52e68e1}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!sendVec3@{sendVec3}}
+\index{sendVec3@{sendVec3}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendVec3()}{sendVec3()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::send\+Vec3 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const glm\+::vec3 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload vec3 to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const glm\+::vec3\& -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_aeefd1fc8da7f2a1e21b49d5641a8ca88}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_a8d403c9512d11d15ba7c475a55762e9d}\label{class_owl_engine_1_1_shader_program_a8d403c9512d11d15ba7c475a55762e9d}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!sendVec4@{sendVec4}}
+\index{sendVec4@{sendVec4}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendVec4()}{sendVec4()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::send\+Vec4 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const glm\+::vec4 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload vec4 to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const glm\+::vec4\& -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_a93488951ff7c5f25ed30c6c7e993e7b5}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_aa798e58e74e9ef9780a349d9d96ba87c}\label{class_owl_engine_1_1_shader_program_aa798e58e74e9ef9780a349d9d96ba87c}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!setUniformBuffers@{setUniformBuffers}}
+\index{setUniformBuffers@{setUniformBuffers}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{setUniformBuffers()}{setUniformBuffers()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::set\+Uniform\+Buffers (\begin{DoxyParamCaption}\item[{const std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_uniform_buffer}{Uniform\+Buffer}} $\ast$ $>$ \&}]{uniform\+Buffers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the uniform buffers used by this shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Buffers} & a const std\+::unordered\+\_\+map$<$std\+::string, Uniform\+Buffer$\ast$$>$\& -\/ All uniform buffers associated by the block name \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_acfb34befa96a729fa77a877cd08d3193}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_shader_program_ad0dbe093b3092afa80f07355adab2fa6}\label{class_owl_engine_1_1_shader_program_ad0dbe093b3092afa80f07355adab2fa6}} 
+\index{OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}!setUniforms@{setUniforms}}
+\index{setUniforms@{setUniforms}!OwlEngine::ShaderProgram@{OwlEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{setUniforms()}{setUniforms()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Shader\+Program\+::set\+Uniforms (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{uniform\+Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set all uniform locations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Names} & a const std\+::vector$<$std\+::string$>$\& -\/ All uniform names \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_shader_program_ab132cf8dd576db7edfcef46d61547816}{Owl\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/shaders/\mbox{\hyperlink{shader_program_8h}{shader\+Program.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/shaders/\mbox{\hyperlink{shader_program_8cpp}{shader\+Program.\+cpp}}\end{DoxyCompactItemize}

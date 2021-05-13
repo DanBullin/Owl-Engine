@@ -1,0 +1,111 @@
+\hypertarget{class_owl_engine_1_1_texture}{}\doxysection{Owl\+Engine\+::Texture Class Reference}
+\label{class_owl_engine_1_1_texture}\index{OwlEngine::Texture@{OwlEngine::Texture}}
+
+
+A base class interface for a texture.  
+
+
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_owl_engine_1_1_texture}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_texture_ae60b695263d668a5be120079b360b356}{Texture}} (const std\+::string \&texture\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_texture_aaf22c48404d1d3d8fb9646a9e8a856bf}{$\sim$\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_texture_a4e9ca12715b30adbb8a2a035ee036ff0}{bind}} (const uint32\+\_\+t slot=0)=0
+\begin{DoxyCompactList}\small\item\em Bind the texture to a texture unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_a395dab28b2590856d1c782b2c237e3ba}\label{class_owl_engine_1_1_texture_a395dab28b2590856d1c782b2c237e3ba}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_texture_a395dab28b2590856d1c782b2c237e3ba}{print\+Details}} () override=0
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_texture_a266236c4017c6e7ef4a79735346807f4}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_ae84f7e70f8d437a9fb0fa7aeb13994ee}\label{class_owl_engine_1_1_texture_ae84f7e70f8d437a9fb0fa7aeb13994ee}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_texture_ae84f7e70f8d437a9fb0fa7aeb13994ee}{m\+\_\+texture\+ID}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_texture}{Texture}} ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A base class interface for a texture. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_ae60b695263d668a5be120079b360b356}\label{class_owl_engine_1_1_texture_ae60b695263d668a5be120079b360b356}} 
+\index{OwlEngine::Texture@{OwlEngine::Texture}!Texture@{Texture}}
+\index{Texture@{Texture}!OwlEngine::Texture@{OwlEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{Texture()}{Texture()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Texture\+::\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_ae60b695263d668a5be120079b360b356}{Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & a const std\+::string\& -\/ The name of the texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_aaf22c48404d1d3d8fb9646a9e8a856bf}\label{class_owl_engine_1_1_texture_aaf22c48404d1d3d8fb9646a9e8a856bf}} 
+\index{OwlEngine::Texture@{OwlEngine::Texture}!````~Texture@{$\sim$Texture}}
+\index{````~Texture@{$\sim$Texture}!OwlEngine::Texture@{OwlEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{$\sim$Texture()}{~Texture()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Texture\+::$\sim$\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture_aaf22c48404d1d3d8fb9646a9e8a856bf}{$\sim$\+Texture()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_a4e9ca12715b30adbb8a2a035ee036ff0}\label{class_owl_engine_1_1_texture_a4e9ca12715b30adbb8a2a035ee036ff0}} 
+\index{OwlEngine::Texture@{OwlEngine::Texture}!bind@{bind}}
+\index{bind@{bind}!OwlEngine::Texture@{OwlEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Texture\+::bind (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{slot = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bind the texture to a texture unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & a const uint32\+\_\+t -\/ Bind the texture to texture unit \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture_a8e3b15255ef1f104fc80afdcaa560b47}{Owl\+Engine\+::\+Cube\+Map\+Texture}}, \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a4baea917061646f81a9ff86d5b7ac186}{Owl\+Engine\+::\+Texture2D}}, \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_cube_map_texture_a754b4ccbc8edeb9173dd2504beb8db5b}{Owl\+Engine\+::\+Open\+G\+L\+Cube\+Map\+Texture}}, and \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_afbdd356d838cd674ee545e198a4ec22c}{Owl\+Engine\+::\+Open\+G\+L\+Texture2D}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_texture_a266236c4017c6e7ef4a79735346807f4}\label{class_owl_engine_1_1_texture_a266236c4017c6e7ef4a79735346807f4}} 
+\index{OwlEngine::Texture@{OwlEngine::Texture}!getID@{getID}}
+\index{getID@{getID}!OwlEngine::Texture@{OwlEngine::Texture}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Texture\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture ID. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The ID of the texture 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/textures/\mbox{\hyperlink{texture_8h}{texture.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/textures/\mbox{\hyperlink{texture_8cpp}{texture.\+cpp}}\end{DoxyCompactItemize}

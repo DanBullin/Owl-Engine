@@ -1,0 +1,52 @@
+\hypertarget{class_shader_builder}{}\doxysection{Shader\+Builder Class Reference}
+\label{class_shader_builder}\index{ShaderBuilder@{ShaderBuilder}}
+
+
+A builder class to build shader programs.  
+
+
+
+
+{\ttfamily \#include $<$shader\+Builder.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int \mbox{\hyperlink{class_shader_builder_a142f35628a439e63fa339b00b7d3536f}{build\+Program}} (const char $\ast$vertex\+Path, const char $\ast$fragment\+Path, const char $\ast$geometry\+Path=nullptr)
+\begin{DoxyCompactList}\small\item\em Build the program by providing the shader files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A builder class to build shader programs. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_shader_builder_a142f35628a439e63fa339b00b7d3536f}\label{class_shader_builder_a142f35628a439e63fa339b00b7d3536f}} 
+\index{ShaderBuilder@{ShaderBuilder}!buildProgram@{buildProgram}}
+\index{buildProgram@{buildProgram}!ShaderBuilder@{ShaderBuilder}}
+\doxysubsubsection{\texorpdfstring{buildProgram()}{buildProgram()}}
+{\footnotesize\ttfamily unsigned int Shader\+Builder\+::build\+Program (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vertex\+Path,  }\item[{const char $\ast$}]{fragment\+Path,  }\item[{const char $\ast$}]{geometry\+Path = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build the program by providing the shader files. 
+
+\mbox{\hyperlink{class_shader_builder_a142f35628a439e63fa339b00b7d3536f}{build\+Program()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Path} & a const char$\ast$ -\/ The file path of the vertex shader \\
+\hline
+{\em fragment\+Path} & a const char$\ast$ -\/ The file path of the fragment shader \\
+\hline
+{\em geometry\+Path} & a const char$\ast$ -\/ The file path of the geometry shader \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an unsigned int -\/ The program ID 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/shaders/\mbox{\hyperlink{shader_builder_8h}{shader\+Builder.\+h}}\item 
+C\+:/doc/src/src/shaders/\mbox{\hyperlink{shader_builder_8cpp}{shader\+Builder.\+cpp}}\end{DoxyCompactItemize}

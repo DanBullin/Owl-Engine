@@ -1,0 +1,89 @@
+\hypertarget{class_owl_engine_1_1_system}{}\doxysection{Owl\+Engine\+::System Class Reference}
+\label{class_owl_engine_1_1_system}\index{OwlEngine::System@{OwlEngine::System}}
+
+
+Base class for all systems.  
+
+
+
+
+{\ttfamily \#include $<$system.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_owl_engine_1_1_system}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_system_a2b8d9401421566edc72e84018672b5cb}{System}} (const \mbox{\hyperlink{system_8h_a498de293775513c620551b0aca27968f}{System\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_system_a9b57963b4aed327df7a11ed535f7fdc9}{$\sim$\+System}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{system_8h_a498de293775513c620551b0aca27968f}{System\+Type}} \mbox{\hyperlink{class_owl_engine_1_1_system_a1fe7e69c04afcb5ffa30aae5cf1c0565}{get\+System\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the type of the system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}\label{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{start}} ()=0
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}\label{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{stop}} ()=0
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for all systems. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_system_a2b8d9401421566edc72e84018672b5cb}\label{class_owl_engine_1_1_system_a2b8d9401421566edc72e84018672b5cb}} 
+\index{OwlEngine::System@{OwlEngine::System}!System@{System}}
+\index{System@{System}!OwlEngine::System@{OwlEngine::System}}
+\doxysubsubsection{\texorpdfstring{System()}{System()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+System\+::\+System (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{system_8h_a498de293775513c620551b0aca27968f}{System\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_system_a2b8d9401421566edc72e84018672b5cb}{System()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const Systems\+::\+Type -\/ The type of the system \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_system_a9b57963b4aed327df7a11ed535f7fdc9}\label{class_owl_engine_1_1_system_a9b57963b4aed327df7a11ed535f7fdc9}} 
+\index{OwlEngine::System@{OwlEngine::System}!````~System@{$\sim$System}}
+\index{````~System@{$\sim$System}!OwlEngine::System@{OwlEngine::System}}
+\doxysubsubsection{\texorpdfstring{$\sim$System()}{~System()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+System\+::$\sim$\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+$\sim$\+System 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_system_a1fe7e69c04afcb5ffa30aae5cf1c0565}\label{class_owl_engine_1_1_system_a1fe7e69c04afcb5ffa30aae5cf1c0565}} 
+\index{OwlEngine::System@{OwlEngine::System}!getSystemType@{getSystemType}}
+\index{getSystemType@{getSystemType}!OwlEngine::System@{OwlEngine::System}}
+\doxysubsubsection{\texorpdfstring{getSystemType()}{getSystemType()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{system_8h_a498de293775513c620551b0aca27968f}{System\+Type}} Owl\+Engine\+::\+System\+::get\+System\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the type of the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_system_a1fe7e69c04afcb5ffa30aae5cf1c0565}{get\+System\+Type()}}
+
+\begin{DoxyReturn}{Returns}
+a const System\+Type -\/ The type of the system 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/\mbox{\hyperlink{system_8h}{system.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/\mbox{\hyperlink{system_8cpp}{system.\+cpp}}\end{DoxyCompactItemize}

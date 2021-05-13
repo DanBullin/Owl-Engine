@@ -1,0 +1,47 @@
+\hypertarget{class_assimp_loader}{}\doxysection{Assimp\+Loader Class Reference}
+\label{class_assimp_loader}\index{AssimpLoader@{AssimpLoader}}
+
+
+An utility class to load models from file into assimp\textquotesingle{}s data structures and into our own mesh classes.  
+
+
+
+
+{\ttfamily \#include $<$assimp\+Loader.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_assimp_loader_a6b71f7d76591c2d862b98945057ca203}{load\+Model}} (const std\+::string file\+Path, std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_mesh}{Mesh}} $>$$>$ \&meshes)
+\begin{DoxyCompactList}\small\item\em Load a model\textquotesingle{}s data into the meshes reference passed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An utility class to load models from file into assimp\textquotesingle{}s data structures and into our own mesh classes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_assimp_loader_a6b71f7d76591c2d862b98945057ca203}\label{class_assimp_loader_a6b71f7d76591c2d862b98945057ca203}} 
+\index{AssimpLoader@{AssimpLoader}!loadModel@{loadModel}}
+\index{loadModel@{loadModel}!AssimpLoader@{AssimpLoader}}
+\doxysubsubsection{\texorpdfstring{loadModel()}{loadModel()}}
+{\footnotesize\ttfamily void Assimp\+Loader\+::load\+Model (\begin{DoxyParamCaption}\item[{const std\+::string}]{file\+Path,  }\item[{std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_mesh}{Mesh}} $>$$>$ \&}]{meshes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load a model\textquotesingle{}s data into the meshes reference passed. 
+
+\mbox{\hyperlink{class_assimp_loader_a6b71f7d76591c2d862b98945057ca203}{load\+Model()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const char $\ast$ -\/ The file path of the model \\
+\hline
+{\em meshes} & a std\+::vector$<$std\+::shared\+\_\+ptr$<$\+Mesh$>$$>$\& -\/ The vector of meshes in the model \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/utils/\mbox{\hyperlink{assimp_loader_8h}{assimp\+Loader.\+h}}\item 
+C\+:/doc/src/src/utils/\mbox{\hyperlink{assimp_loader_8cpp}{assimp\+Loader.\+cpp}}\end{DoxyCompactItemize}

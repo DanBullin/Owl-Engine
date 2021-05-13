@@ -1,0 +1,157 @@
+\hypertarget{class_light}{}\doxysection{Light Class Reference}
+\label{class_light}\index{Light@{Light}}
+
+
+A light source in the game world.  
+
+
+
+
+{\ttfamily \#include $<$light.\+h$>$}
+
+Inheritance diagram for Light\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_light}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_light_aeb5df09a25a32f19fdffa761268ba24f}\label{class_light_aeb5df09a25a32f19fdffa761268ba24f}} 
+\mbox{\hyperlink{class_light_aeb5df09a25a32f19fdffa761268ba24f}{Light}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_light_a72d71e3c642e892ae565d553d3e1949f}{Light}} (const \mbox{\hyperlink{struct_light_data}{Light\+Data}} \&data)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_light_ad0e59fad13bb6cfadc25b2c477e9ddc7}{$\sim$\+Light}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_light_data}{Light\+Data}} \& \mbox{\hyperlink{class_light_a6d46a32415e43f7bbd2f4e62d2fe0334}{get\+Light\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the light data of this light source. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_light_aa45e5c68f940757b0a0bb2d42fff2025}{set\+Light\+Data}} (const \mbox{\hyperlink{struct_light_data}{Light\+Data}} \&data)
+\begin{DoxyCompactList}\small\item\em Set the light data for this light source. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_light_aec5628016d295ffe959a27f56e52c517}{get\+World\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the world position of the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_light_a79ae645d939583834ce2ffaacb8eb79a}{upload\+Uniform\+Data}} (const int index, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \&shader)
+\begin{DoxyCompactList}\small\item\em Upload the light data to shader program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_light_a923c5625ec556ce1413b31a6ba84c28f}{update}} () override
+\begin{DoxyCompactList}\small\item\em Update the light. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A light source in the game world. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_light_a72d71e3c642e892ae565d553d3e1949f}\label{class_light_a72d71e3c642e892ae565d553d3e1949f}} 
+\index{Light@{Light}!Light@{Light}}
+\index{Light@{Light}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{Light()}{Light()}}
+{\footnotesize\ttfamily Light\+::\+Light (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_light_data}{Light\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a const \mbox{\hyperlink{struct_light_data}{Light\+Data}}\& -\/ A reference to the light data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_ad0e59fad13bb6cfadc25b2c477e9ddc7}\label{class_light_ad0e59fad13bb6cfadc25b2c477e9ddc7}} 
+\index{Light@{Light}!````~Light@{$\sim$Light}}
+\index{````~Light@{$\sim$Light}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{$\sim$Light()}{~Light()}}
+{\footnotesize\ttfamily Light\+::$\sim$\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_light_ad0e59fad13bb6cfadc25b2c477e9ddc7}{$\sim$\+Light()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_light_a6d46a32415e43f7bbd2f4e62d2fe0334}\label{class_light_a6d46a32415e43f7bbd2f4e62d2fe0334}} 
+\index{Light@{Light}!getLightData@{getLightData}}
+\index{getLightData@{getLightData}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getLightData()}{getLightData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_light_data}{Light\+Data}} \& Light\+::get\+Light\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the light data of this light source. 
+
+get\+Light\+Data
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_light_data}{Light\+Data}}\& -\/ A reference to the light data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_aec5628016d295ffe959a27f56e52c517}\label{class_light_aec5628016d295ffe959a27f56e52c517}} 
+\index{Light@{Light}!getWorldPosition@{getWorldPosition}}
+\index{getWorldPosition@{getWorldPosition}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{getWorldPosition()}{getWorldPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Light\+::get\+World\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the world position of the light. 
+
+get\+World\+Position
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The world position of the light 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_light_aa45e5c68f940757b0a0bb2d42fff2025}\label{class_light_aa45e5c68f940757b0a0bb2d42fff2025}} 
+\index{Light@{Light}!setLightData@{setLightData}}
+\index{setLightData@{setLightData}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{setLightData()}{setLightData()}}
+{\footnotesize\ttfamily void Light\+::set\+Light\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_light_data}{Light\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Set the light data for this light source. 
+
+set\+Light\+Data
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a const \mbox{\hyperlink{struct_light_data}{Light\+Data}}\& -\/ A reference to the light data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_light_a923c5625ec556ce1413b31a6ba84c28f}\label{class_light_a923c5625ec556ce1413b31a6ba84c28f}} 
+\index{Light@{Light}!update@{update}}
+\index{update@{update}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Light\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the light. 
+
+\mbox{\hyperlink{class_light_a923c5625ec556ce1413b31a6ba84c28f}{update()}} 
+
+Reimplemented from \mbox{\hyperlink{class_entity_component}{Entity\+Component}}.
+
+\mbox{\Hypertarget{class_light_a79ae645d939583834ce2ffaacb8eb79a}\label{class_light_a79ae645d939583834ce2ffaacb8eb79a}} 
+\index{Light@{Light}!uploadUniformData@{uploadUniformData}}
+\index{uploadUniformData@{uploadUniformData}!Light@{Light}}
+\doxysubsubsection{\texorpdfstring{uploadUniformData()}{uploadUniformData()}}
+{\footnotesize\ttfamily void Light\+::upload\+Uniform\+Data (\begin{DoxyParamCaption}\item[{const int}]{index,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \&}]{shader }\end{DoxyParamCaption})}
+
+
+
+Upload the light data to shader program. 
+
+upload\+Uniform\+Data
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & a const int -\/ The index to the amount of lights in the scene \\
+\hline
+{\em shader} & a const std\+::shared\+\_\+ptr$<$\+Shader\+Program$>$\& -\/ A reference to the shader we\textquotesingle{}re using \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/scene/entity/components/\mbox{\hyperlink{light_8h}{light.\+h}}\item 
+C\+:/doc/src/src/scene/entity/components/\mbox{\hyperlink{light_8cpp}{light.\+cpp}}\end{DoxyCompactItemize}

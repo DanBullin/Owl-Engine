@@ -1,0 +1,263 @@
+\hypertarget{class_owl_engine_1_1_native_script}{}\doxysection{Owl\+Engine\+::Native\+Script Class Reference}
+\label{class_owl_engine_1_1_native_script}\index{OwlEngine::NativeScript@{OwlEngine::NativeScript}}
+
+
+A native script component.  
+
+
+
+
+{\ttfamily \#include $<$native\+Script.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Native\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_owl_engine_1_1_native_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_native_script_a76b0a90fc74d077a1016184e73e2ffe5}{Native\+Script}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_native_script_a9e87cd59c0d6add55701782fe815918c}{$\sim$\+Native\+Script}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a84d0903c0ac9ffc6d49d8df17eab6f5b}\label{class_owl_engine_1_1_native_script_a84d0903c0ac9ffc6d49d8df17eab6f5b}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a84d0903c0ac9ffc6d49d8df17eab6f5b}{on\+Attach}} ()
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_aa01266ca707fb319b5a42ae07bdb925a}\label{class_owl_engine_1_1_native_script_aa01266ca707fb319b5a42ae07bdb925a}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_aa01266ca707fb319b5a42ae07bdb925a}{on\+Detach}} ()
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a28891331d5dcbb84e68972661eeed89a}{on\+Update}} (const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Update function for components. \end{DoxyCompactList}\item 
+virtual nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_native_script_afef9fb697bf3388f97afdf2b580ebe74}{get\+As\+J\+S\+ON}} ()
+\begin{DoxyCompactList}\small\item\em Get the component details as a json object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_af1e544161f75bf0a1da407a80fddad7f}\label{class_owl_engine_1_1_native_script_af1e544161f75bf0a1da407a80fddad7f}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_af1e544161f75bf0a1da407a80fddad7f}{print\+Component\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a04032a08abd5b84edd8e5dbffbe61971}{display\+Im\+Gui}} ()
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_owl_engine_1_1_native_script_a6b8e93c37b0a174d8c87d4e1105dee7b}{get\+Script\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Returns the script\+Name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a5c420f0893c1316230df619fe36581cf}{set\+Script\+Name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em S\+Ets the script\+Name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a2701d4b32ce0be26b5da26929ccb1e07}{on\+Pre\+Update}} (const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call before game update. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a72322920d1ad5b3fa18efe237b68ebef}{on\+Post\+Update}} (const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call after game update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a093d635b6c7d10615142db7966361d58}\label{class_owl_engine_1_1_native_script_a093d635b6c7d10615142db7966361d58}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a093d635b6c7d10615142db7966361d58}{on\+Window\+Resize}} (\mbox{\hyperlink{class_owl_engine_1_1_window_resize_event}{Window\+Resize\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Called when a window is resized. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_ab8215a9f4166c1900ba0810c849bc20a}\label{class_owl_engine_1_1_native_script_ab8215a9f4166c1900ba0810c849bc20a}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_ab8215a9f4166c1900ba0810c849bc20a}{on\+Window\+Focus}} (\mbox{\hyperlink{class_owl_engine_1_1_window_focus_event}{Window\+Focus\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Called when a window gains focus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a595fd849fbe46dea55ef046d9723551c}\label{class_owl_engine_1_1_native_script_a595fd849fbe46dea55ef046d9723551c}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a595fd849fbe46dea55ef046d9723551c}{on\+Window\+Lost\+Focus}} (\mbox{\hyperlink{class_owl_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Called when a window loses focus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a938f329f8ade22d87ce2586facc94274}\label{class_owl_engine_1_1_native_script_a938f329f8ade22d87ce2586facc94274}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a938f329f8ade22d87ce2586facc94274}{on\+Window\+Moved}} (\mbox{\hyperlink{class_owl_engine_1_1_window_moved_event}{Window\+Moved\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Called when a window is moved. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_acf5b8f3e907a453521bc4b5cc7ad3f8f}\label{class_owl_engine_1_1_native_script_acf5b8f3e907a453521bc4b5cc7ad3f8f}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_acf5b8f3e907a453521bc4b5cc7ad3f8f}{on\+Key\+Press}} (\mbox{\hyperlink{class_owl_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon key press. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_ace18af6d23ccff4d34b8624a5b7657b1}\label{class_owl_engine_1_1_native_script_ace18af6d23ccff4d34b8624a5b7657b1}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_ace18af6d23ccff4d34b8624a5b7657b1}{on\+Key\+Release}} (\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon key release. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_adb4515acee7593168f04a01fbf16f25b}\label{class_owl_engine_1_1_native_script_adb4515acee7593168f04a01fbf16f25b}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_adb4515acee7593168f04a01fbf16f25b}{on\+Mouse\+Press}} (\mbox{\hyperlink{class_owl_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon mouse press. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a235dd59ce8ec71d0405fb158cc591c88}\label{class_owl_engine_1_1_native_script_a235dd59ce8ec71d0405fb158cc591c88}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a235dd59ce8ec71d0405fb158cc591c88}{on\+Mouse\+Release}} (\mbox{\hyperlink{class_owl_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon mouse release. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a5e80fa2ee79b2bf183705799a16feef2}\label{class_owl_engine_1_1_native_script_a5e80fa2ee79b2bf183705799a16feef2}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a5e80fa2ee79b2bf183705799a16feef2}{on\+Mouse\+Scrolled}} (\mbox{\hyperlink{class_owl_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon mouse scroll. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a26a2b7fc5c4691ad036371245fab4cb9}\label{class_owl_engine_1_1_native_script_a26a2b7fc5c4691ad036371245fab4cb9}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a26a2b7fc5c4691ad036371245fab4cb9}{on\+Mouse\+Moved}} (\mbox{\hyperlink{class_owl_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon mouse move. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a7ce9442b2e74c233c955e7180868400e}\label{class_owl_engine_1_1_native_script_a7ce9442b2e74c233c955e7180868400e}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a7ce9442b2e74c233c955e7180868400e}{on\+Submit}} (const \mbox{\hyperlink{common_8h_aa7c9aadb398aa7f5617952f93be25047}{Renderers}} renderer, const std\+::string \&render\+State)
+\begin{DoxyCompactList}\small\item\em On submit to the renderer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a9f298179fdee54eb21d2f64333dcc7fd}\label{class_owl_engine_1_1_native_script_a9f298179fdee54eb21d2f64333dcc7fd}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a9f298179fdee54eb21d2f64333dcc7fd}{on\+Render}} (const \mbox{\hyperlink{common_8h_aa7c9aadb398aa7f5617952f93be25047}{Renderers}} renderer, const std\+::string \&render\+State)
+\begin{DoxyCompactList}\small\item\em Call upon rendering. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a413ed705fb3b76fd1ca489f4cf2f27ad}\label{class_owl_engine_1_1_native_script_a413ed705fb3b76fd1ca489f4cf2f27ad}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a413ed705fb3b76fd1ca489f4cf2f27ad}{on\+Contact}} (\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$collision\+Entity)
+\begin{DoxyCompactList}\small\item\em On contact between two R\+P3D collider objects. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a94bc9c6ce133c0a53465841b4630ec3e}\label{class_owl_engine_1_1_native_script_a94bc9c6ce133c0a53465841b4630ec3e}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_native_script_a94bc9c6ce133c0a53465841b4630ec3e}{on\+Trigger}} (\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$overlap\+Entity)
+\begin{DoxyCompactList}\small\item\em On overlap with R\+P3D trigger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A native script component. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a76b0a90fc74d077a1016184e73e2ffe5}\label{class_owl_engine_1_1_native_script_a76b0a90fc74d077a1016184e73e2ffe5}} 
+\index{OwlEngine::NativeScript@{OwlEngine::NativeScript}!NativeScript@{NativeScript}}
+\index{NativeScript@{NativeScript}!OwlEngine::NativeScript@{OwlEngine::NativeScript}}
+\doxysubsubsection{\texorpdfstring{NativeScript()}{NativeScript()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Native\+Script\+::\+Native\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_native_script_a76b0a90fc74d077a1016184e73e2ffe5}{Native\+Script()}} \mbox{\Hypertarget{class_owl_engine_1_1_native_script_a9e87cd59c0d6add55701782fe815918c}\label{class_owl_engine_1_1_native_script_a9e87cd59c0d6add55701782fe815918c}} 
+\index{OwlEngine::NativeScript@{OwlEngine::NativeScript}!````~NativeScript@{$\sim$NativeScript}}
+\index{````~NativeScript@{$\sim$NativeScript}!OwlEngine::NativeScript@{OwlEngine::NativeScript}}
+\doxysubsubsection{\texorpdfstring{$\sim$NativeScript()}{~NativeScript()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Native\+Script\+::$\sim$\+Native\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_native_script_a9e87cd59c0d6add55701782fe815918c}{$\sim$\+Native\+Script()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a04032a08abd5b84edd8e5dbffbe61971}\label{class_owl_engine_1_1_native_script_a04032a08abd5b84edd8e5dbffbe61971}} 
+\index{OwlEngine::NativeScript@{OwlEngine::NativeScript}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::NativeScript@{OwlEngine::NativeScript}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Native\+Script\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_native_script_a04032a08abd5b84edd8e5dbffbe61971}{display\+Im\+Gui()}}
+
+The Im\+G\+UI display controls for this component 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_starting_message_a7ddef7d94e62da83c56f25c77e85c06a}{Starting\+Message}}, \mbox{\hyperlink{class_level_complete_script_a515a7e19d170e6ef8b8e13bddf512edd}{Level\+Complete\+Script}}, \mbox{\hyperlink{class_door_lock_ac6abe3f5fb37847eb3220e5528e53985}{Door\+Lock}}, \mbox{\hyperlink{class_monster_aa6c271b9c7924eeb91390f4aee745e9d}{Monster}}, \mbox{\hyperlink{class_ladder_a43f77d62d43cbd4869605128881ff480}{Ladder}}, \mbox{\hyperlink{class_keycard_a3ae7e1b1047f0b81d7f3d99354c0a6ae}{Keycard}}, \mbox{\hyperlink{class_audio_checkbox_a2f3576a0b35adf1e94beec081687352d}{Audio\+Checkbox}}, \mbox{\hyperlink{class_keybind_text_a1e925f8f6b77a05b69713dbb3206fbd5}{Keybind\+Text}}, \mbox{\hyperlink{class_checkbox_a1a98652e199521703748373f6144d065}{Checkbox}}, \mbox{\hyperlink{class_blobber_a4b5d86e1d4ca1888e3ecdd1afe6d60f2}{Blobber}}, and \mbox{\hyperlink{class_cyborg_aaf2044ba1f2d62ab90ca44da789cbb3e}{Cyborg}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_afef9fb697bf3388f97afdf2b580ebe74}\label{class_owl_engine_1_1_native_script_afef9fb697bf3388f97afdf2b580ebe74}} 
+\index{OwlEngine::NativeScript@{OwlEngine::NativeScript}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::NativeScript@{OwlEngine::NativeScript}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Native\+Script\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the component details as a json object. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_native_script_afef9fb697bf3388f97afdf2b580ebe74}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_door_lock_a1a491d5ca855dc02c429d0bac9d6f779}{Door\+Lock}}, \mbox{\hyperlink{class_monster_a2f4a7fcada931e10f25165c5c34f62a8}{Monster}}, \mbox{\hyperlink{class_ladder_a9dea0bb7a2081f53aff629281f22804e}{Ladder}}, \mbox{\hyperlink{class_starting_message_a8609b4fc1fadf26cf8227f340de0758c}{Starting\+Message}}, \mbox{\hyperlink{class_keycard_a8e5be8227d495a223a5326e641ddc3a3}{Keycard}}, \mbox{\hyperlink{class_level_complete_script_aea4090f7e36679b2912b4bc09f79909b}{Level\+Complete\+Script}}, \mbox{\hyperlink{class_blobber_ae1f02577d96228fbc70afcadc8a7c500}{Blobber}}, \mbox{\hyperlink{class_cyborg_a7c0006c522457e319b66158be2a31445}{Cyborg}}, \mbox{\hyperlink{class_audio_checkbox_aaf85c8ed9803ab54a584d9d9d07f86f7}{Audio\+Checkbox}}, \mbox{\hyperlink{class_keybind_text_aff335ac832d745e6fb075b7dead6af94}{Keybind\+Text}}, and \mbox{\hyperlink{class_checkbox_a46876a4efc1718bae39751cd3ead597f}{Checkbox}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a6b8e93c37b0a174d8c87d4e1105dee7b}\label{class_owl_engine_1_1_native_script_a6b8e93c37b0a174d8c87d4e1105dee7b}} 
+\index{OwlEngine::NativeScript@{OwlEngine::NativeScript}!getScriptName@{getScriptName}}
+\index{getScriptName@{getScriptName}!OwlEngine::NativeScript@{OwlEngine::NativeScript}}
+\doxysubsubsection{\texorpdfstring{getScriptName()}{getScriptName()}}
+{\footnotesize\ttfamily std\+::string Owl\+Engine\+::\+Native\+Script\+::get\+Script\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the script\+Name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_native_script_a6b8e93c37b0a174d8c87d4e1105dee7b}{get\+Script\+Name()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::string -\/ The name of the script 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a72322920d1ad5b3fa18efe237b68ebef}\label{class_owl_engine_1_1_native_script_a72322920d1ad5b3fa18efe237b68ebef}} 
+\index{OwlEngine::NativeScript@{OwlEngine::NativeScript}!onPostUpdate@{onPostUpdate}}
+\index{onPostUpdate@{onPostUpdate}!OwlEngine::NativeScript@{OwlEngine::NativeScript}}
+\doxysubsubsection{\texorpdfstring{onPostUpdate()}{onPostUpdate()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Native\+Script\+::on\+Post\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Call after game update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total runtime of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_monster_a0a973d6376fbbafe7d666bf7d6234081}{Monster}}, \mbox{\hyperlink{class_door_lock_a74a19dd729ada51fc4d51ad90743cd40}{Door\+Lock}}, \mbox{\hyperlink{class_ladder_a48d920f8b0bc37809587064567a758af}{Ladder}}, \mbox{\hyperlink{class_starting_message_aae897cc40bca0ebfcf38abe3abeebbc0}{Starting\+Message}}, \mbox{\hyperlink{class_keycard_a0a39c004d25eb5dd905a6462aae6e1e3}{Keycard}}, \mbox{\hyperlink{class_audio_checkbox_abd6214422416687c600788d211f9aeab}{Audio\+Checkbox}}, \mbox{\hyperlink{class_keybind_text_a86e12bbf25f05ca7d858b4cc29d43741}{Keybind\+Text}}, \mbox{\hyperlink{class_checkbox_ac7e19086c52f8d5134eb59dcdb7fea0e}{Checkbox}}, \mbox{\hyperlink{class_resources_script_a00211181593ff9612d693e3a346dadc3}{Resources\+Script}}, \mbox{\hyperlink{class_camera_rotation_script_a9dfbe644fee9c579b057066c9379fb1c}{Camera\+Rotation\+Script}}, \mbox{\hyperlink{class_f_p_s_counter_ab1ebfcd3b44d525ee838b97eed747cba}{F\+P\+S\+Counter}}, and \mbox{\hyperlink{class_test_script_a51242b5a1f238dac4b3797e19bbddca9}{Test\+Script}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a2701d4b32ce0be26b5da26929ccb1e07}\label{class_owl_engine_1_1_native_script_a2701d4b32ce0be26b5da26929ccb1e07}} 
+\index{OwlEngine::NativeScript@{OwlEngine::NativeScript}!onPreUpdate@{onPreUpdate}}
+\index{onPreUpdate@{onPreUpdate}!OwlEngine::NativeScript@{OwlEngine::NativeScript}}
+\doxysubsubsection{\texorpdfstring{onPreUpdate()}{onPreUpdate()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Native\+Script\+::on\+Pre\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Call before game update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total runtime of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_monster_ae51edbb6c47394bce2838e3b7f178f63}{Monster}}, \mbox{\hyperlink{class_door_lock_a15aa894311c92a63e77df758bb9a9df6}{Door\+Lock}}, \mbox{\hyperlink{class_ladder_aa0919ddd57b6a9189b87af3b4f05e63f}{Ladder}}, \mbox{\hyperlink{class_player_a05e8e6e1b1f8fcc228c963615f93572c}{Player}}, \mbox{\hyperlink{class_keycard_a0648e21c9fbe14db80d5699e22794d94}{Keycard}}, \mbox{\hyperlink{class_hotbar_a2e5e24b2148cf0baba888e98db86d494}{Hotbar}}, \mbox{\hyperlink{class_level_complete_script_a40a35335534e2db842804a7aea86ed13}{Level\+Complete\+Script}}, \mbox{\hyperlink{class_blobber_a2fe96838473c7e54e3657e1d8c5289a0}{Blobber}}, \mbox{\hyperlink{class_level_complete_text_a0bd4ab23c00b7ebf894a6becb6e49985}{Level\+Complete\+Text}}, \mbox{\hyperlink{class_viewable_map_a4c81dfd445d44f95b9e51e80bee9535e}{Viewable\+Map}}, \mbox{\hyperlink{class_game_timer_af9ee6daea1d42e413e42370788d7c671}{Game\+Timer}}, \mbox{\hyperlink{class_floor_detector_a0387c6b7bae9890b56a21549109418bc}{Floor\+Detector}}, and \mbox{\hyperlink{class_f_p_s_counter_a6355273a4dcc2e73dd786900bec1b40a}{F\+P\+S\+Counter}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a28891331d5dcbb84e68972661eeed89a}\label{class_owl_engine_1_1_native_script_a28891331d5dcbb84e68972661eeed89a}} 
+\index{OwlEngine::NativeScript@{OwlEngine::NativeScript}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::NativeScript@{OwlEngine::NativeScript}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Native\+Script\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Update function for components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total runtime of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_native_script_a5c420f0893c1316230df619fe36581cf}\label{class_owl_engine_1_1_native_script_a5c420f0893c1316230df619fe36581cf}} 
+\index{OwlEngine::NativeScript@{OwlEngine::NativeScript}!setScriptName@{setScriptName}}
+\index{setScriptName@{setScriptName}!OwlEngine::NativeScript@{OwlEngine::NativeScript}}
+\doxysubsubsection{\texorpdfstring{setScriptName()}{setScriptName()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Native\+Script\+::set\+Script\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+S\+Ets the script\+Name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_native_script_a5c420f0893c1316230df619fe36581cf}{set\+Script\+Name()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a std\+::string -\/ The name of the script \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{native_script_8h}{native\+Script.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{native_script_8cpp}{native\+Script.\+cpp}}\end{DoxyCompactItemize}

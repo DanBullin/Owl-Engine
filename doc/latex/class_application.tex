@@ -1,0 +1,166 @@
+\hypertarget{class_application}{}\doxysection{Application Class Reference}
+\label{class_application}\index{Application@{Application}}
+
+
+The application class created at the entry point.  
+
+
+
+
+{\ttfamily \#include $<$application.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_a68965449404743bf1add056784d6cf81}{run}} ()
+\begin{DoxyCompactList}\small\item\em The main game loop function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_a582df5b2e1ca74f811e9fb189a693b74}{process\+Key\+Input}} (G\+L\+F\+Wwindow $\ast$window)
+\begin{DoxyCompactList}\small\item\em Process keyboard input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_afcf156d27eac91451277c2aa7b797601}{process\+Mouse}} (G\+L\+F\+Wwindow $\ast$window, float xpos, float ypos)
+\begin{DoxyCompactList}\small\item\em Process mouse input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_a5b6f162ec7f070d6dbcf84ab2f4b6181}{process\+Mouse\+Button}} (G\+L\+F\+Wwindow $\ast$window, int button, int action, int mods)
+\begin{DoxyCompactList}\small\item\em Process mouse button. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_a42962ba6795be82ea07644987582db72}{process\+Scroll}} (G\+L\+F\+Wwindow $\ast$window, float xoffset, float yoffset)
+\begin{DoxyCompactList}\small\item\em Process mouse scroll input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_application_aafdcfffa2743351fb1fd5047204c1a1a}{process\+Framebuffer}} (G\+L\+F\+Wwindow $\ast$window, int width, int height)
+\begin{DoxyCompactList}\small\item\em Process window resize input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The application class created at the entry point. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}\label{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}} 
+\index{Application@{Application}!Application@{Application}}
+\index{Application@{Application}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily Application\+::\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_application_afa8cc05ce6b6092be5ecdfdae44e05f8}{Application()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_application_aafdcfffa2743351fb1fd5047204c1a1a}\label{class_application_aafdcfffa2743351fb1fd5047204c1a1a}} 
+\index{Application@{Application}!processFramebuffer@{processFramebuffer}}
+\index{processFramebuffer@{processFramebuffer}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{processFramebuffer()}{processFramebuffer()}}
+{\footnotesize\ttfamily void Application\+::process\+Framebuffer (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Process window resize input. 
+
+\mbox{\hyperlink{class_application_aafdcfffa2743351fb1fd5047204c1a1a}{process\+Framebuffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em width} & an int -\/ Frame buffer width size \\
+\hline
+{\em height} & an int -\/ Frame buffer height size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_application_a582df5b2e1ca74f811e9fb189a693b74}\label{class_application_a582df5b2e1ca74f811e9fb189a693b74}} 
+\index{Application@{Application}!processKeyInput@{processKeyInput}}
+\index{processKeyInput@{processKeyInput}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{processKeyInput()}{processKeyInput()}}
+{\footnotesize\ttfamily void Application\+::process\+Key\+Input (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+Process keyboard input. 
+
+\mbox{\hyperlink{class_application_a582df5b2e1ca74f811e9fb189a693b74}{process\+Key\+Input()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_application_afcf156d27eac91451277c2aa7b797601}\label{class_application_afcf156d27eac91451277c2aa7b797601}} 
+\index{Application@{Application}!processMouse@{processMouse}}
+\index{processMouse@{processMouse}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{processMouse()}{processMouse()}}
+{\footnotesize\ttfamily void Application\+::process\+Mouse (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{float}]{xpos,  }\item[{float}]{ypos }\end{DoxyParamCaption})}
+
+
+
+Process mouse input. 
+
+\mbox{\hyperlink{class_application_afcf156d27eac91451277c2aa7b797601}{process\+Mouse()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em xpos} & a float -\/ Mouse x position \\
+\hline
+{\em ypos} & a float -\/ Mouse y position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_application_a5b6f162ec7f070d6dbcf84ab2f4b6181}\label{class_application_a5b6f162ec7f070d6dbcf84ab2f4b6181}} 
+\index{Application@{Application}!processMouseButton@{processMouseButton}}
+\index{processMouseButton@{processMouseButton}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{processMouseButton()}{processMouseButton()}}
+{\footnotesize\ttfamily void Application\+::process\+Mouse\+Button (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{button,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})}
+
+
+
+Process mouse button. 
+
+\mbox{\hyperlink{class_application_a5b6f162ec7f070d6dbcf84ab2f4b6181}{process\+Mouse\+Button()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em button} & an int -\/ The button involved \\
+\hline
+{\em action} & an int -\/ The action of the mouse button \\
+\hline
+{\em mods} & an int -\/ The modifier key flags \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_application_a42962ba6795be82ea07644987582db72}\label{class_application_a42962ba6795be82ea07644987582db72}} 
+\index{Application@{Application}!processScroll@{processScroll}}
+\index{processScroll@{processScroll}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{processScroll()}{processScroll()}}
+{\footnotesize\ttfamily void Application\+::process\+Scroll (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{float}]{xoffset,  }\item[{float}]{yoffset }\end{DoxyParamCaption})}
+
+
+
+Process mouse scroll input. 
+
+\mbox{\hyperlink{class_application_a42962ba6795be82ea07644987582db72}{process\+Scroll()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em xoffset} & a float -\/ The offset scroll \\
+\hline
+{\em yoffset} & a float -\/ The offset scroll \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_application_a68965449404743bf1add056784d6cf81}\label{class_application_a68965449404743bf1add056784d6cf81}} 
+\index{Application@{Application}!run@{run}}
+\index{run@{run}!Application@{Application}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Application\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The main game loop function. 
+
+\mbox{\hyperlink{class_application_a68965449404743bf1add056784d6cf81}{run()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/core/\mbox{\hyperlink{application_8h}{application.\+h}}\item 
+C\+:/doc/src/src/core/\mbox{\hyperlink{application_8cpp}{application.\+cpp}}\end{DoxyCompactItemize}

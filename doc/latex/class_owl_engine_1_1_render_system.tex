@@ -1,0 +1,142 @@
+\hypertarget{class_owl_engine_1_1_render_system}{}\doxysection{Owl\+Engine\+::Render\+System Class Reference}
+\label{class_owl_engine_1_1_render_system}\index{OwlEngine::RenderSystem@{OwlEngine::RenderSystem}}
+
+
+A render system which manages rendering (both 2D \& 3D)  
+
+
+
+
+{\ttfamily \#include $<$render\+System.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Render\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_render_system}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_render_system_a0ae33f132dba5ee685d76bb7d761ae0a}{Render\+System}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_render_system_a2ce29c8b6aaa3d9e6b94eac0fc30ab31}{$\sim$\+Render\+System}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_render_system_aa587c20d74c84a62f1c90650184f12bc}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_render_system_a43314cd4417a5b02ff73458990eab996}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_render_system_a94fca09f67e78381ebd6d0cc7853db4d}{initialise}} ()
+\begin{DoxyCompactList}\small\item\em Initialise the render system after all systems have been added and started. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_render_system_aadf6afd6890aa6baf4db5005d6dabb26}{on\+Render}} (\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$scene)
+\begin{DoxyCompactList}\small\item\em Render the scene. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_render_system_a9d13dd7c05df00f3b9f452fe7a800b01}{get\+Texture\+Unit\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Get the texture unit manager. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A render system which manages rendering (both 2D \& 3D) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_system_a0ae33f132dba5ee685d76bb7d761ae0a}\label{class_owl_engine_1_1_render_system_a0ae33f132dba5ee685d76bb7d761ae0a}} 
+\index{OwlEngine::RenderSystem@{OwlEngine::RenderSystem}!RenderSystem@{RenderSystem}}
+\index{RenderSystem@{RenderSystem}!OwlEngine::RenderSystem@{OwlEngine::RenderSystem}}
+\doxysubsubsection{\texorpdfstring{RenderSystem()}{RenderSystem()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Render\+System\+::\+Render\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_system}{Render\+System}}. \mbox{\Hypertarget{class_owl_engine_1_1_render_system_a2ce29c8b6aaa3d9e6b94eac0fc30ab31}\label{class_owl_engine_1_1_render_system_a2ce29c8b6aaa3d9e6b94eac0fc30ab31}} 
+\index{OwlEngine::RenderSystem@{OwlEngine::RenderSystem}!````~RenderSystem@{$\sim$RenderSystem}}
+\index{````~RenderSystem@{$\sim$RenderSystem}!OwlEngine::RenderSystem@{OwlEngine::RenderSystem}}
+\doxysubsubsection{\texorpdfstring{$\sim$RenderSystem()}{~RenderSystem()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Render\+System\+::$\sim$\+Render\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+$\sim$\+Render\+System 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_system_a9d13dd7c05df00f3b9f452fe7a800b01}\label{class_owl_engine_1_1_render_system_a9d13dd7c05df00f3b9f452fe7a800b01}} 
+\index{OwlEngine::RenderSystem@{OwlEngine::RenderSystem}!getTextureUnitManager@{getTextureUnitManager}}
+\index{getTextureUnitManager@{getTextureUnitManager}!OwlEngine::RenderSystem@{OwlEngine::RenderSystem}}
+\doxysubsubsection{\texorpdfstring{getTextureUnitManager()}{getTextureUnitManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $\ast$ Owl\+Engine\+::\+Render\+System\+::get\+Texture\+Unit\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the texture unit manager. 
+
+get\+Texture\+Unit\+Manager
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} -\/ The texture unit manager 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_system_a94fca09f67e78381ebd6d0cc7853db4d}\label{class_owl_engine_1_1_render_system_a94fca09f67e78381ebd6d0cc7853db4d}} 
+\index{OwlEngine::RenderSystem@{OwlEngine::RenderSystem}!initialise@{initialise}}
+\index{initialise@{initialise}!OwlEngine::RenderSystem@{OwlEngine::RenderSystem}}
+\doxysubsubsection{\texorpdfstring{initialise()}{initialise()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Render\+System\+::initialise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initialise the render system after all systems have been added and started. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_system_a94fca09f67e78381ebd6d0cc7853db4d}{initialise()}} \mbox{\Hypertarget{class_owl_engine_1_1_render_system_aadf6afd6890aa6baf4db5005d6dabb26}\label{class_owl_engine_1_1_render_system_aadf6afd6890aa6baf4db5005d6dabb26}} 
+\index{OwlEngine::RenderSystem@{OwlEngine::RenderSystem}!onRender@{onRender}}
+\index{onRender@{onRender}!OwlEngine::RenderSystem@{OwlEngine::RenderSystem}}
+\doxysubsubsection{\texorpdfstring{onRender()}{onRender()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Render\+System\+::on\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$}]{scene }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Render the scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_system_aadf6afd6890aa6baf4db5005d6dabb26}{on\+Render()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & a Scene$\ast$ -\/ A pointer to the scene to render \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_system_aa587c20d74c84a62f1c90650184f12bc}\label{class_owl_engine_1_1_render_system_aa587c20d74c84a62f1c90650184f12bc}} 
+\index{OwlEngine::RenderSystem@{OwlEngine::RenderSystem}!start@{start}}
+\index{start@{start}!OwlEngine::RenderSystem@{OwlEngine::RenderSystem}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Render\+System\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_system_aa587c20d74c84a62f1c90650184f12bc}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_render_system_a43314cd4417a5b02ff73458990eab996}\label{class_owl_engine_1_1_render_system_a43314cd4417a5b02ff73458990eab996}} 
+\index{OwlEngine::RenderSystem@{OwlEngine::RenderSystem}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::RenderSystem@{OwlEngine::RenderSystem}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Render\+System\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_system_a43314cd4417a5b02ff73458990eab996}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{render_system_8h}{render\+System.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{render_system_8cpp}{render\+System.\+cpp}}\end{DoxyCompactItemize}

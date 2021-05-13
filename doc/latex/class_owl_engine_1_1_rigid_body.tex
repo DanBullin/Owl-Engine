@@ -1,0 +1,222 @@
+\hypertarget{class_owl_engine_1_1_rigid_body}{}\doxysection{Owl\+Engine\+::Rigid\+Body Class Reference}
+\label{class_owl_engine_1_1_rigid_body}\index{OwlEngine::RigidBody@{OwlEngine::RigidBody}}
+
+
+A \mbox{\hyperlink{class_owl_engine_1_1_rigid_body}{Rigid\+Body}} component that allows physics to affect the attatched entity. Uses React\+Physics3D.  
+
+
+
+
+{\ttfamily \#include $<$rigid\+Body.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Rigid\+Body\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_rigid_body}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_rigid_body_ab0087f7ad8dcc736a081c54d9504dcfb}{Rigid\+Body}} (rp3d\+::\+Physics\+World $\ast$world, \mbox{\hyperlink{rigid_body_8h_ad97e1a02de4665cb49b9875a9530fa3e}{Body\+Types\+::\+Rigid\+Body\+Type}} type, bool can\+Sleep=true)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+rp3d\+::\+Rigid\+Body $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_af7f0bcbb23f9c7cc2cda6c8fce0605dc}{get\+Body}} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the rigidbody. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{rigid_body_8h_ad97e1a02de4665cb49b9875a9530fa3e}{Body\+Types\+::\+Rigid\+Body\+Type}} \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a8044f3bcb5b35c1ff4e09645a32bcbbb}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Returns the rigidbody type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_aea971829e499a634b5fe5fbc3784f1a7}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a616b891fca1ff6fcf88543abb4b42679}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a16dde41e9c223542fd0a00724297453f}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the rigid body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_ac0fe961fbbd08c7ce898a08aff85e1c7}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a879f2ac42f32fbf3e623bb4bf095b185}{set\+Velocity}} (const glm\+::vec3 front)
+\begin{DoxyCompactList}\small\item\em Set the Rigid\+Bodys velocity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_a9aa311ace5017357e6979ed086ded306}\label{class_owl_engine_1_1_rigid_body_a9aa311ace5017357e6979ed086ded306}} 
+void \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a9aa311ace5017357e6979ed086ded306}{set\+Velocity\+Up}} (const glm\+::vec3 up)
+\begin{DoxyCompactList}\small\item\em Set the Rigid\+Bodys velocity, ignoring the Y constraint. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_afe62aa7c1031eb82d56fe1dc7a1d7003}\label{class_owl_engine_1_1_rigid_body_afe62aa7c1031eb82d56fe1dc7a1d7003}} 
+void \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_afe62aa7c1031eb82d56fe1dc7a1d7003}{set\+Type}} (\mbox{\hyperlink{rigid_body_8h_ad97e1a02de4665cb49b9875a9530fa3e}{Body\+Types\+::\+Rigid\+Body\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Sets the rigidbody\textquotesingle{}s type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_a7d4ba9f710498b7689ebe5d0f6387693}\label{class_owl_engine_1_1_rigid_body_a7d4ba9f710498b7689ebe5d0f6387693}} 
+void \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a7d4ba9f710498b7689ebe5d0f6387693}{apply\+Force}} (float velocity)
+\begin{DoxyCompactList}\small\item\em Apply a force to the \mbox{\hyperlink{class_owl_engine_1_1_rigid_body}{Rigid\+Body}}. \end{DoxyCompactList}\item 
+virtual nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a717c2dcd81003de6f6c96b524ddef756}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data as J\+S\+ON for saving. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_af6081de906e9366c795f4312511d5afc}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data displayed in Im\+Gui form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A \mbox{\hyperlink{class_owl_engine_1_1_rigid_body}{Rigid\+Body}} component that allows physics to affect the attatched entity. Uses React\+Physics3D. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_ab0087f7ad8dcc736a081c54d9504dcfb}\label{class_owl_engine_1_1_rigid_body_ab0087f7ad8dcc736a081c54d9504dcfb}} 
+\index{OwlEngine::RigidBody@{OwlEngine::RigidBody}!RigidBody@{RigidBody}}
+\index{RigidBody@{RigidBody}!OwlEngine::RigidBody@{OwlEngine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{RigidBody()}{RigidBody()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Rigid\+Body\+::\+Rigid\+Body (\begin{DoxyParamCaption}\item[{rp3d\+::\+Physics\+World $\ast$}]{world,  }\item[{\mbox{\hyperlink{rigid_body_8h_ad97e1a02de4665cb49b9875a9530fa3e}{Body\+Types\+::\+Rigid\+Body\+Type}}}]{type,  }\item[{bool}]{can\+Sleep = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_rigid_body_ab0087f7ad8dcc736a081c54d9504dcfb}{Rigid\+Body()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & a rp3d\+::\+Physics\+World$\ast$ -\/ The phyiscs world \\
+\hline
+{\em type} & a Body\+Types\+::\+Rigid\+Body\+Type -\/ The type of \mbox{\hyperlink{class_owl_engine_1_1_rigid_body}{Rigid\+Body}} \\
+\hline
+{\em can\+Sleep} & a bool -\/ Can the rigidbody enter sleep mode \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_af6081de906e9366c795f4312511d5afc}\label{class_owl_engine_1_1_rigid_body_af6081de906e9366c795f4312511d5afc}} 
+\index{OwlEngine::RigidBody@{OwlEngine::RigidBody}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::RigidBody@{OwlEngine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Rigid\+Body\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data displayed in Im\+Gui form. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_rigid_body_af6081de906e9366c795f4312511d5afc}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_a717c2dcd81003de6f6c96b524ddef756}\label{class_owl_engine_1_1_rigid_body_a717c2dcd81003de6f6c96b524ddef756}} 
+\index{OwlEngine::RigidBody@{OwlEngine::RigidBody}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::RigidBody@{OwlEngine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Rigid\+Body\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data as J\+S\+ON for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a717c2dcd81003de6f6c96b524ddef756}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_af7f0bcbb23f9c7cc2cda6c8fce0605dc}\label{class_owl_engine_1_1_rigid_body_af7f0bcbb23f9c7cc2cda6c8fce0605dc}} 
+\index{OwlEngine::RigidBody@{OwlEngine::RigidBody}!getBody@{getBody}}
+\index{getBody@{getBody}!OwlEngine::RigidBody@{OwlEngine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getBody()}{getBody()}}
+{\footnotesize\ttfamily rp3d\+::\+Rigid\+Body $\ast$ Owl\+Engine\+::\+Rigid\+Body\+::get\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a pointer to the rigidbody. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_rigid_body_af7f0bcbb23f9c7cc2cda6c8fce0605dc}{get\+Body()}}
+
+\begin{DoxyReturn}{Returns}
+a rp3d\+::\+Rigid\+Body$\ast$ -\/ The react physics \mbox{\hyperlink{class_owl_engine_1_1_rigid_body}{Rigid\+Body}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_a8044f3bcb5b35c1ff4e09645a32bcbbb}\label{class_owl_engine_1_1_rigid_body_a8044f3bcb5b35c1ff4e09645a32bcbbb}} 
+\index{OwlEngine::RigidBody@{OwlEngine::RigidBody}!getType@{getType}}
+\index{getType@{getType}!OwlEngine::RigidBody@{OwlEngine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{rigid_body_8h_ad97e1a02de4665cb49b9875a9530fa3e}{Body\+Types\+::\+Rigid\+Body\+Type}} Owl\+Engine\+::\+Rigid\+Body\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the rigidbody type. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a8044f3bcb5b35c1ff4e09645a32bcbbb}{get\+Type()}}
+
+\begin{DoxyReturn}{Returns}
+a Rigid\+Body\+Type -\/ The type of \mbox{\hyperlink{class_owl_engine_1_1_rigid_body}{Rigid\+Body}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_aea971829e499a634b5fe5fbc3784f1a7}\label{class_owl_engine_1_1_rigid_body_aea971829e499a634b5fe5fbc3784f1a7}} 
+\index{OwlEngine::RigidBody@{OwlEngine::RigidBody}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::RigidBody@{OwlEngine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Rigid\+Body\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_rigid_body_aea971829e499a634b5fe5fbc3784f1a7}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_a616b891fca1ff6fcf88543abb4b42679}\label{class_owl_engine_1_1_rigid_body_a616b891fca1ff6fcf88543abb4b42679}} 
+\index{OwlEngine::RigidBody@{OwlEngine::RigidBody}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::RigidBody@{OwlEngine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Rigid\+Body\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a616b891fca1ff6fcf88543abb4b42679}{on\+Detach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_a16dde41e9c223542fd0a00724297453f}\label{class_owl_engine_1_1_rigid_body_a16dde41e9c223542fd0a00724297453f}} 
+\index{OwlEngine::RigidBody@{OwlEngine::RigidBody}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::RigidBody@{OwlEngine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Rigid\+Body\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the rigid body. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a16dde41e9c223542fd0a00724297453f}{on\+Update()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_ac0fe961fbbd08c7ce898a08aff85e1c7}\label{class_owl_engine_1_1_rigid_body_ac0fe961fbbd08c7ce898a08aff85e1c7}} 
+\index{OwlEngine::RigidBody@{OwlEngine::RigidBody}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::RigidBody@{OwlEngine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Rigid\+Body\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_rigid_body_ac0fe961fbbd08c7ce898a08aff85e1c7}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_rigid_body_a879f2ac42f32fbf3e623bb4bf095b185}\label{class_owl_engine_1_1_rigid_body_a879f2ac42f32fbf3e623bb4bf095b185}} 
+\index{OwlEngine::RigidBody@{OwlEngine::RigidBody}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!OwlEngine::RigidBody@{OwlEngine::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Rigid\+Body\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3}]{front }\end{DoxyParamCaption})}
+
+
+
+Set the Rigid\+Bodys velocity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a879f2ac42f32fbf3e623bb4bf095b185}{set\+Velocity()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em front} & a const glm\+::vec3 -\/ The front \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{rigid_body_8h}{rigid\+Body.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/rigid\+Body.\+cpp\end{DoxyCompactItemize}

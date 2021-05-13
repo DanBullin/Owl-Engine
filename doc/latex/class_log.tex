@@ -1,0 +1,138 @@
+\hypertarget{class_log}{}\doxysection{Log Class Reference}
+\label{class_log}\index{Log@{Log}}
+
+
+A S\+P\+Dlog to log useful information to console.~\newline
+Available at\+: \href{https://github.com/gabime/spdlog}{\texttt{ https\+://github.\+com/gabime/spdlog}}~\newline
+S\+P\+Dlog Author\+: Gabi Melman.  
+
+
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_log_aa2d19b93f473d5ef804ddf10f0e766cf}{start}} ()
+\begin{DoxyCompactList}\small\item\em Set up the spdlog. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_log_a9fd5a62c54fb5e7f8d116ebab9a87217}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Close the logger. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_log_a5f41ec7ae532dfaec1f29a1fd4bdda5c}\label{class_log_a5f41ec7ae532dfaec1f29a1fd4bdda5c}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_log_a5f41ec7ae532dfaec1f29a1fd4bdda5c}{info}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Send info message to console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_log_a1ca51437fbe992b77991c5ec19f8c55a}\label{class_log_a1ca51437fbe992b77991c5ec19f8c55a}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_log_a1ca51437fbe992b77991c5ec19f8c55a}{trace}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Send trace message to console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_log_af44d4134bbf5fd6fcc55b8d57dba1f87}\label{class_log_af44d4134bbf5fd6fcc55b8d57dba1f87}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_log_af44d4134bbf5fd6fcc55b8d57dba1f87}{warn}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Send warn message to console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_log_a0c4f4bb4463767f221567503626660d5}\label{class_log_a0c4f4bb4463767f221567503626660d5}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_log_a0c4f4bb4463767f221567503626660d5}{error}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Send error message to console. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_log_a0c4f4bb4463767f221567503626660d5}{error}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_log_a0c4f4bb4463767f221567503626660d5}{error()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_log_a5f41ec7ae532dfaec1f29a1fd4bdda5c}{info}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_log_a5f41ec7ae532dfaec1f29a1fd4bdda5c}{info()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_log_a1ca51437fbe992b77991c5ec19f8c55a}{trace}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_log_a1ca51437fbe992b77991c5ec19f8c55a}{trace()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_log_af44d4134bbf5fd6fcc55b8d57dba1f87}{warn}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_log_af44d4134bbf5fd6fcc55b8d57dba1f87}{warn()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A S\+P\+Dlog to log useful information to console.~\newline
+Available at\+: \href{https://github.com/gabime/spdlog}{\texttt{ https\+://github.\+com/gabime/spdlog}}~\newline
+S\+P\+Dlog Author\+: Gabi Melman. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_log_a0c4f4bb4463767f221567503626660d5}\label{class_log_a0c4f4bb4463767f221567503626660d5}} 
+\index{Log@{Log}!error@{error}}
+\index{error@{error}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Log\+::error (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_log_a0c4f4bb4463767f221567503626660d5}{error()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ The message to log \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_log_a5f41ec7ae532dfaec1f29a1fd4bdda5c}\label{class_log_a5f41ec7ae532dfaec1f29a1fd4bdda5c}} 
+\index{Log@{Log}!info@{info}}
+\index{info@{info}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Log\+::info (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_log_a5f41ec7ae532dfaec1f29a1fd4bdda5c}{info()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ The message to log \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_log_aa2d19b93f473d5ef804ddf10f0e766cf}\label{class_log_aa2d19b93f473d5ef804ddf10f0e766cf}} 
+\index{Log@{Log}!start@{start}}
+\index{start@{start}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Log\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set up the spdlog. 
+
+\mbox{\hyperlink{class_log_aa2d19b93f473d5ef804ddf10f0e766cf}{start()}} \mbox{\Hypertarget{class_log_a9fd5a62c54fb5e7f8d116ebab9a87217}\label{class_log_a9fd5a62c54fb5e7f8d116ebab9a87217}} 
+\index{Log@{Log}!stop@{stop}}
+\index{stop@{stop}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Log\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Close the logger. 
+
+\mbox{\hyperlink{class_log_a9fd5a62c54fb5e7f8d116ebab9a87217}{stop()}} \mbox{\Hypertarget{class_log_a1ca51437fbe992b77991c5ec19f8c55a}\label{class_log_a1ca51437fbe992b77991c5ec19f8c55a}} 
+\index{Log@{Log}!trace@{trace}}
+\index{trace@{trace}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Log\+::trace (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_log_a1ca51437fbe992b77991c5ec19f8c55a}{trace()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ The message to log \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_log_af44d4134bbf5fd6fcc55b8d57dba1f87}\label{class_log_af44d4134bbf5fd6fcc55b8d57dba1f87}} 
+\index{Log@{Log}!warn@{warn}}
+\index{warn@{warn}!Log@{Log}}
+\doxysubsubsection{\texorpdfstring{warn()}{warn()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Log\+::warn (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_log_af44d4134bbf5fd6fcc55b8d57dba1f87}{warn()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ The message to log \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/core/\mbox{\hyperlink{log_8h}{log.\+h}}\item 
+C\+:/doc/src/src/core/\mbox{\hyperlink{log_8cpp}{log.\+cpp}}\end{DoxyCompactItemize}

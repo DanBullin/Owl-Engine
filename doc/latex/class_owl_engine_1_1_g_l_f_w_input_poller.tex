@@ -1,0 +1,121 @@
+\hypertarget{class_owl_engine_1_1_g_l_f_w_input_poller}{}\doxysection{Owl\+Engine\+::G\+L\+F\+W\+Input\+Poller Class Reference}
+\label{class_owl_engine_1_1_g_l_f_w_input_poller}\index{OwlEngine::GLFWInputPoller@{OwlEngine::GLFWInputPoller}}
+
+
+G\+F\+LW specific Input poller for getting current keyboard/mouse state.  
+
+
+
+
+{\ttfamily \#include $<$G\+L\+F\+W\+Input\+Poller.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_input_poller_a4245e55f0b940ae46875c31af5d2cd1b}{is\+Any\+Key\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em Is any key pressed, returns list of all keys currently pressed. \end{DoxyCompactList}\item 
+static std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_input_poller_a43a39852f3b79017a06d07bfbea18d76}{is\+Any\+Mouse\+Button\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em Is any mouse button pressed, returns list of all mouse buttons currently pressed. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_input_poller_aa8695e7fc86522ae4c6ce0bdc38c5a37}{is\+Key\+Pressed}} (const int32\+\_\+t key\+Code)
+\begin{DoxyCompactList}\small\item\em Is the key pressed. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_input_poller_a2eca8be1d2edb986830f2aa458daa229}{is\+Mouse\+Pressed}} (const int32\+\_\+t mouse\+Button)
+\begin{DoxyCompactList}\small\item\em Is the mouse button pressed. \end{DoxyCompactList}\item 
+static glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_input_poller_aaa7116f498629e5810ab688bf5fd1852}{get\+Mouse\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the current mouse position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+G\+F\+LW specific Input poller for getting current keyboard/mouse state. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_input_poller_aaa7116f498629e5810ab688bf5fd1852}\label{class_owl_engine_1_1_g_l_f_w_input_poller_aaa7116f498629e5810ab688bf5fd1852}} 
+\index{OwlEngine::GLFWInputPoller@{OwlEngine::GLFWInputPoller}!getMousePosition@{getMousePosition}}
+\index{getMousePosition@{getMousePosition}!OwlEngine::GLFWInputPoller@{OwlEngine::GLFWInputPoller}}
+\doxysubsubsection{\texorpdfstring{getMousePosition()}{getMousePosition()}}
+{\footnotesize\ttfamily glm\+::vec2 Owl\+Engine\+::\+G\+L\+F\+W\+Input\+Poller\+::get\+Mouse\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the current mouse position. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_input_poller_aaa7116f498629e5810ab688bf5fd1852}{get\+Mouse\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The mouse position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_input_poller_a4245e55f0b940ae46875c31af5d2cd1b}\label{class_owl_engine_1_1_g_l_f_w_input_poller_a4245e55f0b940ae46875c31af5d2cd1b}} 
+\index{OwlEngine::GLFWInputPoller@{OwlEngine::GLFWInputPoller}!isAnyKeyPressed@{isAnyKeyPressed}}
+\index{isAnyKeyPressed@{isAnyKeyPressed}!OwlEngine::GLFWInputPoller@{OwlEngine::GLFWInputPoller}}
+\doxysubsubsection{\texorpdfstring{isAnyKeyPressed()}{isAnyKeyPressed()}}
+{\footnotesize\ttfamily std\+::vector$<$ uint32\+\_\+t $>$ Owl\+Engine\+::\+G\+L\+F\+W\+Input\+Poller\+::is\+Any\+Key\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Is any key pressed, returns list of all keys currently pressed. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_input_poller_a4245e55f0b940ae46875c31af5d2cd1b}{is\+Any\+Key\+Pressed()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$uint32\+\_\+t$>$ -\/ A list of all keys currently pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_input_poller_a43a39852f3b79017a06d07bfbea18d76}\label{class_owl_engine_1_1_g_l_f_w_input_poller_a43a39852f3b79017a06d07bfbea18d76}} 
+\index{OwlEngine::GLFWInputPoller@{OwlEngine::GLFWInputPoller}!isAnyMouseButtonPressed@{isAnyMouseButtonPressed}}
+\index{isAnyMouseButtonPressed@{isAnyMouseButtonPressed}!OwlEngine::GLFWInputPoller@{OwlEngine::GLFWInputPoller}}
+\doxysubsubsection{\texorpdfstring{isAnyMouseButtonPressed()}{isAnyMouseButtonPressed()}}
+{\footnotesize\ttfamily std\+::vector$<$ uint32\+\_\+t $>$ Owl\+Engine\+::\+G\+L\+F\+W\+Input\+Poller\+::is\+Any\+Mouse\+Button\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Is any mouse button pressed, returns list of all mouse buttons currently pressed. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_input_poller_a43a39852f3b79017a06d07bfbea18d76}{is\+Any\+Mouse\+Button\+Pressed()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$uint32\+\_\+t$>$ -\/ A list of all mouse buttons currently pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_input_poller_aa8695e7fc86522ae4c6ce0bdc38c5a37}\label{class_owl_engine_1_1_g_l_f_w_input_poller_aa8695e7fc86522ae4c6ce0bdc38c5a37}} 
+\index{OwlEngine::GLFWInputPoller@{OwlEngine::GLFWInputPoller}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!OwlEngine::GLFWInputPoller@{OwlEngine::GLFWInputPoller}}
+\doxysubsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+G\+L\+F\+W\+Input\+Poller\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{key\+Code }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Is the key pressed. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_input_poller_aa8695e7fc86522ae4c6ce0bdc38c5a37}{is\+Key\+Pressed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Code} & a const int32\+\_\+t -\/ The key pressed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the key pressed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_input_poller_a2eca8be1d2edb986830f2aa458daa229}\label{class_owl_engine_1_1_g_l_f_w_input_poller_a2eca8be1d2edb986830f2aa458daa229}} 
+\index{OwlEngine::GLFWInputPoller@{OwlEngine::GLFWInputPoller}!isMousePressed@{isMousePressed}}
+\index{isMousePressed@{isMousePressed}!OwlEngine::GLFWInputPoller@{OwlEngine::GLFWInputPoller}}
+\doxysubsubsection{\texorpdfstring{isMousePressed()}{isMousePressed()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+G\+L\+F\+W\+Input\+Poller\+::is\+Mouse\+Pressed (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{mouse\+Button }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Is the mouse button pressed. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_input_poller_a2eca8be1d2edb986830f2aa458daa229}{is\+Mouse\+Pressed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse\+Button} & a const int32\+\_\+t -\/ The mouse button pressed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the mouse button pressed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/platform/\+G\+L\+F\+W/\mbox{\hyperlink{_g_l_f_w_input_poller_8h}{G\+L\+F\+W\+Input\+Poller.\+h}}\item 
+C\+:/doc/src/engine/src/platform/\+G\+L\+F\+W/\mbox{\hyperlink{_g_l_f_w_input_poller_8cpp}{G\+L\+F\+W\+Input\+Poller.\+cpp}}\end{DoxyCompactItemize}

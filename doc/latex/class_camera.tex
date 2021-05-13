@@ -1,0 +1,403 @@
+\hypertarget{class_camera}{}\doxysection{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+A camera object in the game world.  
+
+
+
+
+{\ttfamily \#include $<$camera.\+h$>$}
+
+Inheritance diagram for Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_camera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_camera_ac22aab982ceb500dfee1faffccdb9553}{Camera}} (const \mbox{\hyperlink{struct_camera_data}{Camera\+Data}} \&camera\+Data)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+const glm\+::mat4 \mbox{\hyperlink{class_camera_ae9e3edd1c212a8718865319a7647cf7f}{get\+View\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Get the view matrix. \end{DoxyCompactList}\item 
+const glm\+::mat4 \mbox{\hyperlink{class_camera_ae83f8199be8f1ff93d8aa61a2a70f35f}{get\+Projection\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Get the projection matrix. \end{DoxyCompactList}\item 
+const glm\+::vec3 \& \mbox{\hyperlink{class_camera_a5203c707d4333e5f80eba231fb513f4a}{get\+Local\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get the camera local position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a5a6abe4e03f6290a8b7dce4b0d41108a}{set\+Local\+Position}} (const glm\+::vec3 pos)
+\begin{DoxyCompactList}\small\item\em Set the local position of the camera. \end{DoxyCompactList}\item 
+const glm\+::vec3 \mbox{\hyperlink{class_camera_a0e6dbdcd3e31824f4664d0e20e2efb76}{get\+World\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the world position of the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a5995823ed208d8916c9e52004ef08d43}{set\+Projection}} (const \mbox{\hyperlink{struct_projection}{Projection}} \&projection)
+\begin{DoxyCompactList}\small\item\em Set the projection data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_projection}{Projection}} \& \mbox{\hyperlink{class_camera_a1f5eb38e5612ddacac50a5214fab6157}{get\+Projection}} ()
+\begin{DoxyCompactList}\small\item\em Get the projection data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a896b3b77d7f3c593b967710c2b90e0e6}{set\+Camera\+Data}} (const \mbox{\hyperlink{struct_camera_data}{Camera\+Data}} \&data)
+\begin{DoxyCompactList}\small\item\em Set the camera data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_camera_data}{Camera\+Data}} \& \mbox{\hyperlink{class_camera_a1cd0f99723262c54eb71c23449374fcf}{get\+Camera\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the camera data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_ada2853b4f6fd9d065f8e28d89e438dda}{upload\+Uniform\+Data}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \&shader)
+\begin{DoxyCompactList}\small\item\em Upload the camera data to shader program. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a4aeb3d6370edb4a46853626025e925bf}{set\+Movement\+Speed}} (const float speed)
+\begin{DoxyCompactList}\small\item\em Set the movement speed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a0b322a09de375b4028b61d599d288548}{set\+Sensitivity}} (const float sensitivity)
+\begin{DoxyCompactList}\small\item\em Set the sensitivity of rotation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_ad64ba8bc622d3a90bd926361e609176d}{set\+Zoom}} (const float \mbox{\hyperlink{class_camera_a2c915ec96869712c0532650cd922f9d7}{zoom}})
+\begin{DoxyCompactList}\small\item\em Set the zoom. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_camera_a0edbb6dd229b7c6453df10f03889f366}{get\+Movement\+Speed}} ()
+\begin{DoxyCompactList}\small\item\em Get the movement speed. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_camera_a39d73d146824b7dcb543ccb4ff202070}{get\+Sensitivity}} ()
+\begin{DoxyCompactList}\small\item\em Get the sensitivity of rotation. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_camera_a139faa5ae655a6a5441d215c86eaafb9}{get\+Zoom}} () const
+\begin{DoxyCompactList}\small\item\em Get the camera\textquotesingle{}s current zoom value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a31ded909188761e48ba9448cc503b4f2}{move}} (const \mbox{\hyperlink{camera_8h_a217e53712acf7debca5afbc48ea8ec34}{Camera\+Movement}} direction, const float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Move the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a2d926b11ef07509b760aa8dd277d1130}{rotate}} (float xoffset, float yoffset, bool constrain\+Pitch=true)
+\begin{DoxyCompactList}\small\item\em Rotate the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_camera_a2c915ec96869712c0532650cd922f9d7}{zoom}} (float yoffset)
+\begin{DoxyCompactList}\small\item\em Zoom in/out. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A camera object in the game world. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_camera_ac22aab982ceb500dfee1faffccdb9553}\label{class_camera_ac22aab982ceb500dfee1faffccdb9553}} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_camera_data}{Camera\+Data}} \&}]{camera\+Data }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_camera_ac22aab982ceb500dfee1faffccdb9553}{Camera()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Data} & a const \mbox{\hyperlink{struct_camera_data}{Camera\+Data}}\& -\/ The camera\textquotesingle{}s data \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_a1cd0f99723262c54eb71c23449374fcf}\label{class_camera_a1cd0f99723262c54eb71c23449374fcf}} 
+\index{Camera@{Camera}!getCameraData@{getCameraData}}
+\index{getCameraData@{getCameraData}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getCameraData()}{getCameraData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_camera_data}{Camera\+Data}} \& Camera\+::get\+Camera\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the camera data. 
+
+\mbox{\hyperlink{class_camera_a1cd0f99723262c54eb71c23449374fcf}{get\+Camera\+Data()}}
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_camera_data}{Camera\+Data}}\& -\/ The camera data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_a5203c707d4333e5f80eba231fb513f4a}\label{class_camera_a5203c707d4333e5f80eba231fb513f4a}} 
+\index{Camera@{Camera}!getLocalPosition@{getLocalPosition}}
+\index{getLocalPosition@{getLocalPosition}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getLocalPosition()}{getLocalPosition()}}
+{\footnotesize\ttfamily const glm\+::vec3 \& Camera\+::get\+Local\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the camera local position. 
+
+\mbox{\hyperlink{class_camera_a5203c707d4333e5f80eba231fb513f4a}{get\+Local\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec3\& -\/ The camera\textquotesingle{}s local position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_a0edbb6dd229b7c6453df10f03889f366}\label{class_camera_a0edbb6dd229b7c6453df10f03889f366}} 
+\index{Camera@{Camera}!getMovementSpeed@{getMovementSpeed}}
+\index{getMovementSpeed@{getMovementSpeed}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getMovementSpeed()}{getMovementSpeed()}}
+{\footnotesize\ttfamily const float Camera\+::get\+Movement\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the movement speed. 
+
+\mbox{\hyperlink{class_camera_a0edbb6dd229b7c6453df10f03889f366}{get\+Movement\+Speed()}}
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The speed of the camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_a1f5eb38e5612ddacac50a5214fab6157}\label{class_camera_a1f5eb38e5612ddacac50a5214fab6157}} 
+\index{Camera@{Camera}!getProjection@{getProjection}}
+\index{getProjection@{getProjection}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getProjection()}{getProjection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_projection}{Projection}} \& Camera\+::get\+Projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the projection data. 
+
+\mbox{\hyperlink{class_camera_a1f5eb38e5612ddacac50a5214fab6157}{get\+Projection()}}
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_projection}{Projection}}\& -\/ The projection data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_ae83f8199be8f1ff93d8aa61a2a70f35f}\label{class_camera_ae83f8199be8f1ff93d8aa61a2a70f35f}} 
+\index{Camera@{Camera}!getProjectionMatrix@{getProjectionMatrix}}
+\index{getProjectionMatrix@{getProjectionMatrix}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getProjectionMatrix()}{getProjectionMatrix()}}
+{\footnotesize\ttfamily const glm\+::mat4 Camera\+::get\+Projection\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the projection matrix. 
+
+\mbox{\hyperlink{class_camera_ae83f8199be8f1ff93d8aa61a2a70f35f}{get\+Projection\+Matrix()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::mat4 -\/ The projection matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_a39d73d146824b7dcb543ccb4ff202070}\label{class_camera_a39d73d146824b7dcb543ccb4ff202070}} 
+\index{Camera@{Camera}!getSensitivity@{getSensitivity}}
+\index{getSensitivity@{getSensitivity}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getSensitivity()}{getSensitivity()}}
+{\footnotesize\ttfamily const float Camera\+::get\+Sensitivity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the sensitivity of rotation. 
+
+\mbox{\hyperlink{class_camera_a39d73d146824b7dcb543ccb4ff202070}{get\+Sensitivity()}}
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The sensitivity of the camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_ae9e3edd1c212a8718865319a7647cf7f}\label{class_camera_ae9e3edd1c212a8718865319a7647cf7f}} 
+\index{Camera@{Camera}!getViewMatrix@{getViewMatrix}}
+\index{getViewMatrix@{getViewMatrix}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getViewMatrix()}{getViewMatrix()}}
+{\footnotesize\ttfamily const glm\+::mat4 Camera\+::get\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the view matrix. 
+
+\mbox{\hyperlink{class_camera_ae9e3edd1c212a8718865319a7647cf7f}{get\+View\+Matrix()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::mat4 -\/ The view matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_a0e6dbdcd3e31824f4664d0e20e2efb76}\label{class_camera_a0e6dbdcd3e31824f4664d0e20e2efb76}} 
+\index{Camera@{Camera}!getWorldPosition@{getWorldPosition}}
+\index{getWorldPosition@{getWorldPosition}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getWorldPosition()}{getWorldPosition()}}
+{\footnotesize\ttfamily const glm\+::vec3 Camera\+::get\+World\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the world position of the camera. 
+
+\mbox{\hyperlink{class_camera_a0e6dbdcd3e31824f4664d0e20e2efb76}{get\+World\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec3 -\/ The world position of the camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_a139faa5ae655a6a5441d215c86eaafb9}\label{class_camera_a139faa5ae655a6a5441d215c86eaafb9}} 
+\index{Camera@{Camera}!getZoom@{getZoom}}
+\index{getZoom@{getZoom}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{getZoom()}{getZoom()}}
+{\footnotesize\ttfamily const float Camera\+::get\+Zoom (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the camera\textquotesingle{}s current zoom value. 
+
+\mbox{\hyperlink{class_camera_a139faa5ae655a6a5441d215c86eaafb9}{get\+Zoom()}}
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The camera\textquotesingle{}s zoom value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_camera_a31ded909188761e48ba9448cc503b4f2}\label{class_camera_a31ded909188761e48ba9448cc503b4f2}} 
+\index{Camera@{Camera}!move@{move}}
+\index{move@{move}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Camera\+::move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{camera_8h_a217e53712acf7debca5afbc48ea8ec34}{Camera\+Movement}}}]{direction,  }\item[{const float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Move the camera. 
+
+\mbox{\hyperlink{class_camera_a31ded909188761e48ba9448cc503b4f2}{move()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & a Camera\+Movement -\/ The direction to move \\
+\hline
+{\em delta\+Time} & a const float -\/ Delta time which is a measure of how long it took to render last frame \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_a2d926b11ef07509b760aa8dd277d1130}\label{class_camera_a2d926b11ef07509b760aa8dd277d1130}} 
+\index{Camera@{Camera}!rotate@{rotate}}
+\index{rotate@{rotate}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void Camera\+::rotate (\begin{DoxyParamCaption}\item[{float}]{xoffset,  }\item[{float}]{yoffset,  }\item[{bool}]{constrain\+Pitch = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Rotate the camera. 
+
+\mbox{\hyperlink{class_camera_a2d926b11ef07509b760aa8dd277d1130}{rotate()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em xoffset} & a float -\/ The yaw rotation offset \\
+\hline
+{\em yoffset} & a float -\/ The pitch rotation offset \\
+\hline
+{\em constrain\+Pitch} & a bool -\/ Constrain the pitch? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_a896b3b77d7f3c593b967710c2b90e0e6}\label{class_camera_a896b3b77d7f3c593b967710c2b90e0e6}} 
+\index{Camera@{Camera}!setCameraData@{setCameraData}}
+\index{setCameraData@{setCameraData}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setCameraData()}{setCameraData()}}
+{\footnotesize\ttfamily void Camera\+::set\+Camera\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_camera_data}{Camera\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Set the camera data. 
+
+\mbox{\hyperlink{class_camera_a896b3b77d7f3c593b967710c2b90e0e6}{set\+Camera\+Data()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a const m\& -\/ The new camera data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_a5a6abe4e03f6290a8b7dce4b0d41108a}\label{class_camera_a5a6abe4e03f6290a8b7dce4b0d41108a}} 
+\index{Camera@{Camera}!setLocalPosition@{setLocalPosition}}
+\index{setLocalPosition@{setLocalPosition}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setLocalPosition()}{setLocalPosition()}}
+{\footnotesize\ttfamily void Camera\+::set\+Local\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3}]{pos }\end{DoxyParamCaption})}
+
+
+
+Set the local position of the camera. 
+
+\mbox{\hyperlink{class_camera_a5a6abe4e03f6290a8b7dce4b0d41108a}{set\+Local\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const glm\+::vec3 -\/ The new position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_a4aeb3d6370edb4a46853626025e925bf}\label{class_camera_a4aeb3d6370edb4a46853626025e925bf}} 
+\index{Camera@{Camera}!setMovementSpeed@{setMovementSpeed}}
+\index{setMovementSpeed@{setMovementSpeed}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setMovementSpeed()}{setMovementSpeed()}}
+{\footnotesize\ttfamily void Camera\+::set\+Movement\+Speed (\begin{DoxyParamCaption}\item[{const float}]{speed }\end{DoxyParamCaption})}
+
+
+
+Set the movement speed. 
+
+\mbox{\hyperlink{class_camera_a4aeb3d6370edb4a46853626025e925bf}{set\+Movement\+Speed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & a const float -\/ The new speed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_a5995823ed208d8916c9e52004ef08d43}\label{class_camera_a5995823ed208d8916c9e52004ef08d43}} 
+\index{Camera@{Camera}!setProjection@{setProjection}}
+\index{setProjection@{setProjection}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setProjection()}{setProjection()}}
+{\footnotesize\ttfamily void Camera\+::set\+Projection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_projection}{Projection}} \&}]{projection }\end{DoxyParamCaption})}
+
+
+
+Set the projection data. 
+
+\mbox{\hyperlink{class_camera_a5995823ed208d8916c9e52004ef08d43}{set\+Projection()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em projection} & a const \mbox{\hyperlink{struct_projection}{Projection}}\& -\/ The new projection data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_a0b322a09de375b4028b61d599d288548}\label{class_camera_a0b322a09de375b4028b61d599d288548}} 
+\index{Camera@{Camera}!setSensitivity@{setSensitivity}}
+\index{setSensitivity@{setSensitivity}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setSensitivity()}{setSensitivity()}}
+{\footnotesize\ttfamily void Camera\+::set\+Sensitivity (\begin{DoxyParamCaption}\item[{const float}]{sensitivity }\end{DoxyParamCaption})}
+
+
+
+Set the sensitivity of rotation. 
+
+\mbox{\hyperlink{class_camera_a0b322a09de375b4028b61d599d288548}{set\+Sensitivity()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensitivity} & a const float -\/ The new sensitivity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_ad64ba8bc622d3a90bd926361e609176d}\label{class_camera_ad64ba8bc622d3a90bd926361e609176d}} 
+\index{Camera@{Camera}!setZoom@{setZoom}}
+\index{setZoom@{setZoom}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{setZoom()}{setZoom()}}
+{\footnotesize\ttfamily void Camera\+::set\+Zoom (\begin{DoxyParamCaption}\item[{const float}]{zoom }\end{DoxyParamCaption})}
+
+
+
+Set the zoom. 
+
+\mbox{\hyperlink{class_camera_ad64ba8bc622d3a90bd926361e609176d}{set\+Zoom()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em zoom} & a const float -\/ The new zoom \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_ada2853b4f6fd9d065f8e28d89e438dda}\label{class_camera_ada2853b4f6fd9d065f8e28d89e438dda}} 
+\index{Camera@{Camera}!uploadUniformData@{uploadUniformData}}
+\index{uploadUniformData@{uploadUniformData}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{uploadUniformData()}{uploadUniformData()}}
+{\footnotesize\ttfamily void Camera\+::upload\+Uniform\+Data (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \&}]{shader }\end{DoxyParamCaption})}
+
+
+
+Upload the camera data to shader program. 
+
+upload\+Uniform\+Data
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & a const std\+::shared\+\_\+ptr$<$\+Shader\+Program$>$\& -\/ A reference to the shader we\textquotesingle{}re using \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_camera_a2c915ec96869712c0532650cd922f9d7}\label{class_camera_a2c915ec96869712c0532650cd922f9d7}} 
+\index{Camera@{Camera}!zoom@{zoom}}
+\index{zoom@{zoom}!Camera@{Camera}}
+\doxysubsubsection{\texorpdfstring{zoom()}{zoom()}}
+{\footnotesize\ttfamily void Camera\+::zoom (\begin{DoxyParamCaption}\item[{float}]{yoffset }\end{DoxyParamCaption})}
+
+
+
+Zoom in/out. 
+
+\mbox{\hyperlink{class_camera_a2c915ec96869712c0532650cd922f9d7}{zoom()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em yoffset} & a float -\/ The pitch rotation offset \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/scene/entity/components/\mbox{\hyperlink{camera_8h}{camera.\+h}}\item 
+C\+:/doc/src/src/scene/entity/components/\mbox{\hyperlink{camera_8cpp}{camera.\+cpp}}\end{DoxyCompactItemize}

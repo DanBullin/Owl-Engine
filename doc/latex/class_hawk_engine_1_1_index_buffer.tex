@@ -1,0 +1,126 @@
+\hypertarget{class_hawk_engine_1_1_index_buffer}{}\doxysection{Hawk\+Engine\+::Index\+Buffer Class Reference}
+\label{class_hawk_engine_1_1_index_buffer}\index{HawkEngine::IndexBuffer@{HawkEngine::IndexBuffer}}
+
+
+An A\+PI agnostic Index buffer.  
+
+
+
+
+{\ttfamily \#include $<$index\+Buffer.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Index\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_index_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_index_buffer_a2c9f30451173baaff653af6133cc99a5}\label{class_hawk_engine_1_1_index_buffer_a2c9f30451173baaff653af6133cc99a5}} 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer_a2c9f30451173baaff653af6133cc99a5}{$\sim$\+Index\+Buffer}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer_a9318ddbe99d65cf03024ff763fc17bdc}{get\+Buffer\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the buffer ID. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer_a6852a2ec032c00cea7182ad15860e45b}{get\+Indices\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of indices. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer_aba27beaf4ac3c98723476a8f47e0b9d6}{edit}} (const void $\ast$indices, const uint32\+\_\+t size, const uint32\+\_\+t offset)=0
+\begin{DoxyCompactList}\small\item\em Edit the index buffer contents. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer}{Index\+Buffer}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer_af6a76cf2c81914d0dd8e4c30279de43e}{create}} (const uint32\+\_\+t $\ast$indices, const uint32\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Create an index buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_index_buffer_a94fe52236a56f8433cc025146bf9fff0}\label{class_hawk_engine_1_1_index_buffer_a94fe52236a56f8433cc025146bf9fff0}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer_a94fe52236a56f8433cc025146bf9fff0}{m\+\_\+index\+Buffer\+ID}}
+\begin{DoxyCompactList}\small\item\em The index Buffer ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_index_buffer_a1e545d1302f7453333482ce517b73a8b}\label{class_hawk_engine_1_1_index_buffer_a1e545d1302f7453333482ce517b73a8b}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer_a1e545d1302f7453333482ce517b73a8b}{m\+\_\+count}}
+\begin{DoxyCompactList}\small\item\em The number of indices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic Index buffer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_index_buffer_af6a76cf2c81914d0dd8e4c30279de43e}\label{class_hawk_engine_1_1_index_buffer_af6a76cf2c81914d0dd8e4c30279de43e}} 
+\index{HawkEngine::IndexBuffer@{HawkEngine::IndexBuffer}!create@{create}}
+\index{create@{create}!HawkEngine::IndexBuffer@{HawkEngine::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_index_buffer}{Index\+Buffer}} $\ast$ Hawk\+Engine\+::\+Index\+Buffer\+::create (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t $\ast$}]{indices,  }\item[{const uint32\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create an index buffer. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_index_buffer_af6a76cf2c81914d0dd8e4c30279de43e}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em indices} & a const uint32\+\_\+t$\ast$ -\/ The indices info \\
+\hline
+{\em count} & a const uint32\+\_\+t -\/ The number of indices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Index\+Buffer$\ast$ -\/ The index buffer of type defined by the graphics A\+PI chosen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_index_buffer_aba27beaf4ac3c98723476a8f47e0b9d6}\label{class_hawk_engine_1_1_index_buffer_aba27beaf4ac3c98723476a8f47e0b9d6}} 
+\index{HawkEngine::IndexBuffer@{HawkEngine::IndexBuffer}!edit@{edit}}
+\index{edit@{edit}!HawkEngine::IndexBuffer@{HawkEngine::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Index\+Buffer\+::edit (\begin{DoxyParamCaption}\item[{const void $\ast$}]{indices,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const uint32\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Edit the index buffer contents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indices} & a const void$\ast$ -\/The indices info \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The number of indices in the indices data \\
+\hline
+{\em offset} & a const int32\+\_\+t -\/ The offset of where to place the new data in terms of index count \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_index_buffer_a06657079a75828eee515945f41956f11}{Hawk\+Engine\+::\+Open\+G\+L\+Index\+Buffer}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_index_buffer_a9318ddbe99d65cf03024ff763fc17bdc}\label{class_hawk_engine_1_1_index_buffer_a9318ddbe99d65cf03024ff763fc17bdc}} 
+\index{HawkEngine::IndexBuffer@{HawkEngine::IndexBuffer}!getBufferID@{getBufferID}}
+\index{getBufferID@{getBufferID}!HawkEngine::IndexBuffer@{HawkEngine::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{getBufferID()}{getBufferID()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Index\+Buffer\+::get\+Buffer\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the buffer ID. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The ID of the buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_index_buffer_a6852a2ec032c00cea7182ad15860e45b}\label{class_hawk_engine_1_1_index_buffer_a6852a2ec032c00cea7182ad15860e45b}} 
+\index{HawkEngine::IndexBuffer@{HawkEngine::IndexBuffer}!getIndicesCount@{getIndicesCount}}
+\index{getIndicesCount@{getIndicesCount}!HawkEngine::IndexBuffer@{HawkEngine::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{getIndicesCount()}{getIndicesCount()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Index\+Buffer\+::get\+Indices\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the number of indices. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The number of indices 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/geometry/\mbox{\hyperlink{index_buffer_8h}{index\+Buffer.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/geometry/\mbox{\hyperlink{index_buffer_8cpp}{index\+Buffer.\+cpp}}\end{DoxyCompactItemize}

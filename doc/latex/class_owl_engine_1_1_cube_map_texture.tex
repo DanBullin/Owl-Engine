@@ -1,0 +1,129 @@
+\hypertarget{class_owl_engine_1_1_cube_map_texture}{}\doxysection{Owl\+Engine\+::Cube\+Map\+Texture Class Reference}
+\label{class_owl_engine_1_1_cube_map_texture}\index{OwlEngine::CubeMapTexture@{OwlEngine::CubeMapTexture}}
+
+
+An A\+PI agnostic Cubemap texture.  
+
+
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Cube\+Map\+Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_owl_engine_1_1_cube_map_texture}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture_ab326f2617f15ce14ee41abce2a009926}{Cube\+Map\+Texture}} (const std\+::string \&texture\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture_ab5432f2af5a52357c2e2fe0b0dc8a49d}{$\sim$\+Cube\+Map\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture_a8e3b15255ef1f104fc80afdcaa560b47}{bind}} (const uint32\+\_\+t slot=0)=0
+\begin{DoxyCompactList}\small\item\em Bind the texture to a texture unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_cube_map_texture_a996c47388c3bf4b8bf24ff0d1bde12cb}\label{class_owl_engine_1_1_cube_map_texture_a996c47388c3bf4b8bf24ff0d1bde12cb}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture_a996c47388c3bf4b8bf24ff0d1bde12cb}{print\+Details}} () override=0
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture_aa54b62483c19753d0a61196e42941a40}{create}} (const std\+::string \&texture\+Name, const std\+::string \&folder\+Path, const std\+::string \&file\+Type)
+\begin{DoxyCompactList}\small\item\em Create a cubemap texture from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_cube_map_texture_abd6f68eded6edc40c2f6ffd2a09eadfb}\label{class_owl_engine_1_1_cube_map_texture_abd6f68eded6edc40c2f6ffd2a09eadfb}} 
+std\+::string \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture_abd6f68eded6edc40c2f6ffd2a09eadfb}{m\+\_\+folder\+Path}}
+\begin{DoxyCompactList}\small\item\em The folder path containing the textures. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic Cubemap texture. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_cube_map_texture_ab326f2617f15ce14ee41abce2a009926}\label{class_owl_engine_1_1_cube_map_texture_ab326f2617f15ce14ee41abce2a009926}} 
+\index{OwlEngine::CubeMapTexture@{OwlEngine::CubeMapTexture}!CubeMapTexture@{CubeMapTexture}}
+\index{CubeMapTexture@{CubeMapTexture}!OwlEngine::CubeMapTexture@{OwlEngine::CubeMapTexture}}
+\doxysubsubsection{\texorpdfstring{CubeMapTexture()}{CubeMapTexture()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Cube\+Map\+Texture\+::\+Cube\+Map\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture_ab326f2617f15ce14ee41abce2a009926}{Cube\+Map\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & a const std\+::string\& -\/ The name of the texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_cube_map_texture_ab5432f2af5a52357c2e2fe0b0dc8a49d}\label{class_owl_engine_1_1_cube_map_texture_ab5432f2af5a52357c2e2fe0b0dc8a49d}} 
+\index{OwlEngine::CubeMapTexture@{OwlEngine::CubeMapTexture}!````~CubeMapTexture@{$\sim$CubeMapTexture}}
+\index{````~CubeMapTexture@{$\sim$CubeMapTexture}!OwlEngine::CubeMapTexture@{OwlEngine::CubeMapTexture}}
+\doxysubsubsection{\texorpdfstring{$\sim$CubeMapTexture()}{~CubeMapTexture()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Cube\+Map\+Texture\+::$\sim$\+Cube\+Map\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture_ab5432f2af5a52357c2e2fe0b0dc8a49d}{$\sim$\+Cube\+Map\+Texture()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_cube_map_texture_a8e3b15255ef1f104fc80afdcaa560b47}\label{class_owl_engine_1_1_cube_map_texture_a8e3b15255ef1f104fc80afdcaa560b47}} 
+\index{OwlEngine::CubeMapTexture@{OwlEngine::CubeMapTexture}!bind@{bind}}
+\index{bind@{bind}!OwlEngine::CubeMapTexture@{OwlEngine::CubeMapTexture}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Cube\+Map\+Texture\+::bind (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{slot = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bind the texture to a texture unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & a const uint32\+\_\+t -\/ Bind the texture to texture unit \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_texture_a4e9ca12715b30adbb8a2a035ee036ff0}{Owl\+Engine\+::\+Texture}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_cube_map_texture_a754b4ccbc8edeb9173dd2504beb8db5b}{Owl\+Engine\+::\+Open\+G\+L\+Cube\+Map\+Texture}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_cube_map_texture_aa54b62483c19753d0a61196e42941a40}\label{class_owl_engine_1_1_cube_map_texture_aa54b62483c19753d0a61196e42941a40}} 
+\index{OwlEngine::CubeMapTexture@{OwlEngine::CubeMapTexture}!create@{create}}
+\index{create@{create}!OwlEngine::CubeMapTexture@{OwlEngine::CubeMapTexture}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$ Owl\+Engine\+::\+Cube\+Map\+Texture\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+Name,  }\item[{const std\+::string \&}]{folder\+Path,  }\item[{const std\+::string \&}]{file\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a cubemap texture from file. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture_aa54b62483c19753d0a61196e42941a40}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & a const std\+::string\& -\/ The name of the texture \\
+\hline
+{\em folder\+Path} & a const std\+::string\& -\/ The path to the folder containing the individual files \\
+\hline
+{\em file\+Type} & a const std\+::string\& -\/ The file type of the textures \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Cube\+Map\+Texture$\ast$ -\/ The cubmeap texture of type defined by the graphics A\+PI chosen 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/textures/\mbox{\hyperlink{texture_8h}{texture.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/textures/\mbox{\hyperlink{texture_8cpp}{texture.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,120 @@
+\hypertarget{class_owl_engine_1_1_math_utils}{}\doxysection{Owl\+Engine\+::Math\+Utils Class Reference}
+\label{class_owl_engine_1_1_math_utils}\index{OwlEngine::MathUtils@{OwlEngine::MathUtils}}
+
+
+A utility class to help with maths.  
+
+
+
+
+{\ttfamily \#include $<$math\+Utils.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::array$<$ double, 16 $>$ \mbox{\hyperlink{class_owl_engine_1_1_math_utils_a86fed014260f31310af4a80bbacd07ab}{convert\+Mat4\+To\+Array}} (const glm\+::mat4 \&data)
+\begin{DoxyCompactList}\small\item\em Convert a mat4 to array of size 16. \end{DoxyCompactList}\item 
+static glm\+::mat4 \mbox{\hyperlink{class_owl_engine_1_1_math_utils_a2f3f3dfde621feea860c193e7aecbd4c}{get\+Model\+Matrix}} (const glm\+::vec3 \&pos)
+\begin{DoxyCompactList}\small\item\em Get a model matrix using position only. \end{DoxyCompactList}\item 
+static glm\+::mat4 \mbox{\hyperlink{class_owl_engine_1_1_math_utils_a353e99435ff87282ac49238526f42a07}{get\+Model\+Matrix}} (const glm\+::vec3 \&pos, const glm\+::vec3 \&scale)
+\begin{DoxyCompactList}\small\item\em Get a model matrix using position and scale only. \end{DoxyCompactList}\item 
+static glm\+::mat4 \mbox{\hyperlink{class_owl_engine_1_1_math_utils_a232195284bcea0a73e914455bdf673c0}{get\+Model\+Matrix}} (const glm\+::vec3 \&pos, const glm\+::vec3 \&rotation, const glm\+::vec3 \&scale)
+\begin{DoxyCompactList}\small\item\em Get a model matrix using position and scale and rotation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class to help with maths. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_math_utils_a86fed014260f31310af4a80bbacd07ab}\label{class_owl_engine_1_1_math_utils_a86fed014260f31310af4a80bbacd07ab}} 
+\index{OwlEngine::MathUtils@{OwlEngine::MathUtils}!convertMat4ToArray@{convertMat4ToArray}}
+\index{convertMat4ToArray@{convertMat4ToArray}!OwlEngine::MathUtils@{OwlEngine::MathUtils}}
+\doxysubsubsection{\texorpdfstring{convertMat4ToArray()}{convertMat4ToArray()}}
+{\footnotesize\ttfamily std\+::array$<$ double, 16 $>$ Owl\+Engine\+::\+Math\+Utils\+::convert\+Mat4\+To\+Array (\begin{DoxyParamCaption}\item[{const glm\+::mat4 \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert a mat4 to array of size 16. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_math_utils_a86fed014260f31310af4a80bbacd07ab}{convert\+Mat4\+To\+Array()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a const glm\+::mat4\& -\/ The data to convert \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::array$<$double, 16$>$ -\/ The matrix data in array format 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_math_utils_a2f3f3dfde621feea860c193e7aecbd4c}\label{class_owl_engine_1_1_math_utils_a2f3f3dfde621feea860c193e7aecbd4c}} 
+\index{OwlEngine::MathUtils@{OwlEngine::MathUtils}!getModelMatrix@{getModelMatrix}}
+\index{getModelMatrix@{getModelMatrix}!OwlEngine::MathUtils@{OwlEngine::MathUtils}}
+\doxysubsubsection{\texorpdfstring{getModelMatrix()}{getModelMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily glm\+::mat4 Owl\+Engine\+::\+Math\+Utils\+::get\+Model\+Matrix (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a model matrix using position only. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_math_utils_a2f3f3dfde621feea860c193e7aecbd4c}{get\+Model\+Matrix()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const glm\+::vec3\& -\/ The position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a mat4 -\/ The model matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_math_utils_a232195284bcea0a73e914455bdf673c0}\label{class_owl_engine_1_1_math_utils_a232195284bcea0a73e914455bdf673c0}} 
+\index{OwlEngine::MathUtils@{OwlEngine::MathUtils}!getModelMatrix@{getModelMatrix}}
+\index{getModelMatrix@{getModelMatrix}!OwlEngine::MathUtils@{OwlEngine::MathUtils}}
+\doxysubsubsection{\texorpdfstring{getModelMatrix()}{getModelMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily glm\+::mat4 Owl\+Engine\+::\+Math\+Utils\+::get\+Model\+Matrix (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{pos,  }\item[{const glm\+::vec3 \&}]{rotation,  }\item[{const glm\+::vec3 \&}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a model matrix using position and scale and rotation. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_math_utils_a2f3f3dfde621feea860c193e7aecbd4c}{get\+Model\+Matrix()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const glm\+::vec3\& -\/ The position \\
+\hline
+{\em rotation} & a const glm\+::vec3\& -\/ The rotation \\
+\hline
+{\em scale} & a const glm\+::vec3\& -\/ The scale \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a mat4 -\/ The model matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_math_utils_a353e99435ff87282ac49238526f42a07}\label{class_owl_engine_1_1_math_utils_a353e99435ff87282ac49238526f42a07}} 
+\index{OwlEngine::MathUtils@{OwlEngine::MathUtils}!getModelMatrix@{getModelMatrix}}
+\index{getModelMatrix@{getModelMatrix}!OwlEngine::MathUtils@{OwlEngine::MathUtils}}
+\doxysubsubsection{\texorpdfstring{getModelMatrix()}{getModelMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily glm\+::mat4 Owl\+Engine\+::\+Math\+Utils\+::get\+Model\+Matrix (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{pos,  }\item[{const glm\+::vec3 \&}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a model matrix using position and scale only. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_math_utils_a2f3f3dfde621feea860c193e7aecbd4c}{get\+Model\+Matrix()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const glm\+::vec3\& -\/ The position \\
+\hline
+{\em scale} & a const glm\+::vec3\& -\/ The scale \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a mat4 -\/ The model matrix 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/utils/\mbox{\hyperlink{math_utils_8h}{math\+Utils.\+h}}\item 
+C\+:/doc/src/engine/src/independent/utils/\mbox{\hyperlink{math_utils_8cpp}{math\+Utils.\+cpp}}\end{DoxyCompactItemize}

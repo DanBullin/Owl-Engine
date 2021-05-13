@@ -1,0 +1,48 @@
+\hypertarget{texture_8h}{}\doxysection{C\+:/doc/src/engine/include/independent/rendering/textures/texture.h File Reference}
+\label{texture_8h}\index{C:/doc/src/engine/include/independent/rendering/textures/texture.h@{C:/doc/src/engine/include/independent/rendering/textures/texture.h}}
+
+
+An A\+PI agnostic texture.  
+
+
+{\ttfamily \#include \char`\"{}independent/core/common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/systems/components/resource.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Owl\+Engine\+::\+Texture\+Properties}}
+\begin{DoxyCompactList}\small\item\em All texture properties can be configured by creating an instance of this struct and passing it to the relevant create functions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_owl_engine_1_1_texture}{Owl\+Engine\+::\+Texture}}
+\begin{DoxyCompactList}\small\item\em A base class interface for a texture. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Owl\+Engine\+::\+Texture2D}}
+\begin{DoxyCompactList}\small\item\em An A\+PI agnostic 2D texture. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Owl\+Engine\+::\+Cube\+Map\+Texture}}
+\begin{DoxyCompactList}\small\item\em An A\+PI agnostic Cubemap texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{texture_8h_aac67dde1683ab1c9e1d07f7ec0fed132}\label{texture_8h_aac67dde1683ab1c9e1d07f7ec0fed132}} 
+enum \mbox{\hyperlink{texture_8h_aac67dde1683ab1c9e1d07f7ec0fed132}{Owl\+Engine\+::\+Texture\+Parameter}} \{ \newline
+{\bfseries None} = 0, 
+{\bfseries Clamp\+To\+Border} = 1, 
+{\bfseries Clamp\+To\+Edge} = 2, 
+{\bfseries Repeat} = 3, 
+\newline
+{\bfseries Mirrored\+Repeat} = 4, 
+{\bfseries Nearest} = 5, 
+{\bfseries Linear} = 6, 
+{\bfseries Nearest\+Mipmap\+Nearest} = 7, 
+\newline
+{\bfseries Linear\+Mipmap\+Nearest} = 8, 
+{\bfseries Nearest\+Mipmap\+Linear} = 9, 
+{\bfseries Linear\+Mipmap\+Linear} = 10
+ \}
+\begin{DoxyCompactList}\small\item\em The parameters associated with textures. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic texture. 
+
+\begin{DoxyAuthor}{Author}
+Daniel Bullin 
+\end{DoxyAuthor}

@@ -1,0 +1,265 @@
+\hypertarget{class_owl_engine_1_1_frame_buffer}{}\doxysection{Owl\+Engine\+::Frame\+Buffer Class Reference}
+\label{class_owl_engine_1_1_frame_buffer}\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+
+
+An A\+PI agnostic frame buffer object.  
+
+
+
+
+{\ttfamily \#include $<$frame\+Buffer.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Frame\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_owl_engine_1_1_frame_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_ae60c0d89bba5bdd560d344e715e10b8f}{Frame\+Buffer}} (const std\+::string \&frame\+Buffer\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a116b6bcf7d0baf4bd033a4c07a2deb4a}{$\sim$\+Frame\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a3c4fc916879444c54e0b42051ed8ac8b}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the frame buffer id. \end{DoxyCompactList}\item 
+glm\+::ivec2 \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_ae3e7e9945635a61cb4c8dd6bab92d466}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size of the framebuffer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_af7890ee9624d40433821a879668950d0}{is\+Default}} () const
+\begin{DoxyCompactList}\small\item\em Get whether this framebuffer is the default framebuffer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a0c04d11e509576cb6688f3ad017ad5b2}{use\+Scene\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get whether this framebuffer is the size of the scene view. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout}{Frame\+Buffer\+Layout}} \& \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a5a7085b6ea146cccf4d22d5142f4fa00}{get\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em Get the framebuffer layout. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a3095460d606ffa176235f0bf256ef199}{get\+Sampled\+Target}} (const std\+::string \&target\+Name)
+\begin{DoxyCompactList}\small\item\em Get a sampled target from the framebuffer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_render_buffer}{Render\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a66a539a50f3ca1a9271260b8726f00c3}{get\+Non\+Sampled\+Target}} (const std\+::string \&target\+Name)
+\begin{DoxyCompactList}\small\item\em Get a non-\/sampled target from the framebuffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_afc8999734228522b425782d39711ef72}\label{class_owl_engine_1_1_frame_buffer_afc8999734228522b425782d39711ef72}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_afc8999734228522b425782d39711ef72}{bind}} ()=0
+\begin{DoxyCompactList}\small\item\em Bind the frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a7a3802e95282aa072569a8d99c2a163a}\label{class_owl_engine_1_1_frame_buffer_a7a3802e95282aa072569a8d99c2a163a}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a7a3802e95282aa072569a8d99c2a163a}{resize}} (const glm\+::ivec2 \&size)=0
+\begin{DoxyCompactList}\small\item\em Resize the frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a65ea1a75ab9785e1a310dc3a70df980b}\label{class_owl_engine_1_1_frame_buffer_a65ea1a75ab9785e1a310dc3a70df980b}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a65ea1a75ab9785e1a310dc3a70df980b}{print\+Details}} () override=0
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a5075f153aaf0b466442ff3f8c448dcad}{create}} (const std\+::string \&frame\+Buffer\+Name, const bool \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a0c04d11e509576cb6688f3ad017ad5b2}{use\+Scene\+Size}}, const glm\+::ivec2 \&size, \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout}{Frame\+Buffer\+Layout}} \&layout)
+\begin{DoxyCompactList}\small\item\em Create a frame buffer. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a993a786921023bc648f6fbe69deeeb9f}{create\+Default}} (const std\+::string \&frame\+Buffer\+Name)
+\begin{DoxyCompactList}\small\item\em Create a default frame buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a0759884b591d404f4ef1ab57fda4c43b}\label{class_owl_engine_1_1_frame_buffer_a0759884b591d404f4ef1ab57fda4c43b}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a0759884b591d404f4ef1ab57fda4c43b}{m\+\_\+buffer\+ID}}
+\begin{DoxyCompactList}\small\item\em The frame buffer ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_af3baeae099c01e3042ff384294be5fea}\label{class_owl_engine_1_1_frame_buffer_af3baeae099c01e3042ff384294be5fea}} 
+glm\+::ivec2 \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_af3baeae099c01e3042ff384294be5fea}{m\+\_\+size}}
+\begin{DoxyCompactList}\small\item\em The pixel size of the framebuffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a089ecdb32a23152781c4ce159e31dabd}\label{class_owl_engine_1_1_frame_buffer_a089ecdb32a23152781c4ce159e31dabd}} 
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout}{Frame\+Buffer\+Layout}} \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a089ecdb32a23152781c4ce159e31dabd}{m\+\_\+layout}}
+\begin{DoxyCompactList}\small\item\em The layout of the framebuffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a7dbd54ca4f41b34733ca8febdfe87265}\label{class_owl_engine_1_1_frame_buffer_a7dbd54ca4f41b34733ca8febdfe87265}} 
+bool \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a7dbd54ca4f41b34733ca8febdfe87265}{m\+\_\+default}}
+\begin{DoxyCompactList}\small\item\em Is this framebuffer the default framebuffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a7c651638eaaaee285a41258a23054705}\label{class_owl_engine_1_1_frame_buffer_a7c651638eaaaee285a41258a23054705}} 
+bool \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a7c651638eaaaee285a41258a23054705}{m\+\_\+use\+Scene\+Size}}
+\begin{DoxyCompactList}\small\item\em Is this framebuffer to be the size of the scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a5de9bb018522025797891f74c6fb6db9}\label{class_owl_engine_1_1_frame_buffer_a5de9bb018522025797891f74c6fb6db9}} 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a5de9bb018522025797891f74c6fb6db9}{m\+\_\+sampled\+Targets}}
+\begin{DoxyCompactList}\small\item\em A list of sampled targets. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a033b2852e3f94e2687c291c218f6810f}\label{class_owl_engine_1_1_frame_buffer_a033b2852e3f94e2687c291c218f6810f}} 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_render_buffer}{Render\+Buffer}} $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a033b2852e3f94e2687c291c218f6810f}{m\+\_\+non\+Sampled\+Targets}}
+\begin{DoxyCompactList}\small\item\em A list of non-\/sampled targets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic frame buffer object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_ae60c0d89bba5bdd560d344e715e10b8f}\label{class_owl_engine_1_1_frame_buffer_ae60c0d89bba5bdd560d344e715e10b8f}} 
+\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}!FrameBuffer@{FrameBuffer}}
+\index{FrameBuffer@{FrameBuffer}!OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+\doxysubsubsection{\texorpdfstring{FrameBuffer()}{FrameBuffer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Frame\+Buffer\+::\+Frame\+Buffer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{frame\+Buffer\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_ae60c0d89bba5bdd560d344e715e10b8f}{Frame\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+Buffer\+Name} & a const std\+::string\& -\/ The name of the framebuffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a116b6bcf7d0baf4bd033a4c07a2deb4a}\label{class_owl_engine_1_1_frame_buffer_a116b6bcf7d0baf4bd033a4c07a2deb4a}} 
+\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}!````~FrameBuffer@{$\sim$FrameBuffer}}
+\index{````~FrameBuffer@{$\sim$FrameBuffer}!OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$FrameBuffer()}{~FrameBuffer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Frame\+Buffer\+::$\sim$\+Frame\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a116b6bcf7d0baf4bd033a4c07a2deb4a}{$\sim$\+Frame\+Buffer()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a5075f153aaf0b466442ff3f8c448dcad}\label{class_owl_engine_1_1_frame_buffer_a5075f153aaf0b466442ff3f8c448dcad}} 
+\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}!create@{create}}
+\index{create@{create}!OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ Owl\+Engine\+::\+Frame\+Buffer\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{frame\+Buffer\+Name,  }\item[{const bool}]{use\+Scene\+Size,  }\item[{const glm\+::ivec2 \&}]{size,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout}{Frame\+Buffer\+Layout}} \&}]{layout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a frame buffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a5075f153aaf0b466442ff3f8c448dcad}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+Buffer\+Name} & a const std\+::string\& -\/ The name of the framebuffer \\
+\hline
+{\em use\+Scene\+Size} & a const bool -\/ Is this framebuffer to be the size of the scene view \\
+\hline
+{\em size} & a const glm\+::ivec2\& -\/ The dimensions of the framebuffer targets \\
+\hline
+{\em layout} & a Frame\+Buffer\+Layoutt\& -\/ A reference to the layout of the framebuffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a993a786921023bc648f6fbe69deeeb9f}\label{class_owl_engine_1_1_frame_buffer_a993a786921023bc648f6fbe69deeeb9f}} 
+\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}!createDefault@{createDefault}}
+\index{createDefault@{createDefault}!OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+\doxysubsubsection{\texorpdfstring{createDefault()}{createDefault()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ Owl\+Engine\+::\+Frame\+Buffer\+::create\+Default (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{frame\+Buffer\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a default frame buffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a993a786921023bc648f6fbe69deeeb9f}{create\+Default()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em frame\+Buffer\+Name} & a const std\+::string\& -\/ The name of the framebuffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a3c4fc916879444c54e0b42051ed8ac8b}\label{class_owl_engine_1_1_frame_buffer_a3c4fc916879444c54e0b42051ed8ac8b}} 
+\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}!getID@{getID}}
+\index{getID@{getID}!OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Frame\+Buffer\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the frame buffer id. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The frame buffer ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a5a7085b6ea146cccf4d22d5142f4fa00}\label{class_owl_engine_1_1_frame_buffer_a5a7085b6ea146cccf4d22d5142f4fa00}} 
+\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}!getLayout@{getLayout}}
+\index{getLayout@{getLayout}!OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+\doxysubsubsection{\texorpdfstring{getLayout()}{getLayout()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout}{Frame\+Buffer\+Layout}}\& Owl\+Engine\+::\+Frame\+Buffer\+::get\+Layout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the framebuffer layout. 
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_layout}{Frame\+Buffer\+Layout}}\& -\/ The layout of the framebuffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a66a539a50f3ca1a9271260b8726f00c3}\label{class_owl_engine_1_1_frame_buffer_a66a539a50f3ca1a9271260b8726f00c3}} 
+\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}!getNonSampledTarget@{getNonSampledTarget}}
+\index{getNonSampledTarget@{getNonSampledTarget}!OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+\doxysubsubsection{\texorpdfstring{getNonSampledTarget()}{getNonSampledTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_render_buffer}{Render\+Buffer}} $\ast$ Owl\+Engine\+::\+Frame\+Buffer\+::get\+Non\+Sampled\+Target (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{target\+Name }\end{DoxyParamCaption})}
+
+
+
+Get a non-\/sampled target from the framebuffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a66a539a50f3ca1a9271260b8726f00c3}{get\+Non\+Sampled\+Target()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Name} & a const std\+::string\& -\/ The name of the target \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Render\+Buffer$\ast$ -\/ A pointer to the renderbuffer target 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a3095460d606ffa176235f0bf256ef199}\label{class_owl_engine_1_1_frame_buffer_a3095460d606ffa176235f0bf256ef199}} 
+\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}!getSampledTarget@{getSampledTarget}}
+\index{getSampledTarget@{getSampledTarget}!OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+\doxysubsubsection{\texorpdfstring{getSampledTarget()}{getSampledTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$ Owl\+Engine\+::\+Frame\+Buffer\+::get\+Sampled\+Target (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{target\+Name }\end{DoxyParamCaption})}
+
+
+
+Get a sampled target from the framebuffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer_a3095460d606ffa176235f0bf256ef199}{get\+Sampled\+Target()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Name} & a const std\+::string\& -\/ The name of the target \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Texture2\+D$\ast$ -\/ A pointer to the texture target 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_ae3e7e9945635a61cb4c8dd6bab92d466}\label{class_owl_engine_1_1_frame_buffer_ae3e7e9945635a61cb4c8dd6bab92d466}} 
+\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}!getSize@{getSize}}
+\index{getSize@{getSize}!OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily glm\+::ivec2 Owl\+Engine\+::\+Frame\+Buffer\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the size of the framebuffer. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::ivec2 -\/ The size of the framebuffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_af7890ee9624d40433821a879668950d0}\label{class_owl_engine_1_1_frame_buffer_af7890ee9624d40433821a879668950d0}} 
+\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}!isDefault@{isDefault}}
+\index{isDefault@{isDefault}!OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+\doxysubsubsection{\texorpdfstring{isDefault()}{isDefault()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Frame\+Buffer\+::is\+Default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get whether this framebuffer is the default framebuffer. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Whether this framebuffer is the default framebuffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_frame_buffer_a0c04d11e509576cb6688f3ad017ad5b2}\label{class_owl_engine_1_1_frame_buffer_a0c04d11e509576cb6688f3ad017ad5b2}} 
+\index{OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}!useSceneSize@{useSceneSize}}
+\index{useSceneSize@{useSceneSize}!OwlEngine::FrameBuffer@{OwlEngine::FrameBuffer}}
+\doxysubsubsection{\texorpdfstring{useSceneSize()}{useSceneSize()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Frame\+Buffer\+::use\+Scene\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get whether this framebuffer is the size of the scene view. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Whether this framebuffer is the size of the scene view 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/\mbox{\hyperlink{frame_buffer_8h}{frame\+Buffer.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/\mbox{\hyperlink{frame_buffer_8cpp}{frame\+Buffer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,165 @@
+{
+	"materials": 
+	[
+		{ 
+			"name": "owlyFansMaterial", "subTextures": [ "owlyFansSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{ 
+			"name": "creditsMaterial", "subTextures": [ "creditsSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{ 
+			"name": "flushedMaterial", "subTextures": [ "flushedSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{ 
+			"name": "mapMaterial", "subTextures": [ "mapSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{ 
+			"name": "handMaterial", "subTextures": [ "handSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{ 
+			"name": "torchMaterial", "subTextures": [ "torchSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{ 
+			"name": "keycardMaterial", "subTextures": [ "keycardSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 0.0, 0.0, 1.0 ], "shininess": 32
+		},
+		{ 
+			"name": "scribbleMaterial", "subTextures": [ "scribbleSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{ 
+			"name": "paperMaterial", "subTextures": [ "scribbleSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{ 
+			"name": "hotbarPlainMaterial", "subTextures": [ "hotbarPlainSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{ 
+			"name": "hotbarCurrentMaterial", "subTextures": [ "hotbarCurrentSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{ 
+			"name": "cyborgMaterial", "subTextures": [ "cyborgSubTexture", "SpecularFullSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "signMaterial", "subTextures": [ "defaultSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0], "shininess": 32
+		},
+		{ 
+			"name": "skyboxMaterial", "subTextures": [],
+			"cubeMapTextures": ["sky"],	"shader": "skyboxShader", "tint": [ 0.24, 0.16, 0.052, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "lightSourceMaterial", "subTextures": [],
+			"cubeMapTextures": [], "shader": "lightSource", "tint": [ 1.0, 1.0, 1.0, 1.0], "shininess": 32
+		},
+		{
+			"name": "streetMaterial", "subTextures": [ "streetSubTexture", "SpecularNoneSubTexture"],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "tunnelMaterial", "subTextures": [ "tunnelSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "crossHairsMaterial", "subTextures": [ "crossHairsSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "darkTranslucentMaterial", "subTextures": [ "defaultSubTexture" ],
+			"cubeMapTextures": [], "shader": "flatColourQuad", "tint": [ 0.0, 0.0, 0.0, 0.7 ], "shininess": 32
+		},
+		{
+			"name": "joshGarbageMaterial", "subTextures": [ "garbageSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "joshPillarsMaterial", "subTextures": [ "pillarsSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "rustedIronMaterial", "subTextures": [ "RustedIronSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "blackBackground", "subTextures": [ "defaultSubTexture" ],
+			"cubeMapTextures": [], "shader": "flatColourQuad", "tint": [ 0.0, 0.0, 0.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "blank", "subTextures": [ "blankSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "ladderMaterial", "subTextures": [ "blankSubTexture", "SpecularFullSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 0.66, 0.15, 0.15, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "barrelCrateMaterial", "subTextures": [ "barrelCrateSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "turdMaterial", "subTextures": [ "turdSubTexture", "turdSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "black3D", "subTextures": [ "defaultSubTexture" ],
+			"cubeMapTextures": [], "shader": "flatColourShader", "tint": [ 0.0, 0.0, 0.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "steel1Material", "subTextures": [ "steel1SubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "steel2Material", "subTextures": [ "steel2SubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "blinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "unlockedMaterial", "subTextures": [ "unlockedSubTexture" ],
+			"cubeMapTextures": [], "shader": "flatTexShader", "tint": [ 1.1, 1.1, 1.1, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "lockedMaterial", "subTextures": [ "lockedSubTexture" ],
+			"cubeMapTextures": [], "shader": "flatTexShader", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "checkboxUMaterial", "subTextures": [ "checkboxUSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "checkboxCMaterial", "subTextures": [ "checkboxCSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "deadMaterial", "subTextures": [ "deadSubTexture" ],
+			"cubeMapTextures": [], "shader": "quad", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 32
+		},
+		{
+			"name": "flowersMaterial", "subTextures": [ "flowersSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "transParentblinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 2048
+		},
+		{
+			"name": "rootsMaterial", "subTextures": [ "rootsSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "transParentblinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 2048
+		},
+		{
+			"name": "bluShroomMaterial", "subTextures": [ "bluShroomSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "transParentblinnPhong", "tint": [ 3.0, 3.0, 5.0, 1.0 ], "shininess": 2048
+		},
+		{
+			"name": "bigShroomMaterial", "subTextures": [ "bigShroomSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "transParentblinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 2048
+		},
+		{
+			"name": "smolShroomMaterial", "subTextures": [ "smolShroomSubTexture", "SpecularNoneSubTexture" ],
+			"cubeMapTextures": [], "shader": "transParentblinnPhong", "tint": [ 1.0, 1.0, 1.0, 1.0 ], "shininess": 2048
+		}
+	]
+}

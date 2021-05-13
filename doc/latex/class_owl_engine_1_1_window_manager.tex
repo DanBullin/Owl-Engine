@@ -1,0 +1,277 @@
+\hypertarget{class_owl_engine_1_1_window_manager}{}\doxysection{Owl\+Engine\+::Window\+Manager Class Reference}
+\label{class_owl_engine_1_1_window_manager}\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+
+
+A window manager which manages windows.  
+
+
+
+
+{\ttfamily \#include $<$window\+Manager.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Window\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_window_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_a7e9432fea67d897079729fadce126bf0}{Window\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_a777b7713c0155606299f74ce09294842}{$\sim$\+Window\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_window_manager_a20db659a8cd1b5b14524c49f64aafd07}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_window_manager_abec75dc2d878e92e37f07c7a852a805c}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const bool \mbox{\hyperlink{class_owl_engine_1_1_window_manager_a00320a6b11ffaff9360050efcf7dbd92}{window\+Exists}} (const std\+::string \&window\+Name)
+\begin{DoxyCompactList}\small\item\em Check if the window name exists. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_window_manager_a249cc6124ad24cbbb80d7720db13e530}{register\+Window}} (const std\+::string \&name, const \mbox{\hyperlink{class_owl_engine_1_1_window_properties}{Window\+Properties}} \&props)
+\begin{DoxyCompactList}\small\item\em Register a window with the window manager. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_window_manager_ac8ba554293bfe1d62f58438d2f70d6dd}{deregister\+Window}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Deregister a window with the window manager. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_window_manager_a7204897c3ecd73e8a0c6791569389eee}{deregister\+Scheduled\+Windows}} ()
+\begin{DoxyCompactList}\small\item\em Deregister all windows scheduled for deletion. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_window_manager_acf89c5ecf9f8d8386208fc3407cfaa26}{get\+Window\+By\+Name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Get a window by name. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_window_manager_acf242d72f0163ef71e547764a51d53a4}{get\+Focused\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Get the window which is currently focused. \end{DoxyCompactList}\item 
+static std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_window_manager_a536eb7e2c65b89447c0a88575632fd34}{get\+Registered\+Windows}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all registered windows. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_window_manager_af4b05c38bc3547f7f95dbe046b87aa8c}{set\+Focused\+Window\+By\+Name}} (const std\+::string \&window\+Name)
+\begin{DoxyCompactList}\small\item\em Set a window to be focused. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_window_manager_a107492bb39927ead2a565381cd2698d7}{set\+Fullscreen\+Window\+By\+Name}} (const std\+::string \&window\+Name)
+\begin{DoxyCompactList}\small\item\em Set a window to be fullscreen. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_window_manager_a47c5d70fe68cba54d17f89e1a2e97615}{print\+Window\+Manager\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print manager details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A window manager which manages windows. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_window_manager_a7e9432fea67d897079729fadce126bf0}\label{class_owl_engine_1_1_window_manager_a7e9432fea67d897079729fadce126bf0}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!WindowManager@{WindowManager}}
+\index{WindowManager@{WindowManager}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{WindowManager()}{WindowManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Window\+Manager\+::\+Window\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_a7e9432fea67d897079729fadce126bf0}{Window\+Manager()}} \mbox{\Hypertarget{class_owl_engine_1_1_window_manager_a777b7713c0155606299f74ce09294842}\label{class_owl_engine_1_1_window_manager_a777b7713c0155606299f74ce09294842}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!````~WindowManager@{$\sim$WindowManager}}
+\index{````~WindowManager@{$\sim$WindowManager}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$WindowManager()}{~WindowManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Window\+Manager\+::$\sim$\+Window\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_a777b7713c0155606299f74ce09294842}{$\sim$\+Window\+Manager()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_window_manager_a7204897c3ecd73e8a0c6791569389eee}\label{class_owl_engine_1_1_window_manager_a7204897c3ecd73e8a0c6791569389eee}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!deregisterScheduledWindows@{deregisterScheduledWindows}}
+\index{deregisterScheduledWindows@{deregisterScheduledWindows}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{deregisterScheduledWindows()}{deregisterScheduledWindows()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Window\+Manager\+::deregister\+Scheduled\+Windows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Deregister all windows scheduled for deletion. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_a7204897c3ecd73e8a0c6791569389eee}{deregister\+Scheduled\+Windows()}} \mbox{\Hypertarget{class_owl_engine_1_1_window_manager_ac8ba554293bfe1d62f58438d2f70d6dd}\label{class_owl_engine_1_1_window_manager_ac8ba554293bfe1d62f58438d2f70d6dd}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!deregisterWindow@{deregisterWindow}}
+\index{deregisterWindow@{deregisterWindow}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{deregisterWindow()}{deregisterWindow()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Window\+Manager\+::deregister\+Window (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Deregister a window with the window manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_ac8ba554293bfe1d62f58438d2f70d6dd}{deregister\+Window()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const std\+::string\& -\/ The name of the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_window_manager_acf242d72f0163ef71e547764a51d53a4}\label{class_owl_engine_1_1_window_manager_acf242d72f0163ef71e547764a51d53a4}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!getFocusedWindow@{getFocusedWindow}}
+\index{getFocusedWindow@{getFocusedWindow}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{getFocusedWindow()}{getFocusedWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$ Owl\+Engine\+::\+Window\+Manager\+::get\+Focused\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the window which is currently focused. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_acf242d72f0163ef71e547764a51d53a4}{get\+Focused\+Window()}}
+
+\begin{DoxyReturn}{Returns}
+a Window$\ast$ -\/ A pointer to the window currently focusued 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_window_manager_a536eb7e2c65b89447c0a88575632fd34}\label{class_owl_engine_1_1_window_manager_a536eb7e2c65b89447c0a88575632fd34}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!getRegisteredWindows@{getRegisteredWindows}}
+\index{getRegisteredWindows@{getRegisteredWindows}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{getRegisteredWindows()}{getRegisteredWindows()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$ $>$ \& Owl\+Engine\+::\+Window\+Manager\+::get\+Registered\+Windows (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a list of all registered windows. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_a536eb7e2c65b89447c0a88575632fd34}{get\+Registered\+Windows()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::map$<$std\+::string, Window$\ast$$>$\& -\/ A list of all the registered windows 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_window_manager_acf89c5ecf9f8d8386208fc3407cfaa26}\label{class_owl_engine_1_1_window_manager_acf89c5ecf9f8d8386208fc3407cfaa26}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!getWindowByName@{getWindowByName}}
+\index{getWindowByName@{getWindowByName}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{getWindowByName()}{getWindowByName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$ Owl\+Engine\+::\+Window\+Manager\+::get\+Window\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a window by name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_acf89c5ecf9f8d8386208fc3407cfaa26}{get\+Window\+By\+Name()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const std\+::string\& -\/ The name of the window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Window$\ast$ -\/ A pointer to the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_window_manager_a47c5d70fe68cba54d17f89e1a2e97615}\label{class_owl_engine_1_1_window_manager_a47c5d70fe68cba54d17f89e1a2e97615}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!printWindowManagerDetails@{printWindowManagerDetails}}
+\index{printWindowManagerDetails@{printWindowManagerDetails}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{printWindowManagerDetails()}{printWindowManagerDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Window\+Manager\+::print\+Window\+Manager\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print manager details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_a47c5d70fe68cba54d17f89e1a2e97615}{print\+Window\+Manager\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_window_manager_a249cc6124ad24cbbb80d7720db13e530}\label{class_owl_engine_1_1_window_manager_a249cc6124ad24cbbb80d7720db13e530}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!registerWindow@{registerWindow}}
+\index{registerWindow@{registerWindow}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{registerWindow()}{registerWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$ Owl\+Engine\+::\+Window\+Manager\+::register\+Window (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{const \mbox{\hyperlink{class_owl_engine_1_1_window_properties}{Window\+Properties}} \&}]{props }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Register a window with the window manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_a249cc6124ad24cbbb80d7720db13e530}{register\+Window()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const std\+::string\& -\/ The name of the window \\
+\hline
+{\em props} & a const \mbox{\hyperlink{class_owl_engine_1_1_window_properties}{Window\+Properties}}\& -\/ The properties of the window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Window$\ast$ -\/ A pointer to the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_window_manager_af4b05c38bc3547f7f95dbe046b87aa8c}\label{class_owl_engine_1_1_window_manager_af4b05c38bc3547f7f95dbe046b87aa8c}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!setFocusedWindowByName@{setFocusedWindowByName}}
+\index{setFocusedWindowByName@{setFocusedWindowByName}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{setFocusedWindowByName()}{setFocusedWindowByName()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Window\+Manager\+::set\+Focused\+Window\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{window\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set a window to be focused. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_af4b05c38bc3547f7f95dbe046b87aa8c}{set\+Focused\+Window\+By\+Name()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Name} & a const std\+::string\& -\/ The name of the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_window_manager_a107492bb39927ead2a565381cd2698d7}\label{class_owl_engine_1_1_window_manager_a107492bb39927ead2a565381cd2698d7}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!setFullscreenWindowByName@{setFullscreenWindowByName}}
+\index{setFullscreenWindowByName@{setFullscreenWindowByName}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{setFullscreenWindowByName()}{setFullscreenWindowByName()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Window\+Manager\+::set\+Fullscreen\+Window\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{window\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set a window to be fullscreen. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_a107492bb39927ead2a565381cd2698d7}{set\+Fullscreen\+Window\+By\+Name()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Name} & a const std\+::string\& -\/ The name of the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_window_manager_a20db659a8cd1b5b14524c49f64aafd07}\label{class_owl_engine_1_1_window_manager_a20db659a8cd1b5b14524c49f64aafd07}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!start@{start}}
+\index{start@{start}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Window\+Manager\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_a20db659a8cd1b5b14524c49f64aafd07}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_window_manager_abec75dc2d878e92e37f07c7a852a805c}\label{class_owl_engine_1_1_window_manager_abec75dc2d878e92e37f07c7a852a805c}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Window\+Manager\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_abec75dc2d878e92e37f07c7a852a805c}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_window_manager_a00320a6b11ffaff9360050efcf7dbd92}\label{class_owl_engine_1_1_window_manager_a00320a6b11ffaff9360050efcf7dbd92}} 
+\index{OwlEngine::WindowManager@{OwlEngine::WindowManager}!windowExists@{windowExists}}
+\index{windowExists@{windowExists}!OwlEngine::WindowManager@{OwlEngine::WindowManager}}
+\doxysubsubsection{\texorpdfstring{windowExists()}{windowExists()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Window\+Manager\+::window\+Exists (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{window\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if the window name exists. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_window_manager_a00320a6b11ffaff9360050efcf7dbd92}{window\+Exists()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Name} & a const std\+::string\& -\/ The name of the window \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Was the window name found in the window list 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{window_manager_8h}{window\+Manager.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{window_manager_8cpp}{window\+Manager.\+cpp}}\end{DoxyCompactItemize}

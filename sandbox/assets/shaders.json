@@ -1,0 +1,77 @@
+{
+	"programs": 
+	[
+		{ 
+			"name": "blinnPhong", 
+			"vertexShader": "assets/shaders/blinnPhong/vertex.vs", 
+			"fragmentShader": "assets/shaders/blinnPhong/fragment.fs", 
+			"geometryShader": "",
+			"tessControlShader": "",
+			"tessEvaluationShader": "",
+			"vertexArray": "vertexArray1",
+			"uniforms": [ "u_diffuseMap" ],
+			"uniformBuffers": [ "Camera", "CameraUBO", "Settings", "SettingsUBO", "DirectionalLights", "DirLightUBO", "PointLights", "PointLightUBO", "SpotLights", "SpotLightUBO" ],
+			"orderImportance": 0
+		},
+		{ 
+			"name": "flatTexShader", 
+			"vertexShader": "assets/shaders/flatTexShader/vertex.vs", 
+			"fragmentShader": "assets/shaders/flatTexShader/fragment.fs", 
+			"geometryShader": "",
+			"tessControlShader": "",
+			"tessEvaluationShader": "",
+			"vertexArray": "vertexArray4",
+			"uniforms": [ "u_diffuseMap" ],
+			"uniformBuffers": [ "Camera", "CameraUBO" ],
+			"orderImportance": 0
+		},
+		{ 
+			"name": "lightSource", 
+			"vertexShader": "assets/shaders/lightSource/vertex.vs", 
+			"fragmentShader": "assets/shaders/lightSource/fragment.fs", 
+			"geometryShader": "",
+			"tessControlShader": "",
+			"tessEvaluationShader": "",
+			"vertexArray": "lightSourceArray",
+			"uniforms": [ ],
+			"uniformBuffers": [ "Camera", "CameraUBO" ],
+			"orderImportance": 0
+		},
+		{ 
+			"name": "skyboxShader", 
+			"vertexShader": "assets/shaders/sky/vertex.vs", 
+			"fragmentShader": "assets/shaders/sky/fragment.fs", 
+			"geometryShader": "",
+			"tessControlShader": "",
+			"tessEvaluationShader": "",
+			"vertexArray": "vertexArray2",
+			"uniforms": [ "u_cubeMap" ],
+			"uniformBuffers": [ "Camera", "CameraUBO" ],
+			"orderImportance": 1
+		},
+		{ 
+			"name": "normalMapShader", 
+			"vertexShader": "assets/shaders/normalMapShader/vertex.vs", 
+			"fragmentShader": "assets/shaders/normalMapShader/fragment.fs", 
+			"geometryShader": "",
+			"tessControlShader": "",
+			"tessEvaluationShader": "",
+			"vertexArray": "normalArray",
+			"uniforms": [ "u_diffuseMap" ],
+			"uniformBuffers": [ "Camera", "CameraUBO", "Settings", "SettingsUBO", "DirectionalLights", "DirLightUBO", "PointLights", "PointLightUBO", "SpotLights", "SpotLightUBO" ],
+			"orderImportance": 0
+		},
+		{ 
+			"name": "transParentblinnPhong", 
+			"vertexShader": "assets/shaders/transParentblinnPhong/vertex.vs", 
+			"fragmentShader": "assets/shaders/transParentblinnPhong/fragment.fs", 
+			"geometryShader": "",
+			"tessControlShader": "",
+			"tessEvaluationShader": "",
+			"vertexArray": "vertexArray1",
+			"uniforms": [ "u_diffuseMap" ],
+			"uniformBuffers": [ "Camera", "CameraUBO", "Settings", "SettingsUBO", "DirectionalLights", "DirLightUBO", "PointLights", "PointLightUBO", "SpotLights", "SpotLightUBO" ],
+			"orderImportance": 2
+		}
+	]	
+}

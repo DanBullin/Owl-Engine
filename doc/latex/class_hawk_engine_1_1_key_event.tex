@@ -1,0 +1,94 @@
+\hypertarget{class_hawk_engine_1_1_key_event}{}\doxysection{Hawk\+Engine\+::Key\+Event Class Reference}
+\label{class_hawk_engine_1_1_key_event}\index{HawkEngine::KeyEvent@{HawkEngine::KeyEvent}}
+
+
+A base event class for key events.  
+
+
+
+
+{\ttfamily \#include $<$key\+Events.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Key\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.772277cm]{class_hawk_engine_1_1_key_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const int32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_key_event_ae63d1f3343a8a035d3e7be1f510cc9a8}{get\+Key\+Code}} () const
+\begin{DoxyCompactList}\small\item\em Get the key involved in the event. \end{DoxyCompactList}\item 
+virtual const int32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_key_event_ab1290925ca98b613303ca6bf24fd0735}{get\+Category\+Flags}} () const override
+\begin{DoxyCompactList}\small\item\em Get the category flags of the event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_key_event_ad59670f9691023b4a2d19357ac9121b5}{Key\+Event}} (const int32\+\_\+t keycode)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_key_event_aa47a5b399523ed2e1118b12299bcd02b}\label{class_hawk_engine_1_1_key_event_aa47a5b399523ed2e1118b12299bcd02b}} 
+int32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_key_event_aa47a5b399523ed2e1118b12299bcd02b}{m\+\_\+key\+Code}}
+\begin{DoxyCompactList}\small\item\em The key involved in the event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A base event class for key events. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_key_event_ad59670f9691023b4a2d19357ac9121b5}\label{class_hawk_engine_1_1_key_event_ad59670f9691023b4a2d19357ac9121b5}} 
+\index{HawkEngine::KeyEvent@{HawkEngine::KeyEvent}!KeyEvent@{KeyEvent}}
+\index{KeyEvent@{KeyEvent}!HawkEngine::KeyEvent@{HawkEngine::KeyEvent}}
+\doxysubsubsection{\texorpdfstring{KeyEvent()}{KeyEvent()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Key\+Event\+::\+Key\+Event (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{keycode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keycode} & a const int32\+\_\+t -\/ The key involved in the event \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_key_event_ab1290925ca98b613303ca6bf24fd0735}\label{class_hawk_engine_1_1_key_event_ab1290925ca98b613303ca6bf24fd0735}} 
+\index{HawkEngine::KeyEvent@{HawkEngine::KeyEvent}!getCategoryFlags@{getCategoryFlags}}
+\index{getCategoryFlags@{getCategoryFlags}!HawkEngine::KeyEvent@{HawkEngine::KeyEvent}}
+\doxysubsubsection{\texorpdfstring{getCategoryFlags()}{getCategoryFlags()}}
+{\footnotesize\ttfamily virtual const int32\+\_\+t Hawk\+Engine\+::\+Key\+Event\+::get\+Category\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the category flags of the event. 
+
+\begin{DoxyReturn}{Returns}
+a const int32\+\_\+t -\/ The key\textquotesingle{}s event category flags 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_event_a8059de3dbb9c62f469764b14433049fb}{Hawk\+Engine\+::\+Event}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_key_event_ae63d1f3343a8a035d3e7be1f510cc9a8}\label{class_hawk_engine_1_1_key_event_ae63d1f3343a8a035d3e7be1f510cc9a8}} 
+\index{HawkEngine::KeyEvent@{HawkEngine::KeyEvent}!getKeyCode@{getKeyCode}}
+\index{getKeyCode@{getKeyCode}!HawkEngine::KeyEvent@{HawkEngine::KeyEvent}}
+\doxysubsubsection{\texorpdfstring{getKeyCode()}{getKeyCode()}}
+{\footnotesize\ttfamily const int32\+\_\+t Hawk\+Engine\+::\+Key\+Event\+::get\+Key\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the key involved in the event. 
+
+\begin{DoxyReturn}{Returns}
+a const int32\+\_\+t -\/ The key involved in the event 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/events/\mbox{\hyperlink{key_events_8h}{key\+Events.\+h}}\end{DoxyCompactItemize}

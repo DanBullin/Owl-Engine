@@ -1,0 +1,344 @@
+\hypertarget{class_owl_engine_1_1_directional_light}{}\doxysection{Owl\+Engine\+::Directional\+Light Class Reference}
+\label{class_owl_engine_1_1_directional_light}\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+
+
+A directional light object.  
+
+
+
+
+{\ttfamily \#include $<$light.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Directional\+Light\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_directional_light}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a2f33178b3758a717ad4c03f3fcd4411e}{Directional\+Light}} (const glm\+::vec3 \&direction, const glm\+::vec3 \&ambient, const glm\+::vec3 \&diffuse, const glm\+::vec3 \&specular)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a513bdca88c4e1c69d058bdb1a5dbd9ee}{$\sim$\+Directional\+Light}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a342ce17a0b694854229accf2a9a83a32}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a8fc26bfbfa05a34a125c585cd6076c52}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a7df33a1fcd76d465f63aebbe69f30478}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_directional_light_aac9a5154efe8b41dcc4b92537721ab87}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a720d178dbca76bf74298d8db834822d5}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data as J\+S\+ON for saving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a2149a8a3b25e3db45acd0788d415e56a}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data displayed in Im\+Gui form. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a43fcadafdb7e6534396f639f2cb0bdf5}{get\+World\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the world position of the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_directional_light_ae6f5c0bbb918f2f50c54c40f02cf9da7}{set\+Direction}} (const glm\+::vec3 \&direction)
+\begin{DoxyCompactList}\small\item\em Set the direction vector of the light. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_directional_light_afe80d776a7a55497b260a1b94ea1dc12}{get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em Get the light\textquotesingle{}s direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_directional_light_ae591337eccac168219f769dd5f04eb0d}{set\+Ambient\+Factor}} (const glm\+::vec3 \&ambient)
+\begin{DoxyCompactList}\small\item\em Set the ambient factor of the light. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a4a3762d42c7bf3a286e934a46ea50cb7}{get\+Ambient\+Factor}} () const
+\begin{DoxyCompactList}\small\item\em Get the ambient factor of the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a9e3447b7cb96aebca16e57bf93ac7c75}{set\+Diffuse\+Factor}} (const glm\+::vec3 \&diffuse)
+\begin{DoxyCompactList}\small\item\em Set the diffuse factor of the light. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a8cfe41ff0121e3a151cf6f1b63515d4b}{get\+Diffuse\+Factor}} () const
+\begin{DoxyCompactList}\small\item\em Get the diffuse factor of the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a5b418982e521ee0f8ebc2bcc28aab605}{set\+Specular\+Factor}} (const glm\+::vec3 \&specular)
+\begin{DoxyCompactList}\small\item\em Set the specular factor of the light. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a0195412bb119cef8ea1b5358a0ed3295}{get\+Specular\+Factor}} () const
+\begin{DoxyCompactList}\small\item\em Get the specular factor of the light. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A directional light object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a2f33178b3758a717ad4c03f3fcd4411e}\label{class_owl_engine_1_1_directional_light_a2f33178b3758a717ad4c03f3fcd4411e}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!DirectionalLight@{DirectionalLight}}
+\index{DirectionalLight@{DirectionalLight}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{DirectionalLight()}{DirectionalLight()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Directional\+Light\+::\+Directional\+Light (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction,  }\item[{const glm\+::vec3 \&}]{ambient,  }\item[{const glm\+::vec3 \&}]{diffuse,  }\item[{const glm\+::vec3 \&}]{specular }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a2f33178b3758a717ad4c03f3fcd4411e}{Directional\+Light()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & a const glm\+::vec3\& -\/ The light\textquotesingle{}s direction \\
+\hline
+{\em ambient} & a const glm\+::vec3\& -\/ The light\textquotesingle{}s ambient factor \\
+\hline
+{\em diffuse} & a const glm\+::vec3\& -\/ The light\textquotesingle{}s diffuse factor \\
+\hline
+{\em specular} & a const glm\+::vec3\& -\/ The light\textquotesingle{}s specular factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a513bdca88c4e1c69d058bdb1a5dbd9ee}\label{class_owl_engine_1_1_directional_light_a513bdca88c4e1c69d058bdb1a5dbd9ee}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!````~DirectionalLight@{$\sim$DirectionalLight}}
+\index{````~DirectionalLight@{$\sim$DirectionalLight}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{$\sim$DirectionalLight()}{~DirectionalLight()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Directional\+Light\+::$\sim$\+Directional\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a513bdca88c4e1c69d058bdb1a5dbd9ee}{$\sim$\+Directional\+Light()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a2149a8a3b25e3db45acd0788d415e56a}\label{class_owl_engine_1_1_directional_light_a2149a8a3b25e3db45acd0788d415e56a}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Directional\+Light\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data displayed in Im\+Gui form. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a2149a8a3b25e3db45acd0788d415e56a}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a4a3762d42c7bf3a286e934a46ea50cb7}\label{class_owl_engine_1_1_directional_light_a4a3762d42c7bf3a286e934a46ea50cb7}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!getAmbientFactor@{getAmbientFactor}}
+\index{getAmbientFactor@{getAmbientFactor}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{getAmbientFactor()}{getAmbientFactor()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Directional\+Light\+::get\+Ambient\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the ambient factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a4a3762d42c7bf3a286e934a46ea50cb7}{get\+Ambient\+Factor()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The ambient factor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a720d178dbca76bf74298d8db834822d5}\label{class_owl_engine_1_1_directional_light_a720d178dbca76bf74298d8db834822d5}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Directional\+Light\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data as J\+S\+ON for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a720d178dbca76bf74298d8db834822d5}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a8cfe41ff0121e3a151cf6f1b63515d4b}\label{class_owl_engine_1_1_directional_light_a8cfe41ff0121e3a151cf6f1b63515d4b}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!getDiffuseFactor@{getDiffuseFactor}}
+\index{getDiffuseFactor@{getDiffuseFactor}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{getDiffuseFactor()}{getDiffuseFactor()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Directional\+Light\+::get\+Diffuse\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the diffuse factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a8cfe41ff0121e3a151cf6f1b63515d4b}{get\+Diffuse\+Factor()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The diffuse factor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_afe80d776a7a55497b260a1b94ea1dc12}\label{class_owl_engine_1_1_directional_light_afe80d776a7a55497b260a1b94ea1dc12}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Directional\+Light\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the light\textquotesingle{}s direction. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_afe80d776a7a55497b260a1b94ea1dc12}{get\+Direction()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The light direction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a0195412bb119cef8ea1b5358a0ed3295}\label{class_owl_engine_1_1_directional_light_a0195412bb119cef8ea1b5358a0ed3295}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!getSpecularFactor@{getSpecularFactor}}
+\index{getSpecularFactor@{getSpecularFactor}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{getSpecularFactor()}{getSpecularFactor()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Directional\+Light\+::get\+Specular\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the specular factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a0195412bb119cef8ea1b5358a0ed3295}{get\+Specular\+Factor()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The specular factor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a43fcadafdb7e6534396f639f2cb0bdf5}\label{class_owl_engine_1_1_directional_light_a43fcadafdb7e6534396f639f2cb0bdf5}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!getWorldPosition@{getWorldPosition}}
+\index{getWorldPosition@{getWorldPosition}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{getWorldPosition()}{getWorldPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Directional\+Light\+::get\+World\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the world position of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a43fcadafdb7e6534396f639f2cb0bdf5}{get\+World\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The world position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a342ce17a0b694854229accf2a9a83a32}\label{class_owl_engine_1_1_directional_light_a342ce17a0b694854229accf2a9a83a32}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Directional\+Light\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a342ce17a0b694854229accf2a9a83a32}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a8fc26bfbfa05a34a125c585cd6076c52}\label{class_owl_engine_1_1_directional_light_a8fc26bfbfa05a34a125c585cd6076c52}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Directional\+Light\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+on\+Detach 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a7df33a1fcd76d465f63aebbe69f30478}\label{class_owl_engine_1_1_directional_light_a7df33a1fcd76d465f63aebbe69f30478}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Directional\+Light\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a7df33a1fcd76d465f63aebbe69f30478}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_aac9a5154efe8b41dcc4b92537721ab87}\label{class_owl_engine_1_1_directional_light_aac9a5154efe8b41dcc4b92537721ab87}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Directional\+Light\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_aac9a5154efe8b41dcc4b92537721ab87}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_ae591337eccac168219f769dd5f04eb0d}\label{class_owl_engine_1_1_directional_light_ae591337eccac168219f769dd5f04eb0d}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!setAmbientFactor@{setAmbientFactor}}
+\index{setAmbientFactor@{setAmbientFactor}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{setAmbientFactor()}{setAmbientFactor()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Directional\+Light\+::set\+Ambient\+Factor (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{ambient }\end{DoxyParamCaption})}
+
+
+
+Set the ambient factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_ae591337eccac168219f769dd5f04eb0d}{set\+Ambient\+Factor()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ambient} & a const glm\+::vec3\& -\/ The desired ambient factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a9e3447b7cb96aebca16e57bf93ac7c75}\label{class_owl_engine_1_1_directional_light_a9e3447b7cb96aebca16e57bf93ac7c75}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!setDiffuseFactor@{setDiffuseFactor}}
+\index{setDiffuseFactor@{setDiffuseFactor}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{setDiffuseFactor()}{setDiffuseFactor()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Directional\+Light\+::set\+Diffuse\+Factor (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{diffuse }\end{DoxyParamCaption})}
+
+
+
+Set the diffuse factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a9e3447b7cb96aebca16e57bf93ac7c75}{set\+Diffuse\+Factor()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em diffuse} & a const glm\+::vec3\& -\/ The desired diffuse factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_ae6f5c0bbb918f2f50c54c40f02cf9da7}\label{class_owl_engine_1_1_directional_light_ae6f5c0bbb918f2f50c54c40f02cf9da7}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Directional\+Light\+::set\+Direction (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction }\end{DoxyParamCaption})}
+
+
+
+Set the direction vector of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_ae6f5c0bbb918f2f50c54c40f02cf9da7}{set\+Direction()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & a const glm\+::vec3\& -\/ The desired light direction \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_directional_light_a5b418982e521ee0f8ebc2bcc28aab605}\label{class_owl_engine_1_1_directional_light_a5b418982e521ee0f8ebc2bcc28aab605}} 
+\index{OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}!setSpecularFactor@{setSpecularFactor}}
+\index{setSpecularFactor@{setSpecularFactor}!OwlEngine::DirectionalLight@{OwlEngine::DirectionalLight}}
+\doxysubsubsection{\texorpdfstring{setSpecularFactor()}{setSpecularFactor()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Directional\+Light\+::set\+Specular\+Factor (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{specular }\end{DoxyParamCaption})}
+
+
+
+Set the specular factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_directional_light_a5b418982e521ee0f8ebc2bcc28aab605}{set\+Specular\+Factor()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em specular} & a const glm\+::vec3\& -\/ The desired specular factor \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{light_8h}{light.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{light_8cpp}{light.\+cpp}}\end{DoxyCompactItemize}

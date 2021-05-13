@@ -1,0 +1,81 @@
+\hypertarget{common_8h}{}\doxysection{C\+:/doc/src/engine/include/independent/core/common.h File Reference}
+\label{common_8h}\index{C:/doc/src/engine/include/independent/core/common.h@{C:/doc/src/engine/include/independent/core/common.h}}
+
+
+A common include file containing common includes.  
+
+
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$typeindex$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$direct.\+h$>$}\newline
+{\ttfamily \#include $<$glm/glm.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/type\+\_\+ptr.\+hpp$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{common_8h_ac4a9b857cb8a7445bcac07f99736eee8}\label{common_8h_ac4a9b857cb8a7445bcac07f99736eee8}} 
+\#define \mbox{\hyperlink{common_8h_ac4a9b857cb8a7445bcac07f99736eee8}{E\+N\+G\+I\+N\+E\+\_\+\+E\+R\+R\+OR}}(...)~\mbox{\hyperlink{class_owl_engine_1_1_log_a72acd9674ae2d2e987ec12dc1d6e15ab}{Owl\+Engine\+::\+Log\+::error}}(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Print error message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{common_8h_a6404e6cf7c01e67c7a2f0b07803b0647}\label{common_8h_a6404e6cf7c01e67c7a2f0b07803b0647}} 
+\#define \mbox{\hyperlink{common_8h_a6404e6cf7c01e67c7a2f0b07803b0647}{E\+N\+G\+I\+N\+E\+\_\+\+I\+N\+FO}}(...)~\mbox{\hyperlink{class_owl_engine_1_1_log_a877bf393c85b58375e757a3071c19bd6}{Owl\+Engine\+::\+Log\+::info}}(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Print info message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{common_8h_a23a05fa4aef92c5babd058c9c36c4e2a}\label{common_8h_a23a05fa4aef92c5babd058c9c36c4e2a}} 
+\#define \mbox{\hyperlink{common_8h_a23a05fa4aef92c5babd058c9c36c4e2a}{E\+N\+G\+I\+N\+E\+\_\+\+W\+A\+RN}}(...)~\mbox{\hyperlink{class_owl_engine_1_1_log_a1653245e8f6d139378676bccbc6bb102}{Owl\+Engine\+::\+Log\+::warn}}(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Print warn message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{common_8h_a92736f453b785356ff5e9177c319845e}\label{common_8h_a92736f453b785356ff5e9177c319845e}} 
+\#define \mbox{\hyperlink{common_8h_a92736f453b785356ff5e9177c319845e}{E\+N\+G\+I\+N\+E\+\_\+\+T\+R\+A\+CE}}(...)~\mbox{\hyperlink{class_owl_engine_1_1_log_a14c504c09055b924ff26bacca4d94f46}{Owl\+Engine\+::\+Log\+::trace}}(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Print trace message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{common_8h_ace4d1b98556ba69c45836206427c9732}\label{common_8h_ace4d1b98556ba69c45836206427c9732}} 
+\#define \mbox{\hyperlink{common_8h_ace4d1b98556ba69c45836206427c9732}{E\+N\+G\+I\+N\+E\+\_\+\+D\+E\+B\+UG}}(...)~\mbox{\hyperlink{class_owl_engine_1_1_log_a5a0806517b82ae6470669e21b9f58417}{Owl\+Engine\+::\+Log\+::debug}}(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Print debug message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{common_8h_ae02ba3b1d273f161d9229951643e12bf}\label{common_8h_ae02ba3b1d273f161d9229951643e12bf}} 
+\#define \mbox{\hyperlink{common_8h_ae02ba3b1d273f161d9229951643e12bf}{E\+N\+G\+I\+N\+E\+\_\+\+R\+E\+L\+E\+A\+SE}}(...)~\mbox{\hyperlink{class_owl_engine_1_1_log_abe16cc6a4c32c34bb24d97f1198e3d51}{Owl\+Engine\+::\+Log\+::release}}(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Print release mode message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{common_8h_a5736b284818bb8e1c50f7c79e1d4d8c5}\label{common_8h_a5736b284818bb8e1c50f7c79e1d4d8c5}} 
+\#define \mbox{\hyperlink{common_8h_a5736b284818bb8e1c50f7c79e1d4d8c5}{E\+N\+G\+I\+N\+E\+\_\+\+F\+I\+LE}}(...)~\mbox{\hyperlink{class_owl_engine_1_1_log_a4ba076cea4c0ee60ee873f98a5fa7da2}{Owl\+Engine\+::\+Log\+::file}}(\+\_\+\+\_\+\+V\+A\+\_\+\+A\+R\+G\+S\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em File message. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{common_8h_abf4bc39e3136d07d6d17b8c1e044c58b}\label{common_8h_abf4bc39e3136d07d6d17b8c1e044c58b}} 
+\#define \mbox{\hyperlink{common_8h_abf4bc39e3136d07d6d17b8c1e044c58b}{T\+I\+M\+E\+\_\+\+F\+U\+N\+C\+T\+I\+ON}}(x,  y)~\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a04ff91b8de008755a4082218cfa0640d}{Owl\+Engine\+::\+Timer\+System\+::start\+Timer}}(x); y; \mbox{\hyperlink{class_owl_engine_1_1_timer_system_af29a714813ad0494c49bffa6cba8980f}{Owl\+Engine\+::\+Timer\+System\+::stop\+Timer}}(x, false, true);
+\begin{DoxyCompactList}\small\item\em Macro to time a function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{common_8h_a5bd79d585ba4b02959f5f79f671b66a4}\label{common_8h_a5bd79d585ba4b02959f5f79f671b66a4}} 
+\#define \mbox{\hyperlink{common_8h_a5bd79d585ba4b02959f5f79f671b66a4}{G\+E\+T\+\_\+\+T\+I\+ME}}(x,  y,  z)~\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a1f86919441dea0cc8b60e6872c529207}{Owl\+Engine\+::\+Timer\+System\+::get\+Time}}(x, y, z)
+\begin{DoxyCompactList}\small\item\em Macro to get a time from the timer system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{common_8h_a0854a794f9feb0d13f710fd9ff05d846}\label{common_8h_a0854a794f9feb0d13f710fd9ff05d846}} 
+\#define {\bfseries P\+A\+U\+S\+E\+\_\+\+O\+N\+K\+E\+Y\+P\+R\+E\+SS}(x)~\mbox{\hyperlink{class_owl_engine_1_1_input_poller_a5af4f2067953269c14d53e397562f8b0}{Owl\+Engine\+::\+Input\+Poller\+::is\+Key\+Pressed}}(x)
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}\label{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}} 
+{\footnotesize template$<$typename S , typename T $>$ }\\using \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}} = std\+::map$<$ S, std\+::shared\+\_\+ptr$<$ T $>$ $>$
+\begin{DoxyCompactList}\small\item\em Type alias for maps. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}\label{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}} 
+{\footnotesize template$<$typename T $>$ }\\using \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}} = std\+::shared\+\_\+ptr$<$ T $>$
+\begin{DoxyCompactList}\small\item\em Shared pointer type alias. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{common_8h_aa7c9aadb398aa7f5617952f93be25047}\label{common_8h_aa7c9aadb398aa7f5617952f93be25047}} 
+enum \mbox{\hyperlink{common_8h_aa7c9aadb398aa7f5617952f93be25047}{Renderers}} \{ {\bfseries Renderer3D} = 0, 
+{\bfseries Renderer2D} = 1
+ \}
+\begin{DoxyCompactList}\small\item\em The different types of renderers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A common include file containing common includes. 
+
+\begin{DoxyAuthor}{Author}
+Daniel Bullin 
+\end{DoxyAuthor}

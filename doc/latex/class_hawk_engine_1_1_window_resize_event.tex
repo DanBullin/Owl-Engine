@@ -1,0 +1,155 @@
+\hypertarget{class_hawk_engine_1_1_window_resize_event}{}\doxysection{Hawk\+Engine\+::Window\+Resize\+Event Class Reference}
+\label{class_hawk_engine_1_1_window_resize_event}\index{HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}}
+
+
+A window resize event.  
+
+
+
+
+{\ttfamily \#include $<$window\+Events.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Window\+Resize\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_window_resize_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event_a231b04ca6ddb2b64a28d8dd50e17e373}{Window\+Resize\+Event}} (const int32\+\_\+t width, const int32\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event_a76992d62e625557b6662d19be1692b26}{get\+Event\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the event type. \end{DoxyCompactList}\item 
+virtual const int32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event_a397e1d46a11e9158fc6a7546592d8e1c}{get\+Category\+Flags}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the event category flags. \end{DoxyCompactList}\item 
+const int32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event_a0d3b77c1726a2632720c820c13969e34}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Return the width of the resize. \end{DoxyCompactList}\item 
+const int32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event_a45f482a2a5a1bea49d79e8d6661ed871}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Return the height of the resize. \end{DoxyCompactList}\item 
+const glm\+::ivec2 \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event_a3893ae5734d10095e871fab85e83a72a}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the size of the window resize. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event_aa6767107041d2b6ec51fd8cbb6ab3c48}{get\+Static\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Return static type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A window resize event. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_resize_event_a231b04ca6ddb2b64a28d8dd50e17e373}\label{class_hawk_engine_1_1_window_resize_event_a231b04ca6ddb2b64a28d8dd50e17e373}} 
+\index{HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}!WindowResizeEvent@{WindowResizeEvent}}
+\index{WindowResizeEvent@{WindowResizeEvent}!HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}}
+\doxysubsubsection{\texorpdfstring{WindowResizeEvent()}{WindowResizeEvent()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Window\+Resize\+Event\+::\+Window\+Resize\+Event (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{width,  }\item[{const int32\+\_\+t}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & a const int32\+\_\+t -\/ The width of the window resize \\
+\hline
+{\em height} & a const int32\+\_\+t -\/ The height of the window resize \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_resize_event_a397e1d46a11e9158fc6a7546592d8e1c}\label{class_hawk_engine_1_1_window_resize_event_a397e1d46a11e9158fc6a7546592d8e1c}} 
+\index{HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}!getCategoryFlags@{getCategoryFlags}}
+\index{getCategoryFlags@{getCategoryFlags}!HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}}
+\doxysubsubsection{\texorpdfstring{getCategoryFlags()}{getCategoryFlags()}}
+{\footnotesize\ttfamily virtual const int32\+\_\+t Hawk\+Engine\+::\+Window\+Resize\+Event\+::get\+Category\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the event category flags. 
+
+\begin{DoxyReturn}{Returns}
+a const int32\+\_\+t -\/ The window close\textquotesingle{}s event category flags 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_event_a8059de3dbb9c62f469764b14433049fb}{Hawk\+Engine\+::\+Event}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_resize_event_a76992d62e625557b6662d19be1692b26}\label{class_hawk_engine_1_1_window_resize_event_a76992d62e625557b6662d19be1692b26}} 
+\index{HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}!getEventType@{getEventType}}
+\index{getEventType@{getEventType}!HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}}
+\doxysubsubsection{\texorpdfstring{getEventType()}{getEventType()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} Hawk\+Engine\+::\+Window\+Resize\+Event\+::get\+Event\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the event type. 
+
+\begin{DoxyReturn}{Returns}
+a const Event\+Type -\/ The window close event type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_event_a91937ccfa4271643d7b29bb3fe5416ac}{Hawk\+Engine\+::\+Event}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_resize_event_a45f482a2a5a1bea49d79e8d6661ed871}\label{class_hawk_engine_1_1_window_resize_event_a45f482a2a5a1bea49d79e8d6661ed871}} 
+\index{HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily const int32\+\_\+t Hawk\+Engine\+::\+Window\+Resize\+Event\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the height of the resize. 
+
+\begin{DoxyReturn}{Returns}
+a const int32\+\_\+t -\/ The height of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_resize_event_a3893ae5734d10095e871fab85e83a72a}\label{class_hawk_engine_1_1_window_resize_event_a3893ae5734d10095e871fab85e83a72a}} 
+\index{HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}!getSize@{getSize}}
+\index{getSize@{getSize}!HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily const glm\+::ivec2 Hawk\+Engine\+::\+Window\+Resize\+Event\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the size of the window resize. 
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::ivec2 -\/ The size of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_resize_event_aa6767107041d2b6ec51fd8cbb6ab3c48}\label{class_hawk_engine_1_1_window_resize_event_aa6767107041d2b6ec51fd8cbb6ab3c48}} 
+\index{HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}!getStaticType@{getStaticType}}
+\index{getStaticType@{getStaticType}!HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}}
+\doxysubsubsection{\texorpdfstring{getStaticType()}{getStaticType()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} Hawk\+Engine\+::\+Window\+Resize\+Event\+::get\+Static\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return static type. 
+
+\begin{DoxyReturn}{Returns}
+a const Event\+Type -\/ The static window close event type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_resize_event_a0d3b77c1726a2632720c820c13969e34}\label{class_hawk_engine_1_1_window_resize_event_a0d3b77c1726a2632720c820c13969e34}} 
+\index{HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!HawkEngine::WindowResizeEvent@{HawkEngine::WindowResizeEvent}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily const int32\+\_\+t Hawk\+Engine\+::\+Window\+Resize\+Event\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the width of the resize. 
+
+\begin{DoxyReturn}{Returns}
+a const int32\+\_\+t -\/ The width of the window 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/events/\mbox{\hyperlink{window_events_8h}{window\+Events.\+h}}\end{DoxyCompactItemize}

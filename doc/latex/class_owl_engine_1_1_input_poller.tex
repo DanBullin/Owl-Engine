@@ -1,0 +1,75 @@
+\hypertarget{class_owl_engine_1_1_input_poller}{}\doxysection{Owl\+Engine\+::Input\+Poller Class Reference}
+\label{class_owl_engine_1_1_input_poller}\index{OwlEngine::InputPoller@{OwlEngine::InputPoller}}
+
+
+A\+PI agnostic Input poller for getting current keyboard/mouse state.  
+
+
+
+
+{\ttfamily \#include $<$input\+Poller.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_input_poller_a7b68fae74dc010308d96b53f03375be3}\label{class_owl_engine_1_1_input_poller_a7b68fae74dc010308d96b53f03375be3}} 
+static std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{class_owl_engine_1_1_input_poller_a7b68fae74dc010308d96b53f03375be3}{is\+Any\+Key\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em Is any key pressed, returns list of all keys currently pressed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_input_poller_adf6c264e7d7b2c10587c13db6cc53e60}\label{class_owl_engine_1_1_input_poller_adf6c264e7d7b2c10587c13db6cc53e60}} 
+static std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{class_owl_engine_1_1_input_poller_adf6c264e7d7b2c10587c13db6cc53e60}{is\+Any\+Mouse\+Button\+Pressed}} ()
+\begin{DoxyCompactList}\small\item\em Is any mouse button pressed, returns list of all mouse buttons currently pressed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_input_poller_a5af4f2067953269c14d53e397562f8b0}\label{class_owl_engine_1_1_input_poller_a5af4f2067953269c14d53e397562f8b0}} 
+static bool \mbox{\hyperlink{class_owl_engine_1_1_input_poller_a5af4f2067953269c14d53e397562f8b0}{is\+Key\+Pressed}} (const int32\+\_\+t key\+Code)
+\begin{DoxyCompactList}\small\item\em Is the key pressed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_input_poller_aa3e33b6a30252640d592a1236883b556}\label{class_owl_engine_1_1_input_poller_aa3e33b6a30252640d592a1236883b556}} 
+static bool \mbox{\hyperlink{class_owl_engine_1_1_input_poller_aa3e33b6a30252640d592a1236883b556}{is\+Mouse\+Pressed}} (const int32\+\_\+t mouse\+Button)
+\begin{DoxyCompactList}\small\item\em Is the mouse button pressed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_input_poller_ad5b21f73f0b34b9bd6b7099c9f8bb80f}\label{class_owl_engine_1_1_input_poller_ad5b21f73f0b34b9bd6b7099c9f8bb80f}} 
+static glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_input_poller_ad5b21f73f0b34b9bd6b7099c9f8bb80f}{get\+Mouse\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the current mouse position. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_owl_engine_1_1_input_poller_a1df223d2b15c56689233c05d88a6a309}{get\+MouseX}} ()
+\begin{DoxyCompactList}\small\item\em Get the mouse x position. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_owl_engine_1_1_input_poller_a899f61fd77edcd242a4ff4efbe2af8fe}{get\+MouseY}} ()
+\begin{DoxyCompactList}\small\item\em Get the mouse y position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A\+PI agnostic Input poller for getting current keyboard/mouse state. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_input_poller_a1df223d2b15c56689233c05d88a6a309}\label{class_owl_engine_1_1_input_poller_a1df223d2b15c56689233c05d88a6a309}} 
+\index{OwlEngine::InputPoller@{OwlEngine::InputPoller}!getMouseX@{getMouseX}}
+\index{getMouseX@{getMouseX}!OwlEngine::InputPoller@{OwlEngine::InputPoller}}
+\doxysubsubsection{\texorpdfstring{getMouseX()}{getMouseX()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Input\+Poller\+::get\+MouseX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the mouse x position. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_input_poller_a1df223d2b15c56689233c05d88a6a309}{get\+Mouse\+X()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The mouse x position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_input_poller_a899f61fd77edcd242a4ff4efbe2af8fe}\label{class_owl_engine_1_1_input_poller_a899f61fd77edcd242a4ff4efbe2af8fe}} 
+\index{OwlEngine::InputPoller@{OwlEngine::InputPoller}!getMouseY@{getMouseY}}
+\index{getMouseY@{getMouseY}!OwlEngine::InputPoller@{OwlEngine::InputPoller}}
+\doxysubsubsection{\texorpdfstring{getMouseY()}{getMouseY()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Input\+Poller\+::get\+MouseY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the mouse y position. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_input_poller_a899f61fd77edcd242a4ff4efbe2af8fe}{get\+Mouse\+Y()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The mouse y position 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/events/\mbox{\hyperlink{input_poller_8h}{input\+Poller.\+h}}\item 
+C\+:/doc/src/engine/src/independent/events/\mbox{\hyperlink{input_poller_8cpp}{input\+Poller.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,113 @@
+\hypertarget{class_hawk_engine_1_1_mouse_scrolled_event}{}\doxysection{Hawk\+Engine\+::Mouse\+Scrolled\+Event Class Reference}
+\label{class_hawk_engine_1_1_mouse_scrolled_event}\index{HawkEngine::MouseScrolledEvent@{HawkEngine::MouseScrolledEvent}}
+
+
+A mouse scrolled event.  
+
+
+
+
+{\ttfamily \#include $<$mouse\+Events.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Mouse\+Scrolled\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_hawk_engine_1_1_mouse_scrolled_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event_a4699a8e10d2821806298ee1261bb2ddc}{Mouse\+Scrolled\+Event}} (const float x\+Offset, const float y\+Offset)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} \mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event_aae748390b5325ce8f38ad9ff55458352}{get\+Event\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the event type. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event_aab3bab001eaed82e1f890540d09290a1}{get\+X\+Offset}} () const
+\item 
+const float \mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event_a80325106419d844d33636f3df3ac1f62}{get\+Y\+Offset}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} \mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event_a24d8a0ed82a9158755faa13d3e110b43}{get\+Static\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Return static type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A mouse scrolled event. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mouse_scrolled_event_a4699a8e10d2821806298ee1261bb2ddc}\label{class_hawk_engine_1_1_mouse_scrolled_event_a4699a8e10d2821806298ee1261bb2ddc}} 
+\index{HawkEngine::MouseScrolledEvent@{HawkEngine::MouseScrolledEvent}!MouseScrolledEvent@{MouseScrolledEvent}}
+\index{MouseScrolledEvent@{MouseScrolledEvent}!HawkEngine::MouseScrolledEvent@{HawkEngine::MouseScrolledEvent}}
+\doxysubsubsection{\texorpdfstring{MouseScrolledEvent()}{MouseScrolledEvent()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Mouse\+Scrolled\+Event\+::\+Mouse\+Scrolled\+Event (\begin{DoxyParamCaption}\item[{const float}]{x\+Offset,  }\item[{const float}]{y\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Offset} & a const float -\/ The x offset of the mouse wheel \\
+\hline
+{\em y\+Offset} & a const float -\/ The y offset of the mouse wheel \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mouse_scrolled_event_aae748390b5325ce8f38ad9ff55458352}\label{class_hawk_engine_1_1_mouse_scrolled_event_aae748390b5325ce8f38ad9ff55458352}} 
+\index{HawkEngine::MouseScrolledEvent@{HawkEngine::MouseScrolledEvent}!getEventType@{getEventType}}
+\index{getEventType@{getEventType}!HawkEngine::MouseScrolledEvent@{HawkEngine::MouseScrolledEvent}}
+\doxysubsubsection{\texorpdfstring{getEventType()}{getEventType()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} Hawk\+Engine\+::\+Mouse\+Scrolled\+Event\+::get\+Event\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the event type. 
+
+\begin{DoxyReturn}{Returns}
+a const Event\+Type -\/ The mouse scrolled event type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_event_a91937ccfa4271643d7b29bb3fe5416ac}{Hawk\+Engine\+::\+Event}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_mouse_scrolled_event_a24d8a0ed82a9158755faa13d3e110b43}\label{class_hawk_engine_1_1_mouse_scrolled_event_a24d8a0ed82a9158755faa13d3e110b43}} 
+\index{HawkEngine::MouseScrolledEvent@{HawkEngine::MouseScrolledEvent}!getStaticType@{getStaticType}}
+\index{getStaticType@{getStaticType}!HawkEngine::MouseScrolledEvent@{HawkEngine::MouseScrolledEvent}}
+\doxysubsubsection{\texorpdfstring{getStaticType()}{getStaticType()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} Hawk\+Engine\+::\+Mouse\+Scrolled\+Event\+::get\+Static\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return static type. 
+
+\begin{DoxyReturn}{Returns}
+a const Event\+Type -\/ The static mouse scrolled event type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mouse_scrolled_event_aab3bab001eaed82e1f890540d09290a1}\label{class_hawk_engine_1_1_mouse_scrolled_event_aab3bab001eaed82e1f890540d09290a1}} 
+\index{HawkEngine::MouseScrolledEvent@{HawkEngine::MouseScrolledEvent}!getXOffset@{getXOffset}}
+\index{getXOffset@{getXOffset}!HawkEngine::MouseScrolledEvent@{HawkEngine::MouseScrolledEvent}}
+\doxysubsubsection{\texorpdfstring{getXOffset()}{getXOffset()}}
+{\footnotesize\ttfamily const float Hawk\+Engine\+::\+Mouse\+Scrolled\+Event\+::get\+X\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The x offset of the mouse wheel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mouse_scrolled_event_a80325106419d844d33636f3df3ac1f62}\label{class_hawk_engine_1_1_mouse_scrolled_event_a80325106419d844d33636f3df3ac1f62}} 
+\index{HawkEngine::MouseScrolledEvent@{HawkEngine::MouseScrolledEvent}!getYOffset@{getYOffset}}
+\index{getYOffset@{getYOffset}!HawkEngine::MouseScrolledEvent@{HawkEngine::MouseScrolledEvent}}
+\doxysubsubsection{\texorpdfstring{getYOffset()}{getYOffset()}}
+{\footnotesize\ttfamily const float Hawk\+Engine\+::\+Mouse\+Scrolled\+Event\+::get\+Y\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The y offset of the mouse wheel 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/events/\mbox{\hyperlink{mouse_events_8h}{mouse\+Events.\+h}}\end{DoxyCompactItemize}

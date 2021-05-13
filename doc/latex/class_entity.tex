@@ -1,0 +1,337 @@
+\hypertarget{class_entity}{}\doxysection{Entity Class Reference}
+\label{class_entity}\index{Entity@{Entity}}
+
+
+An entity class which represents an individual existance in the game world.  
+
+
+
+
+{\ttfamily \#include $<$entity.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entity_a980f368aa07ce358583982821533a54a}\label{class_entity_a980f368aa07ce358583982821533a54a}} 
+\mbox{\hyperlink{class_entity_a980f368aa07ce358583982821533a54a}{Entity}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}{$\sim$\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a52af4524cede44b5fe2e7e0c2407cd20}{add\+Component}} (const char $\ast$name, \mbox{\hyperlink{class_entity_component}{Entity\+Component}} $\ast$component)
+\begin{DoxyCompactList}\small\item\em Add component to entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a58d4cfefef72d846456f3130075b5d68}{delete\+Component}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Delete a component from the entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_entity_component}{Entity\+Component}} $\ast$ \mbox{\hyperlink{class_entity_a69c4a59e59af9cb6284a5accbf14848b}{get\+Component}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Get a component by name. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_entity_component}{Entity\+Component}} $\ast$ $>$ \mbox{\hyperlink{class_entity_a0836ea25fe26ff0e288c58decf841cc4}{get\+Components\+By\+Type}} (const \mbox{\hyperlink{entity_component_8h_a81f78fc173dedefe5a049c0aa3eed2c0}{Component\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Get a list of components by type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_entity_a1aab88536a0bcdd45f18a974808fbc68}{contains\+Component}} (const \mbox{\hyperlink{entity_component_8h_a81f78fc173dedefe5a049c0aa3eed2c0}{Component\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Check if the entity has a type of component attached. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transform}{Transform}} $\ast$ \mbox{\hyperlink{class_entity_a78978ae269cb17bc638bed8babaa6e07}{get\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Get the entities transform. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_entity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}{update}} ()
+\begin{DoxyCompactList}\small\item\em Update the entity and all it\textquotesingle{}s children \& components. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a99d1f9a3a9cc121da471966a7cd12c3c}{set\+Scene}} (\mbox{\hyperlink{class_scene}{Scene}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Set the scene this entity belongs to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_entity_a63d18d4150c64b3be74732cc0505ba5f}{get\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Get the scene this entity belongs to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a78ccaeac4d798bf0b78ee48b317b5e2f}{set\+Name}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Set the name of the entity. \end{DoxyCompactList}\item 
+std\+::string \& \mbox{\hyperlink{class_entity_accca72d91a5483a98ed7457eb978a9bf}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_ae20dfae9aa1e33365779a6262b012577}{process\+Key\+Input}} (G\+L\+F\+Wwindow $\ast$window, const float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Process any key inputs to change entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_a459fd51f69504dee8f5d46e51a305099}{process\+Mouse\+Button}} (G\+L\+F\+Wwindow $\ast$window, int button, int action, int mods)
+\begin{DoxyCompactList}\small\item\em Process any mouse clicks to change entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_aba5360359522bc4224213128be19cc85}{process\+Mouse\+Moved}} (G\+L\+F\+Wwindow $\ast$window, float xpos, float ypos, \mbox{\hyperlink{struct_event_data}{Event\+Data}} \&event\+Data)
+\begin{DoxyCompactList}\small\item\em Process any mouse movements to change entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_entity_adf8c79b8b872f49a3b743146e5ac32da}{process\+Scroll}} (G\+L\+F\+Wwindow $\ast$window, float xoffset, float yoffset)
+\begin{DoxyCompactList}\small\item\em Process mouse scrolling to change entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An entity class which represents an individual existance in the game world. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}\label{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}} 
+\index{Entity@{Entity}!````~Entity@{$\sim$Entity}}
+\index{````~Entity@{$\sim$Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{$\sim$Entity()}{~Entity()}}
+{\footnotesize\ttfamily Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_entity_adf6d3f7cb1b2ba029b6b048a395cc8ae}{$\sim$\+Entity()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_entity_a52af4524cede44b5fe2e7e0c2407cd20}\label{class_entity_a52af4524cede44b5fe2e7e0c2407cd20}} 
+\index{Entity@{Entity}!addComponent@{addComponent}}
+\index{addComponent@{addComponent}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{addComponent()}{addComponent()}}
+{\footnotesize\ttfamily void Entity\+::add\+Component (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{\mbox{\hyperlink{class_entity_component}{Entity\+Component}} $\ast$}]{component }\end{DoxyParamCaption})}
+
+
+
+Add component to entity. 
+
+\mbox{\hyperlink{class_entity_a52af4524cede44b5fe2e7e0c2407cd20}{add\+Component()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the component \\
+\hline
+{\em component} & an Entity\+Component$\ast$ -\/ A pointer to the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a1aab88536a0bcdd45f18a974808fbc68}\label{class_entity_a1aab88536a0bcdd45f18a974808fbc68}} 
+\index{Entity@{Entity}!containsComponent@{containsComponent}}
+\index{containsComponent@{containsComponent}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{containsComponent()}{containsComponent()}}
+{\footnotesize\ttfamily bool Entity\+::contains\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{entity_component_8h_a81f78fc173dedefe5a049c0aa3eed2c0}{Component\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Check if the entity has a type of component attached. 
+
+\mbox{\hyperlink{class_entity_a1aab88536a0bcdd45f18a974808fbc68}{contains\+Component()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const Component\+Type -\/ The type of component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the entity have a component of type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a58d4cfefef72d846456f3130075b5d68}\label{class_entity_a58d4cfefef72d846456f3130075b5d68}} 
+\index{Entity@{Entity}!deleteComponent@{deleteComponent}}
+\index{deleteComponent@{deleteComponent}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{deleteComponent()}{deleteComponent()}}
+{\footnotesize\ttfamily void Entity\+::delete\+Component (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Delete a component from the entity. 
+
+\mbox{\hyperlink{class_entity_a58d4cfefef72d846456f3130075b5d68}{delete\+Component()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a69c4a59e59af9cb6284a5accbf14848b}\label{class_entity_a69c4a59e59af9cb6284a5accbf14848b}} 
+\index{Entity@{Entity}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity_component}{Entity\+Component}} $\ast$ Entity\+::get\+Component (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Get a component by name. 
+
+\mbox{\hyperlink{class_entity_a69c4a59e59af9cb6284a5accbf14848b}{get\+Component()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Entity\+Component$\ast$ -\/ A component pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a0836ea25fe26ff0e288c58decf841cc4}\label{class_entity_a0836ea25fe26ff0e288c58decf841cc4}} 
+\index{Entity@{Entity}!getComponentsByType@{getComponentsByType}}
+\index{getComponentsByType@{getComponentsByType}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getComponentsByType()}{getComponentsByType()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_entity_component}{Entity\+Component}} $\ast$ $>$ Entity\+::get\+Components\+By\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{entity_component_8h_a81f78fc173dedefe5a049c0aa3eed2c0}{Component\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Get a list of components by type. 
+
+\mbox{\hyperlink{class_entity_a0836ea25fe26ff0e288c58decf841cc4}{get\+Components\+By\+Type()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const Component\+Type -\/ The type of component \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Entity\+Component$\ast$$>$ -\/ A list of all the components of type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_accca72d91a5483a98ed7457eb978a9bf}\label{class_entity_accca72d91a5483a98ed7457eb978a9bf}} 
+\index{Entity@{Entity}!getName@{getName}}
+\index{getName@{getName}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string\& Entity\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name of the entity. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::string\& -\/ The name of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a63d18d4150c64b3be74732cc0505ba5f}\label{class_entity_a63d18d4150c64b3be74732cc0505ba5f}} 
+\index{Entity@{Entity}!getScene@{getScene}}
+\index{getScene@{getScene}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getScene()}{getScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_scene}{Scene}}$\ast$ Entity\+::get\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the scene this entity belongs to. 
+
+\begin{DoxyReturn}{Returns}
+a Scene$\ast$ -\/ The scene this entity belongs to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_a78978ae269cb17bc638bed8babaa6e07}\label{class_entity_a78978ae269cb17bc638bed8babaa6e07}} 
+\index{Entity@{Entity}!getTransform@{getTransform}}
+\index{getTransform@{getTransform}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getTransform()}{getTransform()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_transform}{Transform}} $\ast$ Entity\+::get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the entities transform. 
+
+\mbox{\hyperlink{class_entity_a78978ae269cb17bc638bed8babaa6e07}{get\+Transform()}}
+
+\begin{DoxyReturn}{Returns}
+a Transform$\ast$ -\/ A pointer to the transform 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_entity_ae20dfae9aa1e33365779a6262b012577}\label{class_entity_ae20dfae9aa1e33365779a6262b012577}} 
+\index{Entity@{Entity}!processKeyInput@{processKeyInput}}
+\index{processKeyInput@{processKeyInput}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{processKeyInput()}{processKeyInput()}}
+{\footnotesize\ttfamily void Entity\+::process\+Key\+Input (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{const float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Process any key inputs to change entity. 
+
+process\+Input()
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em delta\+Time} & a const float -\/ The timestep of the update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a459fd51f69504dee8f5d46e51a305099}\label{class_entity_a459fd51f69504dee8f5d46e51a305099}} 
+\index{Entity@{Entity}!processMouseButton@{processMouseButton}}
+\index{processMouseButton@{processMouseButton}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{processMouseButton()}{processMouseButton()}}
+{\footnotesize\ttfamily void Entity\+::process\+Mouse\+Button (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{button,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})}
+
+
+
+Process any mouse clicks to change entity. 
+
+\mbox{\hyperlink{class_entity_a459fd51f69504dee8f5d46e51a305099}{process\+Mouse\+Button()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em button} & an int -\/ The button involved \\
+\hline
+{\em action} & an int -\/ The action of the mouse button \\
+\hline
+{\em mods} & an int -\/ The modifier key flags \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_aba5360359522bc4224213128be19cc85}\label{class_entity_aba5360359522bc4224213128be19cc85}} 
+\index{Entity@{Entity}!processMouseMoved@{processMouseMoved}}
+\index{processMouseMoved@{processMouseMoved}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{processMouseMoved()}{processMouseMoved()}}
+{\footnotesize\ttfamily void Entity\+::process\+Mouse\+Moved (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{float}]{xpos,  }\item[{float}]{ypos,  }\item[{\mbox{\hyperlink{struct_event_data}{Event\+Data}} \&}]{event\+Data }\end{DoxyParamCaption})}
+
+
+
+Process any mouse movements to change entity. 
+
+process\+Mouse()
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em xpos} & a float -\/ Mouse x position \\
+\hline
+{\em ypos} & a float -\/ Mouse y position \\
+\hline
+{\em event\+Data} & a \mbox{\hyperlink{struct_event_data}{Event\+Data}}\& -\/ A reference to the event data gathered by the application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_adf8c79b8b872f49a3b743146e5ac32da}\label{class_entity_adf8c79b8b872f49a3b743146e5ac32da}} 
+\index{Entity@{Entity}!processScroll@{processScroll}}
+\index{processScroll@{processScroll}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{processScroll()}{processScroll()}}
+{\footnotesize\ttfamily void Entity\+::process\+Scroll (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{float}]{xoffset,  }\item[{float}]{yoffset }\end{DoxyParamCaption})}
+
+
+
+Process mouse scrolling to change entity. 
+
+\mbox{\hyperlink{class_entity_adf8c79b8b872f49a3b743146e5ac32da}{process\+Scroll()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em xoffset} & a float -\/ The offset scroll \\
+\hline
+{\em yoffset} & a float -\/ The offset scroll \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a78ccaeac4d798bf0b78ee48b317b5e2f}\label{class_entity_a78ccaeac4d798bf0b78ee48b317b5e2f}} 
+\index{Entity@{Entity}!setName@{setName}}
+\index{setName@{setName}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Entity\+::set\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the name of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a99d1f9a3a9cc121da471966a7cd12c3c}\label{class_entity_a99d1f9a3a9cc121da471966a7cd12c3c}} 
+\index{Entity@{Entity}!setScene@{setScene}}
+\index{setScene@{setScene}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setScene()}{setScene()}}
+{\footnotesize\ttfamily void Entity\+::set\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_scene}{Scene}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the scene this entity belongs to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & a Scene$\ast$ -\/ The scene this entity belongs to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_entity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}\label{class_entity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}} 
+\index{Entity@{Entity}!update@{update}}
+\index{update@{update}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Entity\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the entity and all it\textquotesingle{}s children \& components. 
+
+\mbox{\hyperlink{class_entity_a00b6eeaf99b35c8f8b10b5fbfc1baf4f}{update()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/scene/entity/\mbox{\hyperlink{entity_8h}{entity.\+h}}\item 
+C\+:/doc/src/src/scene/entity/\mbox{\hyperlink{entity_8cpp}{entity.\+cpp}}\end{DoxyCompactItemize}

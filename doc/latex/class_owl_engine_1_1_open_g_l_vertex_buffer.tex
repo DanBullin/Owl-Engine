@@ -1,0 +1,173 @@
+\hypertarget{class_owl_engine_1_1_open_g_l_vertex_buffer}{}\doxysection{Owl\+Engine\+::Open\+G\+L\+Vertex\+Buffer Class Reference}
+\label{class_owl_engine_1_1_open_g_l_vertex_buffer}\index{OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}}
+
+
+An Open\+GL Vertex buffer object.  
+
+
+
+
+{\ttfamily \#include $<$open\+G\+L\+Vertex\+Buffer.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Open\+G\+L\+Vertex\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_owl_engine_1_1_open_g_l_vertex_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_a3f4eb03cca1e7fd20b1de64fe280e5d9}{Open\+G\+L\+Vertex\+Buffer}} (const std\+::string \&vertex\+Buffer\+Name, const void $\ast$vertices, const uint32\+\_\+t size, const \mbox{\hyperlink{buffer_layout_8h_a8dbb8b4a5b1f0d23d48ec62ee600c189}{Vertex\+Buffer\+Layout}} layout, const \mbox{\hyperlink{vertex_buffer_8h_a31a0948e488cac94eeb2c5d91fd43d17}{Vertex\+Buffer\+Usage}} usage=Vertex\+Buffer\+Usage\+::\+Static\+Draw)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_ac03cd3b2b81f6c4e4ecf29f73cbebd7e}{Open\+G\+L\+Vertex\+Buffer}} (const std\+::string \&vertex\+Buffer\+Name, const uint32\+\_\+t size, const \mbox{\hyperlink{vertex_buffer_8h_a31a0948e488cac94eeb2c5d91fd43d17}{Vertex\+Buffer\+Usage}} usage=Vertex\+Buffer\+Usage\+::\+Dynamic\+Draw)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_ad5e089f85cf9391b50592e37c3c96687}{$\sim$\+Open\+G\+L\+Vertex\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_a941a0956d6a83f92bec397070dacf33b}{edit}} (const void $\ast$vertices, const uint32\+\_\+t size, const uint32\+\_\+t offset) override
+\begin{DoxyCompactList}\small\item\em Edit the buffer contents. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_ab44633b3f56ce155e9a943e6f8c9625a}{bind}} () override
+\begin{DoxyCompactList}\small\item\em Bind the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_a3fbb4da7919fcb09b004ff6dc31f9ef0}{unbind}} () override
+\begin{DoxyCompactList}\small\item\em Unbind the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_aec3952412dbd4a06cf0c29474e8d772d}{print\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An Open\+GL Vertex buffer object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_buffer_a3f4eb03cca1e7fd20b1de64fe280e5d9}\label{class_owl_engine_1_1_open_g_l_vertex_buffer_a3f4eb03cca1e7fd20b1de64fe280e5d9}} 
+\index{OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}!OpenGLVertexBuffer@{OpenGLVertexBuffer}}
+\index{OpenGLVertexBuffer@{OpenGLVertexBuffer}!OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{OpenGLVertexBuffer()}{OpenGLVertexBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer\+::\+Open\+G\+L\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{vertex\+Buffer\+Name,  }\item[{const void $\ast$}]{vertices,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const \mbox{\hyperlink{buffer_layout_8h_a8dbb8b4a5b1f0d23d48ec62ee600c189}{Vertex\+Buffer\+Layout}}}]{layout,  }\item[{const \mbox{\hyperlink{vertex_buffer_8h_a31a0948e488cac94eeb2c5d91fd43d17}{Vertex\+Buffer\+Usage}}}]{usage = {\ttfamily VertexBufferUsage\+:\+:StaticDraw} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_a3f4eb03cca1e7fd20b1de64fe280e5d9}{Open\+G\+L\+Vertex\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Buffer\+Name} & a const std\+::string\& -\/ The name of the vertex buffer \\
+\hline
+{\em vertices} & a const void$\ast$ -\/ The vertices info \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the vertices data \\
+\hline
+{\em layout} & a const Vertex\+Buffer\+Layout -\/ The layout of the vertex buffer \\
+\hline
+{\em usage} & a const Vertex\+Buffer\+Usage -\/ The usage of the vertices data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_buffer_ac03cd3b2b81f6c4e4ecf29f73cbebd7e}\label{class_owl_engine_1_1_open_g_l_vertex_buffer_ac03cd3b2b81f6c4e4ecf29f73cbebd7e}} 
+\index{OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}!OpenGLVertexBuffer@{OpenGLVertexBuffer}}
+\index{OpenGLVertexBuffer@{OpenGLVertexBuffer}!OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{OpenGLVertexBuffer()}{OpenGLVertexBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer\+::\+Open\+G\+L\+Vertex\+Buffer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{vertex\+Buffer\+Name,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const \mbox{\hyperlink{vertex_buffer_8h_a31a0948e488cac94eeb2c5d91fd43d17}{Vertex\+Buffer\+Usage}}}]{usage = {\ttfamily VertexBufferUsage\+:\+:DynamicDraw} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_a3f4eb03cca1e7fd20b1de64fe280e5d9}{Open\+G\+L\+Vertex\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Buffer\+Name} & a const std\+::string\& -\/ The name of the vertex buffer \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the buffer data \\
+\hline
+{\em usage} & a const Vertex\+Buffer\+Usage -\/ The usage of the vertices data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_buffer_ad5e089f85cf9391b50592e37c3c96687}\label{class_owl_engine_1_1_open_g_l_vertex_buffer_ad5e089f85cf9391b50592e37c3c96687}} 
+\index{OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}!````~OpenGLVertexBuffer@{$\sim$OpenGLVertexBuffer}}
+\index{````~OpenGLVertexBuffer@{$\sim$OpenGLVertexBuffer}!OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$OpenGLVertexBuffer()}{~OpenGLVertexBuffer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer\+::$\sim$\+Open\+G\+L\+Vertex\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_ad5e089f85cf9391b50592e37c3c96687}{$\sim$\+Open\+G\+L\+Vertex\+Buffer()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_buffer_ab44633b3f56ce155e9a943e6f8c9625a}\label{class_owl_engine_1_1_open_g_l_vertex_buffer_ab44633b3f56ce155e9a943e6f8c9625a}} 
+\index{OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}!bind@{bind}}
+\index{bind@{bind}!OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Bind the buffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_ab44633b3f56ce155e9a943e6f8c9625a}{bind()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_vertex_buffer_ada2267731c12a926e2862f1cb0a5a44c}{Owl\+Engine\+::\+Vertex\+Buffer}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_buffer_a941a0956d6a83f92bec397070dacf33b}\label{class_owl_engine_1_1_open_g_l_vertex_buffer_a941a0956d6a83f92bec397070dacf33b}} 
+\index{OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}!edit@{edit}}
+\index{edit@{edit}!OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer\+::edit (\begin{DoxyParamCaption}\item[{const void $\ast$}]{vertices,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const uint32\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Edit the buffer contents. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_a941a0956d6a83f92bec397070dacf33b}{edit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a const void$\ast$ -\/ The vertices info \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the vertices data \\
+\hline
+{\em offset} & a const int32\+\_\+t -\/ The offset of where to place the new data \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_vertex_buffer_afe89e60910bf063fb01f5b02a4515f4c}{Owl\+Engine\+::\+Vertex\+Buffer}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_buffer_aec3952412dbd4a06cf0c29474e8d772d}\label{class_owl_engine_1_1_open_g_l_vertex_buffer_aec3952412dbd4a06cf0c29474e8d772d}} 
+\index{OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}!printDetails@{printDetails}}
+\index{printDetails@{printDetails}!OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{printDetails()}{printDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer\+::print\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print the resource details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_aec3952412dbd4a06cf0c29474e8d772d}{print\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_vertex_buffer_ad2cca51acbc98ea7a4774f414b82c9f1}{Owl\+Engine\+::\+Vertex\+Buffer}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_vertex_buffer_a3fbb4da7919fcb09b004ff6dc31f9ef0}\label{class_owl_engine_1_1_open_g_l_vertex_buffer_a3fbb4da7919fcb09b004ff6dc31f9ef0}} 
+\index{OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}!unbind@{unbind}}
+\index{unbind@{unbind}!OwlEngine::OpenGLVertexBuffer@{OwlEngine::OpenGLVertexBuffer}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Vertex\+Buffer\+::unbind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Unbind the buffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_vertex_buffer_a3fbb4da7919fcb09b004ff6dc31f9ef0}{unbind()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_vertex_buffer_ae169942298df78eca20c3a71d01678bf}{Owl\+Engine\+::\+Vertex\+Buffer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/platform/\+Open\+G\+L/geometry/\mbox{\hyperlink{open_g_l_vertex_buffer_8h}{open\+G\+L\+Vertex\+Buffer.\+h}}\item 
+C\+:/doc/src/engine/src/platform/\+Open\+G\+L/geometry/\mbox{\hyperlink{open_g_l_vertex_buffer_8cpp}{open\+G\+L\+Vertex\+Buffer.\+cpp}}\end{DoxyCompactItemize}

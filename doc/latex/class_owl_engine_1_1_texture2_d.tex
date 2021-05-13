@@ -1,0 +1,227 @@
+\hypertarget{class_owl_engine_1_1_texture2_d}{}\doxysection{Owl\+Engine\+::Texture2D Class Reference}
+\label{class_owl_engine_1_1_texture2_d}\index{OwlEngine::Texture2D@{OwlEngine::Texture2D}}
+
+
+An A\+PI agnostic 2D texture.  
+
+
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Texture2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_owl_engine_1_1_texture2_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_texture2_d_ae1652eee7b0bdc412dc1201077a2bd1a}{Texture2D}} (const std\+::string \&texture\+Name, const \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} \&properties=\mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}}())
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a6f7e4d908c092bc6e1398c65b89efe80}{$\sim$\+Texture2D}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} \& \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a1d28ed8e532092eefb648a9f7b79b90f}{get\+Properties}} ()
+\begin{DoxyCompactList}\small\item\em Get the texture properties. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a26f74ca06c64a7ae1ee3f5106291afbf}{get\+Channels}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture\textquotesingle{}s number of channels. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_ac3f5a6b3dcb19082dcabb1c15753cb3f}{edit}} (const uint32\+\_\+t offsetX, const uint32\+\_\+t offsetY, const uint32\+\_\+t width, const uint32\+\_\+t height, const unsigned char $\ast$data)=0
+\begin{DoxyCompactList}\small\item\em Edit the texture data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a4baea917061646f81a9ff86d5b7ac186}{bind}} (const uint32\+\_\+t slot=0)=0
+\begin{DoxyCompactList}\small\item\em Bind the texture to a texture unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_a485f6c7863ccb44b5b7af0429dcc7418}\label{class_owl_engine_1_1_texture2_d_a485f6c7863ccb44b5b7af0429dcc7418}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a485f6c7863ccb44b5b7af0429dcc7418}{print\+Details}} () override=0
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_aec2d6cf683d263f43ff69b310b7177b6}{create}} (const std\+::string \&texture\+Name, const \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} \&properties, const uint32\+\_\+t channels, unsigned char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Create a texture providing the pixel data. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_aaf02344a7c4242208e4bc165c2b85706}{create}} (const std\+::string \&texture\+Name, const char $\ast$file\+Path, \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} properties=\mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}}())
+\begin{DoxyCompactList}\small\item\em Create a texture from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_af5d641e0669636fc1d39b629d1192980}\label{class_owl_engine_1_1_texture2_d_af5d641e0669636fc1d39b629d1192980}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_af5d641e0669636fc1d39b629d1192980}{m\+\_\+channels}}
+\begin{DoxyCompactList}\small\item\em The number of channels in the pixel data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_a0aad7efb7d04fefe72453e4dac51d593}\label{class_owl_engine_1_1_texture2_d_a0aad7efb7d04fefe72453e4dac51d593}} 
+\mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a0aad7efb7d04fefe72453e4dac51d593}{m\+\_\+texture\+Properties}}
+\begin{DoxyCompactList}\small\item\em The texture properties. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_a5e2aef3fa1547d6d5e50386cf4f9152c}\label{class_owl_engine_1_1_texture2_d_a5e2aef3fa1547d6d5e50386cf4f9152c}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a5e2aef3fa1547d6d5e50386cf4f9152c}{m\+\_\+internal\+Format}}
+\begin{DoxyCompactList}\small\item\em The internal format of the texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_a3bf2fa7e3d36b48c618055eb3ca0b60a}\label{class_owl_engine_1_1_texture2_d_a3bf2fa7e3d36b48c618055eb3ca0b60a}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a3bf2fa7e3d36b48c618055eb3ca0b60a}{m\+\_\+pixel\+Data\+Type}}
+\begin{DoxyCompactList}\small\item\em The data type of the pixel data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic 2D texture. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_ae1652eee7b0bdc412dc1201077a2bd1a}\label{class_owl_engine_1_1_texture2_d_ae1652eee7b0bdc412dc1201077a2bd1a}} 
+\index{OwlEngine::Texture2D@{OwlEngine::Texture2D}!Texture2D@{Texture2D}}
+\index{Texture2D@{Texture2D}!OwlEngine::Texture2D@{OwlEngine::Texture2D}}
+\doxysubsubsection{\texorpdfstring{Texture2D()}{Texture2D()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Texture2\+D\+::\+Texture2D (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+Name,  }\item[{const \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} \&}]{properties = {\ttfamily \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}}()} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture2_d_ae1652eee7b0bdc412dc1201077a2bd1a}{Texture2\+D()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & a const std\+::string\& -\/ The name of the texture \\
+\hline
+{\em properties} & a const \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}}\& -\/ A reference to the properties of the 2D texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_a6f7e4d908c092bc6e1398c65b89efe80}\label{class_owl_engine_1_1_texture2_d_a6f7e4d908c092bc6e1398c65b89efe80}} 
+\index{OwlEngine::Texture2D@{OwlEngine::Texture2D}!````~Texture2D@{$\sim$Texture2D}}
+\index{````~Texture2D@{$\sim$Texture2D}!OwlEngine::Texture2D@{OwlEngine::Texture2D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Texture2D()}{~Texture2D()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Texture2\+D\+::$\sim$\+Texture2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a6f7e4d908c092bc6e1398c65b89efe80}{$\sim$\+Texture2\+D()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_a4baea917061646f81a9ff86d5b7ac186}\label{class_owl_engine_1_1_texture2_d_a4baea917061646f81a9ff86d5b7ac186}} 
+\index{OwlEngine::Texture2D@{OwlEngine::Texture2D}!bind@{bind}}
+\index{bind@{bind}!OwlEngine::Texture2D@{OwlEngine::Texture2D}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Texture2\+D\+::bind (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{slot = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Bind the texture to a texture unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & a const uint32\+\_\+t -\/ Bind the texture to texture unit \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_texture_a4e9ca12715b30adbb8a2a035ee036ff0}{Owl\+Engine\+::\+Texture}}.
+
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_afbdd356d838cd674ee545e198a4ec22c}{Owl\+Engine\+::\+Open\+G\+L\+Texture2D}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_aaf02344a7c4242208e4bc165c2b85706}\label{class_owl_engine_1_1_texture2_d_aaf02344a7c4242208e4bc165c2b85706}} 
+\index{OwlEngine::Texture2D@{OwlEngine::Texture2D}!create@{create}}
+\index{create@{create}!OwlEngine::Texture2D@{OwlEngine::Texture2D}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$ Owl\+Engine\+::\+Texture2\+D\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+Name,  }\item[{const char $\ast$}]{file\+Path,  }\item[{\mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}}}]{properties = {\ttfamily \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a texture from file. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture2_d_aec2d6cf683d263f43ff69b310b7177b6}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & a const std\+::string\& -\/ The name of the texture \\
+\hline
+{\em file\+Path} & a const char$\ast$ -\/ The filepath of the texture \\
+\hline
+{\em properties} & a \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} -\/ The properties of the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Texture2\+D$\ast$ -\/ The 2D texture of type defined by the graphics A\+PI chosen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_aec2d6cf683d263f43ff69b310b7177b6}\label{class_owl_engine_1_1_texture2_d_aec2d6cf683d263f43ff69b310b7177b6}} 
+\index{OwlEngine::Texture2D@{OwlEngine::Texture2D}!create@{create}}
+\index{create@{create}!OwlEngine::Texture2D@{OwlEngine::Texture2D}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$ Owl\+Engine\+::\+Texture2\+D\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+Name,  }\item[{const \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} \&}]{properties,  }\item[{const uint32\+\_\+t}]{channels,  }\item[{unsigned char $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a texture providing the pixel data. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_texture2_d_aec2d6cf683d263f43ff69b310b7177b6}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & a const std\+::string\& -\/ The name of the texture \\
+\hline
+{\em properties} & a const \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}}\& -\/ A reference to the properties of the 2D texture \\
+\hline
+{\em channels} & a const uint32\+\_\+t -\/ The number of channels in the texture data \\
+\hline
+{\em data} & an unsigned char$\ast$ -\/ The data of the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Texture2\+D$\ast$ -\/ The 2D texture of type defined by the graphics A\+PI chosen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_ac3f5a6b3dcb19082dcabb1c15753cb3f}\label{class_owl_engine_1_1_texture2_d_ac3f5a6b3dcb19082dcabb1c15753cb3f}} 
+\index{OwlEngine::Texture2D@{OwlEngine::Texture2D}!edit@{edit}}
+\index{edit@{edit}!OwlEngine::Texture2D@{OwlEngine::Texture2D}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Texture2\+D\+::edit (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{offsetX,  }\item[{const uint32\+\_\+t}]{offsetY,  }\item[{const uint32\+\_\+t}]{width,  }\item[{const uint32\+\_\+t}]{height,  }\item[{const unsigned char $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Edit the texture data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em offsetX} & a const uint32\+\_\+t -\/ The x offset in memory to edit \\
+\hline
+{\em offsetY} & a const uint32\+\_\+t -\/ The y offset in memory to edit \\
+\hline
+{\em width} & a const uint32\+\_\+t -\/ The width of the texture \\
+\hline
+{\em height} & a const uint32\+\_\+t -\/ The height of the texture \\
+\hline
+{\em data} & a const unsigned char$\ast$ -\/ A pointer to the data to store \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_ad798b2106178fbfe1ef441dd1f069e51}{Owl\+Engine\+::\+Open\+G\+L\+Texture2D}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_a26f74ca06c64a7ae1ee3f5106291afbf}\label{class_owl_engine_1_1_texture2_d_a26f74ca06c64a7ae1ee3f5106291afbf}} 
+\index{OwlEngine::Texture2D@{OwlEngine::Texture2D}!getChannels@{getChannels}}
+\index{getChannels@{getChannels}!OwlEngine::Texture2D@{OwlEngine::Texture2D}}
+\doxysubsubsection{\texorpdfstring{getChannels()}{getChannels()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Texture2\+D\+::get\+Channels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture\textquotesingle{}s number of channels. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The number of channels in the texture data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_texture2_d_a1d28ed8e532092eefb648a9f7b79b90f}\label{class_owl_engine_1_1_texture2_d_a1d28ed8e532092eefb648a9f7b79b90f}} 
+\index{OwlEngine::Texture2D@{OwlEngine::Texture2D}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!OwlEngine::Texture2D@{OwlEngine::Texture2D}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}}\& Owl\+Engine\+::\+Texture2\+D\+::get\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture properties. 
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}}\& -\/ The properties of the texture 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/textures/\mbox{\hyperlink{texture_8h}{texture.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/textures/\mbox{\hyperlink{texture_8cpp}{texture.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{class_level_complete_script}{}\doxysection{Level\+Complete\+Script Class Reference}
+\label{class_level_complete_script}\index{LevelCompleteScript@{LevelCompleteScript}}
+
+
+A script to show the level complete UI.  
+
+
+
+
+{\ttfamily \#include $<$level\+Complete\+Script.\+h$>$}
+
+Inheritance diagram for Level\+Complete\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_level_complete_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_level_complete_script_a8cfa5feeba71ffbf1586727bc2b9f4a1}\label{class_level_complete_script_a8cfa5feeba71ffbf1586727bc2b9f4a1}} 
+\mbox{\hyperlink{class_level_complete_script_a8cfa5feeba71ffbf1586727bc2b9f4a1}{Level\+Complete\+Script}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_complete_script_a7b94f9638ef35f4387f28b84fb5dabad}\label{class_level_complete_script_a7b94f9638ef35f4387f28b84fb5dabad}} 
+\mbox{\hyperlink{class_level_complete_script_a7b94f9638ef35f4387f28b84fb5dabad}{Level\+Complete\+Script}} (nlohmann\+::json script\+Data)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_complete_script_ab3433f8cf7e298eadedf0b66c1deca8b}\label{class_level_complete_script_ab3433f8cf7e298eadedf0b66c1deca8b}} 
+\mbox{\hyperlink{class_level_complete_script_ab3433f8cf7e298eadedf0b66c1deca8b}{$\sim$\+Level\+Complete\+Script}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_level_complete_script_a14250a418bb6af78f8da173119fcbc07}\label{class_level_complete_script_a14250a418bb6af78f8da173119fcbc07}} 
+void {\bfseries play} ()
+\item 
+\mbox{\Hypertarget{class_level_complete_script_ae97036ec6a7b39c36b6c26671538d559}\label{class_level_complete_script_ae97036ec6a7b39c36b6c26671538d559}} 
+void \mbox{\hyperlink{class_level_complete_script_ae97036ec6a7b39c36b6c26671538d559}{on\+Render}} (const \mbox{\hyperlink{common_8h_aa7c9aadb398aa7f5617952f93be25047}{Renderers}} renderer, const std\+::string \&render\+State) override
+\begin{DoxyCompactList}\small\item\em Call upon render. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_complete_script_a40a35335534e2db842804a7aea86ed13}{on\+Pre\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call before game update. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_level_complete_script_aea4090f7e36679b2912b4bc09f79909b}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em The json data for the script. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_level_complete_script_a515a7e19d170e6ef8b8e13bddf512edd}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em The Im\+G\+UI display controls for this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A script to show the level complete UI. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_level_complete_script_a515a7e19d170e6ef8b8e13bddf512edd}\label{class_level_complete_script_a515a7e19d170e6ef8b8e13bddf512edd}} 
+\index{LevelCompleteScript@{LevelCompleteScript}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!LevelCompleteScript@{LevelCompleteScript}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Level\+Complete\+Script\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+The Im\+G\+UI display controls for this component. 
+
+\mbox{\hyperlink{class_level_complete_script_a515a7e19d170e6ef8b8e13bddf512edd}{display\+Im\+Gui()}} 
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a04032a08abd5b84edd8e5dbffbe61971}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_level_complete_script_aea4090f7e36679b2912b4bc09f79909b}\label{class_level_complete_script_aea4090f7e36679b2912b4bc09f79909b}} 
+\index{LevelCompleteScript@{LevelCompleteScript}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!LevelCompleteScript@{LevelCompleteScript}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Level\+Complete\+Script\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+The json data for the script. 
+
+\mbox{\hyperlink{class_level_complete_script_aea4090f7e36679b2912b4bc09f79909b}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_afef9fb697bf3388f97afdf2b580ebe74}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_level_complete_script_a40a35335534e2db842804a7aea86ed13}\label{class_level_complete_script_a40a35335534e2db842804a7aea86ed13}} 
+\index{LevelCompleteScript@{LevelCompleteScript}!onPreUpdate@{onPreUpdate}}
+\index{onPreUpdate@{onPreUpdate}!LevelCompleteScript@{LevelCompleteScript}}
+\doxysubsubsection{\texorpdfstring{onPreUpdate()}{onPreUpdate()}}
+{\footnotesize\ttfamily void Level\+Complete\+Script\+::on\+Pre\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call before game update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total runtime of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a2701d4b32ce0be26b5da26929ccb1e07}{Owl\+Engine\+::\+Native\+Script}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/sandbox/include/scripts/menus/\mbox{\hyperlink{level_complete_script_8h}{level\+Complete\+Script.\+h}}\item 
+C\+:/doc/src/sandbox/src/scripts/menus/\mbox{\hyperlink{level_complete_script_8cpp}{level\+Complete\+Script.\+cpp}}\end{DoxyCompactItemize}

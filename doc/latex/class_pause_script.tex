@@ -1,0 +1,103 @@
+\hypertarget{class_pause_script}{}\doxysection{Pause\+Script Class Reference}
+\label{class_pause_script}\index{PauseScript@{PauseScript}}
+
+
+A script which shows the pause menu.  
+
+
+
+
+{\ttfamily \#include $<$game\+Over\+Script.\+h$>$}
+
+Inheritance diagram for Pause\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_pause_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pause_script_a456316946ad7277ebc570b79417c5108}{Pause\+Script}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_pause_script_a85a990cd22607ecd1886e610d956db5e}{$\sim$\+Pause\+Script}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pause_script_ac440cc7bdae0ad02a0352f2a2d88ce76}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em On attach. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_pause_script_a799c9c3d14c1fd108684fcbd7ddbc379}{on\+Key\+Release}} (\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&e, const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call upon key release. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A script which shows the pause menu. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_pause_script_a456316946ad7277ebc570b79417c5108}\label{class_pause_script_a456316946ad7277ebc570b79417c5108}} 
+\index{PauseScript@{PauseScript}!PauseScript@{PauseScript}}
+\index{PauseScript@{PauseScript}!PauseScript@{PauseScript}}
+\doxysubsubsection{\texorpdfstring{PauseScript()}{PauseScript()}}
+{\footnotesize\ttfamily Pause\+Script\+::\+Pause\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_pause_script_a456316946ad7277ebc570b79417c5108}{Pause\+Script()}} \mbox{\Hypertarget{class_pause_script_a85a990cd22607ecd1886e610d956db5e}\label{class_pause_script_a85a990cd22607ecd1886e610d956db5e}} 
+\index{PauseScript@{PauseScript}!````~PauseScript@{$\sim$PauseScript}}
+\index{````~PauseScript@{$\sim$PauseScript}!PauseScript@{PauseScript}}
+\doxysubsubsection{\texorpdfstring{$\sim$PauseScript()}{~PauseScript()}}
+{\footnotesize\ttfamily Pause\+Script\+::$\sim$\+Pause\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_pause_script_a85a990cd22607ecd1886e610d956db5e}{$\sim$\+Pause\+Script()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_pause_script_ac440cc7bdae0ad02a0352f2a2d88ce76}\label{class_pause_script_ac440cc7bdae0ad02a0352f2a2d88ce76}} 
+\index{PauseScript@{PauseScript}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!PauseScript@{PauseScript}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Pause\+Script\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+On attach. 
+
+\mbox{\hyperlink{class_pause_script_ac440cc7bdae0ad02a0352f2a2d88ce76}{on\+Attach()}} 
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a84d0903c0ac9ffc6d49d8df17eab6f5b}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_pause_script_a799c9c3d14c1fd108684fcbd7ddbc379}\label{class_pause_script_a799c9c3d14c1fd108684fcbd7ddbc379}} 
+\index{PauseScript@{PauseScript}!onKeyRelease@{onKeyRelease}}
+\index{onKeyRelease@{onKeyRelease}!PauseScript@{PauseScript}}
+\doxysubsubsection{\texorpdfstring{onKeyRelease()}{onKeyRelease()}}
+{\footnotesize\ttfamily void Pause\+Script\+::on\+Key\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&}]{e,  }\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call upon key release. 
+
+\mbox{\hyperlink{class_pause_script_a799c9c3d14c1fd108684fcbd7ddbc379}{on\+Key\+Release()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a Key\+Released\+Event\& -\/ A key release event \\
+\hline
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_ace18af6d23ccff4d34b8624a5b7657b1}{Owl\+Engine\+::\+Native\+Script}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/sandbox/include/scripts/menus/\mbox{\hyperlink{pause_script_8h}{pause\+Script.\+h}}\item 
+C\+:/doc/src/sandbox/src/scripts/menus/\mbox{\hyperlink{pause_script_8cpp}{pause\+Script.\+cpp}}\end{DoxyCompactItemize}

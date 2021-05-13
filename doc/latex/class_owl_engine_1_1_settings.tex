@@ -1,0 +1,137 @@
+\hypertarget{class_owl_engine_1_1_settings}{}\doxysection{Owl\+Engine\+::Settings Class Reference}
+\label{class_owl_engine_1_1_settings}\index{OwlEngine::Settings@{OwlEngine::Settings}}
+
+
+A class which handles the player\textquotesingle{}s personal settings for aspects which are configurable.  
+
+
+
+
+{\ttfamily \#include $<$settings.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_settings_a91a8d5363fc4bc95ac0358e4e5668d04}{Settings}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_settings_ad8e69e61813c8d60efe5437c9ef5c6eb}{$\sim$\+Settings}} ()
+\begin{DoxyCompactList}\small\item\em $\sim$\+Destructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_settings_a68b4bdf6b18b82075f0f89154418a265}{load\+From\+File}} ()
+\begin{DoxyCompactList}\small\item\em Load the settings stored in file. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_settings_a6ff1d017cbdc74ffb283420722a7ee0a}{save\+To\+File}} ()
+\begin{DoxyCompactList}\small\item\em Save the current player config settings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_settings_a8084ae2b699ed87a8aca1a3d290593f9}\label{class_owl_engine_1_1_settings_a8084ae2b699ed87a8aca1a3d290593f9}} 
+static void \mbox{\hyperlink{class_owl_engine_1_1_settings_a8084ae2b699ed87a8aca1a3d290593f9}{set\+Bool}} (const Player\+Config\+::\+Config\+Data function, bool value)
+\begin{DoxyCompactList}\small\item\em Set a bool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_settings_aa26d1326c499b75f4135a810d26ff6ba}\label{class_owl_engine_1_1_settings_aa26d1326c499b75f4135a810d26ff6ba}} 
+static void \mbox{\hyperlink{class_owl_engine_1_1_settings_aa26d1326c499b75f4135a810d26ff6ba}{set\+Float}} (const Player\+Config\+::\+Config\+Data function, float value)
+\begin{DoxyCompactList}\small\item\em Set a float. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_settings_a2f88478f650cdd4ce9b37f9c6a650755}\label{class_owl_engine_1_1_settings_a2f88478f650cdd4ce9b37f9c6a650755}} 
+static bool \mbox{\hyperlink{class_owl_engine_1_1_settings_a2f88478f650cdd4ce9b37f9c6a650755}{get\+Bool}} (const Player\+Config\+::\+Config\+Data function)
+\begin{DoxyCompactList}\small\item\em Get a bool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_settings_a8a61b9996689648e92e82d9506020e27}\label{class_owl_engine_1_1_settings_a8a61b9996689648e92e82d9506020e27}} 
+static float \mbox{\hyperlink{class_owl_engine_1_1_settings_a8a61b9996689648e92e82d9506020e27}{get\+Float}} (const Player\+Config\+::\+Config\+Data function)
+\begin{DoxyCompactList}\small\item\em Get a float. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_settings_a108e52048d95915c6245531d0a2990a9}{bind\+Key}} (const Player\+Config\+::\+Config\+Data function, const uint32\+\_\+t key1, const uint32\+\_\+t key2)
+\begin{DoxyCompactList}\small\item\em Bind a key to a function. \end{DoxyCompactList}\item 
+static std\+::pair$<$ uint32\+\_\+t, uint32\+\_\+t $>$ \mbox{\hyperlink{class_owl_engine_1_1_settings_a42191db65a225fd3637a1775b5a43e94}{get\+Keys}} (const Player\+Config\+::\+Config\+Data function)
+\begin{DoxyCompactList}\small\item\em Get the keys bound to the function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class which handles the player\textquotesingle{}s personal settings for aspects which are configurable. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_settings_a91a8d5363fc4bc95ac0358e4e5668d04}\label{class_owl_engine_1_1_settings_a91a8d5363fc4bc95ac0358e4e5668d04}} 
+\index{OwlEngine::Settings@{OwlEngine::Settings}!Settings@{Settings}}
+\index{Settings@{Settings}!OwlEngine::Settings@{OwlEngine::Settings}}
+\doxysubsubsection{\texorpdfstring{Settings()}{Settings()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Settings\+::\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_settings_a91a8d5363fc4bc95ac0358e4e5668d04}{Settings()}} \mbox{\Hypertarget{class_owl_engine_1_1_settings_ad8e69e61813c8d60efe5437c9ef5c6eb}\label{class_owl_engine_1_1_settings_ad8e69e61813c8d60efe5437c9ef5c6eb}} 
+\index{OwlEngine::Settings@{OwlEngine::Settings}!````~Settings@{$\sim$Settings}}
+\index{````~Settings@{$\sim$Settings}!OwlEngine::Settings@{OwlEngine::Settings}}
+\doxysubsubsection{\texorpdfstring{$\sim$Settings()}{~Settings()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Settings\+::$\sim$\+Settings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$\sim$\+Destructor 
+
+\mbox{\hyperlink{class_owl_engine_1_1_settings_ad8e69e61813c8d60efe5437c9ef5c6eb}{$\sim$\+Settings()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_settings_a108e52048d95915c6245531d0a2990a9}\label{class_owl_engine_1_1_settings_a108e52048d95915c6245531d0a2990a9}} 
+\index{OwlEngine::Settings@{OwlEngine::Settings}!bindKey@{bindKey}}
+\index{bindKey@{bindKey}!OwlEngine::Settings@{OwlEngine::Settings}}
+\doxysubsubsection{\texorpdfstring{bindKey()}{bindKey()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Settings\+::bind\+Key (\begin{DoxyParamCaption}\item[{const Player\+Config\+::\+Config\+Data}]{function,  }\item[{const uint32\+\_\+t}]{key1,  }\item[{const uint32\+\_\+t}]{key2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Bind a key to a function. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_settings_a108e52048d95915c6245531d0a2990a9}{bind\+Key()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & a const Player\+Config\+::\+Config\+Data -\/ The function to bind to a key (enum) \\
+\hline
+{\em key1} & a const uint32\+\_\+t -\/ The key to bind \\
+\hline
+{\em key2} & a const uint32\+\_\+t -\/ The key to bind \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_settings_a42191db65a225fd3637a1775b5a43e94}\label{class_owl_engine_1_1_settings_a42191db65a225fd3637a1775b5a43e94}} 
+\index{OwlEngine::Settings@{OwlEngine::Settings}!getKeys@{getKeys}}
+\index{getKeys@{getKeys}!OwlEngine::Settings@{OwlEngine::Settings}}
+\doxysubsubsection{\texorpdfstring{getKeys()}{getKeys()}}
+{\footnotesize\ttfamily std\+::pair$<$ uint32\+\_\+t, uint32\+\_\+t $>$ Owl\+Engine\+::\+Settings\+::get\+Keys (\begin{DoxyParamCaption}\item[{const Player\+Config\+::\+Config\+Data}]{function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the keys bound to the function. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_settings_a42191db65a225fd3637a1775b5a43e94}{get\+Keys()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & a const Player\+Config\+::\+Config\+Data -\/ The function to check if the keys for it as being pressed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::pair$<$uint32\+\_\+t, uint32\+\_\+t$>$ -\/ The pair of keys bound to this function 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_settings_a68b4bdf6b18b82075f0f89154418a265}\label{class_owl_engine_1_1_settings_a68b4bdf6b18b82075f0f89154418a265}} 
+\index{OwlEngine::Settings@{OwlEngine::Settings}!loadFromFile@{loadFromFile}}
+\index{loadFromFile@{loadFromFile}!OwlEngine::Settings@{OwlEngine::Settings}}
+\doxysubsubsection{\texorpdfstring{loadFromFile()}{loadFromFile()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Settings\+::load\+From\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the settings stored in file. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_settings_a68b4bdf6b18b82075f0f89154418a265}{load\+From\+File()}} \mbox{\Hypertarget{class_owl_engine_1_1_settings_a6ff1d017cbdc74ffb283420722a7ee0a}\label{class_owl_engine_1_1_settings_a6ff1d017cbdc74ffb283420722a7ee0a}} 
+\index{OwlEngine::Settings@{OwlEngine::Settings}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!OwlEngine::Settings@{OwlEngine::Settings}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Settings\+::save\+To\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Save the current player config settings. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_settings_a6ff1d017cbdc74ffb283420722a7ee0a}{save\+To\+File()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/sandbox/include/settings/\mbox{\hyperlink{settings_8h}{settings.\+h}}\item 
+C\+:/doc/src/sandbox/src/settings/settings.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,127 @@
+\hypertarget{class_hawk_engine_1_1_event}{}\doxysection{Hawk\+Engine\+::Event Class Reference}
+\label{class_hawk_engine_1_1_event}\index{HawkEngine::Event@{HawkEngine::Event}}
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_event}{Event}} base class, all possible events that can arise will share this base class.  
+
+
+
+
+{\ttfamily \#include $<$event.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.664032cm]{class_hawk_engine_1_1_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} \mbox{\hyperlink{class_hawk_engine_1_1_event_a91937ccfa4271643d7b29bb3fe5416ac}{get\+Event\+Type}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the event type. \end{DoxyCompactList}\item 
+virtual const int32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_event_a8059de3dbb9c62f469764b14433049fb}{get\+Category\+Flags}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets the event category flags. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_event_a857151c6f545444d1b55b3b8a78ead4a}{is\+Handled}} () const
+\begin{DoxyCompactList}\small\item\em Has the event been handled. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_event_af1356592375d3f2ba3c0dc48ed7aa1ff}{handle}} (const bool \mbox{\hyperlink{class_hawk_engine_1_1_event_a857151c6f545444d1b55b3b8a78ead4a}{is\+Handled}})
+\begin{DoxyCompactList}\small\item\em Handle the event. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_event_a25cd1623ee33a69188f85999af3cb905}{is\+In\+Category}} (const \mbox{\hyperlink{event_8h_a854d4136e37b04a99c08f87f8a655cbb}{Event\+Category}} category) const
+\begin{DoxyCompactList}\small\item\em Is the event in category. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_a525ac7dca767881f644fe9925dd29c9f}\label{class_hawk_engine_1_1_event_a525ac7dca767881f644fe9925dd29c9f}} 
+bool \mbox{\hyperlink{class_hawk_engine_1_1_event_a525ac7dca767881f644fe9925dd29c9f}{m\+\_\+handled}} = false
+\begin{DoxyCompactList}\small\item\em Has the event been handled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_hawk_engine_1_1_event}{Event}} base class, all possible events that can arise will share this base class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_a8059de3dbb9c62f469764b14433049fb}\label{class_hawk_engine_1_1_event_a8059de3dbb9c62f469764b14433049fb}} 
+\index{HawkEngine::Event@{HawkEngine::Event}!getCategoryFlags@{getCategoryFlags}}
+\index{getCategoryFlags@{getCategoryFlags}!HawkEngine::Event@{HawkEngine::Event}}
+\doxysubsubsection{\texorpdfstring{getCategoryFlags()}{getCategoryFlags()}}
+{\footnotesize\ttfamily virtual const int32\+\_\+t Hawk\+Engine\+::\+Event\+::get\+Category\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the event category flags. 
+
+\begin{DoxyReturn}{Returns}
+a const int32\+\_\+t -\/ The event\textquotesingle{}s category flags 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_window_moved_event_acf500ac98f09ce6c77c3f75a93ae99df}{Hawk\+Engine\+::\+Window\+Moved\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_window_lost_focus_event_af2a3f652f71a8ebbd5bfe217f4331e5c}{Hawk\+Engine\+::\+Window\+Lost\+Focus\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_window_focus_event_a80bc47db2d03005b7f567de32d1ae390}{Hawk\+Engine\+::\+Window\+Focus\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event_a397e1d46a11e9158fc6a7546592d8e1c}{Hawk\+Engine\+::\+Window\+Resize\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_key_event_ab1290925ca98b613303ca6bf24fd0735}{Hawk\+Engine\+::\+Key\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_window_close_event_a39d5274e322946e2d4434c732dc19025}{Hawk\+Engine\+::\+Window\+Close\+Event}}, and \mbox{\hyperlink{class_hawk_engine_1_1_mouse_event_af4e25a0fb812d604c8bc1171256c09bc}{Hawk\+Engine\+::\+Mouse\+Event}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_a91937ccfa4271643d7b29bb3fe5416ac}\label{class_hawk_engine_1_1_event_a91937ccfa4271643d7b29bb3fe5416ac}} 
+\index{HawkEngine::Event@{HawkEngine::Event}!getEventType@{getEventType}}
+\index{getEventType@{getEventType}!HawkEngine::Event@{HawkEngine::Event}}
+\doxysubsubsection{\texorpdfstring{getEventType()}{getEventType()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} Hawk\+Engine\+::\+Event\+::get\+Event\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the event type. 
+
+\begin{DoxyReturn}{Returns}
+a const Event\+Type -\/ The event type 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_mouse_released_event_a5be2fba81b3833ff00394ef783d33fe6}{Hawk\+Engine\+::\+Mouse\+Released\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_window_moved_event_abfee9baf68e16d375282b2bf9c5b85ae}{Hawk\+Engine\+::\+Window\+Moved\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_mouse_pressed_event_a87b5ec5a9dd4a0067a0620ac371aa057}{Hawk\+Engine\+::\+Mouse\+Pressed\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_window_lost_focus_event_ab9cfae72a7ac7a08aade6178f99cd11f}{Hawk\+Engine\+::\+Window\+Lost\+Focus\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_key_typed_event_a1811ef0f614db67540d0b8f922e70a30}{Hawk\+Engine\+::\+Key\+Typed\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_window_focus_event_a9bbf2f7e875c41d9703055e6f55c0ed0}{Hawk\+Engine\+::\+Window\+Focus\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event_aae748390b5325ce8f38ad9ff55458352}{Hawk\+Engine\+::\+Mouse\+Scrolled\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_key_released_event_a5de9040e4f374c28d780d413832673db}{Hawk\+Engine\+::\+Key\+Released\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event_a437cf1b19a9253e7718bbafc79d48785}{Hawk\+Engine\+::\+Key\+Pressed\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event_a76992d62e625557b6662d19be1692b26}{Hawk\+Engine\+::\+Window\+Resize\+Event}}, \mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event_a41056ca485561c51449a328d7660c914}{Hawk\+Engine\+::\+Mouse\+Moved\+Event}}, and \mbox{\hyperlink{class_hawk_engine_1_1_window_close_event_acf7a8e0c7647c54e8c9c42443b15b8ec}{Hawk\+Engine\+::\+Window\+Close\+Event}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_af1356592375d3f2ba3c0dc48ed7aa1ff}\label{class_hawk_engine_1_1_event_af1356592375d3f2ba3c0dc48ed7aa1ff}} 
+\index{HawkEngine::Event@{HawkEngine::Event}!handle@{handle}}
+\index{handle@{handle}!HawkEngine::Event@{HawkEngine::Event}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Event\+::handle (\begin{DoxyParamCaption}\item[{const bool}]{is\+Handled }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Handle the event. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Handled} & a const bool -\/ Has the event been handled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_a857151c6f545444d1b55b3b8a78ead4a}\label{class_hawk_engine_1_1_event_a857151c6f545444d1b55b3b8a78ead4a}} 
+\index{HawkEngine::Event@{HawkEngine::Event}!isHandled@{isHandled}}
+\index{isHandled@{isHandled}!HawkEngine::Event@{HawkEngine::Event}}
+\doxysubsubsection{\texorpdfstring{isHandled()}{isHandled()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Event\+::is\+Handled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Has the event been handled. 
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_event_a25cd1623ee33a69188f85999af3cb905}\label{class_hawk_engine_1_1_event_a25cd1623ee33a69188f85999af3cb905}} 
+\index{HawkEngine::Event@{HawkEngine::Event}!isInCategory@{isInCategory}}
+\index{isInCategory@{isInCategory}!HawkEngine::Event@{HawkEngine::Event}}
+\doxysubsubsection{\texorpdfstring{isInCategory()}{isInCategory()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Event\+::is\+In\+Category (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{event_8h_a854d4136e37b04a99c08f87f8a655cbb}{Event\+Category}}}]{category }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is the event in category. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em category} & a const Event\+Category -\/ The event category \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is the event a part of the event category 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/events/\mbox{\hyperlink{event_8h}{event.\+h}}\end{DoxyCompactItemize}

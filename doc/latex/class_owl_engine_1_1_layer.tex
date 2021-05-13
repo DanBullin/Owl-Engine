@@ -1,0 +1,298 @@
+\hypertarget{class_owl_engine_1_1_layer}{}\doxysection{Owl\+Engine\+::Layer Class Reference}
+\label{class_owl_engine_1_1_layer}\index{OwlEngine::Layer@{OwlEngine::Layer}}
+
+
+Forward declare.  
+
+
+
+
+{\ttfamily \#include $<$layer.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Layer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{class_owl_engine_1_1_layer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_layer_aea18e3aa7bbebcdf8310446c31212c21}{Layer}} (const char $\ast$layer\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_layer_ac9de141d0882aee7ede49c9e10d108ef}{$\sim$\+Layer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a0280918d84c81709b40f3f3b238e87d3}\label{class_owl_engine_1_1_layer_a0280918d84c81709b40f3f3b238e87d3}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_a0280918d84c81709b40f3f3b238e87d3}{on\+Attach}} ()
+\begin{DoxyCompactList}\small\item\em Called when attaching to layer manager. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_ac97bac96c22066c56841eb66c53d932c}\label{class_owl_engine_1_1_layer_ac97bac96c22066c56841eb66c53d932c}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_ac97bac96c22066c56841eb66c53d932c}{on\+Detach}} ()
+\begin{DoxyCompactList}\small\item\em Called when detaching from layer manager. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_acfd01fb4e9289c41769e1880a3e03539}{on\+Update}} (const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Called one per frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a0668b23239c52a4c76c769b5c682d4db}\label{class_owl_engine_1_1_layer_a0668b23239c52a4c76c769b5c682d4db}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_a0668b23239c52a4c76c769b5c682d4db}{on\+Window\+Resize}} (\mbox{\hyperlink{class_owl_engine_1_1_window_resize_event}{Window\+Resize\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Called when a window is resized. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a03d6c1f9e8858baac7d6903163cb5d21}\label{class_owl_engine_1_1_layer_a03d6c1f9e8858baac7d6903163cb5d21}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_a03d6c1f9e8858baac7d6903163cb5d21}{on\+Window\+Focus}} (\mbox{\hyperlink{class_owl_engine_1_1_window_focus_event}{Window\+Focus\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Called when a window gains focus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_aaac59c02ca064fdb64f03e3315fc95e9}\label{class_owl_engine_1_1_layer_aaac59c02ca064fdb64f03e3315fc95e9}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_aaac59c02ca064fdb64f03e3315fc95e9}{on\+Window\+Lost\+Focus}} (\mbox{\hyperlink{class_owl_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Called when a window loses focus. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_ab92e942dc7d2e517715819ccee017f71}\label{class_owl_engine_1_1_layer_ab92e942dc7d2e517715819ccee017f71}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_ab92e942dc7d2e517715819ccee017f71}{on\+Window\+Moved}} (\mbox{\hyperlink{class_owl_engine_1_1_window_moved_event}{Window\+Moved\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Called when a window is moved. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a0fb36221bb55026ca058b1f2d36c19ae}\label{class_owl_engine_1_1_layer_a0fb36221bb55026ca058b1f2d36c19ae}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_a0fb36221bb55026ca058b1f2d36c19ae}{on\+Key\+Press}} (\mbox{\hyperlink{class_owl_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon key press. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a9835929396599ae0c4e81cd0a1d5a2b2}\label{class_owl_engine_1_1_layer_a9835929396599ae0c4e81cd0a1d5a2b2}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_a9835929396599ae0c4e81cd0a1d5a2b2}{on\+Key\+Release}} (\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon key release. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a0f8f3d71834a2f678553433fd539bf52}\label{class_owl_engine_1_1_layer_a0f8f3d71834a2f678553433fd539bf52}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_a0f8f3d71834a2f678553433fd539bf52}{on\+Mouse\+Press}} (\mbox{\hyperlink{class_owl_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon mouse press. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a3005500458b936a3fd16c0e0ea121026}\label{class_owl_engine_1_1_layer_a3005500458b936a3fd16c0e0ea121026}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_a3005500458b936a3fd16c0e0ea121026}{on\+Mouse\+Release}} (\mbox{\hyperlink{class_owl_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon mouse release. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a5b8b3aa64a6d6964c501ca648d694863}\label{class_owl_engine_1_1_layer_a5b8b3aa64a6d6964c501ca648d694863}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_a5b8b3aa64a6d6964c501ca648d694863}{on\+Mouse\+Scrolled}} (\mbox{\hyperlink{class_owl_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon mouse scroll. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_aa7d92648c77b76c3a28d81cfda6986e8}\label{class_owl_engine_1_1_layer_aa7d92648c77b76c3a28d81cfda6986e8}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_layer_aa7d92648c77b76c3a28d81cfda6986e8}{on\+Mouse\+Moved}} (\mbox{\hyperlink{class_owl_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}} \&e, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Call upon mouse move. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_layer_a09367bfa738747389cdca8702df9d522}{print\+Layer\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print the layer details. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_layer_a3adc2626da9b3a75fc9b13bbb2c42ccc}{get\+Layer\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the layer. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_layer_a373803f577316dce8b43b197e8c9655a}{get\+Displayed}} () const
+\begin{DoxyCompactList}\small\item\em Get whether this layer should be rendered. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_layer_a1f75116aa1bc846bfc48e80cb1d2201d}{set\+Displayed}} (const bool display)
+\begin{DoxyCompactList}\small\item\em Set whether this layer should be rendered. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_layer_aed52e611d47316a95d69bc0b0ca90ae4}{get\+Active}} () const
+\begin{DoxyCompactList}\small\item\em Get whether this layer is active and receiving events. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_layer_a6ba57ccd2cedbf01973fab6a6d73de37}{set\+Active}} (const bool active)
+\begin{DoxyCompactList}\small\item\em Set whether this layer is active and receiving events. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_layer_a29b56e89aeb7926fcaf63bfd2c86aea4}{set\+Layer\+Manager}} (\mbox{\hyperlink{class_owl_engine_1_1_layer_manager}{Layer\+Manager}} $\ast$manager)
+\begin{DoxyCompactList}\small\item\em Set the layer manager. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager}{Layer\+Manager}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_layer_abbbb2a6dfbbbed80f3283bcb4421f70a}{get\+Layer\+Manager}} () const
+\begin{DoxyCompactList}\small\item\em Get the layer manager. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_layer_ace4c0be401558e487e20a500a97b414b}{get\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em Get all entities that are on this layer. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \mbox{\hyperlink{class_owl_engine_1_1_layer_a64922aa9aeeccd4309eb73ebcc9f143d}{get\+Renderable\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em Get all entities that contain some rendering component on this layer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Forward declare. 
+
+A layer containing a set of scene data 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_aea18e3aa7bbebcdf8310446c31212c21}\label{class_owl_engine_1_1_layer_aea18e3aa7bbebcdf8310446c31212c21}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!Layer@{Layer}}
+\index{Layer@{Layer}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{Layer()}{Layer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Layer\+::\+Layer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{layer\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_aea18e3aa7bbebcdf8310446c31212c21}{Layer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+Name} & a const char$\ast$ -\/ The layer name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_ac9de141d0882aee7ede49c9e10d108ef}\label{class_owl_engine_1_1_layer_ac9de141d0882aee7ede49c9e10d108ef}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!````~Layer@{$\sim$Layer}}
+\index{````~Layer@{$\sim$Layer}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Layer()}{~Layer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Layer\+::$\sim$\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_ac9de141d0882aee7ede49c9e10d108ef}{$\sim$\+Layer()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_aed52e611d47316a95d69bc0b0ca90ae4}\label{class_owl_engine_1_1_layer_aed52e611d47316a95d69bc0b0ca90ae4}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!getActive@{getActive}}
+\index{getActive@{getActive}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{getActive()}{getActive()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Layer\+::get\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get whether this layer is active and receiving events. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_aed52e611d47316a95d69bc0b0ca90ae4}{get\+Active()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is this layer active 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a373803f577316dce8b43b197e8c9655a}\label{class_owl_engine_1_1_layer_a373803f577316dce8b43b197e8c9655a}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!getDisplayed@{getDisplayed}}
+\index{getDisplayed@{getDisplayed}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{getDisplayed()}{getDisplayed()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Layer\+::get\+Displayed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get whether this layer should be rendered. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_a373803f577316dce8b43b197e8c9655a}{get\+Displayed()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is this layer displayed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_ace4c0be401558e487e20a500a97b414b}\label{class_owl_engine_1_1_layer_ace4c0be401558e487e20a500a97b414b}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ Owl\+Engine\+::\+Layer\+::get\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all entities that are on this layer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_ace4c0be401558e487e20a500a97b414b}{get\+Entities()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Entity$\ast$$>$ -\/ A list of all entities on this layer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_abbbb2a6dfbbbed80f3283bcb4421f70a}\label{class_owl_engine_1_1_layer_abbbb2a6dfbbbed80f3283bcb4421f70a}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!getLayerManager@{getLayerManager}}
+\index{getLayerManager@{getLayerManager}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{getLayerManager()}{getLayerManager()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_layer_manager}{Layer\+Manager}} $\ast$ Owl\+Engine\+::\+Layer\+::get\+Layer\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the layer manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_abbbb2a6dfbbbed80f3283bcb4421f70a}{get\+Layer\+Manager()}}
+
+\begin{DoxyReturn}{Returns}
+a Layer\+Manager$\ast$ -\/ The layer manager this layer is attached to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a3adc2626da9b3a75fc9b13bbb2c42ccc}\label{class_owl_engine_1_1_layer_a3adc2626da9b3a75fc9b13bbb2c42ccc}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!getLayerName@{getLayerName}}
+\index{getLayerName@{getLayerName}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{getLayerName()}{getLayerName()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Layer\+::get\+Layer\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the layer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_a3adc2626da9b3a75fc9b13bbb2c42ccc}{get\+Layer\+Name()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The layer name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a64922aa9aeeccd4309eb73ebcc9f143d}\label{class_owl_engine_1_1_layer_a64922aa9aeeccd4309eb73ebcc9f143d}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!getRenderableEntities@{getRenderableEntities}}
+\index{getRenderableEntities@{getRenderableEntities}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{getRenderableEntities()}{getRenderableEntities()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ Owl\+Engine\+::\+Layer\+::get\+Renderable\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all entities that contain some rendering component on this layer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_a64922aa9aeeccd4309eb73ebcc9f143d}{get\+Renderable\+Entities()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Entity$\ast$$>$ -\/ A list of all renderable entities on this layer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_acfd01fb4e9289c41769e1880a3e03539}\label{class_owl_engine_1_1_layer_acfd01fb4e9289c41769e1880a3e03539}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Layer\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Called one per frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total runtime of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_credits_layer_a228463eca644ed773605f2ee0c30258f}{Credits\+Layer}}, \mbox{\hyperlink{class_default_layer_a1e65a46b8f8aba4bd04be67fa09ef473}{Default\+Layer}}, \mbox{\hyperlink{class_game_over_layer_a7e2b4fdfc0dc2ce17880e627f1fba13b}{Game\+Over\+Layer}}, \mbox{\hyperlink{class_level_complete_layer_aab966a0e2466ca14a8718ae551b4ec95}{Level\+Complete\+Layer}}, \mbox{\hyperlink{class_pause_layer_a4fb4fae25482a286e204e75c654c69e0}{Pause\+Layer}}, \mbox{\hyperlink{class_settings_layer_a6130dc01aa6aaadeefa753f4246a3a7e}{Settings\+Layer}}, and \mbox{\hyperlink{class_u_i_layer_a3f06f66e0a03a108ebe03e601b7ab849}{U\+I\+Layer}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a09367bfa738747389cdca8702df9d522}\label{class_owl_engine_1_1_layer_a09367bfa738747389cdca8702df9d522}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!printLayerDetails@{printLayerDetails}}
+\index{printLayerDetails@{printLayerDetails}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{printLayerDetails()}{printLayerDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Layer\+::print\+Layer\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print the layer details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_a09367bfa738747389cdca8702df9d522}{print\+Layer\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_layer_a6ba57ccd2cedbf01973fab6a6d73de37}\label{class_owl_engine_1_1_layer_a6ba57ccd2cedbf01973fab6a6d73de37}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!setActive@{setActive}}
+\index{setActive@{setActive}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{setActive()}{setActive()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Layer\+::set\+Active (\begin{DoxyParamCaption}\item[{const bool}]{active }\end{DoxyParamCaption})}
+
+
+
+Set whether this layer is active and receiving events. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_a6ba57ccd2cedbf01973fab6a6d73de37}{set\+Active()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & a const bool -\/ Is this layer active \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a1f75116aa1bc846bfc48e80cb1d2201d}\label{class_owl_engine_1_1_layer_a1f75116aa1bc846bfc48e80cb1d2201d}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!setDisplayed@{setDisplayed}}
+\index{setDisplayed@{setDisplayed}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{setDisplayed()}{setDisplayed()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Layer\+::set\+Displayed (\begin{DoxyParamCaption}\item[{const bool}]{display }\end{DoxyParamCaption})}
+
+
+
+Set whether this layer should be rendered. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_a1f75116aa1bc846bfc48e80cb1d2201d}{set\+Displayed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em display} & a const bool -\/ Is this layer displayed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_a29b56e89aeb7926fcaf63bfd2c86aea4}\label{class_owl_engine_1_1_layer_a29b56e89aeb7926fcaf63bfd2c86aea4}} 
+\index{OwlEngine::Layer@{OwlEngine::Layer}!setLayerManager@{setLayerManager}}
+\index{setLayerManager@{setLayerManager}!OwlEngine::Layer@{OwlEngine::Layer}}
+\doxysubsubsection{\texorpdfstring{setLayerManager()}{setLayerManager()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Layer\+::set\+Layer\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_layer_manager}{Layer\+Manager}} $\ast$}]{manager }\end{DoxyParamCaption})}
+
+
+
+Set the layer manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_a29b56e89aeb7926fcaf63bfd2c86aea4}{set\+Layer\+Manager()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em manager} & a Layer\+Manager$\ast$ -\/ The layer manager this layer is attached to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/layers/\mbox{\hyperlink{layer_8h}{layer.\+h}}\item 
+C\+:/doc/src/engine/src/independent/layers/\mbox{\hyperlink{layer_8cpp}{layer.\+cpp}}\end{DoxyCompactItemize}

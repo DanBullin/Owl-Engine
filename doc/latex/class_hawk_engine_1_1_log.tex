@@ -1,0 +1,251 @@
+\hypertarget{class_hawk_engine_1_1_log}{}\doxysection{Hawk\+Engine\+::Log Class Reference}
+\label{class_hawk_engine_1_1_log}\index{HawkEngine::Log@{HawkEngine::Log}}
+
+
+A log class using spdlog which prints information to various outputs (Console, file, etc)  
+
+
+
+
+{\ttfamily \#include $<$log.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Log\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_log}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_log_aea4911109fad1a3e706cd8a431d54cc9}{start}} (\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}} init=System\+Signal\+::\+None,...) override
+\begin{DoxyCompactList}\small\item\em Start the logger. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_log_ae61398e44095912308650ee05262b4b8}{stop}} (\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}} close=System\+Signal\+::\+None,...) override
+\begin{DoxyCompactList}\small\item\em Stop the logger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_log_a1c045c152fb9644a7ebb069ae77e1ee5}{enable\+File\+Logging}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable the file logging. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_a07668e8db657608ac2735d352c5b7427}\label{class_hawk_engine_1_1_log_a07668e8db657608ac2735d352c5b7427}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_a07668e8db657608ac2735d352c5b7427}{info}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print info to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_a07fa6277a2dff13e97d80d5dfa031534}\label{class_hawk_engine_1_1_log_a07fa6277a2dff13e97d80d5dfa031534}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_a07fa6277a2dff13e97d80d5dfa031534}{trace}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print a trace message to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_a0cbfa6ef2db0ba58262b47a5b91c3038}\label{class_hawk_engine_1_1_log_a0cbfa6ef2db0ba58262b47a5b91c3038}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_a0cbfa6ef2db0ba58262b47a5b91c3038}{warn}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print a warn message to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_adbfffea7b3b544026a611e692688689e}\label{class_hawk_engine_1_1_log_adbfffea7b3b544026a611e692688689e}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_adbfffea7b3b544026a611e692688689e}{debug}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print a debug message to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_a19c6036e0863bf97fd5ca49696216020}\label{class_hawk_engine_1_1_log_a19c6036e0863bf97fd5ca49696216020}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_a19c6036e0863bf97fd5ca49696216020}{error}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print an error message to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_a834e6f68efdee2b0504b38352a6a08eb}\label{class_hawk_engine_1_1_log_a834e6f68efdee2b0504b38352a6a08eb}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_a834e6f68efdee2b0504b38352a6a08eb}{release}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print a trace message in release mode to the console. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_aa0f9b5aca89751f84a7093064bf52e3e}\label{class_hawk_engine_1_1_log_aa0f9b5aca89751f84a7093064bf52e3e}} 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_aa0f9b5aca89751f84a7093064bf52e3e}{file}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Print information to the log files. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_adbfffea7b3b544026a611e692688689e}{debug}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_log_adbfffea7b3b544026a611e692688689e}{debug()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_a19c6036e0863bf97fd5ca49696216020}{error}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_log_a19c6036e0863bf97fd5ca49696216020}{error()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_a07668e8db657608ac2735d352c5b7427}{info}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_log_a07668e8db657608ac2735d352c5b7427}{info()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_a07fa6277a2dff13e97d80d5dfa031534}{trace}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_log_a07fa6277a2dff13e97d80d5dfa031534}{trace()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_a0cbfa6ef2db0ba58262b47a5b91c3038}{warn}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_log_a0cbfa6ef2db0ba58262b47a5b91c3038}{warn()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_a834e6f68efdee2b0504b38352a6a08eb}{release}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_log_a834e6f68efdee2b0504b38352a6a08eb}{release()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$class ... Args$>$ }\\static void \mbox{\hyperlink{class_hawk_engine_1_1_log_aa0f9b5aca89751f84a7093064bf52e3e}{file}} (Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_log_aa0f9b5aca89751f84a7093064bf52e3e}{file()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A log class using spdlog which prints information to various outputs (Console, file, etc) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_adbfffea7b3b544026a611e692688689e}\label{class_hawk_engine_1_1_log_adbfffea7b3b544026a611e692688689e}} 
+\index{HawkEngine::Log@{HawkEngine::Log}!debug@{debug}}
+\index{debug@{debug}!HawkEngine::Log@{HawkEngine::Log}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Hawk\+Engine\+::\+Log\+::debug (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_log_adbfffea7b3b544026a611e692688689e}{debug()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_a1c045c152fb9644a7ebb069ae77e1ee5}\label{class_hawk_engine_1_1_log_a1c045c152fb9644a7ebb069ae77e1ee5}} 
+\index{HawkEngine::Log@{HawkEngine::Log}!enableFileLogging@{enableFileLogging}}
+\index{enableFileLogging@{enableFileLogging}!HawkEngine::Log@{HawkEngine::Log}}
+\doxysubsubsection{\texorpdfstring{enableFileLogging()}{enableFileLogging()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Log\+::enable\+File\+Logging (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable the file logging. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_log_a1c045c152fb9644a7ebb069ae77e1ee5}{enable\+File\+Logging()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a const bool -\/ Enable/\+Disable the file logging \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_a19c6036e0863bf97fd5ca49696216020}\label{class_hawk_engine_1_1_log_a19c6036e0863bf97fd5ca49696216020}} 
+\index{HawkEngine::Log@{HawkEngine::Log}!error@{error}}
+\index{error@{error}!HawkEngine::Log@{HawkEngine::Log}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Hawk\+Engine\+::\+Log\+::error (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_log_a19c6036e0863bf97fd5ca49696216020}{error()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_aa0f9b5aca89751f84a7093064bf52e3e}\label{class_hawk_engine_1_1_log_aa0f9b5aca89751f84a7093064bf52e3e}} 
+\index{HawkEngine::Log@{HawkEngine::Log}!file@{file}}
+\index{file@{file}!HawkEngine::Log@{HawkEngine::Log}}
+\doxysubsubsection{\texorpdfstring{file()}{file()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Hawk\+Engine\+::\+Log\+::file (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_log_aa0f9b5aca89751f84a7093064bf52e3e}{file()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_a07668e8db657608ac2735d352c5b7427}\label{class_hawk_engine_1_1_log_a07668e8db657608ac2735d352c5b7427}} 
+\index{HawkEngine::Log@{HawkEngine::Log}!info@{info}}
+\index{info@{info}!HawkEngine::Log@{HawkEngine::Log}}
+\doxysubsubsection{\texorpdfstring{info()}{info()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Hawk\+Engine\+::\+Log\+::info (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_log_a07668e8db657608ac2735d352c5b7427}{info()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_a834e6f68efdee2b0504b38352a6a08eb}\label{class_hawk_engine_1_1_log_a834e6f68efdee2b0504b38352a6a08eb}} 
+\index{HawkEngine::Log@{HawkEngine::Log}!release@{release}}
+\index{release@{release}!HawkEngine::Log@{HawkEngine::Log}}
+\doxysubsubsection{\texorpdfstring{release()}{release()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Hawk\+Engine\+::\+Log\+::release (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_log_a834e6f68efdee2b0504b38352a6a08eb}{release()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_aea4911109fad1a3e706cd8a431d54cc9}\label{class_hawk_engine_1_1_log_aea4911109fad1a3e706cd8a431d54cc9}} 
+\index{HawkEngine::Log@{HawkEngine::Log}!start@{start}}
+\index{start@{start}!HawkEngine::Log@{HawkEngine::Log}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Log\+::start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}}}]{init = {\ttfamily SystemSignal\+:\+:None},  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the logger. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_log_aea4911109fad1a3e706cd8a431d54cc9}{start()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em init} & a System\+Signal -\/ A system signal \\
+\hline
+{\em ...} & -\/ Various parameters \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_system_a7b3de2e970b27a900583fa66c1063a6c}{Hawk\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_ae61398e44095912308650ee05262b4b8}\label{class_hawk_engine_1_1_log_ae61398e44095912308650ee05262b4b8}} 
+\index{HawkEngine::Log@{HawkEngine::Log}!stop@{stop}}
+\index{stop@{stop}!HawkEngine::Log@{HawkEngine::Log}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Log\+::stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}}}]{close = {\ttfamily SystemSignal\+:\+:None},  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the logger. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_log_ae61398e44095912308650ee05262b4b8}{stop()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em close} & a System\+Signal -\/ A system signal \\
+\hline
+{\em ...} & -\/ Various parameters \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_system_a29d9ba02d3c28510f4ef02bc0fdfbb3b}{Hawk\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_a07fa6277a2dff13e97d80d5dfa031534}\label{class_hawk_engine_1_1_log_a07fa6277a2dff13e97d80d5dfa031534}} 
+\index{HawkEngine::Log@{HawkEngine::Log}!trace@{trace}}
+\index{trace@{trace}!HawkEngine::Log@{HawkEngine::Log}}
+\doxysubsubsection{\texorpdfstring{trace()}{trace()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Hawk\+Engine\+::\+Log\+::trace (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_log_a07fa6277a2dff13e97d80d5dfa031534}{trace()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_log_a0cbfa6ef2db0ba58262b47a5b91c3038}\label{class_hawk_engine_1_1_log_a0cbfa6ef2db0ba58262b47a5b91c3038}} 
+\index{HawkEngine::Log@{HawkEngine::Log}!warn@{warn}}
+\index{warn@{warn}!HawkEngine::Log@{HawkEngine::Log}}
+\doxysubsubsection{\texorpdfstring{warn()}{warn()}}
+{\footnotesize\ttfamily template$<$class ... Args$>$ \\
+static void Hawk\+Engine\+::\+Log\+::warn (\begin{DoxyParamCaption}\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_log_a0cbfa6ef2db0ba58262b47a5b91c3038}{warn()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/systems/\mbox{\hyperlink{log_8h}{log.\+h}}\item 
+C\+:/doc/src/src/independent/systems/log.\+cpp\end{DoxyCompactItemize}

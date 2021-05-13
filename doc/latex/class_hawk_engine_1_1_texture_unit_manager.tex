@@ -1,0 +1,143 @@
+\hypertarget{class_hawk_engine_1_1_texture_unit_manager}{}\doxysection{Hawk\+Engine\+::Texture\+Unit\+Manager Class Reference}
+\label{class_hawk_engine_1_1_texture_unit_manager}\index{HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}}
+
+
+A manager for the texture units.  
+
+
+
+
+{\ttfamily \#include $<$texture\+Unit\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager_a75633484607dc08277f949dbace55f0d}{Texture\+Unit\+Manager}} (const uint32\+\_\+t capacity, const uint32\+\_\+t reservation\+Count)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager_a0f340bccbe85c6d4a7fdef4de16e5ef0}{full}} () const
+\begin{DoxyCompactList}\small\item\em Is the texture unit list full. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager_a9ed8cae860083d67424235909086af69}{clear}} (const bool delete\+Reservations)
+\begin{DoxyCompactList}\small\item\em Clear the buffer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager_ad10d56b4d4c3579f2be8ac3cdb804add}{get\+Unit}} (const uint32\+\_\+t texture\+ID, int32\+\_\+t \&texture\+Unit)
+\begin{DoxyCompactList}\small\item\em Returns whether or not the texture needs binding to the unit passed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager_a4bb11eeed742704c5271ee04747768e8}{set\+Reserved\+Unit}} (const uint32\+\_\+t reserved\+Slot, const uint32\+\_\+t texture\+ID)
+\begin{DoxyCompactList}\small\item\em Set the unit of a reserved slot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager_abdc7a3b1cd2a707bc98a67bfd8ce1c19}{bind\+To\+Unit}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $>$ \&texture)
+\begin{DoxyCompactList}\small\item\em Bind texture to unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A manager for the texture units. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_unit_manager_a75633484607dc08277f949dbace55f0d}\label{class_hawk_engine_1_1_texture_unit_manager_a75633484607dc08277f949dbace55f0d}} 
+\index{HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}!TextureUnitManager@{TextureUnitManager}}
+\index{TextureUnitManager@{TextureUnitManager}!HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{TextureUnitManager()}{TextureUnitManager()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Texture\+Unit\+Manager\+::\+Texture\+Unit\+Manager (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{capacity,  }\item[{const uint32\+\_\+t}]{reservation\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em capacity} & a const uint32\+\_\+t -\/ The total number of texture units \\
+\hline
+{\em reservation\+Count} & a const uint32\+\_\+t -\/ The number of reserved slots to reserve \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_unit_manager_abdc7a3b1cd2a707bc98a67bfd8ce1c19}\label{class_hawk_engine_1_1_texture_unit_manager_abdc7a3b1cd2a707bc98a67bfd8ce1c19}} 
+\index{HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}!bindToUnit@{bindToUnit}}
+\index{bindToUnit@{bindToUnit}!HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{bindToUnit()}{bindToUnit()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Texture\+Unit\+Manager\+::bind\+To\+Unit (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $>$ \&}]{texture }\end{DoxyParamCaption})}
+
+
+
+Bind texture to unit. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager_abdc7a3b1cd2a707bc98a67bfd8ce1c19}{bind\+To\+Unit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& texture -\/ The texture to bind \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_unit_manager_a9ed8cae860083d67424235909086af69}\label{class_hawk_engine_1_1_texture_unit_manager_a9ed8cae860083d67424235909086af69}} 
+\index{HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}!clear@{clear}}
+\index{clear@{clear}!HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Texture\+Unit\+Manager\+::clear (\begin{DoxyParamCaption}\item[{const bool}]{delete\+Reservations }\end{DoxyParamCaption})}
+
+
+
+Clear the buffer. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager_a9ed8cae860083d67424235909086af69}{clear()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em delete\+Reservations} & a const bool -\/ Delete the reserved slots too \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_unit_manager_a0f340bccbe85c6d4a7fdef4de16e5ef0}\label{class_hawk_engine_1_1_texture_unit_manager_a0f340bccbe85c6d4a7fdef4de16e5ef0}} 
+\index{HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}!full@{full}}
+\index{full@{full}!HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{full()}{full()}}
+{\footnotesize\ttfamily bool Hawk\+Engine\+::\+Texture\+Unit\+Manager\+::full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Is the texture unit list full. 
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the texture unit list full 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_unit_manager_ad10d56b4d4c3579f2be8ac3cdb804add}\label{class_hawk_engine_1_1_texture_unit_manager_ad10d56b4d4c3579f2be8ac3cdb804add}} 
+\index{HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}!getUnit@{getUnit}}
+\index{getUnit@{getUnit}!HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{getUnit()}{getUnit()}}
+{\footnotesize\ttfamily bool Hawk\+Engine\+::\+Texture\+Unit\+Manager\+::get\+Unit (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{texture\+ID,  }\item[{int32\+\_\+t \&}]{texture\+Unit }\end{DoxyParamCaption})}
+
+
+
+Returns whether or not the texture needs binding to the unit passed. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager_ad10d56b4d4c3579f2be8ac3cdb804add}{get\+Unit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+ID} & a const uint32\+\_\+t -\/ The texture ID \\
+\hline
+{\em texture\+Unit} & an int32\+\_\+t\& -\/ A reference to the texture unit held in the renderer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_unit_manager_a4bb11eeed742704c5271ee04747768e8}\label{class_hawk_engine_1_1_texture_unit_manager_a4bb11eeed742704c5271ee04747768e8}} 
+\index{HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}!setReservedUnit@{setReservedUnit}}
+\index{setReservedUnit@{setReservedUnit}!HawkEngine::TextureUnitManager@{HawkEngine::TextureUnitManager}}
+\doxysubsubsection{\texorpdfstring{setReservedUnit()}{setReservedUnit()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Texture\+Unit\+Manager\+::set\+Reserved\+Unit (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{reserved\+Slot,  }\item[{const uint32\+\_\+t}]{texture\+ID }\end{DoxyParamCaption})}
+
+
+
+Set the unit of a reserved slot. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager_a4bb11eeed742704c5271ee04747768e8}{set\+Reserved\+Unit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em reserved\+Slot} & a const uint32\+\_\+t -\/ The reserved slot index \\
+\hline
+{\em texture\+ID} & a const uint32\+\_\+t -\/ The texture ID to put in the reserved slot \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/textures/\mbox{\hyperlink{texture_unit_manager_8h}{texture\+Unit\+Manager.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/textures/\mbox{\hyperlink{texture_unit_manager_8cpp}{texture\+Unit\+Manager.\+cpp}}\end{DoxyCompactItemize}

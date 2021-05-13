@@ -1,0 +1,134 @@
+\hypertarget{class_hawk_engine_1_1_model2_d}{}\doxysection{Hawk\+Engine\+::Model2D Class Reference}
+\label{class_hawk_engine_1_1_model2_d}\index{HawkEngine::Model2D@{HawkEngine::Model2D}}
+
+
+A 2D model class that contains all the 2D meshes of the model.  
+
+
+
+
+{\ttfamily \#include $<$model2\+D.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_model2_d_a658bb35d846e392e6050120dfe4038a9}{Model2D}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_model2_d_a821dc9aa5d3b9fb7ca20eb383e286b7b}{$\sim$\+Model2D}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d}{Mesh2D}} $>$ $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_model2_d_a01e234ced34609549bfcf432db808913}{get\+Meshes}} ()
+\begin{DoxyCompactList}\small\item\em Get the list of meshes as a reference. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_model2_d_aac7f993df9a821fb1b02970d6cce88e2}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destory the meshes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_model2_d_ae04426882ada0e3270b57bf8758f81e5}{submit\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Submit the data to the buffers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_model2_d_af7efde333f6f900c4921ad57beac72fb}{edit\+Data}} (const void $\ast$new\+Data, const uint32\+\_\+t size, const uint32\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Edit the geometry and update the G\+PU. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex2_d}{Vertex2D}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_model2_d_a4db21342e9d55f71533187abe31ea7fd}{get\+Local\+Vertices}} ()
+\begin{DoxyCompactList}\small\item\em Get the local vertices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A 2D model class that contains all the 2D meshes of the model. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_model2_d_a658bb35d846e392e6050120dfe4038a9}\label{class_hawk_engine_1_1_model2_d_a658bb35d846e392e6050120dfe4038a9}} 
+\index{HawkEngine::Model2D@{HawkEngine::Model2D}!Model2D@{Model2D}}
+\index{Model2D@{Model2D}!HawkEngine::Model2D@{HawkEngine::Model2D}}
+\doxysubsubsection{\texorpdfstring{Model2D()}{Model2D()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Model2\+D\+::\+Model2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model2_d_a658bb35d846e392e6050120dfe4038a9}{Model2\+D()}} \mbox{\Hypertarget{class_hawk_engine_1_1_model2_d_a821dc9aa5d3b9fb7ca20eb383e286b7b}\label{class_hawk_engine_1_1_model2_d_a821dc9aa5d3b9fb7ca20eb383e286b7b}} 
+\index{HawkEngine::Model2D@{HawkEngine::Model2D}!````~Model2D@{$\sim$Model2D}}
+\index{````~Model2D@{$\sim$Model2D}!HawkEngine::Model2D@{HawkEngine::Model2D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Model2D()}{~Model2D()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Model2\+D\+::$\sim$\+Model2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model2_d_a821dc9aa5d3b9fb7ca20eb383e286b7b}{$\sim$\+Model2\+D()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_model2_d_aac7f993df9a821fb1b02970d6cce88e2}\label{class_hawk_engine_1_1_model2_d_aac7f993df9a821fb1b02970d6cce88e2}} 
+\index{HawkEngine::Model2D@{HawkEngine::Model2D}!destroy@{destroy}}
+\index{destroy@{destroy}!HawkEngine::Model2D@{HawkEngine::Model2D}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Model2\+D\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destory the meshes. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model2_d_aac7f993df9a821fb1b02970d6cce88e2}{destroy()}} \mbox{\Hypertarget{class_hawk_engine_1_1_model2_d_af7efde333f6f900c4921ad57beac72fb}\label{class_hawk_engine_1_1_model2_d_af7efde333f6f900c4921ad57beac72fb}} 
+\index{HawkEngine::Model2D@{HawkEngine::Model2D}!editData@{editData}}
+\index{editData@{editData}!HawkEngine::Model2D@{HawkEngine::Model2D}}
+\doxysubsubsection{\texorpdfstring{editData()}{editData()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Model2\+D\+::edit\+Data (\begin{DoxyParamCaption}\item[{const void $\ast$}]{new\+Data,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const uint32\+\_\+t}]{offset }\end{DoxyParamCaption})}
+
+
+
+Edit the geometry and update the G\+PU. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model2_d_af7efde333f6f900c4921ad57beac72fb}{edit\+Data()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Data} & a const void$\ast$ -\/The vertices info \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the new data \\
+\hline
+{\em offset} & a const int32\+\_\+t -\/ The offset of where to place the new data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_model2_d_a4db21342e9d55f71533187abe31ea7fd}\label{class_hawk_engine_1_1_model2_d_a4db21342e9d55f71533187abe31ea7fd}} 
+\index{HawkEngine::Model2D@{HawkEngine::Model2D}!getLocalVertices@{getLocalVertices}}
+\index{getLocalVertices@{getLocalVertices}!HawkEngine::Model2D@{HawkEngine::Model2D}}
+\doxysubsubsection{\texorpdfstring{getLocalVertices()}{getLocalVertices()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex2_d}{Vertex2D}} $>$ \& Hawk\+Engine\+::\+Model2\+D\+::get\+Local\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the local vertices. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model2_d_a4db21342e9d55f71533187abe31ea7fd}{get\+Local\+Vertices()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Vertex2\+D$>$\& -\/ The local vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_model2_d_a01e234ced34609549bfcf432db808913}\label{class_hawk_engine_1_1_model2_d_a01e234ced34609549bfcf432db808913}} 
+\index{HawkEngine::Model2D@{HawkEngine::Model2D}!getMeshes@{getMeshes}}
+\index{getMeshes@{getMeshes}!HawkEngine::Model2D@{HawkEngine::Model2D}}
+\doxysubsubsection{\texorpdfstring{getMeshes()}{getMeshes()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mesh2_d}{Mesh2D}} $>$ $>$ \& Hawk\+Engine\+::\+Model2\+D\+::get\+Meshes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the list of meshes as a reference. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model2_d_a01e234ced34609549bfcf432db808913}{get\+Meshes()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$std\+::shared\+\_\+ptr$<$\+Mesh2\+D$>$$>$\& -\/ The reference to a vector of meshes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_model2_d_ae04426882ada0e3270b57bf8758f81e5}\label{class_hawk_engine_1_1_model2_d_ae04426882ada0e3270b57bf8758f81e5}} 
+\index{HawkEngine::Model2D@{HawkEngine::Model2D}!submitData@{submitData}}
+\index{submitData@{submitData}!HawkEngine::Model2D@{HawkEngine::Model2D}}
+\doxysubsubsection{\texorpdfstring{submitData()}{submitData()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Model2\+D\+::submit\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Submit the data to the buffers. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model2_d_ae04426882ada0e3270b57bf8758f81e5}{submit\+Data()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/geometry/\mbox{\hyperlink{model2_d_8h}{model2\+D.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/geometry/\mbox{\hyperlink{model2_d_8cpp}{model2\+D.\+cpp}}\end{DoxyCompactItemize}

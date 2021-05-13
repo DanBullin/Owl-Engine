@@ -1,0 +1,106 @@
+\hypertarget{class_hawk_engine_1_1_key_pressed_event}{}\doxysection{Hawk\+Engine\+::Key\+Pressed\+Event Class Reference}
+\label{class_hawk_engine_1_1_key_pressed_event}\index{HawkEngine::KeyPressedEvent@{HawkEngine::KeyPressedEvent}}
+
+
+A key pressed event.  
+
+
+
+
+{\ttfamily \#include $<$key\+Events.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Key\+Pressed\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_hawk_engine_1_1_key_pressed_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event_a7bdbb8922a568bdc76114c30e1a48f73}{Key\+Pressed\+Event}} (const int32\+\_\+t keycode, const int32\+\_\+t repeat\+Count)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+const int32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event_aaa1c3b4ca8f8897029df81fd37dcec69}{get\+Repeat\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Returns whether the event is a repeat. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} \mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event_a437cf1b19a9253e7718bbafc79d48785}{get\+Event\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the event type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} \mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event_a5c656e17cb870c33c6f7033358cfc448}{get\+Static\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Return static type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A key pressed event. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_key_pressed_event_a7bdbb8922a568bdc76114c30e1a48f73}\label{class_hawk_engine_1_1_key_pressed_event_a7bdbb8922a568bdc76114c30e1a48f73}} 
+\index{HawkEngine::KeyPressedEvent@{HawkEngine::KeyPressedEvent}!KeyPressedEvent@{KeyPressedEvent}}
+\index{KeyPressedEvent@{KeyPressedEvent}!HawkEngine::KeyPressedEvent@{HawkEngine::KeyPressedEvent}}
+\doxysubsubsection{\texorpdfstring{KeyPressedEvent()}{KeyPressedEvent()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Key\+Pressed\+Event\+::\+Key\+Pressed\+Event (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{keycode,  }\item[{const int32\+\_\+t}]{repeat\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keycode} & a const int32\+\_\+t -\/ The key involved in the event \\
+\hline
+{\em repeat\+Count} & a const int32\+\_\+t -\/ Is the key press a repeat event \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_key_pressed_event_a437cf1b19a9253e7718bbafc79d48785}\label{class_hawk_engine_1_1_key_pressed_event_a437cf1b19a9253e7718bbafc79d48785}} 
+\index{HawkEngine::KeyPressedEvent@{HawkEngine::KeyPressedEvent}!getEventType@{getEventType}}
+\index{getEventType@{getEventType}!HawkEngine::KeyPressedEvent@{HawkEngine::KeyPressedEvent}}
+\doxysubsubsection{\texorpdfstring{getEventType()}{getEventType()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} Hawk\+Engine\+::\+Key\+Pressed\+Event\+::get\+Event\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the event type. 
+
+\begin{DoxyReturn}{Returns}
+a const Event\+Type -\/ The key press event type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_event_a91937ccfa4271643d7b29bb3fe5416ac}{Hawk\+Engine\+::\+Event}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_key_pressed_event_aaa1c3b4ca8f8897029df81fd37dcec69}\label{class_hawk_engine_1_1_key_pressed_event_aaa1c3b4ca8f8897029df81fd37dcec69}} 
+\index{HawkEngine::KeyPressedEvent@{HawkEngine::KeyPressedEvent}!getRepeatCount@{getRepeatCount}}
+\index{getRepeatCount@{getRepeatCount}!HawkEngine::KeyPressedEvent@{HawkEngine::KeyPressedEvent}}
+\doxysubsubsection{\texorpdfstring{getRepeatCount()}{getRepeatCount()}}
+{\footnotesize\ttfamily const int32\+\_\+t Hawk\+Engine\+::\+Key\+Pressed\+Event\+::get\+Repeat\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns whether the event is a repeat. 
+
+\begin{DoxyReturn}{Returns}
+a const int32\+\_\+t -\/ The repeat count 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_key_pressed_event_a5c656e17cb870c33c6f7033358cfc448}\label{class_hawk_engine_1_1_key_pressed_event_a5c656e17cb870c33c6f7033358cfc448}} 
+\index{HawkEngine::KeyPressedEvent@{HawkEngine::KeyPressedEvent}!getStaticType@{getStaticType}}
+\index{getStaticType@{getStaticType}!HawkEngine::KeyPressedEvent@{HawkEngine::KeyPressedEvent}}
+\doxysubsubsection{\texorpdfstring{getStaticType()}{getStaticType()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} Hawk\+Engine\+::\+Key\+Pressed\+Event\+::get\+Static\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return static type. 
+
+\begin{DoxyReturn}{Returns}
+a const Event\+Type -\/ The static key press event type 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/events/\mbox{\hyperlink{key_events_8h}{key\+Events.\+h}}\end{DoxyCompactItemize}

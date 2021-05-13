@@ -1,0 +1,166 @@
+\hypertarget{class_owl_engine_1_1_open_g_l_texture2_d}{}\doxysection{Owl\+Engine\+::Open\+G\+L\+Texture2D Class Reference}
+\label{class_owl_engine_1_1_open_g_l_texture2_d}\index{OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}}
+
+
+An Open\+GL texture 2D object.  
+
+
+
+
+{\ttfamily \#include $<$open\+G\+L\+Texture.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Open\+G\+L\+Texture2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_owl_engine_1_1_open_g_l_texture2_d}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_a11ad16260f67dd9d8b5d59794ac4e7e2}{Open\+G\+L\+Texture2D}} (const std\+::string \&texture\+Name, const char $\ast$file\+Path, \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} \&properties)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_a23c218eb42ea7a6ca2bab178ecc9d353}{Open\+G\+L\+Texture2D}} (const std\+::string \&texture\+Name, const \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} \&properties, const uint32\+\_\+t channels, unsigned char $\ast$data)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_ab806e98b5534b57be1744320aeee8775}{$\sim$\+Open\+G\+L\+Texture2D}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_ad798b2106178fbfe1ef441dd1f069e51}{edit}} (const uint32\+\_\+t offsetX, const uint32\+\_\+t offsetY, const uint32\+\_\+t width, const uint32\+\_\+t height, const unsigned char $\ast$data) override
+\begin{DoxyCompactList}\small\item\em Edit the texture data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_afbdd356d838cd674ee545e198a4ec22c}{bind}} (const uint32\+\_\+t slot=0) override
+\begin{DoxyCompactList}\small\item\em Bind the texture to a texture unit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_aec886c3dfb50bd438186ae6386df614c}{print\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An Open\+GL texture 2D object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_texture2_d_a11ad16260f67dd9d8b5d59794ac4e7e2}\label{class_owl_engine_1_1_open_g_l_texture2_d_a11ad16260f67dd9d8b5d59794ac4e7e2}} 
+\index{OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}!OpenGLTexture2D@{OpenGLTexture2D}}
+\index{OpenGLTexture2D@{OpenGLTexture2D}!OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}}
+\doxysubsubsection{\texorpdfstring{OpenGLTexture2D()}{OpenGLTexture2D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Open\+G\+L\+Texture2\+D\+::\+Open\+G\+L\+Texture2D (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+Name,  }\item[{const char $\ast$}]{file\+Path,  }\item[{\mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} \&}]{properties }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_a11ad16260f67dd9d8b5d59794ac4e7e2}{Open\+G\+L\+Texture2\+D()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & a const std\+::string\& -\/ The name of the texture \\
+\hline
+{\em file\+Path} & a const char$\ast$ -\/ The filepath of the texture \\
+\hline
+{\em properties} & a \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}}\& -\/ A reference to the texture properties \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_texture2_d_a23c218eb42ea7a6ca2bab178ecc9d353}\label{class_owl_engine_1_1_open_g_l_texture2_d_a23c218eb42ea7a6ca2bab178ecc9d353}} 
+\index{OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}!OpenGLTexture2D@{OpenGLTexture2D}}
+\index{OpenGLTexture2D@{OpenGLTexture2D}!OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}}
+\doxysubsubsection{\texorpdfstring{OpenGLTexture2D()}{OpenGLTexture2D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Open\+G\+L\+Texture2\+D\+::\+Open\+G\+L\+Texture2D (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{texture\+Name,  }\item[{const \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}} \&}]{properties,  }\item[{const uint32\+\_\+t}]{channels,  }\item[{unsigned char $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_a11ad16260f67dd9d8b5d59794ac4e7e2}{Open\+G\+L\+Texture2\+D()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & a const std\+::string\& -\/ The name of the texture \\
+\hline
+{\em properties} & a const \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties}{Texture\+Properties}}\& -\/ A reference to the texture properties \\
+\hline
+{\em channels} & a const uint32\+\_\+t -\/ The number of channels of the data format \\
+\hline
+{\em data} & an unsigned char$\ast$ -\/ A pointer to the data to store \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_texture2_d_ab806e98b5534b57be1744320aeee8775}\label{class_owl_engine_1_1_open_g_l_texture2_d_ab806e98b5534b57be1744320aeee8775}} 
+\index{OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}!````~OpenGLTexture2D@{$\sim$OpenGLTexture2D}}
+\index{````~OpenGLTexture2D@{$\sim$OpenGLTexture2D}!OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}}
+\doxysubsubsection{\texorpdfstring{$\sim$OpenGLTexture2D()}{~OpenGLTexture2D()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Open\+G\+L\+Texture2\+D\+::$\sim$\+Open\+G\+L\+Texture2D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_ab806e98b5534b57be1744320aeee8775}{$\sim$\+Open\+G\+L\+Texture2\+D()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_texture2_d_afbdd356d838cd674ee545e198a4ec22c}\label{class_owl_engine_1_1_open_g_l_texture2_d_afbdd356d838cd674ee545e198a4ec22c}} 
+\index{OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}!bind@{bind}}
+\index{bind@{bind}!OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Texture2\+D\+::bind (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{slot = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Bind the texture to a texture unit. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_afbdd356d838cd674ee545e198a4ec22c}{bind()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & a const uint32\+\_\+t -\/ Bind the texture to texture unit \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a4baea917061646f81a9ff86d5b7ac186}{Owl\+Engine\+::\+Texture2D}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_texture2_d_ad798b2106178fbfe1ef441dd1f069e51}\label{class_owl_engine_1_1_open_g_l_texture2_d_ad798b2106178fbfe1ef441dd1f069e51}} 
+\index{OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}!edit@{edit}}
+\index{edit@{edit}!OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Texture2\+D\+::edit (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{offsetX,  }\item[{const uint32\+\_\+t}]{offsetY,  }\item[{const uint32\+\_\+t}]{width,  }\item[{const uint32\+\_\+t}]{height,  }\item[{const unsigned char $\ast$}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Edit the texture data. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_ad798b2106178fbfe1ef441dd1f069e51}{edit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em offsetX} & a const uint32\+\_\+t -\/ The x offset in memory to edit \\
+\hline
+{\em offsetY} & a const uint32\+\_\+t -\/ The y offset in memory to edit \\
+\hline
+{\em width} & a const uint32\+\_\+t -\/ The width of the texture \\
+\hline
+{\em height} & a const uint32\+\_\+t -\/ The height of the texture \\
+\hline
+{\em data} & a const unsigned char$\ast$ -\/ A pointer to the data to store \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_ac3f5a6b3dcb19082dcabb1c15753cb3f}{Owl\+Engine\+::\+Texture2D}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_texture2_d_aec886c3dfb50bd438186ae6386df614c}\label{class_owl_engine_1_1_open_g_l_texture2_d_aec886c3dfb50bd438186ae6386df614c}} 
+\index{OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}!printDetails@{printDetails}}
+\index{printDetails@{printDetails}!OwlEngine::OpenGLTexture2D@{OwlEngine::OpenGLTexture2D}}
+\doxysubsubsection{\texorpdfstring{printDetails()}{printDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Texture2\+D\+::print\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print the resource details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_texture2_d_aec886c3dfb50bd438186ae6386df614c}{print\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_texture2_d_a485f6c7863ccb44b5b7af0429dcc7418}{Owl\+Engine\+::\+Texture2D}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/platform/\+Open\+G\+L/textures/\mbox{\hyperlink{open_g_l_texture_8h}{open\+G\+L\+Texture.\+h}}\item 
+C\+:/doc/src/engine/src/platform/\+Open\+G\+L/textures/\mbox{\hyperlink{open_g_l_texture_8cpp}{open\+G\+L\+Texture.\+cpp}}\end{DoxyCompactItemize}

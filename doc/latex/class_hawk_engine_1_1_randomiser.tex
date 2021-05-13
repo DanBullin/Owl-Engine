@@ -1,0 +1,181 @@
+\hypertarget{class_hawk_engine_1_1_randomiser}{}\doxysection{Hawk\+Engine\+::Randomiser Class Reference}
+\label{class_hawk_engine_1_1_randomiser}\index{HawkEngine::Randomiser@{HawkEngine::Randomiser}}
+
+
+A random number generator class.  
+
+
+
+
+{\ttfamily \#include $<$randomiser.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Randomiser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_randomiser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_randomiser_a5f637374ac874a25f70b648c1c9df120}{start}} (\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}} init=System\+Signal\+::\+None,...) override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_randomiser_af7e0685ababd650c1648684234b90f58}{stop}} (\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}} close=System\+Signal\+::\+None,...) override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_randomiser_a5a4988f36286b019de9a152c9487e38d}{uniform\+Int\+Between}} (const int32\+\_\+t lower, const int32\+\_\+t upper)
+\begin{DoxyCompactList}\small\item\em Get an integer i such that lower $<$= i $<$= upper. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_hawk_engine_1_1_randomiser_a016d2128702c6311b03706812db20661}{uniform\+Float\+Between}} (const float lower, const float upper)
+\begin{DoxyCompactList}\small\item\em Get an float i such that lower $<$= i $<$= upper. \end{DoxyCompactList}\item 
+static int32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_randomiser_a076ba145357a30c4e7741c57041df527}{normal\+Int}} (const float c, const float sigma)
+\begin{DoxyCompactList}\small\item\em Get an int from the Gaussian distribution described by C and Sigma. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_hawk_engine_1_1_randomiser_a917896a1517a07557ed7d3d921030d5e}{normal\+Float}} (const float c, const float sigma)
+\begin{DoxyCompactList}\small\item\em Get a float from the Gaussian distribution described by C and Sigma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A random number generator class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_randomiser_a917896a1517a07557ed7d3d921030d5e}\label{class_hawk_engine_1_1_randomiser_a917896a1517a07557ed7d3d921030d5e}} 
+\index{HawkEngine::Randomiser@{HawkEngine::Randomiser}!normalFloat@{normalFloat}}
+\index{normalFloat@{normalFloat}!HawkEngine::Randomiser@{HawkEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{normalFloat()}{normalFloat()}}
+{\footnotesize\ttfamily float Hawk\+Engine\+::\+Randomiser\+::normal\+Float (\begin{DoxyParamCaption}\item[{const float}]{c,  }\item[{const float}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a float from the Gaussian distribution described by C and Sigma. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_randomiser_a917896a1517a07557ed7d3d921030d5e}{normal\+Float()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & a const float -\/ The mean \\
+\hline
+{\em sigma} & a const float -\/ Standard deviation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a float -\/ The generated number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_randomiser_a076ba145357a30c4e7741c57041df527}\label{class_hawk_engine_1_1_randomiser_a076ba145357a30c4e7741c57041df527}} 
+\index{HawkEngine::Randomiser@{HawkEngine::Randomiser}!normalInt@{normalInt}}
+\index{normalInt@{normalInt}!HawkEngine::Randomiser@{HawkEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{normalInt()}{normalInt()}}
+{\footnotesize\ttfamily int32\+\_\+t Hawk\+Engine\+::\+Randomiser\+::normal\+Int (\begin{DoxyParamCaption}\item[{const float}]{c,  }\item[{const float}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get an int from the Gaussian distribution described by C and Sigma. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_randomiser_a076ba145357a30c4e7741c57041df527}{normal\+Int()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & a const float -\/ The mean \\
+\hline
+{\em sigma} & a const float -\/ Standard deviation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int32\+\_\+t -\/ The generated number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_randomiser_a5f637374ac874a25f70b648c1c9df120}\label{class_hawk_engine_1_1_randomiser_a5f637374ac874a25f70b648c1c9df120}} 
+\index{HawkEngine::Randomiser@{HawkEngine::Randomiser}!start@{start}}
+\index{start@{start}!HawkEngine::Randomiser@{HawkEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Randomiser\+::start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}}}]{init = {\ttfamily SystemSignal\+:\+:None},  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_randomiser_a5f637374ac874a25f70b648c1c9df120}{start()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em init} & a System\+Signal -\/ A system signal \\
+\hline
+{\em ...} & -\/ Various parameters \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_system_a7b3de2e970b27a900583fa66c1063a6c}{Hawk\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_randomiser_af7e0685ababd650c1648684234b90f58}\label{class_hawk_engine_1_1_randomiser_af7e0685ababd650c1648684234b90f58}} 
+\index{HawkEngine::Randomiser@{HawkEngine::Randomiser}!stop@{stop}}
+\index{stop@{stop}!HawkEngine::Randomiser@{HawkEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Randomiser\+::stop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{system_8h_a705973ce4242e45e16902c688971d60b}{System\+Signal}}}]{close = {\ttfamily SystemSignal\+:\+:None},  }\item[{}]{... }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_randomiser_af7e0685ababd650c1648684234b90f58}{stop()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em close} & a System\+Signal -\/ A system signal \\
+\hline
+{\em ...} & -\/ Various parameters \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_system_a29d9ba02d3c28510f4ef02bc0fdfbb3b}{Hawk\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_randomiser_a016d2128702c6311b03706812db20661}\label{class_hawk_engine_1_1_randomiser_a016d2128702c6311b03706812db20661}} 
+\index{HawkEngine::Randomiser@{HawkEngine::Randomiser}!uniformFloatBetween@{uniformFloatBetween}}
+\index{uniformFloatBetween@{uniformFloatBetween}!HawkEngine::Randomiser@{HawkEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{uniformFloatBetween()}{uniformFloatBetween()}}
+{\footnotesize\ttfamily float Hawk\+Engine\+::\+Randomiser\+::uniform\+Float\+Between (\begin{DoxyParamCaption}\item[{const float}]{lower,  }\item[{const float}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get an float i such that lower $<$= i $<$= upper. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_randomiser_a016d2128702c6311b03706812db20661}{uniform\+Float\+Between()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower} & a const float -\/ The lowest number in range \\
+\hline
+{\em upper} & a const float -\/ The highest number in range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a float -\/ The generated number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_randomiser_a5a4988f36286b019de9a152c9487e38d}\label{class_hawk_engine_1_1_randomiser_a5a4988f36286b019de9a152c9487e38d}} 
+\index{HawkEngine::Randomiser@{HawkEngine::Randomiser}!uniformIntBetween@{uniformIntBetween}}
+\index{uniformIntBetween@{uniformIntBetween}!HawkEngine::Randomiser@{HawkEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{uniformIntBetween()}{uniformIntBetween()}}
+{\footnotesize\ttfamily int32\+\_\+t Hawk\+Engine\+::\+Randomiser\+::uniform\+Int\+Between (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{lower,  }\item[{const int32\+\_\+t}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get an integer i such that lower $<$= i $<$= upper. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_randomiser_a5a4988f36286b019de9a152c9487e38d}{uniform\+Int\+Between()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower} & a const int32\+\_\+t -\/ The lowest number in range \\
+\hline
+{\em upper} & a const int32\+\_\+t -\/ The highest number in range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int32\+\_\+t -\/ The generated number 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/systems/\mbox{\hyperlink{randomiser_8h}{randomiser.\+h}}\item 
+C\+:/doc/src/src/independent/systems/\mbox{\hyperlink{randomiser_8cpp}{randomiser.\+cpp}}\end{DoxyCompactItemize}

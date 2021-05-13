@@ -1,0 +1,190 @@
+\hypertarget{class_owl_engine_1_1_randomiser}{}\doxysection{Owl\+Engine\+::Randomiser Class Reference}
+\label{class_owl_engine_1_1_randomiser}\index{OwlEngine::Randomiser@{OwlEngine::Randomiser}}
+
+
+A random number generator class.  
+
+
+
+
+{\ttfamily \#include $<$randomiser.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Randomiser\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_randomiser}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_randomiser_a5a387ada2250d6d6fc4070e378ded740}{Randomiser}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_randomiser_af22fd40617ed2dd62ca1adf609fa0fac}{$\sim$\+Randomiser}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_randomiser_ae33c85d998618e99c584aefa2fb95d2a}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_randomiser_af3db665e3f14daefafc01f48b61a5d69}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_randomiser_a5638b2f63bfcf05232439a9869a5ca78}{uniform\+Int\+Between}} (const int32\+\_\+t lower, const int32\+\_\+t upper)
+\begin{DoxyCompactList}\small\item\em Get an integer i such that lower $<$= i $<$= upper. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_owl_engine_1_1_randomiser_a83e773045a443e3ec1153654665d06cb}{uniform\+Float\+Between}} (const float lower, const float upper)
+\begin{DoxyCompactList}\small\item\em Get an float i such that lower $<$= i $<$= upper. \end{DoxyCompactList}\item 
+static int32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_randomiser_a31acc848e5dbe3f3f7d7b8ac18530f36}{normal\+Int}} (const float c, const float sigma)
+\begin{DoxyCompactList}\small\item\em Get an int from the Gaussian distribution described by C and Sigma. \end{DoxyCompactList}\item 
+static float \mbox{\hyperlink{class_owl_engine_1_1_randomiser_aa9ec0028e234e575ce8934b83aa34681}{normal\+Float}} (const float c, const float sigma)
+\begin{DoxyCompactList}\small\item\em Get a float from the Gaussian distribution described by C and Sigma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A random number generator class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_randomiser_a5a387ada2250d6d6fc4070e378ded740}\label{class_owl_engine_1_1_randomiser_a5a387ada2250d6d6fc4070e378ded740}} 
+\index{OwlEngine::Randomiser@{OwlEngine::Randomiser}!Randomiser@{Randomiser}}
+\index{Randomiser@{Randomiser}!OwlEngine::Randomiser@{OwlEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{Randomiser()}{Randomiser()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Randomiser\+::\+Randomiser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_randomiser}{Randomiser}}. \mbox{\Hypertarget{class_owl_engine_1_1_randomiser_af22fd40617ed2dd62ca1adf609fa0fac}\label{class_owl_engine_1_1_randomiser_af22fd40617ed2dd62ca1adf609fa0fac}} 
+\index{OwlEngine::Randomiser@{OwlEngine::Randomiser}!````~Randomiser@{$\sim$Randomiser}}
+\index{````~Randomiser@{$\sim$Randomiser}!OwlEngine::Randomiser@{OwlEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{$\sim$Randomiser()}{~Randomiser()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Randomiser\+::$\sim$\+Randomiser (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_randomiser_af22fd40617ed2dd62ca1adf609fa0fac}{$\sim$\+Randomiser()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_randomiser_aa9ec0028e234e575ce8934b83aa34681}\label{class_owl_engine_1_1_randomiser_aa9ec0028e234e575ce8934b83aa34681}} 
+\index{OwlEngine::Randomiser@{OwlEngine::Randomiser}!normalFloat@{normalFloat}}
+\index{normalFloat@{normalFloat}!OwlEngine::Randomiser@{OwlEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{normalFloat()}{normalFloat()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Randomiser\+::normal\+Float (\begin{DoxyParamCaption}\item[{const float}]{c,  }\item[{const float}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a float from the Gaussian distribution described by C and Sigma. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_randomiser_aa9ec0028e234e575ce8934b83aa34681}{normal\+Float()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & a const float -\/ The mean \\
+\hline
+{\em sigma} & a const float -\/ Standard deviation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a float -\/ The generated number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_randomiser_a31acc848e5dbe3f3f7d7b8ac18530f36}\label{class_owl_engine_1_1_randomiser_a31acc848e5dbe3f3f7d7b8ac18530f36}} 
+\index{OwlEngine::Randomiser@{OwlEngine::Randomiser}!normalInt@{normalInt}}
+\index{normalInt@{normalInt}!OwlEngine::Randomiser@{OwlEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{normalInt()}{normalInt()}}
+{\footnotesize\ttfamily int32\+\_\+t Owl\+Engine\+::\+Randomiser\+::normal\+Int (\begin{DoxyParamCaption}\item[{const float}]{c,  }\item[{const float}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get an int from the Gaussian distribution described by C and Sigma. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_randomiser_a31acc848e5dbe3f3f7d7b8ac18530f36}{normal\+Int()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & a const float -\/ The mean \\
+\hline
+{\em sigma} & a const float -\/ Standard deviation \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int32\+\_\+t -\/ The generated number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_randomiser_ae33c85d998618e99c584aefa2fb95d2a}\label{class_owl_engine_1_1_randomiser_ae33c85d998618e99c584aefa2fb95d2a}} 
+\index{OwlEngine::Randomiser@{OwlEngine::Randomiser}!start@{start}}
+\index{start@{start}!OwlEngine::Randomiser@{OwlEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Randomiser\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_randomiser_ae33c85d998618e99c584aefa2fb95d2a}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_randomiser_af3db665e3f14daefafc01f48b61a5d69}\label{class_owl_engine_1_1_randomiser_af3db665e3f14daefafc01f48b61a5d69}} 
+\index{OwlEngine::Randomiser@{OwlEngine::Randomiser}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::Randomiser@{OwlEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Randomiser\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_randomiser_af3db665e3f14daefafc01f48b61a5d69}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_randomiser_a83e773045a443e3ec1153654665d06cb}\label{class_owl_engine_1_1_randomiser_a83e773045a443e3ec1153654665d06cb}} 
+\index{OwlEngine::Randomiser@{OwlEngine::Randomiser}!uniformFloatBetween@{uniformFloatBetween}}
+\index{uniformFloatBetween@{uniformFloatBetween}!OwlEngine::Randomiser@{OwlEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{uniformFloatBetween()}{uniformFloatBetween()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Randomiser\+::uniform\+Float\+Between (\begin{DoxyParamCaption}\item[{const float}]{lower,  }\item[{const float}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get an float i such that lower $<$= i $<$= upper. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_randomiser_a83e773045a443e3ec1153654665d06cb}{uniform\+Float\+Between()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower} & a const float -\/ The lowest number in range \\
+\hline
+{\em upper} & a const float -\/ The highest number in range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a float -\/ The generated number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_randomiser_a5638b2f63bfcf05232439a9869a5ca78}\label{class_owl_engine_1_1_randomiser_a5638b2f63bfcf05232439a9869a5ca78}} 
+\index{OwlEngine::Randomiser@{OwlEngine::Randomiser}!uniformIntBetween@{uniformIntBetween}}
+\index{uniformIntBetween@{uniformIntBetween}!OwlEngine::Randomiser@{OwlEngine::Randomiser}}
+\doxysubsubsection{\texorpdfstring{uniformIntBetween()}{uniformIntBetween()}}
+{\footnotesize\ttfamily int32\+\_\+t Owl\+Engine\+::\+Randomiser\+::uniform\+Int\+Between (\begin{DoxyParamCaption}\item[{const int32\+\_\+t}]{lower,  }\item[{const int32\+\_\+t}]{upper }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get an integer i such that lower $<$= i $<$= upper. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_randomiser_a5638b2f63bfcf05232439a9869a5ca78}{uniform\+Int\+Between()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em lower} & a const int32\+\_\+t -\/ The lowest number in range \\
+\hline
+{\em upper} & a const int32\+\_\+t -\/ The highest number in range \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int32\+\_\+t -\/ The generated number 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{randomiser_8h}{randomiser.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{randomiser_8cpp}{randomiser.\+cpp}}\end{DoxyCompactItemize}

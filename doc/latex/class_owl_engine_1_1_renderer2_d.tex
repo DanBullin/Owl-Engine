@@ -1,0 +1,173 @@
+\hypertarget{class_owl_engine_1_1_renderer2_d}{}\doxysection{Owl\+Engine\+::Renderer2D Class Reference}
+\label{class_owl_engine_1_1_renderer2_d}\index{OwlEngine::Renderer2D@{OwlEngine::Renderer2D}}
+
+
+A static class which renders 2D geometry (Batched)  
+
+
+
+
+{\ttfamily \#include $<$renderer2\+D.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_a6fe70c3696f1b8328f919adc536b2494}{initialise}} (const uint32\+\_\+t batch\+Capacity)
+\begin{DoxyCompactList}\small\item\em Initialise the renderer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_ace7fef3854a52ccf4d47a41b53e53573}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Begin a new 2D scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_abdeda1f9d82d77ea2d22c75ea51872d8}{submit}} (\mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$shader\+Program, const std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$ $>$ \&sub\+Textures, const glm\+::mat4 \&model\+Matrix, const glm\+::vec4 \&tint)
+\begin{DoxyCompactList}\small\item\em Submit a 2D entity. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_a5e5e76ed3df3c3bbf9c405d40d5cc127}{submit\+Text}} (\mbox{\hyperlink{class_owl_engine_1_1_text}{Text}} $\ast$text, const glm\+::mat4 \&model\+Matrix)
+\begin{DoxyCompactList}\small\item\em Submit text to renderer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_ac801ecf8d6bd96df77a8204a53e39f87}{submit\+Text}} (const std\+::string \&text, const std\+::string \&font\+Name, const glm\+::vec4 \&tint, const glm\+::mat4 \&model\+Matrix)
+\begin{DoxyCompactList}\small\item\em Submit text to renderer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_ae2370ecd158f51337c497116d46b55d0}{end}} ()
+\begin{DoxyCompactList}\small\item\em End the 2D scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_aff54eb75211608692dafb8c185c5ff86}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all internal data. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_a1537bc03b4ad6bf6086209ae58e48a05}{set\+Texture\+Unit\+Manager}} (\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $\ast$\&unit\+Manager, const std\+::array$<$ int32\+\_\+t, 16 $>$ \&unit)
+\begin{DoxyCompactList}\small\item\em Set the texture unit manager and units to use. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A static class which renders 2D geometry (Batched) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_renderer2_d_ace7fef3854a52ccf4d47a41b53e53573}\label{class_owl_engine_1_1_renderer2_d_ace7fef3854a52ccf4d47a41b53e53573}} 
+\index{OwlEngine::Renderer2D@{OwlEngine::Renderer2D}!begin@{begin}}
+\index{begin@{begin}!OwlEngine::Renderer2D@{OwlEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer2\+D\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Begin a new 2D scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_ace7fef3854a52ccf4d47a41b53e53573}{begin()}} \mbox{\Hypertarget{class_owl_engine_1_1_renderer2_d_aff54eb75211608692dafb8c185c5ff86}\label{class_owl_engine_1_1_renderer2_d_aff54eb75211608692dafb8c185c5ff86}} 
+\index{OwlEngine::Renderer2D@{OwlEngine::Renderer2D}!destroy@{destroy}}
+\index{destroy@{destroy}!OwlEngine::Renderer2D@{OwlEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer2\+D\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all internal data. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_aff54eb75211608692dafb8c185c5ff86}{destroy()}} \mbox{\Hypertarget{class_owl_engine_1_1_renderer2_d_ae2370ecd158f51337c497116d46b55d0}\label{class_owl_engine_1_1_renderer2_d_ae2370ecd158f51337c497116d46b55d0}} 
+\index{OwlEngine::Renderer2D@{OwlEngine::Renderer2D}!end@{end}}
+\index{end@{end}!OwlEngine::Renderer2D@{OwlEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer2\+D\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+End the 2D scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_ae2370ecd158f51337c497116d46b55d0}{end()}} \mbox{\Hypertarget{class_owl_engine_1_1_renderer2_d_a6fe70c3696f1b8328f919adc536b2494}\label{class_owl_engine_1_1_renderer2_d_a6fe70c3696f1b8328f919adc536b2494}} 
+\index{OwlEngine::Renderer2D@{OwlEngine::Renderer2D}!initialise@{initialise}}
+\index{initialise@{initialise}!OwlEngine::Renderer2D@{OwlEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{initialise()}{initialise()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer2\+D\+::initialise (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{batch\+Capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initialise the renderer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_a6fe70c3696f1b8328f919adc536b2494}{initialise()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+Capacity} & a const uint32\+\_\+t -\/ The total number of 2D geometry submissions before a flush occurs \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_renderer2_d_a1537bc03b4ad6bf6086209ae58e48a05}\label{class_owl_engine_1_1_renderer2_d_a1537bc03b4ad6bf6086209ae58e48a05}} 
+\index{OwlEngine::Renderer2D@{OwlEngine::Renderer2D}!setTextureUnitManager@{setTextureUnitManager}}
+\index{setTextureUnitManager@{setTextureUnitManager}!OwlEngine::Renderer2D@{OwlEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{setTextureUnitManager()}{setTextureUnitManager()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer2\+D\+::set\+Texture\+Unit\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $\ast$\&}]{unit\+Manager,  }\item[{const std\+::array$<$ int32\+\_\+t, 16 $>$ \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the texture unit manager and units to use. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_a1537bc03b4ad6bf6086209ae58e48a05}{set\+Texture\+Unit\+Manager()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit\+Manager} & a Texture\+Unit\+Manager$\ast$\& -\/ A reference to the texture unit manager \\
+\hline
+{\em unit} & a const std\+::array$<$int32\+\_\+t, 16$>$\& -\/ A reference to the array of units \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_renderer2_d_abdeda1f9d82d77ea2d22c75ea51872d8}\label{class_owl_engine_1_1_renderer2_d_abdeda1f9d82d77ea2d22c75ea51872d8}} 
+\index{OwlEngine::Renderer2D@{OwlEngine::Renderer2D}!submit@{submit}}
+\index{submit@{submit}!OwlEngine::Renderer2D@{OwlEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer2\+D\+::submit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$}]{shader\+Program,  }\item[{const std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$ $>$ \&}]{sub\+Textures,  }\item[{const glm\+::mat4 \&}]{model\+Matrix,  }\item[{const glm\+::vec4 \&}]{tint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Submit a 2D entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_abdeda1f9d82d77ea2d22c75ea51872d8}{submit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader\+Program} & a Shader\+Program$\ast$ -\/ A pointer to the shader program \\
+\hline
+{\em sub\+Textures} & a const std\+::vector$<$\+Sub\+Texture$\ast$$>$\& -\/ A list of subtextures \\
+\hline
+{\em model\+Matrix} & a const glm\+::mat4\& -\/ A model matrix \\
+\hline
+{\em tint} & a const glm\+::vec4\& -\/ The tint to apply \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_renderer2_d_ac801ecf8d6bd96df77a8204a53e39f87}\label{class_owl_engine_1_1_renderer2_d_ac801ecf8d6bd96df77a8204a53e39f87}} 
+\index{OwlEngine::Renderer2D@{OwlEngine::Renderer2D}!submitText@{submitText}}
+\index{submitText@{submitText}!OwlEngine::Renderer2D@{OwlEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{submitText()}{submitText()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer2\+D\+::submit\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text,  }\item[{const std\+::string \&}]{font\+Name,  }\item[{const glm\+::vec4 \&}]{tint,  }\item[{const glm\+::mat4 \&}]{model\+Matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Submit text to renderer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_a5e5e76ed3df3c3bbf9c405d40d5cc127}{submit\+Text()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a const std\+::string\& -\/ The text to render \\
+\hline
+{\em font\+Name} & a const std\+::string\& -\/ The font to use \\
+\hline
+{\em tint} & a const glm\+::vec4\& -\/ The colour of the text \\
+\hline
+{\em model\+Matrix} & a const glm\+::mat4\& -\/ A model matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_renderer2_d_a5e5e76ed3df3c3bbf9c405d40d5cc127}\label{class_owl_engine_1_1_renderer2_d_a5e5e76ed3df3c3bbf9c405d40d5cc127}} 
+\index{OwlEngine::Renderer2D@{OwlEngine::Renderer2D}!submitText@{submitText}}
+\index{submitText@{submitText}!OwlEngine::Renderer2D@{OwlEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{submitText()}{submitText()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer2\+D\+::submit\+Text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_text}{Text}} $\ast$}]{text,  }\item[{const glm\+::mat4 \&}]{model\+Matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Submit text to renderer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer2_d_a5e5e76ed3df3c3bbf9c405d40d5cc127}{submit\+Text()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & a Text$\ast$ -\/ A pointer to some text \\
+\hline
+{\em model\+Matrix} & a const glm\+::mat4\& -\/ A model matrix \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/renderers/\mbox{\hyperlink{renderer2_d_8h}{renderer2\+D.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/renderers/\mbox{\hyperlink{renderer2_d_8cpp}{renderer2\+D.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,196 @@
+\hypertarget{class_ladder}{}\doxysection{Ladder Class Reference}
+\label{class_ladder}\index{Ladder@{Ladder}}
+
+
+A cyborg script.  
+
+
+
+
+{\ttfamily \#include $<$ladder.\+h$>$}
+
+Inheritance diagram for Ladder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_ladder}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ladder_a0876eea0b419ff1b91961c3f676b2678}{Ladder}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ladder_a758d7772e9b08b11a47d9bae2e963a4f}{Ladder}} (nlohmann\+::json script\+Data)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_ladder_a45d1ea13037acf72a49d51710963fef8}{$\sim$\+Ladder}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ladder_a52caa947bfd603e2160a630525f9e2b5}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em On Attach. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ladder_a48d920f8b0bc37809587064567a758af}{on\+Post\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call after game update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ladder_aa0919ddd57b6a9189b87af3b4f05e63f}{on\+Pre\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call after game update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ladder_af851d3a04cf8fdde3b5f63253c90747b}{on\+Key\+Release}} (\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&e, const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call upon key release. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_ladder_a454cd2c6692fe1fcde43b548e9a06418}\label{class_ladder_a454cd2c6692fe1fcde43b548e9a06418}} 
+void \mbox{\hyperlink{class_ladder_a454cd2c6692fe1fcde43b548e9a06418}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the door. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_ladder_a9dea0bb7a2081f53aff629281f22804e}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the script in J\+S\+ON format. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_ladder_a43f77d62d43cbd4869605128881ff480}{display\+Im\+Gui}} ()
+\begin{DoxyCompactList}\small\item\em The Im\+G\+UI display controls for this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A cyborg script. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_ladder_a0876eea0b419ff1b91961c3f676b2678}\label{class_ladder_a0876eea0b419ff1b91961c3f676b2678}} 
+\index{Ladder@{Ladder}!Ladder@{Ladder}}
+\index{Ladder@{Ladder}!Ladder@{Ladder}}
+\doxysubsubsection{\texorpdfstring{Ladder()}{Ladder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ladder\+::\+Ladder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_ladder_a0876eea0b419ff1b91961c3f676b2678}{Ladder()}} \mbox{\Hypertarget{class_ladder_a758d7772e9b08b11a47d9bae2e963a4f}\label{class_ladder_a758d7772e9b08b11a47d9bae2e963a4f}} 
+\index{Ladder@{Ladder}!Ladder@{Ladder}}
+\index{Ladder@{Ladder}!Ladder@{Ladder}}
+\doxysubsubsection{\texorpdfstring{Ladder()}{Ladder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ladder\+::\+Ladder (\begin{DoxyParamCaption}\item[{nlohmann\+::json}]{script\+Data }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_ladder_a0876eea0b419ff1b91961c3f676b2678}{Ladder()}} \mbox{\Hypertarget{class_ladder_a45d1ea13037acf72a49d51710963fef8}\label{class_ladder_a45d1ea13037acf72a49d51710963fef8}} 
+\index{Ladder@{Ladder}!````~Ladder@{$\sim$Ladder}}
+\index{````~Ladder@{$\sim$Ladder}!Ladder@{Ladder}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ladder()}{~Ladder()}}
+{\footnotesize\ttfamily Ladder\+::$\sim$\+Ladder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+$\sim$\+Door\+Lock() 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_ladder_a43f77d62d43cbd4869605128881ff480}\label{class_ladder_a43f77d62d43cbd4869605128881ff480}} 
+\index{Ladder@{Ladder}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!Ladder@{Ladder}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Ladder\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The Im\+G\+UI display controls for this component. 
+
+display\+Im\+Gui 
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a04032a08abd5b84edd8e5dbffbe61971}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_ladder_a9dea0bb7a2081f53aff629281f22804e}\label{class_ladder_a9dea0bb7a2081f53aff629281f22804e}} 
+\index{Ladder@{Ladder}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!Ladder@{Ladder}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Ladder\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the script in J\+S\+ON format. 
+
+\mbox{\hyperlink{class_ladder_a9dea0bb7a2081f53aff629281f22804e}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_afef9fb697bf3388f97afdf2b580ebe74}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_ladder_a52caa947bfd603e2160a630525f9e2b5}\label{class_ladder_a52caa947bfd603e2160a630525f9e2b5}} 
+\index{Ladder@{Ladder}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!Ladder@{Ladder}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Ladder\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+On Attach. 
+
+\mbox{\hyperlink{class_ladder_a52caa947bfd603e2160a630525f9e2b5}{on\+Attach()}} 
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a84d0903c0ac9ffc6d49d8df17eab6f5b}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_ladder_af851d3a04cf8fdde3b5f63253c90747b}\label{class_ladder_af851d3a04cf8fdde3b5f63253c90747b}} 
+\index{Ladder@{Ladder}!onKeyRelease@{onKeyRelease}}
+\index{onKeyRelease@{onKeyRelease}!Ladder@{Ladder}}
+\doxysubsubsection{\texorpdfstring{onKeyRelease()}{onKeyRelease()}}
+{\footnotesize\ttfamily void Ladder\+::on\+Key\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&}]{e,  }\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call upon key release. 
+
+\mbox{\hyperlink{class_ladder_af851d3a04cf8fdde3b5f63253c90747b}{on\+Key\+Release()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a Key\+Released\+Event\& -\/ A key release event \\
+\hline
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_ace18af6d23ccff4d34b8624a5b7657b1}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_ladder_a48d920f8b0bc37809587064567a758af}\label{class_ladder_a48d920f8b0bc37809587064567a758af}} 
+\index{Ladder@{Ladder}!onPostUpdate@{onPostUpdate}}
+\index{onPostUpdate@{onPostUpdate}!Ladder@{Ladder}}
+\doxysubsubsection{\texorpdfstring{onPostUpdate()}{onPostUpdate()}}
+{\footnotesize\ttfamily void Ladder\+::on\+Post\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call after game update. 
+
+\mbox{\hyperlink{class_ladder_a48d920f8b0bc37809587064567a758af}{on\+Post\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a72322920d1ad5b3fa18efe237b68ebef}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_ladder_aa0919ddd57b6a9189b87af3b4f05e63f}\label{class_ladder_aa0919ddd57b6a9189b87af3b4f05e63f}} 
+\index{Ladder@{Ladder}!onPreUpdate@{onPreUpdate}}
+\index{onPreUpdate@{onPreUpdate}!Ladder@{Ladder}}
+\doxysubsubsection{\texorpdfstring{onPreUpdate()}{onPreUpdate()}}
+{\footnotesize\ttfamily void Ladder\+::on\+Pre\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call after game update. 
+
+$<$ Exit the scene!
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a2701d4b32ce0be26b5da26929ccb1e07}{Owl\+Engine\+::\+Native\+Script}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/sandbox/include/scripts/game\+Objects/\mbox{\hyperlink{ladder_8h}{ladder.\+h}}\item 
+C\+:/doc/src/sandbox/src/scripts/game\+Objects/ladder.\+cpp\end{DoxyCompactItemize}

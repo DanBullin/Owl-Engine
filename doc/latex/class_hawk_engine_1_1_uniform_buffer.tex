@@ -1,0 +1,87 @@
+\hypertarget{class_hawk_engine_1_1_uniform_buffer}{}\doxysection{Hawk\+Engine\+::Uniform\+Buffer Class Reference}
+\label{class_hawk_engine_1_1_uniform_buffer}\index{HawkEngine::UniformBuffer@{HawkEngine::UniformBuffer}}
+
+
+An A\+PI agnostic uniform buffer object holding data to be sent to shader programs.  
+
+
+
+
+{\ttfamily \#include $<$uniform\+Buffer.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Uniform\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_uniform_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_uniform_buffer_a5a1668ad4884492562426f597d7dd285}\label{class_hawk_engine_1_1_uniform_buffer_a5a1668ad4884492562426f597d7dd285}} 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_a5a1668ad4884492562426f597d7dd285}{$\sim$\+Uniform\+Buffer}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_uniform_buffer_a97d9e99b8d4770f6bc78314ca382d912}\label{class_hawk_engine_1_1_uniform_buffer_a97d9e99b8d4770f6bc78314ca382d912}} 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_a97d9e99b8d4770f6bc78314ca382d912}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the uniform buffer id. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_uniform_buffer_afabab1339400e6cc974b3d513a6ad82f}\label{class_hawk_engine_1_1_uniform_buffer_afabab1339400e6cc974b3d513a6ad82f}} 
+virtual \mbox{\hyperlink{buffer_layout_8h_ac954825a02ac07e6f7caa2404de01a76}{Uniform\+Buffer\+Layout}} \& \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_afabab1339400e6cc974b3d513a6ad82f}{get\+Uniform\+Layout}} ()
+\begin{DoxyCompactList}\small\item\em Get the uniform buffer layout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_uniform_buffer_ae5591acad8de7d9ae4a43550071dd1b5}\label{class_hawk_engine_1_1_uniform_buffer_ae5591acad8de7d9ae4a43550071dd1b5}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_ae5591acad8de7d9ae4a43550071dd1b5}{attach\+Shader\+Block}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_shader_program}{Shader\+Program}} $>$ \&shader, const char $\ast$block\+Name)=0
+\begin{DoxyCompactList}\small\item\em Attach the shader block. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_uniform_buffer_ac63b08e2eddabb36aa1a9769097e80e4}\label{class_hawk_engine_1_1_uniform_buffer_ac63b08e2eddabb36aa1a9769097e80e4}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_ac63b08e2eddabb36aa1a9769097e80e4}{upload\+Data}} (const char $\ast$uniform\+Name, void $\ast$data)=0
+\begin{DoxyCompactList}\small\item\em Upload the data to the G\+PU. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer}{Uniform\+Buffer}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_a784b08b12f170efdbfca8d26fe538859}{create}} (const \mbox{\hyperlink{buffer_layout_8h_ac954825a02ac07e6f7caa2404de01a76}{Uniform\+Buffer\+Layout}} \&layout)
+\begin{DoxyCompactList}\small\item\em Create a vertex buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_uniform_buffer_ad7601f7d9c18f47ef6c6653bea8fb3ce}\label{class_hawk_engine_1_1_uniform_buffer_ad7601f7d9c18f47ef6c6653bea8fb3ce}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_ad7601f7d9c18f47ef6c6653bea8fb3ce}{m\+\_\+buffer\+ID}}
+\begin{DoxyCompactList}\small\item\em The buffer ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_uniform_buffer_a771eb2d39f8e7535e6bb3ac5e23660b8}\label{class_hawk_engine_1_1_uniform_buffer_a771eb2d39f8e7535e6bb3ac5e23660b8}} 
+\mbox{\hyperlink{buffer_layout_8h_ac954825a02ac07e6f7caa2404de01a76}{Uniform\+Buffer\+Layout}} \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_a771eb2d39f8e7535e6bb3ac5e23660b8}{m\+\_\+layout}}
+\begin{DoxyCompactList}\small\item\em Uniform buffer layout. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_uniform_buffer_a713b32ca8621965afbdaa9dd1d4b3cee}\label{class_hawk_engine_1_1_uniform_buffer_a713b32ca8621965afbdaa9dd1d4b3cee}} 
+std\+::unordered\+\_\+map$<$ const char $\ast$, std\+::pair$<$ uint32\+\_\+t, uint32\+\_\+t $>$ $>$ \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_a713b32ca8621965afbdaa9dd1d4b3cee}{m\+\_\+uniform\+Cache}}
+\begin{DoxyCompactList}\small\item\em Stores uniform names with offsets and sizes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_uniform_buffer_a59ffd07c8551a4336964d93fba1976dd}\label{class_hawk_engine_1_1_uniform_buffer_a59ffd07c8551a4336964d93fba1976dd}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_a59ffd07c8551a4336964d93fba1976dd}{m\+\_\+block\+Number}}
+\begin{DoxyCompactList}\small\item\em Block number for this U\+BO. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic uniform buffer object holding data to be sent to shader programs. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_uniform_buffer_a784b08b12f170efdbfca8d26fe538859}\label{class_hawk_engine_1_1_uniform_buffer_a784b08b12f170efdbfca8d26fe538859}} 
+\index{HawkEngine::UniformBuffer@{HawkEngine::UniformBuffer}!create@{create}}
+\index{create@{create}!HawkEngine::UniformBuffer@{HawkEngine::UniformBuffer}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer}{Uniform\+Buffer}} $\ast$ Hawk\+Engine\+::\+Uniform\+Buffer\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{buffer_layout_8h_ac954825a02ac07e6f7caa2404de01a76}{Uniform\+Buffer\+Layout}} \&}]{layout }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a vertex buffer. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer_a784b08b12f170efdbfca8d26fe538859}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em layout} & a const Uniform\+Buffer\+Layout\& -\/ The uniform buffer layout \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Uniform\+Buffer$\ast$ -\/ The vertex buffer based on the current graphics A\+PI 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/\mbox{\hyperlink{uniform_buffer_8h}{uniform\+Buffer.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/\mbox{\hyperlink{uniform_buffer_8cpp}{uniform\+Buffer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,89 @@
+\hypertarget{class_owl_engine_1_1_physics_event_listener}{}\doxysection{Owl\+Engine\+::Physics\+Event\+Listener Class Reference}
+\label{class_owl_engine_1_1_physics_event_listener}\index{OwlEngine::PhysicsEventListener@{OwlEngine::PhysicsEventListener}}
+
+
+An event listener used to handle physics body collisions.  
+
+
+
+
+{\ttfamily \#include $<$physics\+System.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Physics\+Event\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_physics_event_listener}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_physics_event_listener_a4aac5425f2a67d5d9edb5c17279c7bf1}{set\+Current\+Scene}} (\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$scene)
+\begin{DoxyCompactList}\small\item\em Set the currently active scene. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_physics_event_listener_a13527155c91261df472f8edccbb30d4b}{on\+Contact}} (const Collision\+Callback\+::\+Callback\+Data \&callback\+Data) override
+\begin{DoxyCompactList}\small\item\em Occurs when two collider objects collide with each other. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_physics_event_listener_ade99a90fc82ecf0b1740928d51ec16b8}{on\+Trigger}} (const rp3d\+::\+Overlap\+Callback\+::\+Callback\+Data \&callback\+Data) override
+\begin{DoxyCompactList}\small\item\em Occurs when a trigger passes through a collider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An event listener used to handle physics body collisions. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_event_listener_a13527155c91261df472f8edccbb30d4b}\label{class_owl_engine_1_1_physics_event_listener_a13527155c91261df472f8edccbb30d4b}} 
+\index{OwlEngine::PhysicsEventListener@{OwlEngine::PhysicsEventListener}!onContact@{onContact}}
+\index{onContact@{onContact}!OwlEngine::PhysicsEventListener@{OwlEngine::PhysicsEventListener}}
+\doxysubsubsection{\texorpdfstring{onContact()}{onContact()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Physics\+Event\+Listener\+::on\+Contact (\begin{DoxyParamCaption}\item[{const Collision\+Callback\+::\+Callback\+Data \&}]{callback\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when two collider objects collide with each other. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_event_listener_a13527155c91261df472f8edccbb30d4b}{on\+Contact()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback\+Data} & a const Collision\+Callback\+::\+Callback\+Data\& -\/ Callback data for the collision \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_event_listener_ade99a90fc82ecf0b1740928d51ec16b8}\label{class_owl_engine_1_1_physics_event_listener_ade99a90fc82ecf0b1740928d51ec16b8}} 
+\index{OwlEngine::PhysicsEventListener@{OwlEngine::PhysicsEventListener}!onTrigger@{onTrigger}}
+\index{onTrigger@{onTrigger}!OwlEngine::PhysicsEventListener@{OwlEngine::PhysicsEventListener}}
+\doxysubsubsection{\texorpdfstring{onTrigger()}{onTrigger()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Physics\+Event\+Listener\+::on\+Trigger (\begin{DoxyParamCaption}\item[{const rp3d\+::\+Overlap\+Callback\+::\+Callback\+Data \&}]{callback\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when a trigger passes through a collider. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_event_listener_ade99a90fc82ecf0b1740928d51ec16b8}{on\+Trigger()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em callback\+Data} & a const rp3d\+::\+Overlap\+Callback\+::\+Callback\+Data\& -\/ Callback data for the overlap \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_event_listener_a4aac5425f2a67d5d9edb5c17279c7bf1}\label{class_owl_engine_1_1_physics_event_listener_a4aac5425f2a67d5d9edb5c17279c7bf1}} 
+\index{OwlEngine::PhysicsEventListener@{OwlEngine::PhysicsEventListener}!setCurrentScene@{setCurrentScene}}
+\index{setCurrentScene@{setCurrentScene}!OwlEngine::PhysicsEventListener@{OwlEngine::PhysicsEventListener}}
+\doxysubsubsection{\texorpdfstring{setCurrentScene()}{setCurrentScene()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Physics\+Event\+Listener\+::set\+Current\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+
+
+Set the currently active scene. 
+
+set\+Current\+Scene
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & a Scene$\ast$ -\/ The currently active scene \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{physics_system_8h}{physics\+System.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{physics_system_8cpp}{physics\+System.\+cpp}}\end{DoxyCompactItemize}

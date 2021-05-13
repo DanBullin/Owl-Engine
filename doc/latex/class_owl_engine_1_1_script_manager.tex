@@ -1,0 +1,168 @@
+\hypertarget{class_owl_engine_1_1_script_manager}{}\doxysection{Owl\+Engine\+::Script\+Manager Class Reference}
+\label{class_owl_engine_1_1_script_manager}\index{OwlEngine::ScriptManager@{OwlEngine::ScriptManager}}
+
+
+A manager class which manages scripts.  
+
+
+
+
+{\ttfamily \#include $<$script\+Manager.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Script\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_script_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_script_manager_a6db85a4297961939a3b67cfc93bd0806}{Script\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_script_manager_a569ea8dfa1aa9854eedc5c73687a05c8}{$\sim$\+Script\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_script_manager_a4a48fd9f571d9f82dded70cd738f8c19}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_script_manager_a7558b6829450416b80175b5ae084a55f}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_script_manager_a153c5e54d8bded65631f617c6eb359a3}{add\+Script}} (const std\+::string \&script\+Name)
+\begin{DoxyCompactList}\small\item\em Add a script name to the manager. \end{DoxyCompactList}\item 
+static const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_script_manager_acac879ee041dd725f6f0e1930d98c636}{get\+Script\+Names}} ()
+\begin{DoxyCompactList}\small\item\em Get the script names. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_script_manager_a38544c70961d818af9237258451f7c0b}{set\+New\+Script\+Callback}} (std\+::function$<$ \mbox{\hyperlink{class_owl_engine_1_1_native_script}{Native\+Script}} $\ast$(std\+::string, nlohmann\+::json)$>$ func)
+\begin{DoxyCompactList}\small\item\em Set the callback function when adding new scripts. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_native_script}{Native\+Script}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_script_manager_a5ef6876b77ab904b8c33568f419cb27d}{create\+New\+Script}} (const std\+::string \&script\+Name)
+\begin{DoxyCompactList}\small\item\em Create a new script using the callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A manager class which manages scripts. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_script_manager_a6db85a4297961939a3b67cfc93bd0806}\label{class_owl_engine_1_1_script_manager_a6db85a4297961939a3b67cfc93bd0806}} 
+\index{OwlEngine::ScriptManager@{OwlEngine::ScriptManager}!ScriptManager@{ScriptManager}}
+\index{ScriptManager@{ScriptManager}!OwlEngine::ScriptManager@{OwlEngine::ScriptManager}}
+\doxysubsubsection{\texorpdfstring{ScriptManager()}{ScriptManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Script\+Manager\+::\+Script\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Scene\+Manager() \mbox{\Hypertarget{class_owl_engine_1_1_script_manager_a569ea8dfa1aa9854eedc5c73687a05c8}\label{class_owl_engine_1_1_script_manager_a569ea8dfa1aa9854eedc5c73687a05c8}} 
+\index{OwlEngine::ScriptManager@{OwlEngine::ScriptManager}!````~ScriptManager@{$\sim$ScriptManager}}
+\index{````~ScriptManager@{$\sim$ScriptManager}!OwlEngine::ScriptManager@{OwlEngine::ScriptManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$ScriptManager()}{~ScriptManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Script\+Manager\+::$\sim$\+Script\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+$\sim$\+Scene\+Manager() 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_script_manager_a153c5e54d8bded65631f617c6eb359a3}\label{class_owl_engine_1_1_script_manager_a153c5e54d8bded65631f617c6eb359a3}} 
+\index{OwlEngine::ScriptManager@{OwlEngine::ScriptManager}!addScript@{addScript}}
+\index{addScript@{addScript}!OwlEngine::ScriptManager@{OwlEngine::ScriptManager}}
+\doxysubsubsection{\texorpdfstring{addScript()}{addScript()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Script\+Manager\+::add\+Script (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{script\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add a script name to the manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_script_manager_a153c5e54d8bded65631f617c6eb359a3}{add\+Script()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em script\+Name} & a const std\+::string\& -\/ The name of the script \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_script_manager_a5ef6876b77ab904b8c33568f419cb27d}\label{class_owl_engine_1_1_script_manager_a5ef6876b77ab904b8c33568f419cb27d}} 
+\index{OwlEngine::ScriptManager@{OwlEngine::ScriptManager}!createNewScript@{createNewScript}}
+\index{createNewScript@{createNewScript}!OwlEngine::ScriptManager@{OwlEngine::ScriptManager}}
+\doxysubsubsection{\texorpdfstring{createNewScript()}{createNewScript()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_native_script}{Native\+Script}} $\ast$ Owl\+Engine\+::\+Script\+Manager\+::create\+New\+Script (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{script\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new script using the callback. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_script_manager_a5ef6876b77ab904b8c33568f419cb27d}{create\+New\+Script()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em script\+Name} & a const std\+::string\& -\/ The name of the new script to create \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_script_manager_acac879ee041dd725f6f0e1930d98c636}\label{class_owl_engine_1_1_script_manager_acac879ee041dd725f6f0e1930d98c636}} 
+\index{OwlEngine::ScriptManager@{OwlEngine::ScriptManager}!getScriptNames@{getScriptNames}}
+\index{getScriptNames@{getScriptNames}!OwlEngine::ScriptManager@{OwlEngine::ScriptManager}}
+\doxysubsubsection{\texorpdfstring{getScriptNames()}{getScriptNames()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Owl\+Engine\+::\+Script\+Manager\+::get\+Script\+Names (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the script names. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_script_manager_acac879ee041dd725f6f0e1930d98c636}{get\+Script\+Names()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::vector$<$std\+::string$>$\& -\/ A list of all script names 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_script_manager_a38544c70961d818af9237258451f7c0b}\label{class_owl_engine_1_1_script_manager_a38544c70961d818af9237258451f7c0b}} 
+\index{OwlEngine::ScriptManager@{OwlEngine::ScriptManager}!setNewScriptCallback@{setNewScriptCallback}}
+\index{setNewScriptCallback@{setNewScriptCallback}!OwlEngine::ScriptManager@{OwlEngine::ScriptManager}}
+\doxysubsubsection{\texorpdfstring{setNewScriptCallback()}{setNewScriptCallback()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Script\+Manager\+::set\+New\+Script\+Callback (\begin{DoxyParamCaption}\item[{std\+::function$<$ \mbox{\hyperlink{class_owl_engine_1_1_native_script}{Native\+Script}} $\ast$(std\+::string, nlohmann\+::json)$>$}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the callback function when adding new scripts. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_script_manager_a38544c70961d818af9237258451f7c0b}{set\+New\+Script\+Callback()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em func} & a std\+::function$<$\+Native\+Script$\ast$(std\+::string, nlohmann\+::json)$>$ -\/ The function callback \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_script_manager_a4a48fd9f571d9f82dded70cd738f8c19}\label{class_owl_engine_1_1_script_manager_a4a48fd9f571d9f82dded70cd738f8c19}} 
+\index{OwlEngine::ScriptManager@{OwlEngine::ScriptManager}!start@{start}}
+\index{start@{start}!OwlEngine::ScriptManager@{OwlEngine::ScriptManager}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Script\+Manager\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_script_manager_a4a48fd9f571d9f82dded70cd738f8c19}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_script_manager_a7558b6829450416b80175b5ae084a55f}\label{class_owl_engine_1_1_script_manager_a7558b6829450416b80175b5ae084a55f}} 
+\index{OwlEngine::ScriptManager@{OwlEngine::ScriptManager}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::ScriptManager@{OwlEngine::ScriptManager}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Script\+Manager\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+$\sim$stop() 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{script_manager_8h}{script\+Manager.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{script_manager_8cpp}{script\+Manager.\+cpp}}\end{DoxyCompactItemize}

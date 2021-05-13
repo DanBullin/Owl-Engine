@@ -1,0 +1,385 @@
+\hypertarget{class_scene}{}\doxysection{Scene Class Reference}
+\label{class_scene}\index{Scene@{Scene}}
+
+
+A scene class which contains all entities and world data.  
+
+
+
+
+{\ttfamily \#include $<$scene.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_ac92977ffe219894cf8278204e627e00b}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a0d98393d7a5006d9da6e80a03cca1a93}{update}} (const float delta)
+\begin{DoxyCompactList}\small\item\em Update the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a301de271188114f52ac8b4eb7b6801d0}{process\+Key\+Input}} (G\+L\+F\+Wwindow $\ast$window, const float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Process any key inputs for the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_ab6158e76f49a635931dc3c95f8c1f991}{process\+Mouse\+Button}} (G\+L\+F\+Wwindow $\ast$window, int button, int action, int mods)
+\begin{DoxyCompactList}\small\item\em Process any mouse button inputs for the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a7e591606c4182cd86af1211b03915605}{process\+Mouse\+Moved}} (G\+L\+F\+Wwindow $\ast$window, float xpos, float ypos, \mbox{\hyperlink{struct_event_data}{Event\+Data}} \&event\+Data)
+\begin{DoxyCompactList}\small\item\em Process any mouse movement for the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a2e09de95ce5f05ec3a33e5cd6bfdd542}{process\+Scroll}} (G\+L\+F\+Wwindow $\ast$window, float xoffset, float yoffset)
+\begin{DoxyCompactList}\small\item\em Process any mouse scrolling for the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a10035cec7b50ab389683e65c68c26622}{add\+Entity}} (const char $\ast$name, \mbox{\hyperlink{class_entity}{Entity}} $\ast$entity)
+\begin{DoxyCompactList}\small\item\em Add an entity to the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a7a0149ef4256ed11348392f27b004295}{delete\+Entity}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Delete an entity from the scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_entity}{Entity}} $\ast$\& \mbox{\hyperlink{class_scene_ae94439c130a8c3aab96d0c2b442436dc}{get\+Entity}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Get an entity in the scene. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$ \& \mbox{\hyperlink{class_scene_a4961dd3147bd2ac2abef5fed4bb6a2be}{get\+Root\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all root entities in the scene. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_scene_af1f7ae2716c5df965922f0feb9a8672b}{check\+Entity\+Name\+Taken}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Returns whether the entity name has been taken. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_light}{Light}} $\ast$ $>$ \mbox{\hyperlink{class_scene_ad3a9d71daba4a67d221308d41b085148}{get\+All\+Lights}} ()
+\begin{DoxyCompactList}\small\item\em Get all the lights in the scene. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_mesh_render}{Mesh\+Render}} $\ast$ $>$ \mbox{\hyperlink{class_scene_acebf908a8539b65961d3e0b3f96e9986}{Get\+All\+Renderables}} ()
+\begin{DoxyCompactList}\small\item\em Get all the renderables in the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_aa7a931a7e530c936433c3950c07f797e}{set\+Main\+Camera}} (\mbox{\hyperlink{class_camera}{Camera}} $\ast$camera)
+\begin{DoxyCompactList}\small\item\em Set the main camera for rendering. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_camera}{Camera}} $\ast$ \mbox{\hyperlink{class_scene_a1691aeb6eea40d09e6c973efc31fa5ec}{get\+Main\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Get the main camera for rendering. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_scene_a4f5c713712377b6e5e810d648d1dd5a9}{set\+Skybox}} (\mbox{\hyperlink{class_skybox}{Skybox}} $\ast$skybox)
+\begin{DoxyCompactList}\small\item\em Set the skybox. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_skybox}{Skybox}} $\ast$ \mbox{\hyperlink{class_scene_aadf3764de64919b198a6c656a869609b}{get\+Skybox}} ()
+\begin{DoxyCompactList}\small\item\em Get the skybox. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A scene class which contains all entities and world data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_scene_ad10176d75a9cc0da56626f682d083507}\label{class_scene_ad10176d75a9cc0da56626f682d083507}} 
+\index{Scene@{Scene}!Scene@{Scene}}
+\index{Scene@{Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Scene()}{Scene()}}
+{\footnotesize\ttfamily Scene\+::\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_scene_ad10176d75a9cc0da56626f682d083507}{Scene()}} \mbox{\Hypertarget{class_scene_a3b8cec2e32546713915f8c6303c951f1}\label{class_scene_a3b8cec2e32546713915f8c6303c951f1}} 
+\index{Scene@{Scene}!````~Scene@{$\sim$Scene}}
+\index{````~Scene@{$\sim$Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{$\sim$Scene()}{~Scene()}}
+{\footnotesize\ttfamily Scene\+::$\sim$\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_scene_a3b8cec2e32546713915f8c6303c951f1}{$\sim$\+Scene()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_scene_a10035cec7b50ab389683e65c68c26622}\label{class_scene_a10035cec7b50ab389683e65c68c26622}} 
+\index{Scene@{Scene}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily void Scene\+::add\+Entity (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name,  }\item[{\mbox{\hyperlink{class_entity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})}
+
+
+
+Add an entity to the scene. 
+
+\mbox{\hyperlink{class_scene_a10035cec7b50ab389683e65c68c26622}{add\+Entity()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the entity \\
+\hline
+{\em entity} & an Entity$\ast$ -\/ A pointer to the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_af1f7ae2716c5df965922f0feb9a8672b}\label{class_scene_af1f7ae2716c5df965922f0feb9a8672b}} 
+\index{Scene@{Scene}!checkEntityNameTaken@{checkEntityNameTaken}}
+\index{checkEntityNameTaken@{checkEntityNameTaken}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{checkEntityNameTaken()}{checkEntityNameTaken()}}
+{\footnotesize\ttfamily bool Scene\+::check\+Entity\+Name\+Taken (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Returns whether the entity name has been taken. 
+
+\mbox{\hyperlink{class_scene_af1f7ae2716c5df965922f0feb9a8672b}{check\+Entity\+Name\+Taken()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the entity name exist in our entity list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_a7a0149ef4256ed11348392f27b004295}\label{class_scene_a7a0149ef4256ed11348392f27b004295}} 
+\index{Scene@{Scene}!deleteEntity@{deleteEntity}}
+\index{deleteEntity@{deleteEntity}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{deleteEntity()}{deleteEntity()}}
+{\footnotesize\ttfamily void Scene\+::delete\+Entity (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Delete an entity from the scene. 
+
+\mbox{\hyperlink{class_scene_a7a0149ef4256ed11348392f27b004295}{delete\+Entity()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_ac92977ffe219894cf8278204e627e00b}\label{class_scene_ac92977ffe219894cf8278204e627e00b}} 
+\index{Scene@{Scene}!destroy@{destroy}}
+\index{destroy@{destroy}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Scene\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the scene. 
+
+\mbox{\hyperlink{class_scene_ac92977ffe219894cf8278204e627e00b}{destroy()}} \mbox{\Hypertarget{class_scene_ad3a9d71daba4a67d221308d41b085148}\label{class_scene_ad3a9d71daba4a67d221308d41b085148}} 
+\index{Scene@{Scene}!getAllLights@{getAllLights}}
+\index{getAllLights@{getAllLights}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getAllLights()}{getAllLights()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_light}{Light}} $\ast$ $>$ Scene\+::get\+All\+Lights (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all the lights in the scene. 
+
+\mbox{\hyperlink{class_scene_ad3a9d71daba4a67d221308d41b085148}{get\+All\+Lights()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Light$\ast$$>$ -\/ List of all the lights 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_acebf908a8539b65961d3e0b3f96e9986}\label{class_scene_acebf908a8539b65961d3e0b3f96e9986}} 
+\index{Scene@{Scene}!GetAllRenderables@{GetAllRenderables}}
+\index{GetAllRenderables@{GetAllRenderables}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{GetAllRenderables()}{GetAllRenderables()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_mesh_render}{Mesh\+Render}} $\ast$ $>$ Scene\+::\+Get\+All\+Renderables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all the renderables in the scene. 
+
+get\+All\+Renderables()
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Mesh\+Render$\ast$$>$ -\/ List of all the mesh renders 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_ae94439c130a8c3aab96d0c2b442436dc}\label{class_scene_ae94439c130a8c3aab96d0c2b442436dc}} 
+\index{Scene@{Scene}!getEntity@{getEntity}}
+\index{getEntity@{getEntity}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getEntity()}{getEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entity}{Entity}} $\ast$\& Scene\+::get\+Entity (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+
+
+Get an entity in the scene. 
+
+\mbox{\hyperlink{class_scene_ae94439c130a8c3aab96d0c2b442436dc}{get\+Entity()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Entity$\ast$\& -\/ A reference to the entity pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_a1691aeb6eea40d09e6c973efc31fa5ec}\label{class_scene_a1691aeb6eea40d09e6c973efc31fa5ec}} 
+\index{Scene@{Scene}!getMainCamera@{getMainCamera}}
+\index{getMainCamera@{getMainCamera}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getMainCamera()}{getMainCamera()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_camera}{Camera}} $\ast$ Scene\+::get\+Main\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the main camera for rendering. 
+
+\mbox{\hyperlink{class_scene_a1691aeb6eea40d09e6c973efc31fa5ec}{get\+Main\+Camera()}}
+
+\begin{DoxyReturn}{Returns}
+a Camera$\ast$ -\/ A pointer to the main camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_a4961dd3147bd2ac2abef5fed4bb6a2be}\label{class_scene_a4961dd3147bd2ac2abef5fed4bb6a2be}} 
+\index{Scene@{Scene}!getRootEntities@{getRootEntities}}
+\index{getRootEntities@{getRootEntities}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getRootEntities()}{getRootEntities()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, \mbox{\hyperlink{class_entity}{Entity}} $\ast$ $>$ \& Scene\+::get\+Root\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get a list of all root entities in the scene. 
+
+\mbox{\hyperlink{class_scene_a4961dd3147bd2ac2abef5fed4bb6a2be}{get\+Root\+Entities()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::map$<$std\+::string, Entity$\ast$$>$\& -\/ A reference to the root entity list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_aadf3764de64919b198a6c656a869609b}\label{class_scene_aadf3764de64919b198a6c656a869609b}} 
+\index{Scene@{Scene}!getSkybox@{getSkybox}}
+\index{getSkybox@{getSkybox}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{getSkybox()}{getSkybox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_skybox}{Skybox}} $\ast$ Scene\+::get\+Skybox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the skybox. 
+
+\mbox{\hyperlink{class_scene_aadf3764de64919b198a6c656a869609b}{get\+Skybox()}}
+
+\begin{DoxyReturn}{Returns}
+a Skybox$\ast$ -\/ A pointer to the skybox 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_scene_a301de271188114f52ac8b4eb7b6801d0}\label{class_scene_a301de271188114f52ac8b4eb7b6801d0}} 
+\index{Scene@{Scene}!processKeyInput@{processKeyInput}}
+\index{processKeyInput@{processKeyInput}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{processKeyInput()}{processKeyInput()}}
+{\footnotesize\ttfamily void Scene\+::process\+Key\+Input (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{const float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Process any key inputs for the scene. 
+
+process\+Input()
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em delta\+Time} & a const float -\/ The timestep of the update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_ab6158e76f49a635931dc3c95f8c1f991}\label{class_scene_ab6158e76f49a635931dc3c95f8c1f991}} 
+\index{Scene@{Scene}!processMouseButton@{processMouseButton}}
+\index{processMouseButton@{processMouseButton}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{processMouseButton()}{processMouseButton()}}
+{\footnotesize\ttfamily void Scene\+::process\+Mouse\+Button (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{button,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})}
+
+
+
+Process any mouse button inputs for the scene. 
+
+\mbox{\hyperlink{class_scene_ab6158e76f49a635931dc3c95f8c1f991}{process\+Mouse\+Button()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em button} & an int -\/ The button involved \\
+\hline
+{\em action} & an int -\/ The action of the mouse button \\
+\hline
+{\em mods} & an int -\/ The modifier key flags \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_a7e591606c4182cd86af1211b03915605}\label{class_scene_a7e591606c4182cd86af1211b03915605}} 
+\index{Scene@{Scene}!processMouseMoved@{processMouseMoved}}
+\index{processMouseMoved@{processMouseMoved}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{processMouseMoved()}{processMouseMoved()}}
+{\footnotesize\ttfamily void Scene\+::process\+Mouse\+Moved (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{float}]{xpos,  }\item[{float}]{ypos,  }\item[{\mbox{\hyperlink{struct_event_data}{Event\+Data}} \&}]{event\+Data }\end{DoxyParamCaption})}
+
+
+
+Process any mouse movement for the scene. 
+
+process\+Mouse()
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em xpos} & a float -\/ Mouse x position \\
+\hline
+{\em ypos} & a float -\/ Mouse y position \\
+\hline
+{\em event\+Data} & a \mbox{\hyperlink{struct_event_data}{Event\+Data}}\& -\/ A reference to the event data gathered by the application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_a2e09de95ce5f05ec3a33e5cd6bfdd542}\label{class_scene_a2e09de95ce5f05ec3a33e5cd6bfdd542}} 
+\index{Scene@{Scene}!processScroll@{processScroll}}
+\index{processScroll@{processScroll}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{processScroll()}{processScroll()}}
+{\footnotesize\ttfamily void Scene\+::process\+Scroll (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{float}]{xoffset,  }\item[{float}]{yoffset }\end{DoxyParamCaption})}
+
+
+
+Process any mouse scrolling for the scene. 
+
+\mbox{\hyperlink{class_scene_a2e09de95ce5f05ec3a33e5cd6bfdd542}{process\+Scroll()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em xoffset} & a float -\/ The offset scroll \\
+\hline
+{\em yoffset} & a float -\/ The offset scroll \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_aa7a931a7e530c936433c3950c07f797e}\label{class_scene_aa7a931a7e530c936433c3950c07f797e}} 
+\index{Scene@{Scene}!setMainCamera@{setMainCamera}}
+\index{setMainCamera@{setMainCamera}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{setMainCamera()}{setMainCamera()}}
+{\footnotesize\ttfamily void Scene\+::set\+Main\+Camera (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_camera}{Camera}} $\ast$}]{camera }\end{DoxyParamCaption})}
+
+
+
+Set the main camera for rendering. 
+
+\mbox{\hyperlink{class_scene_aa7a931a7e530c936433c3950c07f797e}{set\+Main\+Camera()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera} & a Camera$\ast$ -\/ A pointer to a camera \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_a4f5c713712377b6e5e810d648d1dd5a9}\label{class_scene_a4f5c713712377b6e5e810d648d1dd5a9}} 
+\index{Scene@{Scene}!setSkybox@{setSkybox}}
+\index{setSkybox@{setSkybox}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{setSkybox()}{setSkybox()}}
+{\footnotesize\ttfamily void Scene\+::set\+Skybox (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_skybox}{Skybox}} $\ast$}]{skybox }\end{DoxyParamCaption})}
+
+
+
+Set the skybox. 
+
+\mbox{\hyperlink{class_scene_a4f5c713712377b6e5e810d648d1dd5a9}{set\+Skybox()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em skybox} & a Skybox$\ast$ -\/ A pointer to the skybox \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_scene_a0d98393d7a5006d9da6e80a03cca1a93}\label{class_scene_a0d98393d7a5006d9da6e80a03cca1a93}} 
+\index{Scene@{Scene}!update@{update}}
+\index{update@{update}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Scene\+::update (\begin{DoxyParamCaption}\item[{const float}]{delta }\end{DoxyParamCaption})}
+
+
+
+Update the scene. 
+
+\mbox{\hyperlink{class_scene_a0d98393d7a5006d9da6e80a03cca1a93}{update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & a const float -\/ The update time step \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/scene/\mbox{\hyperlink{scene_8h}{scene.\+h}}\item 
+C\+:/doc/src/src/scene/\mbox{\hyperlink{scene_8cpp}{scene.\+cpp}}\end{DoxyCompactItemize}

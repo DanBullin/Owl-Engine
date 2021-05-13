@@ -1,0 +1,14 @@
+build/
+bin/
+imgui.ini
+settings.ini
+.vscode/
+CMakeSettings.json
+out/
+.vs/
+
+*.user
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln

@@ -1,0 +1,204 @@
+\hypertarget{class_owl_engine_1_1_layer_manager}{}\doxysection{Owl\+Engine\+::Layer\+Manager Class Reference}
+\label{class_owl_engine_1_1_layer_manager}\index{OwlEngine::LayerManager@{OwlEngine::LayerManager}}
+
+
+Forward declare scene.  
+
+
+
+
+{\ttfamily \#include $<$layer\+Manager.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a9eedc6352f6e39d59ffd512b95784611}{Layer\+Manager}} (\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$parent\+Scene)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_afca19433fec7c0a38d704e9b7c597ec1}{$\sim$\+Layer\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_layer_manager_ad7f1b6af7f8c6b50c280211156b8eaac}{attach\+Layer}} (\mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$new\+Layer)
+\begin{DoxyCompactList}\small\item\em Add a layer to the layer list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a73c9fa0cba6f82b8d05b7f3d7b8c7be5}{get\+Layer}} (const std\+::string \&layer\+Name)
+\begin{DoxyCompactList}\small\item\em Get a layer by name. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a7aaca15b7228ab16e5a324b7876f38ac}{get\+Layers}} ()
+\begin{DoxyCompactList}\small\item\em Get all layers. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a78463efd1e93ede928e203a87a15f5c3}{layer\+Exists}} (\mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$layer)
+\begin{DoxyCompactList}\small\item\em Check if the layer exists in the manager. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a173081d7d01fc79a501a28e39fb1c9fd}{get\+Parent\+Scene}} ()
+\begin{DoxyCompactList}\small\item\em Get the scene this manager is attached to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_layer_manager_af904d3c1281f91d09479a69db48958f3}{on\+Update}} (const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Called once every frame. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a11acfbaa5016715c1ef727163c6c2728}{print\+Layer\+Manager\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print the layer manager details. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_layer_manager_abe7f20891c469869c1a06b7337a8eb0a}{print\+Layer\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print the layer details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Forward declare scene. 
+
+A layer manager which manages layers 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_manager_a9eedc6352f6e39d59ffd512b95784611}\label{class_owl_engine_1_1_layer_manager_a9eedc6352f6e39d59ffd512b95784611}} 
+\index{OwlEngine::LayerManager@{OwlEngine::LayerManager}!LayerManager@{LayerManager}}
+\index{LayerManager@{LayerManager}!OwlEngine::LayerManager@{OwlEngine::LayerManager}}
+\doxysubsubsection{\texorpdfstring{LayerManager()}{LayerManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Layer\+Manager\+::\+Layer\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a9eedc6352f6e39d59ffd512b95784611}{Layer\+Manager()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & a Scene$\ast$ -\/ A pointer to the scene \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_manager_afca19433fec7c0a38d704e9b7c597ec1}\label{class_owl_engine_1_1_layer_manager_afca19433fec7c0a38d704e9b7c597ec1}} 
+\index{OwlEngine::LayerManager@{OwlEngine::LayerManager}!````~LayerManager@{$\sim$LayerManager}}
+\index{````~LayerManager@{$\sim$LayerManager}!OwlEngine::LayerManager@{OwlEngine::LayerManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$LayerManager()}{~LayerManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Layer\+Manager\+::$\sim$\+Layer\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_afca19433fec7c0a38d704e9b7c597ec1}{$\sim$\+Layer\+Manager()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_manager_ad7f1b6af7f8c6b50c280211156b8eaac}\label{class_owl_engine_1_1_layer_manager_ad7f1b6af7f8c6b50c280211156b8eaac}} 
+\index{OwlEngine::LayerManager@{OwlEngine::LayerManager}!attachLayer@{attachLayer}}
+\index{attachLayer@{attachLayer}!OwlEngine::LayerManager@{OwlEngine::LayerManager}}
+\doxysubsubsection{\texorpdfstring{attachLayer()}{attachLayer()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Layer\+Manager\+::attach\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$}]{new\+Layer }\end{DoxyParamCaption})}
+
+
+
+Add a layer to the layer list. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_ad7f1b6af7f8c6b50c280211156b8eaac}{attach\+Layer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Layer} & a Layer$\ast$ -\/ A pointer to the layer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_manager_a73c9fa0cba6f82b8d05b7f3d7b8c7be5}\label{class_owl_engine_1_1_layer_manager_a73c9fa0cba6f82b8d05b7f3d7b8c7be5}} 
+\index{OwlEngine::LayerManager@{OwlEngine::LayerManager}!getLayer@{getLayer}}
+\index{getLayer@{getLayer}!OwlEngine::LayerManager@{OwlEngine::LayerManager}}
+\doxysubsubsection{\texorpdfstring{getLayer()}{getLayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$ Owl\+Engine\+::\+Layer\+Manager\+::get\+Layer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{layer\+Name }\end{DoxyParamCaption})}
+
+
+
+Get a layer by name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a73c9fa0cba6f82b8d05b7f3d7b8c7be5}{get\+Layer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer\+Name} & a const std\+::string\& -\/ The name of the layer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Layer$\ast$ -\/ A pointer to the layer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_manager_a7aaca15b7228ab16e5a324b7876f38ac}\label{class_owl_engine_1_1_layer_manager_a7aaca15b7228ab16e5a324b7876f38ac}} 
+\index{OwlEngine::LayerManager@{OwlEngine::LayerManager}!getLayers@{getLayers}}
+\index{getLayers@{getLayers}!OwlEngine::LayerManager@{OwlEngine::LayerManager}}
+\doxysubsubsection{\texorpdfstring{getLayers()}{getLayers()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$ $>$ \& Owl\+Engine\+::\+Layer\+Manager\+::get\+Layers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all layers. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a7aaca15b7228ab16e5a324b7876f38ac}{get\+Layers()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Layer$\ast$$>$\& -\/ A reference to the list of layers 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_manager_a173081d7d01fc79a501a28e39fb1c9fd}\label{class_owl_engine_1_1_layer_manager_a173081d7d01fc79a501a28e39fb1c9fd}} 
+\index{OwlEngine::LayerManager@{OwlEngine::LayerManager}!getParentScene@{getParentScene}}
+\index{getParentScene@{getParentScene}!OwlEngine::LayerManager@{OwlEngine::LayerManager}}
+\doxysubsubsection{\texorpdfstring{getParentScene()}{getParentScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ Owl\+Engine\+::\+Layer\+Manager\+::get\+Parent\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the scene this manager is attached to. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a173081d7d01fc79a501a28e39fb1c9fd}{get\+Parent\+Scene()}}
+
+\begin{DoxyReturn}{Returns}
+a Scene$\ast$ -\/ The parent scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_manager_a78463efd1e93ede928e203a87a15f5c3}\label{class_owl_engine_1_1_layer_manager_a78463efd1e93ede928e203a87a15f5c3}} 
+\index{OwlEngine::LayerManager@{OwlEngine::LayerManager}!layerExists@{layerExists}}
+\index{layerExists@{layerExists}!OwlEngine::LayerManager@{OwlEngine::LayerManager}}
+\doxysubsubsection{\texorpdfstring{layerExists()}{layerExists()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Layer\+Manager\+::layer\+Exists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$}]{layer }\end{DoxyParamCaption})}
+
+
+
+Check if the layer exists in the manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a78463efd1e93ede928e203a87a15f5c3}{layer\+Exists()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & a Layer$\ast$ -\/ A pointer to the layer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the layer exist in the layer list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_manager_af904d3c1281f91d09479a69db48958f3}\label{class_owl_engine_1_1_layer_manager_af904d3c1281f91d09479a69db48958f3}} 
+\index{OwlEngine::LayerManager@{OwlEngine::LayerManager}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::LayerManager@{OwlEngine::LayerManager}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Layer\+Manager\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})}
+
+
+
+Called once every frame. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_af904d3c1281f91d09479a69db48958f3}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_layer_manager_abe7f20891c469869c1a06b7337a8eb0a}\label{class_owl_engine_1_1_layer_manager_abe7f20891c469869c1a06b7337a8eb0a}} 
+\index{OwlEngine::LayerManager@{OwlEngine::LayerManager}!printLayerDetails@{printLayerDetails}}
+\index{printLayerDetails@{printLayerDetails}!OwlEngine::LayerManager@{OwlEngine::LayerManager}}
+\doxysubsubsection{\texorpdfstring{printLayerDetails()}{printLayerDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Layer\+Manager\+::print\+Layer\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print the layer details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_abe7f20891c469869c1a06b7337a8eb0a}{print\+Layer\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_layer_manager_a11acfbaa5016715c1ef727163c6c2728}\label{class_owl_engine_1_1_layer_manager_a11acfbaa5016715c1ef727163c6c2728}} 
+\index{OwlEngine::LayerManager@{OwlEngine::LayerManager}!printLayerManagerDetails@{printLayerManagerDetails}}
+\index{printLayerManagerDetails@{printLayerManagerDetails}!OwlEngine::LayerManager@{OwlEngine::LayerManager}}
+\doxysubsubsection{\texorpdfstring{printLayerManagerDetails()}{printLayerManagerDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Layer\+Manager\+::print\+Layer\+Manager\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print the layer manager details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_layer_manager_a11acfbaa5016715c1ef727163c6c2728}{print\+Layer\+Manager\+Details()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/layers/\mbox{\hyperlink{layer_manager_8h}{layer\+Manager.\+h}}\item 
+C\+:/doc/src/engine/src/independent/layers/\mbox{\hyperlink{layer_manager_8cpp}{layer\+Manager.\+cpp}}\end{DoxyCompactItemize}

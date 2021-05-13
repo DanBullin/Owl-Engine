@@ -1,0 +1,121 @@
+\hypertarget{class_hawk_engine_1_1_texture_atlas}{}\doxysection{Hawk\+Engine\+::Texture\+Atlas Class Reference}
+\label{class_hawk_engine_1_1_texture_atlas}\index{HawkEngine::TextureAtlas@{HawkEngine::TextureAtlas}}
+
+
+A dynamic texture atlas.  
+
+
+
+
+{\ttfamily \#include $<$texture\+Atlas.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas_a23d936ef8aa2da328209a7e20613bf83}{Texture\+Atlas}} (glm\+::ivec2 size=\{ 4096, 4096 \}, uint32\+\_\+t channels=4, uint32\+\_\+t reserved\+Spaces=32)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_atlas_aa4d979b6ca180107706abc207245fd4c}\label{class_hawk_engine_1_1_texture_atlas_aa4d979b6ca180107706abc207245fd4c}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas_aa4d979b6ca180107706abc207245fd4c}{get\+Channels}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of channels in the base texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_atlas_a6f075d9f9a7603965c41ccf22c727c04}\label{class_hawk_engine_1_1_texture_atlas_a6f075d9f9a7603965c41ccf22c727c04}} 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas_a6f075d9f9a7603965c41ccf22c727c04}{get\+Base\+Texture}} () const
+\begin{DoxyCompactList}\small\item\em Get the base texture. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_atlas_a175af0a836361d3c8dc5c8b0025272cb}\label{class_hawk_engine_1_1_texture_atlas_a175af0a836361d3c8dc5c8b0025272cb}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas_a175af0a836361d3c8dc5c8b0025272cb}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the ID of the base texture. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas_a8b7b6251c8ae2223d21de88fa633f6aa}{add}} (const char $\ast$file\+Path, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture}{Sub\+Texture}} $>$ \&result)
+\begin{DoxyCompactList}\small\item\em Attempt to add a subtexture with a file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas_ac7057f09adf89e2935913477eaaa7827}{add}} (int32\+\_\+t width, int32\+\_\+t height, uint32\+\_\+t channels, unsigned char $\ast$data, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture}{Sub\+Texture}} $>$ \&result)
+\begin{DoxyCompactList}\small\item\em Attempt to add a subtexture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas_a561be110878f7d642219be1364019d3b}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the atlas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A dynamic texture atlas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_atlas_a23d936ef8aa2da328209a7e20613bf83}\label{class_hawk_engine_1_1_texture_atlas_a23d936ef8aa2da328209a7e20613bf83}} 
+\index{HawkEngine::TextureAtlas@{HawkEngine::TextureAtlas}!TextureAtlas@{TextureAtlas}}
+\index{TextureAtlas@{TextureAtlas}!HawkEngine::TextureAtlas@{HawkEngine::TextureAtlas}}
+\doxysubsubsection{\texorpdfstring{TextureAtlas()}{TextureAtlas()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Texture\+Atlas\+::\+Texture\+Atlas (\begin{DoxyParamCaption}\item[{glm\+::ivec2}]{size = {\ttfamily \{~4096,~4096~\}},  }\item[{uint32\+\_\+t}]{channels = {\ttfamily 4},  }\item[{uint32\+\_\+t}]{reserved\+Spaces = {\ttfamily 32} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas_a23d936ef8aa2da328209a7e20613bf83}{Texture\+Atlas()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & a glm\+::ivec2 -\/ The size of the texture atlas \\
+\hline
+{\em channels} & a uint32\+\_\+t -\/ The number of channels for this atlas \\
+\hline
+{\em reserved\+Spaces} & a uint32\+\_\+t -\/ The number of spaces to reserve \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_atlas_a8b7b6251c8ae2223d21de88fa633f6aa}\label{class_hawk_engine_1_1_texture_atlas_a8b7b6251c8ae2223d21de88fa633f6aa}} 
+\index{HawkEngine::TextureAtlas@{HawkEngine::TextureAtlas}!add@{add}}
+\index{add@{add}!HawkEngine::TextureAtlas@{HawkEngine::TextureAtlas}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool Hawk\+Engine\+::\+Texture\+Atlas\+::add (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Path,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture}{Sub\+Texture}} $>$ \&}]{result }\end{DoxyParamCaption})}
+
+
+
+Attempt to add a subtexture with a file. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas_a8b7b6251c8ae2223d21de88fa633f6aa}{add()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const char$\ast$ -\/ The filepath of the texture to add \\
+\hline
+{\em result} & a std\+::shared\+\_\+ptr$<$\+Sub\+Texture$>$\& -\/ The subtexture created when adding the texture to the atlas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_atlas_ac7057f09adf89e2935913477eaaa7827}\label{class_hawk_engine_1_1_texture_atlas_ac7057f09adf89e2935913477eaaa7827}} 
+\index{HawkEngine::TextureAtlas@{HawkEngine::TextureAtlas}!add@{add}}
+\index{add@{add}!HawkEngine::TextureAtlas@{HawkEngine::TextureAtlas}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Hawk\+Engine\+::\+Texture\+Atlas\+::add (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{width,  }\item[{int32\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{channels,  }\item[{unsigned char $\ast$}]{data,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture}{Sub\+Texture}} $>$ \&}]{result }\end{DoxyParamCaption})}
+
+
+
+Attempt to add a subtexture. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas_a8b7b6251c8ae2223d21de88fa633f6aa}{add()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & a int32\+\_\+t -\/ The width of the texture to add \\
+\hline
+{\em height} & a int32\+\_\+t -\/ The height of the texture to add \\
+\hline
+{\em channels} & a uint32\+\_\+t -\/ The number of channels of the texture \\
+\hline
+{\em data} & an unsigned char$\ast$ -\/ The data of the texture \\
+\hline
+{\em result} & a std\+::shared\+\_\+ptr$<$\+Sub\+Texture$>$\& -\/ The subtexture created when adding the texture to the atlas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_texture_atlas_a561be110878f7d642219be1364019d3b}\label{class_hawk_engine_1_1_texture_atlas_a561be110878f7d642219be1364019d3b}} 
+\index{HawkEngine::TextureAtlas@{HawkEngine::TextureAtlas}!destroy@{destroy}}
+\index{destroy@{destroy}!HawkEngine::TextureAtlas@{HawkEngine::TextureAtlas}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Texture\+Atlas\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the atlas. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_texture_atlas_a561be110878f7d642219be1364019d3b}{destroy()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/textures/\mbox{\hyperlink{texture_atlas_8h}{texture\+Atlas.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/textures/\mbox{\hyperlink{texture_atlas_8cpp}{texture\+Atlas.\+cpp}}\end{DoxyCompactItemize}

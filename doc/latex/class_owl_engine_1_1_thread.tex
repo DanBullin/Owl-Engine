@@ -1,0 +1,167 @@
+\hypertarget{class_owl_engine_1_1_thread}{}\doxysection{Owl\+Engine\+::Thread Class Reference}
+\label{class_owl_engine_1_1_thread}\index{OwlEngine::Thread@{OwlEngine::Thread}}
+
+
+A class which is a wrapper for std\+::thread.  
+
+
+
+
+{\ttfamily \#include $<$thread.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_thread_ab9bfa1ea132fd3fa823fd380cf726b8a}{Thread}} (const std\+::string \&thread\+Name, const bool delete\+Upon\+Finished)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_thread_a27092a9d4aa525a71a9a0ceec519f566}{$\sim$\+Thread}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Function , typename ... Args$>$ }\\void \mbox{\hyperlink{class_owl_engine_1_1_thread_a6d058d8fad09c0b202ea9542ff61555b}{action}} (Function \&\&func, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Start the function. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_thread_acd0b4667d8c840ff8baba7de8fbdaea0}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the thread. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_thread_a34214f210641fd1903b56e823b768901}{is\+Finished}} ()
+\begin{DoxyCompactList}\small\item\em Has the thread finished executing. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_thread_a151affb05b1e3c808f218b73df44d1f5}{should\+Delete}} ()
+\begin{DoxyCompactList}\small\item\em Should the thread be deleted upon being finished. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_thread_a42de8d6ab696198cde5474ff58d09610}{has\+Rejoined}} ()
+\begin{DoxyCompactList}\small\item\em Has the std\+::thread rejoined. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_thread_ae26d435c44f345ceba100431a2547362}{rejoin}} ()
+\begin{DoxyCompactList}\small\item\em Rejoin the std\+::thread to the main thread. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_thread_ae2d04cf66c1026d2f0c38b7c78cdec1d}{print\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print the thread\textquotesingle{}s details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class which is a wrapper for std\+::thread. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_ab9bfa1ea132fd3fa823fd380cf726b8a}\label{class_owl_engine_1_1_thread_ab9bfa1ea132fd3fa823fd380cf726b8a}} 
+\index{OwlEngine::Thread@{OwlEngine::Thread}!Thread@{Thread}}
+\index{Thread@{Thread}!OwlEngine::Thread@{OwlEngine::Thread}}
+\doxysubsubsection{\texorpdfstring{Thread()}{Thread()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Thread\+::\+Thread (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{thread\+Name,  }\item[{const bool}]{delete\+Upon\+Finished }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread}{Thread}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em thread\+Name} & a const std\+::string\& -\/ The name of the thread \\
+\hline
+{\em delete\+Upon\+Finished} & a const bool -\/ Delete the thread upon completion \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_a27092a9d4aa525a71a9a0ceec519f566}\label{class_owl_engine_1_1_thread_a27092a9d4aa525a71a9a0ceec519f566}} 
+\index{OwlEngine::Thread@{OwlEngine::Thread}!````~Thread@{$\sim$Thread}}
+\index{````~Thread@{$\sim$Thread}!OwlEngine::Thread@{OwlEngine::Thread}}
+\doxysubsubsection{\texorpdfstring{$\sim$Thread()}{~Thread()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Thread\+::$\sim$\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_a27092a9d4aa525a71a9a0ceec519f566}{$\sim$\+Thread()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_a6d058d8fad09c0b202ea9542ff61555b}\label{class_owl_engine_1_1_thread_a6d058d8fad09c0b202ea9542ff61555b}} 
+\index{OwlEngine::Thread@{OwlEngine::Thread}!action@{action}}
+\index{action@{action}!OwlEngine::Thread@{OwlEngine::Thread}}
+\doxysubsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily template$<$typename Function , typename... Args$>$ \\
+void Owl\+Engine\+::\+Thread\+::action (\begin{DoxyParamCaption}\item[{Function \&\&}]{func,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+
+
+Start the function. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_a6d058d8fad09c0b202ea9542ff61555b}{action()}} \mbox{\Hypertarget{class_owl_engine_1_1_thread_acd0b4667d8c840ff8baba7de8fbdaea0}\label{class_owl_engine_1_1_thread_acd0b4667d8c840ff8baba7de8fbdaea0}} 
+\index{OwlEngine::Thread@{OwlEngine::Thread}!getName@{getName}}
+\index{getName@{getName}!OwlEngine::Thread@{OwlEngine::Thread}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Thread\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the thread. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_acd0b4667d8c840ff8baba7de8fbdaea0}{get\+Name()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The name of the thread 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_a42de8d6ab696198cde5474ff58d09610}\label{class_owl_engine_1_1_thread_a42de8d6ab696198cde5474ff58d09610}} 
+\index{OwlEngine::Thread@{OwlEngine::Thread}!hasRejoined@{hasRejoined}}
+\index{hasRejoined@{hasRejoined}!OwlEngine::Thread@{OwlEngine::Thread}}
+\doxysubsubsection{\texorpdfstring{hasRejoined()}{hasRejoined()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Thread\+::has\+Rejoined (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Has the std\+::thread rejoined. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_a42de8d6ab696198cde5474ff58d09610}{has\+Rejoined()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the thread rejoined 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_a34214f210641fd1903b56e823b768901}\label{class_owl_engine_1_1_thread_a34214f210641fd1903b56e823b768901}} 
+\index{OwlEngine::Thread@{OwlEngine::Thread}!isFinished@{isFinished}}
+\index{isFinished@{isFinished}!OwlEngine::Thread@{OwlEngine::Thread}}
+\doxysubsubsection{\texorpdfstring{isFinished()}{isFinished()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Thread\+::is\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Has the thread finished executing. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_a34214f210641fd1903b56e823b768901}{is\+Finished()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the thread finished 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_thread_ae2d04cf66c1026d2f0c38b7c78cdec1d}\label{class_owl_engine_1_1_thread_ae2d04cf66c1026d2f0c38b7c78cdec1d}} 
+\index{OwlEngine::Thread@{OwlEngine::Thread}!printDetails@{printDetails}}
+\index{printDetails@{printDetails}!OwlEngine::Thread@{OwlEngine::Thread}}
+\doxysubsubsection{\texorpdfstring{printDetails()}{printDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Thread\+::print\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print the thread\textquotesingle{}s details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_ae2d04cf66c1026d2f0c38b7c78cdec1d}{print\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_thread_ae26d435c44f345ceba100431a2547362}\label{class_owl_engine_1_1_thread_ae26d435c44f345ceba100431a2547362}} 
+\index{OwlEngine::Thread@{OwlEngine::Thread}!rejoin@{rejoin}}
+\index{rejoin@{rejoin}!OwlEngine::Thread@{OwlEngine::Thread}}
+\doxysubsubsection{\texorpdfstring{rejoin()}{rejoin()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Thread\+::rejoin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rejoin the std\+::thread to the main thread. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_ae26d435c44f345ceba100431a2547362}{rejoin()}} \mbox{\Hypertarget{class_owl_engine_1_1_thread_a151affb05b1e3c808f218b73df44d1f5}\label{class_owl_engine_1_1_thread_a151affb05b1e3c808f218b73df44d1f5}} 
+\index{OwlEngine::Thread@{OwlEngine::Thread}!shouldDelete@{shouldDelete}}
+\index{shouldDelete@{shouldDelete}!OwlEngine::Thread@{OwlEngine::Thread}}
+\doxysubsubsection{\texorpdfstring{shouldDelete()}{shouldDelete()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Thread\+::should\+Delete (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Should the thread be deleted upon being finished. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_thread_a151affb05b1e3c808f218b73df44d1f5}{should\+Delete()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Should the thread be deleted upon being finished 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/components/\mbox{\hyperlink{thread_8h}{thread.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/components/\mbox{\hyperlink{thread_8cpp}{thread.\+cpp}}\end{DoxyCompactItemize}

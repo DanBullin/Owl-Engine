@@ -1,0 +1,534 @@
+\hypertarget{class_owl_engine_1_1_spot_light}{}\doxysection{Owl\+Engine\+::Spot\+Light Class Reference}
+\label{class_owl_engine_1_1_spot_light}\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+
+
+A spot light object.  
+
+
+
+
+{\ttfamily \#include $<$light.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Spot\+Light\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_spot_light}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a13d118dd0e6f95916d608d451cc88545}{Spot\+Light}} (const glm\+::vec3 \&direction, const glm\+::vec3 \&ambient, const glm\+::vec3 \&diffuse, const glm\+::vec3 \&specular, const float cut\+Off, const float outer\+Cut\+Off, const float constant, const float linear, const float quadratic)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_ad470c1ca5b736d53ce6876189f2b7cd5}{$\sim$\+Spot\+Light}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a6faaa516dc7c5ab2be8faf96d1e52744}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a0504ca8aa8c34a692ad1fad07a28a7e5}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a9873cb872557a9a625b00cb0780d123b}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a7f9463ab11178713a7a55e34fdde7f02}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a0c45b1b4260ee6ff8f0f5190dd79207f}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data as J\+S\+ON for saving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_aeb6ffda61dd43a938eb93d539ceef82f}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data displayed in Im\+Gui form. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_spot_light_ae444e3f4784db27d888364fd8a7c5b0c}{get\+World\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the world position of the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_ac588b96924f204002d35a202b8da54f6}{set\+Direction}} (const glm\+::vec3 \&direction)
+\begin{DoxyCompactList}\small\item\em Set the direction vector of the light. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_spot_light_ab103c010cff16930c5798d8e27bd5a34}{get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em Get the light\textquotesingle{}s direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a6c5fca1e8c991988a0fbdfd11c43fbcd}{set\+Ambient\+Factor}} (const glm\+::vec3 \&ambient)
+\begin{DoxyCompactList}\small\item\em Set the ambient factor of the light. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a2ac58fd08ddd1c9fb1e3c647ad82f7e6}{get\+Ambient\+Factor}} () const
+\begin{DoxyCompactList}\small\item\em Get the ambient factor of the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_af5dc699f1bff0b4ef7eee28810970e3a}{set\+Diffuse\+Factor}} (const glm\+::vec3 \&diffuse)
+\begin{DoxyCompactList}\small\item\em Set the diffuse factor of the light. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_spot_light_aade818bd291ff7d3632f3fe2ab1252f1}{get\+Diffuse\+Factor}} () const
+\begin{DoxyCompactList}\small\item\em Get the diffuse factor of the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a3c71392e92c91fc01e0c2a942447ba47}{set\+Specular\+Factor}} (const glm\+::vec3 \&specular)
+\begin{DoxyCompactList}\small\item\em Set the specular factor of the light. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a0288880aa27c693a5e5ca96242e6698f}{get\+Specular\+Factor}} () const
+\begin{DoxyCompactList}\small\item\em Get the specular factor of the light. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a09647d65eff47ed1c3423adb4dc93005}{set\+Constant}} (const float constant)
+\begin{DoxyCompactList}\small\item\em Set the constant value used for attenuation. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_spot_light_afecd44ed796b8619befcfcd584fc232c}{get\+Constant}} () const
+\begin{DoxyCompactList}\small\item\em Get the constant value used for attenuation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a3f2226d1105d9f62ab6a7ba5b9bd262e}{set\+Linear}} (const float linear)
+\begin{DoxyCompactList}\small\item\em Set the linear value used for attenuation. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a3f37e0e8afb3e78d294e2935328b4c99}{get\+Linear}} () const
+\begin{DoxyCompactList}\small\item\em Get the linear value used for attenuation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a62083e6647aac838dd0f2cdd1b7c913f}{set\+Quadratic}} (const float quadratic)
+\begin{DoxyCompactList}\small\item\em Set the quadratic value used for attenuation. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_spot_light_ae663114937306beffa2f49e247fb70cb}{get\+Quadratic}} () const
+\begin{DoxyCompactList}\small\item\em Get the quadratic value used for attenuation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a25a9ef08ff4b77523e88ed63fa7e22bc}{set\+Cut\+Off}} (const float linear)
+\begin{DoxyCompactList}\small\item\em Set the cutoff value. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_spot_light_ad40995c075ec14092f0977a92316807e}{get\+Cut\+Off}} () const
+\begin{DoxyCompactList}\small\item\em Get the cutoff value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_spot_light_ab9821b261137d6c5c0dc778900bc1547}{set\+Outer\+Cut\+Off}} (const float quadratic)
+\begin{DoxyCompactList}\small\item\em Set the outer cutoff value. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_spot_light_ad6a5ecd6edd569a6bc29e382915426a0}{get\+Outer\+Cut\+Off}} () const
+\begin{DoxyCompactList}\small\item\em Get the outer cutoff value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A spot light object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a13d118dd0e6f95916d608d451cc88545}\label{class_owl_engine_1_1_spot_light_a13d118dd0e6f95916d608d451cc88545}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!SpotLight@{SpotLight}}
+\index{SpotLight@{SpotLight}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{SpotLight()}{SpotLight()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Spot\+Light\+::\+Spot\+Light (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction,  }\item[{const glm\+::vec3 \&}]{ambient,  }\item[{const glm\+::vec3 \&}]{diffuse,  }\item[{const glm\+::vec3 \&}]{specular,  }\item[{const float}]{cut\+Off,  }\item[{const float}]{outer\+Cut\+Off,  }\item[{const float}]{constant,  }\item[{const float}]{linear,  }\item[{const float}]{quadratic }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a13d118dd0e6f95916d608d451cc88545}{Spot\+Light()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & a const glm\+::vec3\& -\/ The light\textquotesingle{}s direction \\
+\hline
+{\em ambient} & a const glm\+::vec3\& -\/ The light\textquotesingle{}s ambient factor \\
+\hline
+{\em diffuse} & a const glm\+::vec3\& -\/ The light\textquotesingle{}s diffuse factor \\
+\hline
+{\em specular} & a const glm\+::vec3\& -\/ The light\textquotesingle{}s specular factor \\
+\hline
+{\em cut\+Off} & a const float -\/ The cutoff value \\
+\hline
+{\em outer\+Cut\+Off} & a const float -\/ The outer\+Cut\+Off value \\
+\hline
+{\em constant} & a const float -\/ The constant value used for attenuation \\
+\hline
+{\em linear} & a const float -\/ The linear value used for attenuation \\
+\hline
+{\em quadratic} & a const float -\/ The quadratic value used for attenuation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_ad470c1ca5b736d53ce6876189f2b7cd5}\label{class_owl_engine_1_1_spot_light_ad470c1ca5b736d53ce6876189f2b7cd5}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!````~SpotLight@{$\sim$SpotLight}}
+\index{````~SpotLight@{$\sim$SpotLight}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{$\sim$SpotLight()}{~SpotLight()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Spot\+Light\+::$\sim$\+Spot\+Light (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_ad470c1ca5b736d53ce6876189f2b7cd5}{$\sim$\+Spot\+Light()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_aeb6ffda61dd43a938eb93d539ceef82f}\label{class_owl_engine_1_1_spot_light_aeb6ffda61dd43a938eb93d539ceef82f}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data displayed in Im\+Gui form. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_aeb6ffda61dd43a938eb93d539ceef82f}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a2ac58fd08ddd1c9fb1e3c647ad82f7e6}\label{class_owl_engine_1_1_spot_light_a2ac58fd08ddd1c9fb1e3c647ad82f7e6}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!getAmbientFactor@{getAmbientFactor}}
+\index{getAmbientFactor@{getAmbientFactor}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{getAmbientFactor()}{getAmbientFactor()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Spot\+Light\+::get\+Ambient\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the ambient factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a2ac58fd08ddd1c9fb1e3c647ad82f7e6}{get\+Ambient\+Factor()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The ambient factor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a0c45b1b4260ee6ff8f0f5190dd79207f}\label{class_owl_engine_1_1_spot_light_a0c45b1b4260ee6ff8f0f5190dd79207f}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Spot\+Light\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data as J\+S\+ON for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a0c45b1b4260ee6ff8f0f5190dd79207f}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_afecd44ed796b8619befcfcd584fc232c}\label{class_owl_engine_1_1_spot_light_afecd44ed796b8619befcfcd584fc232c}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!getConstant@{getConstant}}
+\index{getConstant@{getConstant}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{getConstant()}{getConstant()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Spot\+Light\+::get\+Constant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the constant value used for attenuation. 
+
+get\+Constant
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The constant value used for the attenuation calculation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_ad40995c075ec14092f0977a92316807e}\label{class_owl_engine_1_1_spot_light_ad40995c075ec14092f0977a92316807e}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!getCutOff@{getCutOff}}
+\index{getCutOff@{getCutOff}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{getCutOff()}{getCutOff()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Spot\+Light\+::get\+Cut\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the cutoff value. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_ad40995c075ec14092f0977a92316807e}{get\+Cut\+Off()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The cut off value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_aade818bd291ff7d3632f3fe2ab1252f1}\label{class_owl_engine_1_1_spot_light_aade818bd291ff7d3632f3fe2ab1252f1}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!getDiffuseFactor@{getDiffuseFactor}}
+\index{getDiffuseFactor@{getDiffuseFactor}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{getDiffuseFactor()}{getDiffuseFactor()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Spot\+Light\+::get\+Diffuse\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the diffuse factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_aade818bd291ff7d3632f3fe2ab1252f1}{get\+Diffuse\+Factor()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The diffuse factor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_ab103c010cff16930c5798d8e27bd5a34}\label{class_owl_engine_1_1_spot_light_ab103c010cff16930c5798d8e27bd5a34}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!getDirection@{getDirection}}
+\index{getDirection@{getDirection}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{getDirection()}{getDirection()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Spot\+Light\+::get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the light\textquotesingle{}s direction. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_ab103c010cff16930c5798d8e27bd5a34}{get\+Direction()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The light direction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a3f37e0e8afb3e78d294e2935328b4c99}\label{class_owl_engine_1_1_spot_light_a3f37e0e8afb3e78d294e2935328b4c99}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!getLinear@{getLinear}}
+\index{getLinear@{getLinear}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{getLinear()}{getLinear()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Spot\+Light\+::get\+Linear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the linear value used for attenuation. 
+
+get\+Linear
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The linear value used for the attenuation calculation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_ad6a5ecd6edd569a6bc29e382915426a0}\label{class_owl_engine_1_1_spot_light_ad6a5ecd6edd569a6bc29e382915426a0}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!getOuterCutOff@{getOuterCutOff}}
+\index{getOuterCutOff@{getOuterCutOff}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{getOuterCutOff()}{getOuterCutOff()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Spot\+Light\+::get\+Outer\+Cut\+Off (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the outer cutoff value. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_ad6a5ecd6edd569a6bc29e382915426a0}{get\+Outer\+Cut\+Off()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The outer cut off value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_ae663114937306beffa2f49e247fb70cb}\label{class_owl_engine_1_1_spot_light_ae663114937306beffa2f49e247fb70cb}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!getQuadratic@{getQuadratic}}
+\index{getQuadratic@{getQuadratic}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{getQuadratic()}{getQuadratic()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Spot\+Light\+::get\+Quadratic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the quadratic value used for attenuation. 
+
+get\+Quadratic
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The quadratic value used for the attenuation calculation 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a0288880aa27c693a5e5ca96242e6698f}\label{class_owl_engine_1_1_spot_light_a0288880aa27c693a5e5ca96242e6698f}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!getSpecularFactor@{getSpecularFactor}}
+\index{getSpecularFactor@{getSpecularFactor}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{getSpecularFactor()}{getSpecularFactor()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Spot\+Light\+::get\+Specular\+Factor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the specular factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a0288880aa27c693a5e5ca96242e6698f}{get\+Specular\+Factor()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The specular factor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_ae444e3f4784db27d888364fd8a7c5b0c}\label{class_owl_engine_1_1_spot_light_ae444e3f4784db27d888364fd8a7c5b0c}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!getWorldPosition@{getWorldPosition}}
+\index{getWorldPosition@{getWorldPosition}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{getWorldPosition()}{getWorldPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Spot\+Light\+::get\+World\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the world position of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_ae444e3f4784db27d888364fd8a7c5b0c}{get\+World\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The world position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a6faaa516dc7c5ab2be8faf96d1e52744}\label{class_owl_engine_1_1_spot_light_a6faaa516dc7c5ab2be8faf96d1e52744}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a6faaa516dc7c5ab2be8faf96d1e52744}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a0504ca8aa8c34a692ad1fad07a28a7e5}\label{class_owl_engine_1_1_spot_light_a0504ca8aa8c34a692ad1fad07a28a7e5}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+on\+Detach 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a9873cb872557a9a625b00cb0780d123b}\label{class_owl_engine_1_1_spot_light_a9873cb872557a9a625b00cb0780d123b}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a9873cb872557a9a625b00cb0780d123b}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a7f9463ab11178713a7a55e34fdde7f02}\label{class_owl_engine_1_1_spot_light_a7f9463ab11178713a7a55e34fdde7f02}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a7f9463ab11178713a7a55e34fdde7f02}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a6c5fca1e8c991988a0fbdfd11c43fbcd}\label{class_owl_engine_1_1_spot_light_a6c5fca1e8c991988a0fbdfd11c43fbcd}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!setAmbientFactor@{setAmbientFactor}}
+\index{setAmbientFactor@{setAmbientFactor}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{setAmbientFactor()}{setAmbientFactor()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::set\+Ambient\+Factor (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{ambient }\end{DoxyParamCaption})}
+
+
+
+Set the ambient factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a6c5fca1e8c991988a0fbdfd11c43fbcd}{set\+Ambient\+Factor()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ambient} & a const glm\+::vec3\& -\/ The desired ambient factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a09647d65eff47ed1c3423adb4dc93005}\label{class_owl_engine_1_1_spot_light_a09647d65eff47ed1c3423adb4dc93005}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!setConstant@{setConstant}}
+\index{setConstant@{setConstant}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{setConstant()}{setConstant()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::set\+Constant (\begin{DoxyParamCaption}\item[{const float}]{constant }\end{DoxyParamCaption})}
+
+
+
+Set the constant value used for attenuation. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a09647d65eff47ed1c3423adb4dc93005}{set\+Constant()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em constant} & a const float -\/ The constant value for the attenuation calculation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a25a9ef08ff4b77523e88ed63fa7e22bc}\label{class_owl_engine_1_1_spot_light_a25a9ef08ff4b77523e88ed63fa7e22bc}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!setCutOff@{setCutOff}}
+\index{setCutOff@{setCutOff}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{setCutOff()}{setCutOff()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::set\+Cut\+Off (\begin{DoxyParamCaption}\item[{const float}]{cut\+Off }\end{DoxyParamCaption})}
+
+
+
+Set the cutoff value. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a25a9ef08ff4b77523e88ed63fa7e22bc}{set\+Cut\+Off()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cut\+Off} & a const float -\/ The cut off value desired \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_af5dc699f1bff0b4ef7eee28810970e3a}\label{class_owl_engine_1_1_spot_light_af5dc699f1bff0b4ef7eee28810970e3a}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!setDiffuseFactor@{setDiffuseFactor}}
+\index{setDiffuseFactor@{setDiffuseFactor}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{setDiffuseFactor()}{setDiffuseFactor()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::set\+Diffuse\+Factor (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{diffuse }\end{DoxyParamCaption})}
+
+
+
+Set the diffuse factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_af5dc699f1bff0b4ef7eee28810970e3a}{set\+Diffuse\+Factor()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em diffuse} & a const glm\+::vec3\& -\/ The desired diffuse factor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_ac588b96924f204002d35a202b8da54f6}\label{class_owl_engine_1_1_spot_light_ac588b96924f204002d35a202b8da54f6}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!setDirection@{setDirection}}
+\index{setDirection@{setDirection}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{setDirection()}{setDirection()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::set\+Direction (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction }\end{DoxyParamCaption})}
+
+
+
+Set the direction vector of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_ac588b96924f204002d35a202b8da54f6}{set\+Direction()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & a const glm\+::vec3\& -\/ The desired light direction \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a3f2226d1105d9f62ab6a7ba5b9bd262e}\label{class_owl_engine_1_1_spot_light_a3f2226d1105d9f62ab6a7ba5b9bd262e}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!setLinear@{setLinear}}
+\index{setLinear@{setLinear}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{setLinear()}{setLinear()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::set\+Linear (\begin{DoxyParamCaption}\item[{const float}]{linear }\end{DoxyParamCaption})}
+
+
+
+Set the linear value used for attenuation. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a3f2226d1105d9f62ab6a7ba5b9bd262e}{set\+Linear()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em linear} & a const float -\/ The linear value for the attenuation calculation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_ab9821b261137d6c5c0dc778900bc1547}\label{class_owl_engine_1_1_spot_light_ab9821b261137d6c5c0dc778900bc1547}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!setOuterCutOff@{setOuterCutOff}}
+\index{setOuterCutOff@{setOuterCutOff}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{setOuterCutOff()}{setOuterCutOff()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::set\+Outer\+Cut\+Off (\begin{DoxyParamCaption}\item[{const float}]{outer\+Cut\+Off }\end{DoxyParamCaption})}
+
+
+
+Set the outer cutoff value. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_ab9821b261137d6c5c0dc778900bc1547}{set\+Outer\+Cut\+Off()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em outer\+Cut\+Off} & a const float -\/ The outer cut off value desired \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a62083e6647aac838dd0f2cdd1b7c913f}\label{class_owl_engine_1_1_spot_light_a62083e6647aac838dd0f2cdd1b7c913f}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!setQuadratic@{setQuadratic}}
+\index{setQuadratic@{setQuadratic}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{setQuadratic()}{setQuadratic()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::set\+Quadratic (\begin{DoxyParamCaption}\item[{const float}]{quadratic }\end{DoxyParamCaption})}
+
+
+
+Set the quadratic value used for attenuation. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a62083e6647aac838dd0f2cdd1b7c913f}{set\+Quadratic()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em quadratic} & a const float -\/ The quadratic value for the attenuation calculation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_spot_light_a3c71392e92c91fc01e0c2a942447ba47}\label{class_owl_engine_1_1_spot_light_a3c71392e92c91fc01e0c2a942447ba47}} 
+\index{OwlEngine::SpotLight@{OwlEngine::SpotLight}!setSpecularFactor@{setSpecularFactor}}
+\index{setSpecularFactor@{setSpecularFactor}!OwlEngine::SpotLight@{OwlEngine::SpotLight}}
+\doxysubsubsection{\texorpdfstring{setSpecularFactor()}{setSpecularFactor()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Spot\+Light\+::set\+Specular\+Factor (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{specular }\end{DoxyParamCaption})}
+
+
+
+Set the specular factor of the light. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_spot_light_a3c71392e92c91fc01e0c2a942447ba47}{set\+Specular\+Factor()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em specular} & a const glm\+::vec3\& -\/ The desired specular factor \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{light_8h}{light.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{light_8cpp}{light.\+cpp}}\end{DoxyCompactItemize}

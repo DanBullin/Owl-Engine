@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{5a089993-e898-4c3b-b2b5-457fa152396f}">
+		<property name="assetPath">
+			<value>Menu/elevator_music.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>254.06399999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5033613f-b813-4094-b787-2fb291559bd7}</destination>
+		</relationship>
+	</object>
+</objects>

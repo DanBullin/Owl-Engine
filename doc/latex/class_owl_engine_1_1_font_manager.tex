@@ -1,0 +1,175 @@
+\hypertarget{class_owl_engine_1_1_font_manager}{}\doxysection{Owl\+Engine\+::Font\+Manager Class Reference}
+\label{class_owl_engine_1_1_font_manager}\index{OwlEngine::FontManager@{OwlEngine::FontManager}}
+
+
+A system which loads and manages fonts.  
+
+
+
+
+{\ttfamily \#include $<$font\+Manager.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Font\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_font_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_font_manager_a8f7da149c209a0b0b210872c2046f909}{Font\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_font_manager_a1e1d8d53e5423342ca8f1967ab5e8ca3}{$\sim$\+Font\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_font_manager_a644ada93ad7d985513f695d5400db506}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_font_manager_af7702a235ee0bf5871ac2fa6e49e5b36}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_font_manager_a8c0717bc43e5d53f85d047cc4fab5b2e}{load\+Font}} (const std\+::string \&font\+Name, const std\+::string \&font\+File\+Path, const uint32\+\_\+t pixel\+Size)
+\begin{DoxyCompactList}\small\item\em Load the font into the manager. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_font_manager_a2b0ca4d843b68a255f7564bffa3ae061}{destroy\+Font}} (const std\+::string \&font\+Name)
+\begin{DoxyCompactList}\small\item\em Destroy a font and all its contents. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_font}{Font}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_font_manager_aa8fee1bc07b8042bfacf63b4c7722c45}{get\+Font}} (const std\+::string \&font\+Name)
+\begin{DoxyCompactList}\small\item\em Get a font. \end{DoxyCompactList}\item 
+static std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_font}{Font}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_font_manager_a3c4c10c412c91537368148e5b085cd99}{get\+Font\+List}} ()
+\begin{DoxyCompactList}\small\item\em Get the list of loaded fonts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A system which loads and manages fonts. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_manager_a8f7da149c209a0b0b210872c2046f909}\label{class_owl_engine_1_1_font_manager_a8f7da149c209a0b0b210872c2046f909}} 
+\index{OwlEngine::FontManager@{OwlEngine::FontManager}!FontManager@{FontManager}}
+\index{FontManager@{FontManager}!OwlEngine::FontManager@{OwlEngine::FontManager}}
+\doxysubsubsection{\texorpdfstring{FontManager()}{FontManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Font\+Manager\+::\+Font\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_manager}{Font\+Manager}}. \mbox{\Hypertarget{class_owl_engine_1_1_font_manager_a1e1d8d53e5423342ca8f1967ab5e8ca3}\label{class_owl_engine_1_1_font_manager_a1e1d8d53e5423342ca8f1967ab5e8ca3}} 
+\index{OwlEngine::FontManager@{OwlEngine::FontManager}!````~FontManager@{$\sim$FontManager}}
+\index{````~FontManager@{$\sim$FontManager}!OwlEngine::FontManager@{OwlEngine::FontManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$FontManager()}{~FontManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Font\+Manager\+::$\sim$\+Font\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+$\sim$\+Font\+Manager 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_manager_a2b0ca4d843b68a255f7564bffa3ae061}\label{class_owl_engine_1_1_font_manager_a2b0ca4d843b68a255f7564bffa3ae061}} 
+\index{OwlEngine::FontManager@{OwlEngine::FontManager}!destroyFont@{destroyFont}}
+\index{destroyFont@{destroyFont}!OwlEngine::FontManager@{OwlEngine::FontManager}}
+\doxysubsubsection{\texorpdfstring{destroyFont()}{destroyFont()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Font\+Manager\+::destroy\+Font (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy a font and all its contents. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_manager_a2b0ca4d843b68a255f7564bffa3ae061}{destroy\+Font()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Name} & a const std\+::string\& -\/ The name of the font \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_manager_aa8fee1bc07b8042bfacf63b4c7722c45}\label{class_owl_engine_1_1_font_manager_aa8fee1bc07b8042bfacf63b4c7722c45}} 
+\index{OwlEngine::FontManager@{OwlEngine::FontManager}!getFont@{getFont}}
+\index{getFont@{getFont}!OwlEngine::FontManager@{OwlEngine::FontManager}}
+\doxysubsubsection{\texorpdfstring{getFont()}{getFont()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_font}{Font}} $\ast$ Owl\+Engine\+::\+Font\+Manager\+::get\+Font (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a font. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_manager_aa8fee1bc07b8042bfacf63b4c7722c45}{get\+Font()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Name} & a const std\+::string\& -\/ The name of the font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Font$\ast$ -\/ A pointer to the font 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_manager_a3c4c10c412c91537368148e5b085cd99}\label{class_owl_engine_1_1_font_manager_a3c4c10c412c91537368148e5b085cd99}} 
+\index{OwlEngine::FontManager@{OwlEngine::FontManager}!getFontList@{getFontList}}
+\index{getFontList@{getFontList}!OwlEngine::FontManager@{OwlEngine::FontManager}}
+\doxysubsubsection{\texorpdfstring{getFontList()}{getFontList()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_font}{Font}} $\ast$ $>$ \& Owl\+Engine\+::\+Font\+Manager\+::get\+Font\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the list of loaded fonts. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_manager_a3c4c10c412c91537368148e5b085cd99}{get\+Font\+List()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::map$<$std\+::string, Font$\ast$$>$\& -\/ A reference to the font list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_manager_a8c0717bc43e5d53f85d047cc4fab5b2e}\label{class_owl_engine_1_1_font_manager_a8c0717bc43e5d53f85d047cc4fab5b2e}} 
+\index{OwlEngine::FontManager@{OwlEngine::FontManager}!loadFont@{loadFont}}
+\index{loadFont@{loadFont}!OwlEngine::FontManager@{OwlEngine::FontManager}}
+\doxysubsubsection{\texorpdfstring{loadFont()}{loadFont()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Font\+Manager\+::load\+Font (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{font\+Name,  }\item[{const std\+::string \&}]{font\+File\+Path,  }\item[{const uint32\+\_\+t}]{pixel\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the font into the manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_manager_a8c0717bc43e5d53f85d047cc4fab5b2e}{load\+Font()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em font\+Name} & a const std\+::string\& -\/ The name of the font \\
+\hline
+{\em font\+File\+Path} & a const std\+::string\& -\/ The file path of the font \\
+\hline
+{\em pixel\+Size} & a const uint32\+\_\+t -\/ The size of the font in pixel size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_font_manager_a644ada93ad7d985513f695d5400db506}\label{class_owl_engine_1_1_font_manager_a644ada93ad7d985513f695d5400db506}} 
+\index{OwlEngine::FontManager@{OwlEngine::FontManager}!start@{start}}
+\index{start@{start}!OwlEngine::FontManager@{OwlEngine::FontManager}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Font\+Manager\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_manager_a644ada93ad7d985513f695d5400db506}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_font_manager_af7702a235ee0bf5871ac2fa6e49e5b36}\label{class_owl_engine_1_1_font_manager_af7702a235ee0bf5871ac2fa6e49e5b36}} 
+\index{OwlEngine::FontManager@{OwlEngine::FontManager}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::FontManager@{OwlEngine::FontManager}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Font\+Manager\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_font_manager_af7702a235ee0bf5871ac2fa6e49e5b36}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{font_manager_8h}{font\+Manager.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{font_manager_8cpp}{font\+Manager.\+cpp}}\end{DoxyCompactItemize}

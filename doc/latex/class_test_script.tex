@@ -1,0 +1,94 @@
+\hypertarget{class_test_script}{}\doxysection{Test\+Script Class Reference}
+\label{class_test_script}\index{TestScript@{TestScript}}
+
+
+A script used in testing features.  
+
+
+
+
+{\ttfamily \#include $<$test\+Script.\+h$>$}
+
+Inheritance diagram for Test\+Script\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_test_script}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_test_script_a26fb9531eb07ef47f7555451734fce3f}{Test\+Script}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_test_script_a3e2aed1ffb79bb36f8ae81f167245aaf}{$\sim$\+Test\+Script}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_test_script_a51242b5a1f238dac4b3797e19bbddca9}{on\+Post\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call after game update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_test_script_a752b652e64d4f7ffa63041e7d5723311}\label{class_test_script_a752b652e64d4f7ffa63041e7d5723311}} 
+void \mbox{\hyperlink{class_test_script_a752b652e64d4f7ffa63041e7d5723311}{on\+Trigger}} (\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$overlap\+Entity) override
+\begin{DoxyCompactList}\small\item\em On trigger. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_test_script_a73596a4b507fc4e05205b4c5f9967c53}\label{class_test_script_a73596a4b507fc4e05205b4c5f9967c53}} 
+void \mbox{\hyperlink{class_test_script_a73596a4b507fc4e05205b4c5f9967c53}{on\+Contact}} (\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$colliding\+Entity) override
+\begin{DoxyCompactList}\small\item\em On trigger. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_test_script_a62543867735cf806799835721e1479df}\label{class_test_script_a62543867735cf806799835721e1479df}} 
+void \mbox{\hyperlink{class_test_script_a62543867735cf806799835721e1479df}{on\+Key\+Release}} (\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&e, const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call upon key release. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A script used in testing features. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_test_script_a26fb9531eb07ef47f7555451734fce3f}\label{class_test_script_a26fb9531eb07ef47f7555451734fce3f}} 
+\index{TestScript@{TestScript}!TestScript@{TestScript}}
+\index{TestScript@{TestScript}!TestScript@{TestScript}}
+\doxysubsubsection{\texorpdfstring{TestScript()}{TestScript()}}
+{\footnotesize\ttfamily Test\+Script\+::\+Test\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_test_script_a26fb9531eb07ef47f7555451734fce3f}{Test\+Script()}} \mbox{\Hypertarget{class_test_script_a3e2aed1ffb79bb36f8ae81f167245aaf}\label{class_test_script_a3e2aed1ffb79bb36f8ae81f167245aaf}} 
+\index{TestScript@{TestScript}!````~TestScript@{$\sim$TestScript}}
+\index{````~TestScript@{$\sim$TestScript}!TestScript@{TestScript}}
+\doxysubsubsection{\texorpdfstring{$\sim$TestScript()}{~TestScript()}}
+{\footnotesize\ttfamily Test\+Script\+::$\sim$\+Test\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_test_script_a3e2aed1ffb79bb36f8ae81f167245aaf}{$\sim$\+Test\+Script()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_test_script_a51242b5a1f238dac4b3797e19bbddca9}\label{class_test_script_a51242b5a1f238dac4b3797e19bbddca9}} 
+\index{TestScript@{TestScript}!onPostUpdate@{onPostUpdate}}
+\index{onPostUpdate@{onPostUpdate}!TestScript@{TestScript}}
+\doxysubsubsection{\texorpdfstring{onPostUpdate()}{onPostUpdate()}}
+{\footnotesize\ttfamily void Test\+Script\+::on\+Post\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call after game update. 
+
+\mbox{\hyperlink{class_test_script_a51242b5a1f238dac4b3797e19bbddca9}{on\+Post\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a72322920d1ad5b3fa18efe237b68ebef}{Owl\+Engine\+::\+Native\+Script}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/sandbox/include/scripts/testing/\mbox{\hyperlink{test_script_8h}{test\+Script.\+h}}\item 
+C\+:/doc/src/sandbox/src/scripts/testing/\mbox{\hyperlink{test_script_8cpp}{test\+Script.\+cpp}}\end{DoxyCompactItemize}

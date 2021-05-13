@@ -1,0 +1,197 @@
+\hypertarget{class_render_engine}{}\doxysection{Render\+Engine Class Reference}
+\label{class_render_engine}\index{RenderEngine@{RenderEngine}}
+
+
+A render engine which handles all the rendering.  
+
+
+
+
+{\ttfamily \#include $<$render\+Engine.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_render_engine_aa59af84e8ed6a563f55805dd4b04402f}{Render\+Engine}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_window}{Window}} $>$ \&window)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_render_engine_a22709e8d62956c56b981d4d5d3ee1fc6}{$\sim$\+Render\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_engine_a625ad7c74e8d74c0ddab6a4d225c36af}{update}} (const float delta)
+\begin{DoxyCompactList}\small\item\em Update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_engine_a53a4c17a370573bc19c797e4e0f966bb}{render}} ()
+\begin{DoxyCompactList}\small\item\em Render the scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_engine_a80304de784e039025b369e308dee82da}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the render engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_engine_a07182f010c1379e9a45cbb71b22d39c7}{process\+Key\+Input}} (G\+L\+F\+Wwindow $\ast$window, const float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Process any key inputs for the render engije. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_engine_abd43a8290d481ee6305dc969647dd84b}{process\+Mouse\+Button}} (G\+L\+F\+Wwindow $\ast$window, int button, int action, int mods)
+\begin{DoxyCompactList}\small\item\em Process any mouse button inputs for the render engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_engine_a276e69f9708c9c423b3dc172c4c562ed}{process\+Mouse\+Moved}} (G\+L\+F\+Wwindow $\ast$window, float xpos, float ypos, \mbox{\hyperlink{struct_event_data}{Event\+Data}} \&event\+Data)
+\begin{DoxyCompactList}\small\item\em Process any mouse movement for the render engine. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_engine_a2515cc4472fc7ba6dac9c4c65768058c}{process\+Scroll}} (G\+L\+F\+Wwindow $\ast$window, float xoffset, float yoffset)
+\begin{DoxyCompactList}\small\item\em Process any mouse scrolling for the render engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A render engine which handles all the rendering. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_render_engine_aa59af84e8ed6a563f55805dd4b04402f}\label{class_render_engine_aa59af84e8ed6a563f55805dd4b04402f}} 
+\index{RenderEngine@{RenderEngine}!RenderEngine@{RenderEngine}}
+\index{RenderEngine@{RenderEngine}!RenderEngine@{RenderEngine}}
+\doxysubsubsection{\texorpdfstring{RenderEngine()}{RenderEngine()}}
+{\footnotesize\ttfamily Render\+Engine\+::\+Render\+Engine (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_window}{Window}} $>$ \&}]{window }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_render_engine_aa59af84e8ed6a563f55805dd4b04402f}{Render\+Engine()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a const std\+::shared\+\_\+ptr$<$\+Window$>$\& -\/ A pointer to the window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_render_engine_a22709e8d62956c56b981d4d5d3ee1fc6}\label{class_render_engine_a22709e8d62956c56b981d4d5d3ee1fc6}} 
+\index{RenderEngine@{RenderEngine}!````~RenderEngine@{$\sim$RenderEngine}}
+\index{````~RenderEngine@{$\sim$RenderEngine}!RenderEngine@{RenderEngine}}
+\doxysubsubsection{\texorpdfstring{$\sim$RenderEngine()}{~RenderEngine()}}
+{\footnotesize\ttfamily Render\+Engine\+::$\sim$\+Render\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_render_engine_a22709e8d62956c56b981d4d5d3ee1fc6}{$\sim$\+Render\+Engine()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_render_engine_a80304de784e039025b369e308dee82da}\label{class_render_engine_a80304de784e039025b369e308dee82da}} 
+\index{RenderEngine@{RenderEngine}!destroy@{destroy}}
+\index{destroy@{destroy}!RenderEngine@{RenderEngine}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Render\+Engine\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the render engine. 
+
+\mbox{\hyperlink{class_render_engine_a80304de784e039025b369e308dee82da}{destroy()}} \mbox{\Hypertarget{class_render_engine_a07182f010c1379e9a45cbb71b22d39c7}\label{class_render_engine_a07182f010c1379e9a45cbb71b22d39c7}} 
+\index{RenderEngine@{RenderEngine}!processKeyInput@{processKeyInput}}
+\index{processKeyInput@{processKeyInput}!RenderEngine@{RenderEngine}}
+\doxysubsubsection{\texorpdfstring{processKeyInput()}{processKeyInput()}}
+{\footnotesize\ttfamily void Render\+Engine\+::process\+Key\+Input (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{const float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Process any key inputs for the render engije. 
+
+process\+Input()
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em delta\+Time} & a const float -\/ The timestep of the update \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_render_engine_abd43a8290d481ee6305dc969647dd84b}\label{class_render_engine_abd43a8290d481ee6305dc969647dd84b}} 
+\index{RenderEngine@{RenderEngine}!processMouseButton@{processMouseButton}}
+\index{processMouseButton@{processMouseButton}!RenderEngine@{RenderEngine}}
+\doxysubsubsection{\texorpdfstring{processMouseButton()}{processMouseButton()}}
+{\footnotesize\ttfamily void Render\+Engine\+::process\+Mouse\+Button (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{button,  }\item[{int}]{action,  }\item[{int}]{mods }\end{DoxyParamCaption})}
+
+
+
+Process any mouse button inputs for the render engine. 
+
+\mbox{\hyperlink{class_render_engine_abd43a8290d481ee6305dc969647dd84b}{process\+Mouse\+Button()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em button} & an int -\/ The button involved \\
+\hline
+{\em action} & an int -\/ The action of the mouse button \\
+\hline
+{\em mods} & an int -\/ The modifier key flags \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_render_engine_a276e69f9708c9c423b3dc172c4c562ed}\label{class_render_engine_a276e69f9708c9c423b3dc172c4c562ed}} 
+\index{RenderEngine@{RenderEngine}!processMouseMoved@{processMouseMoved}}
+\index{processMouseMoved@{processMouseMoved}!RenderEngine@{RenderEngine}}
+\doxysubsubsection{\texorpdfstring{processMouseMoved()}{processMouseMoved()}}
+{\footnotesize\ttfamily void Render\+Engine\+::process\+Mouse\+Moved (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{float}]{xpos,  }\item[{float}]{ypos,  }\item[{\mbox{\hyperlink{struct_event_data}{Event\+Data}} \&}]{event\+Data }\end{DoxyParamCaption})}
+
+
+
+Process any mouse movement for the render engine. 
+
+process\+Mouse()
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em xpos} & a float -\/ Mouse x position \\
+\hline
+{\em ypos} & a float -\/ Mouse y position \\
+\hline
+{\em event\+Data} & a \mbox{\hyperlink{struct_event_data}{Event\+Data}}\& -\/ A reference to the event data gathered by the application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_render_engine_a2515cc4472fc7ba6dac9c4c65768058c}\label{class_render_engine_a2515cc4472fc7ba6dac9c4c65768058c}} 
+\index{RenderEngine@{RenderEngine}!processScroll@{processScroll}}
+\index{processScroll@{processScroll}!RenderEngine@{RenderEngine}}
+\doxysubsubsection{\texorpdfstring{processScroll()}{processScroll()}}
+{\footnotesize\ttfamily void Render\+Engine\+::process\+Scroll (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{float}]{xoffset,  }\item[{float}]{yoffset }\end{DoxyParamCaption})}
+
+
+
+Process any mouse scrolling for the render engine. 
+
+\mbox{\hyperlink{class_render_engine_a2515cc4472fc7ba6dac9c4c65768058c}{process\+Scroll()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a G\+L\+F\+Wwindow$\ast$ -\/ Pointer to the G\+L\+FW window \\
+\hline
+{\em xoffset} & a float -\/ The offset scroll \\
+\hline
+{\em yoffset} & a float -\/ The offset scroll \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_render_engine_a53a4c17a370573bc19c797e4e0f966bb}\label{class_render_engine_a53a4c17a370573bc19c797e4e0f966bb}} 
+\index{RenderEngine@{RenderEngine}!render@{render}}
+\index{render@{render}!RenderEngine@{RenderEngine}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void Render\+Engine\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Render the scene. 
+
+\mbox{\hyperlink{class_render_engine_a53a4c17a370573bc19c797e4e0f966bb}{render()}} \mbox{\Hypertarget{class_render_engine_a625ad7c74e8d74c0ddab6a4d225c36af}\label{class_render_engine_a625ad7c74e8d74c0ddab6a4d225c36af}} 
+\index{RenderEngine@{RenderEngine}!update@{update}}
+\index{update@{update}!RenderEngine@{RenderEngine}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Render\+Engine\+::update (\begin{DoxyParamCaption}\item[{const float}]{delta }\end{DoxyParamCaption})}
+
+
+
+Update. 
+
+\mbox{\hyperlink{class_render_engine_a625ad7c74e8d74c0ddab6a4d225c36af}{update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & a const float -\/ The time step \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/rendering/\mbox{\hyperlink{render_engine_8h}{render\+Engine.\+h}}\item 
+C\+:/doc/src/src/rendering/\mbox{\hyperlink{render_engine_8cpp}{render\+Engine.\+cpp}}\end{DoxyCompactItemize}

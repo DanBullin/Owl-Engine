@@ -1,0 +1,114 @@
+\hypertarget{class_owl_engine_1_1_resource}{}\doxysection{Owl\+Engine\+::Resource Class Reference}
+\label{class_owl_engine_1_1_resource}\index{OwlEngine::Resource@{OwlEngine::Resource}}
+
+
+A base class defining a resource.  
+
+
+
+
+{\ttfamily \#include $<$resource.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Resource\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_owl_engine_1_1_resource}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_resource_aff48da9cd584cbf7e5ac76eb5f158bde}{Resource}} (const std\+::string \&resource\+Name, const \mbox{\hyperlink{resource_8h_a3f3bdad1ec3705aa4956c3f79d741c36}{Resource\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_resource_aef71d7c9f1eb0e1a44c15cd2512cf475}{$\sim$\+Resource}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_resource_a8b164b11847a12031955a78287a8e8bd}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the resource. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{resource_8h_a3f3bdad1ec3705aa4956c3f79d741c36}{Resource\+Type}} \mbox{\hyperlink{class_owl_engine_1_1_resource_a83dfe0cbc2d9ccca338f2cb16eba3b59}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the resource type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_a8b38cc50cd98c027bf848b9e65a5ca89}\label{class_owl_engine_1_1_resource_a8b38cc50cd98c027bf848b9e65a5ca89}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_resource_a8b38cc50cd98c027bf848b9e65a5ca89}{print\+Details}} ()=0
+\begin{DoxyCompactList}\small\item\em Print the details of the resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_ab41655dda56fedf70850f0f852b3235d}\label{class_owl_engine_1_1_resource_ab41655dda56fedf70850f0f852b3235d}} 
+std\+::string \mbox{\hyperlink{class_owl_engine_1_1_resource_ab41655dda56fedf70850f0f852b3235d}{m\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em The name of the resource. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_aff80ebaae1c42551be0ac8ea436e3050}\label{class_owl_engine_1_1_resource_aff80ebaae1c42551be0ac8ea436e3050}} 
+\mbox{\hyperlink{resource_8h_a3f3bdad1ec3705aa4956c3f79d741c36}{Resource\+Type}} \mbox{\hyperlink{class_owl_engine_1_1_resource_aff80ebaae1c42551be0ac8ea436e3050}{m\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em The type of resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A base class defining a resource. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_aff48da9cd584cbf7e5ac76eb5f158bde}\label{class_owl_engine_1_1_resource_aff48da9cd584cbf7e5ac76eb5f158bde}} 
+\index{OwlEngine::Resource@{OwlEngine::Resource}!Resource@{Resource}}
+\index{Resource@{Resource}!OwlEngine::Resource@{OwlEngine::Resource}}
+\doxysubsubsection{\texorpdfstring{Resource()}{Resource()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Resource\+::\+Resource (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{resource\+Name,  }\item[{const \mbox{\hyperlink{resource_8h_a3f3bdad1ec3705aa4956c3f79d741c36}{Resource\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_aff48da9cd584cbf7e5ac76eb5f158bde}{Resource()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Name} & a const std\+::string\& -\/ The name of the resource \\
+\hline
+{\em type} & a const Resource\+Type -\/ The resource type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_aef71d7c9f1eb0e1a44c15cd2512cf475}\label{class_owl_engine_1_1_resource_aef71d7c9f1eb0e1a44c15cd2512cf475}} 
+\index{OwlEngine::Resource@{OwlEngine::Resource}!````~Resource@{$\sim$Resource}}
+\index{````~Resource@{$\sim$Resource}!OwlEngine::Resource@{OwlEngine::Resource}}
+\doxysubsubsection{\texorpdfstring{$\sim$Resource()}{~Resource()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Resource\+::$\sim$\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_aef71d7c9f1eb0e1a44c15cd2512cf475}{$\sim$\+Resource()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_a8b164b11847a12031955a78287a8e8bd}\label{class_owl_engine_1_1_resource_a8b164b11847a12031955a78287a8e8bd}} 
+\index{OwlEngine::Resource@{OwlEngine::Resource}!getName@{getName}}
+\index{getName@{getName}!OwlEngine::Resource@{OwlEngine::Resource}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Resource\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of the resource. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_a8b164b11847a12031955a78287a8e8bd}{get\+Name()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The name of the resource 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_a83dfe0cbc2d9ccca338f2cb16eba3b59}\label{class_owl_engine_1_1_resource_a83dfe0cbc2d9ccca338f2cb16eba3b59}} 
+\index{OwlEngine::Resource@{OwlEngine::Resource}!getType@{getType}}
+\index{getType@{getType}!OwlEngine::Resource@{OwlEngine::Resource}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{resource_8h_a3f3bdad1ec3705aa4956c3f79d741c36}{Resource\+Type}} Owl\+Engine\+::\+Resource\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the resource type. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_a83dfe0cbc2d9ccca338f2cb16eba3b59}{get\+Type()}}
+
+\begin{DoxyReturn}{Returns}
+a Resource\+Type -\/ The resource type 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/components/\mbox{\hyperlink{resource_8h}{resource.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/components/\mbox{\hyperlink{resource_8cpp}{resource.\+cpp}}\end{DoxyCompactItemize}

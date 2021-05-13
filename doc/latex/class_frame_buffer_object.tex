@@ -1,0 +1,130 @@
+\hypertarget{class_frame_buffer_object}{}\doxysection{Frame\+Buffer\+Object Class Reference}
+\label{class_frame_buffer_object}\index{FrameBufferObject@{FrameBufferObject}}
+
+
+An interface class for creating a frame buffer object.  
+
+
+
+
+{\ttfamily \#include $<$frame\+Buffer\+Object.\+h$>$}
+
+Inheritance diagram for Frame\+Buffer\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_frame_buffer_object}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_frame_buffer_object_a29e3fea35e5b47e2c23894848b3ee83f}{$\sim$\+Frame\+Buffer\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_frame_buffer_object_aceb8be512f44e34c07bf95aea8053d45}\label{class_frame_buffer_object_aceb8be512f44e34c07bf95aea8053d45}} 
+virtual void \mbox{\hyperlink{class_frame_buffer_object_aceb8be512f44e34c07bf95aea8053d45}{init}} ()=0
+\begin{DoxyCompactList}\small\item\em Initialise the frame buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_frame_buffer_object_aee2cd38309ec8a41a57af7b910f99b5d}{bind}} ()
+\begin{DoxyCompactList}\small\item\em Bind the frame buffer. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_frame_buffer_object_a1f83a79d0fc4e546c91048c6d9a656af}{get\+Texture\+By\+Name}} (const char $\ast$texture\+Name)
+\begin{DoxyCompactList}\small\item\em Get the ID of a texture. \end{DoxyCompactList}\item 
+glm\+::uvec2 \& \mbox{\hyperlink{class_frame_buffer_object_a92a19090e5e35e547375ac2cd7ab0619}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Get the size of the textures for this frame buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_frame_buffer_object_a4ff79cd188716be6e42f505911e3b4b2}{set\+Size}} (const glm\+::uvec2 \&size)
+\begin{DoxyCompactList}\small\item\em Set the size of the textures for this frame buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_frame_buffer_object_a9d4d89df1d2392bd8475ce9c5e6a8b05}\label{class_frame_buffer_object_a9d4d89df1d2392bd8475ce9c5e6a8b05}} 
+unsigned int \mbox{\hyperlink{class_frame_buffer_object_a9d4d89df1d2392bd8475ce9c5e6a8b05}{m\+\_\+frame\+Buffer\+ID}}
+\begin{DoxyCompactList}\small\item\em The ID of the frame buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_frame_buffer_object_a969dbcb8566e9cea519e6c1ccb398352}\label{class_frame_buffer_object_a969dbcb8566e9cea519e6c1ccb398352}} 
+glm\+::uvec2 \mbox{\hyperlink{class_frame_buffer_object_a969dbcb8566e9cea519e6c1ccb398352}{m\+\_\+size}}
+\begin{DoxyCompactList}\small\item\em The size in dimensions of the textures we are drawing to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_frame_buffer_object_a338fc3b97f9304ed966393f53a8d38df}\label{class_frame_buffer_object_a338fc3b97f9304ed966393f53a8d38df}} 
+std\+::map$<$ std\+::string, unsigned int $>$ \mbox{\hyperlink{class_frame_buffer_object_a338fc3b97f9304ed966393f53a8d38df}{m\+\_\+textures}}
+\begin{DoxyCompactList}\small\item\em The textures used in this F\+BO. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An interface class for creating a frame buffer object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_frame_buffer_object_a29e3fea35e5b47e2c23894848b3ee83f}\label{class_frame_buffer_object_a29e3fea35e5b47e2c23894848b3ee83f}} 
+\index{FrameBufferObject@{FrameBufferObject}!````~FrameBufferObject@{$\sim$FrameBufferObject}}
+\index{````~FrameBufferObject@{$\sim$FrameBufferObject}!FrameBufferObject@{FrameBufferObject}}
+\doxysubsubsection{\texorpdfstring{$\sim$FrameBufferObject()}{~FrameBufferObject()}}
+{\footnotesize\ttfamily Frame\+Buffer\+Object\+::$\sim$\+Frame\+Buffer\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual destructor. 
+
+\mbox{\hyperlink{class_frame_buffer_object_a29e3fea35e5b47e2c23894848b3ee83f}{$\sim$\+Frame\+Buffer\+Object()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_frame_buffer_object_aee2cd38309ec8a41a57af7b910f99b5d}\label{class_frame_buffer_object_aee2cd38309ec8a41a57af7b910f99b5d}} 
+\index{FrameBufferObject@{FrameBufferObject}!bind@{bind}}
+\index{bind@{bind}!FrameBufferObject@{FrameBufferObject}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily void Frame\+Buffer\+Object\+::bind (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Bind the frame buffer. 
+
+\mbox{\hyperlink{class_frame_buffer_object_aee2cd38309ec8a41a57af7b910f99b5d}{bind()}} \mbox{\Hypertarget{class_frame_buffer_object_a92a19090e5e35e547375ac2cd7ab0619}\label{class_frame_buffer_object_a92a19090e5e35e547375ac2cd7ab0619}} 
+\index{FrameBufferObject@{FrameBufferObject}!getSize@{getSize}}
+\index{getSize@{getSize}!FrameBufferObject@{FrameBufferObject}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily glm\+::uvec2 \& Frame\+Buffer\+Object\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the size of the textures for this frame buffer. 
+
+\mbox{\hyperlink{class_frame_buffer_object_a92a19090e5e35e547375ac2cd7ab0619}{get\+Size()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::uvec2\& -\/ The size of the textures inside the framebuffer in pixel dimensions 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_frame_buffer_object_a1f83a79d0fc4e546c91048c6d9a656af}\label{class_frame_buffer_object_a1f83a79d0fc4e546c91048c6d9a656af}} 
+\index{FrameBufferObject@{FrameBufferObject}!getTextureByName@{getTextureByName}}
+\index{getTextureByName@{getTextureByName}!FrameBufferObject@{FrameBufferObject}}
+\doxysubsubsection{\texorpdfstring{getTextureByName()}{getTextureByName()}}
+{\footnotesize\ttfamily unsigned int Frame\+Buffer\+Object\+::get\+Texture\+By\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{texture\+Name }\end{DoxyParamCaption})}
+
+
+
+Get the ID of a texture. 
+
+\mbox{\hyperlink{class_frame_buffer_object_a1f83a79d0fc4e546c91048c6d9a656af}{get\+Texture\+By\+Name()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & a const char$\ast$ -\/ The name of the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an unsigned int -\/ The texture ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_frame_buffer_object_a4ff79cd188716be6e42f505911e3b4b2}\label{class_frame_buffer_object_a4ff79cd188716be6e42f505911e3b4b2}} 
+\index{FrameBufferObject@{FrameBufferObject}!setSize@{setSize}}
+\index{setSize@{setSize}!FrameBufferObject@{FrameBufferObject}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Frame\+Buffer\+Object\+::set\+Size (\begin{DoxyParamCaption}\item[{const glm\+::uvec2 \&}]{size }\end{DoxyParamCaption})}
+
+
+
+Set the size of the textures for this frame buffer. 
+
+\mbox{\hyperlink{class_frame_buffer_object_a4ff79cd188716be6e42f505911e3b4b2}{set\+Size()}}
+
+\begin{DoxyReturn}{Returns}
+size a const glm\+::uvec2\& -\/ The size of the textures inside the framebuffer in pixel dimensions 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/rendering/\mbox{\hyperlink{frame_buffer_object_8h}{frame\+Buffer\+Object.\+h}}\item 
+C\+:/doc/src/src/rendering/\mbox{\hyperlink{frame_buffer_object_8cpp}{frame\+Buffer\+Object.\+cpp}}\end{DoxyCompactItemize}

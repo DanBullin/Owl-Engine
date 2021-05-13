@@ -1,0 +1,256 @@
+\hypertarget{class_owl_engine_1_1_sound}{}\doxysection{Owl\+Engine\+::Sound Class Reference}
+\label{class_owl_engine_1_1_sound}\index{OwlEngine::Sound@{OwlEngine::Sound}}
+
+
+A sound object.  
+
+
+
+
+{\ttfamily \#include $<$sound.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Sound\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_sound}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_sound_a0db9d211d7165f09a336288584df2168}{Sound}} (const std\+::string \&sound\+Name, const bool loop)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_sound_a22f861c92956b3a6dddf1c337edc6272}{$\sim$\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sound_af120c062ba4c36478a1f4f63ed698221}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sound_a318ecfd381e5dad9d52e163becaef8ea}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sound_affd8b649cead2759cf72b34cea109e98}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the studio sound component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sound_ac97618ab3a21324927394cf2ac9f7d95}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_sound_abb551a367df0cb671ed167779567e645}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data as J\+S\+ON for saving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sound_ac2f801fea252f8cc185171a2fdd2c7e3}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data displayed in Im\+Gui form. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sound_a64c59815e323867fbe20d8f65590f063}{play\+Sound}} ()
+\begin{DoxyCompactList}\small\item\em Plays the sound. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sound_a1f045d23eebabc61d2b12277adb81495}{pause}} ()
+\begin{DoxyCompactList}\small\item\em Pause. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_sound_a7205a65a4d5267341aef928d78073bcd}{is\+Playing}} ()
+\begin{DoxyCompactList}\small\item\em Is this sound playing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_sound_a6643f5869137b2e1da5cb5f82804c4db}{is\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em Is this sound looping. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sound_a4411598a9fe554955819e54eaa2084fb}{set\+Loop}} (bool loop)
+\begin{DoxyCompactList}\small\item\em Set this sound to loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A sound object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_sound_a0db9d211d7165f09a336288584df2168}\label{class_owl_engine_1_1_sound_a0db9d211d7165f09a336288584df2168}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!Sound@{Sound}}
+\index{Sound@{Sound}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{Sound()}{Sound()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Sound\+::\+Sound (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{sound\+Name,  }\item[{const bool}]{loop }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_a0db9d211d7165f09a336288584df2168}{Sound()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em str\+Event\+Name} & a const std\+::string\& -\/ A reference the \mbox{\hyperlink{class_owl_engine_1_1_event}{Event}} name \\
+\hline
+{\em loop} & a const bool -\/ Loop this sound \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_sound_a22f861c92956b3a6dddf1c337edc6272}\label{class_owl_engine_1_1_sound_a22f861c92956b3a6dddf1c337edc6272}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!````~Sound@{$\sim$Sound}}
+\index{````~Sound@{$\sim$Sound}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{$\sim$Sound()}{~Sound()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Sound\+::$\sim$\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_a22f861c92956b3a6dddf1c337edc6272}{$\sim$\+Sound()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_sound_ac2f801fea252f8cc185171a2fdd2c7e3}\label{class_owl_engine_1_1_sound_ac2f801fea252f8cc185171a2fdd2c7e3}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sound\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data displayed in Im\+Gui form. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_ac2f801fea252f8cc185171a2fdd2c7e3}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sound_abb551a367df0cb671ed167779567e645}\label{class_owl_engine_1_1_sound_abb551a367df0cb671ed167779567e645}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Sound\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data as J\+S\+ON for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_abb551a367df0cb671ed167779567e645}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sound_a6643f5869137b2e1da5cb5f82804c4db}\label{class_owl_engine_1_1_sound_a6643f5869137b2e1da5cb5f82804c4db}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!isLoop@{isLoop}}
+\index{isLoop@{isLoop}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{isLoop()}{isLoop()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Sound\+::is\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Is this sound looping. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_a6643f5869137b2e1da5cb5f82804c4db}{is\+Loop()}}
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is this sound looped 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sound_a7205a65a4d5267341aef928d78073bcd}\label{class_owl_engine_1_1_sound_a7205a65a4d5267341aef928d78073bcd}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!isPlaying@{isPlaying}}
+\index{isPlaying@{isPlaying}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{isPlaying()}{isPlaying()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Sound\+::is\+Playing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Is this sound playing. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_a7205a65a4d5267341aef928d78073bcd}{is\+Playing()}}
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is this sound currently playing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sound_af120c062ba4c36478a1f4f63ed698221}\label{class_owl_engine_1_1_sound_af120c062ba4c36478a1f4f63ed698221}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sound\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_af120c062ba4c36478a1f4f63ed698221}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sound_a318ecfd381e5dad9d52e163becaef8ea}\label{class_owl_engine_1_1_sound_a318ecfd381e5dad9d52e163becaef8ea}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sound\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_a318ecfd381e5dad9d52e163becaef8ea}{on\+Detach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sound_affd8b649cead2759cf72b34cea109e98}\label{class_owl_engine_1_1_sound_affd8b649cead2759cf72b34cea109e98}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sound\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the studio sound component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_affd8b649cead2759cf72b34cea109e98}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sound_a1f045d23eebabc61d2b12277adb81495}\label{class_owl_engine_1_1_sound_a1f045d23eebabc61d2b12277adb81495}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!pause@{pause}}
+\index{pause@{pause}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sound\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Pause. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_a1f045d23eebabc61d2b12277adb81495}{pause()}} \mbox{\Hypertarget{class_owl_engine_1_1_sound_a64c59815e323867fbe20d8f65590f063}\label{class_owl_engine_1_1_sound_a64c59815e323867fbe20d8f65590f063}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!playSound@{playSound}}
+\index{playSound@{playSound}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{playSound()}{playSound()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sound\+::play\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Plays the sound. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_a64c59815e323867fbe20d8f65590f063}{play\+Sound()}} \mbox{\Hypertarget{class_owl_engine_1_1_sound_ac97618ab3a21324927394cf2ac9f7d95}\label{class_owl_engine_1_1_sound_ac97618ab3a21324927394cf2ac9f7d95}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sound\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_ac97618ab3a21324927394cf2ac9f7d95}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sound_a4411598a9fe554955819e54eaa2084fb}\label{class_owl_engine_1_1_sound_a4411598a9fe554955819e54eaa2084fb}} 
+\index{OwlEngine::Sound@{OwlEngine::Sound}!setLoop@{setLoop}}
+\index{setLoop@{setLoop}!OwlEngine::Sound@{OwlEngine::Sound}}
+\doxysubsubsection{\texorpdfstring{setLoop()}{setLoop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sound\+::set\+Loop (\begin{DoxyParamCaption}\item[{bool}]{loop }\end{DoxyParamCaption})}
+
+
+
+Set this sound to loop. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sound_a4411598a9fe554955819e54eaa2084fb}{set\+Loop()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em loop} & a bool -\/ Loop this sound \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{sound_8h}{sound.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{sound_8cpp}{sound.\+cpp}}\end{DoxyCompactItemize}

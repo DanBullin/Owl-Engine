@@ -1,0 +1,29 @@
+{
+	"2DTextures": [
+				
+		{ "textureName": "default", "filePath": "assets/textures/default.png", "wrapS": 10497, "wrapT": 10497, "wrapR": 10497, 
+			"minFilter": 9729, "maxFilter": 9729, "gammaCorrect": false, "flipUV": false},
+		
+		{ "textureName": "border", "filePath": "assets/textures/border.png", "wrapS": 10497, "wrapT": 10497, "wrapR": 10497, 
+			"minFilter": 9729, "maxFilter": 9729, "gammaCorrect": false, "flipUV": false},
+			
+		{ "textureName": "grid", "filePath": "assets/textures/grid.png", "wrapS": 10497, "wrapT": 10497, "wrapR": 10497, 
+			"minFilter": 9729, "maxFilter": 9729, "gammaCorrect": false, "flipUV": true},
+			
+		{ "textureName": "text", "filePath": "assets/textures/text.png", "wrapS": 10497, "wrapT": 10497, "wrapR": 10497, 
+			"minFilter": 9729, "maxFilter": 9729, "gammaCorrect": false, "flipUV": false},
+			
+		
+		{ "textureName": "cyborg_diffuse", "filePath": "assets/textures/cyborg/cyborg_diffuse.png", "wrapS": 10497, "wrapT": 10497, "wrapR": 10497, 
+			"minFilter": 9729, "maxFilter": 9729, "gammaCorrect": false, "flipUV": false},
+			
+		{ "textureName": "brickwall_diffuse", "filePath": "assets/textures/brickwall/brickwall_diffuse.jpg", "wrapS": 10497, "wrapT": 10497, "wrapR": 10497, 
+			"minFilter": 9729, "maxFilter": 9729, "gammaCorrect": false, "flipUV": false},
+			
+		{ "textureName": "letterAndNumbers_diffuse", "filePath": "assets/textures/letterAndNumberCube.png", "wrapS": 10497, "wrapT": 10497, "wrapR": 10497, 
+			"minFilter": 9729, "maxFilter": 9729, "gammaCorrect": false, "flipUV": false},
+		
+		{ "textureName": "barrel_diffuse", "filePath": "assets/textures/barrel/barrel.png", "wrapS": 10497, "wrapT": 10497, "wrapR": 10497, 
+			"minFilter": 9729, "maxFilter": 9729, "gammaCorrect": false, "flipUV": false}	
+	]
+}

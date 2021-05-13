@@ -1,0 +1,264 @@
+\hypertarget{fill_buffers_8cpp}{}\doxysection{C\+:/doc/src/engine/src/independent/rendering/renderers/utils/fill\+Buffers.cpp File Reference}
+\label{fill_buffers_8cpp}\index{C:/doc/src/engine/src/independent/rendering/renderers/utils/fillBuffers.cpp@{C:/doc/src/engine/src/independent/rendering/renderers/utils/fillBuffers.cpp}}
+
+
+A utility class to help fill the buffers with instance data needed in rendering.  
+
+
+{\ttfamily \#include \char`\"{}engine\+\_\+pch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/renderers/utils/fill\+Buffers.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{fill_buffers_8h_a025337ed086a10c063a539ad74f1fc49}{Owl\+Engine\+::generate\+Vertex\+List}} (std\+::vector$<$ Batch\+Entry2D $>$ \&batch\+Entries)
+\begin{DoxyCompactList}\small\item\em Generate vertex list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fill_buffers_8h_aea296451ec2c293f23a46b84a4de69ed}{Owl\+Engine\+::generate\+List\+Of\+Vertex2D}} (std\+::vector$<$ Batch\+Entry2D $>$ \&batch\+Entries)
+\begin{DoxyCompactList}\small\item\em Generate a list of vertices and edit the V\+BO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fill_buffers_8h_a09aed65687f27df78cdefbee3fa74156}{Owl\+Engine\+::generate\+List\+Of\+Vertex2\+D\+Mutlitextured}} (std\+::vector$<$ Batch\+Entry2D $>$ \&batch\+Entries)
+\begin{DoxyCompactList}\small\item\em Generate a list of vertices and edit the V\+BO. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fill_buffers_8h_ab9036ca77e7c07774ef49114621ba26c}{Owl\+Engine\+::generate\+Instance\+Data}} (std\+::vector$<$ Batch\+Entry3D $>$ \&batch\+Entries)
+\begin{DoxyCompactList}\small\item\em Generate the instance data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fill_buffers_8h_a8a6e36fd38471f07c2928f20ccd72b6c}{Owl\+Engine\+::generate\+Basic3D}} (std\+::vector$<$ Batch\+Entry3D $>$ \&batch\+Entries)
+\begin{DoxyCompactList}\small\item\em Generate the instance data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fill_buffers_8h_a52faf9da5295df2fda895bbf05ac93e0}{Owl\+Engine\+::generate\+Normal}} (std\+::vector$<$ Batch\+Entry3D $>$ \&batch\+Entries)
+\begin{DoxyCompactList}\small\item\em Generate the instance data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fill_buffers_8h_a986366b7a60b917f60738bea246da77b}{Owl\+Engine\+::generate\+Skybox}} (std\+::vector$<$ Batch\+Entry3D $>$ \&batch\+Entries)
+\begin{DoxyCompactList}\small\item\em Generate the instance data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fill_buffers_8h_af4f3c9f74f1c504fc60f29b3244182d6}{Owl\+Engine\+::generate\+Light\+Source}} (std\+::vector$<$ Batch\+Entry3D $>$ \&batch\+Entries)
+\begin{DoxyCompactList}\small\item\em Generate the instance data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{fill_buffers_8h_a1b43a851aca1a90296111b85d64d5bdb}{Owl\+Engine\+::generate\+Basic\+Texture}} (std\+::vector$<$ Batch\+Entry3D $>$ \&batch\+Entries)
+\begin{DoxyCompactList}\small\item\em Generate the instance data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class to help fill the buffers with instance data needed in rendering. 
+
+\begin{DoxyAuthor}{Author}
+Daniel Bullin 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{fill_buffers_8h_file_a8a6e36fd38471f07c2928f20ccd72b6c}\label{fill_buffers_8h_file_a8a6e36fd38471f07c2928f20ccd72b6c}} 
+\index{fillBuffers.cpp@{fillBuffers.cpp}!generateBasic3D@{generateBasic3D}}
+\index{generateBasic3D@{generateBasic3D}!fillBuffers.cpp@{fillBuffers.cpp}}
+\doxysubsubsection{\texorpdfstring{generateBasic3D()}{generateBasic3D()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::generate\+Basic3D (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d}{Batch\+Entry3D}} $>$ \&}]{batch\+Entries }\end{DoxyParamCaption})}
+
+
+
+Generate the instance data. 
+
+\mbox{\hyperlink{fill_buffers_8h_a8a6e36fd38471f07c2928f20ccd72b6c}{generate\+Basic3\+D()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+Entries} & a std\+::vector$<$\+Batch\+Entry3\+D$>$\& -\/ A list of batch entries \\
+\hline
+\end{DoxyParams}
+$<$ The model matrix instance data
+
+$<$ The tint instance data
+
+$<$ The texture unit data
+
+$<$ The texture unit data
+
+$<$ The shininess data
+
+$<$ The Start and End UV coordinates of the subtexture
+
+$<$ The model matrix instance data
+
+$<$ The tint instance data
+
+$<$ The texture unit data
+
+$<$ The texture unit data
+
+$<$ The shininess data
+
+$<$ The Start and End UV coordinates of the subtexture\mbox{\Hypertarget{fill_buffers_8h_file_a1b43a851aca1a90296111b85d64d5bdb}\label{fill_buffers_8h_file_a1b43a851aca1a90296111b85d64d5bdb}} 
+\index{fillBuffers.cpp@{fillBuffers.cpp}!generateBasicTexture@{generateBasicTexture}}
+\index{generateBasicTexture@{generateBasicTexture}!fillBuffers.cpp@{fillBuffers.cpp}}
+\doxysubsubsection{\texorpdfstring{generateBasicTexture()}{generateBasicTexture()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::generate\+Basic\+Texture (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d}{Batch\+Entry3D}} $>$ \&}]{batch\+Entries }\end{DoxyParamCaption})}
+
+
+
+Generate the instance data. 
+
+\mbox{\hyperlink{fill_buffers_8h_a1b43a851aca1a90296111b85d64d5bdb}{generate\+Basic\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+Entries} & a std\+::vector$<$\+Batch\+Entry3\+D$>$\& -\/ A list of batch entries \\
+\hline
+\end{DoxyParams}
+$<$ The model matrix instance data
+
+$<$ The tint instance data
+
+$<$ The texture unit data
+
+$<$ The model matrix instance data
+
+$<$ The tint instance data
+
+$<$ The texture unit data\mbox{\Hypertarget{fill_buffers_8h_file_ab9036ca77e7c07774ef49114621ba26c}\label{fill_buffers_8h_file_ab9036ca77e7c07774ef49114621ba26c}} 
+\index{fillBuffers.cpp@{fillBuffers.cpp}!generateInstanceData@{generateInstanceData}}
+\index{generateInstanceData@{generateInstanceData}!fillBuffers.cpp@{fillBuffers.cpp}}
+\doxysubsubsection{\texorpdfstring{generateInstanceData()}{generateInstanceData()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::generate\+Instance\+Data (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d}{Batch\+Entry3D}} $>$ \&}]{batch\+Entries }\end{DoxyParamCaption})}
+
+
+
+Generate the instance data. 
+
+\mbox{\hyperlink{fill_buffers_8h_ab9036ca77e7c07774ef49114621ba26c}{generate\+Instance\+Data()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+Entries} & a std\+::vector$<$\+Batch\+Entry3\+D$>$\& -\/ A list of batch entries \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fill_buffers_8h_file_af4f3c9f74f1c504fc60f29b3244182d6}\label{fill_buffers_8h_file_af4f3c9f74f1c504fc60f29b3244182d6}} 
+\index{fillBuffers.cpp@{fillBuffers.cpp}!generateLightSource@{generateLightSource}}
+\index{generateLightSource@{generateLightSource}!fillBuffers.cpp@{fillBuffers.cpp}}
+\doxysubsubsection{\texorpdfstring{generateLightSource()}{generateLightSource()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::generate\+Light\+Source (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d}{Batch\+Entry3D}} $>$ \&}]{batch\+Entries }\end{DoxyParamCaption})}
+
+
+
+Generate the instance data. 
+
+\mbox{\hyperlink{fill_buffers_8h_af4f3c9f74f1c504fc60f29b3244182d6}{generate\+Light\+Source()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+Entries} & a std\+::vector$<$\+Batch\+Entry3\+D$>$\& -\/ A list of batch entries \\
+\hline
+\end{DoxyParams}
+$<$ The tint instance data
+
+$<$ The model matrix instance data
+
+$<$ The tint instance data
+
+$<$ The model matrix instance data\mbox{\Hypertarget{fill_buffers_8h_file_aea296451ec2c293f23a46b84a4de69ed}\label{fill_buffers_8h_file_aea296451ec2c293f23a46b84a4de69ed}} 
+\index{fillBuffers.cpp@{fillBuffers.cpp}!generateListOfVertex2D@{generateListOfVertex2D}}
+\index{generateListOfVertex2D@{generateListOfVertex2D}!fillBuffers.cpp@{fillBuffers.cpp}}
+\doxysubsubsection{\texorpdfstring{generateListOfVertex2D()}{generateListOfVertex2D()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::generate\+List\+Of\+Vertex2D (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry2_d}{Batch\+Entry2D}} $>$ \&}]{batch\+Entries }\end{DoxyParamCaption})}
+
+
+
+Generate a list of vertices and edit the V\+BO. 
+
+\mbox{\hyperlink{fill_buffers_8h_aea296451ec2c293f23a46b84a4de69ed}{generate\+List\+Of\+Vertex2\+D()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+Entries} & a std\+::vector$<$\+Batch\+Entry2\+D$>$\& -\/ A list of batch entries \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fill_buffers_8h_file_a09aed65687f27df78cdefbee3fa74156}\label{fill_buffers_8h_file_a09aed65687f27df78cdefbee3fa74156}} 
+\index{fillBuffers.cpp@{fillBuffers.cpp}!generateListOfVertex2DMutlitextured@{generateListOfVertex2DMutlitextured}}
+\index{generateListOfVertex2DMutlitextured@{generateListOfVertex2DMutlitextured}!fillBuffers.cpp@{fillBuffers.cpp}}
+\doxysubsubsection{\texorpdfstring{generateListOfVertex2DMutlitextured()}{generateListOfVertex2DMutlitextured()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::generate\+List\+Of\+Vertex2\+D\+Mutlitextured (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry2_d}{Batch\+Entry2D}} $>$ \&}]{batch\+Entries }\end{DoxyParamCaption})}
+
+
+
+Generate a list of vertices and edit the V\+BO. 
+
+\mbox{\hyperlink{fill_buffers_8h_a09aed65687f27df78cdefbee3fa74156}{generate\+List\+Of\+Vertex2\+D\+Mutlitextured()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+Entries} & a std\+::vector$<$\+Batch\+Entry2\+D$>$\& -\/ A list of batch entries \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fill_buffers_8h_file_a52faf9da5295df2fda895bbf05ac93e0}\label{fill_buffers_8h_file_a52faf9da5295df2fda895bbf05ac93e0}} 
+\index{fillBuffers.cpp@{fillBuffers.cpp}!generateNormal@{generateNormal}}
+\index{generateNormal@{generateNormal}!fillBuffers.cpp@{fillBuffers.cpp}}
+\doxysubsubsection{\texorpdfstring{generateNormal()}{generateNormal()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::generate\+Normal (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d}{Batch\+Entry3D}} $>$ \&}]{batch\+Entries }\end{DoxyParamCaption})}
+
+
+
+Generate the instance data. 
+
+\mbox{\hyperlink{fill_buffers_8h_a52faf9da5295df2fda895bbf05ac93e0}{generate\+Normal()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+Entries} & a std\+::vector$<$\+Batch\+Entry3\+D$>$\& -\/ A list of batch entries \\
+\hline
+\end{DoxyParams}
+$<$ The model matrix instance data
+
+$<$ The tint instance data
+
+$<$ The texture unit data
+
+$<$ The texture unit data
+
+$<$ The texture unit data
+
+$<$ The shininess data
+
+$<$ The Start and End UV coordinates of the subtexture
+
+$<$ The model matrix instance data
+
+$<$ The tint instance data
+
+$<$ The texture unit data
+
+$<$ The texture unit data
+
+$<$ The texture unit data
+
+$<$ The shininess data
+
+$<$ The Start and End UV coordinates of the subtexture\mbox{\Hypertarget{fill_buffers_8h_file_a986366b7a60b917f60738bea246da77b}\label{fill_buffers_8h_file_a986366b7a60b917f60738bea246da77b}} 
+\index{fillBuffers.cpp@{fillBuffers.cpp}!generateSkybox@{generateSkybox}}
+\index{generateSkybox@{generateSkybox}!fillBuffers.cpp@{fillBuffers.cpp}}
+\doxysubsubsection{\texorpdfstring{generateSkybox()}{generateSkybox()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::generate\+Skybox (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d}{Batch\+Entry3D}} $>$ \&}]{batch\+Entries }\end{DoxyParamCaption})}
+
+
+
+Generate the instance data. 
+
+\mbox{\hyperlink{fill_buffers_8h_a986366b7a60b917f60738bea246da77b}{generate\+Skybox()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+Entries} & a std\+::vector$<$\+Batch\+Entry3\+D$>$\& -\/ A list of batch entries \\
+\hline
+\end{DoxyParams}
+$<$ The tint instance data
+
+$<$ The texture unit data
+
+$<$ The tint instance data
+
+$<$ The texture unit data\mbox{\Hypertarget{fill_buffers_8h_file_a025337ed086a10c063a539ad74f1fc49}\label{fill_buffers_8h_file_a025337ed086a10c063a539ad74f1fc49}} 
+\index{fillBuffers.cpp@{fillBuffers.cpp}!generateVertexList@{generateVertexList}}
+\index{generateVertexList@{generateVertexList}!fillBuffers.cpp@{fillBuffers.cpp}}
+\doxysubsubsection{\texorpdfstring{generateVertexList()}{generateVertexList()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::generate\+Vertex\+List (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry2_d}{Batch\+Entry2D}} $>$ \&}]{batch\+Entries }\end{DoxyParamCaption})}
+
+
+
+Generate vertex list. 
+
+\mbox{\hyperlink{fill_buffers_8h_a025337ed086a10c063a539ad74f1fc49}{generate\+Vertex\+List()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+Entries} & a std\+::vector$<$\+Batch\+Entry2\+D$>$\& -\/ A list of batch entries \\
+\hline
+\end{DoxyParams}

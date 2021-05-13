@@ -1,0 +1,136 @@
+\hypertarget{class_hawk_engine_1_1_mouse_moved_event}{}\doxysection{Hawk\+Engine\+::Mouse\+Moved\+Event Class Reference}
+\label{class_hawk_engine_1_1_mouse_moved_event}\index{HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}}
+
+
+A mouse moved event.  
+
+
+
+
+{\ttfamily \#include $<$mouse\+Events.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Mouse\+Moved\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_hawk_engine_1_1_mouse_moved_event}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event_a687b154c17cb6502fb784221024742a8}{Mouse\+Moved\+Event}} (const float x, const float y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} \mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event_a41056ca485561c51449a328d7660c914}{get\+Event\+Type}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the event type. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event_a06961135dd6203ec32d62386aca3d7c7}{getX}} () const
+\begin{DoxyCompactList}\small\item\em Return the x position of the mouse. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event_a01d87923b682adab3c1716abe5784ca2}{getY}} () const
+\begin{DoxyCompactList}\small\item\em Return the y position of the mouse. \end{DoxyCompactList}\item 
+const glm\+::vec2 \mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event_a2bd5f39aa5d928a68e73a42e02ee23d7}{get\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em Return the position of the mouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} \mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event_ab04d00992c3f7739a5d2245b3b393e1e}{get\+Static\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Return static type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A mouse moved event. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mouse_moved_event_a687b154c17cb6502fb784221024742a8}\label{class_hawk_engine_1_1_mouse_moved_event_a687b154c17cb6502fb784221024742a8}} 
+\index{HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}!MouseMovedEvent@{MouseMovedEvent}}
+\index{MouseMovedEvent@{MouseMovedEvent}!HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}}
+\doxysubsubsection{\texorpdfstring{MouseMovedEvent()}{MouseMovedEvent()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Mouse\+Moved\+Event\+::\+Mouse\+Moved\+Event (\begin{DoxyParamCaption}\item[{const float}]{x,  }\item[{const float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a const float -\/ The x position of the mouse \\
+\hline
+{\em y} & a const float -\/ The y position of the mouse \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mouse_moved_event_a41056ca485561c51449a328d7660c914}\label{class_hawk_engine_1_1_mouse_moved_event_a41056ca485561c51449a328d7660c914}} 
+\index{HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}!getEventType@{getEventType}}
+\index{getEventType@{getEventType}!HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}}
+\doxysubsubsection{\texorpdfstring{getEventType()}{getEventType()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} Hawk\+Engine\+::\+Mouse\+Moved\+Event\+::get\+Event\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the event type. 
+
+\begin{DoxyReturn}{Returns}
+a const Event\+Type -\/ The mouse moved event type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_event_a91937ccfa4271643d7b29bb3fe5416ac}{Hawk\+Engine\+::\+Event}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_mouse_moved_event_a2bd5f39aa5d928a68e73a42e02ee23d7}\label{class_hawk_engine_1_1_mouse_moved_event_a2bd5f39aa5d928a68e73a42e02ee23d7}} 
+\index{HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}!getPos@{getPos}}
+\index{getPos@{getPos}!HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily const glm\+::vec2 Hawk\+Engine\+::\+Mouse\+Moved\+Event\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the position of the mouse. 
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec2 -\/ The position of the mouse 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mouse_moved_event_ab04d00992c3f7739a5d2245b3b393e1e}\label{class_hawk_engine_1_1_mouse_moved_event_ab04d00992c3f7739a5d2245b3b393e1e}} 
+\index{HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}!getStaticType@{getStaticType}}
+\index{getStaticType@{getStaticType}!HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}}
+\doxysubsubsection{\texorpdfstring{getStaticType()}{getStaticType()}}
+{\footnotesize\ttfamily static const \mbox{\hyperlink{event_8h_a5833dbfbf4638c4c8335756fb87c4f8a}{Event\+Type}} Hawk\+Engine\+::\+Mouse\+Moved\+Event\+::get\+Static\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Return static type. 
+
+\begin{DoxyReturn}{Returns}
+a const Event\+Type -\/ The static mouse moved event type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mouse_moved_event_a06961135dd6203ec32d62386aca3d7c7}\label{class_hawk_engine_1_1_mouse_moved_event_a06961135dd6203ec32d62386aca3d7c7}} 
+\index{HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}!getX@{getX}}
+\index{getX@{getX}!HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}}
+\doxysubsubsection{\texorpdfstring{getX()}{getX()}}
+{\footnotesize\ttfamily const float Hawk\+Engine\+::\+Mouse\+Moved\+Event\+::getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the x position of the mouse. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The x position of the mouse 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_mouse_moved_event_a01d87923b682adab3c1716abe5784ca2}\label{class_hawk_engine_1_1_mouse_moved_event_a01d87923b682adab3c1716abe5784ca2}} 
+\index{HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}!getY@{getY}}
+\index{getY@{getY}!HawkEngine::MouseMovedEvent@{HawkEngine::MouseMovedEvent}}
+\doxysubsubsection{\texorpdfstring{getY()}{getY()}}
+{\footnotesize\ttfamily const float Hawk\+Engine\+::\+Mouse\+Moved\+Event\+::getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return the y position of the mouse. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The y position of the mouse 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/events/\mbox{\hyperlink{mouse_events_8h}{mouse\+Events.\+h}}\end{DoxyCompactItemize}

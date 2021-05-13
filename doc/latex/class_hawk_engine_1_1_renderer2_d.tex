@@ -1,0 +1,160 @@
+\hypertarget{class_hawk_engine_1_1_renderer2_d}{}\doxysection{Hawk\+Engine\+::Renderer2D Class Reference}
+\label{class_hawk_engine_1_1_renderer2_d}\index{HawkEngine::Renderer2D@{HawkEngine::Renderer2D}}
+
+
+A class which renders 2D geometry instantly (non-\/batched)  
+
+
+
+
+{\ttfamily \#include $<$renderer2\+D.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_ad67734fb355c3e8a03f8db683bfd5734}{init}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $>$ \&unit\+Manager, const std\+::array$<$ int32\+\_\+t, 16 $>$ \&unit)
+\begin{DoxyCompactList}\small\item\em Initialise the internal data of the renderer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_a29043b50019a25b73e74b097d68e8a62}{begin}} (const \mbox{\hyperlink{renderer_common_8h_a70f613e2d6c9ecf5f2ca4f06543fa17f}{Scene\+Wide\+Uniforms}} \&swu)
+\begin{DoxyCompactList}\small\item\em Begin a new 2D scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_a469a1f0bb5cfc645a802271a26cf6805}{submit}} (\mbox{\hyperlink{class_hawk_engine_1_1_mesh_render2_d}{Mesh\+Render2D}} $\ast$mesh\+Render, const glm\+::mat4 \&transformation\+Matrix)
+\begin{DoxyCompactList}\small\item\em Submit a piece of 2D geometry. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_a035a64ddc47de03323cb7937a6c7d894}{submit}} (\mbox{\hyperlink{class_hawk_engine_1_1_text2_d}{Text2D}} $\ast$text\+Render, \mbox{\hyperlink{class_hawk_engine_1_1_transform2_d}{Transform2D}} $\ast$transform)
+\begin{DoxyCompactList}\small\item\em Submit a piece of 2D text. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_af9b3531a81abc91c17196b95173390a6}{submit}} (\mbox{\hyperlink{class_hawk_engine_1_1_mesh_render2_d}{Mesh\+Render2D}} $\ast$mesh\+Render, char ch, const glm\+::vec2 \&position, float \&advance)
+\begin{DoxyCompactList}\small\item\em Render a single character. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_a0461505f618591f055cf5780eb4feded}{flush}} ()
+\begin{DoxyCompactList}\small\item\em Flush the scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_acd7c72a4d91b8f594c7db9f98029a94a}{end}} ()
+\begin{DoxyCompactList}\small\item\em End the 2D scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_ac5b1a51628b2a1787fc7b47bb5168ecb}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class which renders 2D geometry instantly (non-\/batched) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_renderer2_d_a29043b50019a25b73e74b097d68e8a62}\label{class_hawk_engine_1_1_renderer2_d_a29043b50019a25b73e74b097d68e8a62}} 
+\index{HawkEngine::Renderer2D@{HawkEngine::Renderer2D}!begin@{begin}}
+\index{begin@{begin}!HawkEngine::Renderer2D@{HawkEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer2\+D\+::begin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{renderer_common_8h_a70f613e2d6c9ecf5f2ca4f06543fa17f}{Scene\+Wide\+Uniforms}} \&}]{scene\+Wide\+Uniforms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Begin a new 2D scene. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_a29043b50019a25b73e74b097d68e8a62}{begin()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Wide\+Uniforms} & a const Scene\+Wide\+Uniforms\& -\/ A reference to the scene wide uniforms \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_renderer2_d_ac5b1a51628b2a1787fc7b47bb5168ecb}\label{class_hawk_engine_1_1_renderer2_d_ac5b1a51628b2a1787fc7b47bb5168ecb}} 
+\index{HawkEngine::Renderer2D@{HawkEngine::Renderer2D}!destroy@{destroy}}
+\index{destroy@{destroy}!HawkEngine::Renderer2D@{HawkEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer2\+D\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy the data. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_ac5b1a51628b2a1787fc7b47bb5168ecb}{destroy()}} \mbox{\Hypertarget{class_hawk_engine_1_1_renderer2_d_acd7c72a4d91b8f594c7db9f98029a94a}\label{class_hawk_engine_1_1_renderer2_d_acd7c72a4d91b8f594c7db9f98029a94a}} 
+\index{HawkEngine::Renderer2D@{HawkEngine::Renderer2D}!end@{end}}
+\index{end@{end}!HawkEngine::Renderer2D@{HawkEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer2\+D\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+End the 2D scene. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_acd7c72a4d91b8f594c7db9f98029a94a}{end()}} \mbox{\Hypertarget{class_hawk_engine_1_1_renderer2_d_a0461505f618591f055cf5780eb4feded}\label{class_hawk_engine_1_1_renderer2_d_a0461505f618591f055cf5780eb4feded}} 
+\index{HawkEngine::Renderer2D@{HawkEngine::Renderer2D}!flush@{flush}}
+\index{flush@{flush}!HawkEngine::Renderer2D@{HawkEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer2\+D\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Flush the scene. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_a0461505f618591f055cf5780eb4feded}{flush()}} \mbox{\Hypertarget{class_hawk_engine_1_1_renderer2_d_ad67734fb355c3e8a03f8db683bfd5734}\label{class_hawk_engine_1_1_renderer2_d_ad67734fb355c3e8a03f8db683bfd5734}} 
+\index{HawkEngine::Renderer2D@{HawkEngine::Renderer2D}!init@{init}}
+\index{init@{init}!HawkEngine::Renderer2D@{HawkEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer2\+D\+::init (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $>$ \&}]{unit\+Manager,  }\item[{const std\+::array$<$ int32\+\_\+t, 16 $>$ \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initialise the internal data of the renderer. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_ad67734fb355c3e8a03f8db683bfd5734}{init()}} \mbox{\Hypertarget{class_hawk_engine_1_1_renderer2_d_af9b3531a81abc91c17196b95173390a6}\label{class_hawk_engine_1_1_renderer2_d_af9b3531a81abc91c17196b95173390a6}} 
+\index{HawkEngine::Renderer2D@{HawkEngine::Renderer2D}!submit@{submit}}
+\index{submit@{submit}!HawkEngine::Renderer2D@{HawkEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer2\+D\+::submit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_mesh_render2_d}{Mesh\+Render2D}} $\ast$}]{mesh\+Render,  }\item[{char}]{ch,  }\item[{const glm\+::vec2 \&}]{position,  }\item[{float \&}]{advance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Render a single character. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_a469a1f0bb5cfc645a802271a26cf6805}{submit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Render} & a Mesh\+Render2\+D$\ast$ -\/ The mesh render data \\
+\hline
+{\em ch} & a char -\/ The character to render \\
+\hline
+{\em position} & a const glm\+::vec2 \& -\/ The position of the entity \\
+\hline
+{\em advance} & a float\& -\/ The advance of the current text \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_renderer2_d_a469a1f0bb5cfc645a802271a26cf6805}\label{class_hawk_engine_1_1_renderer2_d_a469a1f0bb5cfc645a802271a26cf6805}} 
+\index{HawkEngine::Renderer2D@{HawkEngine::Renderer2D}!submit@{submit}}
+\index{submit@{submit}!HawkEngine::Renderer2D@{HawkEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer2\+D\+::submit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_mesh_render2_d}{Mesh\+Render2D}} $\ast$}]{mesh\+Render,  }\item[{const glm\+::mat4 \&}]{transformation\+Matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Submit a piece of 2D geometry. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_a469a1f0bb5cfc645a802271a26cf6805}{submit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Render} & a Mesh\+Render2\+D$\ast$ -\/ The mesh render data \\
+\hline
+{\em transformation\+Matrix} & a const glm\+::mat4\& -\/ The model transformation matrix \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_renderer2_d_a035a64ddc47de03323cb7937a6c7d894}\label{class_hawk_engine_1_1_renderer2_d_a035a64ddc47de03323cb7937a6c7d894}} 
+\index{HawkEngine::Renderer2D@{HawkEngine::Renderer2D}!submit@{submit}}
+\index{submit@{submit}!HawkEngine::Renderer2D@{HawkEngine::Renderer2D}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer2\+D\+::submit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_text2_d}{Text2D}} $\ast$}]{text\+Render,  }\item[{\mbox{\hyperlink{class_hawk_engine_1_1_transform2_d}{Transform2D}} $\ast$}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Submit a piece of 2D text. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer2_d_a469a1f0bb5cfc645a802271a26cf6805}{submit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em text\+Render} & a Text2\+D$\ast$ -\/ The text render data \\
+\hline
+{\em transform} & a Transform2\+D$\ast$ -\/ The entity\textquotesingle{}s transform \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/renderers/\mbox{\hyperlink{renderer2_d_8h}{renderer2\+D.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/renderers/\mbox{\hyperlink{renderer2_d_8cpp}{renderer2\+D.\+cpp}}\end{DoxyCompactItemize}

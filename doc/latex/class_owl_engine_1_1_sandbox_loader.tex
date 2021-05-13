@@ -1,0 +1,90 @@
+\hypertarget{class_owl_engine_1_1_sandbox_loader}{}\doxysection{Owl\+Engine\+::Sandbox\+Loader Class Reference}
+\label{class_owl_engine_1_1_sandbox_loader}\index{OwlEngine::SandboxLoader@{OwlEngine::SandboxLoader}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_sandbox_loader_a4de8e42b77da5f815140d715d99ac64c}{set\+Loadcallback}} ()
+\begin{DoxyCompactList}\small\item\em Set the callback for the engine loader. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_native_script}{Native\+Script}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_sandbox_loader_a035f54351f4f66dd5f265fd1d2a304f3}{create\+New\+Script}} (const std\+::string \&script\+Name, nlohmann\+::json script\+Data=nlohmann\+::json())
+\begin{DoxyCompactList}\small\item\em Create a new script. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_sandbox_loader_add883ae24cfaa70769e1d5004c64c5b4}{load}} (const std\+::string \&scene\+Name, const std\+::string \&scene\+Folder\+Path)
+\begin{DoxyCompactList}\small\item\em Load the scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_sandbox_loader_abedfecee3ea9737b37f1b2a9584fe65a}{load\+Entities}} (\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$scene, \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$m\+\_\+parent, const std\+::string \&entity\+File\+Path)
+\begin{DoxyCompactList}\small\item\em Load entities into the scene. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_sandbox_loader_a035f54351f4f66dd5f265fd1d2a304f3}\label{class_owl_engine_1_1_sandbox_loader_a035f54351f4f66dd5f265fd1d2a304f3}} 
+\index{OwlEngine::SandboxLoader@{OwlEngine::SandboxLoader}!createNewScript@{createNewScript}}
+\index{createNewScript@{createNewScript}!OwlEngine::SandboxLoader@{OwlEngine::SandboxLoader}}
+\doxysubsubsection{\texorpdfstring{createNewScript()}{createNewScript()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_native_script}{Native\+Script}} $\ast$ Owl\+Engine\+::\+Sandbox\+Loader\+::create\+New\+Script (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{script\+Name,  }\item[{nlohmann\+::json}]{script\+Data = {\ttfamily nlohmann\+:\+:json()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new script. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sandbox_loader_a035f54351f4f66dd5f265fd1d2a304f3}{create\+New\+Script()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em script\+Name} & a const std\+::string\& -\/ The name of the script \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Native\+Script$\ast$ -\/ A pointer to the script 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sandbox_loader_add883ae24cfaa70769e1d5004c64c5b4}\label{class_owl_engine_1_1_sandbox_loader_add883ae24cfaa70769e1d5004c64c5b4}} 
+\index{OwlEngine::SandboxLoader@{OwlEngine::SandboxLoader}!load@{load}}
+\index{load@{load}!OwlEngine::SandboxLoader@{OwlEngine::SandboxLoader}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sandbox\+Loader\+::load (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{scene\+Name,  }\item[{const std\+::string \&}]{scene\+Folder\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sandbox_loader_add883ae24cfaa70769e1d5004c64c5b4}{load()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Name} & a const std\+::string\& -\/ The name of the scene \\
+\hline
+{\em scene\+Folder\+Path} & a const std\+::string\& -\/ The scene data folder path \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_sandbox_loader_abedfecee3ea9737b37f1b2a9584fe65a}\label{class_owl_engine_1_1_sandbox_loader_abedfecee3ea9737b37f1b2a9584fe65a}} 
+\index{OwlEngine::SandboxLoader@{OwlEngine::SandboxLoader}!loadEntities@{loadEntities}}
+\index{loadEntities@{loadEntities}!OwlEngine::SandboxLoader@{OwlEngine::SandboxLoader}}
+\doxysubsubsection{\texorpdfstring{loadEntities()}{loadEntities()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sandbox\+Loader\+::load\+Entities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$}]{scene,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$}]{m\+\_\+parent,  }\item[{const std\+::string \&}]{entity\+File\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load entities into the scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sandbox_loader_abedfecee3ea9737b37f1b2a9584fe65a}{load\+Entities()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & a Scene$\ast$ -\/ A pointer to the scene \\
+\hline
+{\em entity\+File\+Path} & a const std\+::string\& -\/ The filepath to the entity json file to load \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_sandbox_loader_a4de8e42b77da5f815140d715d99ac64c}\label{class_owl_engine_1_1_sandbox_loader_a4de8e42b77da5f815140d715d99ac64c}} 
+\index{OwlEngine::SandboxLoader@{OwlEngine::SandboxLoader}!setLoadcallback@{setLoadcallback}}
+\index{setLoadcallback@{setLoadcallback}!OwlEngine::SandboxLoader@{OwlEngine::SandboxLoader}}
+\doxysubsubsection{\texorpdfstring{setLoadcallback()}{setLoadcallback()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sandbox\+Loader\+::set\+Loadcallback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the callback for the engine loader. 
+
+set\+Load\+Callback() 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/sandbox/include/loaders/\mbox{\hyperlink{sandbox_loader_8h}{sandbox\+Loader.\+h}}\item 
+C\+:/doc/src/sandbox/src/loaders/\mbox{\hyperlink{sandbox_loader_8cpp}{sandbox\+Loader.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{resource_manager_8h}{}\doxysection{C\+:/doc/src/engine/include/independent/systems/systems/resource\+Manager.h File Reference}
+\label{resource_manager_8h}\index{C:/doc/src/engine/include/independent/systems/systems/resourceManager.h@{C:/doc/src/engine/include/independent/systems/systems/resourceManager.h}}
+
+
+A resource manager containing all the resources that are currently loaded. All resources are stored in a single map containing a key which is a unique string.  
+
+
+{\ttfamily \#include $<$json.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}independent/systems/system.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/core/common.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/systems/components/resource.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/geometry/vertex\+Buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/geometry/index\+Buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/geometry/vertex\+Array.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/geometry/indirect\+Buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/uniform\+Buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/frame\+Buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/shaders/shader\+Program.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/textures/texture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/textures/sub\+Texture.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/geometry/model3\+D.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/materials/material.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_owl_engine_1_1_resource_manager}{Owl\+Engine\+::\+Resource\+Manager}}
+\begin{DoxyCompactList}\small\item\em A resource manager managing resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{resource_manager_8h_aad36219e68be89ae1e2cb10fa13a0f77}{Owl\+Engine\+::\+Config\+::\+Config\+Data}} \{ \newline
+{\bfseries Max\+Sub\+Textures\+Per\+Material} = 0, 
+{\bfseries Vertex\+Capacity3D} = 1, 
+{\bfseries Index\+Capacity3D} = 2, 
+{\bfseries Batch\+Capacity3D} = 3, 
+\newline
+{\bfseries Batch\+Capacity2D} = 4, 
+{\bfseries Max\+Layers\+Per\+Scene} = 5, 
+{\bfseries Max\+Render\+Passes\+Per\+Scene} = 6, 
+{\bfseries Max\+Lights\+Per\+Draw} = 7, 
+\newline
+{\bfseries Use\+Bloom} = 8, 
+{\bfseries Bloom\+Blur\+Factor} = 9, 
+{\bfseries Print\+Resources\+In\+Destructor} = 10, 
+{\bfseries Print\+Open\+G\+L\+Debug\+Messages} = 11, 
+\newline
+{\bfseries Show\+Colliders} = 12, 
+{\bfseries Apply\+Fog} = 13
+ \}
+\begin{DoxyCompactList}\small\item\em The different types of configurable data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A resource manager containing all the resources that are currently loaded. All resources are stored in a single map containing a key which is a unique string. 
+
+\begin{DoxyAuthor}{Author}
+Daniel Bullin 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{resource_manager_8h_file_aad36219e68be89ae1e2cb10fa13a0f77}\label{resource_manager_8h_file_aad36219e68be89ae1e2cb10fa13a0f77}} 
+\index{resourceManager.h@{resourceManager.h}!ConfigData@{ConfigData}}
+\index{ConfigData@{ConfigData}!resourceManager.h@{resourceManager.h}}
+\doxysubsubsection{\texorpdfstring{ConfigData}{ConfigData}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{resource_manager_8h_aad36219e68be89ae1e2cb10fa13a0f77}{Owl\+Engine\+::\+Config\+::\+Config\+Data}}}
+
+
+
+The different types of configurable data. 
+
+The different types of configurable data for the player. 

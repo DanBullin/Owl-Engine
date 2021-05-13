@@ -1,0 +1,241 @@
+\hypertarget{class_transform}{}\doxysection{Transform Class Reference}
+\label{class_transform}\index{Transform@{Transform}}
+
+
+The position, scale and rotation of an object in the world. Every entity needs a transform.  
+
+
+
+
+{\ttfamily \#include $<$transform.\+h$>$}
+
+Inheritance diagram for Transform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_transform}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_transform_aa08ca4266efabc768973cdeea51945ab}{Transform}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_transform_a2f3fd62cbefaa2780e4e7fce6869f9f9}{Transform}} (const float x\+Pos, const float y\+Pos, const float z\+Pos, const float x\+Rotation, const float y\+Rotation, const float z\+Rotation, const float sX, const float sY, const float sZ)
+\begin{DoxyCompactList}\small\item\em Constructor requiring all transform types. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_transform_afde7c64d0d8492b16b6d6f6dba8f5137}\label{class_transform_afde7c64d0d8492b16b6d6f6dba8f5137}} 
+virtual \mbox{\hyperlink{class_transform_afde7c64d0d8492b16b6d6f6dba8f5137}{$\sim$\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_transform_a1dfc3bd0d58b3e4b095084256c5fce3c}{get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get the position of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_aa7c87f0a1ffe57d4c59596dab3831598}{set\+Position}} (const float x\+Pos, const float y\+Pos, const float z\+Pos)
+\begin{DoxyCompactList}\small\item\em Set the position of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_ad596f05e7b162a80fbb54defb8224ee9}{set\+Position}} (const glm\+::vec3 \&new\+Pos)
+\begin{DoxyCompactList}\small\item\em Set the position of the entity in the world. \end{DoxyCompactList}\item 
+const glm\+::vec3 \& \mbox{\hyperlink{class_transform_a9cffea175803b742ad64b8847c356170}{get\+Orientation}} () const
+\begin{DoxyCompactList}\small\item\em Get the orientation of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_af9cac506d9c53e52aa832c9cd709218f}{set\+Orientation}} (const float x\+Rotation, const float y\+Rotation, const float z\+Rotation)
+\begin{DoxyCompactList}\small\item\em Set the orientation of the entity in the world. \end{DoxyCompactList}\item 
+const glm\+::vec3 \& \mbox{\hyperlink{class_transform_a0234884fd5f48a5fdb041cbc44df91de}{get\+Scale}} () const
+\begin{DoxyCompactList}\small\item\em Get the scale of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_transform_a05b524fc68ec6269002912eed33e0efc}{set\+Scale}} (const float sX, const float sY, const float sZ)
+\begin{DoxyCompactList}\small\item\em Set the scale of the entity in the world. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_transform_a62ed3c6db74b2c96a31f3aa55ffb3cfd}{get\+Transformation\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Get the model transformation matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The position, scale and rotation of an object in the world. Every entity needs a transform. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_transform_aa08ca4266efabc768973cdeea51945ab}\label{class_transform_aa08ca4266efabc768973cdeea51945ab}} 
+\index{Transform@{Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Transform\+::\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\hyperlink{class_transform_aa08ca4266efabc768973cdeea51945ab}{Transform()}} \mbox{\Hypertarget{class_transform_a2f3fd62cbefaa2780e4e7fce6869f9f9}\label{class_transform_a2f3fd62cbefaa2780e4e7fce6869f9f9}} 
+\index{Transform@{Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{const float}]{x\+Pos,  }\item[{const float}]{y\+Pos,  }\item[{const float}]{z\+Pos,  }\item[{const float}]{x\+Rotation,  }\item[{const float}]{y\+Rotation,  }\item[{const float}]{z\+Rotation,  }\item[{const float}]{sX,  }\item[{const float}]{sY,  }\item[{const float}]{sZ }\end{DoxyParamCaption})}
+
+
+
+Constructor requiring all transform types. 
+
+\mbox{\hyperlink{class_transform_aa08ca4266efabc768973cdeea51945ab}{Transform()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Pos} & a const float -\/ The x position of the entity in the game world \\
+\hline
+{\em y\+Pos} & a const float -\/ The y position of the entity in the game world \\
+\hline
+{\em z\+Pos} & a const float -\/ The z position of the entity in the game world \\
+\hline
+{\em x\+Rotation} & a const float -\/ The rotation around the x axis of the entity in the game world \\
+\hline
+{\em y\+Rotation} & a const float -\/ The rotation around the y axis of the entity in the game world \\
+\hline
+{\em z\+Rotation} & a const float -\/ The rotation around the z axis of the entity in the game world \\
+\hline
+{\em sX} & a const float -\/ The scale in the x axis of the entity in the game world \\
+\hline
+{\em sY} & a const float -\/ The scale in the y axis of the entity in the game world \\
+\hline
+{\em sZ} & a const float -\/ The scale in the z axis of the entity in the game world \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_transform_a9cffea175803b742ad64b8847c356170}\label{class_transform_a9cffea175803b742ad64b8847c356170}} 
+\index{Transform@{Transform}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{getOrientation()}{getOrientation()}}
+{\footnotesize\ttfamily const glm\+::vec3 \& Transform\+::get\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the orientation of the entity in the world. 
+
+\mbox{\hyperlink{class_transform_a9cffea175803b742ad64b8847c356170}{get\+Orientation()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec3\& -\/ The orientation of the transform 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transform_a1dfc3bd0d58b3e4b095084256c5fce3c}\label{class_transform_a1dfc3bd0d58b3e4b095084256c5fce3c}} 
+\index{Transform@{Transform}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Transform\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the position of the entity in the world. 
+
+\mbox{\hyperlink{class_transform_a1dfc3bd0d58b3e4b095084256c5fce3c}{get\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The position of the entity in the game world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transform_a0234884fd5f48a5fdb041cbc44df91de}\label{class_transform_a0234884fd5f48a5fdb041cbc44df91de}} 
+\index{Transform@{Transform}!getScale@{getScale}}
+\index{getScale@{getScale}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily const glm\+::vec3 \& Transform\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the scale of the entity in the world. 
+
+\mbox{\hyperlink{class_transform_a0234884fd5f48a5fdb041cbc44df91de}{get\+Scale()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec3\& -\/ The scale of the transform 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transform_a62ed3c6db74b2c96a31f3aa55ffb3cfd}\label{class_transform_a62ed3c6db74b2c96a31f3aa55ffb3cfd}} 
+\index{Transform@{Transform}!getTransformationMatrix@{getTransformationMatrix}}
+\index{getTransformationMatrix@{getTransformationMatrix}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{getTransformationMatrix()}{getTransformationMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Transform\+::get\+Transformation\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the model transformation matrix. 
+
+\mbox{\hyperlink{class_transform_a62ed3c6db74b2c96a31f3aa55ffb3cfd}{get\+Transformation\+Matrix()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The model transformation matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_transform_af9cac506d9c53e52aa832c9cd709218f}\label{class_transform_af9cac506d9c53e52aa832c9cd709218f}} 
+\index{Transform@{Transform}!setOrientation@{setOrientation}}
+\index{setOrientation@{setOrientation}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{setOrientation()}{setOrientation()}}
+{\footnotesize\ttfamily void Transform\+::set\+Orientation (\begin{DoxyParamCaption}\item[{const float}]{x\+Rotation,  }\item[{const float}]{y\+Rotation,  }\item[{const float}]{z\+Rotation }\end{DoxyParamCaption})}
+
+
+
+Set the orientation of the entity in the world. 
+
+\mbox{\hyperlink{class_transform_af9cac506d9c53e52aa832c9cd709218f}{set\+Orientation()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Rotation} & a const float -\/ The rotation around the x axis of the entity \\
+\hline
+{\em y\+Rotation} & a const float -\/ The rotation around the y axis of the entity \\
+\hline
+{\em z\+Rotation} & a const float -\/ The rotation around the z axis of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_aa7c87f0a1ffe57d4c59596dab3831598}\label{class_transform_aa7c87f0a1ffe57d4c59596dab3831598}} 
+\index{Transform@{Transform}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Transform\+::set\+Position (\begin{DoxyParamCaption}\item[{const float}]{x\+Pos,  }\item[{const float}]{y\+Pos,  }\item[{const float}]{z\+Pos }\end{DoxyParamCaption})}
+
+
+
+Set the position of the entity in the world. 
+
+\mbox{\hyperlink{class_transform_aa7c87f0a1ffe57d4c59596dab3831598}{set\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Pos} & a const float -\/ The x position of the entity \\
+\hline
+{\em y\+Pos} & a const float -\/ The y position of the entity \\
+\hline
+{\em z\+Pos} & a const float -\/ The z position of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_ad596f05e7b162a80fbb54defb8224ee9}\label{class_transform_ad596f05e7b162a80fbb54defb8224ee9}} 
+\index{Transform@{Transform}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Transform\+::set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{new\+Pos }\end{DoxyParamCaption})}
+
+
+
+Set the position of the entity in the world. 
+
+\mbox{\hyperlink{class_transform_aa7c87f0a1ffe57d4c59596dab3831598}{set\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Pos} & a const glm\+::vec3\& -\/ The position of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_transform_a05b524fc68ec6269002912eed33e0efc}\label{class_transform_a05b524fc68ec6269002912eed33e0efc}} 
+\index{Transform@{Transform}!setScale@{setScale}}
+\index{setScale@{setScale}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}}
+{\footnotesize\ttfamily void Transform\+::set\+Scale (\begin{DoxyParamCaption}\item[{const float}]{sX,  }\item[{const float}]{sY,  }\item[{const float}]{sZ }\end{DoxyParamCaption})}
+
+
+
+Set the scale of the entity in the world. 
+
+\mbox{\hyperlink{class_transform_a05b524fc68ec6269002912eed33e0efc}{set\+Scale()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sX} & a const float -\/ The scale of the transform in the x axis \\
+\hline
+{\em sY} & a const float -\/ The scale of the transform in the y axis \\
+\hline
+{\em sZ} & a const float -\/ The scale of the transform in the z axis \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/scene/entity/components/\mbox{\hyperlink{transform_8h}{transform.\+h}}\item 
+C\+:/doc/src/src/scene/entity/components/\mbox{\hyperlink{transform_8cpp}{transform.\+cpp}}\end{DoxyCompactItemize}

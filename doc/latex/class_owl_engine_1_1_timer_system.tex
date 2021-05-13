@@ -1,0 +1,326 @@
+\hypertarget{class_owl_engine_1_1_timer_system}{}\doxysection{Owl\+Engine\+::Timer\+System Class Reference}
+\label{class_owl_engine_1_1_timer_system}\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+
+
+A timer system which handles timers and stores recorded times.  
+
+
+
+
+{\ttfamily \#include $<$timer\+System.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Timer\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_timer_system}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a7ae3f2ff8a9fdfd7beb213691909e05a}{Timer\+System}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a24f33a8aa841123ffefeba4581db2477}{$\sim$\+Timer\+System}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_timer_system_ac3fa7e7f309ed41b12a3b39578c250bc}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a87b6d7e0e648b11bdf6316d54db0e125}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a04ff91b8de008755a4082218cfa0640d}{start\+Timer}} (const char $\ast$timer\+Name)
+\begin{DoxyCompactList}\small\item\em Start a new timer with name. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_timer_system_af29a714813ad0494c49bffa6cba8980f}{stop\+Timer}} (const char $\ast$timer\+Name, const bool delete\+Timer, const bool store\+Result=false)
+\begin{DoxyCompactList}\small\item\em Stop the timer. \end{DoxyCompactList}\item 
+static const float \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a1f86919441dea0cc8b60e6872c529207}{get\+Time}} (const char $\ast$timer\+Name, const bool reset, const bool store\+Result=true)
+\begin{DoxyCompactList}\small\item\em Get the result of a timer. \end{DoxyCompactList}\item 
+static const float \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a2106503cad4d5ddccbed58fd1e8daf38}{get\+Stored\+Time}} (const char $\ast$timer\+Name)
+\begin{DoxyCompactList}\small\item\em Get the stored result of a timer. \end{DoxyCompactList}\item 
+static const float \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a35bda62395472bbd01de433595bdb9d3}{get\+Time\+Per\+Second}} (const char $\ast$timer\+Name, const bool reset, const bool store\+Result=true)
+\begin{DoxyCompactList}\small\item\em Get the time per second (used for F\+PS) \end{DoxyCompactList}\item 
+static const float \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a53ea5f60466febac3b7e9056cb66dbb0}{get\+F\+PS}} ()
+\begin{DoxyCompactList}\small\item\em Simplifies getting the F\+PS. \end{DoxyCompactList}\item 
+static const float \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a8f1ee424ef200743f2afaf53bf44406f}{get\+Total\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Simplifies getting the total application lifetime. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a03f04e6dc2af25ba3dbe7995de996ff7}{remove\+Timer}} (const char $\ast$timer\+Name)
+\begin{DoxyCompactList}\small\item\em Remove a timer from the list and its associated results. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a4456c3e21a4b3ad0acb2906c1f2e0eca}{remove\+Timers}} ()
+\begin{DoxyCompactList}\small\item\em Remove all timers. \end{DoxyCompactList}\item 
+static const bool \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a16abb3502ea51c52d78c90bd14830677}{timer\+Exists\+By\+Name}} (const char $\ast$timer\+Name)
+\begin{DoxyCompactList}\small\item\em Check if a timer exists by name. \end{DoxyCompactList}\item 
+static const std\+::map$<$ const char $\ast$, std\+::pair$<$ \mbox{\hyperlink{class_owl_engine_1_1_timer}{Timer}} $\ast$, float $>$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a23efe78271f08b344d7917368b3dba4e}{get\+All\+Timers}} ()
+\begin{DoxyCompactList}\small\item\em Get a list of all the recorded times. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_timer_system_a0ed1b06ffc6538856a3c7463ac9a27d9}{print\+Timers}} ()
+\begin{DoxyCompactList}\small\item\em Print all timers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A timer system which handles timers and stores recorded times. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a7ae3f2ff8a9fdfd7beb213691909e05a}\label{class_owl_engine_1_1_timer_system_a7ae3f2ff8a9fdfd7beb213691909e05a}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!TimerSystem@{TimerSystem}}
+\index{TimerSystem@{TimerSystem}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{TimerSystem()}{TimerSystem()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Timer\+System\+::\+Timer\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system}{Timer\+System}}. \mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a24f33a8aa841123ffefeba4581db2477}\label{class_owl_engine_1_1_timer_system_a24f33a8aa841123ffefeba4581db2477}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!````~TimerSystem@{$\sim$TimerSystem}}
+\index{````~TimerSystem@{$\sim$TimerSystem}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{$\sim$TimerSystem()}{~TimerSystem()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Timer\+System\+::$\sim$\+Timer\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+$\sim$\+Timer\+System 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a23efe78271f08b344d7917368b3dba4e}\label{class_owl_engine_1_1_timer_system_a23efe78271f08b344d7917368b3dba4e}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!getAllTimers@{getAllTimers}}
+\index{getAllTimers@{getAllTimers}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{getAllTimers()}{getAllTimers()}}
+{\footnotesize\ttfamily const std\+::map$<$ const char $\ast$, std\+::pair$<$ \mbox{\hyperlink{class_owl_engine_1_1_timer}{Timer}} $\ast$, float $>$ $>$ \& Owl\+Engine\+::\+Timer\+System\+::get\+All\+Timers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a list of all the recorded times. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a23efe78271f08b344d7917368b3dba4e}{get\+All\+Timers()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::map$<$const char$\ast$, std\+::pair$<$\+Timer$\ast$, float$>$$>$\& -\/ The list of times 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a53ea5f60466febac3b7e9056cb66dbb0}\label{class_owl_engine_1_1_timer_system_a53ea5f60466febac3b7e9056cb66dbb0}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!getFPS@{getFPS}}
+\index{getFPS@{getFPS}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{getFPS()}{getFPS()}}
+{\footnotesize\ttfamily const float Owl\+Engine\+::\+Timer\+System\+::get\+F\+PS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Simplifies getting the F\+PS. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a53ea5f60466febac3b7e9056cb66dbb0}{get\+F\+P\+S()}}
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The F\+PS 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a2106503cad4d5ddccbed58fd1e8daf38}\label{class_owl_engine_1_1_timer_system_a2106503cad4d5ddccbed58fd1e8daf38}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!getStoredTime@{getStoredTime}}
+\index{getStoredTime@{getStoredTime}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{getStoredTime()}{getStoredTime()}}
+{\footnotesize\ttfamily const float Owl\+Engine\+::\+Timer\+System\+::get\+Stored\+Time (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the stored result of a timer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a2106503cad4d5ddccbed58fd1e8daf38}{get\+Stored\+Time()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The timer name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const float -\/ The recorded time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a1f86919441dea0cc8b60e6872c529207}\label{class_owl_engine_1_1_timer_system_a1f86919441dea0cc8b60e6872c529207}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!getTime@{getTime}}
+\index{getTime@{getTime}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily const float Owl\+Engine\+::\+Timer\+System\+::get\+Time (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name,  }\item[{const bool}]{reset,  }\item[{const bool}]{store\+Result = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the result of a timer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a1f86919441dea0cc8b60e6872c529207}{get\+Time()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The timer name \\
+\hline
+{\em reset} & a const bool -\/ Reset the timer \\
+\hline
+{\em store\+Result} & a const bool -\/ Store the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const float -\/ The recorded time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a35bda62395472bbd01de433595bdb9d3}\label{class_owl_engine_1_1_timer_system_a35bda62395472bbd01de433595bdb9d3}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!getTimePerSecond@{getTimePerSecond}}
+\index{getTimePerSecond@{getTimePerSecond}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{getTimePerSecond()}{getTimePerSecond()}}
+{\footnotesize\ttfamily const float Owl\+Engine\+::\+Timer\+System\+::get\+Time\+Per\+Second (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name,  }\item[{const bool}]{reset,  }\item[{const bool}]{store\+Result = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the time per second (used for F\+PS) 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a35bda62395472bbd01de433595bdb9d3}{get\+Time\+Per\+Second()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The timer name \\
+\hline
+{\em reset} & a const bool -\/ Reset the time? \\
+\hline
+{\em store\+Result} & a const bool -\/ Store the result \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const float -\/ The recorded time 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a8f1ee424ef200743f2afaf53bf44406f}\label{class_owl_engine_1_1_timer_system_a8f1ee424ef200743f2afaf53bf44406f}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!getTotalTime@{getTotalTime}}
+\index{getTotalTime@{getTotalTime}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{getTotalTime()}{getTotalTime()}}
+{\footnotesize\ttfamily const float Owl\+Engine\+::\+Timer\+System\+::get\+Total\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Simplifies getting the total application lifetime. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a8f1ee424ef200743f2afaf53bf44406f}{get\+Total\+Time()}}
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The total lifetime of the application 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a0ed1b06ffc6538856a3c7463ac9a27d9}\label{class_owl_engine_1_1_timer_system_a0ed1b06ffc6538856a3c7463ac9a27d9}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!printTimers@{printTimers}}
+\index{printTimers@{printTimers}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{printTimers()}{printTimers()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Timer\+System\+::print\+Timers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print all timers. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a0ed1b06ffc6538856a3c7463ac9a27d9}{print\+Timers()}} \mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a03f04e6dc2af25ba3dbe7995de996ff7}\label{class_owl_engine_1_1_timer_system_a03f04e6dc2af25ba3dbe7995de996ff7}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!removeTimer@{removeTimer}}
+\index{removeTimer@{removeTimer}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{removeTimer()}{removeTimer()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Timer\+System\+::remove\+Timer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Remove a timer from the list and its associated results. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a03f04e6dc2af25ba3dbe7995de996ff7}{remove\+Timer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The timer name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a4456c3e21a4b3ad0acb2906c1f2e0eca}\label{class_owl_engine_1_1_timer_system_a4456c3e21a4b3ad0acb2906c1f2e0eca}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!removeTimers@{removeTimers}}
+\index{removeTimers@{removeTimers}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{removeTimers()}{removeTimers()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Timer\+System\+::remove\+Timers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Remove all timers. 
+
+remove\+Timers \mbox{\Hypertarget{class_owl_engine_1_1_timer_system_ac3fa7e7f309ed41b12a3b39578c250bc}\label{class_owl_engine_1_1_timer_system_ac3fa7e7f309ed41b12a3b39578c250bc}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!start@{start}}
+\index{start@{start}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Timer\+System\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_ac3fa7e7f309ed41b12a3b39578c250bc}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a04ff91b8de008755a4082218cfa0640d}\label{class_owl_engine_1_1_timer_system_a04ff91b8de008755a4082218cfa0640d}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!startTimer@{startTimer}}
+\index{startTimer@{startTimer}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{startTimer()}{startTimer()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Timer\+System\+::start\+Timer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Start a new timer with name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a04ff91b8de008755a4082218cfa0640d}{start\+Timer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The timer name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a87b6d7e0e648b11bdf6316d54db0e125}\label{class_owl_engine_1_1_timer_system_a87b6d7e0e648b11bdf6316d54db0e125}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Timer\+System\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a87b6d7e0e648b11bdf6316d54db0e125}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_af29a714813ad0494c49bffa6cba8980f}\label{class_owl_engine_1_1_timer_system_af29a714813ad0494c49bffa6cba8980f}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!stopTimer@{stopTimer}}
+\index{stopTimer@{stopTimer}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{stopTimer()}{stopTimer()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Timer\+System\+::stop\+Timer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name,  }\item[{const bool}]{delete\+Timer,  }\item[{const bool}]{store\+Result = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stop the timer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_af29a714813ad0494c49bffa6cba8980f}{stop\+Timer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The timer name \\
+\hline
+{\em delete\+Timer} & a const bool -\/ Delete the timer \\
+\hline
+{\em store\+Result} & a const bool -\/ Store the result \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_system_a16abb3502ea51c52d78c90bd14830677}\label{class_owl_engine_1_1_timer_system_a16abb3502ea51c52d78c90bd14830677}} 
+\index{OwlEngine::TimerSystem@{OwlEngine::TimerSystem}!timerExistsByName@{timerExistsByName}}
+\index{timerExistsByName@{timerExistsByName}!OwlEngine::TimerSystem@{OwlEngine::TimerSystem}}
+\doxysubsubsection{\texorpdfstring{timerExistsByName()}{timerExistsByName()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Timer\+System\+::timer\+Exists\+By\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if a timer exists by name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_system_a16abb3502ea51c52d78c90bd14830677}{timer\+Exists\+By\+Name()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The name of the timer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the timer been found 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{timer_system_8h}{timer\+System.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{timer_system_8cpp}{timer\+System.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,120 @@
+\hypertarget{class_owl_engine_1_1_system_manager}{}\doxysection{Owl\+Engine\+::System\+Manager Class Reference}
+\label{class_owl_engine_1_1_system_manager}\index{OwlEngine::SystemManager@{OwlEngine::SystemManager}}
+
+
+A manager class which manages all systems.  
+
+
+
+
+{\ttfamily \#include $<$system\+Manager.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_system_manager_a2b809da920ba454a0e43b76ccf1e5736}{initialise}} (const uint32\+\_\+t system\+Max\+Count)
+\begin{DoxyCompactList}\small\item\em Initialise the system manager. \end{DoxyCompactList}\item 
+static const bool \mbox{\hyperlink{class_owl_engine_1_1_system_manager_ab944f6b6e50ce333edfe56f9c44d1dc1}{contains\+System}} (const \mbox{\hyperlink{system_8h_a498de293775513c620551b0aca27968f}{System\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Check if system type has been added to the system list. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_system_manager_ad409bf216415893483e9432a871018b4}{add\+System}} (const \mbox{\hyperlink{system_8h_a498de293775513c620551b0aca27968f}{System\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Add a system to the back of system list. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_system_manager_aee3e53b396c3aeb2a0bbb58db7c9710e}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the system manager and all systems. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_system}{System}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_system_manager_aef66daf72b8680c2a1562ce46a5ad375}{get\+System\+By\+Type}} (const \mbox{\hyperlink{system_8h_a498de293775513c620551b0aca27968f}{System\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Get a system by type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A manager class which manages all systems. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_system_manager_ad409bf216415893483e9432a871018b4}\label{class_owl_engine_1_1_system_manager_ad409bf216415893483e9432a871018b4}} 
+\index{OwlEngine::SystemManager@{OwlEngine::SystemManager}!addSystem@{addSystem}}
+\index{addSystem@{addSystem}!OwlEngine::SystemManager@{OwlEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{addSystem()}{addSystem()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+System\+Manager\+::add\+System (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{system_8h_a498de293775513c620551b0aca27968f}{System\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add a system to the back of system list. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_system_manager_ad409bf216415893483e9432a871018b4}{add\+System()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const System\+Type -\/ The system type \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_system_manager_ab944f6b6e50ce333edfe56f9c44d1dc1}\label{class_owl_engine_1_1_system_manager_ab944f6b6e50ce333edfe56f9c44d1dc1}} 
+\index{OwlEngine::SystemManager@{OwlEngine::SystemManager}!containsSystem@{containsSystem}}
+\index{containsSystem@{containsSystem}!OwlEngine::SystemManager@{OwlEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{containsSystem()}{containsSystem()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+System\+Manager\+::contains\+System (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{system_8h_a498de293775513c620551b0aca27968f}{System\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Check if system type has been added to the system list. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_system_manager_ab944f6b6e50ce333edfe56f9c44d1dc1}{contains\+System()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const System\+Type -\/ The system type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the system been added to the system list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_system_manager_aee3e53b396c3aeb2a0bbb58db7c9710e}\label{class_owl_engine_1_1_system_manager_aee3e53b396c3aeb2a0bbb58db7c9710e}} 
+\index{OwlEngine::SystemManager@{OwlEngine::SystemManager}!destroy@{destroy}}
+\index{destroy@{destroy}!OwlEngine::SystemManager@{OwlEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+System\+Manager\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroys the system manager and all systems. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_system_manager_aee3e53b396c3aeb2a0bbb58db7c9710e}{destroy()}} \mbox{\Hypertarget{class_owl_engine_1_1_system_manager_aef66daf72b8680c2a1562ce46a5ad375}\label{class_owl_engine_1_1_system_manager_aef66daf72b8680c2a1562ce46a5ad375}} 
+\index{OwlEngine::SystemManager@{OwlEngine::SystemManager}!getSystemByType@{getSystemByType}}
+\index{getSystemByType@{getSystemByType}!OwlEngine::SystemManager@{OwlEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{getSystemByType()}{getSystemByType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_system}{System}} $\ast$ Owl\+Engine\+::\+System\+Manager\+::get\+System\+By\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{system_8h_a498de293775513c620551b0aca27968f}{System\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a system by type. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_system_manager_aef66daf72b8680c2a1562ce46a5ad375}{get\+System\+By\+Type()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const System\+Type -\/ The system type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a System$\ast$ -\/ The system pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_system_manager_a2b809da920ba454a0e43b76ccf1e5736}\label{class_owl_engine_1_1_system_manager_a2b809da920ba454a0e43b76ccf1e5736}} 
+\index{OwlEngine::SystemManager@{OwlEngine::SystemManager}!initialise@{initialise}}
+\index{initialise@{initialise}!OwlEngine::SystemManager@{OwlEngine::SystemManager}}
+\doxysubsubsection{\texorpdfstring{initialise()}{initialise()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+System\+Manager\+::initialise (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{system\+Max\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initialise the system manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_system_manager_a2b809da920ba454a0e43b76ccf1e5736}{initialise()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em system\+Max\+Count} & a const uint32\+\_\+t -\/ The max number of systems \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/\mbox{\hyperlink{system_manager_8h}{system\+Manager.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/\mbox{\hyperlink{system_manager_8cpp}{system\+Manager.\+cpp}}\end{DoxyCompactItemize}

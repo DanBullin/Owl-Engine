@@ -1,0 +1,236 @@
+\hypertarget{class_owl_engine_1_1_physics_system}{}\doxysection{Owl\+Engine\+::Physics\+System Class Reference}
+\label{class_owl_engine_1_1_physics_system}\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+
+
+A physics system that initialises and updates a React\+Physics3D physics world.  
+
+
+
+
+{\ttfamily \#include $<$physics\+System.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Physics\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_physics_system}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_a4a2035d701c2a56c4738003ec9e2d189}{Physics\+System}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_a8925729e27c8939b0a18f1629813aebb}{$\sim$\+Physics\+System}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_physics_system_ab23702e3d0d932aa189e302bcc2f48c0}{start}} () override
+\begin{DoxyCompactList}\small\item\em Create physics world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_physics_system_a904c287a059cf35c280f10f9e33195ed}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Destroy physics world. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static rp3d\+::\+Physics\+World $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_physics_system_acc7e1142572d8cc426e8eec5d350d9e2}{add\+World}} ()
+\begin{DoxyCompactList}\small\item\em Create a new physics world. \end{DoxyCompactList}\item 
+static glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_physics_system_a943b33c1763b956d56f051f5445baecb}{react\+To\+G\+LM}} (rp3d\+::\+Vector3 vec)
+\begin{DoxyCompactList}\small\item\em Convert a rp3D Vector3 to a glm vec3. \end{DoxyCompactList}\item 
+static rp3d\+::\+Vector3 \mbox{\hyperlink{class_owl_engine_1_1_physics_system_a469aa146fca90df85ca021ff27e02139}{G\+L\+M\+To\+React}} (glm\+::vec3 vec)
+\begin{DoxyCompactList}\small\item\em Convert a G\+LM vec3 to a rp3D Vector3. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_physics_system_aa395c695765ce729192f7426175f15be}{remove\+World}} (rp3d\+::\+Physics\+World $\ast$world)
+\begin{DoxyCompactList}\small\item\em Delete a new physics world. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_physics_system_ae03875d2385493ee50c71450e0537e88}{on\+Update}} (rp3d\+::\+Physics\+World $\ast$world, \mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$scene, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Update physics world. \end{DoxyCompactList}\item 
+static rp3d\+::\+Physics\+World $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_physics_system_ac66b1a629abc5eaa7cd3f3c524b36f31}{get\+Physics\+World}} (const uint32\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Getter for physics world. \end{DoxyCompactList}\item 
+static rp3d\+::\+Physics\+Common \& \mbox{\hyperlink{class_owl_engine_1_1_physics_system_abf49abaf46e2dd37813ae7bae73bde9b}{get\+Physics\+Common}} ()
+\begin{DoxyCompactList}\small\item\em Getter for physics common object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A physics system that initialises and updates a React\+Physics3D physics world. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_system_a4a2035d701c2a56c4738003ec9e2d189}\label{class_owl_engine_1_1_physics_system_a4a2035d701c2a56c4738003ec9e2d189}} 
+\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}!PhysicsSystem@{PhysicsSystem}}
+\index{PhysicsSystem@{PhysicsSystem}!OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+\doxysubsubsection{\texorpdfstring{PhysicsSystem()}{PhysicsSystem()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Physics\+System\+::\+Physics\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_a4a2035d701c2a56c4738003ec9e2d189}{Physics\+System()}} \mbox{\Hypertarget{class_owl_engine_1_1_physics_system_a8925729e27c8939b0a18f1629813aebb}\label{class_owl_engine_1_1_physics_system_a8925729e27c8939b0a18f1629813aebb}} 
+\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}!````~PhysicsSystem@{$\sim$PhysicsSystem}}
+\index{````~PhysicsSystem@{$\sim$PhysicsSystem}!OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+\doxysubsubsection{\texorpdfstring{$\sim$PhysicsSystem()}{~PhysicsSystem()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Physics\+System\+::$\sim$\+Physics\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_a8925729e27c8939b0a18f1629813aebb}{$\sim$\+Physics\+System()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_system_acc7e1142572d8cc426e8eec5d350d9e2}\label{class_owl_engine_1_1_physics_system_acc7e1142572d8cc426e8eec5d350d9e2}} 
+\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}!addWorld@{addWorld}}
+\index{addWorld@{addWorld}!OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+\doxysubsubsection{\texorpdfstring{addWorld()}{addWorld()}}
+{\footnotesize\ttfamily rp3d\+::\+Physics\+World $\ast$ Owl\+Engine\+::\+Physics\+System\+::add\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a new physics world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_acc7e1142572d8cc426e8eec5d350d9e2}{add\+World()}}
+
+\begin{DoxyReturn}{Returns}
+a rp3d\+::\+Physics\+World$\ast$ -\/ A pointer to the new world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_system_abf49abaf46e2dd37813ae7bae73bde9b}\label{class_owl_engine_1_1_physics_system_abf49abaf46e2dd37813ae7bae73bde9b}} 
+\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}!getPhysicsCommon@{getPhysicsCommon}}
+\index{getPhysicsCommon@{getPhysicsCommon}!OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+\doxysubsubsection{\texorpdfstring{getPhysicsCommon()}{getPhysicsCommon()}}
+{\footnotesize\ttfamily rp3d\+::\+Physics\+Common \& Owl\+Engine\+::\+Physics\+System\+::get\+Physics\+Common (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Getter for physics common object. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_abf49abaf46e2dd37813ae7bae73bde9b}{get\+Physics\+Common()}}
+
+\begin{DoxyReturn}{Returns}
+a rp3d\+::\+Physics\+Common\& -\/ Reference to the physics common object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_system_ac66b1a629abc5eaa7cd3f3c524b36f31}\label{class_owl_engine_1_1_physics_system_ac66b1a629abc5eaa7cd3f3c524b36f31}} 
+\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}!getPhysicsWorld@{getPhysicsWorld}}
+\index{getPhysicsWorld@{getPhysicsWorld}!OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+\doxysubsubsection{\texorpdfstring{getPhysicsWorld()}{getPhysicsWorld()}}
+{\footnotesize\ttfamily rp3d\+::\+Physics\+World $\ast$ Owl\+Engine\+::\+Physics\+System\+::get\+Physics\+World (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Getter for physics world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_ac66b1a629abc5eaa7cd3f3c524b36f31}{get\+Physics\+World()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & a const uint32\+\_\+t -\/ The index of the physics world \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a rp3d\+::\+Physics\+World$\ast$ -\/ Pointer to the physics world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_system_a469aa146fca90df85ca021ff27e02139}\label{class_owl_engine_1_1_physics_system_a469aa146fca90df85ca021ff27e02139}} 
+\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}!GLMToReact@{GLMToReact}}
+\index{GLMToReact@{GLMToReact}!OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+\doxysubsubsection{\texorpdfstring{GLMToReact()}{GLMToReact()}}
+{\footnotesize\ttfamily rp3d\+::\+Vector3 Owl\+Engine\+::\+Physics\+System\+::\+G\+L\+M\+To\+React (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert a G\+LM vec3 to a rp3D Vector3. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_a469aa146fca90df85ca021ff27e02139}{G\+L\+M\+To\+React()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & glm\+::vec3 -\/ G\+LM vector 3 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a rp3d\+::\+Vector3 -\/ Converted react physics vector 3 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_system_ae03875d2385493ee50c71450e0537e88}\label{class_owl_engine_1_1_physics_system_ae03875d2385493ee50c71450e0537e88}} 
+\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Physics\+System\+::on\+Update (\begin{DoxyParamCaption}\item[{rp3d\+::\+Physics\+World $\ast$}]{world,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$}]{scene,  }\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Update physics world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_ae03875d2385493ee50c71450e0537e88}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & a rp3d\+::\+Physics\+World$\ast$ -\/ A pointer to the physics world \\
+\hline
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_system_a943b33c1763b956d56f051f5445baecb}\label{class_owl_engine_1_1_physics_system_a943b33c1763b956d56f051f5445baecb}} 
+\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}!reactToGLM@{reactToGLM}}
+\index{reactToGLM@{reactToGLM}!OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+\doxysubsubsection{\texorpdfstring{reactToGLM()}{reactToGLM()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Physics\+System\+::react\+To\+G\+LM (\begin{DoxyParamCaption}\item[{rp3d\+::\+Vector3}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Convert a rp3D Vector3 to a glm vec3. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_a943b33c1763b956d56f051f5445baecb}{react\+To\+G\+L\+M()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & rp3d\+::\+Vector3 -\/ React physics vector 3 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ Converted G\+LM vector 3 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_system_aa395c695765ce729192f7426175f15be}\label{class_owl_engine_1_1_physics_system_aa395c695765ce729192f7426175f15be}} 
+\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}!removeWorld@{removeWorld}}
+\index{removeWorld@{removeWorld}!OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+\doxysubsubsection{\texorpdfstring{removeWorld()}{removeWorld()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Physics\+System\+::remove\+World (\begin{DoxyParamCaption}\item[{rp3d\+::\+Physics\+World $\ast$}]{world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Delete a new physics world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_aa395c695765ce729192f7426175f15be}{remove\+World()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & a rp3d\+::\+Physics\+World$\ast$ -\/ A pointer to the world \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_system_ab23702e3d0d932aa189e302bcc2f48c0}\label{class_owl_engine_1_1_physics_system_ab23702e3d0d932aa189e302bcc2f48c0}} 
+\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}!start@{start}}
+\index{start@{start}!OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Physics\+System\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create physics world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_ab23702e3d0d932aa189e302bcc2f48c0}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_physics_system_a904c287a059cf35c280f10f9e33195ed}\label{class_owl_engine_1_1_physics_system_a904c287a059cf35c280f10f9e33195ed}} 
+\index{OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::PhysicsSystem@{OwlEngine::PhysicsSystem}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Physics\+System\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Destroy physics world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_physics_system_a904c287a059cf35c280f10f9e33195ed}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{physics_system_8h}{physics\+System.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{physics_system_8cpp}{physics\+System.\+cpp}}\end{DoxyCompactItemize}

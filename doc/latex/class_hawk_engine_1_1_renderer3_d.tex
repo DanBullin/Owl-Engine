@@ -1,0 +1,165 @@
+\hypertarget{class_hawk_engine_1_1_renderer3_d}{}\doxysection{Hawk\+Engine\+::Renderer3D Class Reference}
+\label{class_hawk_engine_1_1_renderer3_d}\index{HawkEngine::Renderer3D@{HawkEngine::Renderer3D}}
+
+
+A static class which renders 3D geometry instantly (non-\/batched)  
+
+
+
+
+{\ttfamily \#include $<$renderer3\+D.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_renderer3_d_a206543afbc2ef2bb24216d945159312c}\label{class_hawk_engine_1_1_renderer3_d_a206543afbc2ef2bb24216d945159312c}} 
+static std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data}{Renderer3\+D\+Data}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_a206543afbc2ef2bb24216d945159312c}{get\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the renderer data. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_af8dae7d773a21541c9613a29ac339a2b}{init}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $>$ \&unit\+Manager, const std\+::array$<$ int32\+\_\+t, 16 $>$ \&unit, const uint32\+\_\+t vertex\+Capacity, const uint32\+\_\+t index\+Capacity, const uint32\+\_\+t batch\+Capacity)
+\begin{DoxyCompactList}\small\item\em Initialise the renderer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_a49fc0df2777d0009ac608ac09e5747a7}{begin}} (const \mbox{\hyperlink{renderer_common_8h_a70f613e2d6c9ecf5f2ca4f06543fa17f}{Scene\+Wide\+Uniforms}} \&scene\+Wide\+Uniforms)
+\begin{DoxyCompactList}\small\item\em Begin a new 3D scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_afecd25a7a9782273e372cfeeb61018fb}{flush}} ()
+\begin{DoxyCompactList}\small\item\em Flush the if we have something in batch queue. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_a2a4a3ad4f3a518bc78f02505cdbaab3c}{flush\+Batch}} ()
+\begin{DoxyCompactList}\small\item\em Flush the current batch queue. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_ad35b5ca6960bc3bee0cf350639c50d57}{flush\+Batch\+Commands}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_shader_program}{Shader\+Program}} $>$ \&shader, uint32\+\_\+t instance\+Count)
+\begin{DoxyCompactList}\small\item\em Flush the current batch commands. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_ace8072f113c09b620f9d8fd2267a3c16}{submit}} (\mbox{\hyperlink{class_hawk_engine_1_1_mesh_render}{Mesh\+Render}} $\ast$mesh\+Render, const glm\+::mat4 \&transformation\+Matrix)
+\begin{DoxyCompactList}\small\item\em Submit a piece of geometry to be rendered. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_adf29793de069673296d4cf7f042630fb}{end}} ()
+\begin{DoxyCompactList}\small\item\em End the current 3D scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_adf5554326ae24bfc80a0099dc29c15ec}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all internal data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A static class which renders 3D geometry instantly (non-\/batched) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_renderer3_d_a49fc0df2777d0009ac608ac09e5747a7}\label{class_hawk_engine_1_1_renderer3_d_a49fc0df2777d0009ac608ac09e5747a7}} 
+\index{HawkEngine::Renderer3D@{HawkEngine::Renderer3D}!begin@{begin}}
+\index{begin@{begin}!HawkEngine::Renderer3D@{HawkEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer3\+D\+::begin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{renderer_common_8h_a70f613e2d6c9ecf5f2ca4f06543fa17f}{Scene\+Wide\+Uniforms}} \&}]{scene\+Wide\+Uniforms }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Begin a new 3D scene. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_a49fc0df2777d0009ac608ac09e5747a7}{begin()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene\+Wide\+Uniforms} & a const Scene\+Wide\+Uniforms\& -\/ A reference to the scene wide uniforms \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_renderer3_d_adf5554326ae24bfc80a0099dc29c15ec}\label{class_hawk_engine_1_1_renderer3_d_adf5554326ae24bfc80a0099dc29c15ec}} 
+\index{HawkEngine::Renderer3D@{HawkEngine::Renderer3D}!destroy@{destroy}}
+\index{destroy@{destroy}!HawkEngine::Renderer3D@{HawkEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer3\+D\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all internal data. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_adf5554326ae24bfc80a0099dc29c15ec}{destroy()}} \mbox{\Hypertarget{class_hawk_engine_1_1_renderer3_d_adf29793de069673296d4cf7f042630fb}\label{class_hawk_engine_1_1_renderer3_d_adf29793de069673296d4cf7f042630fb}} 
+\index{HawkEngine::Renderer3D@{HawkEngine::Renderer3D}!end@{end}}
+\index{end@{end}!HawkEngine::Renderer3D@{HawkEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer3\+D\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+End the current 3D scene. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_adf29793de069673296d4cf7f042630fb}{end()}} \mbox{\Hypertarget{class_hawk_engine_1_1_renderer3_d_afecd25a7a9782273e372cfeeb61018fb}\label{class_hawk_engine_1_1_renderer3_d_afecd25a7a9782273e372cfeeb61018fb}} 
+\index{HawkEngine::Renderer3D@{HawkEngine::Renderer3D}!flush@{flush}}
+\index{flush@{flush}!HawkEngine::Renderer3D@{HawkEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer3\+D\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Flush the if we have something in batch queue. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_afecd25a7a9782273e372cfeeb61018fb}{flush()}} \mbox{\Hypertarget{class_hawk_engine_1_1_renderer3_d_a2a4a3ad4f3a518bc78f02505cdbaab3c}\label{class_hawk_engine_1_1_renderer3_d_a2a4a3ad4f3a518bc78f02505cdbaab3c}} 
+\index{HawkEngine::Renderer3D@{HawkEngine::Renderer3D}!flushBatch@{flushBatch}}
+\index{flushBatch@{flushBatch}!HawkEngine::Renderer3D@{HawkEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{flushBatch()}{flushBatch()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer3\+D\+::flush\+Batch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Flush the current batch queue. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_a2a4a3ad4f3a518bc78f02505cdbaab3c}{flush\+Batch()}} \mbox{\Hypertarget{class_hawk_engine_1_1_renderer3_d_ad35b5ca6960bc3bee0cf350639c50d57}\label{class_hawk_engine_1_1_renderer3_d_ad35b5ca6960bc3bee0cf350639c50d57}} 
+\index{HawkEngine::Renderer3D@{HawkEngine::Renderer3D}!flushBatchCommands@{flushBatchCommands}}
+\index{flushBatchCommands@{flushBatchCommands}!HawkEngine::Renderer3D@{HawkEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{flushBatchCommands()}{flushBatchCommands()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer3\+D\+::flush\+Batch\+Commands (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_shader_program}{Shader\+Program}} $>$ \&}]{shader,  }\item[{uint32\+\_\+t}]{instance\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Flush the current batch commands. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_ad35b5ca6960bc3bee0cf350639c50d57}{flush\+Batch\+Commands()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & a const std\+::shared\+\_\+ptr$<$\+Shader\+Program$>$\& -\/ The shader program \\
+\hline
+{\em instance\+Count} & a uint32\+\_\+t -\/ The number of instances to draw \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_renderer3_d_af8dae7d773a21541c9613a29ac339a2b}\label{class_hawk_engine_1_1_renderer3_d_af8dae7d773a21541c9613a29ac339a2b}} 
+\index{HawkEngine::Renderer3D@{HawkEngine::Renderer3D}!init@{init}}
+\index{init@{init}!HawkEngine::Renderer3D@{HawkEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer3\+D\+::init (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $>$ \&}]{unit\+Manager,  }\item[{const std\+::array$<$ int32\+\_\+t, 16 $>$ \&}]{unit,  }\item[{const uint32\+\_\+t}]{vertex\+Capacity,  }\item[{const uint32\+\_\+t}]{index\+Capacity,  }\item[{const uint32\+\_\+t}]{batch\+Capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initialise the renderer. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_af8dae7d773a21541c9613a29ac339a2b}{init()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit\+Manager} & a const std\+::shared\+\_\+ptr$<$\+Texture\+Unit\+Manager$>$\& -\/ A reference to the texture unit manager \\
+\hline
+{\em unit} & a const std\+::array$<$int32\+\_\+t, 16$>$\& -\/ A reference to the texture unit \\
+\hline
+{\em vertex\+Capacity} & a const uint32\+\_\+t\& -\/ The vertex capacity \\
+\hline
+{\em index\+Capacity} & a const uint32\+\_\+t\& -\/ The index capacity \\
+\hline
+{\em batch\+Capacity} & a const uint32\+\_\+t\& -\/ The batch capacity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_renderer3_d_ace8072f113c09b620f9d8fd2267a3c16}\label{class_hawk_engine_1_1_renderer3_d_ace8072f113c09b620f9d8fd2267a3c16}} 
+\index{HawkEngine::Renderer3D@{HawkEngine::Renderer3D}!submit@{submit}}
+\index{submit@{submit}!HawkEngine::Renderer3D@{HawkEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Renderer3\+D\+::submit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_mesh_render}{Mesh\+Render}} $\ast$}]{mesh\+Render,  }\item[{const glm\+::mat4 \&}]{transformation\+Matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Submit a piece of geometry to be rendered. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_renderer3_d_ace8072f113c09b620f9d8fd2267a3c16}{submit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mesh\+Render} & a Mesh\+Render$\ast$ -\/ The render details of the entity \\
+\hline
+{\em transformation\+Matrix} & a const glm\+::mat4\& -\/ The model matrix \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/renderers/\mbox{\hyperlink{renderer3_d_8h}{renderer3\+D.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/renderers/renderer3\+D.\+cpp\end{DoxyCompactItemize}

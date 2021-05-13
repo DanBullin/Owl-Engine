@@ -1,0 +1,375 @@
+\hypertarget{class_hawk_engine_1_1_camera}{}\doxysection{Hawk\+Engine\+::Camera Class Reference}
+\label{class_hawk_engine_1_1_camera}\index{HawkEngine::Camera@{HawkEngine::Camera}}
+
+
+A camera object in the game world.  
+
+
+
+
+{\ttfamily \#include $<$camera.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Camera\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_camera}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_af8595f98fcfe805872298d4643d4139d}{Camera}} (const \mbox{\hyperlink{struct_hawk_engine_1_1_camera_data}{Camera\+Data}} \&camera\+Data, const \mbox{\hyperlink{camera_8h_a6c7ae87a62ebe666280dce397354dd4f}{Camera\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_hawk_engine_1_1_camera_ada8953105bfc388e546baf8ab2657212}{get\+View\+Matrix}} (const bool perspective)
+\begin{DoxyCompactList}\small\item\em Get the view matrix. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_hawk_engine_1_1_camera_ab5a30314207cd05e289d83dbc8d22f7d}{get\+Projection\+Matrix}} (const bool perspective)
+\begin{DoxyCompactList}\small\item\em Get the projection matrix. \end{DoxyCompactList}\item 
+const glm\+::vec3 \& \mbox{\hyperlink{class_hawk_engine_1_1_camera_a5d526fb3e3bf4c6eddd841343d77d38b}{get\+Local\+Position}} () const
+\begin{DoxyCompactList}\small\item\em Get the camera local position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_camera_a30b4ecb29c37fb7ad2ff5d1c89597381}{set\+Local\+Position}} (const glm\+::vec3 pos)
+\begin{DoxyCompactList}\small\item\em Set the local position of the camera. \end{DoxyCompactList}\item 
+const glm\+::vec3 \mbox{\hyperlink{class_hawk_engine_1_1_camera_a77d9dd52f3578b880d8231edcb34d15b}{get\+World\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the world position of the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_camera_ac3d7e09f368f0564022a28787befd2f5}{set\+Projection}} (const \mbox{\hyperlink{struct_hawk_engine_1_1_projection}{Projection}} \&projection)
+\begin{DoxyCompactList}\small\item\em Set the projection data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_hawk_engine_1_1_projection}{Projection}} \& \mbox{\hyperlink{class_hawk_engine_1_1_camera_a66ccc6f82c11da9be06555617c61a7fd}{get\+Projection}} ()
+\begin{DoxyCompactList}\small\item\em Get the projection data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_camera_a471f440f66d093a80fb1f0984a9a2fce}{set\+Camera\+Data}} (const \mbox{\hyperlink{struct_hawk_engine_1_1_camera_data}{Camera\+Data}} \&data)
+\begin{DoxyCompactList}\small\item\em Set the camera data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_hawk_engine_1_1_camera_data}{Camera\+Data}} \& \mbox{\hyperlink{class_hawk_engine_1_1_camera_a524608149558c3de82ac05d3f77f1cdb}{get\+Camera\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the camera data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_camera_afc240008e8ff16ee7c65d1b248fc07fe}{set\+Main\+Camera}} (const bool main\+Camera)
+\begin{DoxyCompactList}\small\item\em Set if this camera is the main camera. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_camera_a17e9c6ac94dd804936b088cc6e52a715}{get\+Main\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Get if this camera is the main camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_camera_a313091b19e2258a75fddf663e720753d}{set\+Type}} (const \mbox{\hyperlink{camera_8h_a6c7ae87a62ebe666280dce397354dd4f}{Camera\+Type}} camera\+Type)
+\begin{DoxyCompactList}\small\item\em Set the type of camera. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{camera_8h_a6c7ae87a62ebe666280dce397354dd4f}{Camera\+Type}} \mbox{\hyperlink{class_hawk_engine_1_1_camera_ab6b0c4c9206b3e89f3b55a60404e5b65}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the type of camera. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_camera_ade939b0fc13a6428ca22e643a2bc2e37}{update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_camera_a9c34b8260efa363bdae58a2230f08adb}{move}} (const \mbox{\hyperlink{camera_8h_a3fd556e3c086e2fafc24a8494961cb37}{Camera\+Movement}} direction, const float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Move the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_camera_ae62b83805757698af2f0f79a6eeea054}{rotate}} (float xoffset, float yoffset, bool constrain\+Pitch=true)
+\begin{DoxyCompactList}\small\item\em Rotate the camera. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_camera_a6633fb9c1aa6484781d58fc154537972}{zoom}} (float yoffset)
+\begin{DoxyCompactList}\small\item\em Zoom in/out. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A camera object in the game world. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_af8595f98fcfe805872298d4643d4139d}\label{class_hawk_engine_1_1_camera_af8595f98fcfe805872298d4643d4139d}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_hawk_engine_1_1_camera_data}{Camera\+Data}} \&}]{camera\+Data,  }\item[{const \mbox{\hyperlink{camera_8h_a6c7ae87a62ebe666280dce397354dd4f}{Camera\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_af8595f98fcfe805872298d4643d4139d}{Camera()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Data} & a const \mbox{\hyperlink{struct_hawk_engine_1_1_camera_data}{Camera\+Data}}\& -\/ The camera\textquotesingle{}s data \\
+\hline
+{\em type} & a const Camera\+Type -\/ The camera\textquotesingle{}s type \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_a524608149558c3de82ac05d3f77f1cdb}\label{class_hawk_engine_1_1_camera_a524608149558c3de82ac05d3f77f1cdb}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!getCameraData@{getCameraData}}
+\index{getCameraData@{getCameraData}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getCameraData()}{getCameraData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_hawk_engine_1_1_camera_data}{Camera\+Data}} \& Hawk\+Engine\+::\+Camera\+::get\+Camera\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the camera data. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_a524608149558c3de82ac05d3f77f1cdb}{get\+Camera\+Data()}}
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_hawk_engine_1_1_camera_data}{Camera\+Data}}\& -\/ The camera data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_a5d526fb3e3bf4c6eddd841343d77d38b}\label{class_hawk_engine_1_1_camera_a5d526fb3e3bf4c6eddd841343d77d38b}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!getLocalPosition@{getLocalPosition}}
+\index{getLocalPosition@{getLocalPosition}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getLocalPosition()}{getLocalPosition()}}
+{\footnotesize\ttfamily const glm\+::vec3 \& Hawk\+Engine\+::\+Camera\+::get\+Local\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the camera local position. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_a5d526fb3e3bf4c6eddd841343d77d38b}{get\+Local\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec3\& -\/ The camera\textquotesingle{}s local position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_a17e9c6ac94dd804936b088cc6e52a715}\label{class_hawk_engine_1_1_camera_a17e9c6ac94dd804936b088cc6e52a715}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!getMainCamera@{getMainCamera}}
+\index{getMainCamera@{getMainCamera}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getMainCamera()}{getMainCamera()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Camera\+::get\+Main\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get if this camera is the main camera. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_a17e9c6ac94dd804936b088cc6e52a715}{get\+Main\+Camera()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is this the main camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_a66ccc6f82c11da9be06555617c61a7fd}\label{class_hawk_engine_1_1_camera_a66ccc6f82c11da9be06555617c61a7fd}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!getProjection@{getProjection}}
+\index{getProjection@{getProjection}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getProjection()}{getProjection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_hawk_engine_1_1_projection}{Projection}} \& Hawk\+Engine\+::\+Camera\+::get\+Projection (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the projection data. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_a66ccc6f82c11da9be06555617c61a7fd}{get\+Projection()}}
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_hawk_engine_1_1_projection}{Projection}}\& -\/ The projection data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_ab5a30314207cd05e289d83dbc8d22f7d}\label{class_hawk_engine_1_1_camera_ab5a30314207cd05e289d83dbc8d22f7d}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!getProjectionMatrix@{getProjectionMatrix}}
+\index{getProjectionMatrix@{getProjectionMatrix}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getProjectionMatrix()}{getProjectionMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Hawk\+Engine\+::\+Camera\+::get\+Projection\+Matrix (\begin{DoxyParamCaption}\item[{const bool}]{perspective }\end{DoxyParamCaption})}
+
+
+
+Get the projection matrix. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_ab5a30314207cd05e289d83dbc8d22f7d}{get\+Projection\+Matrix()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The projection matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_ab6b0c4c9206b3e89f3b55a60404e5b65}\label{class_hawk_engine_1_1_camera_ab6b0c4c9206b3e89f3b55a60404e5b65}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!getType@{getType}}
+\index{getType@{getType}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{camera_8h_a6c7ae87a62ebe666280dce397354dd4f}{Camera\+Type}} Hawk\+Engine\+::\+Camera\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the type of camera. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_ab6b0c4c9206b3e89f3b55a60404e5b65}{get\+Type()}}
+
+\begin{DoxyReturn}{Returns}
+a Camera\+Type -\/ The type of camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_ada8953105bfc388e546baf8ab2657212}\label{class_hawk_engine_1_1_camera_ada8953105bfc388e546baf8ab2657212}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!getViewMatrix@{getViewMatrix}}
+\index{getViewMatrix@{getViewMatrix}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getViewMatrix()}{getViewMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Hawk\+Engine\+::\+Camera\+::get\+View\+Matrix (\begin{DoxyParamCaption}\item[{const bool}]{perspective }\end{DoxyParamCaption})}
+
+
+
+Get the view matrix. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_ada8953105bfc388e546baf8ab2657212}{get\+View\+Matrix()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The view matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_a77d9dd52f3578b880d8231edcb34d15b}\label{class_hawk_engine_1_1_camera_a77d9dd52f3578b880d8231edcb34d15b}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!getWorldPosition@{getWorldPosition}}
+\index{getWorldPosition@{getWorldPosition}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{getWorldPosition()}{getWorldPosition()}}
+{\footnotesize\ttfamily const glm\+::vec3 Hawk\+Engine\+::\+Camera\+::get\+World\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the world position of the camera. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_a77d9dd52f3578b880d8231edcb34d15b}{get\+World\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec3 -\/ The world position of the camera 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_a9c34b8260efa363bdae58a2230f08adb}\label{class_hawk_engine_1_1_camera_a9c34b8260efa363bdae58a2230f08adb}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!move@{move}}
+\index{move@{move}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Camera\+::move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{camera_8h_a3fd556e3c086e2fafc24a8494961cb37}{Camera\+Movement}}}]{direction,  }\item[{const float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Move the camera. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_a9c34b8260efa363bdae58a2230f08adb}{move()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & a Camera\+Movement -\/ The direction to move \\
+\hline
+{\em delta\+Time} & a const float -\/ Delta time which is a measure of how long it took to render last frame \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_ae62b83805757698af2f0f79a6eeea054}\label{class_hawk_engine_1_1_camera_ae62b83805757698af2f0f79a6eeea054}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!rotate@{rotate}}
+\index{rotate@{rotate}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Camera\+::rotate (\begin{DoxyParamCaption}\item[{float}]{xoffset,  }\item[{float}]{yoffset,  }\item[{bool}]{constrain\+Pitch = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Rotate the camera. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_ae62b83805757698af2f0f79a6eeea054}{rotate()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em xoffset} & a float -\/ The yaw rotation offset \\
+\hline
+{\em yoffset} & a float -\/ The pitch rotation offset \\
+\hline
+{\em constrain\+Pitch} & a bool -\/ Constrain the pitch? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_a471f440f66d093a80fb1f0984a9a2fce}\label{class_hawk_engine_1_1_camera_a471f440f66d093a80fb1f0984a9a2fce}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!setCameraData@{setCameraData}}
+\index{setCameraData@{setCameraData}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{setCameraData()}{setCameraData()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Camera\+::set\+Camera\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_hawk_engine_1_1_camera_data}{Camera\+Data}} \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Set the camera data. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_a471f440f66d093a80fb1f0984a9a2fce}{set\+Camera\+Data()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & a const m\& -\/ The new camera data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_a30b4ecb29c37fb7ad2ff5d1c89597381}\label{class_hawk_engine_1_1_camera_a30b4ecb29c37fb7ad2ff5d1c89597381}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!setLocalPosition@{setLocalPosition}}
+\index{setLocalPosition@{setLocalPosition}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{setLocalPosition()}{setLocalPosition()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Camera\+::set\+Local\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3}]{pos }\end{DoxyParamCaption})}
+
+
+
+Set the local position of the camera. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_a30b4ecb29c37fb7ad2ff5d1c89597381}{set\+Local\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const glm\+::vec3 -\/ The new position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_afc240008e8ff16ee7c65d1b248fc07fe}\label{class_hawk_engine_1_1_camera_afc240008e8ff16ee7c65d1b248fc07fe}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!setMainCamera@{setMainCamera}}
+\index{setMainCamera@{setMainCamera}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{setMainCamera()}{setMainCamera()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Camera\+::set\+Main\+Camera (\begin{DoxyParamCaption}\item[{const bool}]{main\+Camera }\end{DoxyParamCaption})}
+
+
+
+Set if this camera is the main camera. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_afc240008e8ff16ee7c65d1b248fc07fe}{set\+Main\+Camera()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em main\+Camera} & a const bool -\/ Is this the main camera \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_ac3d7e09f368f0564022a28787befd2f5}\label{class_hawk_engine_1_1_camera_ac3d7e09f368f0564022a28787befd2f5}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!setProjection@{setProjection}}
+\index{setProjection@{setProjection}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{setProjection()}{setProjection()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Camera\+::set\+Projection (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_hawk_engine_1_1_projection}{Projection}} \&}]{projection }\end{DoxyParamCaption})}
+
+
+
+Set the projection data. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_ac3d7e09f368f0564022a28787befd2f5}{set\+Projection()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em projection} & a const \mbox{\hyperlink{struct_hawk_engine_1_1_projection}{Projection}}\& -\/ The new projection data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_a313091b19e2258a75fddf663e720753d}\label{class_hawk_engine_1_1_camera_a313091b19e2258a75fddf663e720753d}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!setType@{setType}}
+\index{setType@{setType}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Camera\+::set\+Type (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{camera_8h_a6c7ae87a62ebe666280dce397354dd4f}{Camera\+Type}}}]{camera\+Type }\end{DoxyParamCaption})}
+
+
+
+Set the type of camera. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_a313091b19e2258a75fddf663e720753d}{set\+Type()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em camera\+Type} & a Camera\+Type -\/ The type of camera \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_ade939b0fc13a6428ca22e643a2bc2e37}\label{class_hawk_engine_1_1_camera_ade939b0fc13a6428ca22e643a2bc2e37}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!update@{update}}
+\index{update@{update}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Camera\+::update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the camera. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_ade939b0fc13a6428ca22e643a2bc2e37}{update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_hawk_engine_1_1_entity_component_a2629fb860778499c1e6f4dea443e908f}{Hawk\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_camera_a6633fb9c1aa6484781d58fc154537972}\label{class_hawk_engine_1_1_camera_a6633fb9c1aa6484781d58fc154537972}} 
+\index{HawkEngine::Camera@{HawkEngine::Camera}!zoom@{zoom}}
+\index{zoom@{zoom}!HawkEngine::Camera@{HawkEngine::Camera}}
+\doxysubsubsection{\texorpdfstring{zoom()}{zoom()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Camera\+::zoom (\begin{DoxyParamCaption}\item[{float}]{yoffset }\end{DoxyParamCaption})}
+
+
+
+Zoom in/out. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_camera_a6633fb9c1aa6484781d58fc154537972}{zoom()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em yoffset} & a float -\/ The pitch rotation offset \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/scene/entity/components/\mbox{\hyperlink{camera_8h}{camera.\+h}}\item 
+C\+:/doc/src/src/independent/scene/entity/components/\mbox{\hyperlink{camera_8cpp}{camera.\+cpp}}\end{DoxyCompactItemize}

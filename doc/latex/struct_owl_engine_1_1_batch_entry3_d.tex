@@ -1,0 +1,52 @@
+\hypertarget{struct_owl_engine_1_1_batch_entry3_d}{}\doxysection{Owl\+Engine\+::Batch\+Entry3D Struct Reference}
+\label{struct_owl_engine_1_1_batch_entry3_d}\index{OwlEngine::BatchEntry3D@{OwlEngine::BatchEntry3D}}
+
+
+A struct containing the 3D submission data.  
+
+
+
+
+{\ttfamily \#include $<$renderer3\+D.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_batch_entry3_d_a0bc0cf0a2539f250176a30ec5eeb543d}\label{struct_owl_engine_1_1_batch_entry3_d_a0bc0cf0a2539f250176a30ec5eeb543d}} 
+std\+::string \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d_a0bc0cf0a2539f250176a30ec5eeb543d}{submission\+Name}}
+\begin{DoxyCompactList}\small\item\em The submission name. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_batch_entry3_d_aafc724bdc2a3d4521ff0d01e992ee7ba}\label{struct_owl_engine_1_1_batch_entry3_d_aafc724bdc2a3d4521ff0d01e992ee7ba}} 
+\mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}} \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d_aafc724bdc2a3d4521ff0d01e992ee7ba}{geometry}}
+\begin{DoxyCompactList}\small\item\em The geometry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_batch_entry3_d_a74acbf34ffd1de367d85b70e30e211d5}\label{struct_owl_engine_1_1_batch_entry3_d_a74acbf34ffd1de367d85b70e30e211d5}} 
+\mbox{\hyperlink{class_owl_engine_1_1_shader_program}{Shader\+Program}} $\ast$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d_a74acbf34ffd1de367d85b70e30e211d5}{shader}}
+\begin{DoxyCompactList}\small\item\em The shader program. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_batch_entry3_d_aa997a79447e01d547e03f9604d8e5b7b}\label{struct_owl_engine_1_1_batch_entry3_d_aa997a79447e01d547e03f9604d8e5b7b}} 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_sub_texture}{Sub\+Texture}} $\ast$ $>$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d_aa997a79447e01d547e03f9604d8e5b7b}{sub\+Textures}}
+\begin{DoxyCompactList}\small\item\em The list of subtextures in this entry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_batch_entry3_d_ad092ddfc01d38c4d05f584c1485839bb}\label{struct_owl_engine_1_1_batch_entry3_d_ad092ddfc01d38c4d05f584c1485839bb}} 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_cube_map_texture}{Cube\+Map\+Texture}} $\ast$ $>$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d_ad092ddfc01d38c4d05f584c1485839bb}{cube\+Textures}}
+\begin{DoxyCompactList}\small\item\em The list of cubemap textures in this entry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_batch_entry3_d_ada44a02a8f500a70c409c80015328e00}\label{struct_owl_engine_1_1_batch_entry3_d_ada44a02a8f500a70c409c80015328e00}} 
+std\+::vector$<$ int32\+\_\+t $>$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d_ada44a02a8f500a70c409c80015328e00}{texture\+Units}}
+\begin{DoxyCompactList}\small\item\em The list of texture units used subtextures. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_batch_entry3_d_a34d084bcec777605e2ac6d1326ded5fc}\label{struct_owl_engine_1_1_batch_entry3_d_a34d084bcec777605e2ac6d1326ded5fc}} 
+std\+::vector$<$ int32\+\_\+t $>$ \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d_a34d084bcec777605e2ac6d1326ded5fc}{cube\+Texture\+Units}}
+\begin{DoxyCompactList}\small\item\em The list of texture units used for cubemaps. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_batch_entry3_d_a4f46cff1c7182273215d3dc55b7f0c72}\label{struct_owl_engine_1_1_batch_entry3_d_a4f46cff1c7182273215d3dc55b7f0c72}} 
+float \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d_a4f46cff1c7182273215d3dc55b7f0c72}{shininess}}
+\begin{DoxyCompactList}\small\item\em The shininess of the material. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_batch_entry3_d_abb6e7fae5921accd26b6fd93c8b2e08e}\label{struct_owl_engine_1_1_batch_entry3_d_abb6e7fae5921accd26b6fd93c8b2e08e}} 
+glm\+::mat4 \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d_abb6e7fae5921accd26b6fd93c8b2e08e}{model\+Matrix}}
+\begin{DoxyCompactList}\small\item\em The model matrix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_batch_entry3_d_a19d0cf40b46c9a3703d42d0a67f1205b}\label{struct_owl_engine_1_1_batch_entry3_d_a19d0cf40b46c9a3703d42d0a67f1205b}} 
+glm\+::vec4 \mbox{\hyperlink{struct_owl_engine_1_1_batch_entry3_d_a19d0cf40b46c9a3703d42d0a67f1205b}{tint}}
+\begin{DoxyCompactList}\small\item\em The tint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A struct containing the 3D submission data. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/renderers/\mbox{\hyperlink{renderer3_d_8h}{renderer3\+D.\+h}}\end{DoxyCompactItemize}

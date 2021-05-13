@@ -1,0 +1,377 @@
+\hypertarget{class_hawk_engine_1_1_application}{}\doxysection{Hawk\+Engine\+::Application Class Reference}
+\label{class_hawk_engine_1_1_application}\index{HawkEngine::Application@{HawkEngine::Application}}
+
+
+Fundemental class of Hawk\+Engine. A singleton which runs the game loop infinitely. Contains all the systems, the event handler, etc.  
+
+
+
+
+{\ttfamily \#include $<$application.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_application_acade9e55b4181a14ad49919770695372}{$\sim$\+Application}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window}{Window}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_application_aef1db729ae632293d669e86b0b78645e}{get\+Active\+Window}} ()
+\begin{DoxyCompactList}\small\item\em Get the active window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_application_a89c0b54be5af705b6c381f351c5e6a11}{run}} ()
+\begin{DoxyCompactList}\small\item\em Main loop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_application}{Application}} \& \mbox{\hyperlink{class_hawk_engine_1_1_application_ae1641742c5f4067c2bd3052334c80c64}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Instance getter from singleton pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_application_aa1ee326a72e5051b1d386ea793379fa9}{Application}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_a72cc00057e7c0e004d273e083a50fdf0}{on\+Close}} (\mbox{\hyperlink{class_hawk_engine_1_1_window_close_event}{Window\+Close\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when the window closes. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_ac780d6f49f58f13f0c6fbd8fbbd21ece}{on\+Resize}} (\mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event}{Window\+Resize\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when the window is resized. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_afea5e21ae8ad7a19cfeb5c91760dd3f7}{on\+Focus}} (\mbox{\hyperlink{class_hawk_engine_1_1_window_focus_event}{Window\+Focus\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when the window gains focus. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_a0c85b1fe57f2d4a2a6fdcdad97b61ef1}{on\+Lost\+Focus}} (\mbox{\hyperlink{class_hawk_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when the window loses focus. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_a515b51458f7502391998eeb7f4b48fe3}{on\+Window\+Moved}} (\mbox{\hyperlink{class_hawk_engine_1_1_window_moved_event}{Window\+Moved\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when the window is moved. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_af5dd6af3875ac38bc4140143c7724f83}{on\+Key\+Pressed}} (\mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when a key is pressed. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_a48b0295fac57343aec6e9c88e5226081}{on\+Key\+Released}} (\mbox{\hyperlink{class_hawk_engine_1_1_key_released_event}{Key\+Released\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when a key is released. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_acbb008734f5ad613921ff3d5bfc9598e}{on\+Key\+Typed}} (\mbox{\hyperlink{class_hawk_engine_1_1_key_typed_event}{Key\+Typed\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when a key is typed. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_aec3b65d292422019dec840c8880e63a4}{on\+Mouse\+Pressed}} (\mbox{\hyperlink{class_hawk_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when the mouse is pressed. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_a4979f36600201c30f7ba31f0bbb6c484}{on\+Mouse\+Released}} (\mbox{\hyperlink{class_hawk_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when the mouse is released. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_aafb9f8fa99352d294e5cd07c7475fb8e}{on\+Mouse\+Moved}} (\mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when the mouse moves. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_hawk_engine_1_1_application_acc7e88932dbb7a6435c81ecd144ed597}{on\+Mouse\+Scrolled}} (\mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Function to run when the mouse wheel is scrolled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_aead398f0d76307fd66d3094ab8c9d029}\label{class_hawk_engine_1_1_application_aead398f0d76307fd66d3094ab8c9d029}} 
+\mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_window}{Window}} $>$ \mbox{\hyperlink{class_hawk_engine_1_1_application_aead398f0d76307fd66d3094ab8c9d029}{m\+\_\+active\+Window}}
+\begin{DoxyCompactList}\small\item\em The active window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_a3698b256c748dacc494decfb0ca2de2d}\label{class_hawk_engine_1_1_application_a3698b256c748dacc494decfb0ca2de2d}} 
+\mbox{\hyperlink{struct_hawk_engine_1_1_event_data}{Event\+Data}} \mbox{\hyperlink{class_hawk_engine_1_1_application_a3698b256c748dacc494decfb0ca2de2d}{m\+\_\+event\+Data}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_event}{Event}} related variables. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_aba65851c572be2a164e5aa16475dd68e}\label{class_hawk_engine_1_1_application_aba65851c572be2a164e5aa16475dd68e}} 
+\mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_render_engine}{Render\+Engine}} $>$ \mbox{\hyperlink{class_hawk_engine_1_1_application_aba65851c572be2a164e5aa16475dd68e}{m\+\_\+render\+Engine}}
+\begin{DoxyCompactList}\small\item\em The render engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fundemental class of Hawk\+Engine. A singleton which runs the game loop infinitely. Contains all the systems, the event handler, etc. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_aa1ee326a72e5051b1d386ea793379fa9}\label{class_hawk_engine_1_1_application_aa1ee326a72e5051b1d386ea793379fa9}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!Application@{Application}}
+\index{Application@{Application}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Application\+::\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Default Constructor. 
+
+Constructor() \mbox{\Hypertarget{class_hawk_engine_1_1_application_acade9e55b4181a14ad49919770695372}\label{class_hawk_engine_1_1_application_acade9e55b4181a14ad49919770695372}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!````~Application@{$\sim$Application}}
+\index{````~Application@{$\sim$Application}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{$\sim$Application()}{~Application()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Application\+::$\sim$\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deconstructor. 
+
+Destructor() 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_aef1db729ae632293d669e86b0b78645e}\label{class_hawk_engine_1_1_application_aef1db729ae632293d669e86b0b78645e}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!getActiveWindow@{getActiveWindow}}
+\index{getActiveWindow@{getActiveWindow}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{getActiveWindow()}{getActiveWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$\mbox{\hyperlink{class_hawk_engine_1_1_window}{Window}}$>$\& Hawk\+Engine\+::\+Application\+::get\+Active\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the active window. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Window$>$\& -\/ A reference to the active window pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_ae1641742c5f4067c2bd3052334c80c64}\label{class_hawk_engine_1_1_application_ae1641742c5f4067c2bd3052334c80c64}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_hawk_engine_1_1_application}{Application}}\& Hawk\+Engine\+::\+Application\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Instance getter from singleton pattern. 
+
+\begin{DoxyReturn}{Returns}
+an \mbox{\hyperlink{class_hawk_engine_1_1_application}{Application}}\& -\/ A reference to the application instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_a72cc00057e7c0e004d273e083a50fdf0}\label{class_hawk_engine_1_1_application_a72cc00057e7c0e004d273e083a50fdf0}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onClose@{onClose}}
+\index{onClose@{onClose}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onClose()}{onClose()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_window_close_event}{Window\+Close\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when the window closes. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_a72cc00057e7c0e004d273e083a50fdf0}{on\+Close()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_window_close_event}{Window\+Close\+Event}}\& -\/ Reference to the window close event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_afea5e21ae8ad7a19cfeb5c91760dd3f7}\label{class_hawk_engine_1_1_application_afea5e21ae8ad7a19cfeb5c91760dd3f7}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onFocus@{onFocus}}
+\index{onFocus@{onFocus}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onFocus()}{onFocus()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Focus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_window_focus_event}{Window\+Focus\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when the window gains focus. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_afea5e21ae8ad7a19cfeb5c91760dd3f7}{on\+Focus()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_window_focus_event}{Window\+Focus\+Event}}\& -\/ Reference to the window focus event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_af5dd6af3875ac38bc4140143c7724f83}\label{class_hawk_engine_1_1_application_af5dd6af3875ac38bc4140143c7724f83}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onKeyPressed@{onKeyPressed}}
+\index{onKeyPressed@{onKeyPressed}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onKeyPressed()}{onKeyPressed()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Key\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when a key is pressed. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_af5dd6af3875ac38bc4140143c7724f83}{on\+Key\+Pressed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}}\& -\/ Reference to the key pressed event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_a48b0295fac57343aec6e9c88e5226081}\label{class_hawk_engine_1_1_application_a48b0295fac57343aec6e9c88e5226081}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onKeyReleased@{onKeyReleased}}
+\index{onKeyReleased@{onKeyReleased}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onKeyReleased()}{onKeyReleased()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Key\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_key_released_event}{Key\+Released\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when a key is released. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_a48b0295fac57343aec6e9c88e5226081}{on\+Key\+Released()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_key_released_event}{Key\+Released\+Event}}\& -\/ Reference to the key released event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_acbb008734f5ad613921ff3d5bfc9598e}\label{class_hawk_engine_1_1_application_acbb008734f5ad613921ff3d5bfc9598e}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onKeyTyped@{onKeyTyped}}
+\index{onKeyTyped@{onKeyTyped}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onKeyTyped()}{onKeyTyped()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Key\+Typed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_key_typed_event}{Key\+Typed\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when a key is typed. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_acbb008734f5ad613921ff3d5bfc9598e}{on\+Key\+Typed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_key_typed_event}{Key\+Typed\+Event}}\& -\/ Reference to the key typed event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_a0c85b1fe57f2d4a2a6fdcdad97b61ef1}\label{class_hawk_engine_1_1_application_a0c85b1fe57f2d4a2a6fdcdad97b61ef1}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onLostFocus@{onLostFocus}}
+\index{onLostFocus@{onLostFocus}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onLostFocus()}{onLostFocus()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Lost\+Focus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when the window loses focus. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_a0c85b1fe57f2d4a2a6fdcdad97b61ef1}{on\+Lost\+Focus()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}}\& -\/ Reference to the window lost focus event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_aafb9f8fa99352d294e5cd07c7475fb8e}\label{class_hawk_engine_1_1_application_aafb9f8fa99352d294e5cd07c7475fb8e}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onMouseMoved@{onMouseMoved}}
+\index{onMouseMoved@{onMouseMoved}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onMouseMoved()}{onMouseMoved()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Mouse\+Moved (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when the mouse moves. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_aafb9f8fa99352d294e5cd07c7475fb8e}{on\+Mouse\+Moved()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}}\& -\/ Reference to the mouse moved event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_aec3b65d292422019dec840c8880e63a4}\label{class_hawk_engine_1_1_application_aec3b65d292422019dec840c8880e63a4}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onMousePressed@{onMousePressed}}
+\index{onMousePressed@{onMousePressed}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onMousePressed()}{onMousePressed()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Mouse\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when the mouse is pressed. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_aec3b65d292422019dec840c8880e63a4}{on\+Mouse\+Pressed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}}\& -\/ Reference to the mouse pressed event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_a4979f36600201c30f7ba31f0bbb6c484}\label{class_hawk_engine_1_1_application_a4979f36600201c30f7ba31f0bbb6c484}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onMouseReleased@{onMouseReleased}}
+\index{onMouseReleased@{onMouseReleased}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onMouseReleased()}{onMouseReleased()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Mouse\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when the mouse is released. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_a4979f36600201c30f7ba31f0bbb6c484}{on\+Mouse\+Released()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}}\& -\/ Reference to the mouse released event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_acc7e88932dbb7a6435c81ecd144ed597}\label{class_hawk_engine_1_1_application_acc7e88932dbb7a6435c81ecd144ed597}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onMouseScrolled@{onMouseScrolled}}
+\index{onMouseScrolled@{onMouseScrolled}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onMouseScrolled()}{onMouseScrolled()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Mouse\+Scrolled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when the mouse wheel is scrolled. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_acc7e88932dbb7a6435c81ecd144ed597}{on\+Mouse\+Scrolled()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}}\& -\/ Reference to the mouse scrolled event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_ac780d6f49f58f13f0c6fbd8fbbd21ece}\label{class_hawk_engine_1_1_application_ac780d6f49f58f13f0c6fbd8fbbd21ece}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onResize@{onResize}}
+\index{onResize@{onResize}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onResize()}{onResize()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event}{Window\+Resize\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when the window is resized. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_ac780d6f49f58f13f0c6fbd8fbbd21ece}{on\+Resize()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_window_resize_event}{Window\+Resize\+Event}}\& -\/ Reference to the window resize event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_a515b51458f7502391998eeb7f4b48fe3}\label{class_hawk_engine_1_1_application_a515b51458f7502391998eeb7f4b48fe3}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!onWindowMoved@{onWindowMoved}}
+\index{onWindowMoved@{onWindowMoved}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{onWindowMoved()}{onWindowMoved()}}
+{\footnotesize\ttfamily const bool Hawk\+Engine\+::\+Application\+::on\+Window\+Moved (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_window_moved_event}{Window\+Moved\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Function to run when the window is moved. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_a515b51458f7502391998eeb7f4b48fe3}{on\+Window\+Moved()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a \mbox{\hyperlink{class_hawk_engine_1_1_window_moved_event}{Window\+Moved\+Event}}\& -\/ Reference to the window moved event \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has the event been handled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_application_a89c0b54be5af705b6c381f351c5e6a11}\label{class_hawk_engine_1_1_application_a89c0b54be5af705b6c381f351c5e6a11}} 
+\index{HawkEngine::Application@{HawkEngine::Application}!run@{run}}
+\index{run@{run}!HawkEngine::Application@{HawkEngine::Application}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Application\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main loop. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_application_a89c0b54be5af705b6c381f351c5e6a11}{run()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/core/\mbox{\hyperlink{application_8h}{application.\+h}}\item 
+C\+:/doc/src/src/independent/core/\mbox{\hyperlink{application_8cpp}{application.\+cpp}}\end{DoxyCompactItemize}

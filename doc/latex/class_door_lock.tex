@@ -1,0 +1,189 @@
+\hypertarget{class_door_lock}{}\doxysection{Door\+Lock Class Reference}
+\label{class_door_lock}\index{DoorLock@{DoorLock}}
+
+
+A script for the door locks.  
+
+
+
+
+{\ttfamily \#include $<$door\+Lock.\+h$>$}
+
+Inheritance diagram for Door\+Lock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_door_lock}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_door_lock_a1f105e13f04d40144712447c028ca8e9}{Door\+Lock}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_door_lock_a9de4a1eff1cb8dd00b0b19d04243a9ef}{Door\+Lock}} (nlohmann\+::json script\+Data)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_door_lock_a9fbb0682161884069c0a3877f2c1e6e0}{$\sim$\+Door\+Lock}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_door_lock_a618e7b91d3c2e20baf4f4885d6e751d0}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em On Attach. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_door_lock_a74a19dd729ada51fc4d51ad90743cd40}{on\+Post\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call after game update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_door_lock_a15aa894311c92a63e77df758bb9a9df6}\label{class_door_lock_a15aa894311c92a63e77df758bb9a9df6}} 
+void \mbox{\hyperlink{class_door_lock_a15aa894311c92a63e77df758bb9a9df6}{on\+Pre\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call after game update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_door_lock_a8436e7dc83587050d46cef77aab0badc}{on\+Key\+Release}} (\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&e, const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call upon key release. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_door_lock_a4b8832cf8b36ee461085f118f411c75d}\label{class_door_lock_a4b8832cf8b36ee461085f118f411c75d}} 
+void \mbox{\hyperlink{class_door_lock_a4b8832cf8b36ee461085f118f411c75d}{on\+Submit}} (const \mbox{\hyperlink{common_8h_aa7c9aadb398aa7f5617952f93be25047}{Renderers}} renderer, const std\+::string \&render\+State) override
+\begin{DoxyCompactList}\small\item\em Call upon render if mesh render component attached. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_door_lock_af98778aa774b2e0a0dd0d84992460dbb}\label{class_door_lock_af98778aa774b2e0a0dd0d84992460dbb}} 
+void \mbox{\hyperlink{class_door_lock_af98778aa774b2e0a0dd0d84992460dbb}{on\+Render}} (const \mbox{\hyperlink{common_8h_aa7c9aadb398aa7f5617952f93be25047}{Renderers}} renderer, const std\+::string \&render\+State) override
+\begin{DoxyCompactList}\small\item\em Call upon render if mesh render component attached. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_door_lock_a486ace393d08b18dc66d4581469a2b40}\label{class_door_lock_a486ace393d08b18dc66d4581469a2b40}} 
+void \mbox{\hyperlink{class_door_lock_a486ace393d08b18dc66d4581469a2b40}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the door. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_door_lock_a1a491d5ca855dc02c429d0bac9d6f779}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the script in J\+S\+ON format. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_door_lock_ac6abe3f5fb37847eb3220e5528e53985}{display\+Im\+Gui}} ()
+\begin{DoxyCompactList}\small\item\em The Im\+G\+UI display controls for this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A script for the door locks. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_door_lock_a1f105e13f04d40144712447c028ca8e9}\label{class_door_lock_a1f105e13f04d40144712447c028ca8e9}} 
+\index{DoorLock@{DoorLock}!DoorLock@{DoorLock}}
+\index{DoorLock@{DoorLock}!DoorLock@{DoorLock}}
+\doxysubsubsection{\texorpdfstring{DoorLock()}{DoorLock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Door\+Lock\+::\+Door\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_door_lock_a1f105e13f04d40144712447c028ca8e9}{Door\+Lock()}} \mbox{\Hypertarget{class_door_lock_a9de4a1eff1cb8dd00b0b19d04243a9ef}\label{class_door_lock_a9de4a1eff1cb8dd00b0b19d04243a9ef}} 
+\index{DoorLock@{DoorLock}!DoorLock@{DoorLock}}
+\index{DoorLock@{DoorLock}!DoorLock@{DoorLock}}
+\doxysubsubsection{\texorpdfstring{DoorLock()}{DoorLock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Door\+Lock\+::\+Door\+Lock (\begin{DoxyParamCaption}\item[{nlohmann\+::json}]{script\+Data }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_door_lock_a1f105e13f04d40144712447c028ca8e9}{Door\+Lock()}} \mbox{\Hypertarget{class_door_lock_a9fbb0682161884069c0a3877f2c1e6e0}\label{class_door_lock_a9fbb0682161884069c0a3877f2c1e6e0}} 
+\index{DoorLock@{DoorLock}!````~DoorLock@{$\sim$DoorLock}}
+\index{````~DoorLock@{$\sim$DoorLock}!DoorLock@{DoorLock}}
+\doxysubsubsection{\texorpdfstring{$\sim$DoorLock()}{~DoorLock()}}
+{\footnotesize\ttfamily Door\+Lock\+::$\sim$\+Door\+Lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_door_lock_a9fbb0682161884069c0a3877f2c1e6e0}{$\sim$\+Door\+Lock()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_door_lock_ac6abe3f5fb37847eb3220e5528e53985}\label{class_door_lock_ac6abe3f5fb37847eb3220e5528e53985}} 
+\index{DoorLock@{DoorLock}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!DoorLock@{DoorLock}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Door\+Lock\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The Im\+G\+UI display controls for this component. 
+
+display\+Im\+Gui 
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a04032a08abd5b84edd8e5dbffbe61971}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_door_lock_a1a491d5ca855dc02c429d0bac9d6f779}\label{class_door_lock_a1a491d5ca855dc02c429d0bac9d6f779}} 
+\index{DoorLock@{DoorLock}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!DoorLock@{DoorLock}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Door\+Lock\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the script in J\+S\+ON format. 
+
+\mbox{\hyperlink{class_door_lock_a1a491d5ca855dc02c429d0bac9d6f779}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_afef9fb697bf3388f97afdf2b580ebe74}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_door_lock_a618e7b91d3c2e20baf4f4885d6e751d0}\label{class_door_lock_a618e7b91d3c2e20baf4f4885d6e751d0}} 
+\index{DoorLock@{DoorLock}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!DoorLock@{DoorLock}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Door\+Lock\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+On Attach. 
+
+\mbox{\hyperlink{class_door_lock_a618e7b91d3c2e20baf4f4885d6e751d0}{on\+Attach()}} 
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a84d0903c0ac9ffc6d49d8df17eab6f5b}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_door_lock_a8436e7dc83587050d46cef77aab0badc}\label{class_door_lock_a8436e7dc83587050d46cef77aab0badc}} 
+\index{DoorLock@{DoorLock}!onKeyRelease@{onKeyRelease}}
+\index{onKeyRelease@{onKeyRelease}!DoorLock@{DoorLock}}
+\doxysubsubsection{\texorpdfstring{onKeyRelease()}{onKeyRelease()}}
+{\footnotesize\ttfamily void Door\+Lock\+::on\+Key\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&}]{e,  }\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call upon key release. 
+
+\mbox{\hyperlink{class_door_lock_a8436e7dc83587050d46cef77aab0badc}{on\+Key\+Release()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a Key\+Released\+Event\& -\/ A key release event \\
+\hline
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_ace18af6d23ccff4d34b8624a5b7657b1}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_door_lock_a74a19dd729ada51fc4d51ad90743cd40}\label{class_door_lock_a74a19dd729ada51fc4d51ad90743cd40}} 
+\index{DoorLock@{DoorLock}!onPostUpdate@{onPostUpdate}}
+\index{onPostUpdate@{onPostUpdate}!DoorLock@{DoorLock}}
+\doxysubsubsection{\texorpdfstring{onPostUpdate()}{onPostUpdate()}}
+{\footnotesize\ttfamily void Door\+Lock\+::on\+Post\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call after game update. 
+
+\mbox{\hyperlink{class_door_lock_a74a19dd729ada51fc4d51ad90743cd40}{on\+Post\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a72322920d1ad5b3fa18efe237b68ebef}{Owl\+Engine\+::\+Native\+Script}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/sandbox/include/scripts/game\+Objects/\mbox{\hyperlink{door_lock_8h}{door\+Lock.\+h}}\item 
+C\+:/doc/src/sandbox/src/scripts/game\+Objects/\mbox{\hyperlink{door_lock_8cpp}{door\+Lock.\+cpp}}\end{DoxyCompactItemize}

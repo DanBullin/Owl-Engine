@@ -1,0 +1,57 @@
+\hypertarget{event_8h}{}\doxysection{C\+:/doc/src/engine/include/independent/events/event.h File Reference}
+\label{event_8h}\index{C:/doc/src/engine/include/independent/events/event.h@{C:/doc/src/engine/include/independent/events/event.h}}
+
+
+Event class which stores all different event types.  
+
+
+{\ttfamily \#include $<$inttypes.\+h$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_owl_engine_1_1_event}{Owl\+Engine\+::\+Event}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_event}{Event}} base class, all possible events that can arise will share this base class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{event_8h_a01e9a1529f1864b214fd522ac44aada2}\label{event_8h_a01e9a1529f1864b214fd522ac44aada2}} 
+enum \mbox{\hyperlink{event_8h_a01e9a1529f1864b214fd522ac44aada2}{Owl\+Engine\+::\+Event\+Type}} \{ \newline
+{\bfseries None} = 0, 
+{\bfseries Window\+Close}, 
+{\bfseries Window\+Resize}, 
+{\bfseries Window\+Focus}, 
+\newline
+{\bfseries Window\+Lost\+Focus}, 
+{\bfseries Window\+Moved}, 
+{\bfseries Key\+Pressed}, 
+{\bfseries Key\+Released}, 
+\newline
+{\bfseries Key\+Typed}, 
+{\bfseries Mouse\+Pressed}, 
+{\bfseries Mouse\+Released}, 
+{\bfseries Mouse\+Moved}, 
+\newline
+{\bfseries Mouse\+Scrolled}
+ \}
+\begin{DoxyCompactList}\small\item\em An enum for all different event types. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{event_8h_ae45e51754f2866074be5fcdb37232ec6}\label{event_8h_ae45e51754f2866074be5fcdb37232ec6}} 
+enum \mbox{\hyperlink{event_8h_ae45e51754f2866074be5fcdb37232ec6}{Owl\+Engine\+::\+Event\+Category}} \{ \newline
+{\bfseries None} = 0, 
+{\bfseries Owl\+Engine\+::\+None} = 0, 
+{\bfseries None} = 0, 
+{\bfseries Event\+Category\+Window} = 1 $<$$<$ 0, 
+\newline
+{\bfseries Event\+Category\+Input} = 1 $<$$<$ 1, 
+{\bfseries Event\+Category\+Keyboard} = 1 $<$$<$ 2, 
+{\bfseries Event\+Category\+Mouse} = 1 $<$$<$ 3, 
+{\bfseries Event\+Category\+Mouse\+Button} = 1 $<$$<$ 4
+ \}
+\begin{DoxyCompactList}\small\item\em Enum for event category flags. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Event class which stores all different event types. 
+
+\begin{DoxyAuthor}{Author}
+D\+MU Course material 
+\end{DoxyAuthor}

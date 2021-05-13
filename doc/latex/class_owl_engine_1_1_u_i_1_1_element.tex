@@ -1,0 +1,330 @@
+\hypertarget{class_owl_engine_1_1_u_i_1_1_element}{}\doxysection{Owl\+Engine\+::UI\+::Element Class Reference}
+\label{class_owl_engine_1_1_u_i_1_1_element}\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+
+
+An element to be attached to a canvas.  
+
+
+
+
+{\ttfamily \#include $<$element.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::UI\+::Element\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_u_i_1_1_element}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a0c75df3636288f9f938c993a498a4fb9}{Element}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a5c30f2eb45f74ec034e48ceafbd3e291}{Element}} (glm\+::vec2 anchor)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a3db36421b444f5a46cdccccc1a2462d9}{$\sim$\+Element}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a49c163fafc7d595c1445c3a50e557f00}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a7c04183c707bd3d3238bea6057253fc5}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_af3f4cd17f45f5ea9bce60d67871bbcb3}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the component. \end{DoxyCompactList}\item 
+glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_ada5c0eaa1bc993f2d1ec377b0915ae84}{get\+Anchor}} ()
+\begin{DoxyCompactList}\small\item\em Returns the anchor value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a7ba55a82c707f99c3b2adcf981f34c67}{set\+Anchor}} (glm\+::vec2 anchor)
+\begin{DoxyCompactList}\small\item\em sets a new anchor value \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a47882f3670583d4f3ef881828d0026f0}{on\+Resize}} (glm\+::vec2 size, bool whole=false)
+\begin{DoxyCompactList}\small\item\em function for passing resize down to \end{DoxyCompactList}\item 
+glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_af06507ba4cb369a55d48635c3da8ae25}{get\+Offset}} ()
+\begin{DoxyCompactList}\small\item\em Returns the offset. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_acab7fadc5437ed9a2ffde4c92e857c0c}{set\+Offset}} (glm\+::vec2 offset)
+\begin{DoxyCompactList}\small\item\em Adjusts the offset. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_acdd43b835c983f19a42f3a52ef048b76}\label{class_owl_engine_1_1_u_i_1_1_element_acdd43b835c983f19a42f3a52ef048b76}} 
+glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_acdd43b835c983f19a42f3a52ef048b76}{get\+Scale\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the scale size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a1545f06a3b4f43f53b0761ee1deb37d2}\label{class_owl_engine_1_1_u_i_1_1_element_a1545f06a3b4f43f53b0761ee1deb37d2}} 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a1545f06a3b4f43f53b0761ee1deb37d2}{set\+Scale\+Size}} (glm\+::vec2 size)
+\begin{DoxyCompactList}\small\item\em Adjusts the scale size. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a06e71f156f22b9eaebd16741f52934fe}\label{class_owl_engine_1_1_u_i_1_1_element_a06e71f156f22b9eaebd16741f52934fe}} 
+bool \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a06e71f156f22b9eaebd16741f52934fe}{get\+Absolute\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Get whether to use absolute sizes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_aa5fdd02cec4c28767d5170ff1236e38a}\label{class_owl_engine_1_1_u_i_1_1_element_aa5fdd02cec4c28767d5170ff1236e38a}} 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_aa5fdd02cec4c28767d5170ff1236e38a}{set\+Absolute\+Scale}} (bool use)
+\begin{DoxyCompactList}\small\item\em Set whether to use absolute sizes. \end{DoxyCompactList}\item 
+glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a4e5bccde546a5aeab2e99dcadde2641e}{get\+Screen\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Returns the screensize. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a3d4ed3a99c895d6e7dd01a7ba18584c9}{set\+Screen\+Size}} (glm\+::vec2 screen\+Size)
+\begin{DoxyCompactList}\small\item\em Adjusts the screensize. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a04f6f3d504af0ca1f60194c4971690f0}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a3a0f5c5cbb5b3ba973a1ca39f050fb3a}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data in J\+S\+ON format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_af52ed459039ec9609f1f009800361956}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Display the component in Im\+G\+UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An element to be attached to a canvas. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a0c75df3636288f9f938c993a498a4fb9}\label{class_owl_engine_1_1_u_i_1_1_element_a0c75df3636288f9f938c993a498a4fb9}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!Element@{Element}}
+\index{Element@{Element}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{Element()}{Element()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+U\+I\+::\+Element\+::\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a0c75df3636288f9f938c993a498a4fb9}{Element()}} \mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a5c30f2eb45f74ec034e48ceafbd3e291}\label{class_owl_engine_1_1_u_i_1_1_element_a5c30f2eb45f74ec034e48ceafbd3e291}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!Element@{Element}}
+\index{Element@{Element}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{Element()}{Element()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+U\+I\+::\+Element\+::\+Element (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{anchor }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Elemment()
+
+
+\begin{DoxyParams}{Parameters}
+{\em anchor} & a glm\+::vec2 -\/ The element\textquotesingle{}s anchor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a3db36421b444f5a46cdccccc1a2462d9}\label{class_owl_engine_1_1_u_i_1_1_element_a3db36421b444f5a46cdccccc1a2462d9}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!````~Element@{$\sim$Element}}
+\index{````~Element@{$\sim$Element}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{$\sim$Element()}{~Element()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+U\+I\+::\+Element\+::$\sim$\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a3db36421b444f5a46cdccccc1a2462d9}{$\sim$\+Element()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_af52ed459039ec9609f1f009800361956}\label{class_owl_engine_1_1_u_i_1_1_element_af52ed459039ec9609f1f009800361956}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Element\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the component in Im\+G\+UI. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_af52ed459039ec9609f1f009800361956}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_ada5c0eaa1bc993f2d1ec377b0915ae84}\label{class_owl_engine_1_1_u_i_1_1_element_ada5c0eaa1bc993f2d1ec377b0915ae84}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!getAnchor@{getAnchor}}
+\index{getAnchor@{getAnchor}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{getAnchor()}{getAnchor()}}
+{\footnotesize\ttfamily glm\+::vec2 Owl\+Engine\+::\+U\+I\+::\+Element\+::get\+Anchor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the anchor value. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_ada5c0eaa1bc993f2d1ec377b0915ae84}{get\+Anchor()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The element\textquotesingle{}s anchor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a3a0f5c5cbb5b3ba973a1ca39f050fb3a}\label{class_owl_engine_1_1_u_i_1_1_element_a3a0f5c5cbb5b3ba973a1ca39f050fb3a}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+U\+I\+::\+Element\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data in J\+S\+ON format. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a3a0f5c5cbb5b3ba973a1ca39f050fb3a}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_af06507ba4cb369a55d48635c3da8ae25}\label{class_owl_engine_1_1_u_i_1_1_element_af06507ba4cb369a55d48635c3da8ae25}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!getOffset@{getOffset}}
+\index{getOffset@{getOffset}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{getOffset()}{getOffset()}}
+{\footnotesize\ttfamily glm\+::vec2 Owl\+Engine\+::\+U\+I\+::\+Element\+::get\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the offset. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_af06507ba4cb369a55d48635c3da8ae25}{get\+Offset()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The element\textquotesingle{}s offset 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a4e5bccde546a5aeab2e99dcadde2641e}\label{class_owl_engine_1_1_u_i_1_1_element_a4e5bccde546a5aeab2e99dcadde2641e}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!getScreenSize@{getScreenSize}}
+\index{getScreenSize@{getScreenSize}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{getScreenSize()}{getScreenSize()}}
+{\footnotesize\ttfamily glm\+::vec2 Owl\+Engine\+::\+U\+I\+::\+Element\+::get\+Screen\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the screensize. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a4e5bccde546a5aeab2e99dcadde2641e}{get\+Screen\+Size()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The screen size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a49c163fafc7d595c1445c3a50e557f00}\label{class_owl_engine_1_1_u_i_1_1_element_a49c163fafc7d595c1445c3a50e557f00}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Element\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a49c163fafc7d595c1445c3a50e557f00}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a7c04183c707bd3d3238bea6057253fc5}\label{class_owl_engine_1_1_u_i_1_1_element_a7c04183c707bd3d3238bea6057253fc5}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Element\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a7c04183c707bd3d3238bea6057253fc5}{on\+Detach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a47882f3670583d4f3ef881828d0026f0}\label{class_owl_engine_1_1_u_i_1_1_element_a47882f3670583d4f3ef881828d0026f0}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!onResize@{onResize}}
+\index{onResize@{onResize}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{onResize()}{onResize()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Element\+::on\+Resize (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{size,  }\item[{bool}]{whole = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+function for passing resize down to 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a47882f3670583d4f3ef881828d0026f0}{on\+Resize()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & a glm\+::vec2 -\/ The size change \\
+\hline
+{\em whole} & a bool -\/ Is the size a size change \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_af3f4cd17f45f5ea9bce60d67871bbcb3}\label{class_owl_engine_1_1_u_i_1_1_element_af3f4cd17f45f5ea9bce60d67871bbcb3}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Element\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_af3f4cd17f45f5ea9bce60d67871bbcb3}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a04f6f3d504af0ca1f60194c4971690f0}\label{class_owl_engine_1_1_u_i_1_1_element_a04f6f3d504af0ca1f60194c4971690f0}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Element\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a04f6f3d504af0ca1f60194c4971690f0}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a7ba55a82c707f99c3b2adcf981f34c67}\label{class_owl_engine_1_1_u_i_1_1_element_a7ba55a82c707f99c3b2adcf981f34c67}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!setAnchor@{setAnchor}}
+\index{setAnchor@{setAnchor}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{setAnchor()}{setAnchor()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Element\+::set\+Anchor (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{anchor }\end{DoxyParamCaption})}
+
+
+
+sets a new anchor value 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a7ba55a82c707f99c3b2adcf981f34c67}{set\+Anchor()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em anchor} & a glm\+::vec2 -\/ The element\textquotesingle{}s anchor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_acab7fadc5437ed9a2ffde4c92e857c0c}\label{class_owl_engine_1_1_u_i_1_1_element_acab7fadc5437ed9a2ffde4c92e857c0c}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!setOffset@{setOffset}}
+\index{setOffset@{setOffset}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{setOffset()}{setOffset()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Element\+::set\+Offset (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{offset }\end{DoxyParamCaption})}
+
+
+
+Adjusts the offset. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_acab7fadc5437ed9a2ffde4c92e857c0c}{set\+Offset()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em offset} & a glm\+::vec2 -\/ The element\textquotesingle{}s offset \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_element_a3d4ed3a99c895d6e7dd01a7ba18584c9}\label{class_owl_engine_1_1_u_i_1_1_element_a3d4ed3a99c895d6e7dd01a7ba18584c9}} 
+\index{OwlEngine::UI::Element@{OwlEngine::UI::Element}!setScreenSize@{setScreenSize}}
+\index{setScreenSize@{setScreenSize}!OwlEngine::UI::Element@{OwlEngine::UI::Element}}
+\doxysubsubsection{\texorpdfstring{setScreenSize()}{setScreenSize()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Element\+::set\+Screen\+Size (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{screen\+Size }\end{DoxyParamCaption})}
+
+
+
+Adjusts the screensize. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_a3d4ed3a99c895d6e7dd01a7ba18584c9}{set\+Screen\+Size()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen\+Size} & a glm\+::vec2 -\/ The screen size \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{element_8h}{element.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{element_8cpp}{element.\+cpp}}\end{DoxyCompactItemize}

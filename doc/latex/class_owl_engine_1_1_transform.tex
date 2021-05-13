@@ -1,0 +1,610 @@
+\hypertarget{class_owl_engine_1_1_transform}{}\doxysection{Owl\+Engine\+::Transform Class Reference}
+\label{class_owl_engine_1_1_transform}\index{OwlEngine::Transform@{OwlEngine::Transform}}
+
+
+The position, scale and rotation of an 3D object in the world.  
+
+
+
+
+{\ttfamily \#include $<$transform.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Transform\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_transform}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_transform_ae24460f6363b9a31bae67e263be4b783}{Transform}} (const float x\+Pos, const float y\+Pos, const float z\+Pos, const float x\+Rotation, const float y\+Rotation, const float z\+Rotation, const float sX, const float sY, const float sZ, const float forwardX, const float forwardY, const float forwardZ, const float upX, const float upY, const float upZ)
+\begin{DoxyCompactList}\small\item\em Constructor requiring all transform types. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a27e633be7a0f94718fc0eaa0c7378755}{$\sim$\+Transform}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a40d4bc288107f704b1b316d2e7edb88c}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a7049d0f769b2245fbe0185deabc5070a}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_ae88b7546486ede4b5952df3dc4bf8e05}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a56529c4d724d488f1bfeebcd359c7be6}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+virtual nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_transform_ac39ccbce8ad9f23b7f9ebd0a7ba9f14e}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component in J\+S\+ON form for saving. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_transform_ad7a6ee3ace31f2ff667366ef36a9e2df}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data displayed in Im\+Gui form. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_transform_a339745e2813428ab2aa667d441a881ec}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the position of the entity in the world. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a725204eb708942ddd6d34ad66b26c6e8}\label{class_owl_engine_1_1_transform_a725204eb708942ddd6d34ad66b26c6e8}} 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_transform_a725204eb708942ddd6d34ad66b26c6e8}{get\+Local\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Get the position of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a0cba348abcdcb476a5b2e7704159bba8}{set\+Position}} (const float x\+Pos, const float y\+Pos, const float z\+Pos)
+\begin{DoxyCompactList}\small\item\em Set the position of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_ac5779c2254d8de23569e5fb98fe28fb8}{set\+Position}} (const glm\+::vec3 \&new\+Pos)
+\begin{DoxyCompactList}\small\item\em Set the position of the entity in the world. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a995d20537f15b1fae87e2d3ef6aa1eb1}\label{class_owl_engine_1_1_transform_a995d20537f15b1fae87e2d3ef6aa1eb1}} 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a995d20537f15b1fae87e2d3ef6aa1eb1}{set\+World\+Position}} (const glm\+::vec3 \&new\+Pos)
+\begin{DoxyCompactList}\small\item\em Set the position of the entity in the world. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_transform_a4a37ac41f987d78d0561e8fe73f6727b}{get\+Orientation}} ()
+\begin{DoxyCompactList}\small\item\em Get the orientation of the entity in the world. \end{DoxyCompactList}\item 
+glm\+::quat \mbox{\hyperlink{class_owl_engine_1_1_transform_a161cb254f167c748f8c31d2ca9a5cc7f}{get\+Orientation\+As\+Quat}} ()
+\begin{DoxyCompactList}\small\item\em Get the orientation of the entity as a quaternion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_aaaf39afeab5551d5f772d75619400c55}{set\+Orientation}} (const float x\+Rotation, const float y\+Rotation, const float z\+Rotation)
+\begin{DoxyCompactList}\small\item\em Set the orientation of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_af1a0f710e25df542e3b55623ea67676b}{set\+Orientation}} (const glm\+::vec3 \&new\+Orientation)
+\begin{DoxyCompactList}\small\item\em Set the orientation of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a8bc4290a9c73685e0edc0eefefbf1961}{set\+Orientation}} (const glm\+::quat \&new\+Orientation)
+\begin{DoxyCompactList}\small\item\em Set the orientation of the entity from a quaternion. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_transform_adf7ed95683e0f3d7794b83c8fa0cdc88}{get\+Scale}} ()
+\begin{DoxyCompactList}\small\item\em Get the scale of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a731831f850266525c8da620b2f80acd8}{set\+Scale}} (const float sX, const float sY, const float sZ)
+\begin{DoxyCompactList}\small\item\em Set the scale of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a5c74e91d71088487bcb944126444f4ee}{set\+Scale}} (const glm\+::vec3 \&new\+Scale)
+\begin{DoxyCompactList}\small\item\em Set the scale of the entity in the world. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_transform_ab547fc5293bf1603385e1f329347df02}{get\+Forward}} ()
+\begin{DoxyCompactList}\small\item\em Get the forward of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a39b582dda6488b7260f9d578bc6c1aa2}{set\+Forward}} (const float x\+Pos, const float y\+Pos, const float z\+Pos)
+\begin{DoxyCompactList}\small\item\em Set the forward of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a26864dd377f013f7de2b76cf2130b65d}{set\+Forward}} (const glm\+::vec3 \&new\+Forward)
+\begin{DoxyCompactList}\small\item\em Set the forward of the entity in the world. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_transform_a7ae18eafaa475447776a73c9bd4890f9}{get\+Up}} ()
+\begin{DoxyCompactList}\small\item\em Get the up of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a7f6c2f5dec71421e473cbc9809b42dfd}{set\+Up}} (const float x\+Pos, const float y\+Pos, const float z\+Pos)
+\begin{DoxyCompactList}\small\item\em Set the up of the entity in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_ad44e5407e977362017bf591ba7bc2ffb}{set\+Up}} (const glm\+::vec3 \&new\+Up)
+\begin{DoxyCompactList}\small\item\em Set the up of the entity in the world. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a0514d40decf9af557a6ce55299c5b085}\label{class_owl_engine_1_1_transform_a0514d40decf9af557a6ce55299c5b085}} 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_a0514d40decf9af557a6ce55299c5b085}{set\+Rotational\+Position\+Enabled}} (bool rot\+Pos)
+\begin{DoxyCompactList}\small\item\em Lets the user modify the bool. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_ac6d47f34b33e0f4a55f7eb12f93a0558}\label{class_owl_engine_1_1_transform_ac6d47f34b33e0f4a55f7eb12f93a0558}} 
+void \mbox{\hyperlink{class_owl_engine_1_1_transform_ac6d47f34b33e0f4a55f7eb12f93a0558}{set\+Inherit\+Rotation}} (bool inherit)
+\begin{DoxyCompactList}\small\item\em Lets the user modify the bool. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_transform_adeb93e3231cdb433c38eef9aceae44be}{distance}} (\mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} $\ast$other\+Transform)
+\begin{DoxyCompactList}\small\item\em Get the distance between this transform and the position of another. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_transform_ab5c424ff900011418124e593965e4808}{angle}} (\mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} $\ast$other\+Transform)
+\begin{DoxyCompactList}\small\item\em Get the angle between this transform and another based on camera\textquotesingle{}s front direction. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_owl_engine_1_1_transform_a0852b11a50b5c2cac766ce731f94c62f}{get\+Model\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Get the model matrix of the geometry. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_owl_engine_1_1_transform_a9076b322e49f6535fc7d49125896fd3b}{get\+Audio\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Get the matrix for audio listeners and events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The position, scale and rotation of an 3D object in the world. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_ae24460f6363b9a31bae67e263be4b783}\label{class_owl_engine_1_1_transform_ae24460f6363b9a31bae67e263be4b783}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Transform\+::\+Transform (\begin{DoxyParamCaption}\item[{const float}]{x\+Pos,  }\item[{const float}]{y\+Pos,  }\item[{const float}]{z\+Pos,  }\item[{const float}]{x\+Rotation,  }\item[{const float}]{y\+Rotation,  }\item[{const float}]{z\+Rotation,  }\item[{const float}]{sX,  }\item[{const float}]{sY,  }\item[{const float}]{sZ,  }\item[{const float}]{forwardX,  }\item[{const float}]{forwardY,  }\item[{const float}]{forwardZ,  }\item[{const float}]{upX,  }\item[{const float}]{upY,  }\item[{const float}]{upZ }\end{DoxyParamCaption})}
+
+
+
+Constructor requiring all transform types. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_ae24460f6363b9a31bae67e263be4b783}{Transform()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Pos} & a const float -\/ The x position of the entity in the game world \\
+\hline
+{\em y\+Pos} & a const float -\/ The y position of the entity in the game world \\
+\hline
+{\em z\+Pos} & a const float -\/ The z position of the entity in the game world \\
+\hline
+{\em x\+Rotation} & a const float -\/ The rotation around the x axis of the entity in the game world \\
+\hline
+{\em y\+Rotation} & a const float -\/ The rotation around the y axis of the entity in the game world \\
+\hline
+{\em z\+Rotation} & a const float -\/ The rotation around the z axis of the entity in the game world \\
+\hline
+{\em sX} & a const float -\/ The scale in the x axis of the entity in the game world \\
+\hline
+{\em sY} & a const float -\/ The scale in the y axis of the entity in the game world \\
+\hline
+{\em sZ} & a const float -\/ The scale in the z axis of the entity in the game world \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a27e633be7a0f94718fc0eaa0c7378755}\label{class_owl_engine_1_1_transform_a27e633be7a0f94718fc0eaa0c7378755}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!````~Transform@{$\sim$Transform}}
+\index{````~Transform@{$\sim$Transform}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{$\sim$Transform()}{~Transform()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Transform\+::$\sim$\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a27e633be7a0f94718fc0eaa0c7378755}{$\sim$\+Transform()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_ab5c424ff900011418124e593965e4808}\label{class_owl_engine_1_1_transform_ab5c424ff900011418124e593965e4808}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!angle@{angle}}
+\index{angle@{angle}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{angle()}{angle()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Transform\+::angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} $\ast$}]{other\+Transform }\end{DoxyParamCaption})}
+
+
+
+Get the angle between this transform and another based on camera\textquotesingle{}s front direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Transform} & a Transform$\ast$ -\/ The other transform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a float -\/ The angle between the two transforms using the camera\textquotesingle{}s front direction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_ad7a6ee3ace31f2ff667366ef36a9e2df}\label{class_owl_engine_1_1_transform_ad7a6ee3ace31f2ff667366ef36a9e2df}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data displayed in Im\+Gui form. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_ad7a6ee3ace31f2ff667366ef36a9e2df}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_adeb93e3231cdb433c38eef9aceae44be}\label{class_owl_engine_1_1_transform_adeb93e3231cdb433c38eef9aceae44be}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!distance@{distance}}
+\index{distance@{distance}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Transform\+::distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} $\ast$}]{other\+Transform }\end{DoxyParamCaption})}
+
+
+
+Get the distance between this transform and the position of another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Transform} & a Transform$\ast$ -\/ The other transform \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a float -\/ The distance between the two transforms in world space 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_ac39ccbce8ad9f23b7f9ebd0a7ba9f14e}\label{class_owl_engine_1_1_transform_ac39ccbce8ad9f23b7f9ebd0a7ba9f14e}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Transform\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component in J\+S\+ON form for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_ac39ccbce8ad9f23b7f9ebd0a7ba9f14e}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a9076b322e49f6535fc7d49125896fd3b}\label{class_owl_engine_1_1_transform_a9076b322e49f6535fc7d49125896fd3b}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!getAudioMatrix@{getAudioMatrix}}
+\index{getAudioMatrix@{getAudioMatrix}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{getAudioMatrix()}{getAudioMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Owl\+Engine\+::\+Transform\+::get\+Audio\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the matrix for audio listeners and events. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a9076b322e49f6535fc7d49125896fd3b}{get\+Audio\+Matrix()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The audio transformation matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_ab547fc5293bf1603385e1f329347df02}\label{class_owl_engine_1_1_transform_ab547fc5293bf1603385e1f329347df02}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!getForward@{getForward}}
+\index{getForward@{getForward}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{getForward()}{getForward()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Transform\+::get\+Forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the forward of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_ab547fc5293bf1603385e1f329347df02}{get\+Forward()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The forward of the entity in the game world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a0852b11a50b5c2cac766ce731f94c62f}\label{class_owl_engine_1_1_transform_a0852b11a50b5c2cac766ce731f94c62f}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!getModelMatrix@{getModelMatrix}}
+\index{getModelMatrix@{getModelMatrix}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{getModelMatrix()}{getModelMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Owl\+Engine\+::\+Transform\+::get\+Model\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the model matrix of the geometry. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a0852b11a50b5c2cac766ce731f94c62f}{get\+Model\+Matrix()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The model transformation matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a4a37ac41f987d78d0561e8fe73f6727b}\label{class_owl_engine_1_1_transform_a4a37ac41f987d78d0561e8fe73f6727b}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{getOrientation()}{getOrientation()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Transform\+::get\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the orientation of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a4a37ac41f987d78d0561e8fe73f6727b}{get\+Orientation()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The orientation of the transform in euler angles 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a161cb254f167c748f8c31d2ca9a5cc7f}\label{class_owl_engine_1_1_transform_a161cb254f167c748f8c31d2ca9a5cc7f}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!getOrientationAsQuat@{getOrientationAsQuat}}
+\index{getOrientationAsQuat@{getOrientationAsQuat}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{getOrientationAsQuat()}{getOrientationAsQuat()}}
+{\footnotesize\ttfamily glm\+::quat Owl\+Engine\+::\+Transform\+::get\+Orientation\+As\+Quat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the orientation of the entity as a quaternion. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a161cb254f167c748f8c31d2ca9a5cc7f}{get\+Orientation\+As\+Quat()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::quat -\/ The orientation of the transform 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a339745e2813428ab2aa667d441a881ec}\label{class_owl_engine_1_1_transform_a339745e2813428ab2aa667d441a881ec}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Transform\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the position of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a339745e2813428ab2aa667d441a881ec}{get\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The position of the entity in the game world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_adf7ed95683e0f3d7794b83c8fa0cdc88}\label{class_owl_engine_1_1_transform_adf7ed95683e0f3d7794b83c8fa0cdc88}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!getScale@{getScale}}
+\index{getScale@{getScale}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{getScale()}{getScale()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Transform\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the scale of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_adf7ed95683e0f3d7794b83c8fa0cdc88}{get\+Scale()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3\& -\/ The scale of the transform 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a7ae18eafaa475447776a73c9bd4890f9}\label{class_owl_engine_1_1_transform_a7ae18eafaa475447776a73c9bd4890f9}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!getUp@{getUp}}
+\index{getUp@{getUp}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{getUp()}{getUp()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Transform\+::get\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the up of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a7ae18eafaa475447776a73c9bd4890f9}{get\+Up()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The up of the entity in the game world 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a40d4bc288107f704b1b316d2e7edb88c}\label{class_owl_engine_1_1_transform_a40d4bc288107f704b1b316d2e7edb88c}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a40d4bc288107f704b1b316d2e7edb88c}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a7049d0f769b2245fbe0185deabc5070a}\label{class_owl_engine_1_1_transform_a7049d0f769b2245fbe0185deabc5070a}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+on\+Detach 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_ae88b7546486ede4b5952df3dc4bf8e05}\label{class_owl_engine_1_1_transform_ae88b7546486ede4b5952df3dc4bf8e05}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_ae88b7546486ede4b5952df3dc4bf8e05}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a56529c4d724d488f1bfeebcd359c7be6}\label{class_owl_engine_1_1_transform_a56529c4d724d488f1bfeebcd359c7be6}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a56529c4d724d488f1bfeebcd359c7be6}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a39b582dda6488b7260f9d578bc6c1aa2}\label{class_owl_engine_1_1_transform_a39b582dda6488b7260f9d578bc6c1aa2}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!setForward@{setForward}}
+\index{setForward@{setForward}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{setForward()}{setForward()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::set\+Forward (\begin{DoxyParamCaption}\item[{const float}]{x\+For,  }\item[{const float}]{y\+For,  }\item[{const float}]{z\+For }\end{DoxyParamCaption})}
+
+
+
+Set the forward of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a39b582dda6488b7260f9d578bc6c1aa2}{set\+Forward()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+For} & a const float -\/ The x forward of the entity \\
+\hline
+{\em y\+For} & a const float -\/ The y forward of the entity \\
+\hline
+{\em z\+For} & a const float -\/ The z forward of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a26864dd377f013f7de2b76cf2130b65d}\label{class_owl_engine_1_1_transform_a26864dd377f013f7de2b76cf2130b65d}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!setForward@{setForward}}
+\index{setForward@{setForward}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{setForward()}{setForward()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::set\+Forward (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{new\+Forward }\end{DoxyParamCaption})}
+
+
+
+Set the forward of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a39b582dda6488b7260f9d578bc6c1aa2}{set\+Forward()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Forward} & a const glm\+::vec3\& -\/ The forward of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_aaaf39afeab5551d5f772d75619400c55}\label{class_owl_engine_1_1_transform_aaaf39afeab5551d5f772d75619400c55}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!setOrientation@{setOrientation}}
+\index{setOrientation@{setOrientation}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{setOrientation()}{setOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::set\+Orientation (\begin{DoxyParamCaption}\item[{const float}]{x\+Rotation,  }\item[{const float}]{y\+Rotation,  }\item[{const float}]{z\+Rotation }\end{DoxyParamCaption})}
+
+
+
+Set the orientation of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_aaaf39afeab5551d5f772d75619400c55}{set\+Orientation()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Rotation} & a const float -\/ The rotation around the x axis of the entity \\
+\hline
+{\em y\+Rotation} & a const float -\/ The rotation around the y axis of the entity \\
+\hline
+{\em z\+Rotation} & a const float -\/ The rotation around the z axis of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a8bc4290a9c73685e0edc0eefefbf1961}\label{class_owl_engine_1_1_transform_a8bc4290a9c73685e0edc0eefefbf1961}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!setOrientation@{setOrientation}}
+\index{setOrientation@{setOrientation}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{setOrientation()}{setOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::set\+Orientation (\begin{DoxyParamCaption}\item[{const glm\+::quat \&}]{new\+Orientation }\end{DoxyParamCaption})}
+
+
+
+Set the orientation of the entity from a quaternion. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_aaaf39afeab5551d5f772d75619400c55}{set\+Orientation()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Orientation} & a const glm\+::quat\& -\/ The orientation of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_af1a0f710e25df542e3b55623ea67676b}\label{class_owl_engine_1_1_transform_af1a0f710e25df542e3b55623ea67676b}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!setOrientation@{setOrientation}}
+\index{setOrientation@{setOrientation}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{setOrientation()}{setOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::set\+Orientation (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{new\+Orientation }\end{DoxyParamCaption})}
+
+
+
+Set the orientation of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_aaaf39afeab5551d5f772d75619400c55}{set\+Orientation()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Orientation} & a const glm\+::vec3\& -\/ The orientation of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a0cba348abcdcb476a5b2e7704159bba8}\label{class_owl_engine_1_1_transform_a0cba348abcdcb476a5b2e7704159bba8}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::set\+Position (\begin{DoxyParamCaption}\item[{const float}]{x\+Pos,  }\item[{const float}]{y\+Pos,  }\item[{const float}]{z\+Pos }\end{DoxyParamCaption})}
+
+
+
+Set the position of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a0cba348abcdcb476a5b2e7704159bba8}{set\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Pos} & a const float -\/ The x position of the entity \\
+\hline
+{\em y\+Pos} & a const float -\/ The y position of the entity \\
+\hline
+{\em z\+Pos} & a const float -\/ The z position of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_ac5779c2254d8de23569e5fb98fe28fb8}\label{class_owl_engine_1_1_transform_ac5779c2254d8de23569e5fb98fe28fb8}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{new\+Pos }\end{DoxyParamCaption})}
+
+
+
+Set the position of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a0cba348abcdcb476a5b2e7704159bba8}{set\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Pos} & a const glm\+::vec3\& -\/ The position of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a731831f850266525c8da620b2f80acd8}\label{class_owl_engine_1_1_transform_a731831f850266525c8da620b2f80acd8}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!setScale@{setScale}}
+\index{setScale@{setScale}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::set\+Scale (\begin{DoxyParamCaption}\item[{const float}]{sX,  }\item[{const float}]{sY,  }\item[{const float}]{sZ }\end{DoxyParamCaption})}
+
+
+
+Set the scale of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a731831f850266525c8da620b2f80acd8}{set\+Scale()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sX} & a const float -\/ The scale of the transform in the x axis \\
+\hline
+{\em sY} & a const float -\/ The scale of the transform in the y axis \\
+\hline
+{\em sZ} & a const float -\/ The scale of the transform in the z axis \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a5c74e91d71088487bcb944126444f4ee}\label{class_owl_engine_1_1_transform_a5c74e91d71088487bcb944126444f4ee}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!setScale@{setScale}}
+\index{setScale@{setScale}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{setScale()}{setScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::set\+Scale (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{new\+Scale }\end{DoxyParamCaption})}
+
+
+
+Set the scale of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a731831f850266525c8da620b2f80acd8}{set\+Scale()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Scale} & a const glm\+::vec3\& -\/ The scale of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_a7f6c2f5dec71421e473cbc9809b42dfd}\label{class_owl_engine_1_1_transform_a7f6c2f5dec71421e473cbc9809b42dfd}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!setUp@{setUp}}
+\index{setUp@{setUp}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::set\+Up (\begin{DoxyParamCaption}\item[{const float}]{x\+Up,  }\item[{const float}]{y\+Up,  }\item[{const float}]{z\+Up }\end{DoxyParamCaption})}
+
+
+
+Set the up of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a39b582dda6488b7260f9d578bc6c1aa2}{set\+Forward()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Up} & a const float -\/ The x up of the entity \\
+\hline
+{\em y\+Up} & a const float -\/ The y up of the entity \\
+\hline
+{\em z\+Up} & a const float -\/ The z up of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_transform_ad44e5407e977362017bf591ba7bc2ffb}\label{class_owl_engine_1_1_transform_ad44e5407e977362017bf591ba7bc2ffb}} 
+\index{OwlEngine::Transform@{OwlEngine::Transform}!setUp@{setUp}}
+\index{setUp@{setUp}!OwlEngine::Transform@{OwlEngine::Transform}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Transform\+::set\+Up (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{new\+Up }\end{DoxyParamCaption})}
+
+
+
+Set the up of the entity in the world. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform_a39b582dda6488b7260f9d578bc6c1aa2}{set\+Forward()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Up} & a const glm\+::vec3\& -\/ The up of the entity \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{transform_8h}{transform.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{transform_8cpp}{transform.\+cpp}}\end{DoxyCompactItemize}

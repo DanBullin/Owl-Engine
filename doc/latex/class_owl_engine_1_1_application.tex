@@ -1,0 +1,121 @@
+\hypertarget{class_owl_engine_1_1_application}{}\doxysection{Owl\+Engine\+::Application Class Reference}
+\label{class_owl_engine_1_1_application}\index{OwlEngine::Application@{OwlEngine::Application}}
+
+
+Fundemental class of Engine. A singleton which runs the game loop infinitely. Contains all the systems.  
+
+
+
+
+{\ttfamily \#include $<$application.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Application\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_application}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_application_a4a1ffe732b9419d5e458efca6db2e063}{$\sim$\+Application}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_application_aba746003230c12c0d0dd000ceb80b22f}{run}} ()
+\begin{DoxyCompactList}\small\item\em Main loop. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_application_a15ff46815bae3530105065b1f3c12d42}{check\+Exit\+Conditions}} ()
+\begin{DoxyCompactList}\small\item\em Get all application exit conditions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_application_affbb081369c78fc3aebcd80f4eeb4877}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Stop the whole application. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_application}{Application}} \& \mbox{\hyperlink{class_owl_engine_1_1_application_adb1577e09ab435026584d0a30b61fcc6}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Instance getter from singleton pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_application_ab1d73abda87deb17e0d23b636e5576fb}{Application}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fundemental class of Engine. A singleton which runs the game loop infinitely. Contains all the systems. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_application_ab1d73abda87deb17e0d23b636e5576fb}\label{class_owl_engine_1_1_application_ab1d73abda87deb17e0d23b636e5576fb}} 
+\index{OwlEngine::Application@{OwlEngine::Application}!Application@{Application}}
+\index{Application@{Application}!OwlEngine::Application@{OwlEngine::Application}}
+\doxysubsubsection{\texorpdfstring{Application()}{Application()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Application\+::\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Default Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_application_ab1d73abda87deb17e0d23b636e5576fb}{Application()}} \mbox{\Hypertarget{class_owl_engine_1_1_application_a4a1ffe732b9419d5e458efca6db2e063}\label{class_owl_engine_1_1_application_a4a1ffe732b9419d5e458efca6db2e063}} 
+\index{OwlEngine::Application@{OwlEngine::Application}!````~Application@{$\sim$Application}}
+\index{````~Application@{$\sim$Application}!OwlEngine::Application@{OwlEngine::Application}}
+\doxysubsubsection{\texorpdfstring{$\sim$Application()}{~Application()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Application\+::$\sim$\+Application (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Deconstructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_application_a4a1ffe732b9419d5e458efca6db2e063}{$\sim$\+Application()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_application_a15ff46815bae3530105065b1f3c12d42}\label{class_owl_engine_1_1_application_a15ff46815bae3530105065b1f3c12d42}} 
+\index{OwlEngine::Application@{OwlEngine::Application}!checkExitConditions@{checkExitConditions}}
+\index{checkExitConditions@{checkExitConditions}!OwlEngine::Application@{OwlEngine::Application}}
+\doxysubsubsection{\texorpdfstring{checkExitConditions()}{checkExitConditions()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Application\+::check\+Exit\+Conditions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all application exit conditions. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_application_a15ff46815bae3530105065b1f3c12d42}{check\+Exit\+Conditions()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ The exit conditions has been checked and return a value if they are true 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_application_adb1577e09ab435026584d0a30b61fcc6}\label{class_owl_engine_1_1_application_adb1577e09ab435026584d0a30b61fcc6}} 
+\index{OwlEngine::Application@{OwlEngine::Application}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!OwlEngine::Application@{OwlEngine::Application}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_owl_engine_1_1_application}{Application}}\& Owl\+Engine\+::\+Application\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Instance getter from singleton pattern. 
+
+\begin{DoxyReturn}{Returns}
+an \mbox{\hyperlink{class_owl_engine_1_1_application}{Application}}\& -\/ A reference to the application instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_application_aba746003230c12c0d0dd000ceb80b22f}\label{class_owl_engine_1_1_application_aba746003230c12c0d0dd000ceb80b22f}} 
+\index{OwlEngine::Application@{OwlEngine::Application}!run@{run}}
+\index{run@{run}!OwlEngine::Application@{OwlEngine::Application}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Application\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Main loop. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_application_aba746003230c12c0d0dd000ceb80b22f}{run()}} \mbox{\Hypertarget{class_owl_engine_1_1_application_affbb081369c78fc3aebcd80f4eeb4877}\label{class_owl_engine_1_1_application_affbb081369c78fc3aebcd80f4eeb4877}} 
+\index{OwlEngine::Application@{OwlEngine::Application}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::Application@{OwlEngine::Application}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Application\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Stop the whole application. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_application_affbb081369c78fc3aebcd80f4eeb4877}{stop()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/core/\mbox{\hyperlink{application_8h}{application.\+h}}\item 
+C\+:/doc/src/engine/src/independent/core/\mbox{\hyperlink{application_8cpp}{application.\+cpp}}\end{DoxyCompactItemize}

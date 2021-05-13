@@ -1,0 +1,352 @@
+\hypertarget{class_owl_engine_1_1_character_controller}{}\doxysection{Owl\+Engine\+::Character\+Controller Class Reference}
+\label{class_owl_engine_1_1_character_controller}\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+
+
+A component which controls the entity\textquotesingle{}s transform.  
+
+
+
+
+{\ttfamily \#include $<$character\+Controller.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Character\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_character_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_abd9b7c9094ea5017f7b1c9fc4d0e57db}{Character\+Controller}} (const float speed, const float sensitivity, const bool freeze)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_a911a276d8b5974182f9a4f289c569116}{$\sim$\+Character\+Controller}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_character_controller_abac24915ec4e604f3f7df115e4a931b3}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_character_controller_a3355e60a313d15c5aa3e63a2c8f732c6}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_character_controller_adcfcdde12a83244139b4776c7da592ed}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the character controller. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_character_controller_a3e78b6b35dc6a12ad8ffbb1098f286ef}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_character_controller_a3d9fac49933357781290d88ad9b62440}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data in J\+S\+ON format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_character_controller_addfa65fa7a791bf3a95083b5e48963d9}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Display the component in Im\+G\+UI. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_character_controller_a356d481e756b4dcfa2f4a69f55bf1d80}{set\+Speed}} (const float speed)
+\begin{DoxyCompactList}\small\item\em Set the speed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_character_controller_ad675c924a21eecab928f460aad8c015a}{set\+Sensitivity}} (const float sensitivity)
+\begin{DoxyCompactList}\small\item\em Set the sensitivity. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_character_controller_a8566b0aaa32c953b89e86c6dc39d4bb2}{get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em Get the speed. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_owl_engine_1_1_character_controller_ac696f655abb41db83faae6ff854d2d19}{get\+Sensitivity}} () const
+\begin{DoxyCompactList}\small\item\em Get the sensitivity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_character_controller_a32a8b4abc88cf869ae80eb7fa183d58f}{set\+Frozen}} (bool frozen)
+\begin{DoxyCompactList}\small\item\em Freeze the controller. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_character_controller_ae6b14bac16d41c43d24ed17c4cb4f213}{get\+Frozen}} () const
+\begin{DoxyCompactList}\small\item\em Get whether the controller is frozen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_character_controller_ab8b02f3cd2c303fc0304a873cefefa04}{move}} (const \mbox{\hyperlink{character_controller_8h_ac4f192234429d74d4d4132662f279189}{Movement}} direction, const float delta\+Time)
+\begin{DoxyCompactList}\small\item\em Move the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_character_controller_a10589aec70b96144934d03af64cfffbb}{rotate}} (float xoffset, float yoffset, bool constrain\+Pitch=true)
+\begin{DoxyCompactList}\small\item\em Rotate the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_character_controller_a883c13ffc61af7f4ce454c83340f89e7}{zoom}} (float yoffset)
+\begin{DoxyCompactList}\small\item\em Zoom in/out. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A component which controls the entity\textquotesingle{}s transform. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_abd9b7c9094ea5017f7b1c9fc4d0e57db}\label{class_owl_engine_1_1_character_controller_abd9b7c9094ea5017f7b1c9fc4d0e57db}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!CharacterController@{CharacterController}}
+\index{CharacterController@{CharacterController}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{CharacterController()}{CharacterController()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Character\+Controller\+::\+Character\+Controller (\begin{DoxyParamCaption}\item[{const float}]{speed,  }\item[{const float}]{sensitivity,  }\item[{const bool}]{freeze }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller}{Character\+Controller}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & a const float -\/ The speed of the character \\
+\hline
+{\em sensitivity} & a const float -\/ The mouse sensitivity of the character \\
+\hline
+{\em freeze} & a const bool -\/ Is the controller frozen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_a911a276d8b5974182f9a4f289c569116}\label{class_owl_engine_1_1_character_controller_a911a276d8b5974182f9a4f289c569116}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!````~CharacterController@{$\sim$CharacterController}}
+\index{````~CharacterController@{$\sim$CharacterController}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{$\sim$CharacterController()}{~CharacterController()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Character\+Controller\+::$\sim$\+Character\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_a911a276d8b5974182f9a4f289c569116}{$\sim$\+Character\+Controller()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_addfa65fa7a791bf3a95083b5e48963d9}\label{class_owl_engine_1_1_character_controller_addfa65fa7a791bf3a95083b5e48963d9}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Character\+Controller\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the component in Im\+G\+UI. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_addfa65fa7a791bf3a95083b5e48963d9}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_a3d9fac49933357781290d88ad9b62440}\label{class_owl_engine_1_1_character_controller_a3d9fac49933357781290d88ad9b62440}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Character\+Controller\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data in J\+S\+ON format. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_a3d9fac49933357781290d88ad9b62440}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_ae6b14bac16d41c43d24ed17c4cb4f213}\label{class_owl_engine_1_1_character_controller_ae6b14bac16d41c43d24ed17c4cb4f213}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!getFrozen@{getFrozen}}
+\index{getFrozen@{getFrozen}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{getFrozen()}{getFrozen()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Character\+Controller\+::get\+Frozen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get whether the controller is frozen. 
+
+get\+Frozen
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is the character controller frozen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_ac696f655abb41db83faae6ff854d2d19}\label{class_owl_engine_1_1_character_controller_ac696f655abb41db83faae6ff854d2d19}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!getSensitivity@{getSensitivity}}
+\index{getSensitivity@{getSensitivity}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{getSensitivity()}{getSensitivity()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Character\+Controller\+::get\+Sensitivity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the sensitivity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_ac696f655abb41db83faae6ff854d2d19}{get\+Sensitivity()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The sensitivity of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_a8566b0aaa32c953b89e86c6dc39d4bb2}\label{class_owl_engine_1_1_character_controller_a8566b0aaa32c953b89e86c6dc39d4bb2}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!getSpeed@{getSpeed}}
+\index{getSpeed@{getSpeed}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{getSpeed()}{getSpeed()}}
+{\footnotesize\ttfamily float Owl\+Engine\+::\+Character\+Controller\+::get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the speed. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_a8566b0aaa32c953b89e86c6dc39d4bb2}{get\+Speed()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The speed of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_ab8b02f3cd2c303fc0304a873cefefa04}\label{class_owl_engine_1_1_character_controller_ab8b02f3cd2c303fc0304a873cefefa04}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!move@{move}}
+\index{move@{move}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Character\+Controller\+::move (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{character_controller_8h_ac4f192234429d74d4d4132662f279189}{Movement}}}]{direction,  }\item[{const float}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Move the entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_ab8b02f3cd2c303fc0304a873cefefa04}{move()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & a const Movement -\/ The direction to move \\
+\hline
+{\em delta\+Time} & a const float -\/ Delta time which is a measure of how long it took to render last frame \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_abac24915ec4e604f3f7df115e4a931b3}\label{class_owl_engine_1_1_character_controller_abac24915ec4e604f3f7df115e4a931b3}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Character\+Controller\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_abac24915ec4e604f3f7df115e4a931b3}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_a3355e60a313d15c5aa3e63a2c8f732c6}\label{class_owl_engine_1_1_character_controller_a3355e60a313d15c5aa3e63a2c8f732c6}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Character\+Controller\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_a3355e60a313d15c5aa3e63a2c8f732c6}{on\+Detach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_adcfcdde12a83244139b4776c7da592ed}\label{class_owl_engine_1_1_character_controller_adcfcdde12a83244139b4776c7da592ed}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Character\+Controller\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the character controller. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_adcfcdde12a83244139b4776c7da592ed}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_a3e78b6b35dc6a12ad8ffbb1098f286ef}\label{class_owl_engine_1_1_character_controller_a3e78b6b35dc6a12ad8ffbb1098f286ef}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Character\+Controller\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_a3e78b6b35dc6a12ad8ffbb1098f286ef}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_a10589aec70b96144934d03af64cfffbb}\label{class_owl_engine_1_1_character_controller_a10589aec70b96144934d03af64cfffbb}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!rotate@{rotate}}
+\index{rotate@{rotate}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Character\+Controller\+::rotate (\begin{DoxyParamCaption}\item[{float}]{xoffset,  }\item[{float}]{yoffset,  }\item[{bool}]{constrain\+Pitch = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Rotate the entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_a10589aec70b96144934d03af64cfffbb}{rotate()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em xoffset} & a float -\/ The yaw rotation offset \\
+\hline
+{\em yoffset} & a float -\/ The pitch rotation offset \\
+\hline
+{\em constrain\+Pitch} & a bool -\/ Constrain the pitch? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_a32a8b4abc88cf869ae80eb7fa183d58f}\label{class_owl_engine_1_1_character_controller_a32a8b4abc88cf869ae80eb7fa183d58f}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!setFrozen@{setFrozen}}
+\index{setFrozen@{setFrozen}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{setFrozen()}{setFrozen()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Character\+Controller\+::set\+Frozen (\begin{DoxyParamCaption}\item[{bool}]{frozen }\end{DoxyParamCaption})}
+
+
+
+Freeze the controller. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_a32a8b4abc88cf869ae80eb7fa183d58f}{set\+Frozen()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em frozen} & a bool -\/ Should the controller be frozen \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_ad675c924a21eecab928f460aad8c015a}\label{class_owl_engine_1_1_character_controller_ad675c924a21eecab928f460aad8c015a}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!setSensitivity@{setSensitivity}}
+\index{setSensitivity@{setSensitivity}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{setSensitivity()}{setSensitivity()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Character\+Controller\+::set\+Sensitivity (\begin{DoxyParamCaption}\item[{const float}]{sensitivity }\end{DoxyParamCaption})}
+
+
+
+Set the sensitivity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_ad675c924a21eecab928f460aad8c015a}{set\+Sensitivity()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sensitivity} & a const float -\/ The sensitivity of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_a356d481e756b4dcfa2f4a69f55bf1d80}\label{class_owl_engine_1_1_character_controller_a356d481e756b4dcfa2f4a69f55bf1d80}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!setSpeed@{setSpeed}}
+\index{setSpeed@{setSpeed}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{setSpeed()}{setSpeed()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Character\+Controller\+::set\+Speed (\begin{DoxyParamCaption}\item[{const float}]{speed }\end{DoxyParamCaption})}
+
+
+
+Set the speed. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_a356d481e756b4dcfa2f4a69f55bf1d80}{set\+Speed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & a const float -\/ The speed of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_character_controller_a883c13ffc61af7f4ce454c83340f89e7}\label{class_owl_engine_1_1_character_controller_a883c13ffc61af7f4ce454c83340f89e7}} 
+\index{OwlEngine::CharacterController@{OwlEngine::CharacterController}!zoom@{zoom}}
+\index{zoom@{zoom}!OwlEngine::CharacterController@{OwlEngine::CharacterController}}
+\doxysubsubsection{\texorpdfstring{zoom()}{zoom()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Character\+Controller\+::zoom (\begin{DoxyParamCaption}\item[{float}]{yoffset }\end{DoxyParamCaption})}
+
+
+
+Zoom in/out. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_character_controller_a883c13ffc61af7f4ce454c83340f89e7}{zoom()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em yoffset} & a float -\/ The pitch rotation offset \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{character_controller_8h}{character\+Controller.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{character_controller_8cpp}{character\+Controller.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,3238 @@
+{
+    "entities": [
+        {
+            "name": "Canvas",
+            "layer": "Default",
+            "display": true,
+            "save": true,
+            "components": [
+                {
+                    "name": "Transform",
+                    "type": "Transform",
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "forward": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "up": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "inherit": true,
+                    "rotPos": false
+                },
+                {
+                    "name": "New Component",
+                    "type": "Canvas",
+                    "size": [
+                        1024.0,
+                        768.0
+                    ],
+                    "watch": true,
+                    "init": true
+                }
+            ],
+            "childEntities": [
+                {
+                    "name": "Credits",
+                    "layer": "UI",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                443.0,
+                                610.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                137.0,
+                                29.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Credits",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu40B"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -69.0,
+                                226.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Component 3",
+                            "type": "NativeScript",
+                            "scriptName": "MainMenuText"
+                        }
+                    ]
+                },
+                {
+                    "name": "Level1",
+                    "layer": "UI",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                472.0,
+                                436.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                237.0,
+                                28.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Text1",
+                            "type": "Text",
+                            "text": "Play",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu40B"
+                        },
+                        {
+                            "name": "Script1",
+                            "type": "NativeScript",
+                            "scriptName": "MainMenuText"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -40.0,
+                                52.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Logo",
+                    "layer": "UI",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                512.0,
+                                251.0,
+                                -1.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                500.0,
+                                300.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "MeshRender1",
+                            "type": "MeshRender2D",
+                            "materialName": "flushedMaterial"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                0.0,
+                                -133.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MM_Quit",
+                    "layer": "UI",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                471.0,
+                                700.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                84.0,
+                                29.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Text1",
+                            "type": "Text",
+                            "text": "Quit",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu40B"
+                        },
+                        {
+                            "name": "Script1",
+                            "type": "NativeScript",
+                            "scriptName": "MainMenuText"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -41.0,
+                                316.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "MM_Settings",
+                    "layer": "UI",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                432.0,
+                                520.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                158.0,
+                                28.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "PlayAaron",
+                            "type": "Text",
+                            "text": "Settings",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu40B"
+                        },
+                        {
+                            "name": "Script1",
+                            "type": "NativeScript",
+                            "scriptName": "MainMenuText"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -80.0,
+                                136.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "CreditsCanvas",
+            "layer": "Default",
+            "display": true,
+            "save": true,
+            "components": [
+                {
+                    "name": "Transform",
+                    "type": "Transform",
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "forward": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "up": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "inherit": true,
+                    "rotPos": false
+                },
+                {
+                    "name": "New Component",
+                    "type": "Canvas",
+                    "size": [
+                        1024.0,
+                        768.0
+                    ],
+                    "watch": true,
+                    "init": true
+                }
+            ],
+            "childEntities": [
+                {
+                    "name": "CreditsAaron",
+                    "layer": "CreditsLayer",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                522.5,
+                                521.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Aaron Taleghani - Programming",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu34"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                10.5,
+                                137.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CreditsDan",
+                    "layer": "CreditsLayer",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                558.9000244140625,
+                                323.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Dan Bullin - Programming",
+                            "colour": [
+                                0.6299999952316284,
+                                0.23000000417232513,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu34"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                46.9000244140625,
+                                -61.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CreditsImage",
+                    "layer": "CreditsLayer",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                228.0,
+                                403.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                512.0,
+                                512.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "MeshRender1",
+                            "type": "MeshRender2D",
+                            "materialName": "creditsMaterial"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -284.0,
+                                19.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                1.0,
+                                1.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CreditsJamie",
+                    "layer": "CreditsLayer",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                563.9000244140625,
+                                391.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Jamie Hall - Programming",
+                            "colour": [
+                                0.15000000596046448,
+                                0.6850000023841858,
+                                0.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu34"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                51.9000244140625,
+                                7.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CreditsJoshua",
+                    "layer": "CreditsLayer",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                527.9000244140625,
+                                456.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Joshua Simons - Programming",
+                            "colour": [
+                                1.0,
+                                0.6800000071525574,
+                                0.3700000047683716,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu34"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                15.9000244140625,
+                                72.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CreditsMenuImage",
+                    "layer": "CreditsLayer",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                512.0,
+                                406.0,
+                                -1.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1024.0,
+                                768.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "MeshRender1",
+                            "type": "MeshRender2D",
+                            "materialName": "darkTranslucentMaterial"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                0.0,
+                                22.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": false,
+                            "scaleSize": [
+                                1.0,
+                                1.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "CreditsTitle",
+                    "layer": "CreditsLayer",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                677.0,
+                                235.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "CREDITS",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu40B"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                165.0,
+                                -149.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Credits_Quit",
+                    "layer": "CreditsLayer",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                477.0,
+                                738.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                67.0,
+                                24.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Text1",
+                            "type": "Text",
+                            "text": "Quit",
+                            "colour": [
+                                1.0,
+                                0.699999988079071,
+                                0.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu34"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                1.0
+                            ],
+                            "offset": [
+                                -35.0,
+                                -30.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Component 3",
+                            "type": "NativeScript",
+                            "scriptName": "CreditsMenuText"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "EngineEnt",
+            "layer": "Default",
+            "display": true,
+            "save": true,
+            "components": [
+                {
+                    "name": "Transform",
+                    "type": "Transform",
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "scale": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "forward": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "up": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "inherit": true,
+                    "rotPos": false
+                },
+                {
+                    "name": "Script1",
+                    "type": "NativeScript",
+                    "scriptName": "EngineScript"
+                }
+            ]
+        },
+        {
+            "name": "Player1",
+            "layer": "UI",
+            "display": true,
+            "save": true,
+            "components": [
+                {
+                    "name": "Transform",
+                    "type": "Transform",
+                    "position": [
+                        0.0,
+                        3.700000047683716,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        -27927.3203125,
+                        0.0
+                    ],
+                    "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "forward": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "up": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "inherit": true,
+                    "rotPos": false
+                },
+                {
+                    "name": "Light1",
+                    "type": "DirectionalLight",
+                    "direction": [
+                        -0.20000000298023224,
+                        -1.0,
+                        -0.30000001192092896
+                    ],
+                    "ambient": [
+                        0.009999999776482582,
+                        0.009999999776482582,
+                        0.009999999776482582
+                    ],
+                    "diffuse": [
+                        0.800000011920929,
+                        0.800000011920929,
+                        0.800000011920929
+                    ],
+                    "specular": [
+                        0.10000000149011612,
+                        0.10000000149011612,
+                        0.10000000149011612
+                    ]
+                },
+                {
+                    "name": "AudioListener1",
+                    "type": "AudioListener",
+                    "velocity": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "Click",
+                    "type": "StudioSound",
+                    "eventName": "click",
+                    "velocity": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ]
+                },
+                {
+                    "name": "Camera",
+                    "type": "Camera",
+                    "skybox": [
+                        {
+                            "model": "cube",
+                            "material": "skyboxMaterial"
+                        }
+                    ],
+                    "clearColour": [
+                        0.10000000149011612,
+                        0.20000000298023224,
+                        0.30000001192092896,
+                        1.0
+                    ],
+                    "front": [
+                        -0.8884616494178772,
+                        0.0,
+                        -0.4589511454105377
+                    ],
+                    "up": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "worldUp": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "Yaw": 27927.3203125,
+                    "Pitch": 0.0,
+                    "Zoom": 70.0,
+                    "setMainCamera": true
+                }
+            ],
+            "childEntities": [
+                {
+                    "name": "CameraScript",
+                    "layer": "Default",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Script1",
+                            "type": "NativeScript",
+                            "scriptName": "CameraRotationScript"
+                        }
+                    ]
+                },
+                {
+                    "name": "click",
+                    "layer": "Default",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                0.0,
+                                3.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "click",
+                            "type": "StudioSound",
+                            "eventName": "click",
+                            "velocity": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "elevator_music",
+                    "layer": "Default",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                0.0,
+                                3.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "elevator_music",
+                            "type": "StudioSound",
+                            "eventName": "elevator_music",
+                            "velocity": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "menu_music",
+                    "layer": "Default",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                0.0,
+                                3.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "menu_music",
+                            "type": "StudioSound",
+                            "eventName": "menu_music",
+                            "velocity": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SettingsCanvas",
+            "layer": "Default",
+            "display": true,
+            "save": true,
+            "components": [
+                {
+                    "name": "Transform",
+                    "type": "Transform",
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "forward": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "up": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "inherit": true,
+                    "rotPos": false
+                },
+                {
+                    "name": "New Component",
+                    "type": "Canvas",
+                    "size": [
+                        1024.0,
+                        768.0
+                    ],
+                    "watch": true,
+                    "init": true
+                }
+            ],
+            "childEntities": [
+                {
+                    "name": "SettingsMenuImage",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                512.0,
+                                390.0,
+                                -1.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1024.0,
+                                768.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "MeshRender1",
+                            "type": "MeshRender2D",
+                            "materialName": "darkTranslucentMaterial"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                0.0,
+                                6.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": false,
+                            "scaleSize": [
+                                1.0,
+                                1.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "SettingsMuteAudioText",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                698.5,
+                                385.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Mute Audio:",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                186.5,
+                                1.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ],
+                    "childEntities": [
+                        {
+                            "name": "SettingsMuteAudioCB",
+                            "layer": "Settings",
+                            "display": true,
+                            "save": true,
+                            "components": [
+                                {
+                                    "name": "Transform",
+                                    "type": "Transform",
+                                    "position": [
+                                        167.3000030517578,
+                                        -9.399999618530273,
+                                        0.0
+                                    ],
+                                    "rotation": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "scale": [
+                                        32.0,
+                                        32.0,
+                                        1.0
+                                    ],
+                                    "forward": [
+                                        0.0,
+                                        0.0,
+                                        1.0
+                                    ],
+                                    "up": [
+                                        0.0,
+                                        1.0,
+                                        0.0
+                                    ],
+                                    "inherit": true,
+                                    "rotPos": false
+                                },
+                                {
+                                    "name": "Component 1",
+                                    "type": "MeshRender2D",
+                                    "materialName": "checkboxUMaterial"
+                                },
+                                {
+                                    "name": "Script1",
+                                    "type": "NativeScript",
+                                    "scriptName": "Checkbox",
+                                    "playerConfig": "MuteAudio"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "SettingsVSyncText",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                698.5,
+                                420.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Enable VSync:",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                186.5,
+                                36.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ],
+                    "childEntities": [
+                        {
+                            "name": "SettingsVSyncCB",
+                            "layer": "Settings",
+                            "display": true,
+                            "save": true,
+                            "components": [
+                                {
+                                    "name": "Transform",
+                                    "type": "Transform",
+                                    "position": [
+                                        185.8000030517578,
+                                        -8.199999809265137,
+                                        0.5
+                                    ],
+                                    "rotation": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "scale": [
+                                        32.0,
+                                        32.0,
+                                        1.0
+                                    ],
+                                    "forward": [
+                                        0.0,
+                                        0.0,
+                                        1.0
+                                    ],
+                                    "up": [
+                                        0.0,
+                                        1.0,
+                                        0.0
+                                    ],
+                                    "inherit": true,
+                                    "rotPos": false
+                                },
+                                {
+                                    "name": "Component 1",
+                                    "type": "MeshRender2D",
+                                    "materialName": "checkboxUMaterial"
+                                },
+                                {
+                                    "name": "Component 2",
+                                    "type": "NativeScript",
+                                    "scriptName": "Checkbox",
+                                    "playerConfig": "ToggleVSync"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "SettingsVolumeText",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                697.0,
+                                458.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Change Volume:\t\t\t\t\t\t\t0.25",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                185.0,
+                                74.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ],
+                    "childEntities": [
+                        {
+                            "name": "SettingsVolumeCB",
+                            "layer": "Settings",
+                            "display": true,
+                            "save": true,
+                            "components": [
+                                {
+                                    "name": "Transform",
+                                    "type": "Transform",
+                                    "position": [
+                                        209.5,
+                                        -7.199999809265137,
+                                        0.0
+                                    ],
+                                    "rotation": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "scale": [
+                                        32.0,
+                                        32.0,
+                                        1.0
+                                    ],
+                                    "forward": [
+                                        0.0,
+                                        0.0,
+                                        1.0
+                                    ],
+                                    "up": [
+                                        0.0,
+                                        1.0,
+                                        0.0
+                                    ],
+                                    "inherit": true,
+                                    "rotPos": false
+                                },
+                                {
+                                    "name": "Component 1",
+                                    "type": "MeshRender2D",
+                                    "materialName": "checkboxUMaterial"
+                                },
+                                {
+                                    "name": "Component 3",
+                                    "type": "NativeScript",
+                                    "scriptName": "AudioCheckbox",
+                                    "playerConfig": "Volume"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_Hotbar1",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                87.0,
+                                476.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                111.0,
+                                17.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Hotbar1: 1",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -425.0,
+                                92.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Component 3",
+                            "type": "NativeScript",
+                            "scriptName": "KeybindText",
+                            "playerConfig": "Hotbar1"
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_Hotbar2",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                87.0,
+                                511.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                111.0,
+                                17.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Hotbar2: 0",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Component 3",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -425.0,
+                                127.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Component 3",
+                            "type": "NativeScript",
+                            "scriptName": "KeybindText",
+                            "playerConfig": "Hotbar2"
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_Hotbar3",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                87.0,
+                                545.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                111.0,
+                                17.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Hotbar3: 0",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Component 4",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -425.0,
+                                161.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Component 3",
+                            "type": "NativeScript",
+                            "scriptName": "KeybindText",
+                            "playerConfig": "Hotbar3"
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_Hotbar4",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                87.0,
+                                580.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                111.0,
+                                17.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Hotbar4: 4",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Component 5",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -425.0,
+                                196.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Component 3",
+                            "type": "NativeScript",
+                            "scriptName": "KeybindText",
+                            "playerConfig": "Hotbar4"
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_Hotbar5",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                87.0,
+                                615.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                111.0,
+                                17.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Hotbar5: 5",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Component 6",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -425.0,
+                                231.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Component 3",
+                            "type": "NativeScript",
+                            "scriptName": "KeybindText",
+                            "playerConfig": "Hotbar5"
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_InfoText",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                421.0,
+                                75.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                400.0,
+                                400.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Text1",
+                            "type": "Text",
+                            "text": "SETTINGS",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu40B"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.0
+                            ],
+                            "offset": [
+                                -91.0,
+                                75.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_InfoText1",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                243.0,
+                                115.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                400.0,
+                                400.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Text1",
+                            "type": "Text",
+                            "text": "Click on the key value and press a new key.",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.0
+                            ],
+                            "offset": [
+                                -269.0,
+                                115.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_MoveBack",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                87.0,
+                                385.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                152.0,
+                                17.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Text1",
+                            "type": "Text",
+                            "text": "Move Back: S",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Script1",
+                            "type": "NativeScript",
+                            "scriptName": "KeybindText",
+                            "playerConfig": "MoveBack"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -425.0,
+                                1.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_MoveForward",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                87.0,
+                                315.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                197.0,
+                                17.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Text1",
+                            "type": "Text",
+                            "text": "Move Forward: W",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Script1",
+                            "type": "NativeScript",
+                            "scriptName": "KeybindText",
+                            "playerConfig": "MoveForward"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -425.0,
+                                -69.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_MoveLeft",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                87.0,
+                                350.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                150.0,
+                                17.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Text1",
+                            "type": "Text",
+                            "text": "Move Left: A",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Script1",
+                            "type": "NativeScript",
+                            "scriptName": "KeybindText",
+                            "playerConfig": "MoveLeft"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -425.0,
+                                -34.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_MoveRight",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                87.0,
+                                420.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                166.0,
+                                17.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Text1",
+                            "type": "Text",
+                            "text": "Move Right: D",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Script1",
+                            "type": "NativeScript",
+                            "scriptName": "KeybindText",
+                            "playerConfig": "MoveRight"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                -425.0,
+                                36.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_OpenDoors",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                698.5999755859375,
+                                350.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Open Doors: F",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                186.5999755859375,
+                                -34.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Component 3",
+                            "type": "NativeScript",
+                            "scriptName": "KeybindText",
+                            "playerConfig": "UnlockDoor"
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_Pickup",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                698.5999755859375,
+                                315.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                172.0,
+                                17.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Component 1",
+                            "type": "Text",
+                            "text": "Pickup Items: E",
+                            "colour": [
+                                1.0,
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu24"
+                        },
+                        {
+                            "name": "Component 2",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                0.5
+                            ],
+                            "offset": [
+                                186.5999755859375,
+                                -69.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Component 3",
+                            "type": "NativeScript",
+                            "scriptName": "KeybindText",
+                            "playerConfig": "Pickup"
+                        }
+                    ]
+                },
+                {
+                    "name": "Settings_Quit",
+                    "layer": "Settings",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                410.0,
+                                692.0,
+                                0.5
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                204.0,
+                                25.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "Text1",
+                            "type": "Text",
+                            "text": "Save & Quit",
+                            "colour": [
+                                1.0,
+                                0.699999988079071,
+                                0.0,
+                                1.0
+                            ],
+                            "fontName": "Ubuntu34"
+                        },
+                        {
+                            "name": "Script1",
+                            "type": "NativeScript",
+                            "scriptName": "SettingsMenuText"
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "Element",
+                            "anchor": [
+                                0.5,
+                                1.0
+                            ],
+                            "offset": [
+                                -102.0,
+                                -76.0
+                            ],
+                            "screenSize": [
+                                1024.0,
+                                768.0
+                            ],
+                            "useAbsoluteSize": true,
+                            "scaleSize": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SettingsMenuEnt",
+            "layer": "Default",
+            "display": true,
+            "save": true,
+            "components": [
+                {
+                    "name": "Transform",
+                    "type": "Transform",
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "scale": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "forward": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "up": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "inherit": true,
+                    "rotPos": false
+                },
+                {
+                    "name": "Script1",
+                    "type": "NativeScript",
+                    "scriptName": "SettingsScript"
+                }
+            ]
+        },
+        {
+            "name": "Tunnels",
+            "layer": "Default",
+            "display": true,
+            "save": true,
+            "components": [
+                {
+                    "name": "Transform",
+                    "type": "Transform",
+                    "position": [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "rotation": [
+                        0.0,
+                        -0.0,
+                        0.0
+                    ],
+                    "scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "forward": [
+                        0.0,
+                        0.0,
+                        1.0
+                    ],
+                    "up": [
+                        0.0,
+                        1.0,
+                        0.0
+                    ],
+                    "inherit": true,
+                    "rotPos": false
+                }
+            ],
+            "childEntities": [
+                {
+                    "name": "Start Room",
+                    "layer": "Default",
+                    "display": true,
+                    "save": true,
+                    "components": [
+                        {
+                            "name": "Transform",
+                            "type": "Transform",
+                            "position": [
+                                0.0,
+                                -1.0,
+                                0.0
+                            ],
+                            "rotation": [
+                                0.0,
+                                0.0,
+                                0.0
+                            ],
+                            "scale": [
+                                1.0,
+                                1.0,
+                                1.0
+                            ],
+                            "forward": [
+                                0.0,
+                                0.0,
+                                1.0
+                            ],
+                            "up": [
+                                0.0,
+                                1.0,
+                                0.0
+                            ],
+                            "inherit": true,
+                            "rotPos": false
+                        },
+                        {
+                            "name": "New Component",
+                            "type": "MeshRender3D",
+                            "modelName": "josh_room",
+                            "materialName": "tunnelMaterial"
+                        }
+                    ],
+                    "childEntities": [
+                        {
+                            "name": "Short4",
+                            "layer": "Default",
+                            "display": true,
+                            "save": true,
+                            "components": [
+                                {
+                                    "name": "Transform",
+                                    "type": "Transform",
+                                    "position": [
+                                        -24.700000762939453,
+                                        1.0,
+                                        0.0
+                                    ],
+                                    "rotation": [
+                                        0.0,
+                                        0.0,
+                                        0.0
+                                    ],
+                                    "scale": [
+                                        0.3199999928474426,
+                                        0.3199999928474426,
+                                        0.3199999928474426
+                                    ],
+                                    "forward": [
+                                        0.0,
+                                        0.0,
+                                        1.0
+                                    ],
+                                    "up": [
+                                        0.0,
+                                        1.0,
+                                        0.0
+                                    ],
+                                    "inherit": true,
+                                    "rotPos": false
+                                },
+                                {
+                                    "name": "New Component",
+                                    "type": "MeshRender3D",
+                                    "modelName": "sewer_short",
+                                    "materialName": ""
+                                }
+                            ],
+                            "childEntities": [
+                                {
+                                    "name": "TJunc11",
+                                    "layer": "Default",
+                                    "display": true,
+                                    "save": true,
+                                    "components": [
+                                        {
+                                            "name": "Transform",
+                                            "type": "Transform",
+                                            "position": [
+                                                -23.799999237060547,
+                                                0.0,
+                                                0.0
+                                            ],
+                                            "rotation": [
+                                                0.0,
+                                                0.0,
+                                                0.0
+                                            ],
+                                            "scale": [
+                                                1.0,
+                                                1.0,
+                                                1.0
+                                            ],
+                                            "forward": [
+                                                0.0,
+                                                0.0,
+                                                1.0
+                                            ],
+                                            "up": [
+                                                0.0,
+                                                1.0,
+                                                0.0
+                                            ],
+                                            "inherit": true,
+                                            "rotPos": false
+                                        },
+                                        {
+                                            "name": "New Component",
+                                            "type": "MeshRender3D",
+                                            "modelName": "tunnel_t_junc",
+                                            "materialName": ""
+                                        }
+                                    ],
+                                    "childEntities": [
+                                        {
+                                            "name": "Short5",
+                                            "layer": "Default",
+                                            "display": true,
+                                            "save": true,
+                                            "components": [
+                                                {
+                                                    "name": "Transform",
+                                                    "type": "Transform",
+                                                    "position": [
+                                                        -23.399999618530273,
+                                                        0.0,
+                                                        -1.0
+                                                    ],
+                                                    "rotation": [
+                                                        0.0,
+                                                        -7.0,
+                                                        0.0
+                                                    ],
+                                                    "scale": [
+                                                        1.0,
+                                                        1.0,
+                                                        1.0
+                                                    ],
+                                                    "forward": [
+                                                        0.0,
+                                                        0.0,
+                                                        1.0
+                                                    ],
+                                                    "up": [
+                                                        0.0,
+                                                        1.0,
+                                                        0.0
+                                                    ],
+                                                    "inherit": true,
+                                                    "rotPos": false
+                                                },
+                                                {
+                                                    "name": "New Component",
+                                                    "type": "MeshRender3D",
+                                                    "modelName": "sewer_short",
+                                                    "materialName": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

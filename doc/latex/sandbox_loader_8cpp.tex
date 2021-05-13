@@ -1,0 +1,65 @@
+\hypertarget{sandbox_loader_8cpp}{}\doxysection{C\+:/doc/src/sandbox/src/loaders/sandbox\+Loader.cpp File Reference}
+\label{sandbox_loader_8cpp}\index{C:/doc/src/sandbox/src/loaders/sandboxLoader.cpp@{C:/doc/src/sandbox/src/loaders/sandboxLoader.cpp}}
+
+
+A scene loader class which loads the scene from a J\+S\+ON file.  
+
+
+{\ttfamily \#include \char`\"{}sandbox\+\_\+pch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}loaders/sandbox\+Loader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/systems/systems/scene\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/systems/systems/script\+Manager.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Objects/player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Objects/cyborg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Objects/monster.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/\+F\+P\+S\+Counter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/main\+Menu\+Text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/pause\+Menu\+Text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/credits\+Menu\+Text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/level\+Complete\+Text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/level\+Complete\+Script.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/game\+Over\+Text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/settings\+Menu\+Text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/settings/keybind\+Text.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/settings/checkbox.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/settings/audiocheckbox.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Objects/static\+Light.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/loading/resources\+Script.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Objects/door\+Lock.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/main\+Menu/camera\+Rotation\+Script.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/pause\+Script.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/game\+Over\+Script.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/menus/settings\+Script.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/engine\+Script.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/\+U\+I/starting\+Message.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/testing/test\+Script.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Objects/floor\+Detector.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Objects/keycard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Objects/keycard\+U\+I.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Objects/viewable\+Map.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Objects/ladder.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scripts/game\+Objects/blobber.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layers/default\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layers/\+U\+I\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layers/pause\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layers/game\+Over\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layers/settings\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layers/starting\+Message\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layers/level\+Complete\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}layers/credits\+Layer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/render\+Passes/passes/first\+Pass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/render\+Passes/passes/second\+Pass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/render\+Passes/passes/third\+Pass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/render\+Passes/passes/fourth\+Pass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/render\+Passes/passes/\+U\+I\+Pass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/rendering/render\+Passes/passes/blur\+Pass.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}independent/file/scene\+Loader.\+h\char`\"{}}\newline
+
+
+\doxysubsection{Detailed Description}
+A scene loader class which loads the scene from a J\+S\+ON file. 
+
+\begin{DoxyAuthor}{Author}
+Daniel Bullin and Joshua Simons 
+\end{DoxyAuthor}

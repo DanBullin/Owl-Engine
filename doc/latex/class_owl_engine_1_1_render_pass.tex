@@ -1,0 +1,233 @@
+\hypertarget{class_owl_engine_1_1_render_pass}{}\doxysection{Owl\+Engine\+::Render\+Pass Class Reference}
+\label{class_owl_engine_1_1_render_pass}\index{OwlEngine::RenderPass@{OwlEngine::RenderPass}}
+
+
+Forward declare scene.  
+
+
+
+
+{\ttfamily \#include $<$render\+Pass.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Render\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.188960cm]{class_owl_engine_1_1_render_pass}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_render_pass_a402d89f88d02a8de1e61f5daa4ca4c18}{Render\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a60972c502a6c7e737c0357eb1afa7ea2}{$\sim$\+Render\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a53acb6a6d144feea5b09039e722d24ae}\label{class_owl_engine_1_1_render_pass_a53acb6a6d144feea5b09039e722d24ae}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a53acb6a6d144feea5b09039e722d24ae}{on\+Attach}} ()
+\begin{DoxyCompactList}\small\item\em Called when the pass is attached to a scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a309e190379b59d308d34f883d03be395}\label{class_owl_engine_1_1_render_pass_a309e190379b59d308d34f883d03be395}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a309e190379b59d308d34f883d03be395}{on\+Detach}} ()
+\begin{DoxyCompactList}\small\item\em Called when the pass is detached from a scene. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_ace743fe2847d4a4521eb5308d9d2bcd3}\label{class_owl_engine_1_1_render_pass_ace743fe2847d4a4521eb5308d9d2bcd3}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_render_pass_ace743fe2847d4a4521eb5308d9d2bcd3}{on\+Render}} (std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \&entities)=0
+\begin{DoxyCompactList}\small\item\em The rendering to perform for this pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a3589ca78070a8173282ea6890d592103}\label{class_owl_engine_1_1_render_pass_a3589ca78070a8173282ea6890d592103}} 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a3589ca78070a8173282ea6890d592103}{get\+Frame\+Buffer}} ()=0
+\begin{DoxyCompactList}\small\item\em Get a framebuffer from the render pass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a84cf619cc96ea6bfe6215105bd10eaa8}{attach\+Scene}} (\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$scene)
+\begin{DoxyCompactList}\small\item\em Attach the scene to this pass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a7818fe41ad028aa24a0de4bda952699b}{set\+Enabled}} (const bool value)
+\begin{DoxyCompactList}\small\item\em Set whether to enable this render pass. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_render_pass_ac7a21cffad35c3b780243b5bdcfceaf1}{get\+Enabled}} () const
+\begin{DoxyCompactList}\small\item\em Get whether to process this render pass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_render_pass_aba40c8264431c12fff5a625d9dd9a7bf}{set\+Name}} (const std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Set the name of this render pass. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_owl_engine_1_1_render_pass_ac92b25139ea1f4b7aca9a14660dbada8}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of this render pass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a09c75b4259ae8199e8782eb8a0bfb152}{set\+Index}} (const uint32\+\_\+t index)
+\begin{DoxyCompactList}\small\item\em Set the index of this pass. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a279c7cd3705bb622bbbcd168bb779d80}{get\+Index}} () const
+\begin{DoxyCompactList}\small\item\em Get index of this pass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_ae801a086245d29d86850856e31250918}\label{class_owl_engine_1_1_render_pass_ae801a086245d29d86850856e31250918}} 
+std\+::string \mbox{\hyperlink{class_owl_engine_1_1_render_pass_ae801a086245d29d86850856e31250918}{m\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em The name of the pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_aab26270cf68b84b545308f7c26306d86}\label{class_owl_engine_1_1_render_pass_aab26270cf68b84b545308f7c26306d86}} 
+bool \mbox{\hyperlink{class_owl_engine_1_1_render_pass_aab26270cf68b84b545308f7c26306d86}{m\+\_\+enabled}}
+\begin{DoxyCompactList}\small\item\em Is the render pass enabled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a18717145fbac9ebbc6bc741173adc76f}\label{class_owl_engine_1_1_render_pass_a18717145fbac9ebbc6bc741173adc76f}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a18717145fbac9ebbc6bc741173adc76f}{m\+\_\+index}}
+\begin{DoxyCompactList}\small\item\em The index of this pass in the list of passes this pass is connected with. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a590b7ab00cd8d4216740a2b14c0dd33b}\label{class_owl_engine_1_1_render_pass_a590b7ab00cd8d4216740a2b14c0dd33b}} 
+\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a590b7ab00cd8d4216740a2b14c0dd33b}{m\+\_\+attached\+Scene}}
+\begin{DoxyCompactList}\small\item\em The scene this pass is attached to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a82393d0472c383e7def501d000ddb294}{s\+\_\+initialised}} = false
+\begin{DoxyCompactList}\small\item\em Has the pass been initialised. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Forward declare scene. 
+
+An interface class for a render pass 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a402d89f88d02a8de1e61f5daa4ca4c18}\label{class_owl_engine_1_1_render_pass_a402d89f88d02a8de1e61f5daa4ca4c18}} 
+\index{OwlEngine::RenderPass@{OwlEngine::RenderPass}!RenderPass@{RenderPass}}
+\index{RenderPass@{RenderPass}!OwlEngine::RenderPass@{OwlEngine::RenderPass}}
+\doxysubsubsection{\texorpdfstring{RenderPass()}{RenderPass()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Render\+Pass\+::\+Render\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_pass_a402d89f88d02a8de1e61f5daa4ca4c18}{Render\+Pass()}} \mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a60972c502a6c7e737c0357eb1afa7ea2}\label{class_owl_engine_1_1_render_pass_a60972c502a6c7e737c0357eb1afa7ea2}} 
+\index{OwlEngine::RenderPass@{OwlEngine::RenderPass}!````~RenderPass@{$\sim$RenderPass}}
+\index{````~RenderPass@{$\sim$RenderPass}!OwlEngine::RenderPass@{OwlEngine::RenderPass}}
+\doxysubsubsection{\texorpdfstring{$\sim$RenderPass()}{~RenderPass()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Render\+Pass\+::$\sim$\+Render\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_pass_a60972c502a6c7e737c0357eb1afa7ea2}{$\sim$\+Render\+Pass()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a84cf619cc96ea6bfe6215105bd10eaa8}\label{class_owl_engine_1_1_render_pass_a84cf619cc96ea6bfe6215105bd10eaa8}} 
+\index{OwlEngine::RenderPass@{OwlEngine::RenderPass}!attachScene@{attachScene}}
+\index{attachScene@{attachScene}!OwlEngine::RenderPass@{OwlEngine::RenderPass}}
+\doxysubsubsection{\texorpdfstring{attachScene()}{attachScene()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Render\+Pass\+::attach\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$}]{scene }\end{DoxyParamCaption})}
+
+
+
+Attach the scene to this pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_pass_a84cf619cc96ea6bfe6215105bd10eaa8}{attach\+Scene()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & a Scene$\ast$ -\/ A pointer to the scene this render pass is attached to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_ac7a21cffad35c3b780243b5bdcfceaf1}\label{class_owl_engine_1_1_render_pass_ac7a21cffad35c3b780243b5bdcfceaf1}} 
+\index{OwlEngine::RenderPass@{OwlEngine::RenderPass}!getEnabled@{getEnabled}}
+\index{getEnabled@{getEnabled}!OwlEngine::RenderPass@{OwlEngine::RenderPass}}
+\doxysubsubsection{\texorpdfstring{getEnabled()}{getEnabled()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Render\+Pass\+::get\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get whether to process this render pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_pass_ac7a21cffad35c3b780243b5bdcfceaf1}{get\+Enabled()}}
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is this render pass enabled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a279c7cd3705bb622bbbcd168bb779d80}\label{class_owl_engine_1_1_render_pass_a279c7cd3705bb622bbbcd168bb779d80}} 
+\index{OwlEngine::RenderPass@{OwlEngine::RenderPass}!getIndex@{getIndex}}
+\index{getIndex@{getIndex}!OwlEngine::RenderPass@{OwlEngine::RenderPass}}
+\doxysubsubsection{\texorpdfstring{getIndex()}{getIndex()}}
+{\footnotesize\ttfamily uint32\+\_\+t Owl\+Engine\+::\+Render\+Pass\+::get\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get index of this pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_pass_a279c7cd3705bb622bbbcd168bb779d80}{get\+Index()}}
+
+\begin{DoxyReturn}{Returns}
+an uint32\+\_\+t -\/ The index of the pass in the scene\textquotesingle{}s list of passes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_ac92b25139ea1f4b7aca9a14660dbada8}\label{class_owl_engine_1_1_render_pass_ac92b25139ea1f4b7aca9a14660dbada8}} 
+\index{OwlEngine::RenderPass@{OwlEngine::RenderPass}!getName@{getName}}
+\index{getName@{getName}!OwlEngine::RenderPass@{OwlEngine::RenderPass}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Owl\+Engine\+::\+Render\+Pass\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of this render pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_pass_ac92b25139ea1f4b7aca9a14660dbada8}{get\+Name()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::string -\/ The name of the pass 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a7818fe41ad028aa24a0de4bda952699b}\label{class_owl_engine_1_1_render_pass_a7818fe41ad028aa24a0de4bda952699b}} 
+\index{OwlEngine::RenderPass@{OwlEngine::RenderPass}!setEnabled@{setEnabled}}
+\index{setEnabled@{setEnabled}!OwlEngine::RenderPass@{OwlEngine::RenderPass}}
+\doxysubsubsection{\texorpdfstring{setEnabled()}{setEnabled()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Render\+Pass\+::set\+Enabled (\begin{DoxyParamCaption}\item[{const bool}]{value }\end{DoxyParamCaption})}
+
+
+
+Set whether to enable this render pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_pass_a7818fe41ad028aa24a0de4bda952699b}{set\+Enabled()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & a const bool -\/ Set whether this render pass is enabled \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a09c75b4259ae8199e8782eb8a0bfb152}\label{class_owl_engine_1_1_render_pass_a09c75b4259ae8199e8782eb8a0bfb152}} 
+\index{OwlEngine::RenderPass@{OwlEngine::RenderPass}!setIndex@{setIndex}}
+\index{setIndex@{setIndex}!OwlEngine::RenderPass@{OwlEngine::RenderPass}}
+\doxysubsubsection{\texorpdfstring{setIndex()}{setIndex()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Render\+Pass\+::set\+Index (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+
+
+Set the index of this pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_pass_a09c75b4259ae8199e8782eb8a0bfb152}{set\+Index()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & a const uint32\+\_\+t -\/ The index of the pass \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_aba40c8264431c12fff5a625d9dd9a7bf}\label{class_owl_engine_1_1_render_pass_aba40c8264431c12fff5a625d9dd9a7bf}} 
+\index{OwlEngine::RenderPass@{OwlEngine::RenderPass}!setName@{setName}}
+\index{setName@{setName}!OwlEngine::RenderPass@{OwlEngine::RenderPass}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Render\+Pass\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the name of this render pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_render_pass_aba40c8264431c12fff5a625d9dd9a7bf}{set\+Name()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & a const std\+::string\& -\/ The name of the pass \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_render_pass_a82393d0472c383e7def501d000ddb294}\label{class_owl_engine_1_1_render_pass_a82393d0472c383e7def501d000ddb294}} 
+\index{OwlEngine::RenderPass@{OwlEngine::RenderPass}!s\_initialised@{s\_initialised}}
+\index{s\_initialised@{s\_initialised}!OwlEngine::RenderPass@{OwlEngine::RenderPass}}
+\doxysubsubsection{\texorpdfstring{s\_initialised}{s\_initialised}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Render\+Pass\+::s\+\_\+initialised = false\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Has the pass been initialised. 
+
+Initialise to false. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/render\+Passes/\mbox{\hyperlink{render_pass_8h}{render\+Pass.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/render\+Passes/\mbox{\hyperlink{render_pass_8cpp}{render\+Pass.\+cpp}}\end{DoxyCompactItemize}

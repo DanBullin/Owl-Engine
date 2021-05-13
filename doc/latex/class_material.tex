@@ -1,0 +1,362 @@
+\hypertarget{class_material}{}\doxysection{Material Class Reference}
+\label{class_material}\index{Material@{Material}}
+
+
+A material class containing shader data to use when rendering.  
+
+
+
+
+{\ttfamily \#include $<$material.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_material_a0f9910014a53be63197c7da3590a7283}{Material}} (const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&diffuse\+Texture, const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&specular\+Texture, const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&normal\+Texture, const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&height\+Texture, const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&cube\+Texture, const float shininess, const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \&shader, const glm\+::vec4 \&tint)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_material_a2c19452d71f54075df8f5405b03129f4}{$\sim$\+Material}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_material_aef76b467fb93a9dbab5c89a9099df80a}{set\+Diffuse\+Texture}} (const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&texture)
+\begin{DoxyCompactList}\small\item\em Set the diffuse map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& \mbox{\hyperlink{class_material_abe9b3bc908ddfed12d3593a91a795d51}{get\+Diffuse\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Get the diffuse map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_material_aa72e267259a761732f4fc7eac77e2057}{set\+Specular\+Texture}} (const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&texture)
+\begin{DoxyCompactList}\small\item\em Set the specular map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& \mbox{\hyperlink{class_material_abdb12b96141a0ab34e477a4e306c7e22}{get\+Specular\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Get the specular map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_material_ac5260bc18256a6c036e319cdd06aeb07}{set\+Normal\+Texture}} (const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&texture)
+\begin{DoxyCompactList}\small\item\em Set the normal map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& \mbox{\hyperlink{class_material_a4bcc52240c885f931f6aea75f8a36948}{get\+Normal\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Get the normal map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_material_aa87661b9aebc30b4f0f9b212e65196b8}{set\+Height\+Texture}} (const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&texture)
+\begin{DoxyCompactList}\small\item\em Set the height map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& \mbox{\hyperlink{class_material_a679f42debcedb2b4e73c6a43a7fd39e4}{get\+Height\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Get the height map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_material_aacf18093bac059ea031565eda0a9f5b6}{set\+Cubemap}} (const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&texture)
+\begin{DoxyCompactList}\small\item\em Set the cubemap. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& \mbox{\hyperlink{class_material_a15dab403cfa4bb2c616762a50be3319c}{get\+Cubemap}} ()
+\begin{DoxyCompactList}\small\item\em Get the cubemap. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_material_a1751de2b34236fe1bbedc552597ffb53}{set\+Shininess}} (const float value)
+\begin{DoxyCompactList}\small\item\em Set the shininess. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_material_af4a4b75421a39120c621d26403ed2050}{get\+Shininess}} ()
+\begin{DoxyCompactList}\small\item\em Get the shininess. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_material_a69d9ffd0db45c1f50b042ad94807d7a0}{set\+Shader}} (const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \&shader\+Program)
+\begin{DoxyCompactList}\small\item\em Set the shader to use. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \& \mbox{\hyperlink{class_material_ad4854fe67555b78a3cfa55c7f425dc8e}{get\+Shader}} ()
+\begin{DoxyCompactList}\small\item\em Get the shader to use. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_material_a289ed1301afa77da5e3a3bb36cc1fa8b}{set\+Tint}} (const glm\+::vec4 \&tint)
+\begin{DoxyCompactList}\small\item\em Set the material tint. \end{DoxyCompactList}\item 
+glm\+::vec4 \& \mbox{\hyperlink{class_material_a2371612e51699265ac573d8beb47718e}{get\+Tint}} ()
+\begin{DoxyCompactList}\small\item\em Get the material tint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A material class containing shader data to use when rendering. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_material_a0f9910014a53be63197c7da3590a7283}\label{class_material_a0f9910014a53be63197c7da3590a7283}} 
+\index{Material@{Material}!Material@{Material}}
+\index{Material@{Material}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{Material()}{Material()}}
+{\footnotesize\ttfamily Material\+::\+Material (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{diffuse\+Texture,  }\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{specular\+Texture,  }\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{normal\+Texture,  }\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{height\+Texture,  }\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{cube\+Texture,  }\item[{const float}]{shininess,  }\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \&}]{shader,  }\item[{const glm\+::vec4 \&}]{tint }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_material_a0f9910014a53be63197c7da3590a7283}{Material()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em diffuse\+Texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the diffuse texture \\
+\hline
+{\em specular\+Texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the specular texture \\
+\hline
+{\em normal\+Texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the normal texture \\
+\hline
+{\em height\+Texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the height texture \\
+\hline
+{\em cube\+Texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the cubemap texture \\
+\hline
+{\em shininess} & a const float -\/ The shininess value \\
+\hline
+{\em shader} & a const std\+::shared\+\_\+ptr$<$\+Shader\+Program$>$\& -\/ A reference pointer to the shader program \\
+\hline
+{\em tint} & a const glm\+::vec4\& -\/ A reference to a vector 4 \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_a2c19452d71f54075df8f5405b03129f4}\label{class_material_a2c19452d71f54075df8f5405b03129f4}} 
+\index{Material@{Material}!````~Material@{$\sim$Material}}
+\index{````~Material@{$\sim$Material}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{$\sim$Material()}{~Material()}}
+{\footnotesize\ttfamily Material\+::$\sim$\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_material_a2c19452d71f54075df8f5405b03129f4}{$\sim$\+Material()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_material_a15dab403cfa4bb2c616762a50be3319c}\label{class_material_a15dab403cfa4bb2c616762a50be3319c}} 
+\index{Material@{Material}!getCubemap@{getCubemap}}
+\index{getCubemap@{getCubemap}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{getCubemap()}{getCubemap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& Material\+::get\+Cubemap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the cubemap. 
+
+\mbox{\hyperlink{class_material_a15dab403cfa4bb2c616762a50be3319c}{get\+Cubemap()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the cubemap texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_material_abe9b3bc908ddfed12d3593a91a795d51}\label{class_material_abe9b3bc908ddfed12d3593a91a795d51}} 
+\index{Material@{Material}!getDiffuseTexture@{getDiffuseTexture}}
+\index{getDiffuseTexture@{getDiffuseTexture}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{getDiffuseTexture()}{getDiffuseTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& Material\+::get\+Diffuse\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the diffuse map. 
+
+\mbox{\hyperlink{class_material_abe9b3bc908ddfed12d3593a91a795d51}{get\+Diffuse\+Texture()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the diffuse texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_material_a679f42debcedb2b4e73c6a43a7fd39e4}\label{class_material_a679f42debcedb2b4e73c6a43a7fd39e4}} 
+\index{Material@{Material}!getHeightTexture@{getHeightTexture}}
+\index{getHeightTexture@{getHeightTexture}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{getHeightTexture()}{getHeightTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& Material\+::get\+Height\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the height map. 
+
+\mbox{\hyperlink{class_material_a679f42debcedb2b4e73c6a43a7fd39e4}{get\+Height\+Texture()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the height texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_material_a4bcc52240c885f931f6aea75f8a36948}\label{class_material_a4bcc52240c885f931f6aea75f8a36948}} 
+\index{Material@{Material}!getNormalTexture@{getNormalTexture}}
+\index{getNormalTexture@{getNormalTexture}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{getNormalTexture()}{getNormalTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& Material\+::get\+Normal\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the normal map. 
+
+\mbox{\hyperlink{class_material_a4bcc52240c885f931f6aea75f8a36948}{get\+Normal\+Texture()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the normal texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_material_ad4854fe67555b78a3cfa55c7f425dc8e}\label{class_material_ad4854fe67555b78a3cfa55c7f425dc8e}} 
+\index{Material@{Material}!getShader@{getShader}}
+\index{getShader@{getShader}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{getShader()}{getShader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \& Material\+::get\+Shader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the shader to use. 
+
+\mbox{\hyperlink{class_material_ad4854fe67555b78a3cfa55c7f425dc8e}{get\+Shader()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Shader\+Program$>$\& -\/ A reference pointer to the shader program 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_material_af4a4b75421a39120c621d26403ed2050}\label{class_material_af4a4b75421a39120c621d26403ed2050}} 
+\index{Material@{Material}!getShininess@{getShininess}}
+\index{getShininess@{getShininess}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{getShininess()}{getShininess()}}
+{\footnotesize\ttfamily float Material\+::get\+Shininess (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the shininess. 
+
+\mbox{\hyperlink{class_material_af4a4b75421a39120c621d26403ed2050}{get\+Shininess()}}
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The shininess value 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_material_abdb12b96141a0ab34e477a4e306c7e22}\label{class_material_abdb12b96141a0ab34e477a4e306c7e22}} 
+\index{Material@{Material}!getSpecularTexture@{getSpecularTexture}}
+\index{getSpecularTexture@{getSpecularTexture}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{getSpecularTexture()}{getSpecularTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& Material\+::get\+Specular\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the specular map. 
+
+\mbox{\hyperlink{class_material_abdb12b96141a0ab34e477a4e306c7e22}{get\+Specular\+Texture()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the specular texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_material_a2371612e51699265ac573d8beb47718e}\label{class_material_a2371612e51699265ac573d8beb47718e}} 
+\index{Material@{Material}!getTint@{getTint}}
+\index{getTint@{getTint}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{getTint()}{getTint()}}
+{\footnotesize\ttfamily glm\+::vec4 \& Material\+::get\+Tint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the material tint. 
+
+\mbox{\hyperlink{class_material_a2371612e51699265ac573d8beb47718e}{get\+Tint()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec4\& -\/ A reference to a vec4 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_material_aacf18093bac059ea031565eda0a9f5b6}\label{class_material_aacf18093bac059ea031565eda0a9f5b6}} 
+\index{Material@{Material}!setCubemap@{setCubemap}}
+\index{setCubemap@{setCubemap}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{setCubemap()}{setCubemap()}}
+{\footnotesize\ttfamily void Material\+::set\+Cubemap (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{texture }\end{DoxyParamCaption})}
+
+
+
+Set the cubemap. 
+
+\mbox{\hyperlink{class_material_aacf18093bac059ea031565eda0a9f5b6}{set\+Cubemap()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the cubemap texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_aef76b467fb93a9dbab5c89a9099df80a}\label{class_material_aef76b467fb93a9dbab5c89a9099df80a}} 
+\index{Material@{Material}!setDiffuseTexture@{setDiffuseTexture}}
+\index{setDiffuseTexture@{setDiffuseTexture}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{setDiffuseTexture()}{setDiffuseTexture()}}
+{\footnotesize\ttfamily void Material\+::set\+Diffuse\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{texture }\end{DoxyParamCaption})}
+
+
+
+Set the diffuse map. 
+
+\mbox{\hyperlink{class_material_aef76b467fb93a9dbab5c89a9099df80a}{set\+Diffuse\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the diffuse texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_aa87661b9aebc30b4f0f9b212e65196b8}\label{class_material_aa87661b9aebc30b4f0f9b212e65196b8}} 
+\index{Material@{Material}!setHeightTexture@{setHeightTexture}}
+\index{setHeightTexture@{setHeightTexture}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{setHeightTexture()}{setHeightTexture()}}
+{\footnotesize\ttfamily void Material\+::set\+Height\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{texture }\end{DoxyParamCaption})}
+
+
+
+Set the height map. 
+
+\mbox{\hyperlink{class_material_aa87661b9aebc30b4f0f9b212e65196b8}{set\+Height\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the height texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_ac5260bc18256a6c036e319cdd06aeb07}\label{class_material_ac5260bc18256a6c036e319cdd06aeb07}} 
+\index{Material@{Material}!setNormalTexture@{setNormalTexture}}
+\index{setNormalTexture@{setNormalTexture}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{setNormalTexture()}{setNormalTexture()}}
+{\footnotesize\ttfamily void Material\+::set\+Normal\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{texture }\end{DoxyParamCaption})}
+
+
+
+Set the normal map. 
+
+\mbox{\hyperlink{class_material_ac5260bc18256a6c036e319cdd06aeb07}{set\+Normal\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the normal texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_a69d9ffd0db45c1f50b042ad94807d7a0}\label{class_material_a69d9ffd0db45c1f50b042ad94807d7a0}} 
+\index{Material@{Material}!setShader@{setShader}}
+\index{setShader@{setShader}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{setShader()}{setShader()}}
+{\footnotesize\ttfamily void Material\+::set\+Shader (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \&}]{shader\+Program }\end{DoxyParamCaption})}
+
+
+
+Set the shader to use. 
+
+\mbox{\hyperlink{class_material_a69d9ffd0db45c1f50b042ad94807d7a0}{set\+Shader()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader\+Program} & a const std\+::shared\+\_\+ptr$<$\+Shader\+Program$>$\& -\/ A reference pointer to the shader program \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_a1751de2b34236fe1bbedc552597ffb53}\label{class_material_a1751de2b34236fe1bbedc552597ffb53}} 
+\index{Material@{Material}!setShininess@{setShininess}}
+\index{setShininess@{setShininess}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{setShininess()}{setShininess()}}
+{\footnotesize\ttfamily void Material\+::set\+Shininess (\begin{DoxyParamCaption}\item[{const float}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the shininess. 
+
+\mbox{\hyperlink{class_material_a1751de2b34236fe1bbedc552597ffb53}{set\+Shininess()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & a const float -\/ The shininess value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_aa72e267259a761732f4fc7eac77e2057}\label{class_material_aa72e267259a761732f4fc7eac77e2057}} 
+\index{Material@{Material}!setSpecularTexture@{setSpecularTexture}}
+\index{setSpecularTexture@{setSpecularTexture}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{setSpecularTexture()}{setSpecularTexture()}}
+{\footnotesize\ttfamily void Material\+::set\+Specular\+Texture (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{texture }\end{DoxyParamCaption})}
+
+
+
+Set the specular map. 
+
+\mbox{\hyperlink{class_material_aa72e267259a761732f4fc7eac77e2057}{set\+Specular\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference pointer to the specular texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_material_a289ed1301afa77da5e3a3bb36cc1fa8b}\label{class_material_a289ed1301afa77da5e3a3bb36cc1fa8b}} 
+\index{Material@{Material}!setTint@{setTint}}
+\index{setTint@{setTint}!Material@{Material}}
+\doxysubsubsection{\texorpdfstring{setTint()}{setTint()}}
+{\footnotesize\ttfamily void Material\+::set\+Tint (\begin{DoxyParamCaption}\item[{const glm\+::vec4 \&}]{tint }\end{DoxyParamCaption})}
+
+
+
+Set the material tint. 
+
+\mbox{\hyperlink{class_material_a289ed1301afa77da5e3a3bb36cc1fa8b}{set\+Tint()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em tint} & a const glm\+::vec4\& -\/ A reference to a vec4 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/rendering/\mbox{\hyperlink{material_8h}{material.\+h}}\item 
+C\+:/doc/src/src/rendering/\mbox{\hyperlink{material_8cpp}{material.\+cpp}}\end{DoxyCompactItemize}

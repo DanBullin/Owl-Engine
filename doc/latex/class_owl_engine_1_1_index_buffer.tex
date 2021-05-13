@@ -1,0 +1,186 @@
+\hypertarget{class_owl_engine_1_1_index_buffer}{}\doxysection{Owl\+Engine\+::Index\+Buffer Class Reference}
+\label{class_owl_engine_1_1_index_buffer}\index{OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}}
+
+
+An A\+PI agnostic Index buffer.  
+
+
+
+
+{\ttfamily \#include $<$index\+Buffer.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Index\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_owl_engine_1_1_index_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_index_buffer_a04ad7d69cdbf5eb414f0543d480e4ee3}{Index\+Buffer}} (const std\+::string \&index\+Buffer\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_a7878cc4f50275d113c2687152b9d3e37}{$\sim$\+Index\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_a32590984a98efcf830f92fb39eb3cab6}{get\+Buffer\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the buffer ID. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_a4a8d81f2b3b19168b1d6d846152b1e1a}{get\+Byte\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size of this buffer in bytes. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_a714ad72416b899effdb6542a1333004b}{get\+Indices\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of indices. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_aa857b2314af9dfd4857c650f09b0f8be}{edit}} (const void $\ast$indices, const uint32\+\_\+t size, const uint32\+\_\+t offset)=0
+\begin{DoxyCompactList}\small\item\em Edit the index buffer contents. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_ab7657c41eb70318655d08d5c148c124e}\label{class_owl_engine_1_1_index_buffer_ab7657c41eb70318655d08d5c148c124e}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_ab7657c41eb70318655d08d5c148c124e}{bind}} ()=0
+\begin{DoxyCompactList}\small\item\em Bind the buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_aff8d203f1d43836a632034e1ae90f29b}\label{class_owl_engine_1_1_index_buffer_aff8d203f1d43836a632034e1ae90f29b}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_aff8d203f1d43836a632034e1ae90f29b}{unbind}} ()=0
+\begin{DoxyCompactList}\small\item\em Unbind the buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_ac51795b924ea811a555137072abc6c30}\label{class_owl_engine_1_1_index_buffer_ac51795b924ea811a555137072abc6c30}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_ac51795b924ea811a555137072abc6c30}{print\+Details}} () override=0
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_index_buffer}{Index\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_a78470084f59d16f99d040a679681c85e}{create}} (const std\+::string \&index\+Buffer\+Name, const uint32\+\_\+t $\ast$indices, const uint32\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Create an index buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_a187aaf9a7232211a61b8b01d2bc7884b}\label{class_owl_engine_1_1_index_buffer_a187aaf9a7232211a61b8b01d2bc7884b}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_a187aaf9a7232211a61b8b01d2bc7884b}{m\+\_\+index\+Buffer\+ID}}
+\begin{DoxyCompactList}\small\item\em The index Buffer ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_acc9826cc300a3dafd499c9a47f5d70f2}\label{class_owl_engine_1_1_index_buffer_acc9826cc300a3dafd499c9a47f5d70f2}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_acc9826cc300a3dafd499c9a47f5d70f2}{m\+\_\+count}}
+\begin{DoxyCompactList}\small\item\em The number of indices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_a737446a8fc3f48434d261b0e883ba2e7}\label{class_owl_engine_1_1_index_buffer_a737446a8fc3f48434d261b0e883ba2e7}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_index_buffer_a737446a8fc3f48434d261b0e883ba2e7}{m\+\_\+byte\+Size}}
+\begin{DoxyCompactList}\small\item\em The size of this buffer in bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic Index buffer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_a04ad7d69cdbf5eb414f0543d480e4ee3}\label{class_owl_engine_1_1_index_buffer_a04ad7d69cdbf5eb414f0543d480e4ee3}} 
+\index{OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}!IndexBuffer@{IndexBuffer}}
+\index{IndexBuffer@{IndexBuffer}!OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{IndexBuffer()}{IndexBuffer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Index\+Buffer\+::\+Index\+Buffer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{index\+Buffer\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_index_buffer_a04ad7d69cdbf5eb414f0543d480e4ee3}{Index\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Buffer\+Name} & a const std\+::string\& -\/ The name of the index buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_a7878cc4f50275d113c2687152b9d3e37}\label{class_owl_engine_1_1_index_buffer_a7878cc4f50275d113c2687152b9d3e37}} 
+\index{OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}!````~IndexBuffer@{$\sim$IndexBuffer}}
+\index{````~IndexBuffer@{$\sim$IndexBuffer}!OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$IndexBuffer()}{~IndexBuffer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Index\+Buffer\+::$\sim$\+Index\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_index_buffer_a7878cc4f50275d113c2687152b9d3e37}{$\sim$\+Index\+Buffer()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_a78470084f59d16f99d040a679681c85e}\label{class_owl_engine_1_1_index_buffer_a78470084f59d16f99d040a679681c85e}} 
+\index{OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}!create@{create}}
+\index{create@{create}!OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_index_buffer}{Index\+Buffer}} $\ast$ Owl\+Engine\+::\+Index\+Buffer\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{index\+Buffer\+Name,  }\item[{const uint32\+\_\+t $\ast$}]{indices,  }\item[{const uint32\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create an index buffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_index_buffer_a78470084f59d16f99d040a679681c85e}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em index\+Buffer\+Name} & a const std\+::string\& -\/ The name of the index buffer \\
+\hline
+{\em indices} & a const uint32\+\_\+t$\ast$ -\/ The indices info \\
+\hline
+{\em count} & a const uint32\+\_\+t -\/ The number of indices \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Index\+Buffer$\ast$ -\/ The index buffer of type defined by the graphics A\+PI chosen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_aa857b2314af9dfd4857c650f09b0f8be}\label{class_owl_engine_1_1_index_buffer_aa857b2314af9dfd4857c650f09b0f8be}} 
+\index{OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}!edit@{edit}}
+\index{edit@{edit}!OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Index\+Buffer\+::edit (\begin{DoxyParamCaption}\item[{const void $\ast$}]{indices,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const uint32\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Edit the index buffer contents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indices} & a const void$\ast$ -\/The indices info \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The number of indices in the indices data \\
+\hline
+{\em offset} & a const int32\+\_\+t -\/ The offset of where to place the new data in terms of index count \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_index_buffer_a619a7b6ffe5572887f4da6065f27591c}{Owl\+Engine\+::\+Open\+G\+L\+Index\+Buffer}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_a32590984a98efcf830f92fb39eb3cab6}\label{class_owl_engine_1_1_index_buffer_a32590984a98efcf830f92fb39eb3cab6}} 
+\index{OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}!getBufferID@{getBufferID}}
+\index{getBufferID@{getBufferID}!OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{getBufferID()}{getBufferID()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Index\+Buffer\+::get\+Buffer\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the buffer ID. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The ID of the buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_a4a8d81f2b3b19168b1d6d846152b1e1a}\label{class_owl_engine_1_1_index_buffer_a4a8d81f2b3b19168b1d6d846152b1e1a}} 
+\index{OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}!getByteSize@{getByteSize}}
+\index{getByteSize@{getByteSize}!OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{getByteSize()}{getByteSize()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Index\+Buffer\+::get\+Byte\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the size of this buffer in bytes. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The size of the index buffer in bytes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_index_buffer_a714ad72416b899effdb6542a1333004b}\label{class_owl_engine_1_1_index_buffer_a714ad72416b899effdb6542a1333004b}} 
+\index{OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}!getIndicesCount@{getIndicesCount}}
+\index{getIndicesCount@{getIndicesCount}!OwlEngine::IndexBuffer@{OwlEngine::IndexBuffer}}
+\doxysubsubsection{\texorpdfstring{getIndicesCount()}{getIndicesCount()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Index\+Buffer\+::get\+Indices\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the number of indices. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The number of indices 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/geometry/\mbox{\hyperlink{index_buffer_8h}{index\+Buffer.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/geometry/\mbox{\hyperlink{index_buffer_8cpp}{index\+Buffer.\+cpp}}\end{DoxyCompactItemize}

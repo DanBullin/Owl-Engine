@@ -1,0 +1,224 @@
+\hypertarget{class_owl_engine_1_1_u_i_1_1_canvas}{}\doxysection{Owl\+Engine\+::UI\+::Canvas Class Reference}
+\label{class_owl_engine_1_1_u_i_1_1_canvas}\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+
+
+A canvas for UI.  
+
+
+
+
+{\ttfamily \#include $<$canvas.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::UI\+::Canvas\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_u_i_1_1_canvas}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a763b3357bd79d801c82ec943102020f4}{Canvas}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a9618789120142d1bb1e5beb92d745b61}{Canvas}} (glm\+::vec2 size, bool watching, bool init=true)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a107ac417868799fdd2565986b007748d}{$\sim$\+Canvas}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a060e6476ce2866a5710f138da728e47d}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a99d36e5a524f25d4bc4403f3c84ab097}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a7aea18e15410f6a923098d67862075bc}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a64bb044bb2728477b892f23d740a6f4a}{set\+Screen\+Size}} (glm\+::vec2 size)
+\begin{DoxyCompactList}\small\item\em Sets the screen size. \end{DoxyCompactList}\item 
+glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_ad7598f7b8b59c1716f051e296593eb94}{get\+Screen\+Size}} ()
+\begin{DoxyCompactList}\small\item\em returns the screen size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a77461ce6583c617865accf4e5360b42d}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a4d584b40dd884fb4e85a1bda0207abe2}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data in J\+S\+ON format. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_ae853922f67d3c8eb2be667fe2f317e2b}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Display the component in Im\+G\+UI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A canvas for UI. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_canvas_a763b3357bd79d801c82ec943102020f4}\label{class_owl_engine_1_1_u_i_1_1_canvas_a763b3357bd79d801c82ec943102020f4}} 
+\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}!Canvas@{Canvas}}
+\index{Canvas@{Canvas}!OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+\doxysubsubsection{\texorpdfstring{Canvas()}{Canvas()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+U\+I\+::\+Canvas\+::\+Canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a763b3357bd79d801c82ec943102020f4}{Canvas()}} \mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_canvas_a9618789120142d1bb1e5beb92d745b61}\label{class_owl_engine_1_1_u_i_1_1_canvas_a9618789120142d1bb1e5beb92d745b61}} 
+\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}!Canvas@{Canvas}}
+\index{Canvas@{Canvas}!OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+\doxysubsubsection{\texorpdfstring{Canvas()}{Canvas()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+U\+I\+::\+Canvas\+::\+Canvas (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{size,  }\item[{bool}]{watching,  }\item[{bool}]{init = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas}{Canvas}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & a glm\+::vec2 -\/ The size of the canvas \\
+\hline
+{\em watching} & a bool -\/ Is it watching the scene viewport \\
+\hline
+{\em init} & a bool -\/ Has it been initialised \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_canvas_a107ac417868799fdd2565986b007748d}\label{class_owl_engine_1_1_u_i_1_1_canvas_a107ac417868799fdd2565986b007748d}} 
+\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}!````~Canvas@{$\sim$Canvas}}
+\index{````~Canvas@{$\sim$Canvas}!OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+\doxysubsubsection{\texorpdfstring{$\sim$Canvas()}{~Canvas()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+U\+I\+::\+Canvas\+::$\sim$\+Canvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a107ac417868799fdd2565986b007748d}{$\sim$\+Canvas()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_canvas_ae853922f67d3c8eb2be667fe2f317e2b}\label{class_owl_engine_1_1_u_i_1_1_canvas_ae853922f67d3c8eb2be667fe2f317e2b}} 
+\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Canvas\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display the component in Im\+G\+UI. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_ae853922f67d3c8eb2be667fe2f317e2b}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_canvas_a4d584b40dd884fb4e85a1bda0207abe2}\label{class_owl_engine_1_1_u_i_1_1_canvas_a4d584b40dd884fb4e85a1bda0207abe2}} 
+\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+U\+I\+::\+Canvas\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data in J\+S\+ON format. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a4d584b40dd884fb4e85a1bda0207abe2}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_canvas_ad7598f7b8b59c1716f051e296593eb94}\label{class_owl_engine_1_1_u_i_1_1_canvas_ad7598f7b8b59c1716f051e296593eb94}} 
+\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}!getScreenSize@{getScreenSize}}
+\index{getScreenSize@{getScreenSize}!OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+\doxysubsubsection{\texorpdfstring{getScreenSize()}{getScreenSize()}}
+{\footnotesize\ttfamily glm\+::vec2 Owl\+Engine\+::\+U\+I\+::\+Canvas\+::get\+Screen\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the screen size 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_ad7598f7b8b59c1716f051e296593eb94}{get\+Screen\+Size()}} \mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_canvas_a060e6476ce2866a5710f138da728e47d}\label{class_owl_engine_1_1_u_i_1_1_canvas_a060e6476ce2866a5710f138da728e47d}} 
+\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Canvas\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a060e6476ce2866a5710f138da728e47d}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_canvas_a99d36e5a524f25d4bc4403f3c84ab097}\label{class_owl_engine_1_1_u_i_1_1_canvas_a99d36e5a524f25d4bc4403f3c84ab097}} 
+\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Canvas\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a99d36e5a524f25d4bc4403f3c84ab097}{on\+Detach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_canvas_a7aea18e15410f6a923098d67862075bc}\label{class_owl_engine_1_1_u_i_1_1_canvas_a7aea18e15410f6a923098d67862075bc}} 
+\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Canvas\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a7aea18e15410f6a923098d67862075bc}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_canvas_a77461ce6583c617865accf4e5360b42d}\label{class_owl_engine_1_1_u_i_1_1_canvas_a77461ce6583c617865accf4e5360b42d}} 
+\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Canvas\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a77461ce6583c617865accf4e5360b42d}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_1_1_canvas_a64bb044bb2728477b892f23d740a6f4a}\label{class_owl_engine_1_1_u_i_1_1_canvas_a64bb044bb2728477b892f23d740a6f4a}} 
+\index{OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}!setScreenSize@{setScreenSize}}
+\index{setScreenSize@{setScreenSize}!OwlEngine::UI::Canvas@{OwlEngine::UI::Canvas}}
+\doxysubsubsection{\texorpdfstring{setScreenSize()}{setScreenSize()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+::\+Canvas\+::set\+Screen\+Size (\begin{DoxyParamCaption}\item[{glm\+::vec2}]{size }\end{DoxyParamCaption})}
+
+
+
+Sets the screen size. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a64bb044bb2728477b892f23d740a6f4a}{set\+Screen\+Size()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & a glm\+::vec2 -\/ The screen size \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{canvas_8h}{canvas.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{canvas_8cpp}{canvas.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\hypertarget{struct_hawk_engine_1_1_renderer3_d_data}{}\doxysection{Hawk\+Engine\+::Renderer3\+D\+Data Struct Reference}
+\label{struct_hawk_engine_1_1_renderer3_d_data}\index{HawkEngine::Renderer3DData@{HawkEngine::Renderer3DData}}
+
+
+A struct containing internal 3D renderer data.  
+
+
+
+
+{\ttfamily \#include $<$renderer\+Data.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_aec33929e15d55b45da665499da23799f}\label{struct_hawk_engine_1_1_renderer3_d_data_aec33929e15d55b45da665499da23799f}} 
+\mbox{\hyperlink{renderer_common_8h_a70f613e2d6c9ecf5f2ca4f06543fa17f}{Scene\+Wide\+Uniforms}} \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_aec33929e15d55b45da665499da23799f}{scene\+Wide\+Uniforms}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_scene}{Scene}} wide uniforms, this will be the list of U\+B\+Os. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_af49edd07c53c3d8b657d14e002043fbe}\label{struct_hawk_engine_1_1_renderer3_d_data_af49edd07c53c3d8b657d14e002043fbe}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_af49edd07c53c3d8b657d14e002043fbe}{texture\+Unit\+Manager}}
+\begin{DoxyCompactList}\small\item\em The texture unit manager. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_ad7a5b390e5937cb3729f8a0acb2e7e54}\label{struct_hawk_engine_1_1_renderer3_d_data_ad7a5b390e5937cb3729f8a0acb2e7e54}} 
+std\+::array$<$ int32\+\_\+t, 16 $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_ad7a5b390e5937cb3729f8a0acb2e7e54}{texture\+Unit}}
+\begin{DoxyCompactList}\small\item\em The texture unit. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_a8dc2c958a94350f14dee43f8c9fdbeec}\label{struct_hawk_engine_1_1_renderer3_d_data_a8dc2c958a94350f14dee43f8c9fdbeec}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_vertex_array}{Vertex\+Array}} $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_a8dc2c958a94350f14dee43f8c9fdbeec}{V\+AO}}
+\begin{DoxyCompactList}\small\item\em The V\+AO. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_a47d346c0743cd4deef51860109b70f44}\label{struct_hawk_engine_1_1_renderer3_d_data_a47d346c0743cd4deef51860109b70f44}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_indirect_buffer}{Indirect\+Buffer}} $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_a47d346c0743cd4deef51860109b70f44}{commands}}
+\begin{DoxyCompactList}\small\item\em The indirect buffer containing all batch commands. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_a1615326c9f400759222f7634add0dc6f}\label{struct_hawk_engine_1_1_renderer3_d_data_a1615326c9f400759222f7634add0dc6f}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_a1615326c9f400759222f7634add0dc6f}{Batch\+Capacity}} = 20
+\begin{DoxyCompactList}\small\item\em The limit of geometry in a batch. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_a98e7c10c3b868b318e3468f32d53ee95}\label{struct_hawk_engine_1_1_renderer3_d_data_a98e7c10c3b868b318e3468f32d53ee95}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_a98e7c10c3b868b318e3468f32d53ee95}{Vertex\+Capacity}} = 50000
+\begin{DoxyCompactList}\small\item\em The limit of vertices in the vertex buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_ae776c04562d552f5ff3277a7c0b152b6}\label{struct_hawk_engine_1_1_renderer3_d_data_ae776c04562d552f5ff3277a7c0b152b6}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_ae776c04562d552f5ff3277a7c0b152b6}{Index\+Capacity}} = 5000
+\begin{DoxyCompactList}\small\item\em The limit of indices in the index buffer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_a9160c52088e85712d9c87edcc3053928}\label{struct_hawk_engine_1_1_renderer3_d_data_a9160c52088e85712d9c87edcc3053928}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_a9160c52088e85712d9c87edcc3053928}{Next\+Vertex}} = 0
+\begin{DoxyCompactList}\small\item\em The next vertex in the vertex buffer where we can add new vertices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_a62936ebf32f5292d9f3d0be26e98a4a8}\label{struct_hawk_engine_1_1_renderer3_d_data_a62936ebf32f5292d9f3d0be26e98a4a8}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_a62936ebf32f5292d9f3d0be26e98a4a8}{Next\+Index}} = 0
+\begin{DoxyCompactList}\small\item\em The next index in the index buffer where we can add new indices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_abc0595982eb21ee6dd5ef6e0ed8bfe28}\label{struct_hawk_engine_1_1_renderer3_d_data_abc0595982eb21ee6dd5ef6e0ed8bfe28}} 
+std\+::vector$<$ glm\+::mat4 $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_abc0595982eb21ee6dd5ef6e0ed8bfe28}{model\+Instance\+Data}}
+\begin{DoxyCompactList}\small\item\em The model matrix instance data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_aba52da13225e16e87476544e9f1ca7d1}\label{struct_hawk_engine_1_1_renderer3_d_data_aba52da13225e16e87476544e9f1ca7d1}} 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_aba52da13225e16e87476544e9f1ca7d1}{tex\+Unit\+Instance\+Data}}
+\begin{DoxyCompactList}\small\item\em The texture unit instance data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_a93113cd0295fb99c101e262cd412eab0}\label{struct_hawk_engine_1_1_renderer3_d_data_a93113cd0295fb99c101e262cd412eab0}} 
+std\+::vector$<$ uint32\+\_\+t $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_a93113cd0295fb99c101e262cd412eab0}{tint\+Instance\+Data}}
+\begin{DoxyCompactList}\small\item\em The tint instance data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_a044291fb7c7ac5ec94980ba485a18841}\label{struct_hawk_engine_1_1_renderer3_d_data_a044291fb7c7ac5ec94980ba485a18841}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_batch_queue_entry}{Batch\+Queue\+Entry}} $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_a044291fb7c7ac5ec94980ba485a18841}{batch\+Queue}}
+\begin{DoxyCompactList}\small\item\em The list of submitted geometry in a queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer3_d_data_a3bd7054ba589ce9e595b75cd4aea9bc0}\label{struct_hawk_engine_1_1_renderer3_d_data_a3bd7054ba589ce9e595b75cd4aea9bc0}} 
+std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_draw_elements_indirect_command}{Draw\+Elements\+Indirect\+Command}} $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer3_d_data_a3bd7054ba589ce9e595b75cd4aea9bc0}{batch\+Commands\+Queue}}
+\begin{DoxyCompactList}\small\item\em The list of batch commands. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A struct containing internal 3D renderer data. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/renderers/\mbox{\hyperlink{renderer_data_8h}{renderer\+Data.\+h}}\end{DoxyCompactItemize}

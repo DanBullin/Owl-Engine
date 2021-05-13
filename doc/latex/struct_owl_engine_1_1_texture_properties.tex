@@ -1,0 +1,88 @@
+\hypertarget{struct_owl_engine_1_1_texture_properties}{}\doxysection{Owl\+Engine\+::Texture\+Properties Struct Reference}
+\label{struct_owl_engine_1_1_texture_properties}\index{OwlEngine::TextureProperties@{OwlEngine::TextureProperties}}
+
+
+All texture properties can be configured by creating an instance of this struct and passing it to the relevant create functions.  
+
+
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_owl_engine_1_1_texture_properties_a8cdbd09e4a2e08d2f7e9fe4d37308e18}{Texture\+Properties}} (const uint32\+\_\+t width=0, const uint32\+\_\+t height=0, const std\+::string \&wrapS=\char`\"{}Repeat\char`\"{}, const std\+::string \&wrapT=\char`\"{}Repeat\char`\"{}, const std\+::string \&wrapR=\char`\"{}Repeat\char`\"{}, const std\+::string \&min\+Filter=\char`\"{}Linear\char`\"{}, const std\+::string \&max\+Filter=\char`\"{}Linear\char`\"{}, const bool gamma\+Correct=false, const bool flip\+U\+Vs=false)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_texture_properties_ac36c0a9666fdd9b13847f18828fc4046}\label{struct_owl_engine_1_1_texture_properties_ac36c0a9666fdd9b13847f18828fc4046}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties_ac36c0a9666fdd9b13847f18828fc4046}{Width}}
+\begin{DoxyCompactList}\small\item\em The width of the texture if you\textquotesingle{}re not loading from file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_texture_properties_aa77361cac302a89c2eb97116f1f5c30c}\label{struct_owl_engine_1_1_texture_properties_aa77361cac302a89c2eb97116f1f5c30c}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties_aa77361cac302a89c2eb97116f1f5c30c}{Height}}
+\begin{DoxyCompactList}\small\item\em The height of the texture if you\textquotesingle{}re not loading from file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_texture_properties_aedb6bdba8bccfc98e9807380e01bac1f}\label{struct_owl_engine_1_1_texture_properties_aedb6bdba8bccfc98e9807380e01bac1f}} 
+\mbox{\hyperlink{texture_8h_aac67dde1683ab1c9e1d07f7ec0fed132}{Texture\+Parameter}} \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties_aedb6bdba8bccfc98e9807380e01bac1f}{WrapS}}
+\begin{DoxyCompactList}\small\item\em Action to take when wrapping around s coordinate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_texture_properties_a71d58a755e060fa61f869c4fa5b58f10}\label{struct_owl_engine_1_1_texture_properties_a71d58a755e060fa61f869c4fa5b58f10}} 
+\mbox{\hyperlink{texture_8h_aac67dde1683ab1c9e1d07f7ec0fed132}{Texture\+Parameter}} \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties_a71d58a755e060fa61f869c4fa5b58f10}{WrapT}}
+\begin{DoxyCompactList}\small\item\em Action to take when wrapping around t coordinate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_texture_properties_a84d8d3645b0157cceb8bcfb96469796e}\label{struct_owl_engine_1_1_texture_properties_a84d8d3645b0157cceb8bcfb96469796e}} 
+\mbox{\hyperlink{texture_8h_aac67dde1683ab1c9e1d07f7ec0fed132}{Texture\+Parameter}} \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties_a84d8d3645b0157cceb8bcfb96469796e}{WrapR}}
+\begin{DoxyCompactList}\small\item\em Action to take when wrapping around r coordinate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_texture_properties_a788fc381c966223aa8ef0619daff1b07}\label{struct_owl_engine_1_1_texture_properties_a788fc381c966223aa8ef0619daff1b07}} 
+\mbox{\hyperlink{texture_8h_aac67dde1683ab1c9e1d07f7ec0fed132}{Texture\+Parameter}} \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties_a788fc381c966223aa8ef0619daff1b07}{Min\+Filter}}
+\begin{DoxyCompactList}\small\item\em The minifying function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_texture_properties_a288a1640cd98d5683d3d72eb6e52f3a3}\label{struct_owl_engine_1_1_texture_properties_a288a1640cd98d5683d3d72eb6e52f3a3}} 
+\mbox{\hyperlink{texture_8h_aac67dde1683ab1c9e1d07f7ec0fed132}{Texture\+Parameter}} \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties_a288a1640cd98d5683d3d72eb6e52f3a3}{Max\+Filter}}
+\begin{DoxyCompactList}\small\item\em The magnification function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_texture_properties_a190d3f8ee59182c2a257efa0d019a16e}\label{struct_owl_engine_1_1_texture_properties_a190d3f8ee59182c2a257efa0d019a16e}} 
+bool \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties_a190d3f8ee59182c2a257efa0d019a16e}{Gamma\+Correct}}
+\begin{DoxyCompactList}\small\item\em Is the texture in s\+R\+GB space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_owl_engine_1_1_texture_properties_a5161b35c454c9ed2c14ef670f4e314a8}\label{struct_owl_engine_1_1_texture_properties_a5161b35c454c9ed2c14ef670f4e314a8}} 
+bool \mbox{\hyperlink{struct_owl_engine_1_1_texture_properties_a5161b35c454c9ed2c14ef670f4e314a8}{Flip\+U\+Vs}}
+\begin{DoxyCompactList}\small\item\em Should the U\+Vs be flipped. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+All texture properties can be configured by creating an instance of this struct and passing it to the relevant create functions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_owl_engine_1_1_texture_properties_a8cdbd09e4a2e08d2f7e9fe4d37308e18}\label{struct_owl_engine_1_1_texture_properties_a8cdbd09e4a2e08d2f7e9fe4d37308e18}} 
+\index{OwlEngine::TextureProperties@{OwlEngine::TextureProperties}!TextureProperties@{TextureProperties}}
+\index{TextureProperties@{TextureProperties}!OwlEngine::TextureProperties@{OwlEngine::TextureProperties}}
+\doxysubsubsection{\texorpdfstring{TextureProperties()}{TextureProperties()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Texture\+Properties\+::\+Texture\+Properties (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{width = {\ttfamily 0},  }\item[{const uint32\+\_\+t}]{height = {\ttfamily 0},  }\item[{const std\+::string \&}]{wrapS = {\ttfamily \char`\"{}Repeat\char`\"{}},  }\item[{const std\+::string \&}]{wrapT = {\ttfamily \char`\"{}Repeat\char`\"{}},  }\item[{const std\+::string \&}]{wrapR = {\ttfamily \char`\"{}Repeat\char`\"{}},  }\item[{const std\+::string \&}]{min\+Filter = {\ttfamily \char`\"{}Linear\char`\"{}},  }\item[{const std\+::string \&}]{max\+Filter = {\ttfamily \char`\"{}Linear\char`\"{}},  }\item[{const bool}]{gamma\+Correct = {\ttfamily false},  }\item[{const bool}]{flip\+U\+Vs = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & a const uint32\+\_\+t -\/ The width of the texture \\
+\hline
+{\em height} & a const uint32\+\_\+t -\/ The height of the texture \\
+\hline
+{\em wrapS} & a const std\+::string\& -\/ The wrap type along the s axis \\
+\hline
+{\em wrapT} & a const std\+::string\& -\/ The wrap type along the t axis \\
+\hline
+{\em wrapR} & a const std\+::string\& -\/ The wrap type along the r axis \\
+\hline
+{\em min\+Filter} & a const std\+::string\& -\/ The min filter \\
+\hline
+{\em max\+Filter} & a const std\+::string\& -\/ The max filter \\
+\hline
+{\em gamma\+Correct} & a const bool -\/ Do we need to gamma correct the image \\
+\hline
+{\em flip\+U\+Vs} & a const bool -\/ Do we need to flip the texture U\+Vs \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/textures/\mbox{\hyperlink{texture_8h}{texture.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{class_owl_engine_1_1_third_pass}{}\doxysection{Owl\+Engine\+::Third\+Pass Class Reference}
+\label{class_owl_engine_1_1_third_pass}\index{OwlEngine::ThirdPass@{OwlEngine::ThirdPass}}
+
+
+A third render pass.  
+
+
+
+
+{\ttfamily \#include $<$third\+Pass.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Third\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_third_pass}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_third_pass_a65eaf488250a88325676fcbe46f0577b}{Third\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_third_pass_abc57635be6f93b98e58aacf882c0705d}{$\sim$\+Third\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_third_pass_a348692ce4390e1f2f8a40eefbb52f453}{on\+Render}} (std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \&entities) override
+\begin{DoxyCompactList}\small\item\em The rendering to perform for this pass. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_third_pass_a3f9233f889870da11f355cda40eb66fd}{get\+Frame\+Buffer}} () override
+\begin{DoxyCompactList}\small\item\em Get the framebuffer of this render pass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A third render pass. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_third_pass_a65eaf488250a88325676fcbe46f0577b}\label{class_owl_engine_1_1_third_pass_a65eaf488250a88325676fcbe46f0577b}} 
+\index{OwlEngine::ThirdPass@{OwlEngine::ThirdPass}!ThirdPass@{ThirdPass}}
+\index{ThirdPass@{ThirdPass}!OwlEngine::ThirdPass@{OwlEngine::ThirdPass}}
+\doxysubsubsection{\texorpdfstring{ThirdPass()}{ThirdPass()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Third\+Pass\+::\+Third\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_third_pass_a65eaf488250a88325676fcbe46f0577b}{Third\+Pass()}} \mbox{\Hypertarget{class_owl_engine_1_1_third_pass_abc57635be6f93b98e58aacf882c0705d}\label{class_owl_engine_1_1_third_pass_abc57635be6f93b98e58aacf882c0705d}} 
+\index{OwlEngine::ThirdPass@{OwlEngine::ThirdPass}!````~ThirdPass@{$\sim$ThirdPass}}
+\index{````~ThirdPass@{$\sim$ThirdPass}!OwlEngine::ThirdPass@{OwlEngine::ThirdPass}}
+\doxysubsubsection{\texorpdfstring{$\sim$ThirdPass()}{~ThirdPass()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Third\+Pass\+::$\sim$\+Third\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_third_pass_abc57635be6f93b98e58aacf882c0705d}{$\sim$\+Third\+Pass()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_third_pass_a3f9233f889870da11f355cda40eb66fd}\label{class_owl_engine_1_1_third_pass_a3f9233f889870da11f355cda40eb66fd}} 
+\index{OwlEngine::ThirdPass@{OwlEngine::ThirdPass}!getFrameBuffer@{getFrameBuffer}}
+\index{getFrameBuffer@{getFrameBuffer}!OwlEngine::ThirdPass@{OwlEngine::ThirdPass}}
+\doxysubsubsection{\texorpdfstring{getFrameBuffer()}{getFrameBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ Owl\+Engine\+::\+Third\+Pass\+::get\+Frame\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the framebuffer of this render pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_third_pass_a3f9233f889870da11f355cda40eb66fd}{get\+Frame\+Buffer()}}
+
+\begin{DoxyReturn}{Returns}
+a Frame\+Buffer$\ast$ -\/ The framebuffer 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a3589ca78070a8173282ea6890d592103}{Owl\+Engine\+::\+Render\+Pass}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_third_pass_a348692ce4390e1f2f8a40eefbb52f453}\label{class_owl_engine_1_1_third_pass_a348692ce4390e1f2f8a40eefbb52f453}} 
+\index{OwlEngine::ThirdPass@{OwlEngine::ThirdPass}!onRender@{onRender}}
+\index{onRender@{onRender}!OwlEngine::ThirdPass@{OwlEngine::ThirdPass}}
+\doxysubsubsection{\texorpdfstring{onRender()}{onRender()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Third\+Pass\+::on\+Render (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \&}]{entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+The rendering to perform for this pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_third_pass_a348692ce4390e1f2f8a40eefbb52f453}{on\+Render()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & a std\+::vector$<$\+Entity$\ast$$>$\& -\/ The list of entities to render \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_render_pass_ace743fe2847d4a4521eb5308d9d2bcd3}{Owl\+Engine\+::\+Render\+Pass}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/render\+Passes/passes/\mbox{\hyperlink{third_pass_8h}{third\+Pass.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/render\+Passes/passes/\mbox{\hyperlink{third_pass_8cpp}{third\+Pass.\+cpp}}\end{DoxyCompactItemize}

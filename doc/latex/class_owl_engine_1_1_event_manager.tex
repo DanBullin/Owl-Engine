@@ -1,0 +1,439 @@
+\hypertarget{class_owl_engine_1_1_event_manager}{}\doxysection{Owl\+Engine\+::Event\+Manager Class Reference}
+\label{class_owl_engine_1_1_event_manager}\index{OwlEngine::EventManager@{OwlEngine::EventManager}}
+
+
+An event manager which manages events.  
+
+
+
+
+{\ttfamily \#include $<$event\+Manager.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Event\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_event_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_aca418be3e642630949ee340fd224749a}{Event\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_acaa5bc4b9c4a92c26a18de75213c0e71}{$\sim$\+Event\+Manager}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_a0066928c4f17f36d064d3ea29e47cf72}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_aaf3c92fa05476bb8f1ffc671f1026e51}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_a2904db80eb8e4d8d3ac8ad59c726e5c6}{on\+Window\+Close}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_window_close_event}{Window\+Close\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when a window closes. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_a5aa24a69fd0f92ad5f3ffc5551e38034}{on\+Window\+Resize}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_window_resize_event}{Window\+Resize\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when a window is resized. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_ac755fcee481578a67bfee44d331ad1e6}{on\+Window\+Focus}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_window_focus_event}{Window\+Focus\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when a window gains focus. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_a42b15b0f28cdf2568623774e77ef5afe}{on\+Window\+Lost\+Focus}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when a window loses focus. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_a034a1764f9d7f8e78cb854a9be68d158}{on\+Window\+Moved}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_window_moved_event}{Window\+Moved\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when a window is moved. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_ac56d8dcbc1cc7497cfa61ab9b8e8a8af}{on\+Key\+Pressed}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when a key is pressed or held. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_ad1f7099efad875c54ac73740a8b0062f}{on\+Key\+Released}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when a key is released. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_a634978397a94841804f82eb4c2b728e5}{on\+Key\+Typed}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_key_typed_event}{Key\+Typed\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when a key is typed. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_ab7e773cf0cd955d97fe8a51ce8aa82ae}{on\+Mouse\+Pressed}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when mouse is pressed. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_a65abc5a23d42c1fdf7e83d457564b66c}{on\+Mouse\+Released}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when mouse is released. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_aa3622f319fe3ba6f6a71167d410bde2f}{on\+Mouse\+Moved}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when mouse moves. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_a3e61c9effca2020dc86cf56497c9afa6}{on\+Mouse\+Scrolled}} (\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$window, \mbox{\hyperlink{class_owl_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} \&e)
+\begin{DoxyCompactList}\small\item\em Called when mouse is scrolled. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_a0e69fe381fa68a94dec5f539451b87ab}{on\+Update}} (\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$scene, const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Called once every frame. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_ab50f23a55fce6a18a16f87593f4fd200}{enable}} ()
+\begin{DoxyCompactList}\small\item\em Enable the event manager. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_aea7ca3e98ab9d0ad431b53782963bb53}{disable}} ()
+\begin{DoxyCompactList}\small\item\em Disable the event manager. \end{DoxyCompactList}\item 
+static const bool \mbox{\hyperlink{class_owl_engine_1_1_event_manager_aba13677ea6ece350c6835cfd2e367090}{get\+Enabled}} ()
+\begin{DoxyCompactList}\small\item\em Get whether the event manager is enabled. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{struct_owl_engine_1_1_event_data}{Event\+Data}} \& \mbox{\hyperlink{class_owl_engine_1_1_event_manager_a0ffdf1ca54d8ce3d896df04452c8fa07}{get\+Event\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the event data. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_event_manager_a3abf9834941df022fac6bacaaf28ef43}{print\+Event\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Print event data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An event manager which manages events. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_aca418be3e642630949ee340fd224749a}\label{class_owl_engine_1_1_event_manager_aca418be3e642630949ee340fd224749a}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!EventManager@{EventManager}}
+\index{EventManager@{EventManager}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{EventManager()}{EventManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Event\+Manager\+::\+Event\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_aca418be3e642630949ee340fd224749a}{Event\+Manager()}} \mbox{\Hypertarget{class_owl_engine_1_1_event_manager_acaa5bc4b9c4a92c26a18de75213c0e71}\label{class_owl_engine_1_1_event_manager_acaa5bc4b9c4a92c26a18de75213c0e71}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!````~EventManager@{$\sim$EventManager}}
+\index{````~EventManager@{$\sim$EventManager}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{$\sim$EventManager()}{~EventManager()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Event\+Manager\+::$\sim$\+Event\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_acaa5bc4b9c4a92c26a18de75213c0e71}{$\sim$\+Event\+Manager()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_aea7ca3e98ab9d0ad431b53782963bb53}\label{class_owl_engine_1_1_event_manager_aea7ca3e98ab9d0ad431b53782963bb53}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!disable@{disable}}
+\index{disable@{disable}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Disable the event manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_aea7ca3e98ab9d0ad431b53782963bb53}{disable()}} \mbox{\Hypertarget{class_owl_engine_1_1_event_manager_ab50f23a55fce6a18a16f87593f4fd200}\label{class_owl_engine_1_1_event_manager_ab50f23a55fce6a18a16f87593f4fd200}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!enable@{enable}}
+\index{enable@{enable}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable the event manager. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_ab50f23a55fce6a18a16f87593f4fd200}{enable()}} \mbox{\Hypertarget{class_owl_engine_1_1_event_manager_aba13677ea6ece350c6835cfd2e367090}\label{class_owl_engine_1_1_event_manager_aba13677ea6ece350c6835cfd2e367090}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!getEnabled@{getEnabled}}
+\index{getEnabled@{getEnabled}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{getEnabled()}{getEnabled()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Event\+Manager\+::get\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get whether the event manager is enabled. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_aba13677ea6ece350c6835cfd2e367090}{get\+Enabled()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is the event manager enabled 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_a0ffdf1ca54d8ce3d896df04452c8fa07}\label{class_owl_engine_1_1_event_manager_a0ffdf1ca54d8ce3d896df04452c8fa07}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!getEventData@{getEventData}}
+\index{getEventData@{getEventData}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{getEventData()}{getEventData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_owl_engine_1_1_event_data}{Event\+Data}} \& Owl\+Engine\+::\+Event\+Manager\+::get\+Event\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the event data. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_a0ffdf1ca54d8ce3d896df04452c8fa07}{get\+Event\+Data()}}
+
+\begin{DoxyReturn}{Returns}
+an \mbox{\hyperlink{struct_owl_engine_1_1_event_data}{Event\+Data}}\& -\/ The event data 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_ac56d8dcbc1cc7497cfa61ab9b8e8a8af}\label{class_owl_engine_1_1_event_manager_ac56d8dcbc1cc7497cfa61ab9b8e8a8af}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onKeyPressed@{onKeyPressed}}
+\index{onKeyPressed@{onKeyPressed}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onKeyPressed()}{onKeyPressed()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Key\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when a key is pressed or held. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_ac56d8dcbc1cc7497cfa61ab9b8e8a8af}{on\+Key\+Pressed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}}\& -\/ Reference to the key pressed event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_ad1f7099efad875c54ac73740a8b0062f}\label{class_owl_engine_1_1_event_manager_ad1f7099efad875c54ac73740a8b0062f}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onKeyReleased@{onKeyReleased}}
+\index{onKeyReleased@{onKeyReleased}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onKeyReleased()}{onKeyReleased()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Key\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when a key is released. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_ad1f7099efad875c54ac73740a8b0062f}{on\+Key\+Released()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}}\& -\/ Reference to the key released event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_a634978397a94841804f82eb4c2b728e5}\label{class_owl_engine_1_1_event_manager_a634978397a94841804f82eb4c2b728e5}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onKeyTyped@{onKeyTyped}}
+\index{onKeyTyped@{onKeyTyped}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onKeyTyped()}{onKeyTyped()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Key\+Typed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_key_typed_event}{Key\+Typed\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when a key is typed. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_a634978397a94841804f82eb4c2b728e5}{on\+Key\+Typed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_key_typed_event}{Key\+Typed\+Event}}\& -\/ Reference to the key typed event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_aa3622f319fe3ba6f6a71167d410bde2f}\label{class_owl_engine_1_1_event_manager_aa3622f319fe3ba6f6a71167d410bde2f}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onMouseMoved@{onMouseMoved}}
+\index{onMouseMoved@{onMouseMoved}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onMouseMoved()}{onMouseMoved()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Mouse\+Moved (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when mouse moves. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_aa3622f319fe3ba6f6a71167d410bde2f}{on\+Mouse\+Moved()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}}\& -\/ Reference to the mouse moved event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_ab7e773cf0cd955d97fe8a51ce8aa82ae}\label{class_owl_engine_1_1_event_manager_ab7e773cf0cd955d97fe8a51ce8aa82ae}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onMousePressed@{onMousePressed}}
+\index{onMousePressed@{onMousePressed}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onMousePressed()}{onMousePressed()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Mouse\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when mouse is pressed. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_ab7e773cf0cd955d97fe8a51ce8aa82ae}{on\+Mouse\+Pressed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_mouse_pressed_event}{Mouse\+Pressed\+Event}}\& -\/ Reference to the mouse pressed event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_a65abc5a23d42c1fdf7e83d457564b66c}\label{class_owl_engine_1_1_event_manager_a65abc5a23d42c1fdf7e83d457564b66c}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onMouseReleased@{onMouseReleased}}
+\index{onMouseReleased@{onMouseReleased}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onMouseReleased()}{onMouseReleased()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Mouse\+Released (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when mouse is released. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_a65abc5a23d42c1fdf7e83d457564b66c}{on\+Mouse\+Released()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_mouse_released_event}{Mouse\+Released\+Event}}\& -\/ Reference to the mouse released event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_a3e61c9effca2020dc86cf56497c9afa6}\label{class_owl_engine_1_1_event_manager_a3e61c9effca2020dc86cf56497c9afa6}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onMouseScrolled@{onMouseScrolled}}
+\index{onMouseScrolled@{onMouseScrolled}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onMouseScrolled()}{onMouseScrolled()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Mouse\+Scrolled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when mouse is scrolled. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_a3e61c9effca2020dc86cf56497c9afa6}{on\+Mouse\+Scrolled()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}}\& -\/ Reference to the mouse scrolled event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_a0e69fe381fa68a94dec5f539451b87ab}\label{class_owl_engine_1_1_event_manager_a0e69fe381fa68a94dec5f539451b87ab}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$}]{scene,  }\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called once every frame. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_a0e69fe381fa68a94dec5f539451b87ab}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scene} & a Scene$\ast$ -\/ A pointer to the scene to be sent updates \\
+\hline
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_a2904db80eb8e4d8d3ac8ad59c726e5c6}\label{class_owl_engine_1_1_event_manager_a2904db80eb8e4d8d3ac8ad59c726e5c6}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onWindowClose@{onWindowClose}}
+\index{onWindowClose@{onWindowClose}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onWindowClose()}{onWindowClose()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Window\+Close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_window_close_event}{Window\+Close\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when a window closes. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_a2904db80eb8e4d8d3ac8ad59c726e5c6}{on\+Window\+Close()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_window_close_event}{Window\+Close\+Event}}\& -\/ Reference to the window close event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_ac755fcee481578a67bfee44d331ad1e6}\label{class_owl_engine_1_1_event_manager_ac755fcee481578a67bfee44d331ad1e6}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onWindowFocus@{onWindowFocus}}
+\index{onWindowFocus@{onWindowFocus}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onWindowFocus()}{onWindowFocus()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Window\+Focus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_window_focus_event}{Window\+Focus\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when a window gains focus. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_ac755fcee481578a67bfee44d331ad1e6}{on\+Window\+Focus()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_window_focus_event}{Window\+Focus\+Event}}\& -\/ Reference to the window focus event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_a42b15b0f28cdf2568623774e77ef5afe}\label{class_owl_engine_1_1_event_manager_a42b15b0f28cdf2568623774e77ef5afe}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onWindowLostFocus@{onWindowLostFocus}}
+\index{onWindowLostFocus@{onWindowLostFocus}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onWindowLostFocus()}{onWindowLostFocus()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Window\+Lost\+Focus (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when a window loses focus. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_a42b15b0f28cdf2568623774e77ef5afe}{on\+Window\+Lost\+Focus()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_window_lost_focus_event}{Window\+Lost\+Focus\+Event}}\& -\/ Reference to the window lost focus event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_a034a1764f9d7f8e78cb854a9be68d158}\label{class_owl_engine_1_1_event_manager_a034a1764f9d7f8e78cb854a9be68d158}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onWindowMoved@{onWindowMoved}}
+\index{onWindowMoved@{onWindowMoved}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onWindowMoved()}{onWindowMoved()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Window\+Moved (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_window_moved_event}{Window\+Moved\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when a window is moved. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_a034a1764f9d7f8e78cb854a9be68d158}{on\+Window\+Moved()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_window_moved_event}{Window\+Moved\+Event}}\& -\/ Reference to the window moved event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_a5aa24a69fd0f92ad5f3ffc5551e38034}\label{class_owl_engine_1_1_event_manager_a5aa24a69fd0f92ad5f3ffc5551e38034}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!onWindowResize@{onWindowResize}}
+\index{onWindowResize@{onWindowResize}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{onWindowResize()}{onWindowResize()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::on\+Window\+Resize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_window}{Window}} $\ast$}]{window,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_window_resize_event}{Window\+Resize\+Event}} \&}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Called when a window is resized. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_a5aa24a69fd0f92ad5f3ffc5551e38034}{on\+Window\+Resize()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & a Window$\ast$ -\/ A pointer to the window which triggered the event \\
+\hline
+{\em e} & a \mbox{\hyperlink{class_owl_engine_1_1_window_resize_event}{Window\+Resize\+Event}}\& -\/ Reference to the window resize event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_a3abf9834941df022fac6bacaaf28ef43}\label{class_owl_engine_1_1_event_manager_a3abf9834941df022fac6bacaaf28ef43}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!printEventData@{printEventData}}
+\index{printEventData@{printEventData}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{printEventData()}{printEventData()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::print\+Event\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Print event data. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_a3abf9834941df022fac6bacaaf28ef43}{print\+Event\+Data()}} \mbox{\Hypertarget{class_owl_engine_1_1_event_manager_a0066928c4f17f36d064d3ea29e47cf72}\label{class_owl_engine_1_1_event_manager_a0066928c4f17f36d064d3ea29e47cf72}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!start@{start}}
+\index{start@{start}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_a0066928c4f17f36d064d3ea29e47cf72}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_event_manager_aaf3c92fa05476bb8f1ffc671f1026e51}\label{class_owl_engine_1_1_event_manager_aaf3c92fa05476bb8f1ffc671f1026e51}} 
+\index{OwlEngine::EventManager@{OwlEngine::EventManager}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::EventManager@{OwlEngine::EventManager}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Event\+Manager\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_event_manager_aaf3c92fa05476bb8f1ffc671f1026e51}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{event_manager_8h}{event\+Manager.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{event_manager_8cpp}{event\+Manager.\+cpp}}\end{DoxyCompactItemize}

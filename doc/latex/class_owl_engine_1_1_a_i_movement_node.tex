@@ -1,0 +1,193 @@
+\hypertarget{class_owl_engine_1_1_a_i_movement_node}{}\doxysection{Owl\+Engine\+::A\+I\+Movement\+Node Class Reference}
+\label{class_owl_engine_1_1_a_i_movement_node}\index{OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}}
+
+
+A sphere collider entity component that attaches to a rigidbody. Uses React\+Physics3D.  
+
+
+
+
+{\ttfamily \#include $<$ai\+Movement\+Node.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::A\+I\+Movement\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_a_i_movement_node}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_a76d59614fcdb3da5061f898c7a443f11}{A\+I\+Movement\+Node}} (const std\+::string \&attached\+Ent\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_a5be5e43365437f49bcd485a2df5ced77}{$\sim$\+A\+I\+Movement\+Node}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_a7ac4ab71c665497e00ed76bddf7e7558}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_abc26b043af6a6db3cc7e34332848617d}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_a401c134303237f742bd908156168bcc0}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the component. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_a_i_movement_node_ab1cf762ef3c820334b78f59ebb875323}\label{class_owl_engine_1_1_a_i_movement_node_ab1cf762ef3c820334b78f59ebb875323}} 
+void \mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_ab1cf762ef3c820334b78f59ebb875323}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+virtual nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_a74e993d9fc0dd154a48b52084f0d160c}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data as J\+S\+ON for saving. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_a973dd174e57fa289d043740409ad9bab}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data displayed in Im\+Gui form. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_aa4f99c0826b36d8a37bea3e86ee640c5}{get\+Attached\+Entity\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the attached entities name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_ac2df537acf8f635ee68f65db38297d11}{set\+Attached\+Entity}} (const std\+::string \&new\+Entity\+Name)
+\begin{DoxyCompactList}\small\item\em Set the attached entities name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A sphere collider entity component that attaches to a rigidbody. Uses React\+Physics3D. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_a_i_movement_node_a76d59614fcdb3da5061f898c7a443f11}\label{class_owl_engine_1_1_a_i_movement_node_a76d59614fcdb3da5061f898c7a443f11}} 
+\index{OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}!AIMovementNode@{AIMovementNode}}
+\index{AIMovementNode@{AIMovementNode}!OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}}
+\doxysubsubsection{\texorpdfstring{AIMovementNode()}{AIMovementNode()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+A\+I\+Movement\+Node\+::\+A\+I\+Movement\+Node (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{attached\+Ent\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_a76d59614fcdb3da5061f898c7a443f11}{A\+I\+Movement\+Node()}} \mbox{\Hypertarget{class_owl_engine_1_1_a_i_movement_node_a5be5e43365437f49bcd485a2df5ced77}\label{class_owl_engine_1_1_a_i_movement_node_a5be5e43365437f49bcd485a2df5ced77}} 
+\index{OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}!````~AIMovementNode@{$\sim$AIMovementNode}}
+\index{````~AIMovementNode@{$\sim$AIMovementNode}!OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}}
+\doxysubsubsection{\texorpdfstring{$\sim$AIMovementNode()}{~AIMovementNode()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+A\+I\+Movement\+Node\+::$\sim$\+A\+I\+Movement\+Node (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor. 
+
+$\sim$\+A\+I\+Movement\+Node 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_a_i_movement_node_a973dd174e57fa289d043740409ad9bab}\label{class_owl_engine_1_1_a_i_movement_node_a973dd174e57fa289d043740409ad9bab}} 
+\index{OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+A\+I\+Movement\+Node\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data displayed in Im\+Gui form. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_a973dd174e57fa289d043740409ad9bab}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_a_i_movement_node_a74e993d9fc0dd154a48b52084f0d160c}\label{class_owl_engine_1_1_a_i_movement_node_a74e993d9fc0dd154a48b52084f0d160c}} 
+\index{OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+A\+I\+Movement\+Node\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data as J\+S\+ON for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_a74e993d9fc0dd154a48b52084f0d160c}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_a_i_movement_node_aa4f99c0826b36d8a37bea3e86ee640c5}\label{class_owl_engine_1_1_a_i_movement_node_aa4f99c0826b36d8a37bea3e86ee640c5}} 
+\index{OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}!getAttachedEntityName@{getAttachedEntityName}}
+\index{getAttachedEntityName@{getAttachedEntityName}!OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}}
+\doxysubsubsection{\texorpdfstring{getAttachedEntityName()}{getAttachedEntityName()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+A\+I\+Movement\+Node\+::get\+Attached\+Entity\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the attached entities name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_aa4f99c0826b36d8a37bea3e86ee640c5}{get\+Attached\+Entity\+Name()}}
+
+\begin{DoxyReturn}{Returns}
+std\+::string -\/ The name of the attached entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_a_i_movement_node_a7ac4ab71c665497e00ed76bddf7e7558}\label{class_owl_engine_1_1_a_i_movement_node_a7ac4ab71c665497e00ed76bddf7e7558}} 
+\index{OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+A\+I\+Movement\+Node\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+on\+Attach 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_a_i_movement_node_abc26b043af6a6db3cc7e34332848617d}\label{class_owl_engine_1_1_a_i_movement_node_abc26b043af6a6db3cc7e34332848617d}} 
+\index{OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+A\+I\+Movement\+Node\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+on\+Detach 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_a_i_movement_node_a401c134303237f742bd908156168bcc0}\label{class_owl_engine_1_1_a_i_movement_node_a401c134303237f742bd908156168bcc0}} 
+\index{OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+A\+I\+Movement\+Node\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the component. 
+
+on\+Update
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_a_i_movement_node_ac2df537acf8f635ee68f65db38297d11}\label{class_owl_engine_1_1_a_i_movement_node_ac2df537acf8f635ee68f65db38297d11}} 
+\index{OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}!setAttachedEntity@{setAttachedEntity}}
+\index{setAttachedEntity@{setAttachedEntity}!OwlEngine::AIMovementNode@{OwlEngine::AIMovementNode}}
+\doxysubsubsection{\texorpdfstring{setAttachedEntity()}{setAttachedEntity()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+A\+I\+Movement\+Node\+::set\+Attached\+Entity (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{new\+Entity\+Name }\end{DoxyParamCaption})}
+
+
+
+Set the attached entities name. 
+
+set\+Attached\+Entity\+Name()
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & const std\+::string\& -\/ The name of the new entity to attach to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{ai_movement_node_8h}{ai\+Movement\+Node.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{ai_movement_node_8cpp}{ai\+Movement\+Node.\+cpp}}\end{DoxyCompactItemize}

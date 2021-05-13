@@ -1,0 +1,167 @@
+\hypertarget{class_hawk_engine_1_1_buffer_layout}{}\doxysection{Hawk\+Engine\+::Buffer\+Layout$<$ T $>$ Class Template Reference}
+\label{class_hawk_engine_1_1_buffer_layout}\index{HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}}
+
+
+An abstraction of a buffer layout.  
+
+
+
+
+{\ttfamily \#include $<$buffer\+Layout.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout_ac55310c2dbe45ee714ea49041a8ee5ac}{Buffer\+Layout}} (const std\+::initializer\+\_\+list$<$ T $>$ \&element, uint32\+\_\+t stride=0)
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout_ac637626efa3b17d1a741ccfe965729ec}{get\+Stride}} () const
+\begin{DoxyCompactList}\small\item\em Get the stride of the layout. \end{DoxyCompactList}\item 
+const std\+::vector$<$ T $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout_a1ed7f7d8e23c63acc14067fd82fd126f}{get\+Elements}} () const
+\begin{DoxyCompactList}\small\item\em Get the elements in the buffer layout. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout_adadf420026ad3614a83aaf6b471a18e8}{add\+Element}} (const T element)
+\begin{DoxyCompactList}\small\item\em Add an element to the layout. \end{DoxyCompactList}\item 
+std\+::vector$<$ T $>$\+::iterator \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout_ac28244a8760470dcfe7f914588077901}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Get the begin iterator for the elements. \end{DoxyCompactList}\item 
+std\+::vector$<$ T $>$\+::iterator \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout_a94bc8f8e9a9e34772a5c94f3193ba9ff}{end}} ()
+\begin{DoxyCompactList}\small\item\em Get the end iterator for the elements. \end{DoxyCompactList}\item 
+std\+::vector$<$ T $>$\+::const\+\_\+iterator \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout_a3a7a40dc6e9aff8850517f1c971075fd}{begin}} () const
+\begin{DoxyCompactList}\small\item\em Get the const begin iterator for the elements. \end{DoxyCompactList}\item 
+std\+::vector$<$ T $>$\+::const\+\_\+iterator \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout_a4ae7d5a6bb354f6536af5e1d16969a79}{end}} () const
+\begin{DoxyCompactList}\small\item\em Get the const end iterator for the elements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Hawk\+Engine\+::\+Buffer\+Layout$<$ T $>$}
+
+An abstraction of a buffer layout. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_buffer_layout_ac55310c2dbe45ee714ea49041a8ee5ac}\label{class_hawk_engine_1_1_buffer_layout_ac55310c2dbe45ee714ea49041a8ee5ac}} 
+\index{HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}!BufferLayout@{BufferLayout}}
+\index{BufferLayout@{BufferLayout}!HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BufferLayout()}{BufferLayout()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout}{Hawk\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::\mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout}{Buffer\+Layout}} (\begin{DoxyParamCaption}\item[{const std\+::initializer\+\_\+list$<$ T $>$ \&}]{element,  }\item[{uint32\+\_\+t}]{stride = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Default Constructor. 
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em element} & a const std\+::initializer\+\_\+list$<$\+Buffer\+Element$>$\& -\/The elements to add to the list of elements \\
+\hline
+{\em stride} & a uint32\+\_\+t -\/ The stride of the layout \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_buffer_layout_adadf420026ad3614a83aaf6b471a18e8}\label{class_hawk_engine_1_1_buffer_layout_adadf420026ad3614a83aaf6b471a18e8}} 
+\index{HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}!addElement@{addElement}}
+\index{addElement@{addElement}!HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addElement()}{addElement()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout}{Hawk\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::add\+Element (\begin{DoxyParamCaption}\item[{const T}]{element }\end{DoxyParamCaption})}
+
+
+
+Add an element to the layout. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout_adadf420026ad3614a83aaf6b471a18e8}{add\+Element()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & a T -\/ The buffer element to add to the list \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_buffer_layout_ac28244a8760470dcfe7f914588077901}\label{class_hawk_engine_1_1_buffer_layout_ac28244a8760470dcfe7f914588077901}} 
+\index{HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::vector$<$T$>$\+::iterator \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout}{Hawk\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the begin iterator for the elements. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+T$>$\+::iterator -\/ The begin iterator of the elements list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_buffer_layout_a3a7a40dc6e9aff8850517f1c971075fd}\label{class_hawk_engine_1_1_buffer_layout_a3a7a40dc6e9aff8850517f1c971075fd}} 
+\index{HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::vector$<$T$>$\+::const\+\_\+iterator \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout}{Hawk\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the const begin iterator for the elements. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+T$>$\+::const\+\_\+iterator -\/ The begin const iterator of the elements list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_buffer_layout_a94bc8f8e9a9e34772a5c94f3193ba9ff}\label{class_hawk_engine_1_1_buffer_layout_a94bc8f8e9a9e34772a5c94f3193ba9ff}} 
+\index{HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}!end@{end}}
+\index{end@{end}!HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::vector$<$T$>$\+::iterator \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout}{Hawk\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the end iterator for the elements. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+T$>$\+::iterator -\/ The end iterator of the elements list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_buffer_layout_a4ae7d5a6bb354f6536af5e1d16969a79}\label{class_hawk_engine_1_1_buffer_layout_a4ae7d5a6bb354f6536af5e1d16969a79}} 
+\index{HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}!end@{end}}
+\index{end@{end}!HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::vector$<$T$>$\+::const\+\_\+iterator \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout}{Hawk\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the const end iterator for the elements. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+T$>$\+::const\+\_\+iterator -\/ The end const iterator of the elements list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_buffer_layout_a1ed7f7d8e23c63acc14067fd82fd126f}\label{class_hawk_engine_1_1_buffer_layout_a1ed7f7d8e23c63acc14067fd82fd126f}} 
+\index{HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}!getElements@{getElements}}
+\index{getElements@{getElements}!HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getElements()}{getElements()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+const std\+::vector$<$T$>$\& \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout}{Hawk\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::get\+Elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the elements in the buffer layout. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::vector$<$\+T$>$\& -\/ The elements in the buffer layout 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_buffer_layout_ac637626efa3b17d1a741ccfe965729ec}\label{class_hawk_engine_1_1_buffer_layout_ac637626efa3b17d1a741ccfe965729ec}} 
+\index{HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}!getStride@{getStride}}
+\index{getStride@{getStride}!HawkEngine::BufferLayout$<$ T $>$@{HawkEngine::BufferLayout$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getStride()}{getStride()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_buffer_layout}{Hawk\+Engine\+::\+Buffer\+Layout}}$<$ T $>$\+::get\+Stride (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the stride of the layout. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The stride of the buffer layout 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/geometry/\mbox{\hyperlink{buffer_layout_8h}{buffer\+Layout.\+h}}\end{DoxyCompactItemize}

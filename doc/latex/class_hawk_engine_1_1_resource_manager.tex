@@ -1,0 +1,603 @@
+\hypertarget{class_hawk_engine_1_1_resource_manager}{}\doxysection{Hawk\+Engine\+::Resource\+Manager Class Reference}
+\label{class_hawk_engine_1_1_resource_manager}\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+
+
+A resource manager managing resources.  
+
+
+
+
+{\ttfamily \#include $<$resource\+Manager.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a467404a8668e822c1525bad886a7cd93}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all resources. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a92f7f4e540bf836e1160c5d4da2b5921}{get\+Current\+Directory}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current directory. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a43a6f9b16e7ec9c4f10153978f34d83f}{get\+Contents}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Return the file contents. \end{DoxyCompactList}\item 
+static nlohmann\+::json \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_ae0833a0f60af3a2afba9ffe5696a6a1e}{get\+J\+S\+ON}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the contents of a file into a J\+S\+ON object and return the object. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a27f61988e0cb898277496292bafa68c3}{load\+Models}} ()
+\begin{DoxyCompactList}\small\item\em Loads all models into the resource manager. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_model}{Model}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a28b0aaca3c56fbf8ec19708d30f20106}{get\+Model}} (const char $\ast$model\+Name)
+\begin{DoxyCompactList}\small\item\em Get a model by name. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_model}{Model}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a15eeab2943c0b25a751a65769d564521}{get\+Models}} ()
+\begin{DoxyCompactList}\small\item\em Get all models. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a90b81e8b5dd5ec4c9b02782cd0829ad2}{destroy\+Models}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all models. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_adf01f3015320214ddbea71c76e417d14}{load2\+D\+Models}} ()
+\begin{DoxyCompactList}\small\item\em Loads all models into the resource manager. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_model2_d}{Model2D}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_aa9129399169bc44352e8014f87193045}{get2\+D\+Model}} (const char $\ast$model\+Name)
+\begin{DoxyCompactList}\small\item\em Get a model by name. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_model2_d}{Model2D}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_aa1bcce26ae08e26640297a4efafe9ddc}{get2\+D\+Models}} ()
+\begin{DoxyCompactList}\small\item\em Get all models. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_adc998d13b6ac95f29832953225e7ce0b}{destroy2\+D\+Models}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all models. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_ade530b355e9cb4c8f80d0695de80c35b}{load\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Loads all textures into the resource manager from file. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_ab456aba6d9227a9b0c9dedf197476e5c}{get\+Texture}} (const char $\ast$texture\+Name)
+\begin{DoxyCompactList}\small\item\em Get a texture by name. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a4c8f0a795a6549af9ab3e73c73d1c393}{get\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Get all textures. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_aa6b014f151035af0c1178549be7e3d51}{destroy\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all textures. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_ab6fa3e9fef8fb212d3399672d76e3307}{load\+Sub\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Loads all subtextures into the resource manager from file. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture}{Sub\+Texture}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a4d8a05260c18dbaa46b5b8c60dbe5824}{get\+Sub\+Texture}} (const char $\ast$sub\+Texture\+Name)
+\begin{DoxyCompactList}\small\item\em Get a sub texture by name. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture}{Sub\+Texture}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_adf2cf08854751f8b8baf9b2c8f03f209}{get\+Sub\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Get all subtextures. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_aca8ace324d65767f471077c9702471a7}{destroy\+Sub\+Textures}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all subtextures. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a58589bcbaab96261852f42b3dda7afd9}{load\+Materials}} ()
+\begin{DoxyCompactList}\small\item\em Load all materials into the resource manager from file. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_material}{Material}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a8467bb506a5c1aabfbdff8339cdf1b0b}{get\+Material}} (const char $\ast$material\+Name)
+\begin{DoxyCompactList}\small\item\em Get a material by name. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_material}{Material}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a8b6c24ca647611d58fa4b13ed8aa61fa}{get\+Materials}} ()
+\begin{DoxyCompactList}\small\item\em Get the list of materials. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a6e5429241e86f5bb270cfee478fed07a}{destroy\+Materials}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all materials. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a5ebf572d672f414c2773b2604aeab706}{load2\+D\+Materials}} ()
+\begin{DoxyCompactList}\small\item\em Load all materials into the resource manager from file. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_material2_d}{Material2D}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_aba6be6c664745fce79767b5f9c17823f}{get2\+D\+Material}} (const char $\ast$material\+Name)
+\begin{DoxyCompactList}\small\item\em Get a material by name. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_material2_d}{Material2D}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a48d18383c6b26db7137c7b52afd7d825}{get2\+D\+Materials}} ()
+\begin{DoxyCompactList}\small\item\em Get the list of materials. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a0fc975d2a6f6bfee4ba268be0a7d5dae}{destroy2\+D\+Materials}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all materials. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a3621a2598c839945d4b039d9806e614a}{load\+Shaders}} ()
+\begin{DoxyCompactList}\small\item\em Loads all shaders into the resource manager. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_shader_program}{Shader\+Program}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a3994cc0f3bbbab390342d4475c0e0b40}{get\+Shader}} (const char $\ast$shader\+Name)
+\begin{DoxyCompactList}\small\item\em Get a shader by name. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_shader_program}{Shader\+Program}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a4d046f43ff994a4a788f2b154b8e088f}{get\+Shaders}} ()
+\begin{DoxyCompactList}\small\item\em Get all shaders. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a1a5b0934bb0887e52913eae8d8d363c4}{destroy\+Shaders}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all shaders. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_ae8b5d39b785095c5fdc98e90d1ed1bd8}{load\+Uniform\+Buffers}} ()
+\begin{DoxyCompactList}\small\item\em Loads all U\+B\+Os into the resource manager. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer}{Uniform\+Buffer}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a15a60034112853d1be313ff8d7c98cd6}{get\+Uniform\+Buffer}} (const char $\ast$uniform\+Buffer\+Name)
+\begin{DoxyCompactList}\small\item\em Get a U\+BO by name. \end{DoxyCompactList}\item 
+static const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer}{Uniform\+Buffer}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a25accefbeaa0515bbc9610142790e5cf}{get\+Uniform\+Buffers}} ()
+\begin{DoxyCompactList}\small\item\em Get all U\+B\+Os. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a662516e78932e4c00e2ff66ed4559a55}{destroy\+Uniform\+Buffers}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all U\+B\+Os. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A resource manager managing resources. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a467404a8668e822c1525bad886a7cd93}\label{class_hawk_engine_1_1_resource_manager_a467404a8668e822c1525bad886a7cd93}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!destroy@{destroy}}
+\index{destroy@{destroy}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all resources. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a467404a8668e822c1525bad886a7cd93}{destroy()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a0fc975d2a6f6bfee4ba268be0a7d5dae}\label{class_hawk_engine_1_1_resource_manager_a0fc975d2a6f6bfee4ba268be0a7d5dae}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!destroy2DMaterials@{destroy2DMaterials}}
+\index{destroy2DMaterials@{destroy2DMaterials}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{destroy2DMaterials()}{destroy2DMaterials()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::destroy2\+D\+Materials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all materials. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a0fc975d2a6f6bfee4ba268be0a7d5dae}{destroy2\+D\+Materials()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_adc998d13b6ac95f29832953225e7ce0b}\label{class_hawk_engine_1_1_resource_manager_adc998d13b6ac95f29832953225e7ce0b}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!destroy2DModels@{destroy2DModels}}
+\index{destroy2DModels@{destroy2DModels}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{destroy2DModels()}{destroy2DModels()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::destroy2\+D\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all models. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_adc998d13b6ac95f29832953225e7ce0b}{destroy2\+D\+Models()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a6e5429241e86f5bb270cfee478fed07a}\label{class_hawk_engine_1_1_resource_manager_a6e5429241e86f5bb270cfee478fed07a}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!destroyMaterials@{destroyMaterials}}
+\index{destroyMaterials@{destroyMaterials}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{destroyMaterials()}{destroyMaterials()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::destroy\+Materials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all materials. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a6e5429241e86f5bb270cfee478fed07a}{destroy\+Materials()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a90b81e8b5dd5ec4c9b02782cd0829ad2}\label{class_hawk_engine_1_1_resource_manager_a90b81e8b5dd5ec4c9b02782cd0829ad2}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!destroyModels@{destroyModels}}
+\index{destroyModels@{destroyModels}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{destroyModels()}{destroyModels()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::destroy\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all models. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a90b81e8b5dd5ec4c9b02782cd0829ad2}{destroy\+Models()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a1a5b0934bb0887e52913eae8d8d363c4}\label{class_hawk_engine_1_1_resource_manager_a1a5b0934bb0887e52913eae8d8d363c4}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!destroyShaders@{destroyShaders}}
+\index{destroyShaders@{destroyShaders}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{destroyShaders()}{destroyShaders()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::destroy\+Shaders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all shaders. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a1a5b0934bb0887e52913eae8d8d363c4}{destroy\+Shaders()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_aca8ace324d65767f471077c9702471a7}\label{class_hawk_engine_1_1_resource_manager_aca8ace324d65767f471077c9702471a7}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!destroySubTextures@{destroySubTextures}}
+\index{destroySubTextures@{destroySubTextures}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{destroySubTextures()}{destroySubTextures()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::destroy\+Sub\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all subtextures. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_aca8ace324d65767f471077c9702471a7}{destroy\+Sub\+Textures()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_aa6b014f151035af0c1178549be7e3d51}\label{class_hawk_engine_1_1_resource_manager_aa6b014f151035af0c1178549be7e3d51}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!destroyTextures@{destroyTextures}}
+\index{destroyTextures@{destroyTextures}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{destroyTextures()}{destroyTextures()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::destroy\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all textures. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_aa6b014f151035af0c1178549be7e3d51}{destroy\+Textures()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a662516e78932e4c00e2ff66ed4559a55}\label{class_hawk_engine_1_1_resource_manager_a662516e78932e4c00e2ff66ed4559a55}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!destroyUniformBuffers@{destroyUniformBuffers}}
+\index{destroyUniformBuffers@{destroyUniformBuffers}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{destroyUniformBuffers()}{destroyUniformBuffers()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::destroy\+Uniform\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all U\+B\+Os. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a662516e78932e4c00e2ff66ed4559a55}{destroy\+Uniform\+Buffers()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_aba6be6c664745fce79767b5f9c17823f}\label{class_hawk_engine_1_1_resource_manager_aba6be6c664745fce79767b5f9c17823f}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!get2DMaterial@{get2DMaterial}}
+\index{get2DMaterial@{get2DMaterial}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{get2DMaterial()}{get2DMaterial()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_material2_d}{Material2D}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get2\+D\+Material (\begin{DoxyParamCaption}\item[{const char $\ast$}]{material\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a material by name. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_aba6be6c664745fce79767b5f9c17823f}{get2\+D\+Material()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em material\+Name} & a const char$\ast$ -\/ The name of the 2D material desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const std\+::shared\+\_\+ptr$<$\+Material2\+D$>$\& -\/ A reference to the 2D material desired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a48d18383c6b26db7137c7b52afd7d825}\label{class_hawk_engine_1_1_resource_manager_a48d18383c6b26db7137c7b52afd7d825}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!get2DMaterials@{get2DMaterials}}
+\index{get2DMaterials@{get2DMaterials}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{get2DMaterials()}{get2DMaterials()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_material2_d}{Material2D}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get2\+D\+Materials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the list of materials. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a48d18383c6b26db7137c7b52afd7d825}{get2\+D\+Materials()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::map$<$std\+::string, std\+::shared\+\_\+ptr$<$\+Material2\+D$>$$>$\& -\/ A reference to the 2D materials list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_aa9129399169bc44352e8014f87193045}\label{class_hawk_engine_1_1_resource_manager_aa9129399169bc44352e8014f87193045}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!get2DModel@{get2DModel}}
+\index{get2DModel@{get2DModel}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{get2DModel()}{get2DModel()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_model2_d}{Model2D}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get2\+D\+Model (\begin{DoxyParamCaption}\item[{const char $\ast$}]{model\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a model by name. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_aa9129399169bc44352e8014f87193045}{get2\+D\+Model()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em model\+Name} & a const char$\ast$ -\/ The name of the 2D model desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const std\+::shared\+\_\+ptr$<$\+Model2\+D$>$\& -\/ A reference to the 2D model desired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_aa1bcce26ae08e26640297a4efafe9ddc}\label{class_hawk_engine_1_1_resource_manager_aa1bcce26ae08e26640297a4efafe9ddc}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!get2DModels@{get2DModels}}
+\index{get2DModels@{get2DModels}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{get2DModels()}{get2DModels()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_model2_d}{Model2D}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get2\+D\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get all models. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_aa1bcce26ae08e26640297a4efafe9ddc}{get2\+D\+Models()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::map$<$std\+::string, std\+::shared\+\_\+ptr$<$\+Model2\+D$>$$>$\& -\/ A reference to the 2D models list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a43a6f9b16e7ec9c4f10153978f34d83f}\label{class_hawk_engine_1_1_resource_manager_a43a6f9b16e7ec9c4f10153978f34d83f}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getContents@{getContents}}
+\index{getContents@{getContents}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getContents()}{getContents()}}
+{\footnotesize\ttfamily std\+::string Hawk\+Engine\+::\+Resource\+Manager\+::get\+Contents (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return the file contents. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a43a6f9b16e7ec9c4f10153978f34d83f}{get\+Contents()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ A reference to the file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::string -\/ The contents of the file 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a92f7f4e540bf836e1160c5d4da2b5921}\label{class_hawk_engine_1_1_resource_manager_a92f7f4e540bf836e1160c5d4da2b5921}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getCurrentDirectory@{getCurrentDirectory}}
+\index{getCurrentDirectory@{getCurrentDirectory}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getCurrentDirectory()}{getCurrentDirectory()}}
+{\footnotesize\ttfamily std\+::string Hawk\+Engine\+::\+Resource\+Manager\+::get\+Current\+Directory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the current directory. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a92f7f4e540bf836e1160c5d4da2b5921}{get\+Current\+Directory()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::string -\/ The current directory as a string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_ae0833a0f60af3a2afba9ffe5696a6a1e}\label{class_hawk_engine_1_1_resource_manager_ae0833a0f60af3a2afba9ffe5696a6a1e}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getJSON@{getJSON}}
+\index{getJSON@{getJSON}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getJSON()}{getJSON()}}
+{\footnotesize\ttfamily nlohmann\+::json Hawk\+Engine\+::\+Resource\+Manager\+::get\+J\+S\+ON (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the contents of a file into a J\+S\+ON object and return the object. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_ae0833a0f60af3a2afba9ffe5696a6a1e}{get\+J\+S\+O\+N()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ A reference to the file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::json -\/ The J\+S\+ON object filled with data from the file 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a8467bb506a5c1aabfbdff8339cdf1b0b}\label{class_hawk_engine_1_1_resource_manager_a8467bb506a5c1aabfbdff8339cdf1b0b}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getMaterial@{getMaterial}}
+\index{getMaterial@{getMaterial}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getMaterial()}{getMaterial()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_material}{Material}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Material (\begin{DoxyParamCaption}\item[{const char $\ast$}]{material\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a material by name. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a8467bb506a5c1aabfbdff8339cdf1b0b}{get\+Material()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em material\+Name} & a const char$\ast$ -\/ The name of the material desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const std\+::shared\+\_\+ptr$<$\+Material$>$\& -\/ A reference to the material desired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a8b6c24ca647611d58fa4b13ed8aa61fa}\label{class_hawk_engine_1_1_resource_manager_a8b6c24ca647611d58fa4b13ed8aa61fa}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getMaterials@{getMaterials}}
+\index{getMaterials@{getMaterials}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getMaterials()}{getMaterials()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_material}{Material}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Materials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the list of materials. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a8b6c24ca647611d58fa4b13ed8aa61fa}{get\+Materials()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::map$<$std\+::string, std\+::shared\+\_\+ptr$<$\+Material$>$$>$\& -\/ A reference to the materials list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a28b0aaca3c56fbf8ec19708d30f20106}\label{class_hawk_engine_1_1_resource_manager_a28b0aaca3c56fbf8ec19708d30f20106}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getModel@{getModel}}
+\index{getModel@{getModel}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_model}{Model}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Model (\begin{DoxyParamCaption}\item[{const char $\ast$}]{model\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a model by name. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a28b0aaca3c56fbf8ec19708d30f20106}{get\+Model()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em model\+Name} & a const char$\ast$ -\/ The name of the model desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Model$>$\& -\/ A reference to the model desired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a15eeab2943c0b25a751a65769d564521}\label{class_hawk_engine_1_1_resource_manager_a15eeab2943c0b25a751a65769d564521}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getModels@{getModels}}
+\index{getModels@{getModels}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getModels()}{getModels()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_model}{Model}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get all models. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a15eeab2943c0b25a751a65769d564521}{get\+Models()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::map$<$std\+::string, std\+::shared\+\_\+ptr$<$\+Model$>$$>$\& -\/ A reference to the models list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a3994cc0f3bbbab390342d4475c0e0b40}\label{class_hawk_engine_1_1_resource_manager_a3994cc0f3bbbab390342d4475c0e0b40}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getShader@{getShader}}
+\index{getShader@{getShader}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getShader()}{getShader()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_shader_program}{Shader\+Program}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Shader (\begin{DoxyParamCaption}\item[{const char $\ast$}]{shader\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a shader by name. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a3994cc0f3bbbab390342d4475c0e0b40}{get\+Shader()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader\+Name} & a const char$\ast$ -\/ The name of the shader desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const std\+::shared\+\_\+ptr$<$\+Shader\+Program$>$\& -\/ A reference to the shader desired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a4d046f43ff994a4a788f2b154b8e088f}\label{class_hawk_engine_1_1_resource_manager_a4d046f43ff994a4a788f2b154b8e088f}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getShaders@{getShaders}}
+\index{getShaders@{getShaders}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getShaders()}{getShaders()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_shader_program}{Shader\+Program}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Shaders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get all shaders. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a4d046f43ff994a4a788f2b154b8e088f}{get\+Shaders()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::map$<$std\+::string, std\+::shared\+\_\+ptr$<$\+Shader\+Program$>$$>$\& -\/ A reference to the shaders list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a4d8a05260c18dbaa46b5b8c60dbe5824}\label{class_hawk_engine_1_1_resource_manager_a4d8a05260c18dbaa46b5b8c60dbe5824}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getSubTexture@{getSubTexture}}
+\index{getSubTexture@{getSubTexture}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getSubTexture()}{getSubTexture()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture}{Sub\+Texture}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Sub\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{sub\+Texture\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a sub texture by name. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a4d8a05260c18dbaa46b5b8c60dbe5824}{get\+Sub\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+Texture\+Name} & a const char$\ast$ -\/ The name of the subtexture desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const std\+::shared\+\_\+ptr$<$\+Sub\+Texture$>$\& -\/ A reference to the subtexture desired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_adf2cf08854751f8b8baf9b2c8f03f209}\label{class_hawk_engine_1_1_resource_manager_adf2cf08854751f8b8baf9b2c8f03f209}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getSubTextures@{getSubTextures}}
+\index{getSubTextures@{getSubTextures}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getSubTextures()}{getSubTextures()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_sub_texture}{Sub\+Texture}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Sub\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get all subtextures. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_adf2cf08854751f8b8baf9b2c8f03f209}{get\+Sub\+Textures()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::map$<$std\+::string, std\+::shared\+\_\+ptr$<$\+Sub\+Texture$>$$>$\& -\/ A reference to the subtextures list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_ab456aba6d9227a9b0c9dedf197476e5c}\label{class_hawk_engine_1_1_resource_manager_ab456aba6d9227a9b0c9dedf197476e5c}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getTexture@{getTexture}}
+\index{getTexture@{getTexture}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getTexture()}{getTexture()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Texture (\begin{DoxyParamCaption}\item[{const char $\ast$}]{texture\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a texture by name. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_ab456aba6d9227a9b0c9dedf197476e5c}{get\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Name} & a const char$\ast$ -\/ The name of the texture desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference to the texture desired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a4c8f0a795a6549af9ab3e73c73d1c393}\label{class_hawk_engine_1_1_resource_manager_a4c8f0a795a6549af9ab3e73c73d1c393}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getTextures@{getTextures}}
+\index{getTextures@{getTextures}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getTextures()}{getTextures()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_texture}{Texture}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get all textures. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a4c8f0a795a6549af9ab3e73c73d1c393}{get\+Textures()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::map$<$std\+::string, std\+::shared\+\_\+ptr$<$\+Texture$>$$>$\& -\/ A reference to the textures list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a15a60034112853d1be313ff8d7c98cd6}\label{class_hawk_engine_1_1_resource_manager_a15a60034112853d1be313ff8d7c98cd6}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getUniformBuffer@{getUniformBuffer}}
+\index{getUniformBuffer@{getUniformBuffer}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getUniformBuffer()}{getUniformBuffer()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer}{Uniform\+Buffer}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Uniform\+Buffer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Buffer\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a U\+BO by name. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a15a60034112853d1be313ff8d7c98cd6}{get\+Uniform\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Buffer\+Name} & a const char$\ast$ -\/ The name of the U\+BO desired \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const std\+::shared\+\_\+ptr$<$\+Uniform\+Buffer$>$\& -\/ A reference to the U\+BO desired 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a25accefbeaa0515bbc9610142790e5cf}\label{class_hawk_engine_1_1_resource_manager_a25accefbeaa0515bbc9610142790e5cf}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!getUniformBuffers@{getUniformBuffers}}
+\index{getUniformBuffers@{getUniformBuffers}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{getUniformBuffers()}{getUniformBuffers()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{common_8h_aa3ac1075e1e9cbada499a27b48329a1a}{Map}}$<$ std\+::string, \mbox{\hyperlink{class_hawk_engine_1_1_uniform_buffer}{Uniform\+Buffer}} $>$ \& Hawk\+Engine\+::\+Resource\+Manager\+::get\+Uniform\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get all U\+B\+Os. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a25accefbeaa0515bbc9610142790e5cf}{get\+Uniform\+Buffers()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::map$<$std\+::string, std\+::shared\+\_\+ptr$<$\+Uniform\+Buffer$>$$>$\& -\/ A reference to the U\+B\+Os list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a5ebf572d672f414c2773b2604aeab706}\label{class_hawk_engine_1_1_resource_manager_a5ebf572d672f414c2773b2604aeab706}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!load2DMaterials@{load2DMaterials}}
+\index{load2DMaterials@{load2DMaterials}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{load2DMaterials()}{load2DMaterials()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::load2\+D\+Materials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load all materials into the resource manager from file. 
+
+load2\+D\+Materials \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_adf01f3015320214ddbea71c76e417d14}\label{class_hawk_engine_1_1_resource_manager_adf01f3015320214ddbea71c76e417d14}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!load2DModels@{load2DModels}}
+\index{load2DModels@{load2DModels}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{load2DModels()}{load2DModels()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::load2\+D\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads all models into the resource manager. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_adf01f3015320214ddbea71c76e417d14}{load2\+D\+Models()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a58589bcbaab96261852f42b3dda7afd9}\label{class_hawk_engine_1_1_resource_manager_a58589bcbaab96261852f42b3dda7afd9}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!loadMaterials@{loadMaterials}}
+\index{loadMaterials@{loadMaterials}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{loadMaterials()}{loadMaterials()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::load\+Materials (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load all materials into the resource manager from file. 
+
+load\+Materials \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a27f61988e0cb898277496292bafa68c3}\label{class_hawk_engine_1_1_resource_manager_a27f61988e0cb898277496292bafa68c3}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!loadModels@{loadModels}}
+\index{loadModels@{loadModels}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{loadModels()}{loadModels()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::load\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads all models into the resource manager. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a27f61988e0cb898277496292bafa68c3}{load\+Models()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_a3621a2598c839945d4b039d9806e614a}\label{class_hawk_engine_1_1_resource_manager_a3621a2598c839945d4b039d9806e614a}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!loadShaders@{loadShaders}}
+\index{loadShaders@{loadShaders}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{loadShaders()}{loadShaders()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::load\+Shaders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads all shaders into the resource manager. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_a3621a2598c839945d4b039d9806e614a}{load\+Shaders()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_ab6fa3e9fef8fb212d3399672d76e3307}\label{class_hawk_engine_1_1_resource_manager_ab6fa3e9fef8fb212d3399672d76e3307}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!loadSubTextures@{loadSubTextures}}
+\index{loadSubTextures@{loadSubTextures}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{loadSubTextures()}{loadSubTextures()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::load\+Sub\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads all subtextures into the resource manager from file. 
+
+load\+Sub\+Textures \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_ade530b355e9cb4c8f80d0695de80c35b}\label{class_hawk_engine_1_1_resource_manager_ade530b355e9cb4c8f80d0695de80c35b}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!loadTextures@{loadTextures}}
+\index{loadTextures@{loadTextures}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{loadTextures()}{loadTextures()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::load\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads all textures into the resource manager from file. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_resource_manager_ade530b355e9cb4c8f80d0695de80c35b}{load\+Textures()}} \mbox{\Hypertarget{class_hawk_engine_1_1_resource_manager_ae8b5d39b785095c5fdc98e90d1ed1bd8}\label{class_hawk_engine_1_1_resource_manager_ae8b5d39b785095c5fdc98e90d1ed1bd8}} 
+\index{HawkEngine::ResourceManager@{HawkEngine::ResourceManager}!loadUniformBuffers@{loadUniformBuffers}}
+\index{loadUniformBuffers@{loadUniformBuffers}!HawkEngine::ResourceManager@{HawkEngine::ResourceManager}}
+\doxysubsubsection{\texorpdfstring{loadUniformBuffers()}{loadUniformBuffers()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Resource\+Manager\+::load\+Uniform\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Loads all U\+B\+Os into the resource manager. 
+
+load\+Uniform\+Buffers 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/utils/\mbox{\hyperlink{resource_manager_8h}{resource\+Manager.\+h}}\item 
+C\+:/doc/src/src/independent/utils/\mbox{\hyperlink{resource_manager_8cpp}{resource\+Manager.\+cpp}}\end{DoxyCompactItemize}

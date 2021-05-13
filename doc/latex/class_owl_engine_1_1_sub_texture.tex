@@ -1,0 +1,379 @@
+\hypertarget{class_owl_engine_1_1_sub_texture}{}\doxysection{Owl\+Engine\+::Sub\+Texture Class Reference}
+\label{class_owl_engine_1_1_sub_texture}\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+
+
+A subtexture holding texture and UV data.  
+
+
+
+
+{\ttfamily \#include $<$sub\+Texture.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Sub\+Texture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_sub_texture}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_ad8e323a9fe19a1897cad700dfd64f5b9}{Sub\+Texture}} (const std\+::string \&sub\+Texture\+Name, \mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$base\+Texture, const glm\+::vec2 \&U\+V\+Start, const glm\+::vec2 \&U\+V\+End, const bool convert\+To\+Bottom\+Left)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a41f43ebfed70a27c1b0a0829329e83ac}{$\sim$\+Sub\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a5ab65fe3f2f184dc327b55689edd7952}{get\+U\+V\+Start}} () const
+\begin{DoxyCompactList}\small\item\em Get the UV start coordinates. \end{DoxyCompactList}\item 
+glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a4293b52a4659c181fe6672ff882b6f92}{get\+U\+V\+End}} () const
+\begin{DoxyCompactList}\small\item\em Get the UV end coordinates. \end{DoxyCompactList}\item 
+glm\+::ivec2 \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a6751b4c83ae0f2457e53d31681b91d43}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size in pixels of the subtexture. \end{DoxyCompactList}\item 
+glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a9b443541c00ff151b781d013e2cb82ae}{get\+Sizef}} () const
+\begin{DoxyCompactList}\small\item\em Get the size in pixels of subtexture as float. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a734bbe12fda4c691c202cb5355ab999f}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture width. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_adc45efe6c54b31ef9c022034d4e529e8}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture height. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a0c6578ccca15c290947ce21c340a45d0}{get\+Widthf}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture width. \end{DoxyCompactList}\item 
+const float \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_aeebf96dd49689feb53371990acc7fe16}{get\+Heightf}} () const
+\begin{DoxyCompactList}\small\item\em Get the texture height. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a9a2303708a05fe5803e4641245e57ecc}{get\+Base\+Texture}} ()
+\begin{DoxyCompactList}\small\item\em Get the base texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a5ded9ee553a08661182b46670d60a747}{set\+Base\+Texture}} (\mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$texture, const glm\+::vec2 \&U\+V\+Start, const glm\+::vec2 \&U\+V\+End, const bool convert\+To\+Bottom\+Left)
+\begin{DoxyCompactList}\small\item\em Set the base texture. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_af3e4c578d78b24844f98e7400b998de7}{set\+Size}} (const glm\+::ivec2 \&size)
+\begin{DoxyCompactList}\small\item\em Set the subtexture size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a1204f30a390d0aaae18c91eb55444880}{set\+U\+Vs}} (const glm\+::vec2 \&U\+V\+Start, const glm\+::vec2 \&U\+V\+End)
+\begin{DoxyCompactList}\small\item\em Set the subtexture U\+Vs. \end{DoxyCompactList}\item 
+const glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a78b4c834fe0e54c4c70459d05d2ddc29}{transform\+UV}} (const glm\+::vec2 \&uv)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. \end{DoxyCompactList}\item 
+const std\+::array$<$ int16\+\_\+t, 2 $>$ \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a1a4ada635ee23e7f521dbf9e1593cd35}{transform\+UV}} (const std\+::array$<$ int16\+\_\+t, 2 $>$ \&uv)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. \end{DoxyCompactList}\item 
+const int16\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_ae1d4efd682914711cfc89a8dbeef5b79}{transformU}} (const int16\+\_\+t u)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} original U to atlased U. \end{DoxyCompactList}\item 
+const int16\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a742ee84a0a80fb4a7bde6b1dda4dc619}{transformV}} (const int16\+\_\+t v)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} original V to atlased V. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_sub_texture_ae1e033b9213934d3cbe268217083d0fa}{print\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A subtexture holding texture and UV data. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_ad8e323a9fe19a1897cad700dfd64f5b9}\label{class_owl_engine_1_1_sub_texture_ad8e323a9fe19a1897cad700dfd64f5b9}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!SubTexture@{SubTexture}}
+\index{SubTexture@{SubTexture}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{SubTexture()}{SubTexture()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Sub\+Texture\+::\+Sub\+Texture (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{sub\+Texture\+Name,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$}]{base\+Texture,  }\item[{const glm\+::vec2 \&}]{U\+V\+Start,  }\item[{const glm\+::vec2 \&}]{U\+V\+End,  }\item[{const bool}]{convert\+To\+Bottom\+Left }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_ad8e323a9fe19a1897cad700dfd64f5b9}{Sub\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sub\+Texture\+Name} & a const std\+::string\& -\/ The name of the subtexture \\
+\hline
+{\em base\+Texture} & a Texture2\+D$\ast$ -\/ The base texutre \\
+\hline
+{\em U\+V\+Start} & a const glm\+::vec2\& -\/ The UV start coordinates \\
+\hline
+{\em U\+V\+End} & a const glm\+::vec2\& -\/ The UV end coordinates \\
+\hline
+{\em convert\+To\+Bottom\+Left} & a const bool -\/ Convert U\+Vs to bottom left start system \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a41f43ebfed70a27c1b0a0829329e83ac}\label{class_owl_engine_1_1_sub_texture_a41f43ebfed70a27c1b0a0829329e83ac}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!````~SubTexture@{$\sim$SubTexture}}
+\index{````~SubTexture@{$\sim$SubTexture}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{$\sim$SubTexture()}{~SubTexture()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Sub\+Texture\+::$\sim$\+Sub\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a41f43ebfed70a27c1b0a0829329e83ac}{$\sim$\+Sub\+Texture()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a9a2303708a05fe5803e4641245e57ecc}\label{class_owl_engine_1_1_sub_texture_a9a2303708a05fe5803e4641245e57ecc}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!getBaseTexture@{getBaseTexture}}
+\index{getBaseTexture@{getBaseTexture}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getBaseTexture()}{getBaseTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}}$\ast$ Owl\+Engine\+::\+Sub\+Texture\+::get\+Base\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the base texture. 
+
+\begin{DoxyReturn}{Returns}
+a Texture2\+D$\ast$ -\/ The base texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_adc45efe6c54b31ef9c022034d4e529e8}\label{class_owl_engine_1_1_sub_texture_adc45efe6c54b31ef9c022034d4e529e8}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Sub\+Texture\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture height. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The height of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_aeebf96dd49689feb53371990acc7fe16}\label{class_owl_engine_1_1_sub_texture_aeebf96dd49689feb53371990acc7fe16}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!getHeightf@{getHeightf}}
+\index{getHeightf@{getHeightf}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getHeightf()}{getHeightf()}}
+{\footnotesize\ttfamily const float Owl\+Engine\+::\+Sub\+Texture\+::get\+Heightf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture height. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The height of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a6751b4c83ae0f2457e53d31681b91d43}\label{class_owl_engine_1_1_sub_texture_a6751b4c83ae0f2457e53d31681b91d43}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!getSize@{getSize}}
+\index{getSize@{getSize}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily glm\+::ivec2 Owl\+Engine\+::\+Sub\+Texture\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the size in pixels of the subtexture. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::ivec2 -\/ The size of the subtexture in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a9b443541c00ff151b781d013e2cb82ae}\label{class_owl_engine_1_1_sub_texture_a9b443541c00ff151b781d013e2cb82ae}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!getSizef@{getSizef}}
+\index{getSizef@{getSizef}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getSizef()}{getSizef()}}
+{\footnotesize\ttfamily glm\+::vec2 Owl\+Engine\+::\+Sub\+Texture\+::get\+Sizef (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the size in pixels of subtexture as float. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The size of the subtexture in pixels 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a4293b52a4659c181fe6672ff882b6f92}\label{class_owl_engine_1_1_sub_texture_a4293b52a4659c181fe6672ff882b6f92}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!getUVEnd@{getUVEnd}}
+\index{getUVEnd@{getUVEnd}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getUVEnd()}{getUVEnd()}}
+{\footnotesize\ttfamily glm\+::vec2 Owl\+Engine\+::\+Sub\+Texture\+::get\+U\+V\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the UV end coordinates. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The UV end coorindates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a5ab65fe3f2f184dc327b55689edd7952}\label{class_owl_engine_1_1_sub_texture_a5ab65fe3f2f184dc327b55689edd7952}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!getUVStart@{getUVStart}}
+\index{getUVStart@{getUVStart}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getUVStart()}{getUVStart()}}
+{\footnotesize\ttfamily glm\+::vec2 Owl\+Engine\+::\+Sub\+Texture\+::get\+U\+V\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the UV start coordinates. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The UV start coorindates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a734bbe12fda4c691c202cb5355ab999f}\label{class_owl_engine_1_1_sub_texture_a734bbe12fda4c691c202cb5355ab999f}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Sub\+Texture\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture width. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The width of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a0c6578ccca15c290947ce21c340a45d0}\label{class_owl_engine_1_1_sub_texture_a0c6578ccca15c290947ce21c340a45d0}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!getWidthf@{getWidthf}}
+\index{getWidthf@{getWidthf}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{getWidthf()}{getWidthf()}}
+{\footnotesize\ttfamily const float Owl\+Engine\+::\+Sub\+Texture\+::get\+Widthf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the texture width. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The width of the texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_ae1e033b9213934d3cbe268217083d0fa}\label{class_owl_engine_1_1_sub_texture_ae1e033b9213934d3cbe268217083d0fa}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!printDetails@{printDetails}}
+\index{printDetails@{printDetails}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{printDetails()}{printDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sub\+Texture\+::print\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print the resource details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_ae1e033b9213934d3cbe268217083d0fa}{print\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_resource_a8b38cc50cd98c027bf848b9e65a5ca89}{Owl\+Engine\+::\+Resource}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a5ded9ee553a08661182b46670d60a747}\label{class_owl_engine_1_1_sub_texture_a5ded9ee553a08661182b46670d60a747}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!setBaseTexture@{setBaseTexture}}
+\index{setBaseTexture@{setBaseTexture}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{setBaseTexture()}{setBaseTexture()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sub\+Texture\+::set\+Base\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_texture2_d}{Texture2D}} $\ast$}]{texture,  }\item[{const glm\+::vec2 \&}]{U\+V\+Start,  }\item[{const glm\+::vec2 \&}]{U\+V\+End,  }\item[{const bool}]{convert\+To\+Bottom\+Left }\end{DoxyParamCaption})}
+
+
+
+Set the base texture. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a5ded9ee553a08661182b46670d60a747}{set\+Base\+Texture()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture} & a Texture2\+D$\ast$ -\/ A pointer to the texture \\
+\hline
+{\em U\+V\+Start} & a const glm\+::vec2\& -\/ The UV start coordinates \\
+\hline
+{\em U\+V\+End} & a const glm\+::vec2\& -\/ The UV end coordinates \\
+\hline
+{\em convert\+To\+Bottom\+Left} & a const bool -\/ Convert U\+Vs to bottom left start system \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_af3e4c578d78b24844f98e7400b998de7}\label{class_owl_engine_1_1_sub_texture_af3e4c578d78b24844f98e7400b998de7}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!setSize@{setSize}}
+\index{setSize@{setSize}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sub\+Texture\+::set\+Size (\begin{DoxyParamCaption}\item[{const glm\+::ivec2 \&}]{size }\end{DoxyParamCaption})}
+
+
+
+Set the subtexture size. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_af3e4c578d78b24844f98e7400b998de7}{set\+Size()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & a const glm\+::ivec2\& -\/ Set the size of the subtexture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a1204f30a390d0aaae18c91eb55444880}\label{class_owl_engine_1_1_sub_texture_a1204f30a390d0aaae18c91eb55444880}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!setUVs@{setUVs}}
+\index{setUVs@{setUVs}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{setUVs()}{setUVs()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Sub\+Texture\+::set\+U\+Vs (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{U\+V\+Start,  }\item[{const glm\+::vec2 \&}]{U\+V\+End }\end{DoxyParamCaption})}
+
+
+
+Set the subtexture U\+Vs. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a1204f30a390d0aaae18c91eb55444880}{set\+U\+Vs()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em U\+V\+Start} & a const glm\+::vec2\& -\/ Start of the UV coords \\
+\hline
+{\em U\+V\+End} & a const glm\+::vec2\& -\/ End of the UV coords \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_ae1d4efd682914711cfc89a8dbeef5b79}\label{class_owl_engine_1_1_sub_texture_ae1d4efd682914711cfc89a8dbeef5b79}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!transformU@{transformU}}
+\index{transformU@{transformU}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{transformU()}{transformU()}}
+{\footnotesize\ttfamily const int16\+\_\+t Owl\+Engine\+::\+Sub\+Texture\+::transformU (\begin{DoxyParamCaption}\item[{const int16\+\_\+t}]{u }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} original U to atlased U. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_ae1d4efd682914711cfc89a8dbeef5b79}{transform\+U()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & a const int16\+\_\+t -\/ The U coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const int16\+\_\+t -\/ The transformed U coordinate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a78b4c834fe0e54c4c70459d05d2ddc29}\label{class_owl_engine_1_1_sub_texture_a78b4c834fe0e54c4c70459d05d2ddc29}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!transformUV@{transformUV}}
+\index{transformUV@{transformUV}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{transformUV()}{transformUV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const glm\+::vec2 Owl\+Engine\+::\+Sub\+Texture\+::transform\+UV (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{uv }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a78b4c834fe0e54c4c70459d05d2ddc29}{transform\+U\+V()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uv} & a const glm\+::vec2\& -\/ The UV coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const glm\+::vec2 -\/ The transformed UV coordinates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a1a4ada635ee23e7f521dbf9e1593cd35}\label{class_owl_engine_1_1_sub_texture_a1a4ada635ee23e7f521dbf9e1593cd35}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!transformUV@{transformUV}}
+\index{transformUV@{transformUV}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{transformUV()}{transformUV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::array$<$ int16\+\_\+t, 2 $>$ Owl\+Engine\+::\+Sub\+Texture\+::transform\+UV (\begin{DoxyParamCaption}\item[{const std\+::array$<$ int16\+\_\+t, 2 $>$ \&}]{uv }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} original U\+Vs to atlased UV. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a78b4c834fe0e54c4c70459d05d2ddc29}{transform\+U\+V()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em uv} & a const std\+::array$<$int16\+\_\+t, 2$>$\& -\/ The UV coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const std\+::array$<$int16\+\_\+t, 2$>$ -\/ The transformed UV coordinates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_sub_texture_a742ee84a0a80fb4a7bde6b1dda4dc619}\label{class_owl_engine_1_1_sub_texture_a742ee84a0a80fb4a7bde6b1dda4dc619}} 
+\index{OwlEngine::SubTexture@{OwlEngine::SubTexture}!transformV@{transformV}}
+\index{transformV@{transformV}!OwlEngine::SubTexture@{OwlEngine::SubTexture}}
+\doxysubsubsection{\texorpdfstring{transformV()}{transformV()}}
+{\footnotesize\ttfamily const int16\+\_\+t Owl\+Engine\+::\+Sub\+Texture\+::transformV (\begin{DoxyParamCaption}\item[{const int16\+\_\+t}]{v }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_owl_engine_1_1_transform}{Transform}} original V to atlased V. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_sub_texture_a742ee84a0a80fb4a7bde6b1dda4dc619}{transform\+V()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & a const int16\+\_\+t -\/ The V coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a const int16\+\_\+t -\/ The transformed V coordinate 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/textures/\mbox{\hyperlink{sub_texture_8h}{sub\+Texture.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/textures/\mbox{\hyperlink{sub_texture_8cpp}{sub\+Texture.\+cpp}}\end{DoxyCompactItemize}

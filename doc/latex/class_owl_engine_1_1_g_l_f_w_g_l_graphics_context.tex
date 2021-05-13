@@ -1,0 +1,131 @@
+\hypertarget{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context}{}\doxysection{Owl\+Engine\+::G\+L\+F\+W\+G\+L\+Graphics\+Context Class Reference}
+\label{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context}\index{OwlEngine::GLFWGLGraphicsContext@{OwlEngine::GLFWGLGraphicsContext}}
+
+
+An G\+L\+FW Open\+GL graphics context.  
+
+
+
+
+{\ttfamily \#include $<$G\+L\+F\+W\+G\+L\+Graphics\+Context.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::G\+L\+F\+W\+G\+L\+Graphics\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_ab2bf155ca5e6412a90f7a61f30f0f8f3}{G\+L\+F\+W\+G\+L\+Graphics\+Context}} (G\+L\+F\+Wwindow $\ast$native\+Window)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a780f1c205f21fb6dc6f92ad868961238}{init}} () override
+\begin{DoxyCompactList}\small\item\em Init the graphics context for the given windowing api. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a71d2c8fdea289bfe164e68bcedbbf62f}{swap\+Buffers}} () override
+\begin{DoxyCompactList}\small\item\em Swap the front and back buffers. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a7ccb956f2e9b82e9996f8bce52c2fc0d}{make\+Current}} () override
+\begin{DoxyCompactList}\small\item\em Make this graphics context the current context. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a131a5357b347d4a77755e730e9520e3f}{update\+Viewport}} (const uint32\+\_\+t x, const uint32\+\_\+t y, const uint32\+\_\+t width, const uint32\+\_\+t height) override
+\begin{DoxyCompactList}\small\item\em Update the viewport. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An G\+L\+FW Open\+GL graphics context. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_ab2bf155ca5e6412a90f7a61f30f0f8f3}\label{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_ab2bf155ca5e6412a90f7a61f30f0f8f3}} 
+\index{OwlEngine::GLFWGLGraphicsContext@{OwlEngine::GLFWGLGraphicsContext}!GLFWGLGraphicsContext@{GLFWGLGraphicsContext}}
+\index{GLFWGLGraphicsContext@{GLFWGLGraphicsContext}!OwlEngine::GLFWGLGraphicsContext@{OwlEngine::GLFWGLGraphicsContext}}
+\doxysubsubsection{\texorpdfstring{GLFWGLGraphicsContext()}{GLFWGLGraphicsContext()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+G\+L\+F\+W\+G\+L\+Graphics\+Context\+::\+G\+L\+F\+W\+G\+L\+Graphics\+Context (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{native\+Window }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_ab2bf155ca5e6412a90f7a61f30f0f8f3}{G\+L\+F\+W\+G\+L\+Graphics\+Context()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em native\+Window} & a G\+L\+F\+Wwindow$\ast$ -\/ A pointer to a G\+L\+FW window \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a780f1c205f21fb6dc6f92ad868961238}\label{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a780f1c205f21fb6dc6f92ad868961238}} 
+\index{OwlEngine::GLFWGLGraphicsContext@{OwlEngine::GLFWGLGraphicsContext}!init@{init}}
+\index{init@{init}!OwlEngine::GLFWGLGraphicsContext@{OwlEngine::GLFWGLGraphicsContext}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+G\+L\+Graphics\+Context\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Init the graphics context for the given windowing api. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a780f1c205f21fb6dc6f92ad868961238}{init()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_graphics_context_a7a112d1b67dfa8615cb8c9694c4eb899}{Owl\+Engine\+::\+Graphics\+Context}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a7ccb956f2e9b82e9996f8bce52c2fc0d}\label{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a7ccb956f2e9b82e9996f8bce52c2fc0d}} 
+\index{OwlEngine::GLFWGLGraphicsContext@{OwlEngine::GLFWGLGraphicsContext}!makeCurrent@{makeCurrent}}
+\index{makeCurrent@{makeCurrent}!OwlEngine::GLFWGLGraphicsContext@{OwlEngine::GLFWGLGraphicsContext}}
+\doxysubsubsection{\texorpdfstring{makeCurrent()}{makeCurrent()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+G\+L\+Graphics\+Context\+::make\+Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Make this graphics context the current context. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a7ccb956f2e9b82e9996f8bce52c2fc0d}{make\+Current()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_graphics_context_a4924c76af021eae73b43e934eca65535}{Owl\+Engine\+::\+Graphics\+Context}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a71d2c8fdea289bfe164e68bcedbbf62f}\label{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a71d2c8fdea289bfe164e68bcedbbf62f}} 
+\index{OwlEngine::GLFWGLGraphicsContext@{OwlEngine::GLFWGLGraphicsContext}!swapBuffers@{swapBuffers}}
+\index{swapBuffers@{swapBuffers}!OwlEngine::GLFWGLGraphicsContext@{OwlEngine::GLFWGLGraphicsContext}}
+\doxysubsubsection{\texorpdfstring{swapBuffers()}{swapBuffers()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+G\+L\+Graphics\+Context\+::swap\+Buffers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Swap the front and back buffers. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a71d2c8fdea289bfe164e68bcedbbf62f}{swap\+Buffers()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_graphics_context_ac7f85f9991741cf64042e343c5ae0850}{Owl\+Engine\+::\+Graphics\+Context}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a131a5357b347d4a77755e730e9520e3f}\label{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a131a5357b347d4a77755e730e9520e3f}} 
+\index{OwlEngine::GLFWGLGraphicsContext@{OwlEngine::GLFWGLGraphicsContext}!updateViewport@{updateViewport}}
+\index{updateViewport@{updateViewport}!OwlEngine::GLFWGLGraphicsContext@{OwlEngine::GLFWGLGraphicsContext}}
+\doxysubsubsection{\texorpdfstring{updateViewport()}{updateViewport()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+G\+L\+F\+W\+G\+L\+Graphics\+Context\+::update\+Viewport (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{x,  }\item[{const uint32\+\_\+t}]{y,  }\item[{const uint32\+\_\+t}]{width,  }\item[{const uint32\+\_\+t}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the viewport. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_g_l_f_w_g_l_graphics_context_a131a5357b347d4a77755e730e9520e3f}{update\+Viewport()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a const uint32\+\_\+t -\/ The lower left corner of the rectangle viewport \\
+\hline
+{\em y} & a const uint32\+\_\+t -\/ The lower left corner of the rectangle viewport \\
+\hline
+{\em width} & a const uint32\+\_\+t -\/ The width of the rectangle viewport \\
+\hline
+{\em height} & a const uint32\+\_\+t -\/ The height of the rectangle viewport \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_graphics_context_af51424e0a353305d267504d6f8b61944}{Owl\+Engine\+::\+Graphics\+Context}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/platform/\+G\+L\+F\+W/\mbox{\hyperlink{_g_l_f_w_g_l_graphics_context_8h}{G\+L\+F\+W\+G\+L\+Graphics\+Context.\+h}}\item 
+C\+:/doc/src/engine/src/platform/\+G\+L\+F\+W/\mbox{\hyperlink{_g_l_f_w_g_l_graphics_context_8cpp}{G\+L\+F\+W\+G\+L\+Graphics\+Context.\+cpp}}\end{DoxyCompactItemize}

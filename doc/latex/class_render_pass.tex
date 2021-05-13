@@ -1,0 +1,92 @@
+\hypertarget{class_render_pass}{}\doxysection{Render\+Pass Class Reference}
+\label{class_render_pass}\index{RenderPass@{RenderPass}}
+
+
+A render pass containing all the rendering information.  
+
+
+
+
+{\ttfamily \#include $<$render\+Pass.\+h$>$}
+
+Inheritance diagram for Render\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_render_pass}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_render_pass_a224d90914536802a017a7e0bb088e029}\label{class_render_pass_a224d90914536802a017a7e0bb088e029}} 
+virtual \mbox{\hyperlink{class_render_pass_a224d90914536802a017a7e0bb088e029}{$\sim$\+Render\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_render_pass_aba01989082cece85d1a2921bb3a70fe5}\label{class_render_pass_aba01989082cece85d1a2921bb3a70fe5}} 
+virtual void \mbox{\hyperlink{class_render_pass_aba01989082cece85d1a2921bb3a70fe5}{init}} ()=0
+\begin{DoxyCompactList}\small\item\em Initialise the render pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_render_pass_a29f3d86656e20c9fe701f6c68342a6be}\label{class_render_pass_a29f3d86656e20c9fe701f6c68342a6be}} 
+virtual void \mbox{\hyperlink{class_render_pass_a29f3d86656e20c9fe701f6c68342a6be}{update}} (\mbox{\hyperlink{class_window}{Window}} $\ast$window)=0
+\begin{DoxyCompactList}\small\item\em Update the render pass data. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_render_pass_a427e3c83103417a03d05ced68c3362e8}\label{class_render_pass_a427e3c83103417a03d05ced68c3362e8}} 
+virtual void \mbox{\hyperlink{class_render_pass_a427e3c83103417a03d05ced68c3362e8}{begin}} ()=0
+\begin{DoxyCompactList}\small\item\em Begin the render pass. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_render_pass_a30951ffd20b334abc1eac92cbceb1da8}\label{class_render_pass_a30951ffd20b334abc1eac92cbceb1da8}} 
+virtual void \mbox{\hyperlink{class_render_pass_a30951ffd20b334abc1eac92cbceb1da8}{render}} ()=0
+\begin{DoxyCompactList}\small\item\em Render the geometry. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_render_pass_a38405b44b19c7db7ddd98d0cabd053cd}\label{class_render_pass_a38405b44b19c7db7ddd98d0cabd053cd}} 
+virtual void \mbox{\hyperlink{class_render_pass_a38405b44b19c7db7ddd98d0cabd053cd}{end}} ()=0
+\begin{DoxyCompactList}\small\item\em End the render pass. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_pass_a543189516e8ef08d367bdfef5d58310d}{set\+F\+BO}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_frame_buffer_object}{Frame\+Buffer\+Object}} $>$ \&fbo)
+\begin{DoxyCompactList}\small\item\em Set the frame buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_render_pass_a9fb20124af50749fa90ecbead22f2ff8}{set\+Shader}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \&shader)
+\begin{DoxyCompactList}\small\item\em Set the global shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_render_pass_a14b26441464fd9d586ba98e85e780913}\label{class_render_pass_a14b26441464fd9d586ba98e85e780913}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_frame_buffer_object}{Frame\+Buffer\+Object}} $>$ \mbox{\hyperlink{class_render_pass_a14b26441464fd9d586ba98e85e780913}{m\+\_\+fbo}}
+\begin{DoxyCompactList}\small\item\em The frame buffer to render the geometry to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_render_pass_ab85bc778a991b4a8b3736735f0a98792}\label{class_render_pass_ab85bc778a991b4a8b3736735f0a98792}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \mbox{\hyperlink{class_render_pass_ab85bc778a991b4a8b3736735f0a98792}{m\+\_\+global\+Shader}}
+\begin{DoxyCompactList}\small\item\em A global shader to use for all geometry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A render pass containing all the rendering information. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_render_pass_a543189516e8ef08d367bdfef5d58310d}\label{class_render_pass_a543189516e8ef08d367bdfef5d58310d}} 
+\index{RenderPass@{RenderPass}!setFBO@{setFBO}}
+\index{setFBO@{setFBO}!RenderPass@{RenderPass}}
+\doxysubsubsection{\texorpdfstring{setFBO()}{setFBO()}}
+{\footnotesize\ttfamily void Render\+Pass\+::set\+F\+BO (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_frame_buffer_object}{Frame\+Buffer\+Object}} $>$ \&}]{fbo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the frame buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fbo} & a const std\+::shared\+\_\+ptr$<$\+Frame\+Buffer\+Object$>$\& -\/ A reference to the F\+BO pointer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_render_pass_a9fb20124af50749fa90ecbead22f2ff8}\label{class_render_pass_a9fb20124af50749fa90ecbead22f2ff8}} 
+\index{RenderPass@{RenderPass}!setShader@{setShader}}
+\index{setShader@{setShader}!RenderPass@{RenderPass}}
+\doxysubsubsection{\texorpdfstring{setShader()}{setShader()}}
+{\footnotesize\ttfamily void Render\+Pass\+::set\+Shader (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_shader_program}{Shader\+Program}} $>$ \&}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the global shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & a const std\+::shared\+\_\+ptr$<$\+Shader\+Program$>$\& -\/ A reference to the shader program pointer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/rendering/\mbox{\hyperlink{render_pass_8h}{render\+Pass.\+h}}\end{DoxyCompactItemize}

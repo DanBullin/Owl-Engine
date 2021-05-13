@@ -1,0 +1,12 @@
+# Directories
+.vs/
+bin/
+build/
+
+# Files
+*.user
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+sandbox/imgui.ini

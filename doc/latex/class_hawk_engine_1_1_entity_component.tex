@@ -1,0 +1,161 @@
+\hypertarget{class_hawk_engine_1_1_entity_component}{}\doxysection{Hawk\+Engine\+::Entity\+Component Class Reference}
+\label{class_hawk_engine_1_1_entity_component}\index{HawkEngine::EntityComponent@{HawkEngine::EntityComponent}}
+
+
+An entity component which are attached to entities.  
+
+
+
+
+{\ttfamily \#include $<$entity\+Component.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Entity\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.842105cm]{class_hawk_engine_1_1_entity_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_component_a8ac87847c6ca1e2e7858f310708042f5}{Entity\+Component}} (const \mbox{\hyperlink{entity_component_8h_ab44e428dd0e8e887e676b4376157f137}{Component\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Constructor requiring type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_component_a9f6cb89369c293d61cf9ed0e15a1d283}\label{class_hawk_engine_1_1_entity_component_a9f6cb89369c293d61cf9ed0e15a1d283}} 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_entity_component_a9f6cb89369c293d61cf9ed0e15a1d283}{$\sim$\+Entity\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_entity_component_a7412532ffe2ae2e2c30b381b1a0b390e}{set\+Parent}} (\mbox{\hyperlink{class_hawk_engine_1_1_entity}{Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Set the component\textquotesingle{}s parent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_entity_component_ae930fa86f44d96d2798c40f4ba8f4cae}{get\+Parent}} ()
+\begin{DoxyCompactList}\small\item\em Get the entity this component is attached to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{entity_component_8h_ab44e428dd0e8e887e676b4376157f137}{Component\+Type}} \& \mbox{\hyperlink{class_hawk_engine_1_1_entity_component_a5a4328908d93c3e1a04e9671871e5c0a}{get\+Component\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Get the component type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_entity_component_a654b6d5d8b59feb5e63de9ec5de52e42}{set\+Name}} (const char $\ast$name)
+\begin{DoxyCompactList}\small\item\em Set the name of the component. \end{DoxyCompactList}\item 
+std\+::string \& \mbox{\hyperlink{class_hawk_engine_1_1_entity_component_a92e757bcde6ad354a6730d6a4273926e}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_entity_component_a2629fb860778499c1e6f4dea443e908f}{update}} (const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Update function for components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An entity component which are attached to entities. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_component_a8ac87847c6ca1e2e7858f310708042f5}\label{class_hawk_engine_1_1_entity_component_a8ac87847c6ca1e2e7858f310708042f5}} 
+\index{HawkEngine::EntityComponent@{HawkEngine::EntityComponent}!EntityComponent@{EntityComponent}}
+\index{EntityComponent@{EntityComponent}!HawkEngine::EntityComponent@{HawkEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{EntityComponent()}{EntityComponent()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Entity\+Component\+::\+Entity\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{entity_component_8h_ab44e428dd0e8e887e676b4376157f137}{Component\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor requiring type. 
+
+Entity\+Component()
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const Component\+Type -\/ The type of component \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_component_a5a4328908d93c3e1a04e9671871e5c0a}\label{class_hawk_engine_1_1_entity_component_a5a4328908d93c3e1a04e9671871e5c0a}} 
+\index{HawkEngine::EntityComponent@{HawkEngine::EntityComponent}!getComponentType@{getComponentType}}
+\index{getComponentType@{getComponentType}!HawkEngine::EntityComponent@{HawkEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{getComponentType()}{getComponentType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{entity_component_8h_ab44e428dd0e8e887e676b4376157f137}{Component\+Type}}\& Hawk\+Engine\+::\+Entity\+Component\+::get\+Component\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the component type. 
+
+\begin{DoxyReturn}{Returns}
+a Component\+Type\& -\/ A reference to the component type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_component_a92e757bcde6ad354a6730d6a4273926e}\label{class_hawk_engine_1_1_entity_component_a92e757bcde6ad354a6730d6a4273926e}} 
+\index{HawkEngine::EntityComponent@{HawkEngine::EntityComponent}!getName@{getName}}
+\index{getName@{getName}!HawkEngine::EntityComponent@{HawkEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string\& Hawk\+Engine\+::\+Entity\+Component\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the name of the component. 
+
+\begin{DoxyReturn}{Returns}
+a std\+::string\& -\/ The name of the component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_component_ae930fa86f44d96d2798c40f4ba8f4cae}\label{class_hawk_engine_1_1_entity_component_ae930fa86f44d96d2798c40f4ba8f4cae}} 
+\index{HawkEngine::EntityComponent@{HawkEngine::EntityComponent}!getParent@{getParent}}
+\index{getParent@{getParent}!HawkEngine::EntityComponent@{HawkEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_entity}{Entity}}$\ast$ Hawk\+Engine\+::\+Entity\+Component\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the entity this component is attached to. 
+
+\begin{DoxyReturn}{Returns}
+an Entity$\ast$ -\/ A pointer to the entity parent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_component_a654b6d5d8b59feb5e63de9ec5de52e42}\label{class_hawk_engine_1_1_entity_component_a654b6d5d8b59feb5e63de9ec5de52e42}} 
+\index{HawkEngine::EntityComponent@{HawkEngine::EntityComponent}!setName@{setName}}
+\index{setName@{setName}!HawkEngine::EntityComponent@{HawkEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Entity\+Component\+::set\+Name (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the name of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const char$\ast$ -\/ The name of the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_component_a7412532ffe2ae2e2c30b381b1a0b390e}\label{class_hawk_engine_1_1_entity_component_a7412532ffe2ae2e2c30b381b1a0b390e}} 
+\index{HawkEngine::EntityComponent@{HawkEngine::EntityComponent}!setParent@{setParent}}
+\index{setParent@{setParent}!HawkEngine::EntityComponent@{HawkEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Entity\+Component\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_hawk_engine_1_1_entity}{Entity}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the component\textquotesingle{}s parent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & an Entity$\ast$ -\/ A pointer to the entity parent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_entity_component_a2629fb860778499c1e6f4dea443e908f}\label{class_hawk_engine_1_1_entity_component_a2629fb860778499c1e6f4dea443e908f}} 
+\index{HawkEngine::EntityComponent@{HawkEngine::EntityComponent}!update@{update}}
+\index{update@{update}!HawkEngine::EntityComponent@{HawkEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Entity\+Component\+::update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update function for components. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_entity_component_a2629fb860778499c1e6f4dea443e908f}{update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time between the last frame \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_hawk_engine_1_1_camera_ade939b0fc13a6428ca22e643a2bc2e37}{Hawk\+Engine\+::\+Camera}}, and \mbox{\hyperlink{class_hawk_engine_1_1_light_aa3d15abcd35c3772b99fe3cf07e12e39}{Hawk\+Engine\+::\+Light}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/scene/entity/\mbox{\hyperlink{entity_component_8h}{entity\+Component.\+h}}\item 
+C\+:/doc/src/src/independent/scene/entity/\mbox{\hyperlink{entity_component_8cpp}{entity\+Component.\+cpp}}\end{DoxyCompactItemize}

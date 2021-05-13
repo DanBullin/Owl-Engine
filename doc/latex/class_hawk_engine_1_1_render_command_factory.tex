@@ -1,0 +1,75 @@
+\hypertarget{class_hawk_engine_1_1_render_command_factory}{}\doxysection{Hawk\+Engine\+::Render\+Command\+Factory Class Reference}
+\label{class_hawk_engine_1_1_render_command_factory}\index{HawkEngine::RenderCommandFactory@{HawkEngine::RenderCommandFactory}}
+
+
+A factory class to create render commands.  
+
+
+
+
+{\ttfamily \#include $<$render\+Command.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_render_command_factory_a89a7398b75d088bdaf7ffa3f0ccf2c90}\label{class_hawk_engine_1_1_render_command_factory_a89a7398b75d088bdaf7ffa3f0ccf2c90}} 
+{\footnotesize template$<$typename ... Args$>$ }\\static \mbox{\hyperlink{class_hawk_engine_1_1_render_command}{Render\+Command}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_render_command_factory_a89a7398b75d088bdaf7ffa3f0ccf2c90}{create\+Command}} (\mbox{\hyperlink{render_command_8h_a1aeab00d390d686cfbfd32d975ef1d92}{R\+Commands\+::\+Commands}} command, Args \&\&...args)
+\begin{DoxyCompactList}\small\item\em Create a render command. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_render_command_factory_a78576809946759b2caf0f23bde97c7da}\label{class_hawk_engine_1_1_render_command_factory_a78576809946759b2caf0f23bde97c7da}} 
+{\footnotesize template$<$typename G , size\+\_\+t I, typename... Ts$>$ }\\void static \+::type \mbox{\hyperlink{class_hawk_engine_1_1_render_command_factory_a78576809946759b2caf0f23bde97c7da}{get\+Value}} (G \&result, std\+::tuple$<$ Ts... $>$ tup)
+\begin{DoxyCompactList}\small\item\em Get a value from a tuple filled with a parameter pack. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_render_command_factory_a5ba1752bb1de425a09f0e52da9acb23c}\label{class_hawk_engine_1_1_render_command_factory_a5ba1752bb1de425a09f0e52da9acb23c}} 
+{\footnotesize template$<$typename G , size\+\_\+t I, typename... Ts$>$ }\\static std\+::enable\+\_\+if$<$(I$<$ sizeof...(Ts)), void $>$\+::type \mbox{\hyperlink{class_hawk_engine_1_1_render_command_factory_a5ba1752bb1de425a09f0e52da9acb23c}{get\+Value}} (G \&result, std\+::tuple$<$ Ts... $>$ tup)
+\begin{DoxyCompactList}\small\item\em Get a value from a tuple filled with a parameter pack. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename G , size\+\_\+t I, typename... Ts$>$ }\\void static \+::type \mbox{\hyperlink{class_hawk_engine_1_1_render_command_factory_a78576809946759b2caf0f23bde97c7da}{get\+Value}} (G \&result, std\+::tuple$<$ Ts... $>$ tup)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_render_command_factory_a78576809946759b2caf0f23bde97c7da}{get\+Value()}} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename ... Args$>$ }\\static \mbox{\hyperlink{class_hawk_engine_1_1_render_command}{Render\+Command}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_render_command_factory_a89a7398b75d088bdaf7ffa3f0ccf2c90}{create\+Command}} (\mbox{\hyperlink{render_command_8h_a1aeab00d390d686cfbfd32d975ef1d92}{R\+Commands\+::\+Commands}} command, Args \&\&...args)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_render_command_factory_a89a7398b75d088bdaf7ffa3f0ccf2c90}{create\+Command()}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class to create render commands. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_render_command_factory_a89a7398b75d088bdaf7ffa3f0ccf2c90}\label{class_hawk_engine_1_1_render_command_factory_a89a7398b75d088bdaf7ffa3f0ccf2c90}} 
+\index{HawkEngine::RenderCommandFactory@{HawkEngine::RenderCommandFactory}!createCommand@{createCommand}}
+\index{createCommand@{createCommand}!HawkEngine::RenderCommandFactory@{HawkEngine::RenderCommandFactory}}
+\doxysubsubsection{\texorpdfstring{createCommand()}{createCommand()}}
+{\footnotesize\ttfamily template$<$typename ... Args$>$ \\
+static \mbox{\hyperlink{class_hawk_engine_1_1_render_command}{Render\+Command}}$\ast$ Hawk\+Engine\+::\+Render\+Command\+Factory\+::create\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{render_command_8h_a1aeab00d390d686cfbfd32d975ef1d92}{R\+Commands\+::\+Commands}}}]{command,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_render_command_factory_a89a7398b75d088bdaf7ffa3f0ccf2c90}{create\+Command()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & a R\+Commands\+::\+Commands -\/ The render command to create \\
+\hline
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_render_command_factory_a78576809946759b2caf0f23bde97c7da}\label{class_hawk_engine_1_1_render_command_factory_a78576809946759b2caf0f23bde97c7da}} 
+\index{HawkEngine::RenderCommandFactory@{HawkEngine::RenderCommandFactory}!getValue@{getValue}}
+\index{getValue@{getValue}!HawkEngine::RenderCommandFactory@{HawkEngine::RenderCommandFactory}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily template$<$typename G , size\+\_\+t I, typename... Ts$>$ \\
+void static \+::type Hawk\+Engine\+::\+Render\+Command\+Factory\+::get\+Value (\begin{DoxyParamCaption}\item[{G \&}]{result,  }\item[{std\+::tuple$<$ Ts... $>$}]{tup }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_hawk_engine_1_1_render_command_factory_a78576809946759b2caf0f23bde97c7da}{get\+Value()}} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & a G\& -\/ The result to fill \\
+\hline
+{\em tup} & a std\+::tuple$<$\+Ts...$>$ -\/ A tuple filled with a parameter pack \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/\mbox{\hyperlink{render_command_8h}{render\+Command.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/\mbox{\hyperlink{render_command_8cpp}{render\+Command.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+{
+    "muteAudio": false,
+    "volume": 0.25,
+    "enableVSync": false,
+    "keybinds": [
+        {
+            "function": "MoveForward",
+            "key1": 87,
+            "key2": 0
+        },
+        {
+            "function": "MoveLeft",
+            "key1": 65,
+            "key2": 0
+        },
+        {
+            "function": "MoveRight",
+            "key1": 68,
+            "key2": 0
+        },
+        {
+            "function": "MoveBack",
+            "key1": 83,
+            "key2": 0
+        },
+        {
+            "function": "Pause",
+            "key1": 256,
+            "key2": 0
+        },
+        {
+            "function": "MoveUp",
+            "key1": 32,
+            "key2": 0
+        },
+        {
+            "function": "MoveDown",
+            "key1": 340,
+            "key2": 0
+        },
+        {
+            "function": "FreezeCamera",
+            "key1": 342,
+            "key2": 0
+        },
+        {
+            "function": "UnlockDoor",
+            "key1": 70,
+            "key2": 0
+        },
+        {
+            "function": "SaveScene",
+            "key1": 291,
+            "key2": 0
+        },
+        {
+            "function": "EnableInspector",
+            "key1": 292,
+            "key2": 0
+        },
+        {
+            "function": "FullscreenWindow",
+            "key1": 294,
+            "key2": 0
+        },
+        {
+            "function": "ToggleCursorInput",
+            "key1": 295,
+            "key2": 0
+        },
+        {
+            "function": "MinimiseWindow",
+            "key1": 297,
+            "key2": 0
+        },
+        {
+            "function": "ToggleColliders",
+            "key1": 258,
+            "key2": 341
+        },
+        {
+            "function": "Hotbar1",
+            "key1": 49,
+            "key2": 0
+        },
+        {
+            "function": "Hotbar2",
+            "key1": 50,
+            "key2": 0
+        },
+        {
+            "function": "Hotbar3",
+            "key1": 51,
+            "key2": 0
+        },
+        {
+            "function": "Hotbar4",
+            "key1": 52,
+            "key2": 0
+        },
+        {
+            "function": "Hotbar5",
+            "key1": 53,
+            "key2": 0
+        },
+        {
+            "function": "Pickup",
+            "key1": 69,
+            "key2": 0
+        }
+    ]
+}

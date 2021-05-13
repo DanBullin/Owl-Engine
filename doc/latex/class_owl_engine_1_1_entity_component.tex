@@ -1,0 +1,256 @@
+\hypertarget{class_owl_engine_1_1_entity_component}{}\doxysection{Owl\+Engine\+::Entity\+Component Class Reference}
+\label{class_owl_engine_1_1_entity_component}\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+
+
+An entity component which are attached to entities.  
+
+
+
+
+{\ttfamily \#include $<$entity\+Component.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Entity\+Component\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_owl_engine_1_1_entity_component}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_entity_component_a5ead79c582a60ecda3af79ac2ce51087}{Entity\+Component}} (const \mbox{\hyperlink{entity_component_8h_a47b1cf4198a5037ca21e9207a5c8287e}{Component\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Constructor requiring component type. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6c2519da0d1fc8ca143244989cc4dfca}{$\sim$\+Entity\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0ab720bd4feebc1082f4936cdf00ccdf}{detach}} ()
+\begin{DoxyCompactList}\small\item\em Detach this component from its parent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_component_adabe9d1c098bedf226fb2f64f7c068f7}{set\+Parent}} (\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Set the component\textquotesingle{}s parent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a990fdc2e8f8f620fb016bfd60463d5b6}{get\+Parent}} ()
+\begin{DoxyCompactList}\small\item\em Get the entity this component is attached to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a889bc949b52d26702d9890eac63153ea}{set\+Name}} (const std\+::string \&name)
+\begin{DoxyCompactList}\small\item\em Set the name of the component. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae3eb57f8c6d2f730a867b7941c2a76e8}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of the component. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{entity_component_8h_a47b1cf4198a5037ca21e9207a5c8287e}{Component\+Type}} \& \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aa5fc294b0b6cf5e14d3115b2749dbac3}{get\+Component\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Get the component type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a3fd2d0c173a399c40532884453f10e06}{set\+Changed}} (const bool change)
+\begin{DoxyCompactList}\small\item\em Allows other things that have the component to let it know its been touched and might need to regenerate certain values. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_entity_component_abf834c6973d048aaaf0c660f1fa88d14}{get\+Changed}} ()
+\begin{DoxyCompactList}\small\item\em Get whether this component has been externally changed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}\label{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{on\+Attach}} ()=0
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}\label{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{on\+Detach}} ()=0
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{on\+Update}} (const float timestep, const float total\+Time)=0
+\begin{DoxyCompactList}\small\item\em Update function for components. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}\label{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}} 
+virtual nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{get\+As\+J\+S\+ON}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the component details as a json object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}\label{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{print\+Component\+Details}} ()=0
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}\label{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{display\+Im\+Gui}} ()=0
+\begin{DoxyCompactList}\small\item\em The Im\+G\+UI display controls for this component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a37e84dc64f82908d800e44a1130737d3}\label{class_owl_engine_1_1_entity_component_a37e84dc64f82908d800e44a1130737d3}} 
+std\+::string \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a37e84dc64f82908d800e44a1130737d3}{m\+\_\+name}}
+\begin{DoxyCompactList}\small\item\em The name of the component. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a962ed9ae928a2578572ddffe5eac0234}\label{class_owl_engine_1_1_entity_component_a962ed9ae928a2578572ddffe5eac0234}} 
+\mbox{\hyperlink{entity_component_8h_a47b1cf4198a5037ca21e9207a5c8287e}{Component\+Type}} \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a962ed9ae928a2578572ddffe5eac0234}{m\+\_\+component\+Type}}
+\begin{DoxyCompactList}\small\item\em The component type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a7e02e75a07ebc0a7fe7a3aead493a71b}\label{class_owl_engine_1_1_entity_component_a7e02e75a07ebc0a7fe7a3aead493a71b}} 
+\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a7e02e75a07ebc0a7fe7a3aead493a71b}{m\+\_\+parent\+Entity}}
+\begin{DoxyCompactList}\small\item\em The entity this component is attached to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_aa9f426e8c72cbd1ceb24f239c8c3048c}\label{class_owl_engine_1_1_entity_component_aa9f426e8c72cbd1ceb24f239c8c3048c}} 
+bool \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aa9f426e8c72cbd1ceb24f239c8c3048c}{m\+\_\+changed}} = false
+\begin{DoxyCompactList}\small\item\em Has this component been updated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An entity component which are attached to entities. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a5ead79c582a60ecda3af79ac2ce51087}\label{class_owl_engine_1_1_entity_component_a5ead79c582a60ecda3af79ac2ce51087}} 
+\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}!EntityComponent@{EntityComponent}}
+\index{EntityComponent@{EntityComponent}!OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{EntityComponent()}{EntityComponent()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Entity\+Component\+::\+Entity\+Component (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{entity_component_8h_a47b1cf4198a5037ca21e9207a5c8287e}{Component\+Type}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor requiring component type. 
+
+Entity\+Component()
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & a const Component\+Type -\/ The type of component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a6c2519da0d1fc8ca143244989cc4dfca}\label{class_owl_engine_1_1_entity_component_a6c2519da0d1fc8ca143244989cc4dfca}} 
+\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}!````~EntityComponent@{$\sim$EntityComponent}}
+\index{````~EntityComponent@{$\sim$EntityComponent}!OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{$\sim$EntityComponent()}{~EntityComponent()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Entity\+Component\+::$\sim$\+Entity\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6c2519da0d1fc8ca143244989cc4dfca}{$\sim$\+Entity\+Component()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a0ab720bd4feebc1082f4936cdf00ccdf}\label{class_owl_engine_1_1_entity_component_a0ab720bd4feebc1082f4936cdf00ccdf}} 
+\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}!detach@{detach}}
+\index{detach@{detach}!OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+Component\+::detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Detach this component from its parent. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0ab720bd4feebc1082f4936cdf00ccdf}{detach()}} \mbox{\Hypertarget{class_owl_engine_1_1_entity_component_abf834c6973d048aaaf0c660f1fa88d14}\label{class_owl_engine_1_1_entity_component_abf834c6973d048aaaf0c660f1fa88d14}} 
+\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}!getChanged@{getChanged}}
+\index{getChanged@{getChanged}!OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{getChanged()}{getChanged()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Entity\+Component\+::get\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get whether this component has been externally changed. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_component_abf834c6973d048aaaf0c660f1fa88d14}{get\+Changed()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Has this component been changed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_aa5fc294b0b6cf5e14d3115b2749dbac3}\label{class_owl_engine_1_1_entity_component_aa5fc294b0b6cf5e14d3115b2749dbac3}} 
+\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}!getComponentType@{getComponentType}}
+\index{getComponentType@{getComponentType}!OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{getComponentType()}{getComponentType()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{entity_component_8h_a47b1cf4198a5037ca21e9207a5c8287e}{Component\+Type}} \& Owl\+Engine\+::\+Entity\+Component\+::get\+Component\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the component type. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_component_aa5fc294b0b6cf5e14d3115b2749dbac3}{get\+Component\+Type()}}
+
+\begin{DoxyReturn}{Returns}
+a const Component\+Type\& -\/ The component type 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_ae3eb57f8c6d2f730a867b7941c2a76e8}\label{class_owl_engine_1_1_entity_component_ae3eb57f8c6d2f730a867b7941c2a76e8}} 
+\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}!getName@{getName}}
+\index{getName@{getName}!OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Entity\+Component\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of the component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae3eb57f8c6d2f730a867b7941c2a76e8}{get\+Name()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The name of the component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a990fdc2e8f8f620fb016bfd60463d5b6}\label{class_owl_engine_1_1_entity_component_a990fdc2e8f8f620fb016bfd60463d5b6}} 
+\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}!getParent@{getParent}}
+\index{getParent@{getParent}!OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{getParent()}{getParent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ Owl\+Engine\+::\+Entity\+Component\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the entity this component is attached to. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_component_a990fdc2e8f8f620fb016bfd60463d5b6}{get\+Parent()}}
+
+\begin{DoxyReturn}{Returns}
+an Entity$\ast$ -\/ A pointer to the entity this component is attached to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}\label{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}} 
+\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Entity\+Component\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update function for components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total runtime of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_spot_light_a9873cb872557a9a625b00cb0780d123b}{Owl\+Engine\+::\+Spot\+Light}}, \mbox{\hyperlink{class_owl_engine_1_1_camera_ae9a617053a904c8640cd572c28759463}{Owl\+Engine\+::\+Camera}}, \mbox{\hyperlink{class_owl_engine_1_1_sound_affd8b649cead2759cf72b34cea109e98}{Owl\+Engine\+::\+Sound}}, \mbox{\hyperlink{class_owl_engine_1_1_point_light_a4381ade9c11497d3dbb6e43dbd23ed76}{Owl\+Engine\+::\+Point\+Light}}, \mbox{\hyperlink{class_owl_engine_1_1_rigid_body_a16dde41e9c223542fd0a00724297453f}{Owl\+Engine\+::\+Rigid\+Body}}, \mbox{\hyperlink{class_owl_engine_1_1_studio_sound_a816de74d5f6a569e92adfc75e52d843f}{Owl\+Engine\+::\+Studio\+Sound}}, \mbox{\hyperlink{class_owl_engine_1_1_character_controller_adcfcdde12a83244139b4776c7da592ed}{Owl\+Engine\+::\+Character\+Controller}}, \mbox{\hyperlink{class_owl_engine_1_1_capsule_collider_abd6a3741943834047a6f4d8180db2502}{Owl\+Engine\+::\+Capsule\+Collider}}, \mbox{\hyperlink{class_owl_engine_1_1_sphere_collider_a6c62382a008864b7add653296030f94e}{Owl\+Engine\+::\+Sphere\+Collider}}, \mbox{\hyperlink{class_owl_engine_1_1_transform_ae88b7546486ede4b5952df3dc4bf8e05}{Owl\+Engine\+::\+Transform}}, \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a2f94c91791ed3f2bd23a0895168f3301}{Owl\+Engine\+::\+Box\+Collider}}, \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_element_af3f4cd17f45f5ea9bce60d67871bbcb3}{Owl\+Engine\+::\+U\+I\+::\+Element}}, \mbox{\hyperlink{class_owl_engine_1_1_u_i_1_1_canvas_a7aea18e15410f6a923098d67862075bc}{Owl\+Engine\+::\+U\+I\+::\+Canvas}}, \mbox{\hyperlink{class_owl_engine_1_1_directional_light_a7df33a1fcd76d465f63aebbe69f30478}{Owl\+Engine\+::\+Directional\+Light}}, \mbox{\hyperlink{class_owl_engine_1_1_mesh_render3_d_ad188ac0b481654bfc63dbc61330affc1}{Owl\+Engine\+::\+Mesh\+Render3D}}, \mbox{\hyperlink{class_owl_engine_1_1_text_a1f6fe11b82b117fbc36fb2321bcbddb3}{Owl\+Engine\+::\+Text}}, \mbox{\hyperlink{class_owl_engine_1_1_a_i_movement_node_a401c134303237f742bd908156168bcc0}{Owl\+Engine\+::\+A\+I\+Movement\+Node}}, \mbox{\hyperlink{class_owl_engine_1_1_mesh_render2_d_a4fbe83e75779502f7a7b8f392fad9190}{Owl\+Engine\+::\+Mesh\+Render2D}}, \mbox{\hyperlink{class_owl_engine_1_1_audio_listener_a381d09b61afac0e81878be0f9a2922bb}{Owl\+Engine\+::\+Audio\+Listener}}, and \mbox{\hyperlink{class_owl_engine_1_1_native_script_a28891331d5dcbb84e68972661eeed89a}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a3fd2d0c173a399c40532884453f10e06}\label{class_owl_engine_1_1_entity_component_a3fd2d0c173a399c40532884453f10e06}} 
+\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}!setChanged@{setChanged}}
+\index{setChanged@{setChanged}!OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{setChanged()}{setChanged()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+Component\+::set\+Changed (\begin{DoxyParamCaption}\item[{const bool}]{change }\end{DoxyParamCaption})}
+
+
+
+Allows other things that have the component to let it know its been touched and might need to regenerate certain values. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_component_a3fd2d0c173a399c40532884453f10e06}{set\+Changed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em change} & a const bool -\/ Has this component been changed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_a889bc949b52d26702d9890eac63153ea}\label{class_owl_engine_1_1_entity_component_a889bc949b52d26702d9890eac63153ea}} 
+\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}!setName@{setName}}
+\index{setName@{setName}!OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+Component\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the name of the component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_component_a889bc949b52d26702d9890eac63153ea}{set\+Name()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const std\+::string\& -\/ The name of the component \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_component_adabe9d1c098bedf226fb2f64f7c068f7}\label{class_owl_engine_1_1_entity_component_adabe9d1c098bedf226fb2f64f7c068f7}} 
+\index{OwlEngine::EntityComponent@{OwlEngine::EntityComponent}!setParent@{setParent}}
+\index{setParent@{setParent}!OwlEngine::EntityComponent@{OwlEngine::EntityComponent}}
+\doxysubsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+Component\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Set the component\textquotesingle{}s parent. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_component_adabe9d1c098bedf226fb2f64f7c068f7}{set\+Parent()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & an Entity$\ast$ -\/ A pointer to the entity this component is attached to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/\mbox{\hyperlink{entity_component_8h}{entity\+Component.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/\mbox{\hyperlink{entity_component_8cpp}{entity\+Component.\+cpp}}\end{DoxyCompactItemize}

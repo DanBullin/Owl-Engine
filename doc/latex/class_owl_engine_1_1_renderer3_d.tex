@@ -1,0 +1,154 @@
+\hypertarget{class_owl_engine_1_1_renderer3_d}{}\doxysection{Owl\+Engine\+::Renderer3D Class Reference}
+\label{class_owl_engine_1_1_renderer3_d}\index{OwlEngine::Renderer3D@{OwlEngine::Renderer3D}}
+
+
+A static class which renders 3D geometry (Batched)  
+
+
+
+
+{\ttfamily \#include $<$renderer3\+D.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_af42ad298b66b2acc82fa487d667a430f}{initialise}} (const uint32\+\_\+t batch\+Capacity, const uint32\+\_\+t vertex\+Capacity, const uint32\+\_\+t index\+Capacity)
+\begin{DoxyCompactList}\small\item\em Initialise the renderer. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_acb7242e3ec5874305f07539f3b8df26f}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Begin a new 3D scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_a8bdb03031692ed6b6bfd8197ce7a7269}{submit}} (const std\+::string \&submission\+Name, \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}} geometry, \mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$material, const glm\+::mat4 \&model\+Matrix)
+\begin{DoxyCompactList}\small\item\em Submit a piece of geometry to render. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_a1e33fb4641fd80f46bc29d79a3756586}{end}} ()
+\begin{DoxyCompactList}\small\item\em End the current 3D scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_a144baf6d755d1ce414ed4968fb54f2af}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy all internal data. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_ad8cfd8c00701a9a9d18a78db4c5d976b}{set\+Texture\+Unit\+Manager}} (\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $\ast$\&unit\+Manager, const std\+::array$<$ int32\+\_\+t, 16 $>$ \&unit)
+\begin{DoxyCompactList}\small\item\em Set the texture unit manager and units to use. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_aea5f07810d37118b7b3e103b1f0e1325}{add\+Geometry}} (std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_vertex3_d}{Vertex3D}} $>$ \&vertices, std\+::vector$<$ uint32\+\_\+t $>$ indices, \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}} \&geometry)
+\begin{DoxyCompactList}\small\item\em Add a piece of 3D geometry to the renderer\textquotesingle{}s vertex buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A static class which renders 3D geometry (Batched) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_renderer3_d_aea5f07810d37118b7b3e103b1f0e1325}\label{class_owl_engine_1_1_renderer3_d_aea5f07810d37118b7b3e103b1f0e1325}} 
+\index{OwlEngine::Renderer3D@{OwlEngine::Renderer3D}!addGeometry@{addGeometry}}
+\index{addGeometry@{addGeometry}!OwlEngine::Renderer3D@{OwlEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{addGeometry()}{addGeometry()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer3\+D\+::add\+Geometry (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_vertex3_d}{Vertex3D}} $>$ \&}]{vertices,  }\item[{std\+::vector$<$ uint32\+\_\+t $>$}]{indices,  }\item[{\mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}} \&}]{geometry }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Add a piece of 3D geometry to the renderer\textquotesingle{}s vertex buffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_aea5f07810d37118b7b3e103b1f0e1325}{add\+Geometry()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a std\+::vector$<$\+Vertex3\+D$>$\& -\/ The list of vertices \\
+\hline
+{\em indices} & a std\+::vector$<$uint32\+\_\+t$>$\& -\/ The list of indices \\
+\hline
+{\em geometry} & a \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}}\& -\/ A reference to the model\textquotesingle{}s geometry \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_renderer3_d_acb7242e3ec5874305f07539f3b8df26f}\label{class_owl_engine_1_1_renderer3_d_acb7242e3ec5874305f07539f3b8df26f}} 
+\index{OwlEngine::Renderer3D@{OwlEngine::Renderer3D}!begin@{begin}}
+\index{begin@{begin}!OwlEngine::Renderer3D@{OwlEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer3\+D\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Begin a new 3D scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_acb7242e3ec5874305f07539f3b8df26f}{begin()}} \mbox{\Hypertarget{class_owl_engine_1_1_renderer3_d_a144baf6d755d1ce414ed4968fb54f2af}\label{class_owl_engine_1_1_renderer3_d_a144baf6d755d1ce414ed4968fb54f2af}} 
+\index{OwlEngine::Renderer3D@{OwlEngine::Renderer3D}!destroy@{destroy}}
+\index{destroy@{destroy}!OwlEngine::Renderer3D@{OwlEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer3\+D\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Destroy all internal data. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_a144baf6d755d1ce414ed4968fb54f2af}{destroy()}} \mbox{\Hypertarget{class_owl_engine_1_1_renderer3_d_a1e33fb4641fd80f46bc29d79a3756586}\label{class_owl_engine_1_1_renderer3_d_a1e33fb4641fd80f46bc29d79a3756586}} 
+\index{OwlEngine::Renderer3D@{OwlEngine::Renderer3D}!end@{end}}
+\index{end@{end}!OwlEngine::Renderer3D@{OwlEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer3\+D\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+End the current 3D scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_a1e33fb4641fd80f46bc29d79a3756586}{end()}} \mbox{\Hypertarget{class_owl_engine_1_1_renderer3_d_af42ad298b66b2acc82fa487d667a430f}\label{class_owl_engine_1_1_renderer3_d_af42ad298b66b2acc82fa487d667a430f}} 
+\index{OwlEngine::Renderer3D@{OwlEngine::Renderer3D}!initialise@{initialise}}
+\index{initialise@{initialise}!OwlEngine::Renderer3D@{OwlEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{initialise()}{initialise()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer3\+D\+::initialise (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{batch\+Capacity,  }\item[{const uint32\+\_\+t}]{vertex\+Capacity,  }\item[{const uint32\+\_\+t}]{index\+Capacity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initialise the renderer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_af42ad298b66b2acc82fa487d667a430f}{initialise()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em batch\+Capacity} & a const uint32\+\_\+t -\/ The total number of 3D geometry submissions before a flush occurs \\
+\hline
+{\em vertex\+Capacity} & a const uint32\+\_\+t -\/ The total number of vertices allowed in the vertex buffer \\
+\hline
+{\em index\+Capacity} & a const uint32\+\_\+t -\/ The total number of indices allowed in the index buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_renderer3_d_ad8cfd8c00701a9a9d18a78db4c5d976b}\label{class_owl_engine_1_1_renderer3_d_ad8cfd8c00701a9a9d18a78db4c5d976b}} 
+\index{OwlEngine::Renderer3D@{OwlEngine::Renderer3D}!setTextureUnitManager@{setTextureUnitManager}}
+\index{setTextureUnitManager@{setTextureUnitManager}!OwlEngine::Renderer3D@{OwlEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{setTextureUnitManager()}{setTextureUnitManager()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer3\+D\+::set\+Texture\+Unit\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $\ast$\&}]{unit\+Manager,  }\item[{const std\+::array$<$ int32\+\_\+t, 16 $>$ \&}]{unit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the texture unit manager and units to use. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_ad8cfd8c00701a9a9d18a78db4c5d976b}{set\+Texture\+Unit\+Manager()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em unit\+Manager} & a Texture\+Unit\+Manager$\ast$\& -\/ A reference to the texture unit manager \\
+\hline
+{\em unit} & a const std\+::array$<$int32\+\_\+t, 16$>$\& -\/ A reference to the array of units \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_renderer3_d_a8bdb03031692ed6b6bfd8197ce7a7269}\label{class_owl_engine_1_1_renderer3_d_a8bdb03031692ed6b6bfd8197ce7a7269}} 
+\index{OwlEngine::Renderer3D@{OwlEngine::Renderer3D}!submit@{submit}}
+\index{submit@{submit}!OwlEngine::Renderer3D@{OwlEngine::Renderer3D}}
+\doxysubsubsection{\texorpdfstring{submit()}{submit()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Renderer3\+D\+::submit (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{submission\+Name,  }\item[{\mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}}}]{geometry,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$}]{material,  }\item[{const glm\+::mat4 \&}]{model\+Matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Submit a piece of geometry to render. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_renderer3_d_a8bdb03031692ed6b6bfd8197ce7a7269}{submit()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em submission\+Name} & a const std\+::string\& -\/ The name of the submission \\
+\hline
+{\em geometry} & a \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}} -\/ A piece of 3D geometry \\
+\hline
+{\em material} & a Material$\ast$ -\/ A pointer to a material \\
+\hline
+{\em model\+Matrix} & a const glm\+::mat4\& -\/ A model matrix \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/renderers/\mbox{\hyperlink{renderer3_d_8h}{renderer3\+D.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/renderers/\mbox{\hyperlink{renderer3_d_8cpp}{renderer3\+D.\+cpp}}\end{DoxyCompactItemize}

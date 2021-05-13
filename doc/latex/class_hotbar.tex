@@ -1,0 +1,66 @@
+\hypertarget{class_hotbar}{}\doxysection{Hotbar Class Reference}
+\label{class_hotbar}\index{Hotbar@{Hotbar}}
+
+
+The player\textquotesingle{}s hotbar.  
+
+
+
+
+{\ttfamily \#include $<$hotbar.\+h$>$}
+
+Inheritance diagram for Hotbar\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_hotbar}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hotbar_a9b2e0e334f9baa04c450f3fc66f49207}\label{class_hotbar_a9b2e0e334f9baa04c450f3fc66f49207}} 
+\mbox{\hyperlink{class_hotbar_a9b2e0e334f9baa04c450f3fc66f49207}{Hotbar}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hotbar_ad70dc050ef54ccf2fcc8b5e6d6fcbe73}\label{class_hotbar_ad70dc050ef54ccf2fcc8b5e6d6fcbe73}} 
+\mbox{\hyperlink{class_hotbar_ad70dc050ef54ccf2fcc8b5e6d6fcbe73}{$\sim$\+Hotbar}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hotbar_a2e5e24b2148cf0baba888e98db86d494}\label{class_hotbar_a2e5e24b2148cf0baba888e98db86d494}} 
+void \mbox{\hyperlink{class_hotbar_a2e5e24b2148cf0baba888e98db86d494}{on\+Pre\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call before game update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hotbar_aca75c83cca3728654fa768b79f2c688a}\label{class_hotbar_aca75c83cca3728654fa768b79f2c688a}} 
+void \mbox{\hyperlink{class_hotbar_aca75c83cca3728654fa768b79f2c688a}{on\+Key\+Press}} (\mbox{\hyperlink{class_owl_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} \&e, const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call upon key press. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hotbar_a82f58a1c832642c8aaa5022368cc0838}\label{class_hotbar_a82f58a1c832642c8aaa5022368cc0838}} 
+void \mbox{\hyperlink{class_hotbar_a82f58a1c832642c8aaa5022368cc0838}{on\+Mouse\+Scrolled}} (\mbox{\hyperlink{class_owl_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} \&e, const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call upon mouse scroll. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hotbar_a262be87e37598f6c55bb631796ad6a9f}\label{class_hotbar_a262be87e37598f6c55bb631796ad6a9f}} 
+void \mbox{\hyperlink{class_hotbar_a262be87e37598f6c55bb631796ad6a9f}{scroll\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Scroll right on the hotbar. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hotbar_a1520897b7104c8e8b80f94f292402205}\label{class_hotbar_a1520897b7104c8e8b80f94f292402205}} 
+void \mbox{\hyperlink{class_hotbar_a1520897b7104c8e8b80f94f292402205}{scroll\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Scroll left on the hotbar. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hotbar_a60a78079466be6137a4634b9fa1081a3}\label{class_hotbar_a60a78079466be6137a4634b9fa1081a3}} 
+void {\bfseries select\+Hotbar} (const uint32\+\_\+t index)
+\item 
+\mbox{\Hypertarget{class_hotbar_adb09e975ba30438284ae9e5c8d73e170}\label{class_hotbar_adb09e975ba30438284ae9e5c8d73e170}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hotbar_adb09e975ba30438284ae9e5c8d73e170}{get\+Selected\+Item}} ()
+\begin{DoxyCompactList}\small\item\em Get the selected item index. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hotbar_a4f5eec3fbd85fadd08252adf6b8b4262}\label{class_hotbar_a4f5eec3fbd85fadd08252adf6b8b4262}} 
+bool {\bfseries item\+Changed} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hotbar_a827d42f4d99cbafd84448b968d618ce0}\label{class_hotbar_a827d42f4d99cbafd84448b968d618ce0}} 
+static uint32\+\_\+t \mbox{\hyperlink{class_hotbar_a827d42f4d99cbafd84448b968d618ce0}{get\+Max\+Count}} ()
+\begin{DoxyCompactList}\small\item\em Get the total number of items on the hotbar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The player\textquotesingle{}s hotbar. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/sandbox/include/scripts/game\+Objects/player/\mbox{\hyperlink{hotbar_8h}{hotbar.\+h}}\item 
+C\+:/doc/src/sandbox/src/scripts/game\+Objects/player/hotbar.\+cpp\end{DoxyCompactItemize}

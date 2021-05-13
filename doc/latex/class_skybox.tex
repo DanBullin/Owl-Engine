@@ -1,0 +1,210 @@
+\hypertarget{class_skybox}{}\doxysection{Skybox Class Reference}
+\label{class_skybox}\index{Skybox@{Skybox}}
+
+
+A skybox in the scene.  
+
+
+
+
+{\ttfamily \#include $<$skybox.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_skybox_a0757383e4d2e1cc1c3d5cba71be2e55c}{Skybox}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \&model, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&cubemap)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_skybox_a62ad4c6b4b1965a0a6d8536a50d4c090}{$\sim$\+Skybox}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_skybox_a6a022df8ed545a53ed2e34a0af50e8aa}{get\+Orientation}} () const
+\begin{DoxyCompactList}\small\item\em Get the orientation of the skybox in the world. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_skybox_ad8f5b518816ac55fcfc1576a665aa180}{set\+Orientation}} (const float x\+Rotation, const float y\+Rotation, const float z\+Rotation)
+\begin{DoxyCompactList}\small\item\em Set the orientation of the skybox in the world. \end{DoxyCompactList}\item 
+glm\+::mat4 \mbox{\hyperlink{class_skybox_a2e8bcfc11886025209085d6b95e57b8c}{get\+Model\+Matrix}} ()
+\begin{DoxyCompactList}\small\item\em Get the model matrix for rendering. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& \mbox{\hyperlink{class_skybox_a80ec31bdda0d8b20fa6ddd9f9a1287da}{get\+Cubemap}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the cube map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_skybox_a37b3ddf4f49409e92285d2dbc0df62f9}{set\+Cubemap}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&cubemap)
+\begin{DoxyCompactList}\small\item\em Set the name of the cube map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_skybox_ac90b850140f22571d2a9650aa39cb9cd}{set\+Model}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \&model)
+\begin{DoxyCompactList}\small\item\em Set the model for the skybox. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \& \mbox{\hyperlink{class_skybox_a007aa1f04b002f71498403a281fd302b}{get\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Get the model of the skybox. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_skybox_ac6940e47884ad50ed8ffc1d4e70c1be4}{update}} (const float timestep)
+\begin{DoxyCompactList}\small\item\em Update the skybox. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A skybox in the scene. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_skybox_a0757383e4d2e1cc1c3d5cba71be2e55c}\label{class_skybox_a0757383e4d2e1cc1c3d5cba71be2e55c}} 
+\index{Skybox@{Skybox}!Skybox@{Skybox}}
+\index{Skybox@{Skybox}!Skybox@{Skybox}}
+\doxysubsubsection{\texorpdfstring{Skybox()}{Skybox()}}
+{\footnotesize\ttfamily Skybox\+::\+Skybox (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \&}]{model,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{cubemap }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_skybox_a0757383e4d2e1cc1c3d5cba71be2e55c}{Skybox()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & a const std\+::shared\+\_\+ptr$<$\+Model$>$\& -\/ A reference to the model \\
+\hline
+{\em cubemap} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference to the cubemap texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_skybox_a62ad4c6b4b1965a0a6d8536a50d4c090}\label{class_skybox_a62ad4c6b4b1965a0a6d8536a50d4c090}} 
+\index{Skybox@{Skybox}!````~Skybox@{$\sim$Skybox}}
+\index{````~Skybox@{$\sim$Skybox}!Skybox@{Skybox}}
+\doxysubsubsection{\texorpdfstring{$\sim$Skybox()}{~Skybox()}}
+{\footnotesize\ttfamily Skybox\+::$\sim$\+Skybox (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_skybox_a62ad4c6b4b1965a0a6d8536a50d4c090}{$\sim$\+Skybox()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_skybox_a80ec31bdda0d8b20fa6ddd9f9a1287da}\label{class_skybox_a80ec31bdda0d8b20fa6ddd9f9a1287da}} 
+\index{Skybox@{Skybox}!getCubemap@{getCubemap}}
+\index{getCubemap@{getCubemap}!Skybox@{Skybox}}
+\doxysubsubsection{\texorpdfstring{getCubemap()}{getCubemap()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \& Skybox\+::get\+Cubemap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the cube map. 
+
+\mbox{\hyperlink{class_skybox_a80ec31bdda0d8b20fa6ddd9f9a1287da}{get\+Cubemap()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference to the cubemap texture 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_skybox_a007aa1f04b002f71498403a281fd302b}\label{class_skybox_a007aa1f04b002f71498403a281fd302b}} 
+\index{Skybox@{Skybox}!getModel@{getModel}}
+\index{getModel@{getModel}!Skybox@{Skybox}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \& Skybox\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the model of the skybox. 
+
+\mbox{\hyperlink{class_skybox_a007aa1f04b002f71498403a281fd302b}{get\+Model()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::shared\+\_\+ptr$<$\+Model$>$\& -\/ A reference to the model 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_skybox_a2e8bcfc11886025209085d6b95e57b8c}\label{class_skybox_a2e8bcfc11886025209085d6b95e57b8c}} 
+\index{Skybox@{Skybox}!getModelMatrix@{getModelMatrix}}
+\index{getModelMatrix@{getModelMatrix}!Skybox@{Skybox}}
+\doxysubsubsection{\texorpdfstring{getModelMatrix()}{getModelMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Skybox\+::get\+Model\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the model matrix for rendering. 
+
+\mbox{\hyperlink{class_skybox_a2e8bcfc11886025209085d6b95e57b8c}{get\+Model\+Matrix()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::mat4 -\/ The model matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_skybox_a6a022df8ed545a53ed2e34a0af50e8aa}\label{class_skybox_a6a022df8ed545a53ed2e34a0af50e8aa}} 
+\index{Skybox@{Skybox}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!Skybox@{Skybox}}
+\doxysubsubsection{\texorpdfstring{getOrientation()}{getOrientation()}}
+{\footnotesize\ttfamily glm\+::vec3 Skybox\+::get\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the orientation of the skybox in the world. 
+
+\mbox{\hyperlink{class_skybox_a6a022df8ed545a53ed2e34a0af50e8aa}{get\+Orientation()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ The orientation of the skybox 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_skybox_a37b3ddf4f49409e92285d2dbc0df62f9}\label{class_skybox_a37b3ddf4f49409e92285d2dbc0df62f9}} 
+\index{Skybox@{Skybox}!setCubemap@{setCubemap}}
+\index{setCubemap@{setCubemap}!Skybox@{Skybox}}
+\doxysubsubsection{\texorpdfstring{setCubemap()}{setCubemap()}}
+{\footnotesize\ttfamily void Skybox\+::set\+Cubemap (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_texture}{Texture}} $>$ \&}]{cubemap }\end{DoxyParamCaption})}
+
+
+
+Set the name of the cube map. 
+
+\mbox{\hyperlink{class_skybox_a37b3ddf4f49409e92285d2dbc0df62f9}{set\+Cubemap()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em cubemap} & a const std\+::shared\+\_\+ptr$<$\+Texture$>$\& -\/ A reference to the cubemap texture \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_skybox_ac90b850140f22571d2a9650aa39cb9cd}\label{class_skybox_ac90b850140f22571d2a9650aa39cb9cd}} 
+\index{Skybox@{Skybox}!setModel@{setModel}}
+\index{setModel@{setModel}!Skybox@{Skybox}}
+\doxysubsubsection{\texorpdfstring{setModel()}{setModel()}}
+{\footnotesize\ttfamily void Skybox\+::set\+Model (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_model}{Model}} $>$ \&}]{model }\end{DoxyParamCaption})}
+
+
+
+Set the model for the skybox. 
+
+\mbox{\hyperlink{class_skybox_ac90b850140f22571d2a9650aa39cb9cd}{set\+Model()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em model} & a const std\+::shared\+\_\+ptr$<$\+Model$>$\& -\/ A reference to the model \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_skybox_ad8f5b518816ac55fcfc1576a665aa180}\label{class_skybox_ad8f5b518816ac55fcfc1576a665aa180}} 
+\index{Skybox@{Skybox}!setOrientation@{setOrientation}}
+\index{setOrientation@{setOrientation}!Skybox@{Skybox}}
+\doxysubsubsection{\texorpdfstring{setOrientation()}{setOrientation()}}
+{\footnotesize\ttfamily void Skybox\+::set\+Orientation (\begin{DoxyParamCaption}\item[{const float}]{x\+Rotation,  }\item[{const float}]{y\+Rotation,  }\item[{const float}]{z\+Rotation }\end{DoxyParamCaption})}
+
+
+
+Set the orientation of the skybox in the world. 
+
+\mbox{\hyperlink{class_skybox_ad8f5b518816ac55fcfc1576a665aa180}{set\+Orientation()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Rotation} & a const float -\/ The x rotation \\
+\hline
+{\em y\+Rotation} & a const float -\/ The y rotation \\
+\hline
+{\em z\+Rotation} & a const float -\/ The z rotation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_skybox_ac6940e47884ad50ed8ffc1d4e70c1be4}\label{class_skybox_ac6940e47884ad50ed8ffc1d4e70c1be4}} 
+\index{Skybox@{Skybox}!update@{update}}
+\index{update@{update}!Skybox@{Skybox}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Skybox\+::update (\begin{DoxyParamCaption}\item[{const float}]{timestep }\end{DoxyParamCaption})}
+
+
+
+Update the skybox. 
+
+\mbox{\hyperlink{class_skybox_ac6940e47884ad50ed8ffc1d4e70c1be4}{update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/scene/\mbox{\hyperlink{skybox_8h}{skybox.\+h}}\item 
+C\+:/doc/src/src/scene/\mbox{\hyperlink{skybox_8cpp}{skybox.\+cpp}}\end{DoxyCompactItemize}

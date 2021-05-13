@@ -1,0 +1,185 @@
+\hypertarget{class_owl_engine_1_1_mesh3_d}{}\doxysection{Owl\+Engine\+::Mesh3D Class Reference}
+\label{class_owl_engine_1_1_mesh3_d}\index{OwlEngine::Mesh3D@{OwlEngine::Mesh3D}}
+
+
+A 3D mesh class that contains the geometry.  
+
+
+
+
+{\ttfamily \#include $<$mesh3\+D.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a60acf1cc362d3ad3a974ce0531749e23}{Mesh3D}} (const \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}} \&geometry)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_ac6082fdfc23cc361f772e0aba7fa4b6d}{Mesh3D}} (std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_vertex3_d}{Vertex3D}} $>$ \&vertices, std\+::vector$<$ uint32\+\_\+t $>$ indices)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a3a117accda89c4911b7e1e9de6d456d5}{$\sim$\+Mesh3D}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}} \& \mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a05cffb0999c923fffff13eafae06e391}{get\+Geometry}} () const
+\begin{DoxyCompactList}\small\item\em Get the geometry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}} \& \mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a2d783961383c2721eb5a024770aa4fa7}{get\+Geometry\+Ref}} ()
+\begin{DoxyCompactList}\small\item\em Get the geometry. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a8856e97cf0138243e9239b69469dd2bc}{get\+Material}} ()
+\begin{DoxyCompactList}\small\item\em Get the material applied to this mesh. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_acf19671393b02b9df7815e9324d6d132}{set\+Material}} (\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$material)
+\begin{DoxyCompactList}\small\item\em Set the material to apply to this mesh. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_vertex3_d}{Vertex3D}} $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a6a6680a333e5879269bc060390206fde}{get\+Vertices}} ()
+\begin{DoxyCompactList}\small\item\em Get the vertex list. \end{DoxyCompactList}\item 
+std\+::vector$<$ uint32\+\_\+t $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a5699c85664d4e813643ecf3288b28984}{get\+Indices}} ()
+\begin{DoxyCompactList}\small\item\em Get the indices list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A 3D mesh class that contains the geometry. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh3_d_a60acf1cc362d3ad3a974ce0531749e23}\label{class_owl_engine_1_1_mesh3_d_a60acf1cc362d3ad3a974ce0531749e23}} 
+\index{OwlEngine::Mesh3D@{OwlEngine::Mesh3D}!Mesh3D@{Mesh3D}}
+\index{Mesh3D@{Mesh3D}!OwlEngine::Mesh3D@{OwlEngine::Mesh3D}}
+\doxysubsubsection{\texorpdfstring{Mesh3D()}{Mesh3D()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Mesh3\+D\+::\+Mesh3D (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}} \&}]{geometry }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a60acf1cc362d3ad3a974ce0531749e23}{Mesh3\+D()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em geometry} & a const \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}}\& -\/ A reference to the geometry data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh3_d_ac6082fdfc23cc361f772e0aba7fa4b6d}\label{class_owl_engine_1_1_mesh3_d_ac6082fdfc23cc361f772e0aba7fa4b6d}} 
+\index{OwlEngine::Mesh3D@{OwlEngine::Mesh3D}!Mesh3D@{Mesh3D}}
+\index{Mesh3D@{Mesh3D}!OwlEngine::Mesh3D@{OwlEngine::Mesh3D}}
+\doxysubsubsection{\texorpdfstring{Mesh3D()}{Mesh3D()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Mesh3\+D\+::\+Mesh3D (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_vertex3_d}{Vertex3D}} $>$ \&}]{vertices,  }\item[{std\+::vector$<$ uint32\+\_\+t $>$}]{indices }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a60acf1cc362d3ad3a974ce0531749e23}{Mesh3\+D()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & a std\+::vector$<$\+Vertex3\+D$>$\& -\/ A list of vertices \\
+\hline
+{\em indices} & a std\+::vector$<$uint32\+\_\+t$>$\& -\/ A list of indices \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh3_d_a3a117accda89c4911b7e1e9de6d456d5}\label{class_owl_engine_1_1_mesh3_d_a3a117accda89c4911b7e1e9de6d456d5}} 
+\index{OwlEngine::Mesh3D@{OwlEngine::Mesh3D}!````~Mesh3D@{$\sim$Mesh3D}}
+\index{````~Mesh3D@{$\sim$Mesh3D}!OwlEngine::Mesh3D@{OwlEngine::Mesh3D}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mesh3D()}{~Mesh3D()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Mesh3\+D\+::$\sim$\+Mesh3D (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a3a117accda89c4911b7e1e9de6d456d5}{$\sim$\+Mesh3\+D()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh3_d_a05cffb0999c923fffff13eafae06e391}\label{class_owl_engine_1_1_mesh3_d_a05cffb0999c923fffff13eafae06e391}} 
+\index{OwlEngine::Mesh3D@{OwlEngine::Mesh3D}!getGeometry@{getGeometry}}
+\index{getGeometry@{getGeometry}!OwlEngine::Mesh3D@{OwlEngine::Mesh3D}}
+\doxysubsubsection{\texorpdfstring{getGeometry()}{getGeometry()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}} \& Owl\+Engine\+::\+Mesh3\+D\+::get\+Geometry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the geometry. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a05cffb0999c923fffff13eafae06e391}{get\+Geometry()}}
+
+\begin{DoxyReturn}{Returns}
+a const \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}}\& -\/ The mesh\textquotesingle{}s geometry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh3_d_a2d783961383c2721eb5a024770aa4fa7}\label{class_owl_engine_1_1_mesh3_d_a2d783961383c2721eb5a024770aa4fa7}} 
+\index{OwlEngine::Mesh3D@{OwlEngine::Mesh3D}!getGeometryRef@{getGeometryRef}}
+\index{getGeometryRef@{getGeometryRef}!OwlEngine::Mesh3D@{OwlEngine::Mesh3D}}
+\doxysubsubsection{\texorpdfstring{getGeometryRef()}{getGeometryRef()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}} \& Owl\+Engine\+::\+Mesh3\+D\+::get\+Geometry\+Ref (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the geometry. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a2d783961383c2721eb5a024770aa4fa7}{get\+Geometry\+Ref()}}
+
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{struct_owl_engine_1_1_geometry3_d}{Geometry3D}}\& -\/ The mesh\textquotesingle{}s geometry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh3_d_a5699c85664d4e813643ecf3288b28984}\label{class_owl_engine_1_1_mesh3_d_a5699c85664d4e813643ecf3288b28984}} 
+\index{OwlEngine::Mesh3D@{OwlEngine::Mesh3D}!getIndices@{getIndices}}
+\index{getIndices@{getIndices}!OwlEngine::Mesh3D@{OwlEngine::Mesh3D}}
+\doxysubsubsection{\texorpdfstring{getIndices()}{getIndices()}}
+{\footnotesize\ttfamily std\+::vector$<$ uint32\+\_\+t $>$ \& Owl\+Engine\+::\+Mesh3\+D\+::get\+Indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the indices list. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a5699c85664d4e813643ecf3288b28984}{get\+Indices()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$uint32\+\_\+t$>$\& -\/ A list of indices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh3_d_a8856e97cf0138243e9239b69469dd2bc}\label{class_owl_engine_1_1_mesh3_d_a8856e97cf0138243e9239b69469dd2bc}} 
+\index{OwlEngine::Mesh3D@{OwlEngine::Mesh3D}!getMaterial@{getMaterial}}
+\index{getMaterial@{getMaterial}!OwlEngine::Mesh3D@{OwlEngine::Mesh3D}}
+\doxysubsubsection{\texorpdfstring{getMaterial()}{getMaterial()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$ Owl\+Engine\+::\+Mesh3\+D\+::get\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the material applied to this mesh. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a8856e97cf0138243e9239b69469dd2bc}{get\+Material()}}
+
+\begin{DoxyReturn}{Returns}
+a Material$\ast$ -\/ A pointer to the material 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh3_d_a6a6680a333e5879269bc060390206fde}\label{class_owl_engine_1_1_mesh3_d_a6a6680a333e5879269bc060390206fde}} 
+\index{OwlEngine::Mesh3D@{OwlEngine::Mesh3D}!getVertices@{getVertices}}
+\index{getVertices@{getVertices}!OwlEngine::Mesh3D@{OwlEngine::Mesh3D}}
+\doxysubsubsection{\texorpdfstring{getVertices()}{getVertices()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{struct_owl_engine_1_1_vertex3_d}{Vertex3D}} $>$ \& Owl\+Engine\+::\+Mesh3\+D\+::get\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the vertex list. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_a6a6680a333e5879269bc060390206fde}{get\+Vertices()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Vertex3\+D$>$\& -\/ A list of vertices 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_mesh3_d_acf19671393b02b9df7815e9324d6d132}\label{class_owl_engine_1_1_mesh3_d_acf19671393b02b9df7815e9324d6d132}} 
+\index{OwlEngine::Mesh3D@{OwlEngine::Mesh3D}!setMaterial@{setMaterial}}
+\index{setMaterial@{setMaterial}!OwlEngine::Mesh3D@{OwlEngine::Mesh3D}}
+\doxysubsubsection{\texorpdfstring{setMaterial()}{setMaterial()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Mesh3\+D\+::set\+Material (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_material}{Material}} $\ast$}]{material }\end{DoxyParamCaption})}
+
+
+
+Set the material to apply to this mesh. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_mesh3_d_acf19671393b02b9df7815e9324d6d132}{set\+Material()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em material} & a Material$\ast$ -\/ A pointer to the material \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/geometry/\mbox{\hyperlink{mesh3_d_8h}{mesh3\+D.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/geometry/\mbox{\hyperlink{mesh3_d_8cpp}{mesh3\+D.\+cpp}}\end{DoxyCompactItemize}

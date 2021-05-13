@@ -1,0 +1,177 @@
+\hypertarget{class_owl_engine_1_1_audio_listener}{}\doxysection{Owl\+Engine\+::Audio\+Listener Class Reference}
+\label{class_owl_engine_1_1_audio_listener}\index{OwlEngine::AudioListener@{OwlEngine::AudioListener}}
+
+
+A 3D sound listener object.  
+
+
+
+
+{\ttfamily \#include $<$sound.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Audio\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_audio_listener}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_audio_listener_aff8b51bc45fba07e8a6f4a3ab6dadde8}{Audio\+Listener}} (glm\+::vec3 \&velocity)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_audio_listener_a34b441fee99f35d374d972327bd7772e}{$\sim$\+Audio\+Listener}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_audio_listener_af7af568e16e5548f167a2a9fd568615f}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_audio_listener_a302dcf9f006d3019c6c0294d7986e2f4}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_audio_listener_a381d09b61afac0e81878be0f9a2922bb}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the audio listener component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_audio_listener_a50e96eb204f99118b8f07d80b90ab112}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_audio_listener_a9020023dd06d9642a2566995d914ec03}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data as J\+S\+ON for saving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_audio_listener_aa645901c66b7749a2235c74c87d7fb40}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data displayed in Im\+Gui form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A 3D sound listener object. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_listener_aff8b51bc45fba07e8a6f4a3ab6dadde8}\label{class_owl_engine_1_1_audio_listener_aff8b51bc45fba07e8a6f4a3ab6dadde8}} 
+\index{OwlEngine::AudioListener@{OwlEngine::AudioListener}!AudioListener@{AudioListener}}
+\index{AudioListener@{AudioListener}!OwlEngine::AudioListener@{OwlEngine::AudioListener}}
+\doxysubsubsection{\texorpdfstring{AudioListener()}{AudioListener()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Audio\+Listener\+::\+Audio\+Listener (\begin{DoxyParamCaption}\item[{glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_listener_aff8b51bc45fba07e8a6f4a3ab6dadde8}{Audio\+Listener()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em velocity} & a glm\+::vec3\& -\/ A reference to the listener\textquotesingle{}s velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_listener_a34b441fee99f35d374d972327bd7772e}\label{class_owl_engine_1_1_audio_listener_a34b441fee99f35d374d972327bd7772e}} 
+\index{OwlEngine::AudioListener@{OwlEngine::AudioListener}!````~AudioListener@{$\sim$AudioListener}}
+\index{````~AudioListener@{$\sim$AudioListener}!OwlEngine::AudioListener@{OwlEngine::AudioListener}}
+\doxysubsubsection{\texorpdfstring{$\sim$AudioListener()}{~AudioListener()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Audio\+Listener\+::$\sim$\+Audio\+Listener (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_listener_aff8b51bc45fba07e8a6f4a3ab6dadde8}{Audio\+Listener()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_listener_aa645901c66b7749a2235c74c87d7fb40}\label{class_owl_engine_1_1_audio_listener_aa645901c66b7749a2235c74c87d7fb40}} 
+\index{OwlEngine::AudioListener@{OwlEngine::AudioListener}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::AudioListener@{OwlEngine::AudioListener}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Listener\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data displayed in Im\+Gui form. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_listener_aa645901c66b7749a2235c74c87d7fb40}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_listener_a9020023dd06d9642a2566995d914ec03}\label{class_owl_engine_1_1_audio_listener_a9020023dd06d9642a2566995d914ec03}} 
+\index{OwlEngine::AudioListener@{OwlEngine::AudioListener}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::AudioListener@{OwlEngine::AudioListener}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Audio\+Listener\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data as J\+S\+ON for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_listener_a9020023dd06d9642a2566995d914ec03}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_listener_af7af568e16e5548f167a2a9fd568615f}\label{class_owl_engine_1_1_audio_listener_af7af568e16e5548f167a2a9fd568615f}} 
+\index{OwlEngine::AudioListener@{OwlEngine::AudioListener}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::AudioListener@{OwlEngine::AudioListener}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Listener\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_listener_af7af568e16e5548f167a2a9fd568615f}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_listener_a302dcf9f006d3019c6c0294d7986e2f4}\label{class_owl_engine_1_1_audio_listener_a302dcf9f006d3019c6c0294d7986e2f4}} 
+\index{OwlEngine::AudioListener@{OwlEngine::AudioListener}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::AudioListener@{OwlEngine::AudioListener}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Listener\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_listener_a302dcf9f006d3019c6c0294d7986e2f4}{on\+Detach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_listener_a381d09b61afac0e81878be0f9a2922bb}\label{class_owl_engine_1_1_audio_listener_a381d09b61afac0e81878be0f9a2922bb}} 
+\index{OwlEngine::AudioListener@{OwlEngine::AudioListener}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::AudioListener@{OwlEngine::AudioListener}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Listener\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the audio listener component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_listener_a381d09b61afac0e81878be0f9a2922bb}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_audio_listener_a50e96eb204f99118b8f07d80b90ab112}\label{class_owl_engine_1_1_audio_listener_a50e96eb204f99118b8f07d80b90ab112}} 
+\index{OwlEngine::AudioListener@{OwlEngine::AudioListener}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::AudioListener@{OwlEngine::AudioListener}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Audio\+Listener\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_audio_listener_a50e96eb204f99118b8f07d80b90ab112}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{sound_8h}{sound.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{sound_8cpp}{sound.\+cpp}}\end{DoxyCompactItemize}

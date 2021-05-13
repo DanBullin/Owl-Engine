@@ -1,0 +1,165 @@
+\hypertarget{class_owl_engine_1_1_indirect_buffer}{}\doxysection{Owl\+Engine\+::Indirect\+Buffer Class Reference}
+\label{class_owl_engine_1_1_indirect_buffer}\index{OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}}
+
+
+An A\+PI agnostic Indirect buffer.  
+
+
+
+
+{\ttfamily \#include $<$indirect\+Buffer.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Indirect\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_owl_engine_1_1_indirect_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_a9f2364e21c98f9d43cef0dfe55786d6a}{Indirect\+Buffer}} (const std\+::string \&indirect\+Buffer\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_af990081d5aae8d3fd6efd95810e991b8}{$\sim$\+Indirect\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_a5793310ef713430fceed77a40db9a493}{edit}} (\mbox{\hyperlink{struct_owl_engine_1_1_draw_elements_indirect_command}{Draw\+Elements\+Indirect\+Command}} $\ast$commands, const uint32\+\_\+t count, const uint32\+\_\+t offset)=0
+\begin{DoxyCompactList}\small\item\em Edit the buffer contents. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_a4870e72a69d9dcf55fefbcb97b2859a3}{get\+Buffer\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the buffer ID. \end{DoxyCompactList}\item 
+const uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_a4becce0aa7ab61df214342af4cc4ce98}{get\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Get the command count. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_indirect_buffer_aacca2158a7dd3f09afa816a4b97dddb5}\label{class_owl_engine_1_1_indirect_buffer_aacca2158a7dd3f09afa816a4b97dddb5}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_aacca2158a7dd3f09afa816a4b97dddb5}{print\+Details}} () override=0
+\begin{DoxyCompactList}\small\item\em Print the resource details. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer}{Indirect\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_a3e51f5949139ac34dc862a7ee623c58f}{create}} (const std\+::string \&indirect\+Buffer\+Name, \mbox{\hyperlink{struct_owl_engine_1_1_draw_elements_indirect_command}{Draw\+Elements\+Indirect\+Command}} $\ast$commands, const uint32\+\_\+t count)
+\begin{DoxyCompactList}\small\item\em Create an indirect buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_indirect_buffer_a03712bb88edd5ab06f1229435d0bf3a0}\label{class_owl_engine_1_1_indirect_buffer_a03712bb88edd5ab06f1229435d0bf3a0}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_a03712bb88edd5ab06f1229435d0bf3a0}{m\+\_\+buffer\+ID}}
+\begin{DoxyCompactList}\small\item\em The indirect buffer ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_indirect_buffer_a13cce7b415682a2ce69d297cf37865d8}\label{class_owl_engine_1_1_indirect_buffer_a13cce7b415682a2ce69d297cf37865d8}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_a13cce7b415682a2ce69d297cf37865d8}{m\+\_\+command\+Count}}
+\begin{DoxyCompactList}\small\item\em The number of commands. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_indirect_buffer_aea55718fcfdba83a736ada5f441e373f}\label{class_owl_engine_1_1_indirect_buffer_aea55718fcfdba83a736ada5f441e373f}} 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_aea55718fcfdba83a736ada5f441e373f}{m\+\_\+byte\+Size}}
+\begin{DoxyCompactList}\small\item\em The size of the indirect buffer in bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic Indirect buffer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_indirect_buffer_a9f2364e21c98f9d43cef0dfe55786d6a}\label{class_owl_engine_1_1_indirect_buffer_a9f2364e21c98f9d43cef0dfe55786d6a}} 
+\index{OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}!IndirectBuffer@{IndirectBuffer}}
+\index{IndirectBuffer@{IndirectBuffer}!OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}}
+\doxysubsubsection{\texorpdfstring{IndirectBuffer()}{IndirectBuffer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Indirect\+Buffer\+::\+Indirect\+Buffer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{indirect\+Buffer\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_a9f2364e21c98f9d43cef0dfe55786d6a}{Indirect\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em indirect\+Buffer\+Name} & a const std\+::string\& -\/ The name of the indirect buffer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_indirect_buffer_af990081d5aae8d3fd6efd95810e991b8}\label{class_owl_engine_1_1_indirect_buffer_af990081d5aae8d3fd6efd95810e991b8}} 
+\index{OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}!````~IndirectBuffer@{$\sim$IndirectBuffer}}
+\index{````~IndirectBuffer@{$\sim$IndirectBuffer}!OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$IndirectBuffer()}{~IndirectBuffer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Indirect\+Buffer\+::$\sim$\+Indirect\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+$\sim$\+Indirect\+Buffer 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_indirect_buffer_a3e51f5949139ac34dc862a7ee623c58f}\label{class_owl_engine_1_1_indirect_buffer_a3e51f5949139ac34dc862a7ee623c58f}} 
+\index{OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}!create@{create}}
+\index{create@{create}!OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer}{Indirect\+Buffer}} $\ast$ Owl\+Engine\+::\+Indirect\+Buffer\+::create (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{indirect\+Buffer\+Name,  }\item[{\mbox{\hyperlink{struct_owl_engine_1_1_draw_elements_indirect_command}{Draw\+Elements\+Indirect\+Command}} $\ast$}]{commands,  }\item[{const uint32\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create an indirect buffer. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_indirect_buffer_a3e51f5949139ac34dc862a7ee623c58f}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em indirect\+Buffer\+Name} & a const std\+::string\& -\/ The name of the indirect buffer \\
+\hline
+{\em commands} & a Draw\+Elements\+Indirect\+Command$\ast$ -\/ The commands info \\
+\hline
+{\em count} & a const uint32\+\_\+t -\/ The number of commands \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Indirect\+Buffer$\ast$ -\/ The indirect buffer based on the current graphics A\+PI 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_indirect_buffer_a5793310ef713430fceed77a40db9a493}\label{class_owl_engine_1_1_indirect_buffer_a5793310ef713430fceed77a40db9a493}} 
+\index{OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}!edit@{edit}}
+\index{edit@{edit}!OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}}
+{\footnotesize\ttfamily virtual void Owl\+Engine\+::\+Indirect\+Buffer\+::edit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_owl_engine_1_1_draw_elements_indirect_command}{Draw\+Elements\+Indirect\+Command}} $\ast$}]{commands,  }\item[{const uint32\+\_\+t}]{count,  }\item[{const uint32\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Edit the buffer contents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em commands} & a Draw\+Elements\+Indirect\+Command$\ast$ -\/ The commands info \\
+\hline
+{\em count} & a const uint32\+\_\+t -\/ The number of commands \\
+\hline
+{\em offset} & a const uint32\+\_\+t -\/ The offset in memory \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_indirect_buffer_a35da0c7b1bdfec1d390aca135db0c656}{Owl\+Engine\+::\+Open\+G\+L\+Indirect\+Buffer}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_indirect_buffer_a4870e72a69d9dcf55fefbcb97b2859a3}\label{class_owl_engine_1_1_indirect_buffer_a4870e72a69d9dcf55fefbcb97b2859a3}} 
+\index{OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}!getBufferID@{getBufferID}}
+\index{getBufferID@{getBufferID}!OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}}
+\doxysubsubsection{\texorpdfstring{getBufferID()}{getBufferID()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Indirect\+Buffer\+::get\+Buffer\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the buffer ID. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The ID of the buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_indirect_buffer_a4becce0aa7ab61df214342af4cc4ce98}\label{class_owl_engine_1_1_indirect_buffer_a4becce0aa7ab61df214342af4cc4ce98}} 
+\index{OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}!getCount@{getCount}}
+\index{getCount@{getCount}!OwlEngine::IndirectBuffer@{OwlEngine::IndirectBuffer}}
+\doxysubsubsection{\texorpdfstring{getCount()}{getCount()}}
+{\footnotesize\ttfamily const uint32\+\_\+t Owl\+Engine\+::\+Indirect\+Buffer\+::get\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the command count. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The command count 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/geometry/\mbox{\hyperlink{indirect_buffer_8h}{indirect\+Buffer.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/geometry/\mbox{\hyperlink{indirect_buffer_8cpp}{indirect\+Buffer.\+cpp}}\end{DoxyCompactItemize}

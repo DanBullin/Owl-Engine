@@ -1,0 +1,650 @@
+\hypertarget{class_owl_engine_1_1_entity}{}\doxysection{Owl\+Engine\+::Entity Class Reference}
+\label{class_owl_engine_1_1_entity}\index{OwlEngine::Entity@{OwlEngine::Entity}}
+
+
+Forward declare layer.  
+
+
+
+
+{\ttfamily \#include $<$entity.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Entity\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_entity}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a42dfc376fd3022693731a3d0591758d2}{Entity}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_entity_ae057df0c48e4762a07e823b95aadb6e0}{$\sim$\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_owl_engine_1_1_entity_ac92ad0770fe2032de0a744c097e3b702}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Get the name of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_a16073e18bbafaa6276739dd317f816db}{set\+Name}} (const std\+::string \&entity\+Name)
+\begin{DoxyCompactList}\small\item\em Set the name of the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_a569bab966bae6b4d3463dd6af72c2731}{set\+Unique\+ID}} (const uint32\+\_\+t ID)
+\begin{DoxyCompactList}\small\item\em Set the unique ID of this entity. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_owl_engine_1_1_entity_af9c12c5dc2ca738496aaa670a6722fb2}{get\+Unique\+ID}} ()
+\begin{DoxyCompactList}\small\item\em Get the unique ID value of this entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_aa27210e6c4feb68dbb78c7e60078e2d6}{on\+Update}} (const float timestep, const float total\+Time)
+\begin{DoxyCompactList}\small\item\em Update the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_a1fb32afb0a719fe3c52641166a5db7df}{set\+Parent\+Entity}} (\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Set the entity this entity belongs to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_entity_ad630214ab30b9c3b8650784ae05d9ab4}{get\+Parent\+Entity}} () const
+\begin{DoxyCompactList}\small\item\em Get the entity this entity belongs to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_entity_a0bdde2146acc35ae4247eb1b89bf9336}{get\+Child\+Entity}} (const std\+::string \&child\+Name)
+\begin{DoxyCompactList}\small\item\em Get the child entity of this entity by name. \end{DoxyCompactList}\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_entity_add281029dc5e45d29a752ec0d9f2ef3c}{get\+Child\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em Get all the children. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_a889ad8261bf1fae1246bad52aaa371a7}{get\+All\+Entities}} (std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \&entity\+List)
+\begin{DoxyCompactList}\small\item\em Get all entities belonging to this entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_entity_ad6960ac15937b403732bfa1f76069895}{add\+Child\+Entity}} (const std\+::string \&child\+Name, \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$entity)
+\begin{DoxyCompactList}\small\item\em Add a child entity. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_entity_a9014f09d4dafed343061b3688aa5b4f9}{check\+Child\+Entity\+Name\+Taken}} (const std\+::string \&name) const
+\begin{DoxyCompactList}\small\item\em Returns whether the entity name has been taken. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_ae87ead83eb2e830c500b791269e9acf9}{set\+Parent\+Scene}} (\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Set the scene this entity belongs to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_entity_a3357f6135eaad832b1f89a64f4cfde21}{get\+Parent\+Scene}} () const
+\begin{DoxyCompactList}\small\item\em Get the scene this entity belongs to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_ace3d4826edd31a0d4652a79cfb79b682}{set\+Layer}} (\mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$layer)
+\begin{DoxyCompactList}\small\item\em Set the layer this entity belongs to. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_entity_a3c3a696019b73c20f438816e97d43e0b}{get\+Layer}} () const
+\begin{DoxyCompactList}\small\item\em Get the layer this entity belongs to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_a7025c234e913d9cb6353b22463fd1a20}{set\+Display}} (const bool display)
+\begin{DoxyCompactList}\small\item\em Set whether the entity should be displayed. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_entity_a143cb214dac070105db3baf63a049f2f}{get\+Display}} () const
+\begin{DoxyCompactList}\small\item\em Get whether the entity should be displayed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_a935435a19fb3bfa23e71095414957d15}{set\+Selected}} (const bool select)
+\begin{DoxyCompactList}\small\item\em Set whether the entity is selected. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_entity_a510cb74b5d130b5f3b61137236e4d55c}{get\+Selected}} () const
+\begin{DoxyCompactList}\small\item\em Get whether the entity is selected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_a7c305a21187c5f7db4c8c93298a618a6}{set\+Saved}} (const bool save)
+\begin{DoxyCompactList}\small\item\em Set whether the entity should be save when the scene is saved. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_owl_engine_1_1_entity_a6dcce18132360754530a353e49607850}{get\+Saved}} () const
+\begin{DoxyCompactList}\small\item\em Get whether the entity is saved. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_entity_a07ce20e37f4de5efc1de4588db47186d}{contains\+Point}} (const glm\+::vec2 \&coordinate)
+\begin{DoxyCompactList}\small\item\em Returns whether the screen point is inside this entity\textquotesingle{}s bounding box. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity_component}{Entity\+Component}} $\ast$ $>$ \& \mbox{\hyperlink{class_owl_engine_1_1_entity_a2d505b284d281b0a1bde4c1e57d37e82}{get\+All\+Components}} ()
+\begin{DoxyCompactList}\small\item\em Get list of all components. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_owl_engine_1_1_entity_a5068559470de4b36bf1a33b712b37be6}{attach}} (\mbox{\hyperlink{class_owl_engine_1_1_entity_component}{Entity\+Component}} $\ast$component)
+\begin{DoxyCompactList}\small\item\em Attach an already created component. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T , typename ... Args$>$ }\\void \mbox{\hyperlink{class_owl_engine_1_1_entity_a25e85ad7e2e09106b9c2cfc942e09340}{attach}} (const std\+::string \&component\+Name, Args \&\&... args)
+\begin{DoxyCompactList}\small\item\em Attach a component to the entity. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_owl_engine_1_1_entity_acb24514f9fb52009421ff2d818de21b7}{detach}} ()
+\begin{DoxyCompactList}\small\item\em Delete a component from the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_af5d1501bc1e97d96a9fac73ee5b5f2df}{detach}} (\mbox{\hyperlink{class_owl_engine_1_1_entity_component}{Entity\+Component}} $\ast$component)
+\begin{DoxyCompactList}\small\item\em Delete a component from the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_ac728b8c2e60c6b1bccbfd2e3b3627fff}{detach\+Delay\+Deletion}} (\mbox{\hyperlink{class_owl_engine_1_1_entity_component}{Entity\+Component}} $\ast$component)
+\begin{DoxyCompactList}\small\item\em Delete a component from the entity. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\T $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_entity_a7c61d24102932166a8b497f81aef5be5}{get\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Get first instance of component by template type. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\bool \mbox{\hyperlink{class_owl_engine_1_1_entity_ace196eb886ff3737fff4208d6cb9676b}{contains\+Component}} ()
+\begin{DoxyCompactList}\small\item\em Check if the entity has a type of component attached. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_entity_a6b9dfdc6eb81968ec1b7079869290551}{print\+Entity\+Details}} ()
+\begin{DoxyCompactList}\small\item\em Print entity details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_entity_a4aebd8eda65e3a6af90372016f815029}{get\+As\+Json}} ()
+\begin{DoxyCompactList}\small\item\em Get the entities data in J\+S\+ON format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Forward declare layer. 
+
+An entity class which represents an individual existance in the game world 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a42dfc376fd3022693731a3d0591758d2}\label{class_owl_engine_1_1_entity_a42dfc376fd3022693731a3d0591758d2}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a42dfc376fd3022693731a3d0591758d2}{Entity()}} \mbox{\Hypertarget{class_owl_engine_1_1_entity_ae057df0c48e4762a07e823b95aadb6e0}\label{class_owl_engine_1_1_entity_ae057df0c48e4762a07e823b95aadb6e0}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!````~Entity@{$\sim$Entity}}
+\index{````~Entity@{$\sim$Entity}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{$\sim$Entity()}{~Entity()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Entity\+::$\sim$\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_ae057df0c48e4762a07e823b95aadb6e0}{$\sim$\+Entity()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_ad6960ac15937b403732bfa1f76069895}\label{class_owl_engine_1_1_entity_ad6960ac15937b403732bfa1f76069895}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!addChildEntity@{addChildEntity}}
+\index{addChildEntity@{addChildEntity}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{addChildEntity()}{addChildEntity()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Entity\+::add\+Child\+Entity (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{child\+Name,  }\item[{\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})}
+
+
+
+Add a child entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_ad6960ac15937b403732bfa1f76069895}{add\+Child\+Entity()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em child\+Name} & a const std\+::string\& -\/ The name of the child \\
+\hline
+{\em entity} & an Entity$\ast$ -\/ A pointer to the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ The success of adding the child entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a25e85ad7e2e09106b9c2cfc942e09340}\label{class_owl_engine_1_1_entity_a25e85ad7e2e09106b9c2cfc942e09340}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!attach@{attach}}
+\index{attach@{attach}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T , typename ... Args$>$ \\
+void Owl\+Engine\+::\+Entity\+::attach (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{component\+Name,  }\item[{Args \&\&...}]{args }\end{DoxyParamCaption})}
+
+
+
+Attach a component to the entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a5068559470de4b36bf1a33b712b37be6}{attach()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em component\+Name} & a const std\+::string\& -\/ The name of the component \\
+\hline
+{\em args} & a Args\&\& -\/ Parameter pack \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a5068559470de4b36bf1a33b712b37be6}\label{class_owl_engine_1_1_entity_a5068559470de4b36bf1a33b712b37be6}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!attach@{attach}}
+\index{attach@{attach}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{attach()}{attach()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Owl\+Engine\+::\+Entity\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_entity_component}{Entity\+Component}} $\ast$}]{component }\end{DoxyParamCaption})}
+
+
+
+Attach an already created component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a5068559470de4b36bf1a33b712b37be6}{attach()}} \mbox{\Hypertarget{class_owl_engine_1_1_entity_a9014f09d4dafed343061b3688aa5b4f9}\label{class_owl_engine_1_1_entity_a9014f09d4dafed343061b3688aa5b4f9}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!checkChildEntityNameTaken@{checkChildEntityNameTaken}}
+\index{checkChildEntityNameTaken@{checkChildEntityNameTaken}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{checkChildEntityNameTaken()}{checkChildEntityNameTaken()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Entity\+::check\+Child\+Entity\+Name\+Taken (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption}) const}
+
+
+
+Returns whether the entity name has been taken. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a9014f09d4dafed343061b3688aa5b4f9}{check\+Child\+Entity\+Name\+Taken()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a const std\+::string\& -\/ The name of the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the entity name exist in our entity list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_ace196eb886ff3737fff4208d6cb9676b}\label{class_owl_engine_1_1_entity_ace196eb886ff3737fff4208d6cb9676b}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!containsComponent@{containsComponent}}
+\index{containsComponent@{containsComponent}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{containsComponent()}{containsComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool Owl\+Engine\+::\+Entity\+::contains\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if the entity has a type of component attached. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_ace196eb886ff3737fff4208d6cb9676b}{contains\+Component()}}
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does this entity have the type of component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a07ce20e37f4de5efc1de4588db47186d}\label{class_owl_engine_1_1_entity_a07ce20e37f4de5efc1de4588db47186d}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!containsPoint@{containsPoint}}
+\index{containsPoint@{containsPoint}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{containsPoint()}{containsPoint()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Entity\+::contains\+Point (\begin{DoxyParamCaption}\item[{const glm\+::vec2 \&}]{coordinate }\end{DoxyParamCaption})}
+
+
+
+Returns whether the screen point is inside this entity\textquotesingle{}s bounding box. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a07ce20e37f4de5efc1de4588db47186d}{contains\+Point()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em coordinate} & a const glm\+::vec2\& -\/ The coordinate to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Is this coordinate within this bounding box 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_acb24514f9fb52009421ff2d818de21b7}\label{class_owl_engine_1_1_entity_acb24514f9fb52009421ff2d818de21b7}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!detach@{detach}}
+\index{detach@{detach}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Owl\+Engine\+::\+Entity\+::detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Delete a component from the entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_acb24514f9fb52009421ff2d818de21b7}{detach()}} \mbox{\Hypertarget{class_owl_engine_1_1_entity_af5d1501bc1e97d96a9fac73ee5b5f2df}\label{class_owl_engine_1_1_entity_af5d1501bc1e97d96a9fac73ee5b5f2df}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!detach@{detach}}
+\index{detach@{detach}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{detach()}{detach()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::detach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_entity_component}{Entity\+Component}} $\ast$}]{component }\end{DoxyParamCaption})}
+
+
+
+Delete a component from the entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_acb24514f9fb52009421ff2d818de21b7}{detach()}} \mbox{\Hypertarget{class_owl_engine_1_1_entity_ac728b8c2e60c6b1bccbfd2e3b3627fff}\label{class_owl_engine_1_1_entity_ac728b8c2e60c6b1bccbfd2e3b3627fff}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!detachDelayDeletion@{detachDelayDeletion}}
+\index{detachDelayDeletion@{detachDelayDeletion}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{detachDelayDeletion()}{detachDelayDeletion()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::detach\+Delay\+Deletion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_entity_component}{Entity\+Component}} $\ast$}]{component }\end{DoxyParamCaption})}
+
+
+
+Delete a component from the entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_ac728b8c2e60c6b1bccbfd2e3b3627fff}{detach\+Delay\+Deletion()}} \mbox{\Hypertarget{class_owl_engine_1_1_entity_a2d505b284d281b0a1bde4c1e57d37e82}\label{class_owl_engine_1_1_entity_a2d505b284d281b0a1bde4c1e57d37e82}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getAllComponents@{getAllComponents}}
+\index{getAllComponents@{getAllComponents}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getAllComponents()}{getAllComponents()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity_component}{Entity\+Component}} $\ast$ $>$ \& Owl\+Engine\+::\+Entity\+::get\+All\+Components (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get list of all components. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a2d505b284d281b0a1bde4c1e57d37e82}{get\+All\+Components()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$\+Entity\+Component$\ast$$>$\& -\/ A reference to the list of all components 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a889ad8261bf1fae1246bad52aaa371a7}\label{class_owl_engine_1_1_entity_a889ad8261bf1fae1246bad52aaa371a7}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getAllEntities@{getAllEntities}}
+\index{getAllEntities@{getAllEntities}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getAllEntities()}{getAllEntities()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::get\+All\+Entities (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \&}]{entity\+List }\end{DoxyParamCaption})}
+
+
+
+Get all entities belonging to this entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a889ad8261bf1fae1246bad52aaa371a7}{get\+All\+Entities()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity\+List} & a std\+::vector$<$\+Entity$\ast$$>$\& -\/ The current list of entities \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a4aebd8eda65e3a6af90372016f815029}\label{class_owl_engine_1_1_entity_a4aebd8eda65e3a6af90372016f815029}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getAsJson@{getAsJson}}
+\index{getAsJson@{getAsJson}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getAsJson()}{getAsJson()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Entity\+::get\+As\+Json (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the entities data in J\+S\+ON format. 
+
+get\+As\+J\+S\+O\+N()
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_add281029dc5e45d29a752ec0d9f2ef3c}\label{class_owl_engine_1_1_entity_add281029dc5e45d29a752ec0d9f2ef3c}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getChildEntities@{getChildEntities}}
+\index{getChildEntities@{getChildEntities}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getChildEntities()}{getChildEntities()}}
+{\footnotesize\ttfamily std\+::map$<$ std\+::string, \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \& Owl\+Engine\+::\+Entity\+::get\+Child\+Entities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get all the children. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_add281029dc5e45d29a752ec0d9f2ef3c}{get\+Child\+Entities()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::map$<$std\+::string, Entity$\ast$$>$\& -\/ The list of child entities 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a0bdde2146acc35ae4247eb1b89bf9336}\label{class_owl_engine_1_1_entity_a0bdde2146acc35ae4247eb1b89bf9336}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getChildEntity@{getChildEntity}}
+\index{getChildEntity@{getChildEntity}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getChildEntity()}{getChildEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ Owl\+Engine\+::\+Entity\+::get\+Child\+Entity (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{child\+Name }\end{DoxyParamCaption})}
+
+
+
+Get the child entity of this entity by name. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a0bdde2146acc35ae4247eb1b89bf9336}{get\+Child\+Entity()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em child\+Name} & a const std\+::string\& -\/ The name of the child entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Entity$\ast$ -\/ A pointer to the child entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a7c61d24102932166a8b497f81aef5be5}\label{class_owl_engine_1_1_entity_a7c61d24102932166a8b497f81aef5be5}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T $\ast$ Owl\+Engine\+::\+Entity\+::get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get first instance of component by template type. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a7c61d24102932166a8b497f81aef5be5}{get\+Component()}}
+
+\begin{DoxyReturn}{Returns}
+a T$\ast$ -\/ A pointer to the component 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a143cb214dac070105db3baf63a049f2f}\label{class_owl_engine_1_1_entity_a143cb214dac070105db3baf63a049f2f}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getDisplay@{getDisplay}}
+\index{getDisplay@{getDisplay}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getDisplay()}{getDisplay()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Entity\+::get\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get whether the entity should be displayed. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a143cb214dac070105db3baf63a049f2f}{get\+Display()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Whether the entity should be displayed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a3c3a696019b73c20f438816e97d43e0b}\label{class_owl_engine_1_1_entity_a3c3a696019b73c20f438816e97d43e0b}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getLayer@{getLayer}}
+\index{getLayer@{getLayer}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getLayer()}{getLayer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$ Owl\+Engine\+::\+Entity\+::get\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the layer this entity belongs to. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a3c3a696019b73c20f438816e97d43e0b}{get\+Layer()}}
+
+\begin{DoxyReturn}{Returns}
+a Layer$\ast$ -\/ A pointer to the layer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_ac92ad0770fe2032de0a744c097e3b702}\label{class_owl_engine_1_1_entity_ac92ad0770fe2032de0a744c097e3b702}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getName@{getName}}
+\index{getName@{getName}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string \& Owl\+Engine\+::\+Entity\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the name of the entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_ac92ad0770fe2032de0a744c097e3b702}{get\+Name()}}
+
+\begin{DoxyReturn}{Returns}
+a const std\+::string\& -\/ The name of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_ad630214ab30b9c3b8650784ae05d9ab4}\label{class_owl_engine_1_1_entity_ad630214ab30b9c3b8650784ae05d9ab4}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getParentEntity@{getParentEntity}}
+\index{getParentEntity@{getParentEntity}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getParentEntity()}{getParentEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ Owl\+Engine\+::\+Entity\+::get\+Parent\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the entity this entity belongs to. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_ad630214ab30b9c3b8650784ae05d9ab4}{get\+Parent\+Entity()}}
+
+\begin{DoxyReturn}{Returns}
+an Entity$\ast$ -\/ A pointer to the parent entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a3357f6135eaad832b1f89a64f4cfde21}\label{class_owl_engine_1_1_entity_a3357f6135eaad832b1f89a64f4cfde21}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getParentScene@{getParentScene}}
+\index{getParentScene@{getParentScene}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getParentScene()}{getParentScene()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$ Owl\+Engine\+::\+Entity\+::get\+Parent\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the scene this entity belongs to. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a3357f6135eaad832b1f89a64f4cfde21}{get\+Parent\+Scene()}}
+
+\begin{DoxyReturn}{Returns}
+a Scene$\ast$ -\/ A pointer to the entity\textquotesingle{}s parent scene 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a6dcce18132360754530a353e49607850}\label{class_owl_engine_1_1_entity_a6dcce18132360754530a353e49607850}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getSaved@{getSaved}}
+\index{getSaved@{getSaved}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getSaved()}{getSaved()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Entity\+::get\+Saved (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get whether the entity is saved. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a6dcce18132360754530a353e49607850}{get\+Saved()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Whether the entity is saved 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a510cb74b5d130b5f3b61137236e4d55c}\label{class_owl_engine_1_1_entity_a510cb74b5d130b5f3b61137236e4d55c}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getSelected@{getSelected}}
+\index{getSelected@{getSelected}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getSelected()}{getSelected()}}
+{\footnotesize\ttfamily const bool Owl\+Engine\+::\+Entity\+::get\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get whether the entity is selected. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a510cb74b5d130b5f3b61137236e4d55c}{get\+Selected()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Whether the entity is selected 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_af9c12c5dc2ca738496aaa670a6722fb2}\label{class_owl_engine_1_1_entity_af9c12c5dc2ca738496aaa670a6722fb2}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!getUniqueID@{getUniqueID}}
+\index{getUniqueID@{getUniqueID}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{getUniqueID()}{getUniqueID()}}
+{\footnotesize\ttfamily uint32\+\_\+t Owl\+Engine\+::\+Entity\+::get\+Unique\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the unique ID value of this entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_af9c12c5dc2ca738496aaa670a6722fb2}{get\+Unique\+I\+D()}}
+
+\begin{DoxyReturn}{Returns}
+a uint32\+\_\+t -\/ The unique ID of the entity 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_aa27210e6c4feb68dbb78c7e60078e2d6}\label{class_owl_engine_1_1_entity_aa27210e6c4feb68dbb78c7e60078e2d6}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})}
+
+
+
+Update the entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_aa27210e6c4feb68dbb78c7e60078e2d6}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The update time step \\
+\hline
+{\em total\+Time} & a const float -\/ The total application time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a6b9dfdc6eb81968ec1b7079869290551}\label{class_owl_engine_1_1_entity_a6b9dfdc6eb81968ec1b7079869290551}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!printEntityDetails@{printEntityDetails}}
+\index{printEntityDetails@{printEntityDetails}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{printEntityDetails()}{printEntityDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::print\+Entity\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Print entity details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a6b9dfdc6eb81968ec1b7079869290551}{print\+Entity\+Details()}} \mbox{\Hypertarget{class_owl_engine_1_1_entity_a7025c234e913d9cb6353b22463fd1a20}\label{class_owl_engine_1_1_entity_a7025c234e913d9cb6353b22463fd1a20}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!setDisplay@{setDisplay}}
+\index{setDisplay@{setDisplay}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{setDisplay()}{setDisplay()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::set\+Display (\begin{DoxyParamCaption}\item[{const bool}]{display }\end{DoxyParamCaption})}
+
+
+
+Set whether the entity should be displayed. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a7025c234e913d9cb6353b22463fd1a20}{set\+Display()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em display} & a const bool -\/ Should the entity be displayed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_ace3d4826edd31a0d4652a79cfb79b682}\label{class_owl_engine_1_1_entity_ace3d4826edd31a0d4652a79cfb79b682}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!setLayer@{setLayer}}
+\index{setLayer@{setLayer}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{setLayer()}{setLayer()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::set\+Layer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_layer}{Layer}} $\ast$}]{layer }\end{DoxyParamCaption})}
+
+
+
+Set the layer this entity belongs to. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_ace3d4826edd31a0d4652a79cfb79b682}{set\+Layer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & a Layer$\ast$ -\/ A pointer to the layer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a16073e18bbafaa6276739dd317f816db}\label{class_owl_engine_1_1_entity_a16073e18bbafaa6276739dd317f816db}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!setName@{setName}}
+\index{setName@{setName}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{entity\+Name }\end{DoxyParamCaption})}
+
+
+
+Set the name of the entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a16073e18bbafaa6276739dd317f816db}{set\+Name()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity\+Name} & a const std\+::string\& -\/ The name of the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a1fb32afb0a719fe3c52641166a5db7df}\label{class_owl_engine_1_1_entity_a1fb32afb0a719fe3c52641166a5db7df}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!setParentEntity@{setParentEntity}}
+\index{setParentEntity@{setParentEntity}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{setParentEntity()}{setParentEntity()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::set\+Parent\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Set the entity this entity belongs to. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a1fb32afb0a719fe3c52641166a5db7df}{set\+Parent\+Entity()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & an Entity$\ast$ -\/ A pointer to the entity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_ae87ead83eb2e830c500b791269e9acf9}\label{class_owl_engine_1_1_entity_ae87ead83eb2e830c500b791269e9acf9}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!setParentScene@{setParentScene}}
+\index{setParentScene@{setParentScene}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{setParentScene()}{setParentScene()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::set\+Parent\+Scene (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_scene}{Scene}} $\ast$}]{parent }\end{DoxyParamCaption})}
+
+
+
+Set the scene this entity belongs to. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_ae87ead83eb2e830c500b791269e9acf9}{set\+Parent\+Scene()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & a Scene$\ast$ -\/ A pointer to the scene \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a7c305a21187c5f7db4c8c93298a618a6}\label{class_owl_engine_1_1_entity_a7c305a21187c5f7db4c8c93298a618a6}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!setSaved@{setSaved}}
+\index{setSaved@{setSaved}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{setSaved()}{setSaved()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::set\+Saved (\begin{DoxyParamCaption}\item[{const bool}]{save }\end{DoxyParamCaption})}
+
+
+
+Set whether the entity should be save when the scene is saved. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a7c305a21187c5f7db4c8c93298a618a6}{set\+Saved()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em save} & a const bool -\/ Should the entity be saved \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a935435a19fb3bfa23e71095414957d15}\label{class_owl_engine_1_1_entity_a935435a19fb3bfa23e71095414957d15}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!setSelected@{setSelected}}
+\index{setSelected@{setSelected}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{setSelected()}{setSelected()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::set\+Selected (\begin{DoxyParamCaption}\item[{const bool}]{select }\end{DoxyParamCaption})}
+
+
+
+Set whether the entity is selected. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a935435a19fb3bfa23e71095414957d15}{set\+Selected()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em select} & a const bool -\/ Should the entity be selected \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_entity_a569bab966bae6b4d3463dd6af72c2731}\label{class_owl_engine_1_1_entity_a569bab966bae6b4d3463dd6af72c2731}} 
+\index{OwlEngine::Entity@{OwlEngine::Entity}!setUniqueID@{setUniqueID}}
+\index{setUniqueID@{setUniqueID}!OwlEngine::Entity@{OwlEngine::Entity}}
+\doxysubsubsection{\texorpdfstring{setUniqueID()}{setUniqueID()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Entity\+::set\+Unique\+ID (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{ID }\end{DoxyParamCaption})}
+
+
+
+Set the unique ID of this entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_entity_a569bab966bae6b4d3463dd6af72c2731}{set\+Unique\+I\+D()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & a const uint32\+\_\+t -\/ The unique ID \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/\mbox{\hyperlink{entity_8h}{entity.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/\mbox{\hyperlink{entity_8cpp}{entity.\+cpp}}\end{DoxyCompactItemize}

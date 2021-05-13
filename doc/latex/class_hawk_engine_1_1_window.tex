@@ -1,0 +1,447 @@
+\hypertarget{class_hawk_engine_1_1_window}{}\doxysection{Hawk\+Engine\+::Window Class Reference}
+\label{class_hawk_engine_1_1_window}\index{HawkEngine::Window@{HawkEngine::Window}}
+
+
+Abstract windows base class. All implemented windows should code to this interface.  
+
+
+
+
+{\ttfamily \#include $<$window.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_window_a931cd03f168dcc750af6e40c552b86a9}{init}} (const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}} \&properties)=0
+\begin{DoxyCompactList}\small\item\em Initialise the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_window_a3df536c8211924bfa00e849fae947c09}{close}} ()=0
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_window_af8ade38a48c2dc35d2b584387478d922}{update}} (const float timestep, const float total\+Time)=0
+\begin{DoxyCompactList}\small\item\em Update. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_window_a4ad0a0756ae3c8eb4801ea8b00159e70}{set\+V\+Sync}} (const bool V\+Sync)=0
+\begin{DoxyCompactList}\small\item\em Set the V\+Sync. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{class_hawk_engine_1_1_window_a47cc8c2438f56f8f5b9d8cb5479d333f}{is\+V\+Sync}} () const =0
+\begin{DoxyCompactList}\small\item\em Get whether V\+Sync is enabled. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_window_aecad2012edf562993194e7ef6bb49860}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Get the window width. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_window_a4b6c77ae7eacb18dd7a6ecfbac0156aa}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Get the window height. \end{DoxyCompactList}\item 
+virtual const float \mbox{\hyperlink{class_hawk_engine_1_1_window_a4d2e0f6ffa89f174bc3d80e3faa1db12}{get\+Widthf}} () const
+\begin{DoxyCompactList}\small\item\em Get the window width. \end{DoxyCompactList}\item 
+virtual const float \mbox{\hyperlink{class_hawk_engine_1_1_window_ad4ce3852ce0f4529b15c8f987e5349d7}{get\+Heightf}} () const
+\begin{DoxyCompactList}\small\item\em Get the window height. \end{DoxyCompactList}\item 
+virtual const float \mbox{\hyperlink{class_hawk_engine_1_1_window_abab2893581ac104ff931d5c4e0efc899}{get\+Aspect\+Ratio}} () const
+\begin{DoxyCompactList}\small\item\em Get the window aspect ratio. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{class_hawk_engine_1_1_window_a95021c3b97724cce3a3e157da53ce0f6}{is\+Full\+Screen\+Mode}} () const
+\begin{DoxyCompactList}\small\item\em Get whether the window is fullscreen. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}} \& \mbox{\hyperlink{class_hawk_engine_1_1_window_af0faac27135053e30bc7fd52639eb451}{get\+Properties}} () const
+\begin{DoxyCompactList}\small\item\em Get the window properties. \end{DoxyCompactList}\item 
+virtual glm\+::vec2 \mbox{\hyperlink{class_hawk_engine_1_1_window_acc2b40e98cc62af20c3fddfc6da22219}{get\+Window\+Position}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the position of the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_window_ab7e98e23c88a95b6bc8bef65ffba2c43}{update\+Window\+Size}} (const uint32\+\_\+t new\+Width, const uint32\+\_\+t new\+Height)
+\begin{DoxyCompactList}\small\item\em Update the window\textquotesingle{}s new width and height. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a83fc29403bf11a96bbb7615ae89f23a6}\label{class_hawk_engine_1_1_window_a83fc29403bf11a96bbb7615ae89f23a6}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_window_a83fc29403bf11a96bbb7615ae89f23a6}{update\+Viewport}} ()=0
+\begin{DoxyCompactList}\small\item\em Update the window\textquotesingle{}s viewport. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_window_af5bf76f5f71eb0de89d08ef22d361ee0}{set\+Minimised}} (const bool minimised)
+\begin{DoxyCompactList}\small\item\em Set whether the window is minimised. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{class_hawk_engine_1_1_window_a42e6845a2e07df0b716d86fe3068552f}{get\+Minimised}} ()
+\begin{DoxyCompactList}\small\item\em Get whether the window is minimised. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_window_aa8f1729ad0c743da929faadaed91bd82}{set\+Close\+Window}} (const bool \mbox{\hyperlink{class_hawk_engine_1_1_window_a3df536c8211924bfa00e849fae947c09}{close}})
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{class_hawk_engine_1_1_window_ac7f48582817d8e8688b61881e921eb49}{should\+Close}} () const =0
+\begin{DoxyCompactList}\small\item\em Should the window close. \end{DoxyCompactList}\item 
+virtual void $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_window_a179a46df981f70c423e2fbd2fc941714}{get\+Native\+Window}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the native window. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_graphics_context}{Graphics\+Context}} $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_window_a17b1f59edc6c6455589d30431871a6d6}{get\+Graphics\+Context}} ()
+\begin{DoxyCompactList}\small\item\em Get the graphics context. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_event_handler}{Event\+Handler}} \& \mbox{\hyperlink{class_hawk_engine_1_1_window_ae4a19a382ddf440771b567c65958b633}{get\+Event\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Get the event handler. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_window}{Window}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_window_a02ae9673b18a8d1af987019b6d1b486a}{create}} (const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}} \&properties=\mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}}())
+\begin{DoxyCompactList}\small\item\em Create a window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a10c1981cb84aba04a1c981319ce3656b}\label{class_hawk_engine_1_1_window_a10c1981cb84aba04a1c981319ce3656b}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_window_a10c1981cb84aba04a1c981319ce3656b}{set\+Callbacks}} ()=0
+\begin{DoxyCompactList}\small\item\em Set all event callback functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a84e31c1a03627f335ba2e70283c68bdb}\label{class_hawk_engine_1_1_window_a84e31c1a03627f335ba2e70283c68bdb}} 
+\mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$ \mbox{\hyperlink{class_hawk_engine_1_1_graphics_context}{Graphics\+Context}} $>$ \mbox{\hyperlink{class_hawk_engine_1_1_window_a84e31c1a03627f335ba2e70283c68bdb}{m\+\_\+graphics\+Context}}
+\begin{DoxyCompactList}\small\item\em A pointer to the graphics context. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_aafbfa641ebf91a12566370521dac0075}\label{class_hawk_engine_1_1_window_aafbfa641ebf91a12566370521dac0075}} 
+\mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}} \mbox{\hyperlink{class_hawk_engine_1_1_window_aafbfa641ebf91a12566370521dac0075}{m\+\_\+props}}
+\begin{DoxyCompactList}\small\item\em Properties of the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a87a6e1f72d36e57a2e33783507096aed}\label{class_hawk_engine_1_1_window_a87a6e1f72d36e57a2e33783507096aed}} 
+\mbox{\hyperlink{class_hawk_engine_1_1_event_handler}{Event\+Handler}} \mbox{\hyperlink{class_hawk_engine_1_1_window_a87a6e1f72d36e57a2e33783507096aed}{m\+\_\+event\+Handler}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_event}{Event}} Handler. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_aba313a7fbf06b7d3f68e52324784abba}\label{class_hawk_engine_1_1_window_aba313a7fbf06b7d3f68e52324784abba}} 
+float \mbox{\hyperlink{class_hawk_engine_1_1_window_aba313a7fbf06b7d3f68e52324784abba}{m\+\_\+aspect\+Ratio}}
+\begin{DoxyCompactList}\small\item\em Aspect ratio of the window. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_afb635e95ac32ae1bbf4937905d58ab3a}\label{class_hawk_engine_1_1_window_afb635e95ac32ae1bbf4937905d58ab3a}} 
+bool \mbox{\hyperlink{class_hawk_engine_1_1_window_afb635e95ac32ae1bbf4937905d58ab3a}{m\+\_\+minimised}}
+\begin{DoxyCompactList}\small\item\em Is the window minimised. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a052285f3f60bdbc8129b7b348e6dcbc7}\label{class_hawk_engine_1_1_window_a052285f3f60bdbc8129b7b348e6dcbc7}} 
+bool \mbox{\hyperlink{class_hawk_engine_1_1_window_a052285f3f60bdbc8129b7b348e6dcbc7}{m\+\_\+close}}
+\begin{DoxyCompactList}\small\item\em Should the window close. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract windows base class. All implemented windows should code to this interface. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a3df536c8211924bfa00e849fae947c09}\label{class_hawk_engine_1_1_window_a3df536c8211924bfa00e849fae947c09}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!close@{close}}
+\index{close@{close}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Window\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destructor. 
+
+Close the window 
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_acbf34aa06a8bdabec119ed10e8870f7c}{Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a02ae9673b18a8d1af987019b6d1b486a}\label{class_hawk_engine_1_1_window_a02ae9673b18a8d1af987019b6d1b486a}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!create@{create}}
+\index{create@{create}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_hawk_engine_1_1_window}{Window}}$\ast$ Hawk\+Engine\+::\+Window\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}} \&}]{properties = {\ttfamily \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}}()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & a const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}}\& -\/ The window properties \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Window$\ast$ -\/ A pointer to the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_abab2893581ac104ff931d5c4e0efc899}\label{class_hawk_engine_1_1_window_abab2893581ac104ff931d5c4e0efc899}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!getAspectRatio@{getAspectRatio}}
+\index{getAspectRatio@{getAspectRatio}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{getAspectRatio()}{getAspectRatio()}}
+{\footnotesize\ttfamily virtual const float Hawk\+Engine\+::\+Window\+::get\+Aspect\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the window aspect ratio. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The window aspect ratio 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_ae4a19a382ddf440771b567c65958b633}\label{class_hawk_engine_1_1_window_ae4a19a382ddf440771b567c65958b633}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!getEventHandler@{getEventHandler}}
+\index{getEventHandler@{getEventHandler}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{getEventHandler()}{getEventHandler()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_event_handler}{Event\+Handler}}\& Hawk\+Engine\+::\+Window\+::get\+Event\+Handler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the event handler. 
+
+\begin{DoxyReturn}{Returns}
+an \mbox{\hyperlink{class_hawk_engine_1_1_event_handler}{Event\+Handler}}\& -\/ An event handler 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a17b1f59edc6c6455589d30431871a6d6}\label{class_hawk_engine_1_1_window_a17b1f59edc6c6455589d30431871a6d6}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!getGraphicsContext@{getGraphicsContext}}
+\index{getGraphicsContext@{getGraphicsContext}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{getGraphicsContext()}{getGraphicsContext()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{common_8h_ab85a73a5af414b9d2136399ac7dc2a59}{Shared}}$<$\mbox{\hyperlink{class_hawk_engine_1_1_graphics_context}{Graphics\+Context}}$>$\& Hawk\+Engine\+::\+Window\+::get\+Graphics\+Context (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the graphics context. 
+
+\begin{DoxyReturn}{Returns}
+a const std\+::shared\+\_\+ptr$<$\+Graphics\+Context$>$\& -\/ The pointer to the graphics context 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a4b6c77ae7eacb18dd7a6ecfbac0156aa}\label{class_hawk_engine_1_1_window_a4b6c77ae7eacb18dd7a6ecfbac0156aa}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Window\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the window height. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The height of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_ad4ce3852ce0f4529b15c8f987e5349d7}\label{class_hawk_engine_1_1_window_ad4ce3852ce0f4529b15c8f987e5349d7}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!getHeightf@{getHeightf}}
+\index{getHeightf@{getHeightf}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{getHeightf()}{getHeightf()}}
+{\footnotesize\ttfamily virtual const float Hawk\+Engine\+::\+Window\+::get\+Heightf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the window height. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The height of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a42e6845a2e07df0b716d86fe3068552f}\label{class_hawk_engine_1_1_window_a42e6845a2e07df0b716d86fe3068552f}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!getMinimised@{getMinimised}}
+\index{getMinimised@{getMinimised}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{getMinimised()}{getMinimised()}}
+{\footnotesize\ttfamily virtual const bool Hawk\+Engine\+::\+Window\+::get\+Minimised (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get whether the window is minimised. 
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is the window minimised 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a179a46df981f70c423e2fbd2fc941714}\label{class_hawk_engine_1_1_window_a179a46df981f70c423e2fbd2fc941714}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!getNativeWindow@{getNativeWindow}}
+\index{getNativeWindow@{getNativeWindow}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{getNativeWindow()}{getNativeWindow()}}
+{\footnotesize\ttfamily virtual void$\ast$ Hawk\+Engine\+::\+Window\+::get\+Native\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the native window. 
+
+\begin{DoxyReturn}{Returns}
+a void$\ast$ -\/ A pointer to the native window 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_aa4bf645dc4de3d13ddcd90f72e9d2450}{Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_af0faac27135053e30bc7fd52639eb451}\label{class_hawk_engine_1_1_window_af0faac27135053e30bc7fd52639eb451}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}}\& Hawk\+Engine\+::\+Window\+::get\+Properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the window properties. 
+
+\begin{DoxyReturn}{Returns}
+a const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}}\& -\/ The window properties 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_aecad2012edf562993194e7ef6bb49860}\label{class_hawk_engine_1_1_window_aecad2012edf562993194e7ef6bb49860}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Window\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the window width. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The width of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a4d2e0f6ffa89f174bc3d80e3faa1db12}\label{class_hawk_engine_1_1_window_a4d2e0f6ffa89f174bc3d80e3faa1db12}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!getWidthf@{getWidthf}}
+\index{getWidthf@{getWidthf}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{getWidthf()}{getWidthf()}}
+{\footnotesize\ttfamily virtual const float Hawk\+Engine\+::\+Window\+::get\+Widthf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the window width. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The width of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_acc2b40e98cc62af20c3fddfc6da22219}\label{class_hawk_engine_1_1_window_acc2b40e98cc62af20c3fddfc6da22219}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!getWindowPosition@{getWindowPosition}}
+\index{getWindowPosition@{getWindowPosition}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{getWindowPosition()}{getWindowPosition()}}
+{\footnotesize\ttfamily virtual glm\+::vec2 Hawk\+Engine\+::\+Window\+::get\+Window\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the position of the window. 
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The position of the window 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a5df5457b07bc8a49c2377ef1a6889181}{Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a931cd03f168dcc750af6e40c552b86a9}\label{class_hawk_engine_1_1_window_a931cd03f168dcc750af6e40c552b86a9}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!init@{init}}
+\index{init@{init}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Window\+::init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}} \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initialise the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & a const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}}\& -\/ The window\textquotesingle{}s properties \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_abe2724bbd8efa60461a4089cd83f7a1a}{Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a95021c3b97724cce3a3e157da53ce0f6}\label{class_hawk_engine_1_1_window_a95021c3b97724cce3a3e157da53ce0f6}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!isFullScreenMode@{isFullScreenMode}}
+\index{isFullScreenMode@{isFullScreenMode}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{isFullScreenMode()}{isFullScreenMode()}}
+{\footnotesize\ttfamily virtual const bool Hawk\+Engine\+::\+Window\+::is\+Full\+Screen\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get whether the window is fullscreen. 
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is the window fullscreen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a47cc8c2438f56f8f5b9d8cb5479d333f}\label{class_hawk_engine_1_1_window_a47cc8c2438f56f8f5b9d8cb5479d333f}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!isVSync@{isVSync}}
+\index{isVSync@{isVSync}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{isVSync()}{isVSync()}}
+{\footnotesize\ttfamily virtual const bool Hawk\+Engine\+::\+Window\+::is\+V\+Sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get whether V\+Sync is enabled. 
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is the V\+Sync enabled 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a4c75d50eabb5ce5ddea6286e18dbbe39}{Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_aa8f1729ad0c743da929faadaed91bd82}\label{class_hawk_engine_1_1_window_aa8f1729ad0c743da929faadaed91bd82}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!setCloseWindow@{setCloseWindow}}
+\index{setCloseWindow@{setCloseWindow}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{setCloseWindow()}{setCloseWindow()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Window\+::set\+Close\+Window (\begin{DoxyParamCaption}\item[{const bool}]{close }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Close the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em close} & a const bool -\/ Should the window close \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_af5bf76f5f71eb0de89d08ef22d361ee0}\label{class_hawk_engine_1_1_window_af5bf76f5f71eb0de89d08ef22d361ee0}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!setMinimised@{setMinimised}}
+\index{setMinimised@{setMinimised}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{setMinimised()}{setMinimised()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Window\+::set\+Minimised (\begin{DoxyParamCaption}\item[{const bool}]{minimised }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Set whether the window is minimised. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em minimised} & a const bool -\/ Is the window minimised \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_a4ad0a0756ae3c8eb4801ea8b00159e70}\label{class_hawk_engine_1_1_window_a4ad0a0756ae3c8eb4801ea8b00159e70}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!setVSync@{setVSync}}
+\index{setVSync@{setVSync}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{setVSync()}{setVSync()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Window\+::set\+V\+Sync (\begin{DoxyParamCaption}\item[{const bool}]{V\+Sync }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the V\+Sync. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em V\+Sync} & a const bool -\/ Is V\+Sync enabled \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a2e09f0b46f248fec0140a36ffd63309b}{Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_ac7f48582817d8e8688b61881e921eb49}\label{class_hawk_engine_1_1_window_ac7f48582817d8e8688b61881e921eb49}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!shouldClose@{shouldClose}}
+\index{shouldClose@{shouldClose}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{shouldClose()}{shouldClose()}}
+{\footnotesize\ttfamily virtual const bool Hawk\+Engine\+::\+Window\+::should\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Should the window close. 
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Should the window close 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a8969adfc39c2b5d3d218c1eb5842b834}{Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_af8ade38a48c2dc35d2b584387478d922}\label{class_hawk_engine_1_1_window_af8ade38a48c2dc35d2b584387478d922}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!update@{update}}
+\index{update@{update}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Window\+::update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Update. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total runtime of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a12187a34d543e13fa69bb82ad52a3d31}{Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_window_ab7e98e23c88a95b6bc8bef65ffba2c43}\label{class_hawk_engine_1_1_window_ab7e98e23c88a95b6bc8bef65ffba2c43}} 
+\index{HawkEngine::Window@{HawkEngine::Window}!updateWindowSize@{updateWindowSize}}
+\index{updateWindowSize@{updateWindowSize}!HawkEngine::Window@{HawkEngine::Window}}
+\doxysubsubsection{\texorpdfstring{updateWindowSize()}{updateWindowSize()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Window\+::update\+Window\+Size (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{new\+Width,  }\item[{const uint32\+\_\+t}]{new\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the window\textquotesingle{}s new width and height. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_window_ab7e98e23c88a95b6bc8bef65ffba2c43}{update\+Window\+Size()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Width} & a const uint32\+\_\+t -\/ The new width of the window \\
+\hline
+{\em new\+Height} & a const uint32\+\_\+t -\/ The new height of the window \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/core/\mbox{\hyperlink{window_8h}{window.\+h}}\item 
+C\+:/doc/src/src/independent/core/\mbox{\hyperlink{window_8cpp}{window.\+cpp}}\end{DoxyCompactItemize}

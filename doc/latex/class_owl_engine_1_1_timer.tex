@@ -1,0 +1,72 @@
+\hypertarget{class_owl_engine_1_1_timer}{}\doxysection{Owl\+Engine\+::Timer Class Reference}
+\label{class_owl_engine_1_1_timer}\index{OwlEngine::Timer@{OwlEngine::Timer}}
+
+
+Interface class for timers.  
+
+
+
+
+{\ttfamily \#include $<$timer.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Timer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_timer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_timer_af673d335f265a2af48b0037f6ddb67c0}{$\sim$\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_ab094e043aacfccc0c024e7e8c61d28d6}\label{class_owl_engine_1_1_timer_ab094e043aacfccc0c024e7e8c61d28d6}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_timer_ab094e043aacfccc0c024e7e8c61d28d6}{start}} ()=0
+\begin{DoxyCompactList}\small\item\em Start the timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_ac13651b5db0fe698bbc2f35802254077}\label{class_owl_engine_1_1_timer_ac13651b5db0fe698bbc2f35802254077}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_timer_ac13651b5db0fe698bbc2f35802254077}{reset}} ()=0
+\begin{DoxyCompactList}\small\item\em Reset the timer. \end{DoxyCompactList}\item 
+virtual const float \mbox{\hyperlink{class_owl_engine_1_1_timer_abf37074fa3861fa4951f875440390d0f}{get\+Elapsed\+Time}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the time elapsed since the last start or reset. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface class for timers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_af673d335f265a2af48b0037f6ddb67c0}\label{class_owl_engine_1_1_timer_af673d335f265a2af48b0037f6ddb67c0}} 
+\index{OwlEngine::Timer@{OwlEngine::Timer}!````~Timer@{$\sim$Timer}}
+\index{````~Timer@{$\sim$Timer}!OwlEngine::Timer@{OwlEngine::Timer}}
+\doxysubsubsection{\texorpdfstring{$\sim$Timer()}{~Timer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Timer\+::$\sim$\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_timer_af673d335f265a2af48b0037f6ddb67c0}{$\sim$\+Timer()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_timer_abf37074fa3861fa4951f875440390d0f}\label{class_owl_engine_1_1_timer_abf37074fa3861fa4951f875440390d0f}} 
+\index{OwlEngine::Timer@{OwlEngine::Timer}!getElapsedTime@{getElapsedTime}}
+\index{getElapsedTime@{getElapsedTime}!OwlEngine::Timer@{OwlEngine::Timer}}
+\doxysubsubsection{\texorpdfstring{getElapsedTime()}{getElapsedTime()}}
+{\footnotesize\ttfamily virtual const float Owl\+Engine\+::\+Timer\+::get\+Elapsed\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the time elapsed since the last start or reset. 
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The elapsed time 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_owl_engine_1_1_chrono_timer_a5f0c64703e7fd23add2e245d542b0657}{Owl\+Engine\+::\+Chrono\+Timer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/components/\mbox{\hyperlink{timer_8h}{timer.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/components/\mbox{\hyperlink{timer_8cpp}{timer.\+cpp}}\end{DoxyCompactItemize}

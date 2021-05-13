@@ -1,0 +1,70 @@
+\hypertarget{scene_render_pass_8h}{}\doxysection{C\+:/doc/src/include/rendering/render\+Passes/scene\+Render\+Pass.h File Reference}
+\label{scene_render_pass_8h}\index{C:/doc/src/include/rendering/renderPasses/sceneRenderPass.h@{C:/doc/src/include/rendering/renderPasses/sceneRenderPass.h}}
+
+
+A scene render pass which renders the scene.  
+
+
+{\ttfamily \#include \char`\"{}rendering/render\+Pass.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_scene_render_pass}{Scene\+Render\+Pass}}
+\begin{DoxyCompactList}\small\item\em A scene render pass which renders the scene to the default frame buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38}{Post\+Processing\+Effect}} \{ \newline
+\mbox{\hyperlink{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38ac9d3e887722f2bc482bcca9d41c512af}{None}} = 0, 
+\mbox{\hyperlink{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38a453eaa67bb5be74df9e4e8aafb24691a}{Blur}} = 1, 
+\mbox{\hyperlink{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38ab74011fffaab497152862acae3205a29}{Inversion}} = 2, 
+\mbox{\hyperlink{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38a83708ab97ce2203cc6988f2f2618c994}{Greyscale}} = 3, 
+\newline
+\mbox{\hyperlink{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38a5017f299678f54804a25d6bb24ab2b7d}{Sharpen}} = 4, 
+\mbox{\hyperlink{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38afb7bc05a44ce468a856ce2fc25887218}{Edge\+Detection}} = 5
+ \}
+\begin{DoxyCompactList}\small\item\em The post processing uniform value to apply to the scene texture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A scene render pass which renders the scene. 
+
+Author\+: Dan Bullin 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38}\label{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38}} 
+\index{sceneRenderPass.h@{sceneRenderPass.h}!PostProcessingEffect@{PostProcessingEffect}}
+\index{PostProcessingEffect@{PostProcessingEffect}!sceneRenderPass.h@{sceneRenderPass.h}}
+\doxysubsubsection{\texorpdfstring{PostProcessingEffect}{PostProcessingEffect}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38}{Post\+Processing\+Effect}}}
+
+
+
+The post processing uniform value to apply to the scene texture. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{None@{None}!sceneRenderPass.h@{sceneRenderPass.h}}\index{sceneRenderPass.h@{sceneRenderPass.h}!None@{None}}}\mbox{\Hypertarget{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38ac9d3e887722f2bc482bcca9d41c512af}\label{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38ac9d3e887722f2bc482bcca9d41c512af}} 
+None&Don\textquotesingle{}t apply any effect to the scene texture. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Blur@{Blur}!sceneRenderPass.h@{sceneRenderPass.h}}\index{sceneRenderPass.h@{sceneRenderPass.h}!Blur@{Blur}}}\mbox{\Hypertarget{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38a453eaa67bb5be74df9e4e8aafb24691a}\label{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38a453eaa67bb5be74df9e4e8aafb24691a}} 
+Blur&Apply a blur to the scene texture. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Inversion@{Inversion}!sceneRenderPass.h@{sceneRenderPass.h}}\index{sceneRenderPass.h@{sceneRenderPass.h}!Inversion@{Inversion}}}\mbox{\Hypertarget{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38ab74011fffaab497152862acae3205a29}\label{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38ab74011fffaab497152862acae3205a29}} 
+Inversion&Inverse the scene texture colours. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Greyscale@{Greyscale}!sceneRenderPass.h@{sceneRenderPass.h}}\index{sceneRenderPass.h@{sceneRenderPass.h}!Greyscale@{Greyscale}}}\mbox{\Hypertarget{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38a83708ab97ce2203cc6988f2f2618c994}\label{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38a83708ab97ce2203cc6988f2f2618c994}} 
+Greyscale&Average the scene texture colours to get greyscale. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sharpen@{Sharpen}!sceneRenderPass.h@{sceneRenderPass.h}}\index{sceneRenderPass.h@{sceneRenderPass.h}!Sharpen@{Sharpen}}}\mbox{\Hypertarget{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38a5017f299678f54804a25d6bb24ab2b7d}\label{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38a5017f299678f54804a25d6bb24ab2b7d}} 
+Sharpen&Sharpen the scene texture. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EdgeDetection@{EdgeDetection}!sceneRenderPass.h@{sceneRenderPass.h}}\index{sceneRenderPass.h@{sceneRenderPass.h}!EdgeDetection@{EdgeDetection}}}\mbox{\Hypertarget{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38afb7bc05a44ce468a856ce2fc25887218}\label{scene_render_pass_8h_a5af30e437954c5abd8129afb17381d38afb7bc05a44ce468a856ce2fc25887218}} 
+Edge\+Detection&Show the edges in the texture. \\
+\hline
+
+\end{DoxyEnumFields}

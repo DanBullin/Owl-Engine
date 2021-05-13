@@ -1,0 +1,120 @@
+\hypertarget{class_owl_engine_1_1_u_i_pass}{}\doxysection{Owl\+Engine\+::U\+I\+Pass Class Reference}
+\label{class_owl_engine_1_1_u_i_pass}\index{OwlEngine::UIPass@{OwlEngine::UIPass}}
+
+
+An UI render pass.  
+
+
+
+
+{\ttfamily \#include $<$U\+I\+Pass.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::U\+I\+Pass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_u_i_pass}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_pass_aaec95a09dfd2caf7961384dc2217a214}{U\+I\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_pass_a19a9ec974bc571036e25876ea63d5cf7}{$\sim$\+U\+I\+Pass}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_pass_aa260362b554754a8d2cab4239066e94a}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Called when the pass is attached to a scene. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_u_i_pass_a9c7227c7239bad66cd8e5607a070166e}{on\+Render}} (std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \&entities) override
+\begin{DoxyCompactList}\small\item\em The rendering to perform for this pass. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_u_i_pass_aa0c74e3a49391bfdc152e220467330d2}{get\+Frame\+Buffer}} () override
+\begin{DoxyCompactList}\small\item\em Get the framebuffer of this render pass. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An UI render pass. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_pass_aaec95a09dfd2caf7961384dc2217a214}\label{class_owl_engine_1_1_u_i_pass_aaec95a09dfd2caf7961384dc2217a214}} 
+\index{OwlEngine::UIPass@{OwlEngine::UIPass}!UIPass@{UIPass}}
+\index{UIPass@{UIPass}!OwlEngine::UIPass@{OwlEngine::UIPass}}
+\doxysubsubsection{\texorpdfstring{UIPass()}{UIPass()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+U\+I\+Pass\+::\+U\+I\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_pass_aaec95a09dfd2caf7961384dc2217a214}{U\+I\+Pass()}} \mbox{\Hypertarget{class_owl_engine_1_1_u_i_pass_a19a9ec974bc571036e25876ea63d5cf7}\label{class_owl_engine_1_1_u_i_pass_a19a9ec974bc571036e25876ea63d5cf7}} 
+\index{OwlEngine::UIPass@{OwlEngine::UIPass}!````~UIPass@{$\sim$UIPass}}
+\index{````~UIPass@{$\sim$UIPass}!OwlEngine::UIPass@{OwlEngine::UIPass}}
+\doxysubsubsection{\texorpdfstring{$\sim$UIPass()}{~UIPass()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+U\+I\+Pass\+::$\sim$\+U\+I\+Pass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_pass_a19a9ec974bc571036e25876ea63d5cf7}{$\sim$\+U\+I\+Pass()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_pass_aa0c74e3a49391bfdc152e220467330d2}\label{class_owl_engine_1_1_u_i_pass_aa0c74e3a49391bfdc152e220467330d2}} 
+\index{OwlEngine::UIPass@{OwlEngine::UIPass}!getFrameBuffer@{getFrameBuffer}}
+\index{getFrameBuffer@{getFrameBuffer}!OwlEngine::UIPass@{OwlEngine::UIPass}}
+\doxysubsubsection{\texorpdfstring{getFrameBuffer()}{getFrameBuffer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_frame_buffer}{Frame\+Buffer}} $\ast$ Owl\+Engine\+::\+U\+I\+Pass\+::get\+Frame\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the framebuffer of this render pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_pass_aa0c74e3a49391bfdc152e220467330d2}{get\+Frame\+Buffer()}}
+
+\begin{DoxyReturn}{Returns}
+a Frame\+Buffer$\ast$ -\/ The framebuffer 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a3589ca78070a8173282ea6890d592103}{Owl\+Engine\+::\+Render\+Pass}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_pass_aa260362b554754a8d2cab4239066e94a}\label{class_owl_engine_1_1_u_i_pass_aa260362b554754a8d2cab4239066e94a}} 
+\index{OwlEngine::UIPass@{OwlEngine::UIPass}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::UIPass@{OwlEngine::UIPass}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+Pass\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called when the pass is attached to a scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_pass_aa260362b554754a8d2cab4239066e94a}{on\+Attach()}} 
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_render_pass_a53acb6a6d144feea5b09039e722d24ae}{Owl\+Engine\+::\+Render\+Pass}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_u_i_pass_a9c7227c7239bad66cd8e5607a070166e}\label{class_owl_engine_1_1_u_i_pass_a9c7227c7239bad66cd8e5607a070166e}} 
+\index{OwlEngine::UIPass@{OwlEngine::UIPass}!onRender@{onRender}}
+\index{onRender@{onRender}!OwlEngine::UIPass@{OwlEngine::UIPass}}
+\doxysubsubsection{\texorpdfstring{onRender()}{onRender()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+U\+I\+Pass\+::on\+Render (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ $>$ \&}]{entities }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+The rendering to perform for this pass. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_u_i_pass_a9c7227c7239bad66cd8e5607a070166e}{on\+Render()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entities} & a std\+::vector$<$\+Entity$\ast$$>$\& -\/ The list of entities to render \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_render_pass_ace743fe2847d4a4521eb5308d9d2bcd3}{Owl\+Engine\+::\+Render\+Pass}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/rendering/render\+Passes/passes/\mbox{\hyperlink{_u_i_pass_8h}{U\+I\+Pass.\+h}}\item 
+C\+:/doc/src/engine/src/independent/rendering/render\+Passes/passes/\mbox{\hyperlink{_u_i_pass_8cpp}{U\+I\+Pass.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,241 @@
+\hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation}{}\doxysection{Hawk\+Engine\+::G\+L\+F\+W\+Win\+Implementation Class Reference}
+\label{class_hawk_engine_1_1_g_l_f_w_win_implementation}\index{HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}}
+
+
+Implementation of a window using G\+L\+FW.  
+
+
+
+
+{\ttfamily \#include $<$G\+L\+F\+W\+Win\+Implementation.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::G\+L\+F\+W\+Win\+Implementation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_g_l_f_w_win_implementation}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_ade06c760cf100f949b71c53a1c8ec69d}{G\+L\+F\+W\+Win\+Implementation}} (const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}} \&properties)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_abe2724bbd8efa60461a4089cd83f7a1a}{init}} (const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}} \&properties) override
+\begin{DoxyCompactList}\small\item\em Initialise the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_acbf34aa06a8bdabec119ed10e8870f7c}{close}} () override
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a12187a34d543e13fa69bb82ad52a3d31}{update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a2e09f0b46f248fec0140a36ffd63309b}{set\+V\+Sync}} (const bool V\+Sync) override
+\begin{DoxyCompactList}\small\item\em Set V\+Sync. \end{DoxyCompactList}\item 
+virtual glm\+::vec2 \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a5df5457b07bc8a49c2377ef1a6889181}{get\+Window\+Position}} () const override
+\begin{DoxyCompactList}\small\item\em Get the window position. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a48edde336217a38a95006f3b7f5954f7}{set\+Callbacks}} () override
+\begin{DoxyCompactList}\small\item\em Set event callback functions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation_a54ef08570b318bb9c1c871d0af8ece15}\label{class_hawk_engine_1_1_g_l_f_w_win_implementation_a54ef08570b318bb9c1c871d0af8ece15}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a54ef08570b318bb9c1c871d0af8ece15}{update\+Viewport}} ()
+\begin{DoxyCompactList}\small\item\em Update the window\textquotesingle{}s viewport. \end{DoxyCompactList}\item 
+virtual void $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_aa4bf645dc4de3d13ddcd90f72e9d2450}{get\+Native\+Window}} () const
+\begin{DoxyCompactList}\small\item\em Get the native window. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a4c75d50eabb5ce5ddea6286e18dbbe39}{is\+V\+Sync}} () const override
+\begin{DoxyCompactList}\small\item\em Get whether the window has vsync enabled. \end{DoxyCompactList}\item 
+virtual const bool \mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a8969adfc39c2b5d3d218c1eb5842b834}{should\+Close}} () const override
+\begin{DoxyCompactList}\small\item\em Should the window close. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Implementation of a window using G\+L\+FW. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation_ade06c760cf100f949b71c53a1c8ec69d}\label{class_hawk_engine_1_1_g_l_f_w_win_implementation_ade06c760cf100f949b71c53a1c8ec69d}} 
+\index{HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}!GLFWWinImplementation@{GLFWWinImplementation}}
+\index{GLFWWinImplementation@{GLFWWinImplementation}!HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}}
+\doxysubsubsection{\texorpdfstring{GLFWWinImplementation()}{GLFWWinImplementation()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation\+::\+G\+L\+F\+W\+Win\+Implementation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}} \&}]{properties }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor()
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & a const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}}\& -\/ The window properties \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation_acbf34aa06a8bdabec119ed10e8870f7c}\label{class_hawk_engine_1_1_g_l_f_w_win_implementation_acbf34aa06a8bdabec119ed10e8870f7c}} 
+\index{HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}!close@{close}}
+\index{close@{close}!HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation\+::close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Close the window. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_acbf34aa06a8bdabec119ed10e8870f7c}{close()}} 
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_window_a3df536c8211924bfa00e849fae947c09}{Hawk\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation_aa4bf645dc4de3d13ddcd90f72e9d2450}\label{class_hawk_engine_1_1_g_l_f_w_win_implementation_aa4bf645dc4de3d13ddcd90f72e9d2450}} 
+\index{HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}!getNativeWindow@{getNativeWindow}}
+\index{getNativeWindow@{getNativeWindow}!HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}}
+\doxysubsubsection{\texorpdfstring{getNativeWindow()}{getNativeWindow()}}
+{\footnotesize\ttfamily virtual void$\ast$ Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation\+::get\+Native\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the native window. 
+
+\begin{DoxyReturn}{Returns}
+a void$\ast$ -\/ A pointer to the native window 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_window_a179a46df981f70c423e2fbd2fc941714}{Hawk\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation_a5df5457b07bc8a49c2377ef1a6889181}\label{class_hawk_engine_1_1_g_l_f_w_win_implementation_a5df5457b07bc8a49c2377ef1a6889181}} 
+\index{HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}!getWindowPosition@{getWindowPosition}}
+\index{getWindowPosition@{getWindowPosition}!HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}}
+\doxysubsubsection{\texorpdfstring{getWindowPosition()}{getWindowPosition()}}
+{\footnotesize\ttfamily glm\+::vec2 Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation\+::get\+Window\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the window position. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a5df5457b07bc8a49c2377ef1a6889181}{get\+Window\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+glm\+::vec2 -\/ The position of the window 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_window_acc2b40e98cc62af20c3fddfc6da22219}{Hawk\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation_abe2724bbd8efa60461a4089cd83f7a1a}\label{class_hawk_engine_1_1_g_l_f_w_win_implementation_abe2724bbd8efa60461a4089cd83f7a1a}} 
+\index{HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}!init@{init}}
+\index{init@{init}!HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation\+::init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}} \&}]{properties }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialise the window. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_abe2724bbd8efa60461a4089cd83f7a1a}{init()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & a const \mbox{\hyperlink{struct_hawk_engine_1_1_window_properties}{Window\+Properties}}\& -\/ The window properties \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_window_a931cd03f168dcc750af6e40c552b86a9}{Hawk\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation_a4c75d50eabb5ce5ddea6286e18dbbe39}\label{class_hawk_engine_1_1_g_l_f_w_win_implementation_a4c75d50eabb5ce5ddea6286e18dbbe39}} 
+\index{HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}!isVSync@{isVSync}}
+\index{isVSync@{isVSync}!HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}}
+\doxysubsubsection{\texorpdfstring{isVSync()}{isVSync()}}
+{\footnotesize\ttfamily virtual const bool Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation\+::is\+V\+Sync (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get whether the window has vsync enabled. 
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Is V\+Sync enabled 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_window_a47cc8c2438f56f8f5b9d8cb5479d333f}{Hawk\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation_a48edde336217a38a95006f3b7f5954f7}\label{class_hawk_engine_1_1_g_l_f_w_win_implementation_a48edde336217a38a95006f3b7f5954f7}} 
+\index{HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}!setCallbacks@{setCallbacks}}
+\index{setCallbacks@{setCallbacks}!HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}}
+\doxysubsubsection{\texorpdfstring{setCallbacks()}{setCallbacks()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation\+::set\+Callbacks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set event callback functions. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a48edde336217a38a95006f3b7f5954f7}{set\+Callbacks()}} 
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_window_a10c1981cb84aba04a1c981319ce3656b}{Hawk\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation_a2e09f0b46f248fec0140a36ffd63309b}\label{class_hawk_engine_1_1_g_l_f_w_win_implementation_a2e09f0b46f248fec0140a36ffd63309b}} 
+\index{HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}!setVSync@{setVSync}}
+\index{setVSync@{setVSync}!HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}}
+\doxysubsubsection{\texorpdfstring{setVSync()}{setVSync()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation\+::set\+V\+Sync (\begin{DoxyParamCaption}\item[{const bool}]{V\+Sync }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set V\+Sync. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_g_l_f_w_win_implementation_a2e09f0b46f248fec0140a36ffd63309b}{set\+V\+Sync()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em V\+Sync} & a const bool -\/ Enable/\+Disable V\+Sync \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_window_a4ad0a0756ae3c8eb4801ea8b00159e70}{Hawk\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation_a8969adfc39c2b5d3d218c1eb5842b834}\label{class_hawk_engine_1_1_g_l_f_w_win_implementation_a8969adfc39c2b5d3d218c1eb5842b834}} 
+\index{HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}!shouldClose@{shouldClose}}
+\index{shouldClose@{shouldClose}!HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}}
+\doxysubsubsection{\texorpdfstring{shouldClose()}{shouldClose()}}
+{\footnotesize\ttfamily virtual const bool Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation\+::should\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Should the window close. 
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Should the window close 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_window_ac7f48582817d8e8688b61881e921eb49}{Hawk\+Engine\+::\+Window}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_g_l_f_w_win_implementation_a12187a34d543e13fa69bb82ad52a3d31}\label{class_hawk_engine_1_1_g_l_f_w_win_implementation_a12187a34d543e13fa69bb82ad52a3d31}} 
+\index{HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}!update@{update}}
+\index{update@{update}!HawkEngine::GLFWWinImplementation@{HawkEngine::GLFWWinImplementation}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+G\+L\+F\+W\+Win\+Implementation\+::update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+on\+Update()
+
+Update
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_hawk_engine_1_1_window_af8ade38a48c2dc35d2b584387478d922}{Hawk\+Engine\+::\+Window}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/platform/\+G\+L\+F\+W/\mbox{\hyperlink{_g_l_f_w_win_implementation_8h}{G\+L\+F\+W\+Win\+Implementation.\+h}}\item 
+C\+:/doc/src/src/platform/\+G\+L\+F\+W/\mbox{\hyperlink{_g_l_f_w_win_implementation_8cpp}{G\+L\+F\+W\+Win\+Implementation.\+cpp}}\end{DoxyCompactItemize}

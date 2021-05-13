@@ -1,0 +1,93 @@
+\hypertarget{class_owl_engine_1_1_chrono_timer}{}\doxysection{Owl\+Engine\+::Chrono\+Timer Class Reference}
+\label{class_owl_engine_1_1_chrono_timer}\index{OwlEngine::ChronoTimer@{OwlEngine::ChronoTimer}}
+
+
+A choro timer class inheriting from timer.  
+
+
+
+
+{\ttfamily \#include $<$timer.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Chrono\+Timer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_chrono_timer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_chrono_timer_a5dc43339838c987d44190d5cd91a1b02}{Chrono\+Timer}} (const char $\ast$timer\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_owl_engine_1_1_chrono_timer_a398a4ec7211c0ad84883ccad3e3745c3}{$\sim$\+Chrono\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_chrono_timer_a08c5a4004ed0931773422b0f03dc00a9}\label{class_owl_engine_1_1_chrono_timer_a08c5a4004ed0931773422b0f03dc00a9}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_chrono_timer_a08c5a4004ed0931773422b0f03dc00a9}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the chrono timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_chrono_timer_a46e90e163f0efb5ea11be3033dac75d8}\label{class_owl_engine_1_1_chrono_timer_a46e90e163f0efb5ea11be3033dac75d8}} 
+virtual void \mbox{\hyperlink{class_owl_engine_1_1_chrono_timer_a46e90e163f0efb5ea11be3033dac75d8}{reset}} () override
+\begin{DoxyCompactList}\small\item\em Stop the chrono timer. \end{DoxyCompactList}\item 
+virtual const float \mbox{\hyperlink{class_owl_engine_1_1_chrono_timer_a5f0c64703e7fd23add2e245d542b0657}{get\+Elapsed\+Time}} () override
+\begin{DoxyCompactList}\small\item\em Get the current elapsed time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A choro timer class inheriting from timer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_chrono_timer_a5dc43339838c987d44190d5cd91a1b02}\label{class_owl_engine_1_1_chrono_timer_a5dc43339838c987d44190d5cd91a1b02}} 
+\index{OwlEngine::ChronoTimer@{OwlEngine::ChronoTimer}!ChronoTimer@{ChronoTimer}}
+\index{ChronoTimer@{ChronoTimer}!OwlEngine::ChronoTimer@{OwlEngine::ChronoTimer}}
+\doxysubsubsection{\texorpdfstring{ChronoTimer()}{ChronoTimer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Chrono\+Timer\+::\+Chrono\+Timer (\begin{DoxyParamCaption}\item[{const char $\ast$}]{timer\+Name }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_chrono_timer_a5dc43339838c987d44190d5cd91a1b02}{Chrono\+Timer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timer\+Name} & a const char$\ast$ -\/ The name of the timer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_chrono_timer_a398a4ec7211c0ad84883ccad3e3745c3}\label{class_owl_engine_1_1_chrono_timer_a398a4ec7211c0ad84883ccad3e3745c3}} 
+\index{OwlEngine::ChronoTimer@{OwlEngine::ChronoTimer}!````~ChronoTimer@{$\sim$ChronoTimer}}
+\index{````~ChronoTimer@{$\sim$ChronoTimer}!OwlEngine::ChronoTimer@{OwlEngine::ChronoTimer}}
+\doxysubsubsection{\texorpdfstring{$\sim$ChronoTimer()}{~ChronoTimer()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Chrono\+Timer\+::$\sim$\+Chrono\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_chrono_timer_a398a4ec7211c0ad84883ccad3e3745c3}{$\sim$\+Chrono\+Timer()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_chrono_timer_a5f0c64703e7fd23add2e245d542b0657}\label{class_owl_engine_1_1_chrono_timer_a5f0c64703e7fd23add2e245d542b0657}} 
+\index{OwlEngine::ChronoTimer@{OwlEngine::ChronoTimer}!getElapsedTime@{getElapsedTime}}
+\index{getElapsedTime@{getElapsedTime}!OwlEngine::ChronoTimer@{OwlEngine::ChronoTimer}}
+\doxysubsubsection{\texorpdfstring{getElapsedTime()}{getElapsedTime()}}
+{\footnotesize\ttfamily const float Owl\+Engine\+::\+Chrono\+Timer\+::get\+Elapsed\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the current elapsed time. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_chrono_timer_a5f0c64703e7fd23add2e245d542b0657}{get\+Elapsed\+Time()}}
+
+\begin{DoxyReturn}{Returns}
+a const float -\/ The time in seconds 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_timer_abf37074fa3861fa4951f875440390d0f}{Owl\+Engine\+::\+Timer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/components/\mbox{\hyperlink{timer_8h}{timer.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/components/\mbox{\hyperlink{timer_8cpp}{timer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{struct_hawk_engine_1_1_renderer2_d_data}{}\doxysection{Hawk\+Engine\+::Renderer2\+D\+Data Struct Reference}
+\label{struct_hawk_engine_1_1_renderer2_d_data}\index{HawkEngine::Renderer2DData@{HawkEngine::Renderer2DData}}
+
+
+A struct containing internal 2D renderer data.  
+
+
+
+
+{\ttfamily \#include $<$renderer\+Data.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer2_d_data_a45a6ae6b1558e55d99d6082683687745}\label{struct_hawk_engine_1_1_renderer2_d_data_a45a6ae6b1558e55d99d6082683687745}} 
+\mbox{\hyperlink{renderer_common_8h_a70f613e2d6c9ecf5f2ca4f06543fa17f}{Scene\+Wide\+Uniforms}} \mbox{\hyperlink{struct_hawk_engine_1_1_renderer2_d_data_a45a6ae6b1558e55d99d6082683687745}{scene\+Wide\+Uniforms}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_hawk_engine_1_1_scene}{Scene}} wide uniforms, this will be the list of U\+B\+Os. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer2_d_data_a5d8e6edb204c36d7fbb2a976143c14df}\label{struct_hawk_engine_1_1_renderer2_d_data_a5d8e6edb204c36d7fbb2a976143c14df}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_texture_unit_manager}{Texture\+Unit\+Manager}} $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer2_d_data_a5d8e6edb204c36d7fbb2a976143c14df}{texture\+Unit\+Manager}}
+\begin{DoxyCompactList}\small\item\em The texture unit manager. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer2_d_data_a01578f1d460974626cac29c16f12a3e8}\label{struct_hawk_engine_1_1_renderer2_d_data_a01578f1d460974626cac29c16f12a3e8}} 
+std\+::array$<$ int32\+\_\+t, 16 $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer2_d_data_a01578f1d460974626cac29c16f12a3e8}{texture\+Unit}}
+\begin{DoxyCompactList}\small\item\em The texture unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer2_d_data_a1d564a71720948936d89896873511b3f}\label{struct_hawk_engine_1_1_renderer2_d_data_a1d564a71720948936d89896873511b3f}} 
+static const uint32\+\_\+t \mbox{\hyperlink{struct_hawk_engine_1_1_renderer2_d_data_a1d564a71720948936d89896873511b3f}{batchsize}} = 16
+\begin{DoxyCompactList}\small\item\em Batch size for 2D rendering. \end{DoxyCompactList}\item 
+static uint32\+\_\+t \mbox{\hyperlink{struct_hawk_engine_1_1_renderer2_d_data_af7c286ebdaa33d2ac25834e59277ec04}{draw\+Count}} = 0
+\begin{DoxyCompactList}\small\item\em The current draw count in queue. \end{DoxyCompactList}\item 
+static std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex2_d}{Vertex2D}} $>$ \mbox{\hyperlink{struct_hawk_engine_1_1_renderer2_d_data_afb2b38cb417ed0ace5d2373b7f0a9f68}{vertices}} = std\+::vector$<$\mbox{\hyperlink{struct_hawk_engine_1_1_vertex2_d}{Vertex2D}}$>$()
+\begin{DoxyCompactList}\small\item\em The list of vertices. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A struct containing internal 2D renderer data. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_hawk_engine_1_1_renderer2_d_data_af7c286ebdaa33d2ac25834e59277ec04}\label{struct_hawk_engine_1_1_renderer2_d_data_af7c286ebdaa33d2ac25834e59277ec04}} 
+\index{HawkEngine::Renderer2DData@{HawkEngine::Renderer2DData}!drawCount@{drawCount}}
+\index{drawCount@{drawCount}!HawkEngine::Renderer2DData@{HawkEngine::Renderer2DData}}
+\doxysubsubsection{\texorpdfstring{drawCount}{drawCount}}
+{\footnotesize\ttfamily uint32\+\_\+t Hawk\+Engine\+::\+Renderer2\+D\+Data\+::draw\+Count = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The current draw count in queue. 
+
+Initialise with value. \mbox{\Hypertarget{struct_hawk_engine_1_1_renderer2_d_data_afb2b38cb417ed0ace5d2373b7f0a9f68}\label{struct_hawk_engine_1_1_renderer2_d_data_afb2b38cb417ed0ace5d2373b7f0a9f68}} 
+\index{HawkEngine::Renderer2DData@{HawkEngine::Renderer2DData}!vertices@{vertices}}
+\index{vertices@{vertices}!HawkEngine::Renderer2DData@{HawkEngine::Renderer2DData}}
+\doxysubsubsection{\texorpdfstring{vertices}{vertices}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{struct_hawk_engine_1_1_vertex2_d}{Vertex2D}} $>$ Hawk\+Engine\+::\+Renderer2\+D\+Data\+::vertices = std\+::vector$<$\mbox{\hyperlink{struct_hawk_engine_1_1_vertex2_d}{Vertex2D}}$>$()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The list of vertices. 
+
+Initialise with value. 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/renderers/\mbox{\hyperlink{renderer_data_8h}{renderer\+Data.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/renderers/\mbox{\hyperlink{renderer2_d_8cpp}{renderer2\+D.\+cpp}}\end{DoxyCompactItemize}

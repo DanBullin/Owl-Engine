@@ -1,0 +1,35 @@
+{
+	"scripts":
+	[
+		{ "name": "Player" },
+		{ "name": "Cyborg" },
+		{ "name": "Monster" },
+		{ "name": "FPSCounter" },
+		{ "name": "MainMenuText" },
+		{ "name": "PauseMenuText" },
+		{ "name": "GameOverScript" },
+		{ "name": "SettingsMenuText" },
+		{ "name": "CreditsMenuText" },
+		{ "name": "LevelCompleteText" },
+		{ "name": "StaticLight" },
+		{ "name": "CameraRotationScript" },
+		{ "name": "ResourcesScript" },
+		{ "name": "DoorLock" },
+		{ "name": "PauseScript" },
+		{ "name": "LevelCompleteScript" },
+		{ "name": "SettingsScript" },
+		{ "name": "EngineScript" },
+		{ "name": "StartingMessage" },
+		{ "name": "KeybindText" },
+		{ "name": "FloorDetector" },
+		{ "name": "Keycard" },
+		{ "name": "GameTimer" },
+		{ "name": "KeycardUI" },
+		{ "name": "ViewableMap" },
+		{ "name": "Checkbox" },
+		{ "name": "TestScript" },
+		{ "name": "AudioCheckbox" },
+		{ "name": "Ladder"},
+		{ "name": "Blobber"}
+	]
+}

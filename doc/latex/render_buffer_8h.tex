@@ -1,0 +1,41 @@
+\hypertarget{render_buffer_8h}{}\doxysection{C\+:/doc/src/engine/include/independent/rendering/render\+Buffer.h File Reference}
+\label{render_buffer_8h}\index{C:/doc/src/engine/include/independent/rendering/renderBuffer.h@{C:/doc/src/engine/include/independent/rendering/renderBuffer.h}}
+
+
+A render buffer object.  
+
+
+{\ttfamily \#include \char`\"{}independent/core/common.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_owl_engine_1_1_render_buffer}{Owl\+Engine\+::\+Render\+Buffer}}
+\begin{DoxyCompactList}\small\item\em An A\+PI agnostic render buffer object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}\label{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}} 
+using \mbox{\hyperlink{render_buffer_8h_aedb1242236217ccc1f6de6fd459b3209}{Owl\+Engine\+::\+Attachment}} = std\+::pair$<$ Attachment\+Type, bool $>$
+\begin{DoxyCompactList}\small\item\em The attachment type and whether its a sampled attachment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{render_buffer_8h_a540e8dd60aff3dde7239a3705ff0afcb}\label{render_buffer_8h_a540e8dd60aff3dde7239a3705ff0afcb}} 
+enum \mbox{\hyperlink{render_buffer_8h_a540e8dd60aff3dde7239a3705ff0afcb}{Owl\+Engine\+::\+Attachment\+Type}} \{ \newline
+{\bfseries None}, 
+{\bfseries Colour}, 
+{\bfseries Colour16}, 
+{\bfseries Depth}, 
+\newline
+{\bfseries Stencil}, 
+{\bfseries Depth\+And\+Stencil}
+ \}
+\begin{DoxyCompactList}\small\item\em The attachment types of a framebuffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A render buffer object. 
+
+\begin{DoxyAuthor}{Author}
+Daniel Bullin 
+\end{DoxyAuthor}

@@ -1,0 +1,88 @@
+\hypertarget{struct_texture_properties}{}\doxysection{Texture\+Properties Struct Reference}
+\label{struct_texture_properties}\index{TextureProperties@{TextureProperties}}
+
+
+All texture properties can be configured by creating an instance of this struct and passing it to the relevant create functions.  
+
+
+
+
+{\ttfamily \#include $<$texture.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_texture_properties_a031c22e614583cdcaf98e4b4b2b0d206}{Texture\+Properties}} (const uint32\+\_\+t width=0, const uint32\+\_\+t height=0, const uint32\+\_\+t wrapS=G\+L\+\_\+\+R\+E\+P\+E\+AT, const uint32\+\_\+t wrapT=G\+L\+\_\+\+R\+E\+P\+E\+AT, const uint32\+\_\+t wrapR=G\+L\+\_\+\+R\+E\+P\+E\+AT, const uint32\+\_\+t min\+Filter=G\+L\+\_\+\+L\+I\+N\+E\+AR, const uint32\+\_\+t max\+Filter=G\+L\+\_\+\+L\+I\+N\+E\+AR, const bool gamma\+Correct=false, const bool flip\+U\+Vs=false)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_texture_properties_a2084f368af9ef445c10514458e9f9bc6}\label{struct_texture_properties_a2084f368af9ef445c10514458e9f9bc6}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_texture_properties_a2084f368af9ef445c10514458e9f9bc6}{Width}}
+\begin{DoxyCompactList}\small\item\em The width of the texture if you\textquotesingle{}re not loading from file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_texture_properties_aec27dafdb0dcfa393b61e5884ef6d8d8}\label{struct_texture_properties_aec27dafdb0dcfa393b61e5884ef6d8d8}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_texture_properties_aec27dafdb0dcfa393b61e5884ef6d8d8}{Height}}
+\begin{DoxyCompactList}\small\item\em The height of the texture if you\textquotesingle{}re not loading from file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_texture_properties_a3a5490c3430ac7f058bb5088c9a8ca62}\label{struct_texture_properties_a3a5490c3430ac7f058bb5088c9a8ca62}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_texture_properties_a3a5490c3430ac7f058bb5088c9a8ca62}{WrapS}}
+\begin{DoxyCompactList}\small\item\em Action to take when wrapping around s coordinate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_texture_properties_aa3df2403c128dac0dcd65fd877e1ed71}\label{struct_texture_properties_aa3df2403c128dac0dcd65fd877e1ed71}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_texture_properties_aa3df2403c128dac0dcd65fd877e1ed71}{WrapT}}
+\begin{DoxyCompactList}\small\item\em Action to take when wrapping around t coordinate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_texture_properties_a6e098c37fe940a2ec265bf41f9df1859}\label{struct_texture_properties_a6e098c37fe940a2ec265bf41f9df1859}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_texture_properties_a6e098c37fe940a2ec265bf41f9df1859}{WrapR}}
+\begin{DoxyCompactList}\small\item\em Action to take when wrapping around r coordinate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_texture_properties_ac6b891ca475b6974d35386ec16bebc60}\label{struct_texture_properties_ac6b891ca475b6974d35386ec16bebc60}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_texture_properties_ac6b891ca475b6974d35386ec16bebc60}{Min\+Filter}}
+\begin{DoxyCompactList}\small\item\em The minifying function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_texture_properties_a1b68be48283568e3312997b491038d58}\label{struct_texture_properties_a1b68be48283568e3312997b491038d58}} 
+uint32\+\_\+t \mbox{\hyperlink{struct_texture_properties_a1b68be48283568e3312997b491038d58}{Max\+Filter}}
+\begin{DoxyCompactList}\small\item\em The magnification function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_texture_properties_a61267f0761f6c1e70cabaaa2981da0ee}\label{struct_texture_properties_a61267f0761f6c1e70cabaaa2981da0ee}} 
+bool \mbox{\hyperlink{struct_texture_properties_a61267f0761f6c1e70cabaaa2981da0ee}{Gamma\+Correct}}
+\begin{DoxyCompactList}\small\item\em Is the texture in s\+R\+GB space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_texture_properties_a9f244f37656335598ef003047ba369ae}\label{struct_texture_properties_a9f244f37656335598ef003047ba369ae}} 
+bool \mbox{\hyperlink{struct_texture_properties_a9f244f37656335598ef003047ba369ae}{Flip\+U\+Vs}}
+\begin{DoxyCompactList}\small\item\em Should the U\+Vs be flipped. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+All texture properties can be configured by creating an instance of this struct and passing it to the relevant create functions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_texture_properties_a031c22e614583cdcaf98e4b4b2b0d206}\label{struct_texture_properties_a031c22e614583cdcaf98e4b4b2b0d206}} 
+\index{TextureProperties@{TextureProperties}!TextureProperties@{TextureProperties}}
+\index{TextureProperties@{TextureProperties}!TextureProperties@{TextureProperties}}
+\doxysubsubsection{\texorpdfstring{TextureProperties()}{TextureProperties()}}
+{\footnotesize\ttfamily Texture\+Properties\+::\+Texture\+Properties (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{width = {\ttfamily 0},  }\item[{const uint32\+\_\+t}]{height = {\ttfamily 0},  }\item[{const uint32\+\_\+t}]{wrapS = {\ttfamily GL\+\_\+REPEAT},  }\item[{const uint32\+\_\+t}]{wrapT = {\ttfamily GL\+\_\+REPEAT},  }\item[{const uint32\+\_\+t}]{wrapR = {\ttfamily GL\+\_\+REPEAT},  }\item[{const uint32\+\_\+t}]{min\+Filter = {\ttfamily GL\+\_\+LINEAR},  }\item[{const uint32\+\_\+t}]{max\+Filter = {\ttfamily GL\+\_\+LINEAR},  }\item[{const bool}]{gamma\+Correct = {\ttfamily false},  }\item[{const bool}]{flip\+U\+Vs = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & a const uint32\+\_\+t -\/ The width of the texture \\
+\hline
+{\em height} & a const uint32\+\_\+t -\/ The height of the texture \\
+\hline
+{\em wrapS} & a const uint32\+\_\+t -\/ The wrap type along the s axis \\
+\hline
+{\em wrapT} & a const uint32\+\_\+t -\/ The wrap type along the t axis \\
+\hline
+{\em wrapR} & a const uint32\+\_\+t -\/ The wrap type along the r axis \\
+\hline
+{\em min\+Filter} & a const uint32\+\_\+t -\/ The min filter \\
+\hline
+{\em max\+Filter} & a const uint32\+\_\+t -\/ The max filter \\
+\hline
+{\em gamma\+Correct} & a const bool -\/ Do we need to gamma correct the image \\
+\hline
+{\em flip\+U\+Vs} & a const bool -\/ Do we need to flip the texture U\+Vs \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/rendering/textures/\mbox{\hyperlink{texture_8h}{texture.\+h}}\end{DoxyCompactItemize}

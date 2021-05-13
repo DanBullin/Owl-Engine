@@ -1,0 +1,343 @@
+\hypertarget{class_hawk_engine_1_1_shader_program}{}\doxysection{Hawk\+Engine\+::Shader\+Program Class Reference}
+\label{class_hawk_engine_1_1_shader_program}\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+
+
+An A\+PI agnostic shader program.  
+
+
+
+
+{\ttfamily \#include $<$shader\+Program.\+h$>$}
+
+Inheritance diagram for Hawk\+Engine\+::Shader\+Program\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_hawk_engine_1_1_shader_program}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_a60329026e332234c74ee19d1026b7323}\label{class_hawk_engine_1_1_shader_program_a60329026e332234c74ee19d1026b7323}} 
+virtual \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_a60329026e332234c74ee19d1026b7323}{$\sim$\+Shader\+Program}} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_aa0b4e4e73dda5eb1bf4e215bc9c996c2}{build}} (const char $\ast$vertex\+Path, const char $\ast$fragment\+Path, const char $\ast$geometry\+Path=nullptr)=0
+\begin{DoxyCompactList}\small\item\em Create a shader program based on the files passed. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_a68c5da8dff1af39d27783ece7d92e8eb}{set\+Uniforms}} (const std\+::vector$<$ char $\ast$ $>$ \&uniform\+Names)=0
+\begin{DoxyCompactList}\small\item\em Set all uniform locations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_aa6bfbbe821fb7e572673e9ed8b9b94a8}\label{class_hawk_engine_1_1_shader_program_aa6bfbbe821fb7e572673e9ed8b9b94a8}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_aa6bfbbe821fb7e572673e9ed8b9b94a8}{start}} ()=0
+\begin{DoxyCompactList}\small\item\em Start the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_a1c6a00a970083c5a36e00e0980297b5a}\label{class_hawk_engine_1_1_shader_program_a1c6a00a970083c5a36e00e0980297b5a}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_a1c6a00a970083c5a36e00e0980297b5a}{stop}} ()=0
+\begin{DoxyCompactList}\small\item\em Stop using the shader. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_a6d226f3cc2509dd3ea799b77623a188c}\label{class_hawk_engine_1_1_shader_program_a6d226f3cc2509dd3ea799b77623a188c}} 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_a6d226f3cc2509dd3ea799b77623a188c}{destroy}} ()=0
+\begin{DoxyCompactList}\small\item\em Destroy the shader. \end{DoxyCompactList}\item 
+virtual const uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_adc52adfa88699aee0c045090303ee10f}{get\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Get the program ID. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_ac93f484a38f0fdf6781e14853c61b091}{send\+Int}} (const std\+::string \&uniform\+Name, const int value)=0
+\begin{DoxyCompactList}\small\item\em Upload integer to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_af7247f4c8356e4f74237ac4dd33b5ba6}{send\+Int\+Array}} (const std\+::string \&uniform\+Name, int32\+\_\+t $\ast$values, const uint32\+\_\+t count)=0
+\begin{DoxyCompactList}\small\item\em Upload an array of integers to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_af9f51268fd07c2bd592b1de638f353ea}{send\+Bool}} (const std\+::string \&uniform\+Name, const bool value)=0
+\begin{DoxyCompactList}\small\item\em Upload bool to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_ae6e10efdf083304017ce16f8fe9ea2a6}{send\+Float}} (const std\+::string \&uniform\+Name, const float value)=0
+\begin{DoxyCompactList}\small\item\em Upload float to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_a37c3eaaa1c55b3074ba2e9269a44ec79}{send\+Vec2}} (const std\+::string \&uniform\+Name, const glm\+::vec2 \&value)=0
+\begin{DoxyCompactList}\small\item\em Upload vec2 to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_a8933ced5e8302efc3a78aec2031638eb}{send\+Vec3}} (const std\+::string \&uniform\+Name, const glm\+::vec3 \&value)=0
+\begin{DoxyCompactList}\small\item\em Upload vec3 to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_a82fc36bd939bb763c3d8ae9ee081c8a9}{send\+Vec4}} (const std\+::string \&uniform\+Name, const glm\+::vec4 \&value)=0
+\begin{DoxyCompactList}\small\item\em Upload vec4 to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_a30431a6b846a496a3159ec3d63630403}{send\+Mat3}} (const std\+::string \&uniform\+Name, const glm\+::mat3 \&mat)=0
+\begin{DoxyCompactList}\small\item\em Upload mat3 to shader. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_ae4de85ebd57e784ac5f01e50b56afa7d}{send\+Mat4}} (const std\+::string \&uniform\+Name, const glm\+::mat4 \&mat)=0
+\begin{DoxyCompactList}\small\item\em Upload mat4 to shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hawk_engine_1_1_shader_program}{Shader\+Program}} $\ast$ \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_ad25ae74bdf0463247697a60be4cc9042}{create}} ()
+\begin{DoxyCompactList}\small\item\em Create a shader program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_ae25d67050322d8d12f3b6ab466a7f4b5}\label{class_hawk_engine_1_1_shader_program_ae25d67050322d8d12f3b6ab466a7f4b5}} 
+uint32\+\_\+t \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_ae25d67050322d8d12f3b6ab466a7f4b5}{m\+\_\+program\+ID}}
+\begin{DoxyCompactList}\small\item\em The shader program ID. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_ae70fdb6ebd99b087e6e5e92e92c45cc4}\label{class_hawk_engine_1_1_shader_program_ae70fdb6ebd99b087e6e5e92e92c45cc4}} 
+std\+::map$<$ std\+::string, int $>$ \mbox{\hyperlink{class_hawk_engine_1_1_shader_program_ae70fdb6ebd99b087e6e5e92e92c45cc4}{m\+\_\+uniforms}}
+\begin{DoxyCompactList}\small\item\em All the uniforms for the shader program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An A\+PI agnostic shader program. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_aa0b4e4e73dda5eb1bf4e215bc9c996c2}\label{class_hawk_engine_1_1_shader_program_aa0b4e4e73dda5eb1bf4e215bc9c996c2}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!build@{build}}
+\index{build@{build}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Shader\+Program\+::build (\begin{DoxyParamCaption}\item[{const char $\ast$}]{vertex\+Path,  }\item[{const char $\ast$}]{fragment\+Path,  }\item[{const char $\ast$}]{geometry\+Path = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a shader program based on the files passed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em vertex\+Path} & a const char$\ast$ -\/ The vertex shader file path \\
+\hline
+{\em fragment\+Path} & a const char$\ast$ -\/ The fragment shader file path \\
+\hline
+{\em geometry\+Path} & a const char$\ast$ -\/ The geometry shader file path \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_shader_program_a0a5bd33cc0f71f352f428be2ad17e0c3}{Hawk\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_ad25ae74bdf0463247697a60be4cc9042}\label{class_hawk_engine_1_1_shader_program_ad25ae74bdf0463247697a60be4cc9042}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!create@{create}}
+\index{create@{create}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hawk_engine_1_1_shader_program}{Shader\+Program}} $\ast$ Hawk\+Engine\+::\+Shader\+Program\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a shader program. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_shader_program_ad25ae74bdf0463247697a60be4cc9042}{create()}}
+
+\begin{DoxyReturn}{Returns}
+a Shader\+Program$\ast$ -\/ The shader object of type defined by the graphics A\+PI chosen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_adc52adfa88699aee0c045090303ee10f}\label{class_hawk_engine_1_1_shader_program_adc52adfa88699aee0c045090303ee10f}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!getID@{getID}}
+\index{getID@{getID}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+{\footnotesize\ttfamily virtual const uint32\+\_\+t Hawk\+Engine\+::\+Shader\+Program\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Get the program ID. 
+
+\begin{DoxyReturn}{Returns}
+a const uint32\+\_\+t -\/ The program ID 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_af9f51268fd07c2bd592b1de638f353ea}\label{class_hawk_engine_1_1_shader_program_af9f51268fd07c2bd592b1de638f353ea}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!sendBool@{sendBool}}
+\index{sendBool@{sendBool}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendBool()}{sendBool()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Shader\+Program\+::send\+Bool (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload bool to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const bool -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_shader_program_a713daf1def404134e4cf9ede0015da18}{Hawk\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_ae6e10efdf083304017ce16f8fe9ea2a6}\label{class_hawk_engine_1_1_shader_program_ae6e10efdf083304017ce16f8fe9ea2a6}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!sendFloat@{sendFloat}}
+\index{sendFloat@{sendFloat}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendFloat()}{sendFloat()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Shader\+Program\+::send\+Float (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const float}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload float to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const float -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_shader_program_ae9b879cfe96a6d82d630e86992acb349}{Hawk\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_ac93f484a38f0fdf6781e14853c61b091}\label{class_hawk_engine_1_1_shader_program_ac93f484a38f0fdf6781e14853c61b091}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!sendInt@{sendInt}}
+\index{sendInt@{sendInt}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendInt()}{sendInt()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Shader\+Program\+::send\+Int (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload integer to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const int -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_shader_program_a032bb51f3affcfda9c5a2e0c4c76c3a7}{Hawk\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_af7247f4c8356e4f74237ac4dd33b5ba6}\label{class_hawk_engine_1_1_shader_program_af7247f4c8356e4f74237ac4dd33b5ba6}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!sendIntArray@{sendIntArray}}
+\index{sendIntArray@{sendIntArray}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendIntArray()}{sendIntArray()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Shader\+Program\+::send\+Int\+Array (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{int32\+\_\+t $\ast$}]{values,  }\item[{const uint32\+\_\+t}]{count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload an array of integers to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em values} & a int32\+\_\+t$\ast$ -\/ The uniform values \\
+\hline
+{\em count} & a const uint32\+\_\+t -\/ The number of elements \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_shader_program_a90321bfe670323638ebd0f256de79749}{Hawk\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_a30431a6b846a496a3159ec3d63630403}\label{class_hawk_engine_1_1_shader_program_a30431a6b846a496a3159ec3d63630403}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!sendMat3@{sendMat3}}
+\index{sendMat3@{sendMat3}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendMat3()}{sendMat3()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Shader\+Program\+::send\+Mat3 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const glm\+::mat3 \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload mat3 to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em mat} & a const glm\+::mat3\& -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_shader_program_a2b99605065abba3b837a28272f137397}{Hawk\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_ae4de85ebd57e784ac5f01e50b56afa7d}\label{class_hawk_engine_1_1_shader_program_ae4de85ebd57e784ac5f01e50b56afa7d}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!sendMat4@{sendMat4}}
+\index{sendMat4@{sendMat4}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendMat4()}{sendMat4()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Shader\+Program\+::send\+Mat4 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const glm\+::mat4 \&}]{mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload mat4 to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em mat} & a const glm\+::mat4\& -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_shader_program_a81550f0f66279486df01ec1a1ee831a0}{Hawk\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_a37c3eaaa1c55b3074ba2e9269a44ec79}\label{class_hawk_engine_1_1_shader_program_a37c3eaaa1c55b3074ba2e9269a44ec79}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!sendVec2@{sendVec2}}
+\index{sendVec2@{sendVec2}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendVec2()}{sendVec2()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Shader\+Program\+::send\+Vec2 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const glm\+::vec2 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload vec2 to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const glm\+::vec2\& -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_shader_program_aaf07ee888affce90fc1e502eb95ba5c3}{Hawk\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_a8933ced5e8302efc3a78aec2031638eb}\label{class_hawk_engine_1_1_shader_program_a8933ced5e8302efc3a78aec2031638eb}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!sendVec3@{sendVec3}}
+\index{sendVec3@{sendVec3}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendVec3()}{sendVec3()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Shader\+Program\+::send\+Vec3 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const glm\+::vec3 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload vec3 to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const glm\+::vec3\& -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_shader_program_a6532f237936137ba37b2e9bde345b99b}{Hawk\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_a82fc36bd939bb763c3d8ae9ee081c8a9}\label{class_hawk_engine_1_1_shader_program_a82fc36bd939bb763c3d8ae9ee081c8a9}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!sendVec4@{sendVec4}}
+\index{sendVec4@{sendVec4}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{sendVec4()}{sendVec4()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Shader\+Program\+::send\+Vec4 (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uniform\+Name,  }\item[{const glm\+::vec4 \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Upload vec4 to shader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & a const std\+::string\& -\/ The uniform name \\
+\hline
+{\em value} & a const glm\+::vec4\& -\/ The uniform value \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_shader_program_a15c701d0729f605ff497eba6e9661a21}{Hawk\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+\mbox{\Hypertarget{class_hawk_engine_1_1_shader_program_a68c5da8dff1af39d27783ece7d92e8eb}\label{class_hawk_engine_1_1_shader_program_a68c5da8dff1af39d27783ece7d92e8eb}} 
+\index{HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}!setUniforms@{setUniforms}}
+\index{setUniforms@{setUniforms}!HawkEngine::ShaderProgram@{HawkEngine::ShaderProgram}}
+\doxysubsubsection{\texorpdfstring{setUniforms()}{setUniforms()}}
+{\footnotesize\ttfamily virtual void Hawk\+Engine\+::\+Shader\+Program\+::set\+Uniforms (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ char $\ast$ $>$ \&}]{uniform\+Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set all uniform locations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Names} & a const std\+::vector$<$char$\ast$$>$\& -\/ All uniform names \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_hawk_engine_1_1_open_g_l_shader_program_a6056cd0230a4466d88def388c44f3d5d}{Hawk\+Engine\+::\+Open\+G\+L\+Shader\+Program}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/shaders/\mbox{\hyperlink{shader_program_8h}{shader\+Program.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/shaders/\mbox{\hyperlink{shader_program_8cpp}{shader\+Program.\+cpp}}\end{DoxyCompactItemize}

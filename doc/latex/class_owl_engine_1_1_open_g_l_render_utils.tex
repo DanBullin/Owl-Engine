@@ -1,0 +1,320 @@
+\hypertarget{class_owl_engine_1_1_open_g_l_render_utils}{}\doxysection{Owl\+Engine\+::Open\+G\+L\+Render\+Utils Class Reference}
+\label{class_owl_engine_1_1_open_g_l_render_utils}\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+
+
+A utility class which issues calls to Open\+GL.  
+
+
+
+
+{\ttfamily \#include $<$open\+G\+L\+Render\+Utils.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_aff5b5ab7ff1d139dcad82e544907fd95}{enable\+Face\+Culling}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable face culling. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a7cf5de43ab10b2eadb0061ee15c7bfad}{enable\+Depth\+Testing}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable depth testing. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a64f40bd154a474f65684c869b34174c1}{enable\+Stencil\+Testing}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable stencil testing. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a30382c0d315ac692928cfdd3f1b8c12a}{enable\+Wireframe}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable wireframe mode. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a7e755bc0300d206a16fcf48e7544f17a}{enable\+Depth\+Writing}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable depth writing. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_ae812772c8a7f4228b623473f6abe63e5}{enable\+Blending}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable blending. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a64c2b870725210a2bcb1c4f33cf01746}{enable\+Patch\+Drawing}} (const bool enable)
+\begin{DoxyCompactList}\small\item\em Enable/\+Disable drawing with patches. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_ae62d359dcff6385071f388cc70326577}{clear\+Buffers}} (const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}} buffers, const glm\+::vec4 \&colour=glm\+::vec4(0.f, 0.f, 0.f, 1.f))
+\begin{DoxyCompactList}\small\item\em Clear the buffers. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a802b53f3688568023f91d3c58d06dc21}{set\+Depth\+Comparison}} (const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}} comparison)
+\begin{DoxyCompactList}\small\item\em Set the depth buffer comparison value. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_ae05cfe53809f8caebdeaa21112fae6a2}{set\+Stencil\+Func}} (const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}} comparison, int ref, uint32\+\_\+t mask)
+\begin{DoxyCompactList}\small\item\em Set the stencil function. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a40da206ad285b282915e41ebcb8a622c}{set\+Stencil\+Op}} (const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}} sfail, const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}} dpfail, const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}} dppass)
+\begin{DoxyCompactList}\small\item\em Set the stencil op. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_abc49ad8f74ddd3bdfaf72f0559d59628}{set\+Stencil\+Mask}} (uint32\+\_\+t mask)
+\begin{DoxyCompactList}\small\item\em Set the stencil mask. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_aaf469132094a7a609790cb0b0ed89d64}{set\+Viewport}} (const int x, const int y, const int width, const int height)
+\begin{DoxyCompactList}\small\item\em Resize the viewport. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_add0be9e6324184779d8c2e05126904ed}{draw}} (const uint32\+\_\+t draw\+Count)
+\begin{DoxyCompactList}\small\item\em Draw the geometry. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_ad2601479cdf584ad99397edfcd607d7a}{draw\+Multi\+Indirect}} (const uint32\+\_\+t commands\+Size)
+\begin{DoxyCompactList}\small\item\em Draw the geometry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class which issues calls to Open\+GL. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_ae62d359dcff6385071f388cc70326577}\label{class_owl_engine_1_1_open_g_l_render_utils_ae62d359dcff6385071f388cc70326577}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!clearBuffers@{clearBuffers}}
+\index{clearBuffers@{clearBuffers}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{clearBuffers()}{clearBuffers()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::clear\+Buffers (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}}}]{buffers,  }\item[{const glm\+::vec4 \&}]{colour = {\ttfamily glm\+:\+:vec4(0.f,~0.f,~0.f,~1.f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Clear the buffers. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_ae62d359dcff6385071f388cc70326577}{clear\+Buffers()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffers} & a const Render\+Parameter -\/ The buffers to clear \\
+\hline
+{\em colour} & a const glm\+::vec4\& -\/ The colour to clear the colour buffer with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_add0be9e6324184779d8c2e05126904ed}\label{class_owl_engine_1_1_open_g_l_render_utils_add0be9e6324184779d8c2e05126904ed}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!draw@{draw}}
+\index{draw@{draw}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::draw (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{draw\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Draw the geometry. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_add0be9e6324184779d8c2e05126904ed}{draw()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em draw\+Count} & a const uint32\+\_\+t -\/ The number of indices \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_ad2601479cdf584ad99397edfcd607d7a}\label{class_owl_engine_1_1_open_g_l_render_utils_ad2601479cdf584ad99397edfcd607d7a}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!drawMultiIndirect@{drawMultiIndirect}}
+\index{drawMultiIndirect@{drawMultiIndirect}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{drawMultiIndirect()}{drawMultiIndirect()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::draw\+Multi\+Indirect (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{commands\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Draw the geometry. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_ad2601479cdf584ad99397edfcd607d7a}{draw\+Multi\+Indirect()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em commands\+Size} & a const uint32\+\_\+t -\/ The number of commands \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_ae812772c8a7f4228b623473f6abe63e5}\label{class_owl_engine_1_1_open_g_l_render_utils_ae812772c8a7f4228b623473f6abe63e5}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!enableBlending@{enableBlending}}
+\index{enableBlending@{enableBlending}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{enableBlending()}{enableBlending()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::enable\+Blending (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable blending. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_ae812772c8a7f4228b623473f6abe63e5}{enable\+Blending()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a bool -\/ Enable blending \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_a7cf5de43ab10b2eadb0061ee15c7bfad}\label{class_owl_engine_1_1_open_g_l_render_utils_a7cf5de43ab10b2eadb0061ee15c7bfad}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!enableDepthTesting@{enableDepthTesting}}
+\index{enableDepthTesting@{enableDepthTesting}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{enableDepthTesting()}{enableDepthTesting()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::enable\+Depth\+Testing (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable depth testing. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a7cf5de43ab10b2eadb0061ee15c7bfad}{enable\+Depth\+Testing()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a bool -\/ Enable depth testing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_a7e755bc0300d206a16fcf48e7544f17a}\label{class_owl_engine_1_1_open_g_l_render_utils_a7e755bc0300d206a16fcf48e7544f17a}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!enableDepthWriting@{enableDepthWriting}}
+\index{enableDepthWriting@{enableDepthWriting}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{enableDepthWriting()}{enableDepthWriting()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::enable\+Depth\+Writing (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable depth writing. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a7e755bc0300d206a16fcf48e7544f17a}{enable\+Depth\+Writing()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a bool -\/ Enable depth writing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_aff5b5ab7ff1d139dcad82e544907fd95}\label{class_owl_engine_1_1_open_g_l_render_utils_aff5b5ab7ff1d139dcad82e544907fd95}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!enableFaceCulling@{enableFaceCulling}}
+\index{enableFaceCulling@{enableFaceCulling}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{enableFaceCulling()}{enableFaceCulling()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::enable\+Face\+Culling (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable face culling. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_aff5b5ab7ff1d139dcad82e544907fd95}{enable\+Face\+Culling()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a const bool -\/ Enable face culling \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_a64c2b870725210a2bcb1c4f33cf01746}\label{class_owl_engine_1_1_open_g_l_render_utils_a64c2b870725210a2bcb1c4f33cf01746}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!enablePatchDrawing@{enablePatchDrawing}}
+\index{enablePatchDrawing@{enablePatchDrawing}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{enablePatchDrawing()}{enablePatchDrawing()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::enable\+Patch\+Drawing (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable drawing with patches. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a64c2b870725210a2bcb1c4f33cf01746}{enable\+Patch\+Drawing()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a bool -\/ Enable patch drawing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_a64f40bd154a474f65684c869b34174c1}\label{class_owl_engine_1_1_open_g_l_render_utils_a64f40bd154a474f65684c869b34174c1}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!enableStencilTesting@{enableStencilTesting}}
+\index{enableStencilTesting@{enableStencilTesting}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{enableStencilTesting()}{enableStencilTesting()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::enable\+Stencil\+Testing (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable stencil testing. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a64f40bd154a474f65684c869b34174c1}{enable\+Stencil\+Testing()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a bool -\/ Enable stencil testing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_a30382c0d315ac692928cfdd3f1b8c12a}\label{class_owl_engine_1_1_open_g_l_render_utils_a30382c0d315ac692928cfdd3f1b8c12a}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!enableWireframe@{enableWireframe}}
+\index{enableWireframe@{enableWireframe}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{enableWireframe()}{enableWireframe()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::enable\+Wireframe (\begin{DoxyParamCaption}\item[{const bool}]{enable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Enable/\+Disable wireframe mode. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a30382c0d315ac692928cfdd3f1b8c12a}{enable\+Wireframe()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & a bool -\/ Enable wire frame \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_a802b53f3688568023f91d3c58d06dc21}\label{class_owl_engine_1_1_open_g_l_render_utils_a802b53f3688568023f91d3c58d06dc21}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!setDepthComparison@{setDepthComparison}}
+\index{setDepthComparison@{setDepthComparison}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{setDepthComparison()}{setDepthComparison()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::set\+Depth\+Comparison (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}}}]{comparison }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the depth buffer comparison value. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a802b53f3688568023f91d3c58d06dc21}{set\+Depth\+Comparison()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em comparison} & a const Render\+Parameter -\/ The depth test comparison value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_ae05cfe53809f8caebdeaa21112fae6a2}\label{class_owl_engine_1_1_open_g_l_render_utils_ae05cfe53809f8caebdeaa21112fae6a2}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!setStencilFunc@{setStencilFunc}}
+\index{setStencilFunc@{setStencilFunc}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{setStencilFunc()}{setStencilFunc()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::set\+Stencil\+Func (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}}}]{comparison,  }\item[{int}]{ref,  }\item[{uint32\+\_\+t}]{mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the stencil function. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_ae05cfe53809f8caebdeaa21112fae6a2}{set\+Stencil\+Func()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em comparison} & a const Render\+Parameter -\/ The stencil test comparison value \\
+\hline
+{\em ref} & an int -\/ The reference value for the stencil testt \\
+\hline
+{\em mask} & an uint32\+\_\+t -\/ The mask that is A\+N\+Ded with the ref value and the stored stencil value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_abc49ad8f74ddd3bdfaf72f0559d59628}\label{class_owl_engine_1_1_open_g_l_render_utils_abc49ad8f74ddd3bdfaf72f0559d59628}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!setStencilMask@{setStencilMask}}
+\index{setStencilMask@{setStencilMask}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{setStencilMask()}{setStencilMask()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::set\+Stencil\+Mask (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the stencil mask. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_abc49ad8f74ddd3bdfaf72f0559d59628}{set\+Stencil\+Mask()}} \mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_a40da206ad285b282915e41ebcb8a622c}\label{class_owl_engine_1_1_open_g_l_render_utils_a40da206ad285b282915e41ebcb8a622c}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!setStencilOp@{setStencilOp}}
+\index{setStencilOp@{setStencilOp}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{setStencilOp()}{setStencilOp()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::set\+Stencil\+Op (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}}}]{sfail,  }\item[{const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}}}]{dpfail,  }\item[{const \mbox{\hyperlink{render_utils_8h_a236237385091ab9c3ab1d7fca40e04e4}{Render\+Parameter}}}]{dppass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set the stencil op. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_open_g_l_render_utils_a40da206ad285b282915e41ebcb8a622c}{set\+Stencil\+Op()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em sfail} & a const Render\+Parameter -\/ The action to take when the stencil test fails \\
+\hline
+{\em dpfail} & a const Render\+Parameter -\/ The action to take when the stencil test passes but depth fails \\
+\hline
+{\em dppass} & a const Render\+Parameter -\/ The action to take when the stencil test passes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_open_g_l_render_utils_aaf469132094a7a609790cb0b0ed89d64}\label{class_owl_engine_1_1_open_g_l_render_utils_aaf469132094a7a609790cb0b0ed89d64}} 
+\index{OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}!setViewport@{setViewport}}
+\index{setViewport@{setViewport}!OwlEngine::OpenGLRenderUtils@{OwlEngine::OpenGLRenderUtils}}
+\doxysubsubsection{\texorpdfstring{setViewport()}{setViewport()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Open\+G\+L\+Render\+Utils\+::set\+Viewport (\begin{DoxyParamCaption}\item[{const int}]{x,  }\item[{const int}]{y,  }\item[{const int}]{width,  }\item[{const int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Resize the viewport. 
+
+resize\+Viewport()
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & a const int -\/ The lower left corner of the viewport \\
+\hline
+{\em y} & a const int -\/ The lower left corner of the viewport \\
+\hline
+{\em width} & a const int -\/ The width of the viewport \\
+\hline
+{\em height} & a const int -\/ The height of the viewport \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/platform/\+Open\+G\+L/\mbox{\hyperlink{open_g_l_render_utils_8h}{open\+G\+L\+Render\+Utils.\+h}}\item 
+C\+:/doc/src/engine/src/platform/\+Open\+G\+L/\mbox{\hyperlink{open_g_l_render_utils_8cpp}{open\+G\+L\+Render\+Utils.\+cpp}}\end{DoxyCompactItemize}

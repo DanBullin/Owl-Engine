@@ -1,0 +1,102 @@
+\hypertarget{class_image_frame_buffer}{}\doxysection{Image\+Frame\+Buffer Class Reference}
+\label{class_image_frame_buffer}\index{ImageFrameBuffer@{ImageFrameBuffer}}
+
+
+An image frame buffer which renders the scene to a texture.  
+
+
+
+
+{\ttfamily \#include $<$image\+Frame\+Buffer.\+h$>$}
+
+Inheritance diagram for Image\+Frame\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_image_frame_buffer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_image_frame_buffer_a1817bd651e5cf9e68a817bb29450b571}{Image\+Frame\+Buffer}} (const glm\+::uvec2 \&window\+Size)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_image_frame_buffer_a3ac408a104c9f48835b4e7ec2c319b5b}{$\sim$\+Image\+Frame\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_image_frame_buffer_a1bb1076ae04d73e4f464e722bd031e60}{init}} () override
+\begin{DoxyCompactList}\small\item\em Initialise the frame buffer. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_image_frame_buffer_a547246e96ff96c1a1b5849bea96e813c}{update\+Size}} (const glm\+::uvec2 \&window\+Size)
+\begin{DoxyCompactList}\small\item\em Update window size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+An image frame buffer which renders the scene to a texture. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_image_frame_buffer_a1817bd651e5cf9e68a817bb29450b571}\label{class_image_frame_buffer_a1817bd651e5cf9e68a817bb29450b571}} 
+\index{ImageFrameBuffer@{ImageFrameBuffer}!ImageFrameBuffer@{ImageFrameBuffer}}
+\index{ImageFrameBuffer@{ImageFrameBuffer}!ImageFrameBuffer@{ImageFrameBuffer}}
+\doxysubsubsection{\texorpdfstring{ImageFrameBuffer()}{ImageFrameBuffer()}}
+{\footnotesize\ttfamily Image\+Frame\+Buffer\+::\+Image\+Frame\+Buffer (\begin{DoxyParamCaption}\item[{const glm\+::uvec2 \&}]{window\+Size }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_image_frame_buffer_a1817bd651e5cf9e68a817bb29450b571}{Image\+Frame\+Buffer()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Size} & a const glm\+::uvec2\& -\/ A reference to the window size \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_image_frame_buffer_a3ac408a104c9f48835b4e7ec2c319b5b}\label{class_image_frame_buffer_a3ac408a104c9f48835b4e7ec2c319b5b}} 
+\index{ImageFrameBuffer@{ImageFrameBuffer}!````~ImageFrameBuffer@{$\sim$ImageFrameBuffer}}
+\index{````~ImageFrameBuffer@{$\sim$ImageFrameBuffer}!ImageFrameBuffer@{ImageFrameBuffer}}
+\doxysubsubsection{\texorpdfstring{$\sim$ImageFrameBuffer()}{~ImageFrameBuffer()}}
+{\footnotesize\ttfamily Image\+Frame\+Buffer\+::$\sim$\+Image\+Frame\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_image_frame_buffer_a3ac408a104c9f48835b4e7ec2c319b5b}{$\sim$\+Image\+Frame\+Buffer()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_image_frame_buffer_a1bb1076ae04d73e4f464e722bd031e60}\label{class_image_frame_buffer_a1bb1076ae04d73e4f464e722bd031e60}} 
+\index{ImageFrameBuffer@{ImageFrameBuffer}!init@{init}}
+\index{init@{init}!ImageFrameBuffer@{ImageFrameBuffer}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void Image\+Frame\+Buffer\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initialise the frame buffer. 
+
+\mbox{\hyperlink{class_image_frame_buffer_a1bb1076ae04d73e4f464e722bd031e60}{init()}} 
+
+Implements \mbox{\hyperlink{class_frame_buffer_object_aceb8be512f44e34c07bf95aea8053d45}{Frame\+Buffer\+Object}}.
+
+\mbox{\Hypertarget{class_image_frame_buffer_a547246e96ff96c1a1b5849bea96e813c}\label{class_image_frame_buffer_a547246e96ff96c1a1b5849bea96e813c}} 
+\index{ImageFrameBuffer@{ImageFrameBuffer}!updateSize@{updateSize}}
+\index{updateSize@{updateSize}!ImageFrameBuffer@{ImageFrameBuffer}}
+\doxysubsubsection{\texorpdfstring{updateSize()}{updateSize()}}
+{\footnotesize\ttfamily void Image\+Frame\+Buffer\+::update\+Size (\begin{DoxyParamCaption}\item[{const glm\+::uvec2 \&}]{window\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update window size. 
+
+\mbox{\hyperlink{class_image_frame_buffer_a547246e96ff96c1a1b5849bea96e813c}{update\+Size()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Size} & a const glm\+::uvec2\& -\/ The size of the window \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/rendering/framebuffers/\mbox{\hyperlink{image_frame_buffer_8h}{image\+Frame\+Buffer.\+h}}\item 
+C\+:/doc/src/src/rendering/framebuffers/\mbox{\hyperlink{image_frame_buffer_8cpp}{image\+Frame\+Buffer.\+cpp}}\end{DoxyCompactItemize}

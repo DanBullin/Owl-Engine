@@ -1,0 +1,100 @@
+\hypertarget{struct_projection}{}\doxysection{Projection Struct Reference}
+\label{struct_projection}\index{Projection@{Projection}}
+
+
+The data needed for the projection matrix.  
+
+
+
+
+{\ttfamily \#include $<$projection.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_projection_aa702bc5b09ddd8667c8206f88f50f2e8}{Projection}} (const float ratio=1.\+42f, const float near\+Plane=0.\+1f, const float far\+Plane=100.f)
+\begin{DoxyCompactList}\small\item\em Perspective constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_projection_a88b1c22f6ead814a0e04bed2ed9cab30}{Projection}} (const float left, const float right, const float top, const float bottom, const float near\+Plane, const float far\+Plane)
+\begin{DoxyCompactList}\small\item\em Ortho constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_projection_a97cffe73f31c42b62d0cd09526894dc4}\label{struct_projection_a97cffe73f31c42b62d0cd09526894dc4}} 
+bool \mbox{\hyperlink{struct_projection_a97cffe73f31c42b62d0cd09526894dc4}{Use\+Perspective}}
+\begin{DoxyCompactList}\small\item\em Use the perspective projection. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_projection_ab38f9b44cb903e53010110777a52056a}\label{struct_projection_ab38f9b44cb903e53010110777a52056a}} 
+float \mbox{\hyperlink{struct_projection_ab38f9b44cb903e53010110777a52056a}{Near\+Plane}}
+\begin{DoxyCompactList}\small\item\em The near clipping plane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_projection_a77335bd08cfde7468b5dbf52b5418e41}\label{struct_projection_a77335bd08cfde7468b5dbf52b5418e41}} 
+float \mbox{\hyperlink{struct_projection_a77335bd08cfde7468b5dbf52b5418e41}{Far\+Plane}}
+\begin{DoxyCompactList}\small\item\em The far clipping plane. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_projection_a2273fa48fc1d2bd4df3881074dedef1f}\label{struct_projection_a2273fa48fc1d2bd4df3881074dedef1f}} 
+float \mbox{\hyperlink{struct_projection_a2273fa48fc1d2bd4df3881074dedef1f}{Aspect\+Ratio}}
+\begin{DoxyCompactList}\small\item\em The aspect ratio. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_projection_a6a7b0540376286d5286b801fd56949d4}\label{struct_projection_a6a7b0540376286d5286b801fd56949d4}} 
+float \mbox{\hyperlink{struct_projection_a6a7b0540376286d5286b801fd56949d4}{Left}}
+\begin{DoxyCompactList}\small\item\em The left ortho bound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_projection_aa435862eb649a71e09a6819cb8fdd03f}\label{struct_projection_aa435862eb649a71e09a6819cb8fdd03f}} 
+float \mbox{\hyperlink{struct_projection_aa435862eb649a71e09a6819cb8fdd03f}{Right}}
+\begin{DoxyCompactList}\small\item\em The right ortho bound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_projection_a1c65dcd1930e7ab46773cf566fede5a8}\label{struct_projection_a1c65dcd1930e7ab46773cf566fede5a8}} 
+float \mbox{\hyperlink{struct_projection_a1c65dcd1930e7ab46773cf566fede5a8}{Top}}
+\begin{DoxyCompactList}\small\item\em The top orth bound. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_projection_a589423b29e2be8b29c4f55bb51e2b019}\label{struct_projection_a589423b29e2be8b29c4f55bb51e2b019}} 
+float \mbox{\hyperlink{struct_projection_a589423b29e2be8b29c4f55bb51e2b019}{Bottom}}
+\begin{DoxyCompactList}\small\item\em The bottom ortho bound. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The data needed for the projection matrix. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_projection_aa702bc5b09ddd8667c8206f88f50f2e8}\label{struct_projection_aa702bc5b09ddd8667c8206f88f50f2e8}} 
+\index{Projection@{Projection}!Projection@{Projection}}
+\index{Projection@{Projection}!Projection@{Projection}}
+\doxysubsubsection{\texorpdfstring{Projection()}{Projection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Projection\+::\+Projection (\begin{DoxyParamCaption}\item[{const float}]{ratio = {\ttfamily 1.42f},  }\item[{const float}]{near\+Plane = {\ttfamily 0.1f},  }\item[{const float}]{far\+Plane = {\ttfamily 100.f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Perspective constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ratio} & a const float -\/ The aspect ratio \\
+\hline
+{\em near\+Plane} & a const float -\/ The distance of the near plane \\
+\hline
+{\em far\+Plane} & a const float -\/ The distance of the far plane \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_projection_a88b1c22f6ead814a0e04bed2ed9cab30}\label{struct_projection_a88b1c22f6ead814a0e04bed2ed9cab30}} 
+\index{Projection@{Projection}!Projection@{Projection}}
+\index{Projection@{Projection}!Projection@{Projection}}
+\doxysubsubsection{\texorpdfstring{Projection()}{Projection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Projection\+::\+Projection (\begin{DoxyParamCaption}\item[{const float}]{left,  }\item[{const float}]{right,  }\item[{const float}]{top,  }\item[{const float}]{bottom,  }\item[{const float}]{near\+Plane,  }\item[{const float}]{far\+Plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ortho constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em left} & a const float -\/ The left value \\
+\hline
+{\em right} & a const float -\/ The right value \\
+\hline
+{\em top} & a const float -\/ The top value \\
+\hline
+{\em bottom} & a const float -\/ The bottom value \\
+\hline
+{\em near\+Plane} & a const float -\/ The distance of the near plane \\
+\hline
+{\em far\+Plane} & a const float -\/ The distance of the far plane \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/rendering/\mbox{\hyperlink{projection_8h}{projection.\+h}}\end{DoxyCompactItemize}

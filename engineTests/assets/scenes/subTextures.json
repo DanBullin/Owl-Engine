@@ -1,0 +1,15 @@
+{
+	"SubTextures": [
+		{ "subTextureName": "default", "baseTextureName": "default", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ] },
+		{ "subTextureName": "gridSubTexture", "baseTextureName": "grid", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ] },
+		{ "subTextureName": "textSubTexture", "baseTextureName": "text", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ] },
+		{ "subTextureName": "defaultSubTexture", "baseTextureName": "default", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ] },
+		{ "subTextureName": "borderSubTexture", "baseTextureName": "border", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ] },
+		
+		{ "subTextureName": "cyborgSubTexture", "baseTextureName": "cyborg_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 0.5 ] },
+		{ "subTextureName": "barrelSubTexture", "baseTextureName": "barrel_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ] },
+		{ "subTextureName": "brickSubTexture", "baseTextureName": "brickwall_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 1.0 ] },
+		{ "subTextureName": "letterSubTexture", "baseTextureName": "letterAndNumbers_diffuse", "UVStart": [ 0.0, 0.0 ], "UVEnd": [ 1.0, 0.5 ] },
+		{ "subTextureName": "numberSubTexture", "baseTextureName": "letterAndNumbers_diffuse", "UVStart": [ 0.0, 0.5 ], "UVEnd": [ 1.0, 1.0 ] }
+	]
+}

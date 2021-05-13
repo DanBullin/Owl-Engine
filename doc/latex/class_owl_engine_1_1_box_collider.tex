@@ -1,0 +1,335 @@
+\hypertarget{class_owl_engine_1_1_box_collider}{}\doxysection{Owl\+Engine\+::Box\+Collider Class Reference}
+\label{class_owl_engine_1_1_box_collider}\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+
+
+A box collider entity component that attaches to a rigidbody. Uses React\+Physics3D.  
+
+
+
+
+{\ttfamily \#include $<$box\+Collider.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Box\+Collider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_box_collider}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_acc63e403f953b25776695a595685fb7a}{Box\+Collider}} (glm\+::vec3 \&half\+Extents, glm\+::vec3 position)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_box_collider_aa3286d5c728e6ceb54bc45e89ff5a3a3}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is attached to an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a8ec3bf7c4913b47707924d59829d6c76}{on\+Detach}} () override
+\begin{DoxyCompactList}\small\item\em Occurs when component is detached from an entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a2f94c91791ed3f2bd23a0895168f3301}{on\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Update the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a13fab97000c4b64d836d76a29ff9c448}{print\+Component\+Details}} () override
+\begin{DoxyCompactList}\small\item\em Print component details. \end{DoxyCompactList}\item 
+nlohmann\+::ordered\+\_\+json \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a16833cbba646c77c3425454a5793768b}{get\+As\+J\+S\+ON}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data as J\+S\+ON for saving. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a88eb991b18b80d8ea4d03075abbbec9c}{display\+Im\+Gui}} () override
+\begin{DoxyCompactList}\small\item\em Get the component\textquotesingle{}s data displayed in Im\+Gui form. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_box_collider_af2c65e036a4004a2b5050c7b40f6436f}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the local position of the collider. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a73a05124065d7b51a4e99a5cd3c141a1}{set\+Position}} (glm\+::vec3 position)
+\begin{DoxyCompactList}\small\item\em Sets the local position of the collider. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a3578d3c861a103c03fe5d00532cd0d83}{get\+Half\+Extents}} ()
+\begin{DoxyCompactList}\small\item\em Returns the half extents of the collider shape. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_box_collider_ad421aaedeaabfb1cbb610a1a14584197}{set\+Half\+Extents}} (glm\+::vec3 \&half\+Extents)
+\begin{DoxyCompactList}\small\item\em Sets the half extents of the collider shape. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a3ea6c250f4932588f4581f4459209f30}{get\+Is\+Trigger}} ()
+\begin{DoxyCompactList}\small\item\em Returns true if collider is a trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a3c92ac2f187e158f522bd11c4cd436bb}{set\+Is\+Trigger}} (bool is\+Trigger)
+\begin{DoxyCompactList}\small\item\em Set the collider as a trigger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a7c4b91c17e71946b5b8ce86ae8345483}{on\+Render}} ()
+\begin{DoxyCompactList}\small\item\em Draw the collider. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_box_collider_ac73928a3be1192c8be77a246a403b65e}{contains\+Point}} (const glm\+::vec3 \&point)
+\begin{DoxyCompactList}\small\item\em Contains a point in the geometry. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_owl_engine_1_1_box_collider_a4763ffd9057cf36ba98374096ece671c}{vector\+Intersects}} (const glm\+::vec3 \&pos, const glm\+::vec3 \&vec, const float vec\+Multiplier)
+\begin{DoxyCompactList}\small\item\em Contains a vector in the geometry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A box collider entity component that attaches to a rigidbody. Uses React\+Physics3D. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_acc63e403f953b25776695a595685fb7a}\label{class_owl_engine_1_1_box_collider_acc63e403f953b25776695a595685fb7a}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!BoxCollider@{BoxCollider}}
+\index{BoxCollider@{BoxCollider}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{BoxCollider()}{BoxCollider()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Box\+Collider\+::\+Box\+Collider (\begin{DoxyParamCaption}\item[{glm\+::vec3 \&}]{half\+Extents,  }\item[{glm\+::vec3}]{position }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_acc63e403f953b25776695a595685fb7a}{Box\+Collider()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em half\+Extents} & a glm\+::vec3\& -\/ The half extents of the colliders box shape \\
+\hline
+{\em position} & a glm\+::vec3 -\/ The local position of the collider (Relative to the rigidbody) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_ac73928a3be1192c8be77a246a403b65e}\label{class_owl_engine_1_1_box_collider_ac73928a3be1192c8be77a246a403b65e}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!containsPoint@{containsPoint}}
+\index{containsPoint@{containsPoint}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{containsPoint()}{containsPoint()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Box\+Collider\+::contains\+Point (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{point }\end{DoxyParamCaption})}
+
+
+
+Contains a point in the geometry. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_ac73928a3be1192c8be77a246a403b65e}{contains\+Point()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & a const glm\+::vec3\& -\/ The point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the point lie within the collider 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_a88eb991b18b80d8ea4d03075abbbec9c}\label{class_owl_engine_1_1_box_collider_a88eb991b18b80d8ea4d03075abbbec9c}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!displayImGui@{displayImGui}}
+\index{displayImGui@{displayImGui}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{displayImGui()}{displayImGui()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Box\+Collider\+::display\+Im\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data displayed in Im\+Gui form. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_a88eb991b18b80d8ea4d03075abbbec9c}{display\+Im\+Gui()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a6be907e340b9cea4024b58b7978cb68e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_a16833cbba646c77c3425454a5793768b}\label{class_owl_engine_1_1_box_collider_a16833cbba646c77c3425454a5793768b}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!getAsJSON@{getAsJSON}}
+\index{getAsJSON@{getAsJSON}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{getAsJSON()}{getAsJSON()}}
+{\footnotesize\ttfamily nlohmann\+::ordered\+\_\+json Owl\+Engine\+::\+Box\+Collider\+::get\+As\+J\+S\+ON (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component\textquotesingle{}s data as J\+S\+ON for saving. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_a16833cbba646c77c3425454a5793768b}{get\+As\+J\+S\+O\+N()}}
+
+\begin{DoxyReturn}{Returns}
+a nlohmann\+::ordered\+\_\+json -\/ The component\textquotesingle{}s data in J\+S\+ON format 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_ae7bdc04e036e3c1198001e3d293d6a0e}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_a3578d3c861a103c03fe5d00532cd0d83}\label{class_owl_engine_1_1_box_collider_a3578d3c861a103c03fe5d00532cd0d83}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!getHalfExtents@{getHalfExtents}}
+\index{getHalfExtents@{getHalfExtents}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{getHalfExtents()}{getHalfExtents()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Box\+Collider\+::get\+Half\+Extents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the half extents of the collider shape. 
+
+get\+Half\+Extents
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ Collider shapes current half extents 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_a3ea6c250f4932588f4581f4459209f30}\label{class_owl_engine_1_1_box_collider_a3ea6c250f4932588f4581f4459209f30}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!getIsTrigger@{getIsTrigger}}
+\index{getIsTrigger@{getIsTrigger}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{getIsTrigger()}{getIsTrigger()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Box\+Collider\+::get\+Is\+Trigger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns true if collider is a trigger. 
+
+get\+Is\+Trigger
+
+\begin{DoxyReturn}{Returns}
+a bool -\/ True if collider is a trigger 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_af2c65e036a4004a2b5050c7b40f6436f}\label{class_owl_engine_1_1_box_collider_af2c65e036a4004a2b5050c7b40f6436f}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Owl\+Engine\+::\+Box\+Collider\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the local position of the collider. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_af2c65e036a4004a2b5050c7b40f6436f}{get\+Position()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec3 -\/ Colliders current position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_aa3286d5c728e6ceb54bc45e89ff5a3a3}\label{class_owl_engine_1_1_box_collider_aa3286d5c728e6ceb54bc45e89ff5a3a3}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Box\+Collider\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is attached to an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_aa3286d5c728e6ceb54bc45e89ff5a3a3}{on\+Attach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a0c9c46e3b484f8c0e33494b400e4ba4f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_a8ec3bf7c4913b47707924d59829d6c76}\label{class_owl_engine_1_1_box_collider_a8ec3bf7c4913b47707924d59829d6c76}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!onDetach@{onDetach}}
+\index{onDetach@{onDetach}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{onDetach()}{onDetach()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Box\+Collider\+::on\+Detach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Occurs when component is detached from an entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_a8ec3bf7c4913b47707924d59829d6c76}{on\+Detach()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a2a97fd39c0ea2791802953b0531db5c9}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_a7c4b91c17e71946b5b8ce86ae8345483}\label{class_owl_engine_1_1_box_collider_a7c4b91c17e71946b5b8ce86ae8345483}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!onRender@{onRender}}
+\index{onRender@{onRender}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{onRender()}{onRender()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Box\+Collider\+::on\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draw the collider. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_a7c4b91c17e71946b5b8ce86ae8345483}{on\+Render()}} \mbox{\Hypertarget{class_owl_engine_1_1_box_collider_a2f94c91791ed3f2bd23a0895168f3301}\label{class_owl_engine_1_1_box_collider_a2f94c91791ed3f2bd23a0895168f3301}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!onUpdate@{onUpdate}}
+\index{onUpdate@{onUpdate}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{onUpdate()}{onUpdate()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Box\+Collider\+::on\+Update (\begin{DoxyParamCaption}\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the component. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_a2f94c91791ed3f2bd23a0895168f3301}{on\+Update()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_a61ca0847e83bfb0014c07348329d3d6a}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_a13fab97000c4b64d836d76a29ff9c448}\label{class_owl_engine_1_1_box_collider_a13fab97000c4b64d836d76a29ff9c448}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!printComponentDetails@{printComponentDetails}}
+\index{printComponentDetails@{printComponentDetails}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{printComponentDetails()}{printComponentDetails()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Box\+Collider\+::print\+Component\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Print component details. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_a13fab97000c4b64d836d76a29ff9c448}{print\+Component\+Details()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_entity_component_aefcaa6da0f6ee07e14fb09940d3cc24f}{Owl\+Engine\+::\+Entity\+Component}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_ad421aaedeaabfb1cbb610a1a14584197}\label{class_owl_engine_1_1_box_collider_ad421aaedeaabfb1cbb610a1a14584197}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!setHalfExtents@{setHalfExtents}}
+\index{setHalfExtents@{setHalfExtents}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{setHalfExtents()}{setHalfExtents()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Box\+Collider\+::set\+Half\+Extents (\begin{DoxyParamCaption}\item[{glm\+::vec3 \&}]{half\+Extents }\end{DoxyParamCaption})}
+
+
+
+Sets the half extents of the collider shape. 
+
+set\+Halfextents()
+
+
+\begin{DoxyParams}{Parameters}
+{\em half\+Extents} & a glm\+::vec3\& -\/ The half extents of the colliders shape \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_a3c92ac2f187e158f522bd11c4cd436bb}\label{class_owl_engine_1_1_box_collider_a3c92ac2f187e158f522bd11c4cd436bb}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!setIsTrigger@{setIsTrigger}}
+\index{setIsTrigger@{setIsTrigger}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{setIsTrigger()}{setIsTrigger()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Box\+Collider\+::set\+Is\+Trigger (\begin{DoxyParamCaption}\item[{bool}]{is\+Trigger }\end{DoxyParamCaption})}
+
+
+
+Set the collider as a trigger. 
+
+set\+Is\+Trigger
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & bool -\/ True if collider is a trigger \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_a73a05124065d7b51a4e99a5cd3c141a1}\label{class_owl_engine_1_1_box_collider_a73a05124065d7b51a4e99a5cd3c141a1}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Box\+Collider\+::set\+Position (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{position }\end{DoxyParamCaption})}
+
+
+
+Sets the local position of the collider. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_a73a05124065d7b51a4e99a5cd3c141a1}{set\+Position()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & a glm\+::vec3 -\/ The local position of the collider \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_box_collider_a4763ffd9057cf36ba98374096ece671c}\label{class_owl_engine_1_1_box_collider_a4763ffd9057cf36ba98374096ece671c}} 
+\index{OwlEngine::BoxCollider@{OwlEngine::BoxCollider}!vectorIntersects@{vectorIntersects}}
+\index{vectorIntersects@{vectorIntersects}!OwlEngine::BoxCollider@{OwlEngine::BoxCollider}}
+\doxysubsubsection{\texorpdfstring{vectorIntersects()}{vectorIntersects()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Box\+Collider\+::vector\+Intersects (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{pos,  }\item[{const glm\+::vec3 \&}]{vec,  }\item[{const float}]{vec\+Multiplier }\end{DoxyParamCaption})}
+
+
+
+Contains a vector in the geometry. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_box_collider_a4763ffd9057cf36ba98374096ece671c}{vector\+Intersects()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & a const glm\+::vec3\& -\/ The point \\
+\hline
+{\em vec} & a const glm\+::\+Vec3\& vec \\
+\hline
+{\em vec\+Multiplier} & a const float -\/ The vector multiplier \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Does the vector intersecr with the collider 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/entities/components/\mbox{\hyperlink{box_collider_8h}{box\+Collider.\+h}}\item 
+C\+:/doc/src/engine/src/independent/entities/components/\mbox{\hyperlink{box_collider_8cpp}{box\+Collider.\+cpp}}\end{DoxyCompactItemize}

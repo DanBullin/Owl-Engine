@@ -1,0 +1,192 @@
+\hypertarget{class_owl_engine_1_1_inspector}{}\doxysection{Owl\+Engine\+::Inspector Class Reference}
+\label{class_owl_engine_1_1_inspector}\index{OwlEngine::Inspector@{OwlEngine::Inspector}}
+
+
+A system which loads various Im\+Gui elements.  
+
+
+
+
+{\ttfamily \#include $<$inspector.\+h$>$}
+
+Inheritance diagram for Owl\+Engine\+::Inspector\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_owl_engine_1_1_inspector}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_owl_engine_1_1_inspector_a6847f0110d8b9831e9eec9db1fcf404d}{Inspector}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_owl_engine_1_1_inspector_a9dca32e1764b010574d1aadea966e737}{$\sim$\+Inspector}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_inspector_a84a5a28d49e003ba1cf67dfac4f497a4}{start}} () override
+\begin{DoxyCompactList}\small\item\em Start the system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_owl_engine_1_1_inspector_a20b5a19838f1008c30f06c84ab8df603}{stop}} () override
+\begin{DoxyCompactList}\small\item\em Stop the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_inspector_a47a735ae87c0567b10c707a997ffcbef}{initialise}} ()
+\begin{DoxyCompactList}\small\item\em Initialise the inspector. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_inspector_a0b04fa2678b559d900bc1092f2aa8085}{inspect}} ()
+\begin{DoxyCompactList}\small\item\em Draws the current stuff ebing inspected. \end{DoxyCompactList}\item 
+static glm\+::vec2 \mbox{\hyperlink{class_owl_engine_1_1_inspector_a106e5ea232a223a57922f0e27c564aba}{get\+View\+Port\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Gets the size of the viewing area of the inspector. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_owl_engine_1_1_inspector_a21a09e47aa43d01d6313b08e3146220a}{get\+View\+Port\+Changed}} (bool reset=false)
+\begin{DoxyCompactList}\small\item\em Gets whethere the viewport has changed size. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ \mbox{\hyperlink{class_owl_engine_1_1_inspector_a62194ce81943cda3596bb364d323b1b4}{get\+Selected\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Get the currently selected entity. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_inspector_a16f6b39b19f6d8238f7105908fb8ab1d}{deselect\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Deselect selected entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_inspector_aafdc7cb4c8a2aeca8073ae0246a9fea7}\label{class_owl_engine_1_1_inspector_aafdc7cb4c8a2aeca8073ae0246a9fea7}} 
+static void \mbox{\hyperlink{class_owl_engine_1_1_inspector_aafdc7cb4c8a2aeca8073ae0246a9fea7}{add\+Component}} (\mbox{\hyperlink{entity_component_8h_a47b1cf4198a5037ca21e9207a5c8287e}{Component\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Add a component to the selected entity. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_owl_engine_1_1_inspector_a973462dd3feb224f080e3c5445379e57}\label{class_owl_engine_1_1_inspector_a973462dd3feb224f080e3c5445379e57}} 
+static void \mbox{\hyperlink{class_owl_engine_1_1_inspector_a973462dd3feb224f080e3c5445379e57}{add\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Add an entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A system which loads various Im\+Gui elements. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_inspector_a6847f0110d8b9831e9eec9db1fcf404d}\label{class_owl_engine_1_1_inspector_a6847f0110d8b9831e9eec9db1fcf404d}} 
+\index{OwlEngine::Inspector@{OwlEngine::Inspector}!Inspector@{Inspector}}
+\index{Inspector@{Inspector}!OwlEngine::Inspector@{OwlEngine::Inspector}}
+\doxysubsubsection{\texorpdfstring{Inspector()}{Inspector()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Inspector\+::\+Inspector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_inspector_a6847f0110d8b9831e9eec9db1fcf404d}{Inspector()}} \mbox{\Hypertarget{class_owl_engine_1_1_inspector_a9dca32e1764b010574d1aadea966e737}\label{class_owl_engine_1_1_inspector_a9dca32e1764b010574d1aadea966e737}} 
+\index{OwlEngine::Inspector@{OwlEngine::Inspector}!````~Inspector@{$\sim$Inspector}}
+\index{````~Inspector@{$\sim$Inspector}!OwlEngine::Inspector@{OwlEngine::Inspector}}
+\doxysubsubsection{\texorpdfstring{$\sim$Inspector()}{~Inspector()}}
+{\footnotesize\ttfamily Owl\+Engine\+::\+Inspector\+::$\sim$\+Inspector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_inspector_a9dca32e1764b010574d1aadea966e737}{$\sim$\+Inspector()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_inspector_a16f6b39b19f6d8238f7105908fb8ab1d}\label{class_owl_engine_1_1_inspector_a16f6b39b19f6d8238f7105908fb8ab1d}} 
+\index{OwlEngine::Inspector@{OwlEngine::Inspector}!deselectEntity@{deselectEntity}}
+\index{deselectEntity@{deselectEntity}!OwlEngine::Inspector@{OwlEngine::Inspector}}
+\doxysubsubsection{\texorpdfstring{deselectEntity()}{deselectEntity()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Inspector\+::deselect\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Deselect selected entity. 
+
+deselect\+Entity \mbox{\Hypertarget{class_owl_engine_1_1_inspector_a62194ce81943cda3596bb364d323b1b4}\label{class_owl_engine_1_1_inspector_a62194ce81943cda3596bb364d323b1b4}} 
+\index{OwlEngine::Inspector@{OwlEngine::Inspector}!getSelectedEntity@{getSelectedEntity}}
+\index{getSelectedEntity@{getSelectedEntity}!OwlEngine::Inspector@{OwlEngine::Inspector}}
+\doxysubsubsection{\texorpdfstring{getSelectedEntity()}{getSelectedEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$ Owl\+Engine\+::\+Inspector\+::get\+Selected\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the currently selected entity. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_inspector_a62194ce81943cda3596bb364d323b1b4}{get\+Selected\+Entity()}}
+
+\begin{DoxyReturn}{Returns}
+an Entity$\ast$ -\/ A pointer to the selected entity in the inspector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_inspector_a21a09e47aa43d01d6313b08e3146220a}\label{class_owl_engine_1_1_inspector_a21a09e47aa43d01d6313b08e3146220a}} 
+\index{OwlEngine::Inspector@{OwlEngine::Inspector}!getViewPortChanged@{getViewPortChanged}}
+\index{getViewPortChanged@{getViewPortChanged}!OwlEngine::Inspector@{OwlEngine::Inspector}}
+\doxysubsubsection{\texorpdfstring{getViewPortChanged()}{getViewPortChanged()}}
+{\footnotesize\ttfamily bool Owl\+Engine\+::\+Inspector\+::get\+View\+Port\+Changed (\begin{DoxyParamCaption}\item[{bool}]{reset = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets whethere the viewport has changed size. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_inspector_a21a09e47aa43d01d6313b08e3146220a}{get\+View\+Port\+Changed()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em reset} & a bool -\/ Reset the viewport \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool -\/ Has the viewport changed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_inspector_a106e5ea232a223a57922f0e27c564aba}\label{class_owl_engine_1_1_inspector_a106e5ea232a223a57922f0e27c564aba}} 
+\index{OwlEngine::Inspector@{OwlEngine::Inspector}!getViewPortSize@{getViewPortSize}}
+\index{getViewPortSize@{getViewPortSize}!OwlEngine::Inspector@{OwlEngine::Inspector}}
+\doxysubsubsection{\texorpdfstring{getViewPortSize()}{getViewPortSize()}}
+{\footnotesize\ttfamily glm\+::vec2 Owl\+Engine\+::\+Inspector\+::get\+View\+Port\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Gets the size of the viewing area of the inspector. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_inspector_a106e5ea232a223a57922f0e27c564aba}{get\+View\+Port\+Size()}}
+
+\begin{DoxyReturn}{Returns}
+a glm\+::vec2 -\/ The viewport size 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_owl_engine_1_1_inspector_a47a735ae87c0567b10c707a997ffcbef}\label{class_owl_engine_1_1_inspector_a47a735ae87c0567b10c707a997ffcbef}} 
+\index{OwlEngine::Inspector@{OwlEngine::Inspector}!initialise@{initialise}}
+\index{initialise@{initialise}!OwlEngine::Inspector@{OwlEngine::Inspector}}
+\doxysubsubsection{\texorpdfstring{initialise()}{initialise()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Inspector\+::initialise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Initialise the inspector. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_inspector_a47a735ae87c0567b10c707a997ffcbef}{initialise()}} \mbox{\Hypertarget{class_owl_engine_1_1_inspector_a0b04fa2678b559d900bc1092f2aa8085}\label{class_owl_engine_1_1_inspector_a0b04fa2678b559d900bc1092f2aa8085}} 
+\index{OwlEngine::Inspector@{OwlEngine::Inspector}!inspect@{inspect}}
+\index{inspect@{inspect}!OwlEngine::Inspector@{OwlEngine::Inspector}}
+\doxysubsubsection{\texorpdfstring{inspect()}{inspect()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Inspector\+::inspect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Draws the current stuff ebing inspected. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_inspector_a0b04fa2678b559d900bc1092f2aa8085}{inspect()}} \mbox{\Hypertarget{class_owl_engine_1_1_inspector_a84a5a28d49e003ba1cf67dfac4f497a4}\label{class_owl_engine_1_1_inspector_a84a5a28d49e003ba1cf67dfac4f497a4}} 
+\index{OwlEngine::Inspector@{OwlEngine::Inspector}!start@{start}}
+\index{start@{start}!OwlEngine::Inspector@{OwlEngine::Inspector}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Inspector\+::start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Start the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_inspector_a84a5a28d49e003ba1cf67dfac4f497a4}{start()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a4a67ec72280127752a6b4c51d7bedbcb}{Owl\+Engine\+::\+System}}.
+
+\mbox{\Hypertarget{class_owl_engine_1_1_inspector_a20b5a19838f1008c30f06c84ab8df603}\label{class_owl_engine_1_1_inspector_a20b5a19838f1008c30f06c84ab8df603}} 
+\index{OwlEngine::Inspector@{OwlEngine::Inspector}!stop@{stop}}
+\index{stop@{stop}!OwlEngine::Inspector@{OwlEngine::Inspector}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Inspector\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Stop the system. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_inspector_a20b5a19838f1008c30f06c84ab8df603}{stop()}} 
+
+Implements \mbox{\hyperlink{class_owl_engine_1_1_system_a491319a24b8228b3e6835b8ad3d9e37b}{Owl\+Engine\+::\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/systems/systems/\mbox{\hyperlink{inspector_8h}{inspector.\+h}}\item 
+C\+:/doc/src/engine/src/independent/systems/systems/\mbox{\hyperlink{inspector_8cpp}{inspector.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,120 @@
+\hypertarget{class_hawk_engine_1_1_model}{}\doxysection{Hawk\+Engine\+::Model Class Reference}
+\label{class_hawk_engine_1_1_model}\index{HawkEngine::Model@{HawkEngine::Model}}
+
+
+A model class that contains all the meshes of the model.  
+
+
+
+
+{\ttfamily \#include $<$model.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_model_a4aaa7e18518e6fee17d25e68a6f52600}{Model}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hawk_engine_1_1_model_aee4403aedffea470ff890754dd113d48}{$\sim$\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mesh}{Mesh}} $>$ $>$ \& \mbox{\hyperlink{class_hawk_engine_1_1_model_a692295f204b4aa5fbc89c434bcab48a4}{get\+Meshes}} ()
+\begin{DoxyCompactList}\small\item\em Get the list of meshes as a reference. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_hawk_engine_1_1_model_acdb79de45bbfbf3d4439213e6ff357c4}\label{class_hawk_engine_1_1_model_acdb79de45bbfbf3d4439213e6ff357c4}} 
+\mbox{\hyperlink{struct_hawk_engine_1_1_geometry}{Geometry}} \& \mbox{\hyperlink{class_hawk_engine_1_1_model_acdb79de45bbfbf3d4439213e6ff357c4}{get\+Geometry}} ()
+\begin{DoxyCompactList}\small\item\em Get the geometry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_model_ac7fb708c4b531a836b3b7b69b4eae83b}{edit\+Data}} (const void $\ast$new\+Data, const uint32\+\_\+t size, const uint32\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Edit the geometry and update the G\+PU. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_model_ad4e6c525870962711744d7f8557abbfd}{destroy}} ()
+\begin{DoxyCompactList}\small\item\em Destory the meshes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_hawk_engine_1_1_model_ae8165cb9170f44bcd139ed1952e9cbca}{submit\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Submit the data to the buffers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A model class that contains all the meshes of the model. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_model_a4aaa7e18518e6fee17d25e68a6f52600}\label{class_hawk_engine_1_1_model_a4aaa7e18518e6fee17d25e68a6f52600}} 
+\index{HawkEngine::Model@{HawkEngine::Model}!Model@{Model}}
+\index{Model@{Model}!HawkEngine::Model@{HawkEngine::Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Model\+::\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model_a4aaa7e18518e6fee17d25e68a6f52600}{Model()}} \mbox{\Hypertarget{class_hawk_engine_1_1_model_aee4403aedffea470ff890754dd113d48}\label{class_hawk_engine_1_1_model_aee4403aedffea470ff890754dd113d48}} 
+\index{HawkEngine::Model@{HawkEngine::Model}!````~Model@{$\sim$Model}}
+\index{````~Model@{$\sim$Model}!HawkEngine::Model@{HawkEngine::Model}}
+\doxysubsubsection{\texorpdfstring{$\sim$Model()}{~Model()}}
+{\footnotesize\ttfamily Hawk\+Engine\+::\+Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model_aee4403aedffea470ff890754dd113d48}{$\sim$\+Model()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_hawk_engine_1_1_model_ad4e6c525870962711744d7f8557abbfd}\label{class_hawk_engine_1_1_model_ad4e6c525870962711744d7f8557abbfd}} 
+\index{HawkEngine::Model@{HawkEngine::Model}!destroy@{destroy}}
+\index{destroy@{destroy}!HawkEngine::Model@{HawkEngine::Model}}
+\doxysubsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Model\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destory the meshes. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model_ad4e6c525870962711744d7f8557abbfd}{destroy()}} \mbox{\Hypertarget{class_hawk_engine_1_1_model_ac7fb708c4b531a836b3b7b69b4eae83b}\label{class_hawk_engine_1_1_model_ac7fb708c4b531a836b3b7b69b4eae83b}} 
+\index{HawkEngine::Model@{HawkEngine::Model}!editData@{editData}}
+\index{editData@{editData}!HawkEngine::Model@{HawkEngine::Model}}
+\doxysubsubsection{\texorpdfstring{editData()}{editData()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Model\+::edit\+Data (\begin{DoxyParamCaption}\item[{const void $\ast$}]{new\+Data,  }\item[{const uint32\+\_\+t}]{size,  }\item[{const uint32\+\_\+t}]{offset }\end{DoxyParamCaption})}
+
+
+
+Edit the geometry and update the G\+PU. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model_ac7fb708c4b531a836b3b7b69b4eae83b}{edit\+Data()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Data} & a const void$\ast$ -\/The vertices info \\
+\hline
+{\em size} & a const uint32\+\_\+t -\/ The size in bytes of the new data \\
+\hline
+{\em offset} & a const int32\+\_\+t -\/ The offset of where to place the new data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_hawk_engine_1_1_model_a692295f204b4aa5fbc89c434bcab48a4}\label{class_hawk_engine_1_1_model_a692295f204b4aa5fbc89c434bcab48a4}} 
+\index{HawkEngine::Model@{HawkEngine::Model}!getMeshes@{getMeshes}}
+\index{getMeshes@{getMeshes}!HawkEngine::Model@{HawkEngine::Model}}
+\doxysubsubsection{\texorpdfstring{getMeshes()}{getMeshes()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_hawk_engine_1_1_mesh}{Mesh}} $>$ $>$ \& Hawk\+Engine\+::\+Model\+::get\+Meshes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the list of meshes as a reference. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model_a692295f204b4aa5fbc89c434bcab48a4}{get\+Meshes()}}
+
+\begin{DoxyReturn}{Returns}
+a std\+::vector$<$std\+::shared\+\_\+ptr$<$\+Mesh$>$$>$\& -\/ The reference to a vector of meshes 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_hawk_engine_1_1_model_ae8165cb9170f44bcd139ed1952e9cbca}\label{class_hawk_engine_1_1_model_ae8165cb9170f44bcd139ed1952e9cbca}} 
+\index{HawkEngine::Model@{HawkEngine::Model}!submitData@{submitData}}
+\index{submitData@{submitData}!HawkEngine::Model@{HawkEngine::Model}}
+\doxysubsubsection{\texorpdfstring{submitData()}{submitData()}}
+{\footnotesize\ttfamily void Hawk\+Engine\+::\+Model\+::submit\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Submit the data to the buffers. 
+
+\mbox{\hyperlink{class_hawk_engine_1_1_model_ae8165cb9170f44bcd139ed1952e9cbca}{submit\+Data()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/independent/rendering/geometry/\mbox{\hyperlink{model_8h}{model.\+h}}\item 
+C\+:/doc/src/src/independent/rendering/geometry/\mbox{\hyperlink{model_8cpp}{model.\+cpp}}\end{DoxyCompactItemize}

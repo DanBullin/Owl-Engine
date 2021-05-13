@@ -1,0 +1,240 @@
+\hypertarget{class_window}{}\doxysection{Window Class Reference}
+\label{class_window}\index{Window@{Window}}
+
+
+A window class which initialises G\+L\+FW and creates a window with a valid Open\+GL context.  
+
+
+
+
+{\ttfamily \#include $<$window.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_window_a685a2ed99afee9abe60252d5378c8078}\label{class_window_a685a2ed99afee9abe60252d5378c8078}} 
+\mbox{\hyperlink{class_window_a685a2ed99afee9abe60252d5378c8078}{Window}} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_window_a8895ce9a16d128ee32eb35b6438a63dd}{Window}} (const \mbox{\hyperlink{struct_window_properties}{Window\+Properties}} \&properties, void $\ast$application\+Pointer=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_window_ae6e1b919f74e49c2e614792864ce5916}{start}} (const \mbox{\hyperlink{struct_window_properties}{Window\+Properties}} \&properties, void $\ast$application\+Pointer=nullptr)
+\begin{DoxyCompactList}\small\item\em Start the window system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_window_a42353e5fb0b5670e6175709706670450}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Stop the window system. \end{DoxyCompactList}\item 
+G\+L\+F\+Wwindow $\ast$ \mbox{\hyperlink{class_window_a590597abd188bde00bc7abee970c54cb}{get\+Native\+Window}} () const
+\begin{DoxyCompactList}\small\item\em Get the G\+L\+FW window. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_window_a6b21e190207b4aed0f196d06089ec22f}{get\+Width}} () const
+\begin{DoxyCompactList}\small\item\em Get the window width. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{class_window_aa4dd4beff873ef350ac1e235206845f0}{get\+Height}} () const
+\begin{DoxyCompactList}\small\item\em Get the window height. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_window_a4ffcd91853601a3d18f68d1b1a04febd}{get\+Aspect\+Ratio}} () const
+\begin{DoxyCompactList}\small\item\em Get the window\textquotesingle{}s aspect ratio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_window_a6e5a03d4c9b1c195e3adf703edfa7084}{window\+Resized}} (const uint32\+\_\+t new\+Width, const uint32\+\_\+t new\+Height)
+\begin{DoxyCompactList}\small\item\em Update the window properties with new size info. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_window_a1e1a67d9880ffd9cc7aaeeb6c9def7fc}{set\+Close\+Window}} (const bool close)
+\begin{DoxyCompactList}\small\item\em Close the window. \end{DoxyCompactList}\item 
+const bool \mbox{\hyperlink{class_window_aa6dce1f8cdc795d7a5e361da265d893f}{should\+Close}} () const
+\begin{DoxyCompactList}\small\item\em Should the window close. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_window_a59515fc5a56e86d5a46d771595daac55}{update}} ()
+\begin{DoxyCompactList}\small\item\em Update the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_window}{Window}} $\ast$ \mbox{\hyperlink{class_window_ac118cf70b7155a83e5c1ccd682ae2c57}{create}} (const \mbox{\hyperlink{struct_window_properties}{Window\+Properties}} \&properties=\mbox{\hyperlink{struct_window_properties}{Window\+Properties}}(), void $\ast$application\+Pointer=nullptr)
+\begin{DoxyCompactList}\small\item\em Create a window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A window class which initialises G\+L\+FW and creates a window with a valid Open\+GL context. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_window_a8895ce9a16d128ee32eb35b6438a63dd}\label{class_window_a8895ce9a16d128ee32eb35b6438a63dd}} 
+\index{Window@{Window}!Window@{Window}}
+\index{Window@{Window}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{Window()}{Window()}}
+{\footnotesize\ttfamily Window\+::\+Window (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_window_properties}{Window\+Properties}} \&}]{properties,  }\item[{void $\ast$}]{application\+Pointer = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_window_a685a2ed99afee9abe60252d5378c8078}{Window()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & a const \mbox{\hyperlink{struct_window_properties}{Window\+Properties}}\& -\/ A reference to the window properties \\
+\hline
+{\em application\+Pointer} & a void$\ast$ -\/ A pointer to the application \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_window_ac118cf70b7155a83e5c1ccd682ae2c57}\label{class_window_ac118cf70b7155a83e5c1ccd682ae2c57}} 
+\index{Window@{Window}!create@{create}}
+\index{create@{create}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_window}{Window}} $\ast$ Window\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_window_properties}{Window\+Properties}} \&}]{properties = {\ttfamily \mbox{\hyperlink{struct_window_properties}{Window\+Properties}}()},  }\item[{void $\ast$}]{application\+Pointer = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a window. 
+
+\mbox{\hyperlink{class_window_ac118cf70b7155a83e5c1ccd682ae2c57}{create()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & a const \mbox{\hyperlink{struct_window_properties}{Window\+Properties}}\& -\/ A reference to the window properties \\
+\hline
+{\em application\+Pointer} & a void$\ast$ -\/ A pointer to the application \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a Window$\ast$ -\/ A pointer to the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_window_a4ffcd91853601a3d18f68d1b1a04febd}\label{class_window_a4ffcd91853601a3d18f68d1b1a04febd}} 
+\index{Window@{Window}!getAspectRatio@{getAspectRatio}}
+\index{getAspectRatio@{getAspectRatio}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{getAspectRatio()}{getAspectRatio()}}
+{\footnotesize\ttfamily float Window\+::get\+Aspect\+Ratio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the window\textquotesingle{}s aspect ratio. 
+
+\begin{DoxyReturn}{Returns}
+a float -\/ The aspect ratio of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_window_aa4dd4beff873ef350ac1e235206845f0}\label{class_window_aa4dd4beff873ef350ac1e235206845f0}} 
+\index{Window@{Window}!getHeight@{getHeight}}
+\index{getHeight@{getHeight}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{getHeight()}{getHeight()}}
+{\footnotesize\ttfamily uint32\+\_\+t Window\+::get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the window height. 
+
+\begin{DoxyReturn}{Returns}
+a uint32\+\_\+t -\/ The height of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_window_a590597abd188bde00bc7abee970c54cb}\label{class_window_a590597abd188bde00bc7abee970c54cb}} 
+\index{Window@{Window}!getNativeWindow@{getNativeWindow}}
+\index{getNativeWindow@{getNativeWindow}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{getNativeWindow()}{getNativeWindow()}}
+{\footnotesize\ttfamily G\+L\+F\+Wwindow$\ast$ Window\+::get\+Native\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the G\+L\+FW window. 
+
+\begin{DoxyReturn}{Returns}
+a G\+L\+F\+Wwindow$\ast$ -\/ A pointer to the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_window_a6b21e190207b4aed0f196d06089ec22f}\label{class_window_a6b21e190207b4aed0f196d06089ec22f}} 
+\index{Window@{Window}!getWidth@{getWidth}}
+\index{getWidth@{getWidth}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{getWidth()}{getWidth()}}
+{\footnotesize\ttfamily uint32\+\_\+t Window\+::get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the window width. 
+
+\begin{DoxyReturn}{Returns}
+a uint32\+\_\+t -\/ The width of the window 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_window_a1e1a67d9880ffd9cc7aaeeb6c9def7fc}\label{class_window_a1e1a67d9880ffd9cc7aaeeb6c9def7fc}} 
+\index{Window@{Window}!setCloseWindow@{setCloseWindow}}
+\index{setCloseWindow@{setCloseWindow}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{setCloseWindow()}{setCloseWindow()}}
+{\footnotesize\ttfamily void Window\+::set\+Close\+Window (\begin{DoxyParamCaption}\item[{const bool}]{close }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Close the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em close} & a const bool -\/ Should the window close \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_window_aa6dce1f8cdc795d7a5e361da265d893f}\label{class_window_aa6dce1f8cdc795d7a5e361da265d893f}} 
+\index{Window@{Window}!shouldClose@{shouldClose}}
+\index{shouldClose@{shouldClose}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{shouldClose()}{shouldClose()}}
+{\footnotesize\ttfamily const bool Window\+::should\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Should the window close. 
+
+\mbox{\hyperlink{class_window_aa6dce1f8cdc795d7a5e361da265d893f}{should\+Close()}}
+
+\begin{DoxyReturn}{Returns}
+a const bool -\/ Whether the window should close 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_window_ae6e1b919f74e49c2e614792864ce5916}\label{class_window_ae6e1b919f74e49c2e614792864ce5916}} 
+\index{Window@{Window}!start@{start}}
+\index{start@{start}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily void Window\+::start (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_window_properties}{Window\+Properties}} \&}]{properties,  }\item[{void $\ast$}]{application\+Pointer = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Start the window system. 
+
+\mbox{\hyperlink{class_window_ae6e1b919f74e49c2e614792864ce5916}{start()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em properties} & a const \mbox{\hyperlink{struct_window_properties}{Window\+Properties}}\& -\/ A reference to the window properties \\
+\hline
+{\em application\+Pointer} & a void$\ast$ -\/ A pointer to the application \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_window_a42353e5fb0b5670e6175709706670450}\label{class_window_a42353e5fb0b5670e6175709706670450}} 
+\index{Window@{Window}!stop@{stop}}
+\index{stop@{stop}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily void Window\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stop the window system. 
+
+\mbox{\hyperlink{class_window_a42353e5fb0b5670e6175709706670450}{stop()}} \mbox{\Hypertarget{class_window_a59515fc5a56e86d5a46d771595daac55}\label{class_window_a59515fc5a56e86d5a46d771595daac55}} 
+\index{Window@{Window}!update@{update}}
+\index{update@{update}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Window\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Update the window. 
+
+\mbox{\hyperlink{class_window_a59515fc5a56e86d5a46d771595daac55}{update()}} \mbox{\Hypertarget{class_window_a6e5a03d4c9b1c195e3adf703edfa7084}\label{class_window_a6e5a03d4c9b1c195e3adf703edfa7084}} 
+\index{Window@{Window}!windowResized@{windowResized}}
+\index{windowResized@{windowResized}!Window@{Window}}
+\doxysubsubsection{\texorpdfstring{windowResized()}{windowResized()}}
+{\footnotesize\ttfamily void Window\+::window\+Resized (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{new\+Width,  }\item[{const uint32\+\_\+t}]{new\+Height }\end{DoxyParamCaption})}
+
+
+
+Update the window properties with new size info. 
+
+\mbox{\hyperlink{class_window_a6e5a03d4c9b1c195e3adf703edfa7084}{window\+Resized()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Width} & a const uint32\+\_\+t -\/ The new width of the window \\
+\hline
+{\em new\+Height} & a const uint32\+\_\+t -\/ The new height of the window \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/include/core/\mbox{\hyperlink{window_8h}{window.\+h}}\item 
+C\+:/doc/src/src/core/\mbox{\hyperlink{window_8cpp}{window.\+cpp}}\end{DoxyCompactItemize}

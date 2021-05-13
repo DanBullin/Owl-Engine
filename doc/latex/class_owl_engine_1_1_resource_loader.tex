@@ -1,0 +1,228 @@
+\hypertarget{class_owl_engine_1_1_resource_loader}{}\doxysection{Owl\+Engine\+::Resource\+Loader Class Reference}
+\label{class_owl_engine_1_1_resource_loader}\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+
+
+A utility class to help load resources from file.  
+
+
+
+
+{\ttfamily \#include $<$resource\+Loader.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_loader_a53e746938f76ca37a371f29761c62acf}{load\+Vertex\+Buffers}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the vertex buffers needed in this scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_loader_acc3ec726f9b23ceceac193c412a05fe9}{load\+Vertex\+Arrays}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the vertex arrays needed in this scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_loader_a16a9d33a65106fe57a620947c813462b}{load\+Uniform\+Buffers}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the uniform buffers needed in this scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_loader_a362b0c870ad0dd599290dd3413f10802}{load\+Frame\+Buffers}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the frame buffers needed in this scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_loader_ad66c157768dd372106f261146df17a65}{load\+Shader\+Programs}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the shader programs needed in this scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_loader_aa7210995a04df5d01f99ec18e81a194a}{load\+Textures}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the textures needed in this scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_loader_aa5d4043fa291b10601fe065ee535f76d}{load\+Sub\+Textures}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the subtextures needed in this scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_loader_af1a7a548839d6e83f29098f87851a1c0}{load3\+D\+Models}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the 3D Models needed in this scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_loader_afb2ffdb154cd9807695426d507ed9e34}{load\+Audio}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the audio files needed in this scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_loader_a335f8770e3065a84f0dbbe0f8a9672ab}{load\+Materials}} (const std\+::string \&file\+Path)
+\begin{DoxyCompactList}\small\item\em Load the Materials needed in this scene. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_owl_engine_1_1_resource_loader_a1ab044c38306a33c58d0dd0ee8f37bae}{upload\+Models}} ()
+\begin{DoxyCompactList}\small\item\em Upload all model data to G\+PU. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A utility class to help load resources from file. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_loader_af1a7a548839d6e83f29098f87851a1c0}\label{class_owl_engine_1_1_resource_loader_af1a7a548839d6e83f29098f87851a1c0}} 
+\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}!load3DModels@{load3DModels}}
+\index{load3DModels@{load3DModels}!OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+\doxysubsubsection{\texorpdfstring{load3DModels()}{load3DModels()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Loader\+::load3\+D\+Models (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the 3D Models needed in this scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_loader_af1a7a548839d6e83f29098f87851a1c0}{load3\+D\+Models()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The path to the current file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_loader_afb2ffdb154cd9807695426d507ed9e34}\label{class_owl_engine_1_1_resource_loader_afb2ffdb154cd9807695426d507ed9e34}} 
+\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}!loadAudio@{loadAudio}}
+\index{loadAudio@{loadAudio}!OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+\doxysubsubsection{\texorpdfstring{loadAudio()}{loadAudio()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Loader\+::load\+Audio (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the audio files needed in this scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_loader_afb2ffdb154cd9807695426d507ed9e34}{load\+Audio()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The path to the current file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_loader_a362b0c870ad0dd599290dd3413f10802}\label{class_owl_engine_1_1_resource_loader_a362b0c870ad0dd599290dd3413f10802}} 
+\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}!loadFrameBuffers@{loadFrameBuffers}}
+\index{loadFrameBuffers@{loadFrameBuffers}!OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+\doxysubsubsection{\texorpdfstring{loadFrameBuffers()}{loadFrameBuffers()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Loader\+::load\+Frame\+Buffers (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the frame buffers needed in this scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_loader_a362b0c870ad0dd599290dd3413f10802}{load\+Frame\+Buffers()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The path to the current file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_loader_a335f8770e3065a84f0dbbe0f8a9672ab}\label{class_owl_engine_1_1_resource_loader_a335f8770e3065a84f0dbbe0f8a9672ab}} 
+\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}!loadMaterials@{loadMaterials}}
+\index{loadMaterials@{loadMaterials}!OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+\doxysubsubsection{\texorpdfstring{loadMaterials()}{loadMaterials()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Loader\+::load\+Materials (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the Materials needed in this scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_loader_a335f8770e3065a84f0dbbe0f8a9672ab}{load\+Materials()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The path to the current file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_loader_ad66c157768dd372106f261146df17a65}\label{class_owl_engine_1_1_resource_loader_ad66c157768dd372106f261146df17a65}} 
+\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}!loadShaderPrograms@{loadShaderPrograms}}
+\index{loadShaderPrograms@{loadShaderPrograms}!OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+\doxysubsubsection{\texorpdfstring{loadShaderPrograms()}{loadShaderPrograms()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Loader\+::load\+Shader\+Programs (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the shader programs needed in this scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_loader_ad66c157768dd372106f261146df17a65}{load\+Shader\+Programs()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The path to the current file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_loader_aa5d4043fa291b10601fe065ee535f76d}\label{class_owl_engine_1_1_resource_loader_aa5d4043fa291b10601fe065ee535f76d}} 
+\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}!loadSubTextures@{loadSubTextures}}
+\index{loadSubTextures@{loadSubTextures}!OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+\doxysubsubsection{\texorpdfstring{loadSubTextures()}{loadSubTextures()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Loader\+::load\+Sub\+Textures (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the subtextures needed in this scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_loader_aa5d4043fa291b10601fe065ee535f76d}{load\+Sub\+Textures()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The path to the current file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_loader_aa7210995a04df5d01f99ec18e81a194a}\label{class_owl_engine_1_1_resource_loader_aa7210995a04df5d01f99ec18e81a194a}} 
+\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}!loadTextures@{loadTextures}}
+\index{loadTextures@{loadTextures}!OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+\doxysubsubsection{\texorpdfstring{loadTextures()}{loadTextures()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Loader\+::load\+Textures (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the textures needed in this scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_loader_aa7210995a04df5d01f99ec18e81a194a}{load\+Textures()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The path to the current file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_loader_a16a9d33a65106fe57a620947c813462b}\label{class_owl_engine_1_1_resource_loader_a16a9d33a65106fe57a620947c813462b}} 
+\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}!loadUniformBuffers@{loadUniformBuffers}}
+\index{loadUniformBuffers@{loadUniformBuffers}!OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+\doxysubsubsection{\texorpdfstring{loadUniformBuffers()}{loadUniformBuffers()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Loader\+::load\+Uniform\+Buffers (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the uniform buffers needed in this scene. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_loader_a16a9d33a65106fe57a620947c813462b}{load\+Uniform\+Buffers()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The path to the current file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_loader_acc3ec726f9b23ceceac193c412a05fe9}\label{class_owl_engine_1_1_resource_loader_acc3ec726f9b23ceceac193c412a05fe9}} 
+\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}!loadVertexArrays@{loadVertexArrays}}
+\index{loadVertexArrays@{loadVertexArrays}!OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+\doxysubsubsection{\texorpdfstring{loadVertexArrays()}{loadVertexArrays()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Loader\+::load\+Vertex\+Arrays (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the vertex arrays needed in this scene. 
+
+load\+Vertex\+Array()
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The path to the current file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_loader_a53e746938f76ca37a371f29761c62acf}\label{class_owl_engine_1_1_resource_loader_a53e746938f76ca37a371f29761c62acf}} 
+\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}!loadVertexBuffers@{loadVertexBuffers}}
+\index{loadVertexBuffers@{loadVertexBuffers}!OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+\doxysubsubsection{\texorpdfstring{loadVertexBuffers()}{loadVertexBuffers()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Loader\+::load\+Vertex\+Buffers (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Load the vertex buffers needed in this scene. 
+
+load\+Vertex\+Buffer()
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Path} & a const std\+::string\& -\/ The path to the vertex buffer data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_owl_engine_1_1_resource_loader_a1ab044c38306a33c58d0dd0ee8f37bae}\label{class_owl_engine_1_1_resource_loader_a1ab044c38306a33c58d0dd0ee8f37bae}} 
+\index{OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}!uploadModels@{uploadModels}}
+\index{uploadModels@{uploadModels}!OwlEngine::ResourceLoader@{OwlEngine::ResourceLoader}}
+\doxysubsubsection{\texorpdfstring{uploadModels()}{uploadModels()}}
+{\footnotesize\ttfamily void Owl\+Engine\+::\+Resource\+Loader\+::upload\+Models (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Upload all model data to G\+PU. 
+
+\mbox{\hyperlink{class_owl_engine_1_1_resource_loader_a1ab044c38306a33c58d0dd0ee8f37bae}{upload\+Models()}} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/engine/include/independent/utils/\mbox{\hyperlink{resource_loader_8h}{resource\+Loader.\+h}}\item 
+C\+:/doc/src/engine/src/independent/utils/\mbox{\hyperlink{resource_loader_8cpp}{resource\+Loader.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,344 @@
+\hypertarget{class_player}{}\doxysection{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+A player script.  
+
+
+
+
+{\ttfamily \#include $<$player.\+h$>$}
+
+Inheritance diagram for Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_player}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_player_a05e8e6e1b1f8fcc228c963615f93572c}\label{class_player_a05e8e6e1b1f8fcc228c963615f93572c}} 
+void \mbox{\hyperlink{class_player_a05e8e6e1b1f8fcc228c963615f93572c}{on\+Pre\+Update}} (const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call before game update. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_acededbff76245ea60668b6796d293910}{on\+Attach}} () override
+\begin{DoxyCompactList}\small\item\em Called when attached to the entity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ae765e85ef7392b2ea727c768adc2021f}{on\+Key\+Press}} (\mbox{\hyperlink{class_owl_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} \&e, const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call upon key press. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a4da9d3c5e1dcd08b26ac1b725692e33c}{on\+Key\+Release}} (\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&e, const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call upon key release. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a9c4caf4a5187b362e8c89a621d4ed733}{on\+Mouse\+Scrolled}} (\mbox{\hyperlink{class_owl_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} \&e, const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call upon mouse scroll. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a437f43fca923eeeb401d3af719eb8b3b}{on\+Mouse\+Moved}} (\mbox{\hyperlink{class_owl_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}} \&e, const float timestep, const float total\+Time) override
+\begin{DoxyCompactList}\small\item\em Call upon mouse move. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a0e1b68b30a5ceb728c2285c542b3e975}{set\+Grounded}} ()
+\begin{DoxyCompactList}\small\item\em Set the players grounded state to true. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ae33217c142b24c1ca46a41f4b5cb48ff}{on\+Contact}} (\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$collison\+Entity)
+\begin{DoxyCompactList}\small\item\em Call upon collision with another body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a6591eff048e33829e33a370a838de3c1}{set\+Item}} (\mbox{\hyperlink{item_8h_ad6d8cd9040999d4daf01026fe05e3db1}{Items\+::\+Items}} item, uint32\+\_\+t state)
+\begin{DoxyCompactList}\small\item\em The hotbar index to place the item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ad3eca40434f2fe96fffdc73cc9143985}{remove\+Item}} (\mbox{\hyperlink{item_8h_ad6d8cd9040999d4daf01026fe05e3db1}{Items\+::\+Items}} item\+Type, const uint32\+\_\+t state)
+\begin{DoxyCompactList}\small\item\em Remove an item. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item}{Item}} $\ast$ \mbox{\hyperlink{class_player_a8bcb35c8044d5aca2224cd440d9598a1}{get\+Item}} (\mbox{\hyperlink{item_8h_ad6d8cd9040999d4daf01026fe05e3db1}{Items\+::\+Items}} item\+Type)
+\begin{DoxyCompactList}\small\item\em Get the index by type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item}{Item}} $\ast$ \mbox{\hyperlink{class_player_a392c5e8009da42a81dca8977698bbb70}{get\+Item}} (\mbox{\hyperlink{item_8h_ad6d8cd9040999d4daf01026fe05e3db1}{Items\+::\+Items}} item\+Type, const uint32\+\_\+t state)
+\begin{DoxyCompactList}\small\item\em Get the index by type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item}{Item}} $\ast$ \mbox{\hyperlink{class_player_a8558b2c2e7a2a2eb475cd0e50c9b3e02}{get\+Item}} (const uint32\+\_\+t hotbar\+Index)
+\begin{DoxyCompactList}\small\item\em Get the item by hotbar index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_hotbar}{Hotbar}} $\ast$ \mbox{\hyperlink{class_player_af9beeb01ce3387a682affe654f327367}{get\+Hotbar}} ()
+\begin{DoxyCompactList}\small\item\em Get the player\textquotesingle{}s hotbar. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A player script. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+\mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player()}} \mbox{\Hypertarget{class_player_a749d2c00e1fe0f5c2746f7505a58c062}\label{class_player_a749d2c00e1fe0f5c2746f7505a58c062}} 
+\index{Player@{Player}!````~Player@{$\sim$Player}}
+\index{````~Player@{$\sim$Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{$\sim$Player()}{~Player()}}
+{\footnotesize\ttfamily Player\+::$\sim$\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+\mbox{\hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\+Player()}} 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_af9beeb01ce3387a682affe654f327367}\label{class_player_af9beeb01ce3387a682affe654f327367}} 
+\index{Player@{Player}!getHotbar@{getHotbar}}
+\index{getHotbar@{getHotbar}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getHotbar()}{getHotbar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_hotbar}{Hotbar}} $\ast$ Player\+::get\+Hotbar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the player\textquotesingle{}s hotbar. 
+
+\mbox{\hyperlink{class_player_af9beeb01ce3387a682affe654f327367}{get\+Hotbar()}}
+
+\begin{DoxyReturn}{Returns}
+a Hotbar$\ast$ -\/ A pointer to the player\textquotesingle{}s hotbar 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a8558b2c2e7a2a2eb475cd0e50c9b3e02}\label{class_player_a8558b2c2e7a2a2eb475cd0e50c9b3e02}} 
+\index{Player@{Player}!getItem@{getItem}}
+\index{getItem@{getItem}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getItem()}{getItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_item}{Item}} $\ast$ Player\+::get\+Item (\begin{DoxyParamCaption}\item[{const uint32\+\_\+t}]{hotbar\+Index }\end{DoxyParamCaption})}
+
+
+
+Get the item by hotbar index. 
+
+\mbox{\hyperlink{class_player_a8bcb35c8044d5aca2224cd440d9598a1}{get\+Item()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em hotbar\+Index} & a const uint32\+\_\+t \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Item$\ast$ -\/ A pointer to the item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a8bcb35c8044d5aca2224cd440d9598a1}\label{class_player_a8bcb35c8044d5aca2224cd440d9598a1}} 
+\index{Player@{Player}!getItem@{getItem}}
+\index{getItem@{getItem}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getItem()}{getItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_item}{Item}} $\ast$ Player\+::get\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_ad6d8cd9040999d4daf01026fe05e3db1}{Items\+::\+Items}}}]{item\+Type }\end{DoxyParamCaption})}
+
+
+
+Get the index by type. 
+
+\mbox{\hyperlink{class_player_a8bcb35c8044d5aca2224cd440d9598a1}{get\+Item()}}
+
+\begin{DoxyReturn}{Returns}
+an Item$\ast$ -\/ A pointer to the item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_a392c5e8009da42a81dca8977698bbb70}\label{class_player_a392c5e8009da42a81dca8977698bbb70}} 
+\index{Player@{Player}!getItem@{getItem}}
+\index{getItem@{getItem}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{getItem()}{getItem()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_item}{Item}} $\ast$ Player\+::get\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_ad6d8cd9040999d4daf01026fe05e3db1}{Items\+::\+Items}}}]{item\+Type,  }\item[{const uint32\+\_\+t}]{state }\end{DoxyParamCaption})}
+
+
+
+Get the index by type. 
+
+\mbox{\hyperlink{class_player_a8bcb35c8044d5aca2224cd440d9598a1}{get\+Item()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Type} & an Items\+::\+Item -\/ The item \\
+\hline
+{\em state} & a const uint32\+\_\+t -\/ The item state \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an Item$\ast$ -\/ A pointer to the item 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_player_acededbff76245ea60668b6796d293910}\label{class_player_acededbff76245ea60668b6796d293910}} 
+\index{Player@{Player}!onAttach@{onAttach}}
+\index{onAttach@{onAttach}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{onAttach()}{onAttach()}}
+{\footnotesize\ttfamily void Player\+::on\+Attach (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Called when attached to the entity. 
+
+\mbox{\hyperlink{class_player_acededbff76245ea60668b6796d293910}{on\+Attach()}} 
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a84d0903c0ac9ffc6d49d8df17eab6f5b}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_player_ae33217c142b24c1ca46a41f4b5cb48ff}\label{class_player_ae33217c142b24c1ca46a41f4b5cb48ff}} 
+\index{Player@{Player}!onContact@{onContact}}
+\index{onContact@{onContact}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{onContact()}{onContact()}}
+{\footnotesize\ttfamily void Player\+::on\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_entity}{Entity}} $\ast$}]{collison\+Entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Call upon collision with another body. 
+
+\mbox{\hyperlink{class_player_ae33217c142b24c1ca46a41f4b5cb48ff}{on\+Contact()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Entity} & an Entity$\ast$ -\/ A pointer to the entity \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a413ed705fb3b76fd1ca489f4cf2f27ad}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_player_ae765e85ef7392b2ea727c768adc2021f}\label{class_player_ae765e85ef7392b2ea727c768adc2021f}} 
+\index{Player@{Player}!onKeyPress@{onKeyPress}}
+\index{onKeyPress@{onKeyPress}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{onKeyPress()}{onKeyPress()}}
+{\footnotesize\ttfamily void Player\+::on\+Key\+Press (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_key_pressed_event}{Key\+Pressed\+Event}} \&}]{e,  }\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call upon key press. 
+
+\mbox{\hyperlink{class_player_ae765e85ef7392b2ea727c768adc2021f}{on\+Key\+Press()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a Key\+Pressed\+Event\& -\/ A key press event \\
+\hline
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_acf5b8f3e907a453521bc4b5cc7ad3f8f}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_player_a4da9d3c5e1dcd08b26ac1b725692e33c}\label{class_player_a4da9d3c5e1dcd08b26ac1b725692e33c}} 
+\index{Player@{Player}!onKeyRelease@{onKeyRelease}}
+\index{onKeyRelease@{onKeyRelease}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{onKeyRelease()}{onKeyRelease()}}
+{\footnotesize\ttfamily void Player\+::on\+Key\+Release (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_key_released_event}{Key\+Released\+Event}} \&}]{e,  }\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call upon key release. 
+
+\mbox{\hyperlink{class_player_a4da9d3c5e1dcd08b26ac1b725692e33c}{on\+Key\+Release()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a Key\+Released\+Event\& -\/ A key release event \\
+\hline
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_ace18af6d23ccff4d34b8624a5b7657b1}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_player_a437f43fca923eeeb401d3af719eb8b3b}\label{class_player_a437f43fca923eeeb401d3af719eb8b3b}} 
+\index{Player@{Player}!onMouseMoved@{onMouseMoved}}
+\index{onMouseMoved@{onMouseMoved}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{onMouseMoved()}{onMouseMoved()}}
+{\footnotesize\ttfamily void Player\+::on\+Mouse\+Moved (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_mouse_moved_event}{Mouse\+Moved\+Event}} \&}]{e,  }\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call upon mouse move. 
+
+\mbox{\hyperlink{class_player_a437f43fca923eeeb401d3af719eb8b3b}{on\+Mouse\+Moved()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a Mouse\+Moved\+Event\& -\/ A mouse moved event \\
+\hline
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a26a2b7fc5c4691ad036371245fab4cb9}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_player_a9c4caf4a5187b362e8c89a621d4ed733}\label{class_player_a9c4caf4a5187b362e8c89a621d4ed733}} 
+\index{Player@{Player}!onMouseScrolled@{onMouseScrolled}}
+\index{onMouseScrolled@{onMouseScrolled}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{onMouseScrolled()}{onMouseScrolled()}}
+{\footnotesize\ttfamily void Player\+::on\+Mouse\+Scrolled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_owl_engine_1_1_mouse_scrolled_event}{Mouse\+Scrolled\+Event}} \&}]{e,  }\item[{const float}]{timestep,  }\item[{const float}]{total\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Call upon mouse scroll. 
+
+\mbox{\hyperlink{class_player_a9c4caf4a5187b362e8c89a621d4ed733}{on\+Mouse\+Scrolled()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & a Mouse\+Scrolled\+Event\& -\/ A mouse scrolled event \\
+\hline
+{\em timestep} & a const float -\/ The timestep \\
+\hline
+{\em total\+Time} & a const float -\/ The total time of the application \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_owl_engine_1_1_native_script_a5e80fa2ee79b2bf183705799a16feef2}{Owl\+Engine\+::\+Native\+Script}}.
+
+\mbox{\Hypertarget{class_player_ad3eca40434f2fe96fffdc73cc9143985}\label{class_player_ad3eca40434f2fe96fffdc73cc9143985}} 
+\index{Player@{Player}!removeItem@{removeItem}}
+\index{removeItem@{removeItem}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeItem()}{removeItem()}}
+{\footnotesize\ttfamily void Player\+::remove\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_ad6d8cd9040999d4daf01026fe05e3db1}{Items\+::\+Items}}}]{item\+Type,  }\item[{const uint32\+\_\+t}]{state }\end{DoxyParamCaption})}
+
+
+
+Remove an item. 
+
+\mbox{\hyperlink{class_player_ad3eca40434f2fe96fffdc73cc9143985}{remove\+Item()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em item\+Type} & an Items\+::\+Item -\/ The item \\
+\hline
+{\em state} & a const uint32\+\_\+t -\/ The item state \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_player_a0e1b68b30a5ceb728c2285c542b3e975}\label{class_player_a0e1b68b30a5ceb728c2285c542b3e975}} 
+\index{Player@{Player}!setGrounded@{setGrounded}}
+\index{setGrounded@{setGrounded}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setGrounded()}{setGrounded()}}
+{\footnotesize\ttfamily void Player\+::set\+Grounded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Set the players grounded state to true. 
+
+\mbox{\hyperlink{class_player_a0e1b68b30a5ceb728c2285c542b3e975}{set\+Grounded()}} \mbox{\Hypertarget{class_player_a6591eff048e33829e33a370a838de3c1}\label{class_player_a6591eff048e33829e33a370a838de3c1}} 
+\index{Player@{Player}!setItem@{setItem}}
+\index{setItem@{setItem}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setItem()}{setItem()}}
+{\footnotesize\ttfamily void Player\+::set\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{item_8h_ad6d8cd9040999d4daf01026fe05e3db1}{Items\+::\+Items}}}]{item,  }\item[{uint32\+\_\+t}]{state }\end{DoxyParamCaption})}
+
+
+
+The hotbar index to place the item. 
+
+\mbox{\hyperlink{class_player_a6591eff048e33829e33a370a838de3c1}{set\+Item()}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & an Items\+::\+Item -\/ The item \\
+\hline
+{\em state} & an uint32\+\_\+t -\/ The item state \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/doc/src/sandbox/include/scripts/game\+Objects/\mbox{\hyperlink{player_8h}{player.\+h}}\item 
+C\+:/doc/src/sandbox/src/scripts/game\+Objects/\mbox{\hyperlink{player_8cpp}{player.\+cpp}}\end{DoxyCompactItemize}
