@@ -1,4 +1,4 @@
-# IMAT3905 Coursework 
+# Flushed & OwlEngine
 
 ![Team 7 Logo](/sandbox/assets/textures/Owly_Fans_Window.png)  
 ## Team 7: Owly Fans  -  "Flushed" game using OwlEngine
